@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "新一代飞机",
+    "subject_type": "研究对象",
+    "relation": "具有",
+    "object": "复杂的系统结构",
+    "object_type": "特征"
+  },
+  {
+    "subject": "新一代飞机",
+    "subject_type": "研究对象",
+    "relation": "具有",
+    "object": "复杂的失效机理",
+    "object_type": "特征"
+  },
+  {
+    "subject": "新一代飞机",
+    "subject_type": "研究对象",
+    "relation": "具有",
+    "object": "多样的失效模式",
+    "object_type": "特征"
+  },
+  {
+    "subject": "传统方法",
+    "subject_type": "方法",
+    "relation": "难以实现",
+    "object": "有效健康管理",
+    "object_type": "目标"
+  },
+  {
+    "subject": "飞机PHM",
+    "subject_type": "技术领域",
+    "relation": "应用",
+    "object": "海量数据挖掘",
+    "object_type": "核心技术"
+  },
+  {
+    "subject": "海量数据挖掘",
+    "subject_type": "核心技术",
+    "relation": "包含",
+    "object": "数据预处理",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "海量数据挖掘",
+    "subject_type": "核心技术",
+    "relation": "包含",
+    "object": "集成管理",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "海量数据挖掘",
+    "subject_type": "核心技术",
+    "relation": "包含",
+    "object": "聚类",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "海量数据挖掘",
+    "subject_type": "核心技术",
+    "relation": "包含",
+    "object": "分类",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "海量数据挖掘",
+    "subject_type": "核心技术",
+    "relation": "包含",
+    "object": "关联",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "海量数据挖掘",
+    "subject_type": "核心技术",
+    "relation": "包含",
+    "object": "预测",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "飞机PHM海量数据挖掘平台",
+    "subject_type": "平台",
+    "relation": "基于",
+    "object": "私有云",
+    "object_type": "技术架构"
+  },
+  {
+    "subject": "飞机PHM海量数据挖掘平台",
+    "subject_type": "平台",
+    "relation": "具有",
+    "object": "总体框架",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "飞机PHM海量数据挖掘平台",
+    "subject_type": "平台",
+    "relation": "具有",
+    "object": "软硬件结构",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "飞机PHM海量数据挖掘平台",
+    "subject_type": "平台",
+    "relation": "提供",
+    "object": "验证平台",
+    "object_type": "功能"
+  },
+  {
+    "subject": "飞机PHM海量数据挖掘平台",
+    "subject_type": "平台",
+    "relation": "促进",
+    "object": "飞机PHM的集成与工程化实现",
+    "object_type": "目标"
+  }
+]

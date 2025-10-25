@@ -1,0 +1,282 @@
+{
+  "entities": [
+    {
+      "name": "Caps-BiGRU-Attention模型",
+      "type": "模型"
+    },
+    {
+      "name": "直升机涡轮发动机健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "直升机涡轮发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障模式识别",
+      "type": "任务"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "任务"
+    },
+    {
+      "name": "直升机涡轮发动机故障难以识别",
+      "type": "问题"
+    },
+    {
+      "name": "健康状况难以量化",
+      "type": "问题"
+    },
+    {
+      "name": "胶囊层",
+      "type": "模型组件"
+    },
+    {
+      "name": "BiGRU层",
+      "type": "模型组件"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "模型组件"
+    },
+    {
+      "name": "输入数据的内在关系",
+      "type": "特征"
+    },
+    {
+      "name": "时间序列特征",
+      "type": "特征"
+    },
+    {
+      "name": "特征加权",
+      "type": "方法"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "准确率",
+      "type": "性能指标"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "特征分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "概率分布拟合",
+      "type": "研究方法"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "模型"
+    },
+    {
+      "name": "严重失效",
+      "type": "健康状态"
+    },
+    {
+      "name": "轻微失效",
+      "type": "健康状态"
+    },
+    {
+      "name": "健康状态",
+      "type": "健康状态"
+    },
+    {
+      "name": "SHAP模型",
+      "type": "模型"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "模型"
+    },
+    {
+      "name": "传统卷积网络",
+      "type": "模型"
+    },
+    {
+      "name": "CNN-BiGRU-Attention",
+      "type": "模型"
+    },
+    {
+      "name": "RandomForest",
+      "type": "模型"
+    },
+    {
+      "name": "故障模式",
+      "type": "故障模式"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指示空速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "净功率",
+      "type": "传感器/监测参数"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "提出了用于",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "解决",
+      "tail": "直升机涡轮发动机故障难以识别"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "解决",
+      "tail": "健康状况难以量化"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "用于",
+      "tail": "故障模式识别"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "用于",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "包含",
+      "tail": "胶囊层"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "包含",
+      "tail": "BiGRU层"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "包含",
+      "tail": "SE注意力机制"
+    },
+    {
+      "head": "胶囊层",
+      "relation": "用于",
+      "tail": "捕捉输入数据的内在关系"
+    },
+    {
+      "head": "BiGRU层",
+      "relation": "用于",
+      "tail": "提取时间序列特征"
+    },
+    {
+      "head": "SE注意力机制",
+      "relation": "用于",
+      "tail": "特征加权"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "基于",
+      "tail": "直升机涡轮发动机数据集"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "在故障诊断任务的准确率超过",
+      "tail": "99.7%"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "在扭矩裕度预测的平均绝对误差为",
+      "tail": "0.027"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "优于",
+      "tail": "CNN-BiGRU-Attention"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "优于",
+      "tail": "RandomForest"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "替代",
+      "tail": "传统卷积网络"
+    },
+    {
+      "head": "SHAP模型",
+      "relation": "用于",
+      "tail": "特征分析"
+    },
+    {
+      "head": "故障模式",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "指示空速",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "净功率",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "概率分布拟合",
+      "relation": "应用于",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "严重失效",
+      "relation": "的最优分布为",
+      "tail": "贝塔分布"
+    },
+    {
+      "head": "轻微失效",
+      "relation": "的最优分布为",
+      "tail": "贝塔分布"
+    },
+    {
+      "head": "健康状态",
+      "relation": "的最优分布为",
+      "tail": "贝塔分布"
+    }
+  ]
+}

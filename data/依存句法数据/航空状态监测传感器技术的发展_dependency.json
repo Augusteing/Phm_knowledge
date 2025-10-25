@@ -1,0 +1,524 @@
+{
+  "title": "航空状态监测传感器技术的发展",
+  "summary": "航空状态监测传感器是飞机健康管理的重要基础。概述了航空状态监测传感器的发展趋势,并针对基于MEMS、光纤、无线传感网络、静电感应原理的几种新型航空状态监测传感器的最新进展做了介绍,阐述了对我国航空状态监测传感器发展的一些思考。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空状态监测传感器是飞机健康管理的重要基础",
+      "tokens": [
+        "航空",
+        "状态",
+        "监测",
+        "传感器",
+        "是",
+        "飞机",
+        "健康",
+        "管理",
+        "的",
+        "重要",
+        "基础"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "状态",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "监测",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "传感器",
+          "head": 5,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "管理",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "重要",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "基础",
+          "head": 5,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "概述了航空状态监测传感器的发展趋势,并针对基于MEMS、光纤、无线传感网络、静电感应原理的几种新型航空状态监测传感器的最新进展做了介绍,阐述了对我国航空状态监测传感器发展的一些思考",
+      "tokens": [
+        "概述",
+        "了",
+        "航空",
+        "状态",
+        "监测",
+        "传感器",
+        "的",
+        "发展",
+        "趋势",
+        ",",
+        "并",
+        "针对",
+        "基于",
+        "MEMS",
+        "、",
+        "光纤",
+        "、",
+        "无线",
+        "传感",
+        "网络",
+        "、",
+        "静电",
+        "感应",
+        "原理",
+        "的",
+        "几",
+        "种",
+        "新型",
+        "航空",
+        "状态",
+        "监测",
+        "传感器",
+        "的",
+        "最新",
+        "进展",
+        "做",
+        "了",
+        "介绍",
+        ",",
+        "阐述",
+        "了",
+        "对",
+        "我",
+        "国",
+        "航空",
+        "状态",
+        "监测",
+        "传感器",
+        "发展",
+        "的",
+        "一些",
+        "思考"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "概述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "状态",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "监测",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "传感器",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "趋势",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "针对",
+          "head": 36,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "基于",
+          "head": 35,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "MEMS",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "光纤",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "无线",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "传感",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "网络",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "静电",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "感应",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "原理",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 26,
+          "form": "几",
+          "head": 27,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 27,
+          "form": "种",
+          "head": 32,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 28,
+          "form": "新型",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "航空",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "状态",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "监测",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "传感器",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 34,
+          "form": "最新",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "进展",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "做",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "了",
+          "head": 36,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 38,
+          "form": "介绍",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "阐述",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "了",
+          "head": 40,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 42,
+          "form": "对",
+          "head": 52,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 43,
+          "form": "我",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 44,
+          "form": "国",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "航空",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "状态",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "监测",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "传感器",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "发展",
+          "head": 42,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "的",
+          "head": 42,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 51,
+          "form": "一些",
+          "head": 52,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 52,
+          "form": "思考",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1314 @@
+{
+  "title": "飞行人员亚健康状态的调查及其健康管理策略",
+  "summary": "目的研究飞行人员亚健康状态及其影响因素,对亚健康状态的飞行人员实施健康管理策略。方法方便性抽样选择200名飞行人员,采用亚健康状态量表对其进行亚健康的流行病学调查,描述其亚健康状态并分析影响因素。结果离婚或丧偶军事飞行人员社会亚健康得分较其他组高;有行政职务的飞行人员心理亚健康比无行政职务者明显;既抽烟又饮酒的飞行人员生理亚健康得分最高;体育锻炼对飞行人员心理亚健康产生正性影响,参加体育锻炼越少心理亚健康得分越高(均P0.。结论应及时预警飞行人员中重点人群的亚健康状态,针对性地采取有效的健康干预措施,促进亚健康状态飞行人员不断向健康方向发展。",
+  "analyzed_sentences": [
+    {
+      "sentence": "目的研究飞行人员亚健康状态及其影响因素,对亚健康状态的飞行人员实施健康管理策略",
+      "tokens": [
+        "目的",
+        "研究",
+        "飞行",
+        "人员",
+        "亚",
+        "健康",
+        "状态",
+        "及",
+        "其",
+        "影响",
+        "因素",
+        ",",
+        "对",
+        "亚",
+        "健康",
+        "状态",
+        "的",
+        "飞行",
+        "人员",
+        "实施",
+        "健康",
+        "管理",
+        "策略"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "目的",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "飞行",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "人员",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "亚",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "VC"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "状态",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "及",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "其",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 10,
+          "form": "影响",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "因素",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "对",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "亚",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 15,
+          "form": "健康",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "状态",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "飞行",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "人员",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "实施",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "健康",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "管理",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "策略",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "方法方便性抽样选择200名飞行人员,采用亚健康状态量表对其进行亚健康的流行病学调查,描述其亚健康状态并分析影响因素",
+      "tokens": [
+        "方法",
+        "方便性",
+        "抽样",
+        "选择",
+        "200",
+        "名",
+        "飞行",
+        "人员",
+        ",",
+        "采用",
+        "亚",
+        "健康",
+        "状态",
+        "量表",
+        "对",
+        "其",
+        "进行",
+        "亚健康",
+        "的",
+        "流行病学",
+        "调查",
+        ",",
+        "描述",
+        "其",
+        "亚健康",
+        "状态",
+        "并",
+        "分析",
+        "影响",
+        "因素"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "方法",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "方便性",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "抽样",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "选择",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "200",
+          "head": 6,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 6,
+          "form": "名",
+          "head": 8,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 7,
+          "form": "飞行",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "人员",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "采用",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "亚",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 12,
+          "form": "健康",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "状态",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "量表",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "对",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "其",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "PN"
+        },
+        {
+          "id": 17,
+          "form": "进行",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "亚健康",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "流行病学",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "调查",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "描述",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "其",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 25,
+          "form": "亚健康",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "状态",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "并",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "分析",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "影响",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "因素",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果离婚或丧偶军事飞行人员社会亚健康得分较其他组高;有行政职务的飞行人员心理亚健康比无行政职务者明显;既抽烟又饮酒的飞行人员生理亚健康得分最高;体育锻炼对飞行人员心理亚健康产生正性影响,参加体育锻炼越少心理亚健康得分越高(均P0.",
+      "tokens": [
+        "结果",
+        "离婚",
+        "或",
+        "丧偶",
+        "军事",
+        "飞行",
+        "人员",
+        "社会",
+        "亚",
+        "健康",
+        "得分",
+        "较",
+        "其他",
+        "组",
+        "高",
+        ";",
+        "有",
+        "行政",
+        "职务",
+        "的",
+        "飞行",
+        "人员",
+        "心理",
+        "亚",
+        "健康",
+        "比",
+        "无",
+        "行政",
+        "职务",
+        "者",
+        "明显",
+        ";",
+        "既",
+        "抽烟",
+        "又",
+        "饮酒",
+        "的",
+        "飞行",
+        "人员",
+        "生理",
+        "亚",
+        "健康",
+        "得分",
+        "最",
+        "高",
+        ";",
+        "体育",
+        "锻炼",
+        "对",
+        "飞行",
+        "人员",
+        "心理",
+        "亚",
+        "健康",
+        "产生",
+        "正性",
+        "影响",
+        ",",
+        "参加",
+        "体育",
+        "锻炼",
+        "越",
+        "少",
+        "心理",
+        "亚",
+        "健康",
+        "得分",
+        "越",
+        "高",
+        "(",
+        "均",
+        "P0",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 15,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "离婚",
+          "head": 7,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "或",
+          "head": 2,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "丧偶",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "军事",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "飞行",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "人员",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "社会",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "亚",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 10,
+          "form": "健康",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "得分",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "较",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "其他",
+          "head": 14,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 14,
+          "form": "组",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "高",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 16,
+          "form": ";",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "有",
+          "head": 25,
+          "deprel": "rcmod",
+          "pos": "VE"
+        },
+        {
+          "id": 18,
+          "form": "行政",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "职务",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 17,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 21,
+          "form": "飞行",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "人员",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "心理",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "亚",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 25,
+          "form": "健康",
+          "head": 31,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "比",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "无",
+          "head": 30,
+          "deprel": "rcmod",
+          "pos": "VE"
+        },
+        {
+          "id": 28,
+          "form": "行政",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "职务",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "者",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "明显",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 32,
+          "form": ";",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "既",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "抽烟",
+          "head": 43,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "又",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 36,
+          "form": "饮酒",
+          "head": 34,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 34,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 38,
+          "form": "飞行",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "人员",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "生理",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "亚",
+          "head": 42,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 42,
+          "form": "健康",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "得分",
+          "head": 45,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "最",
+          "head": 45,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 45,
+          "form": "高",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 46,
+          "form": ";",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "体育",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "锻炼",
+          "head": 55,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "对",
+          "head": 55,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 50,
+          "form": "飞行",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "人员",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "心理",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "亚",
+          "head": 54,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 54,
+          "form": "健康",
+          "head": 49,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "产生",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 56,
+          "form": "正性",
+          "head": 57,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 57,
+          "form": "影响",
+          "head": 55,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 59,
+          "form": "参加",
+          "head": 69,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 60,
+          "form": "体育",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "锻炼",
+          "head": 59,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "越",
+          "head": 63,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 63,
+          "form": "少",
+          "head": 59,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 64,
+          "form": "心理",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "亚",
+          "head": 66,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 66,
+          "form": "健康",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "得分",
+          "head": 69,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "越",
+          "head": 69,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 69,
+          "form": "高",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 70,
+          "form": "(",
+          "head": 72,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 71,
+          "form": "均",
+          "head": 72,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 72,
+          "form": "P0",
+          "head": 69,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": ".",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    },
+    {
+      "sentence": "结论应及时预警飞行人员中重点人群的亚健康状态,针对性地采取有效的健康干预措施,促进亚健康状态飞行人员不断向健康方向发展",
+      "tokens": [
+        "结论",
+        "应",
+        "及时",
+        "预警",
+        "飞行",
+        "人员",
+        "中",
+        "重点",
+        "人群",
+        "的",
+        "亚",
+        "健康",
+        "状态",
+        ",",
+        "针对性",
+        "地",
+        "采取",
+        "有效",
+        "的",
+        "健康",
+        "干预",
+        "措施",
+        ",",
+        "促进",
+        "亚",
+        "健康",
+        "状态",
+        "飞行",
+        "人员",
+        "不断",
+        "向",
+        "健康",
+        "方向",
+        "发展"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结论",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "应",
+          "head": 4,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "及时",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "预警",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "飞行",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "人员",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "中",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "重点",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "人群",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "亚",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 12,
+          "form": "健康",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "状态",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "针对性",
+          "head": 17,
+          "deprel": "dvpmod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "地",
+          "head": 15,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 17,
+          "form": "采取",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "有效",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "健康",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "干预",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "措施",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "促进",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "亚",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "NR"
+        },
+        {
+          "id": 26,
+          "form": "健康",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "状态",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "飞行",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "人员",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "不断",
+          "head": 34,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 31,
+          "form": "向",
+          "head": 34,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 32,
+          "form": "健康",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "方向",
+          "head": 31,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "发展",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        }
+      ]
+    }
+  ]
+}

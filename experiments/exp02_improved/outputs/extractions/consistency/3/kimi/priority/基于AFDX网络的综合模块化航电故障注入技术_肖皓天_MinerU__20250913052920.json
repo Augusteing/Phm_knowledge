@@ -1,0 +1,251 @@
+{
+  "entities": [
+    {
+      "name": "AFDX网络",
+      "type": "系统/部件"
+    },
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "功能"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法"
+    },
+    {
+      "name": "数据传输策略",
+      "type": "方法"
+    },
+    {
+      "name": "故障注入装置",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "全双工交换式以太网",
+      "type": "系统/部件"
+    },
+    {
+      "name": "PHM进程",
+      "type": "系统/部件"
+    },
+    {
+      "name": "PC机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "Visual C++ MFC框架",
+      "type": "软件工具"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "软件工具"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "数据"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "方法"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "方法"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "仿真器",
+      "type": "系统/部件"
+    },
+    {
+      "name": "ICD",
+      "type": "数据"
+    },
+    {
+      "name": "DS",
+      "type": "数据"
+    },
+    {
+      "name": "FDS",
+      "type": "数据"
+    },
+    {
+      "name": "VL",
+      "type": "系统/部件"
+    },
+    {
+      "name": "BAG",
+      "type": "参数"
+    },
+    {
+      "name": "RSN",
+      "type": "参数"
+    },
+    {
+      "name": "预设发送时间",
+      "type": "参数"
+    },
+    {
+      "name": "实际发送时间",
+      "type": "参数"
+    },
+    {
+      "name": "时间误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "误码率",
+      "type": "性能指标"
+    },
+    {
+      "name": "跟踪精度",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "综合模块化航空电子系统",
+      "relation": "基于",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理功能"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "故障数据配置管理方法"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "数据传输策略"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "故障注入装置"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "故障注入软件"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "Visual C++ MFC框架"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "依据",
+      "tail": "接口控制文件"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "利用",
+      "tail": "SQLite数据库"
+    },
+    {
+      "head": "功能数据集合",
+      "relation": "基于",
+      "tail": "AFDX网络协议"
+    },
+    {
+      "head": "数据传输策略",
+      "relation": "解决",
+      "tail": "数据更新间隔问题"
+    },
+    {
+      "head": "数据传输策略",
+      "relation": "基于",
+      "tail": "多媒体定时器"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "优于",
+      "tail": "SetTimer函数"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "提高",
+      "tail": "时间误差"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "BAG"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控错误帧信息"
+    },
+    {
+      "head": "仿真器",
+      "relation": "生成",
+      "tail": "飞行参数信息"
+    },
+    {
+      "head": "ICD",
+      "relation": "定义",
+      "tail": "FDS"
+    },
+    {
+      "head": "DS",
+      "relation": "包含",
+      "tail": "FDS"
+    },
+    {
+      "head": "VL",
+      "relation": "配置",
+      "tail": "BAG"
+    },
+    {
+      "head": "预设发送时间",
+      "relation": "影响",
+      "tail": "实际发送时间"
+    },
+    {
+      "head": "时间误差",
+      "relation": "评估",
+      "tail": "定时发送策略"
+    },
+    {
+      "head": "误码率",
+      "relation": "评估",
+      "tail": "通信质量"
+    },
+    {
+      "head": "跟踪精度",
+      "relation": "评估",
+      "tail": "跟踪性能"
+    }
+  ]
+}

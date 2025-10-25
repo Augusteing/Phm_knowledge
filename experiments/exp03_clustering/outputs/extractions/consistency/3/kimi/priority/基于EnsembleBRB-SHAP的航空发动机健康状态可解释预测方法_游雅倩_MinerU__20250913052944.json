@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机健康状态预测",
+      "type": "研究问题"
+    },
+    {
+      "name": "EnsembleBRB-SHAP模型",
+      "type": "模型"
+    },
+    {
+      "name": "数据驱动法",
+      "type": "研究方法"
+    },
+    {
+      "name": "子置信规则库（BRB）模型",
+      "type": "模型"
+    },
+    {
+      "name": "集成置信规则库（EnsembleBRB）模型",
+      "type": "模型"
+    },
+    {
+      "name": "沙普利加性解释（SHAP）",
+      "type": "算法"
+    },
+    {
+      "name": "商用模块化航空推进系统仿真软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "发动机健康管理",
+      "type": "应用领域"
+    },
+    {
+      "name": "多源不确定数据",
+      "type": "数据"
+    },
+    {
+      "name": "低压涡轮机冷却液泄漏量",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集"
+    }
+  ],
+  "relations": [
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "基于",
+      "tail": "EnsembleBRB-SHAP模型"
+    },
+    {
+      "head": "EnsembleBRB-SHAP模型",
+      "relation": "采用",
+      "tail": "数据驱动法"
+    },
+    {
+      "head": "EnsembleBRB-SHAP模型",
+      "relation": "包含",
+      "tail": "子置信规则库（BRB）模型"
+    },
+    {
+      "head": "集成置信规则库（EnsembleBRB）模型",
+      "relation": "基于",
+      "tail": "子置信规则库（BRB）模型"
+    },
+    {
+      "head": "集成置信规则库（EnsembleBRB）模型",
+      "relation": "利用",
+      "tail": "多源不确定数据"
+    },
+    {
+      "head": "沙普利加性解释（SHAP）",
+      "relation": "应用于",
+      "tail": "EnsembleBRB-SHAP模型"
+    },
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "支持",
+      "tail": "发动机健康管理"
+    },
+    {
+      "head": "EnsembleBRB-SHAP模型",
+      "relation": "验证使用",
+      "tail": "商用模块化航空推进系统仿真软件"
+    },
+    {
+      "head": "商用模块化航空推进系统仿真软件",
+      "relation": "产生",
+      "tail": "C-MAPSS数据集"
+    },
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "关键参数包括",
+      "tail": "低压涡轮机冷却液泄漏量"
+    },
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "关键参数包括",
+      "tail": "风扇转速"
+    }
+  ]
+}

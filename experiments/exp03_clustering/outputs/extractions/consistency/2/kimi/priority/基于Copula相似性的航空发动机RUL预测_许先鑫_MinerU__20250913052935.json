@@ -1,0 +1,284 @@
+{
+  "entities": [
+    {
+      "name": "Copula相似性",
+      "type": "理论基础"
+    },
+    {
+      "name": "航空发动机RUL预测方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "Copula函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "传感器",
+      "type": "系统/部件"
+    },
+    {
+      "name": "性能退化特征",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "非线性相关关系",
+      "type": "理论基础"
+    },
+    {
+      "name": "预测误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "C-MAPSS航空发动机仿真模型数据",
+      "type": "数据集"
+    },
+    {
+      "name": "NASA",
+      "type": "研究机构"
+    },
+    {
+      "name": "PHM",
+      "type": "研究领域"
+    },
+    {
+      "name": "风扇入口总温T2",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压气机出口总温T30",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "低压涡轮出口总温T50",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇入口压力P2",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "外漏总压P15",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压气机出口总压P30",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇物理转速Nf",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "核心机物理转速Ne",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "发动机压比epr",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压气机出口静压Ps30",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "燃油流量与高压压气机出口总压比值Phi",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇换算转速NRf",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "核心机换算转速Nre",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "涵道比BPR",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "燃烧室燃气比farB",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "引气焓值htBleed",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "设定风扇转速Nf_dmd",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "设定核心机换算转速PCNfR_dmd",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压涡轮冷却气流量W31",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "低压涡轮冷却气流量W32",
+      "type": "传感器/监测参数"
+    }
+  ],
+  "relations": [
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula相似性"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "采用",
+      "tail": "K-means聚类"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "传感器工作状态分类"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "描述",
+      "tail": "非线性相关关系"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "减少",
+      "tail": "预测误差"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "验证数据来源",
+      "tail": "C-MAPSS航空发动机仿真模型数据"
+    },
+    {
+      "head": "C-MAPSS航空发动机仿真模型数据",
+      "relation": "提供者",
+      "tail": "NASA"
+    },
+    {
+      "head": "PHM",
+      "relation": "包括",
+      "tail": "航空发动机RUL预测方法"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "风扇入口总温T2"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "高压压气机出口总温T30"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "低压涡轮出口总温T50"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "风扇入口压力P2"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "外漏总压P15"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "高压压气机出口总压P30"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "风扇物理转速Nf"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "核心机物理转速Ne"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "发动机压比epr"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "高压压气机出口静压Ps30"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "燃油流量与高压压气机出口总压比值Phi"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "风扇换算转速NRf"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "核心机换算转速Nre"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "涵道比BPR"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "燃烧室燃气比farB"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "引气焓值htBleed"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "设定风扇转速Nf_dmd"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "设定核心机换算转速PCNfR_dmd"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "高压涡轮冷却气流量W31"
+    },
+    {
+      "head": "传感器",
+      "relation": "监测",
+      "tail": "低压涡轮冷却气流量W32"
+    }
+  ]
+}

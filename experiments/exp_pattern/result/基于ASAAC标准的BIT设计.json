@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "基于",
+    "object": "ASAAC标准",
+    "object_type": "标准"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "降低",
+    "object": "航空电子系统测试维护成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "执行",
+    "object": "故障检测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "执行",
+    "object": "故障隔离",
+    "object_type": "功能"
+  },
+  {
+    "subject": "BIT设计",
+    "subject_type": "设计",
+    "relation": "采用",
+    "object": "总线层次化方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "BIT设计",
+    "subject_type": "设计",
+    "relation": "分为",
+    "object": "3层测试结构",
+    "object_type": "结构"
+  },
+  {
+    "subject": "3层测试结构",
+    "subject_type": "结构",
+    "relation": "包含",
+    "object": "系统级测试",
+    "object_type": "测试层级"
+  },
+  {
+    "subject": "3层测试结构",
+    "subject_type": "结构",
+    "relation": "包含",
+    "object": "分系统级测试",
+    "object_type": "测试层级"
+  },
+  {
+    "subject": "3层测试结构",
+    "subject_type": "结构",
+    "relation": "包含",
+    "object": "模块级测试",
+    "object_type": "测试层级"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "健康管理",
+    "object_type": "管理"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "故障管理",
+    "object_type": "管理"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "满足",
+    "object": "测试覆盖率",
+    "object_type": "技术指标"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "提高",
+    "object": "航空电子系统可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "机内自测试(BIT)系统",
+    "subject_type": "系统",
+    "relation": "提高",
+    "object": "航空电子系统可测试性",
+    "object_type": "性能指标"
+  }
+]

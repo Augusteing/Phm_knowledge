@@ -1,0 +1,210 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机性能退化特征",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "Copula相似性",
+      "type": "理论基础"
+    },
+    {
+      "name": "航空发动机RUL预测方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "退化模型",
+      "type": "模型"
+    },
+    {
+      "name": "传感器",
+      "type": "系统/部件"
+    },
+    {
+      "name": "Copula函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "发动机传感器之间的Copula结构",
+      "type": "模型"
+    },
+    {
+      "name": "预测误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "预测与健康管理（PHM）",
+      "type": "研究领域"
+    },
+    {
+      "name": "部件故障问题",
+      "type": "故障模式"
+    },
+    {
+      "name": "灾难性事故",
+      "type": "故障模式"
+    },
+    {
+      "name": "维护成本",
+      "type": "成本"
+    },
+    {
+      "name": "实时监测",
+      "type": "技术"
+    },
+    {
+      "name": "历史样本退化特征相似性",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "多维退化模型",
+      "type": "模型"
+    },
+    {
+      "name": "退化率相关性建模",
+      "type": "模型"
+    },
+    {
+      "name": "非线性相关性建模",
+      "type": "模型"
+    },
+    {
+      "name": "贝叶斯动态线性模型",
+      "type": "模型"
+    },
+    {
+      "name": "非线性Wiener过程",
+      "type": "理论基础"
+    },
+    {
+      "name": "阿基米德Copula函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "半Copula模型",
+      "type": "模型"
+    },
+    {
+      "name": "NASA的C-MAPSS航空发动机仿真模型数据",
+      "type": "数据集"
+    },
+    {
+      "name": "操作设置变量",
+      "type": "参数"
+    },
+    {
+      "name": "Ps30、T50和BPR传感器",
+      "type": "系统/部件"
+    }
+  ],
+  "relations": [
+    {
+      "head": "航空发动机性能退化特征",
+      "relation": "导致",
+      "tail": "部件故障问题"
+    },
+    {
+      "head": "部件故障问题",
+      "relation": "导致",
+      "tail": "灾难性事故"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula相似性"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "利用",
+      "tail": "K-means聚类"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "建立",
+      "tail": "退化模型"
+    },
+    {
+      "head": "退化模型",
+      "relation": "选择",
+      "tail": "传感器"
+    },
+    {
+      "head": "传感器",
+      "relation": "基于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "构建",
+      "tail": "发动机传感器之间的Copula结构"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "减少",
+      "tail": "预测误差"
+    },
+    {
+      "head": "航空发动机RUL预测方法",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "预测与健康管理（PHM）",
+      "relation": "降低",
+      "tail": "维护成本"
+    },
+    {
+      "head": "历史样本退化特征相似性",
+      "relation": "克服",
+      "tail": "维护成本"
+    },
+    {
+      "head": "多维退化模型",
+      "relation": "需要假设",
+      "tail": "退化特征的分布"
+    },
+    {
+      "head": "退化率相关性建模",
+      "relation": "考虑",
+      "tail": "组件间退化速率的影响"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "描述",
+      "tail": "非线性相关性建模"
+    },
+    {
+      "head": "贝叶斯动态线性模型",
+      "relation": "利用",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "非线性Wiener过程",
+      "relation": "结合",
+      "tail": "阿基米德Copula函数"
+    },
+    {
+      "head": "半Copula模型",
+      "relation": "利用",
+      "tail": "抽样方法"
+    },
+    {
+      "head": "NASA的C-MAPSS航空发动机仿真模型数据",
+      "relation": "用于验证",
+      "tail": "航空发动机RUL预测方法"
+    },
+    {
+      "head": "Ps30、T50和BPR传感器",
+      "relation": "表示",
+      "tail": "发动机退化趋势"
+    }
+  ]
+}

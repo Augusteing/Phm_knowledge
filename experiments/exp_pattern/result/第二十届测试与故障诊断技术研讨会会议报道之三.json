@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "伊大伟",
+    "subject_type": "人物",
+    "relation": "供职于",
+    "object": "北京航天测控技术有限公司",
+    "object_type": "组织机构"
+  },
+  {
+    "subject": "伊大伟",
+    "subject_type": "人物",
+    "relation": "研究",
+    "object": "故障预测与健康管理方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障预测与健康管理方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "直升机旋翼系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "直升机旋翼系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "动部件",
+    "object_type": "部件"
+  },
+  {
+    "subject": "直升机旋翼系统",
+    "subject_type": "系统",
+    "relation": "具有特性",
+    "object": "单一通道无备份",
+    "object_type": "特性"
+  },
+  {
+    "subject": "直升机旋翼系统",
+    "subject_type": "系统",
+    "relation": "工作于",
+    "object": "复杂工作环境",
+    "object_type": "环境"
+  },
+  {
+    "subject": "直升机旋翼系统",
+    "subject_type": "系统",
+    "relation": "确保",
+    "object": "直升机可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "直升机旋翼系统",
+    "subject_type": "系统",
+    "relation": "确保",
+    "object": "直升机安全性",
+    "object_type": "性能指标"
+  }
+]

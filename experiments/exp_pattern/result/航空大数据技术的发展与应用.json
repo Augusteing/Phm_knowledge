@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "大数据技术",
+    "subject_type": "技术",
+    "relation": "具有应用价值",
+    "object": "飞行器设计",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "大数据技术",
+    "subject_type": "技术",
+    "relation": "具有应用价值",
+    "object": "系统级故障预测",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "大数据技术",
+    "subject_type": "技术",
+    "relation": "具有应用价值",
+    "object": "航空装备维修与保障",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "大数据技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空工业",
+    "object_type": "行业"
+  },
+  {
+    "subject": "航空大数据分析技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "系统级故障预测",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "美国大数据分析技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空领域",
+    "object_type": "行业"
+  },
+  {
+    "subject": "航空大数据技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "发展趋势",
+    "object_type": "概念"
+  }
+]

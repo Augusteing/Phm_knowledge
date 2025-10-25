@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "集中式PHM设计方案",
+    "subject_type": "方案",
+    "relation": "无法满足",
+    "object": "供电系统要求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "改进型PHM方案",
+    "subject_type": "方案",
+    "relation": "设计",
+    "object": "分布—集中式PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "分布—集中式PHM系统",
+    "subject_type": "系统",
+    "relation": "基于",
+    "object": "扩展式FMEA分析",
+    "object_type": "分析方法"
+  },
+  {
+    "subject": "分布—集中式PHM系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "诊断预测模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "诊断预测模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "模糊综合评判",
+    "object_type": "方法"
+  },
+  {
+    "subject": "供电系统PHM",
+    "subject_type": "系统",
+    "relation": "融入",
+    "object": "飞机总体PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "改进型PHM方案",
+    "subject_type": "方案",
+    "relation": "应用于",
+    "object": "飞机供电系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "改进型PHM方案",
+    "subject_type": "方案",
+    "relation": "提供参考",
+    "object": "供电系统PHM系统开发研究",
+    "object_type": "研究"
+  }
+]

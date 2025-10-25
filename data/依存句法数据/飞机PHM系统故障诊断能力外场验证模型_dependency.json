@@ -1,0 +1,1330 @@
+{
+  "title": "飞机PHM系统故障诊断能力外场验证模型",
+  "summary": "针对目前先进飞机的预测与健康管理系统(PHM)投入使用后尚缺乏系统的外场验证和评价技术手段,提出了基于先验信息的PHM诊断能力外场评估和验证方法。首先利用飞机研制、试验期间PHM系统积累的各LRU(外场可更换单元)的诊断信息,确定LRU和系统的诊断能力指标先验估计值,再利用外场数据对先验分布进行修正,形成后验分布,最后利用后验分布得到系统/分系统的PHM诊断能力参数后验估计值。通过以典型测试性参数以故障检测率和故障隔离率进行实例分析,得到了不同置信度下故障检测率和故障隔离率的置信下限。估算结果表明该方法科学合理,实用性较强,能够满足小样本条件下外场评估的工程实际需要。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对目前先进飞机的预测与健康管理系统(PHM)投入使用后尚缺乏系统的外场验证和评价技术手段,提出了基于先验信息的PHM诊断能力外场评估和验证方法",
+      "tokens": [
+        "针对",
+        "目前",
+        "先进",
+        "飞机",
+        "的",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "系统",
+        "(",
+        "PHM",
+        ")",
+        "投入",
+        "使用",
+        "后",
+        "尚",
+        "缺乏",
+        "系统",
+        "的",
+        "外场",
+        "验证",
+        "和",
+        "评价",
+        "技术",
+        "手段",
+        ",",
+        "提出",
+        "了",
+        "基于",
+        "先验",
+        "信息",
+        "的",
+        "PHM",
+        "诊断",
+        "能力",
+        "外场",
+        "评估",
+        "和",
+        "验证",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "目前",
+          "head": 18,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "先进",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "(",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "PHM",
+          "head": 10,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ")",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "投入",
+          "head": 16,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "使用",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "后",
+          "head": 18,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 17,
+          "form": "尚",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "缺乏",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "VA"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "外场",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "验证",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "和",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "评价",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "技术",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "手段",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "了",
+          "head": 28,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 30,
+          "form": "基于",
+          "head": 41,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "先验",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "信息",
+          "head": 30,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 30,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 34,
+          "form": "PHM",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "诊断",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "能力",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "外场",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "评估",
+          "head": 40,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "和",
+          "head": 40,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "验证",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "方法",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "首先利用飞机研制、试验期间PHM系统积累的各LRU(外场可更换单元)的诊断信息,确定LRU和系统的诊断能力指标先验估计值,再利用外场数据对先验分布进行修正,形成后验分布,最后利用后验分布得到系统/分系统的PHM诊断能力参数后验估计值",
+      "tokens": [
+        "首先",
+        "利用",
+        "飞机",
+        "研制",
+        "、",
+        "试验",
+        "期间",
+        "PHM",
+        "系统",
+        "积累",
+        "的",
+        "各",
+        "LRU",
+        "(",
+        "外场",
+        "可",
+        "更换",
+        "单元",
+        ")",
+        "的",
+        "诊断",
+        "信息",
+        ",",
+        "确定",
+        "LRU",
+        "和",
+        "系统",
+        "的",
+        "诊断",
+        "能力",
+        "指标",
+        "先",
+        "验",
+        "估计值",
+        ",",
+        "再",
+        "利用",
+        "外场",
+        "数据",
+        "对",
+        "先",
+        "验",
+        "分布",
+        "进行",
+        "修正",
+        ",",
+        "形成",
+        "后",
+        "验",
+        "分布",
+        ",",
+        "最后",
+        "利用",
+        "后",
+        "验",
+        "分布",
+        "得到",
+        "系统",
+        "/",
+        "分",
+        "系统",
+        "的",
+        "PHM",
+        "诊断",
+        "能力",
+        "参数",
+        "后",
+        "验",
+        "估计值"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "首先",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "研制",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "试验",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "期间",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "PHM",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "积累",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "各",
+          "head": 22,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 13,
+          "form": "LRU",
+          "head": 22,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "(",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "外场",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "可",
+          "head": 17,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "更换",
+          "head": 18,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "单元",
+          "head": 13,
+          "deprel": "prnmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": ")",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "诊断",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "信息",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "确定",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "LRU",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "和",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "系统",
+          "head": 31,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "诊断",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "能力",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "指标",
+          "head": 33,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "先",
+          "head": 33,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 33,
+          "form": "验",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "估计值",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "再",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 37,
+          "form": "利用",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "外场",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "数据",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "对",
+          "head": 44,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 41,
+          "form": "先",
+          "head": 42,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 42,
+          "form": "验",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "分布",
+          "head": 40,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "进行",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "修正",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": ",",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "形成",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "后",
+          "head": 49,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 49,
+          "form": "验",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 50,
+          "form": "分布",
+          "head": 47,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "最后",
+          "head": 53,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 53,
+          "form": "利用",
+          "head": 68,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 54,
+          "form": "后",
+          "head": 56,
+          "deprel": "nn",
+          "pos": "LC"
+        },
+        {
+          "id": 55,
+          "form": "验",
+          "head": 56,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 56,
+          "form": "分布",
+          "head": 53,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "得到",
+          "head": 53,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "系统",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "/",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 60,
+          "form": "分",
+          "head": 61,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "系统",
+          "head": 66,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "的",
+          "head": 61,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 63,
+          "form": "PHM",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "诊断",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "能力",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "参数",
+          "head": 57,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "后",
+          "head": 68,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 68,
+          "form": "验",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 69,
+          "form": "估计值",
+          "head": 68,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过以典型测试性参数以故障检测率和故障隔离率进行实例分析,得到了不同置信度下故障检测率和故障隔离率的置信下限",
+      "tokens": [
+        "通过",
+        "以",
+        "典型",
+        "测试性",
+        "参数",
+        "以",
+        "故障",
+        "检测率",
+        "和",
+        "故障",
+        "隔离率",
+        "进行",
+        "实例",
+        "分析",
+        ",",
+        "得到",
+        "了",
+        "不同",
+        "置信度",
+        "下",
+        "故障",
+        "检测率",
+        "和",
+        "故障",
+        "隔离率",
+        "的",
+        "置信",
+        "下限"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "以",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "典型",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "测试性",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "参数",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "以",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "检测率",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "隔离率",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "进行",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "实例",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "分析",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "得到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "不同",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "置信度",
+          "head": 20,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "下",
+          "head": 28,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "检测率",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "和",
+          "head": 25,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "故障",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "隔离率",
+          "head": 28,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 25,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 27,
+          "form": "置信",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "下限",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "估算结果表明该方法科学合理,实用性较强,能够满足小样本条件下外场评估的工程实际需要",
+      "tokens": [
+        "估算",
+        "结果",
+        "表明",
+        "该",
+        "方法",
+        "科学",
+        "合理",
+        ",",
+        "实用性",
+        "较",
+        "强",
+        ",",
+        "能够",
+        "满足",
+        "小",
+        "样本",
+        "条件",
+        "下",
+        "外场",
+        "评估",
+        "的",
+        "工程",
+        "实际",
+        "需要"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "估算",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "结果",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "该",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 5,
+          "form": "方法",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "科学",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VA"
+        },
+        {
+          "id": 7,
+          "form": "合理",
+          "head": 6,
+          "deprel": "comod",
+          "pos": "VA"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "实用性",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "较",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "强",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "能够",
+          "head": 14,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "满足",
+          "head": 6,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "小",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "样本",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "条件",
+          "head": 18,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "下",
+          "head": 20,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 19,
+          "form": "外场",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "评估",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 20,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 22,
+          "form": "工程",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "实际",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "需要",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

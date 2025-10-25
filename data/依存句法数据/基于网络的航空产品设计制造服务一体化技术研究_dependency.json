@@ -1,0 +1,764 @@
+{
+  "title": "基于网络的航空产品设计制造服务一体化技术研究",
+  "summary": "航空产品结构复杂、制造环节多、研制周期长。从产品生命周期的角度可以将航空产品划分为研发设计、生产制造、使用维护等环节,这些环节具有很强的相互关联性,基于网络、运用通信、传感、云计算、大数据分析等技术将航空产品的设计、制造与使用这些环节有机地联系起来,对航空产品技术水平、产品质量和服务水平的提高都将具有重大意义。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空产品结构复杂、制造环节多、研制周期长",
+      "tokens": [
+        "航空",
+        "产品",
+        "结构",
+        "复杂",
+        "、",
+        "制造",
+        "环节",
+        "多",
+        "、",
+        "研制",
+        "周期",
+        "长"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "产品",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "结构",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "复杂",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "制造",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "环节",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "多",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "研制",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "周期",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "长",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "从产品生命周期的角度可以将航空产品划分为研发设计、生产制造、使用维护等环节,这些环节具有很强的相互关联性,基于网络、运用通信、传感、云计算、大数据分析等技术将航空产品的设计、制造与使用这些环节有机地联系起来,对航空产品技术水平、产品质量和服务水平的提高都将具有重大意义",
+      "tokens": [
+        "从",
+        "产品",
+        "生命",
+        "周期",
+        "的",
+        "角度",
+        "可以",
+        "将",
+        "航空",
+        "产品",
+        "划分",
+        "为",
+        "研发",
+        "设计",
+        "、",
+        "生产",
+        "制造",
+        "、",
+        "使用",
+        "维护",
+        "等",
+        "环节",
+        ",",
+        "这些",
+        "环节",
+        "具有",
+        "很",
+        "强",
+        "的",
+        "相互",
+        "关联性",
+        ",",
+        "基于",
+        "网络",
+        "、",
+        "运用",
+        "通信",
+        "、",
+        "传感",
+        "、",
+        "云计算",
+        "、",
+        "大",
+        "数据",
+        "分析",
+        "等",
+        "技术",
+        "将",
+        "航空",
+        "产品",
+        "的",
+        "设计",
+        "、",
+        "制造",
+        "与",
+        "使用",
+        "这些",
+        "环节",
+        "有机",
+        "地",
+        "联系",
+        "起来",
+        ",",
+        "对",
+        "航空",
+        "产品",
+        "技术",
+        "水平",
+        "、",
+        "产品",
+        "质量",
+        "和",
+        "服务",
+        "水平",
+        "的",
+        "提高",
+        "都",
+        "将",
+        "具有",
+        "重大",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "从",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "产品",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "生命",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "周期",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "角度",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "可以",
+          "head": 11,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "将",
+          "head": 11,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 9,
+          "form": "航空",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "产品",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "划分",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "为",
+          "head": 11,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "研发",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "设计",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "、",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "生产",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "制造",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "、",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "使用",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "维护",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "等",
+          "head": 20,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 22,
+          "form": "环节",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "这些",
+          "head": 25,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 25,
+          "form": "环节",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "具有",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "很",
+          "head": 28,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 28,
+          "form": "强",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 30,
+          "form": "相互",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 31,
+          "form": "关联性",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "基于",
+          "head": 61,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 34,
+          "form": "网络",
+          "head": 33,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "运用",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "通信",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "、",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "传感",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "、",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "云计算",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "、",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "大",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 44,
+          "form": "数据",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "分析",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "等",
+          "head": 45,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 47,
+          "form": "技术",
+          "head": 33,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "将",
+          "head": 61,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 49,
+          "form": "航空",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "产品",
+          "head": 58,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "的",
+          "head": 50,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 52,
+          "form": "设计",
+          "head": 56,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "、",
+          "head": 56,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 54,
+          "form": "制造",
+          "head": 56,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "与",
+          "head": 56,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 56,
+          "form": "使用",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "这些",
+          "head": 58,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 58,
+          "form": "环节",
+          "head": 61,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "有机",
+          "head": 61,
+          "deprel": "dvpmod",
+          "pos": "AD"
+        },
+        {
+          "id": 60,
+          "form": "地",
+          "head": 59,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 61,
+          "form": "联系",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 62,
+          "form": "起来",
+          "head": 61,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 63,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 64,
+          "form": "对",
+          "head": 79,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 65,
+          "form": "航空",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "产品",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "技术",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "水平",
+          "head": 74,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "、",
+          "head": 74,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 70,
+          "form": "产品",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "质量",
+          "head": 74,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "和",
+          "head": 74,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 73,
+          "form": "服务",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "水平",
+          "head": 76,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "的",
+          "head": 74,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 76,
+          "form": "提高",
+          "head": 64,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "都",
+          "head": 79,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 78,
+          "form": "将",
+          "head": 79,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 79,
+          "form": "具有",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 80,
+          "form": "重大",
+          "head": 81,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 81,
+          "form": "意义",
+          "head": 79,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

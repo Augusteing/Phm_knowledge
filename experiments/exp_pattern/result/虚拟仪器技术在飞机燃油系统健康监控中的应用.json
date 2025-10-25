@@ -1,0 +1,44 @@
+[
+  {
+    "subject": "虚拟仪器技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "飞机燃油系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "虚拟仪器技术",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "油压的采集和分析",
+    "object_type": "功能"
+  },
+  {
+    "subject": "油压的采集和分析",
+    "subject_type": "功能",
+    "relation": "用于判断",
+    "object": "燃油系统的故障模式",
+    "object_type": "故障"
+  },
+  {
+    "subject": "虚拟仪器技术",
+    "subject_type": "技术",
+    "relation": "提供",
+    "object": "演示验证的手段",
+    "object_type": "方法"
+  },
+  {
+    "subject": "演示验证的手段",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "燃油系统的故障监控",
+    "object_type": "功能"
+  },
+  {
+    "subject": "虚拟仪器技术",
+    "subject_type": "技术",
+    "relation": "证明",
+    "object": "半物理演示验证实验的可行性",
+    "object_type": "结论"
+  }
+]

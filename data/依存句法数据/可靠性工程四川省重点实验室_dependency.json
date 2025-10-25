@@ -1,0 +1,1117 @@
+{
+  "title": "可靠性工程四川省重点实验室",
+  "summary": "可靠性工程四川省重点实验室依托电子科技大学实施建设,以我国重大技术装备和重大设施和电子产品对可靠性、维修性与故障诊断技术的迫切需求为导向,以国防武器装备、航空器、航天器、大型数控机床、极大规模集成电路制造装备、轨道交通、汽车、工程机械、新能源设备等关键技术装备为主要对象,在大型复杂装备的可靠性建模、分析与评估、复杂装备的可靠性设计、基于可靠性的装备多学科设计优化、大型装备故障诊断与健康管理、剩余寿命预测、复杂装备维修性分析及维护决策、微纳机电系统(MEMS)可靠性设计分析与试验评价、",
+  "analyzed_sentences": [
+    {
+      "sentence": "可靠性工程四川省重点实验室依托电子科技大学实施建设,以我国重大技术装备和重大设施和电子产品对可靠性、维修性与故障诊断技术的迫切需求为导向,以国防武器装备、航空器、航天器、大型数控机床、极大规模集成电路制造装备、轨道交通、汽车、工程机械、新能源设备等关键技术装备为主要对象,在大型复杂装备的可靠性建模、分析与评估、复杂装备的可靠性设计、基于可靠性的装备多学科设计优化、大型装备故障诊断与健康管理、剩余寿命预测、复杂装备维修性分析及维护决策、微纳机电系统(MEMS)可靠性设计分析与试验评价、",
+      "tokens": [
+        "可靠性",
+        "工程",
+        "四川省",
+        "重点",
+        "实验室",
+        "依托",
+        "电子",
+        "科技",
+        "大学",
+        "实施",
+        "建设",
+        ",",
+        "以",
+        "我",
+        "国",
+        "重大",
+        "技术",
+        "装备",
+        "和",
+        "重大",
+        "设施",
+        "和",
+        "电子",
+        "产品",
+        "对",
+        "可靠性",
+        "、",
+        "维修性",
+        "与",
+        "故障",
+        "诊断",
+        "技术",
+        "的",
+        "迫切",
+        "需求",
+        "为",
+        "导向",
+        ",",
+        "以",
+        "国防",
+        "武器",
+        "装备",
+        "、",
+        "航空器",
+        "、",
+        "航天器",
+        "、",
+        "大型",
+        "数控",
+        "机床",
+        "、",
+        "极",
+        "大",
+        "规模",
+        "集成",
+        "电路",
+        "制造",
+        "装备",
+        "、",
+        "轨道",
+        "交通",
+        "、",
+        "汽车",
+        "、",
+        "工程",
+        "机械",
+        "、",
+        "新",
+        "能源",
+        "设备",
+        "等",
+        "关键",
+        "技术",
+        "装备",
+        "为",
+        "主要",
+        "对象",
+        ",",
+        "在",
+        "大型",
+        "复杂",
+        "装备",
+        "的",
+        "可靠性",
+        "建模",
+        "、",
+        "分析",
+        "与",
+        "评估",
+        "、",
+        "复杂",
+        "装备",
+        "的",
+        "可靠性",
+        "设计",
+        "、",
+        "基于",
+        "可靠性",
+        "的",
+        "装备",
+        "多",
+        "学科",
+        "设计",
+        "优化",
+        "、",
+        "大型",
+        "装备",
+        "故障",
+        "诊断",
+        "与",
+        "健康",
+        "管理",
+        "、",
+        "剩余",
+        "寿命",
+        "预测",
+        "、",
+        "复杂",
+        "装备",
+        "维修性",
+        "分析",
+        "及",
+        "维护",
+        "决策",
+        "、",
+        "微纳",
+        "机电",
+        "系统",
+        "(",
+        "MEMS",
+        ")",
+        "可靠性",
+        "设计",
+        "分析",
+        "与",
+        "试验",
+        "评价",
+        "、"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "可靠性",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "工程",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "四川省",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "重点",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "实验室",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "依托",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "电子",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "科技",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "大学",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "实施",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "建设",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "以",
+          "head": 36,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "我",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 15,
+          "form": "国",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "重大",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "技术",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "装备",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "和",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "重大",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "设施",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "和",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "电子",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "产品",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "对",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 26,
+          "form": "可靠性",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "、",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "维修性",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "与",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 30,
+          "form": "故障",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "诊断",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "技术",
+          "head": 25,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 25,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 34,
+          "form": "迫切",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "需求",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "为",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "导向",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "以",
+          "head": 75,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 40,
+          "form": "国防",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "武器",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "装备",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "航空器",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "航天器",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 48,
+          "form": "大型",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 49,
+          "form": "数控",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 50,
+          "form": "机床",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "极",
+          "head": 53,
+          "deprel": "advmod",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "大",
+          "head": 54,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 54,
+          "form": "规模",
+          "head": 56,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "集成",
+          "head": 56,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 56,
+          "form": "电路",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "制造",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "装备",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 60,
+          "form": "轨道",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "交通",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 63,
+          "form": "汽车",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 65,
+          "form": "工程",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "机械",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 68,
+          "form": "新",
+          "head": 69,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 69,
+          "form": "能源",
+          "head": 70,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": "设备",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "等",
+          "head": 70,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 72,
+          "form": "关键",
+          "head": 73,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "技术",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "装备",
+          "head": 39,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "为",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 76,
+          "form": "主要",
+          "head": 77,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 77,
+          "form": "对象",
+          "head": 75,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": ",",
+          "head": 75,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 79,
+          "form": "在",
+          "head": 75,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 80,
+          "form": "大型",
+          "head": 82,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 81,
+          "form": "复杂",
+          "head": 82,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 82,
+          "form": "装备",
+          "head": 89,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": "的",
+          "head": 82,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 84,
+          "form": "可靠性",
+          "head": 85,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "建模",
+          "head": 89,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": "、",
+          "head": 89,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 87,
+          "form": "分析",
+          "head": 89,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": "与",
+          "head": 89,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 89,
+          "form": "评估",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 90,
+          "form": "、",
+          "head": 137,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 91,
+          "form": "复杂",
+          "head": 92,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 92,
+          "form": "装备",
+          "head": 95,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 93,
+          "form": "的",
+          "head": 92,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 94,
+          "form": "可靠性",
+          "head": 95,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 95,
+          "form": "设计",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": "、",
+          "head": 137,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 97,
+          "form": "基于",
+          "head": 100,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 98,
+          "form": "可靠性",
+          "head": 97,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 99,
+          "form": "的",
+          "head": 97,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 100,
+          "form": "装备",
+          "head": 137,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 101,
+          "form": "多",
+          "head": 102,
+          "deprel": "nummod",
+          "pos": "JJ"
+        },
+        {
+          "id": 102,
+          "form": "学科",
+          "head": 104,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 103,
+          "form": "设计",
+          "head": 104,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 104,
+          "form": "优化",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 105,
+          "form": "、",
+          "head": 137,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 106,
+          "form": "大型",
+          "head": 107,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 107,
+          "form": "装备",
+          "head": 109,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 108,
+          "form": "故障",
+          "head": 109,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 109,
+          "form": "诊断",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "与",
+          "head": 112,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 111,
+          "form": "健康",
+          "head": 112,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 112,
+          "form": "管理",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 113,
+          "form": "、",
+          "head": 137,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 114,
+          "form": "剩余",
+          "head": 115,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 115,
+          "form": "寿命",
+          "head": 116,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 116,
+          "form": "预测",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 117,
+          "form": "、",
+          "head": 137,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 118,
+          "form": "复杂",
+          "head": 119,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 119,
+          "form": "装备",
+          "head": 124,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 120,
+          "form": "维修性",
+          "head": 124,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 121,
+          "form": "分析",
+          "head": 124,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 122,
+          "form": "及",
+          "head": 124,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 123,
+          "form": "维护",
+          "head": 124,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 124,
+          "form": "决策",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 125,
+          "form": "、",
+          "head": 137,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 126,
+          "form": "微纳",
+          "head": 128,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 127,
+          "form": "机电",
+          "head": 128,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 128,
+          "form": "系统",
+          "head": 137,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 129,
+          "form": "(",
+          "head": 130,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 130,
+          "form": "MEMS",
+          "head": 128,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 131,
+          "form": ")",
+          "head": 130,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 132,
+          "form": "可靠性",
+          "head": 137,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 133,
+          "form": "设计",
+          "head": 137,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 134,
+          "form": "分析",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 135,
+          "form": "与",
+          "head": 137,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 136,
+          "form": "试验",
+          "head": 137,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 137,
+          "form": "评价",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 138,
+          "form": "、",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "军用飞机健康评估",
+    "subject_type": "研究领域",
+    "relation": "存在",
+    "object": "应用困难",
+    "object_type": "问题"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "研究",
+    "object": "军用飞机",
+    "object_type": "研究对象"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "包含",
+    "object": "面向任务的能力分析",
+    "object_type": "研究内容"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "包含",
+    "object": "基于故障劣化的功能分析",
+    "object_type": "研究内容"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "包含",
+    "object": "参数化的健康评估",
+    "object_type": "研究内容"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "得到",
+    "object": "“飞机-任务功能-影响参数”两级映射",
+    "object_type": "模型"
+  },
+  {
+    "subject": "“飞机-任务功能-影响参数”两级映射",
+    "subject_type": "模型",
+    "relation": "作为",
+    "object": "健康评估的对象",
+    "object_type": "评估对象"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "利用",
+    "object": "劣化度",
+    "object_type": "评估指标"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "利用",
+    "object": "严酷度",
+    "object_type": "评估指标"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "利用",
+    "object": "极大熵改进区间层次分析法",
+    "object_type": "分析方法"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "得到",
+    "object": "飞机健康状态评估结果",
+    "object_type": "评估结果"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "具有",
+    "object": "高可信度",
+    "object_type": "属性"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "评估方法",
+    "relation": "具有",
+    "object": "高工程实用价值",
+    "object_type": "属性"
+  }
+]

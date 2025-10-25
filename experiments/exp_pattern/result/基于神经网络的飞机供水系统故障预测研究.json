@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "故障预测算法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "数据驱动",
+    "object_type": "技术"
+  },
+  {
+    "subject": "故障预测算法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "飞机水/废水系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "AMESim软件",
+    "subject_type": "软件",
+    "relation": "用于建立",
+    "object": "系统仿真模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "故障注入",
+    "subject_type": "方法",
+    "relation": "用于获取",
+    "object": "故障数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "空气压缩机",
+    "subject_type": "组件",
+    "relation": "是",
+    "object": "系统关键部件",
+    "object_type": "组件类别"
+  },
+  {
+    "subject": "神经网络故障预测方法",
+    "subject_type": "方法",
+    "relation": "用于拟合",
+    "object": "系统性能衰退曲线",
+    "object_type": "指标"
+  },
+  {
+    "subject": "神经网络故障预测方法",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "性能衰退趋势",
+    "object_type": "指标"
+  },
+  {
+    "subject": "神经网络故障预测方法",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "产品剩余寿命",
+    "object_type": "指标"
+  },
+  {
+    "subject": "神经网络故障预测方法",
+    "subject_type": "方法",
+    "relation": "便于",
+    "object": "维护保养",
+    "object_type": "活动"
+  },
+  {
+    "subject": "神经网络故障预测方法",
+    "subject_type": "方法",
+    "relation": "保证",
+    "object": "系统可靠性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "神经网络故障预测方法",
+    "subject_type": "方法",
+    "relation": "保证",
+    "object": "系统安全性",
+    "object_type": "属性"
+  }
+]

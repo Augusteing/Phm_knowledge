@@ -1,0 +1,256 @@
+{
+  "entities": [
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AFDX网络",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "应用场景",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障注入装置",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "PC主机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AFDX端系统板卡",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AFDX交换机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "嵌入式系统",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Visual C++ MFC框架",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "方法",
+      "evaluation": "错误"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "软件工具",
+      "evaluation": "错误"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SetTimer函数",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "BAG",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "数据更新间隔",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发送间隔",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "定时器周期",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "均方根误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "基于",
+      "tail": "AFDX网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理功能",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "提出了",
+      "tail": "故障数据配置管理方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "提出了",
+      "tail": "定时发送策略",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "开发了",
+      "tail": "故障注入软件",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "Visual C++ MFC框架",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "利用",
+      "tail": "SQLite数据库",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "基于",
+      "tail": "功能数据集合",
+      "evaluation": "正确"
+    },
+    {
+      "head": "功能数据集合",
+      "relation": "依据",
+      "tail": "接口控制文件",
+      "evaluation": "正确"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "解决",
+      "tail": "数据更新间隔与定时器周期不匹配",
+      "evaluation": "正确"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "利用",
+      "tail": "多媒体定时器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "优于",
+      "tail": "SetTimer函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "BAG",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "非法数据输入",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "特殊信令输入",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "支持",
+      "tail": "故障注入操作",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控消息帧",
+      "evaluation": "正确"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "改进了",
+      "tail": "数据发送精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "均方根误差",
+      "relation": "评估",
+      "tail": "定时发送策略",
+      "evaluation": "正确"
+    }
+  ]
+}

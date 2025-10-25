@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "飞机燃油系统",
+    "subject_type": "系统",
+    "relation": "影响",
+    "object": "飞机安全性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "健康管理技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "飞机燃油系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "健康管理技术",
+    "subject_type": "技术",
+    "relation": "保证",
+    "object": "飞机飞行安全",
+    "object_type": "状态"
+  },
+  {
+    "subject": "供油增压泵叶片磨损",
+    "subject_type": "故障原因",
+    "relation": "导致",
+    "object": "性能退化",
+    "object_type": "状态"
+  },
+  {
+    "subject": "性能退化",
+    "subject_type": "状态",
+    "relation": "发生在",
+    "object": "飞机燃油供油系统",
+    "object_type": "子系统"
+  },
+  {
+    "subject": "Simulink",
+    "subject_type": "软件工具",
+    "relation": "用于建立",
+    "object": "性能退化模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "性能退化模型",
+    "subject_type": "模型",
+    "relation": "仿真",
+    "object": "性能退化历程",
+    "object_type": "过程"
+  },
+  {
+    "subject": "灰色预测模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "飞机燃油供油系统",
+    "subject_type": "子系统",
+    "relation": "具有",
+    "object": "健康状态指数",
+    "object_type": "指标"
+  },
+  {
+    "subject": "故障预测",
+    "subject_type": "任务",
+    "relation": "属于",
+    "object": "健康管理",
+    "object_type": "技术领域"
+  }
+]

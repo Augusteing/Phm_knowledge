@@ -1,0 +1,668 @@
+{
+  "title": "综合化航空电子的系统管理技术",
+  "summary": "随着微电子技术、计算机技术及信息技术的迅猛发展,航空电子系统完成的功能也越来越复杂,已经从原来独立功能子系统逐渐向高度综合化的航空电子系统方向发展。该文研究在综合化航空电子平台下,采用层次化、模块化的系统管理技术,通过健康管理、故障管理、安全管理、配置管理,解决在综合化环境下的可靠性、可用性问题。",
+  "analyzed_sentences": [
+    {
+      "sentence": "随着微电子技术、计算机技术及信息技术的迅猛发展,航空电子系统完成的功能也越来越复杂,已经从原来独立功能子系统逐渐向高度综合化的航空电子系统方向发展",
+      "tokens": [
+        "随着",
+        "微电子",
+        "技术",
+        "、",
+        "计算机",
+        "技术",
+        "及",
+        "信息",
+        "技术",
+        "的",
+        "迅猛",
+        "发展",
+        ",",
+        "航空",
+        "电子",
+        "系统",
+        "完成",
+        "的",
+        "功能",
+        "也",
+        "越来越",
+        "复杂",
+        ",",
+        "已经",
+        "从",
+        "原来",
+        "独立",
+        "功能子",
+        "系统",
+        "逐渐",
+        "向",
+        "高度",
+        "综合化",
+        "的",
+        "航空",
+        "电子",
+        "系统",
+        "方向",
+        "发展"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "随着",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "微电子",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "技术",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "计算机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "技术",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "及",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "信息",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "迅猛",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "发展",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "航空",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "电子",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "系统",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "完成",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "功能",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "也",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 21,
+          "form": "越来越",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "复杂",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "已经",
+          "head": 39,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 25,
+          "form": "从",
+          "head": 39,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 26,
+          "form": "原来",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "独立",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "功能子",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "系统",
+          "head": 25,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "逐渐",
+          "head": 39,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 31,
+          "form": "向",
+          "head": 39,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 32,
+          "form": "高度",
+          "head": 33,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 33,
+          "form": "综合化",
+          "head": 38,
+          "deprel": "rcmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "航空",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "电子",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "系统",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "方向",
+          "head": 31,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "发展",
+          "head": 22,
+          "deprel": "dep",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "该文研究在综合化航空电子平台下,采用层次化、模块化的系统管理技术,通过健康管理、故障管理、安全管理、配置管理,解决在综合化环境下的可靠性、可用性问题",
+      "tokens": [
+        "该",
+        "文",
+        "研究",
+        "在",
+        "综合化",
+        "航空",
+        "电子",
+        "平台",
+        "下",
+        ",",
+        "采用",
+        "层次化",
+        "、",
+        "模块化",
+        "的",
+        "系统",
+        "管理",
+        "技术",
+        ",",
+        "通过",
+        "健康",
+        "管理",
+        "、",
+        "故障",
+        "管理",
+        "、",
+        "安全",
+        "管理",
+        "、",
+        "配置",
+        "管理",
+        ",",
+        "解决",
+        "在",
+        "综合化",
+        "环境",
+        "下",
+        "的",
+        "可靠性",
+        "、",
+        "可用性",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "在",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "综合化",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "航空",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "电子",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "平台",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "下",
+          "head": 4,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "采用",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "层次化",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "模块化",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "系统",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "管理",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "技术",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "通过",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "健康",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "管理",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "故障",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "管理",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "安全",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "管理",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "配置",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "管理",
+          "head": 20,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "解决",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "在",
+          "head": 42,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 35,
+          "form": "综合化",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "环境",
+          "head": 37,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "下",
+          "head": 34,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 39,
+          "form": "可靠性",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "、",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "可用性",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "问题",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

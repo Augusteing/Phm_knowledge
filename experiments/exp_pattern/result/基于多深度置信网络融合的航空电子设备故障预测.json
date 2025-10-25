@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "航空电子设备性能退化趋势",
+    "subject_type": "状态特征",
+    "relation": "存在强耦合关系",
+    "object": "工作环境",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "历史数据和实时数据",
+    "subject_type": "数据",
+    "relation": "存在",
+    "object": "分布差异",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空电子设备故障预测",
+    "subject_type": "研究问题",
+    "relation": "是",
+    "object": "业内难题",
+    "object_type": "评价"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "航空电子设备故障预测",
+    "object_type": "研究问题"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "进行",
+    "object": "含Dropout的迁移训练",
+    "object_type": "技术"
+  },
+  {
+    "subject": "含Dropout的迁移训练",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "数据分布差异带来的预测偏差",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "改进遗传算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "改进遗传算法",
+    "subject_type": "算法",
+    "relation": "用于融合",
+    "object": "DBN模型组",
+    "object_type": "模型"
+  },
+  {
+    "subject": "DBN模型组融合",
+    "subject_type": "技术",
+    "relation": "提升",
+    "object": "故障预测的精准度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "预测精度高于",
+    "object": "单一DBN模型",
+    "object_type": "基线模型"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "预测精度高于",
+    "object": "支持向量机",
+    "object_type": "基线模型"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "应用价值",
+    "object_type": "评价"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "均方根误差为0.008",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "相对误差均值为0.9%",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于多深度置信网络模型融合的故障预测方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "相关度为0.9647",
+    "object_type": "性能指标"
+  }
+]

@@ -1,0 +1,1586 @@
+{
+  "title": "先进战斗机强度设计技术发展与实践",
+  "summary": "新一代先进战斗机对机体平台的要求可以总结为轻重量、长寿命、多功能以及高承载。实现这个目标,除了材料与制造(新材料、新工艺、新结构/装配)的贡献,主机所强度设计/分析/验证技术也必须提升以适应先进战斗机的研制要求。本文阐述了强度设计团队围绕结构完整性要求,近年来在结构强度设计/分析/验证方面的研究成果、技术发展与设计实践,主要包括:面向新一代战斗机强度设计与验证的规范架构,基于多维包线的结构载荷筛选技术,基于统一模型的全机内力分析技术,复合材料整体化结构分析技术,高精度快速细节应力分析技术,内埋武器舱预紧舱门原理与强度设计,双曲面加筋壁板快速建模及声疲劳分析方法,结构故障预测与健康管理系统设计等。上述研究成果已成功应用于新一代战斗机机体平台研制。",
+  "analyzed_sentences": [
+    {
+      "sentence": "新一代先进战斗机对机体平台的要求可以总结为轻重量、长寿命、多功能以及高承载",
+      "tokens": [
+        "新",
+        "一",
+        "代",
+        "先进",
+        "战斗机",
+        "对",
+        "机体",
+        "平台",
+        "的",
+        "要求",
+        "可以",
+        "总结",
+        "为",
+        "轻",
+        "重量",
+        "、",
+        "长",
+        "寿命",
+        "、",
+        "多",
+        "功能",
+        "以及",
+        "高",
+        "承载"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "新",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "一",
+          "head": 3,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 3,
+          "form": "代",
+          "head": 5,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 4,
+          "form": "先进",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "战斗机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "机体",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "平台",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "要求",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "可以",
+          "head": 12,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "为",
+          "head": 12,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "轻",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "重量",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "长",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "寿命",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "多",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "CD"
+        },
+        {
+          "id": 21,
+          "form": "功能",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "以及",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "高",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "承载",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实现这个目标,除了材料与制造(新材料、新工艺、新结构/装配)的贡献,主机所强度设计/分析/验证技术也必须提升以适应先进战斗机的研制要求",
+      "tokens": [
+        "实现",
+        "这",
+        "个",
+        "目标",
+        ",",
+        "除了",
+        "材料",
+        "与",
+        "制造",
+        "(",
+        "新",
+        "材料",
+        "、",
+        "新",
+        "工艺",
+        "、",
+        "新",
+        "结构",
+        "/",
+        "装配",
+        ")",
+        "的",
+        "贡献",
+        ",",
+        "主机",
+        "所",
+        "强度",
+        "设计",
+        "/",
+        "分析",
+        "/",
+        "验证",
+        "技术",
+        "也",
+        "必须",
+        "提升",
+        "以",
+        "适应",
+        "先进",
+        "战斗机",
+        "的",
+        "研制",
+        "要求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实现",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "这",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "个",
+          "head": 2,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 4,
+          "form": "目标",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "除了",
+          "head": 36,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "材料",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "制造",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "(",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "新",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "材料",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "新",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "工艺",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "新",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "结构",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "/",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "装配",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ")",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "贡献",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "主机",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "所",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "MSP"
+        },
+        {
+          "id": 27,
+          "form": "强度",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "设计",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "/",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "分析",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "/",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "验证",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "技术",
+          "head": 36,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "也",
+          "head": 36,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 35,
+          "form": "必须",
+          "head": 36,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "提升",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "以",
+          "head": 38,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 38,
+          "form": "适应",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "先进",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 40,
+          "form": "战斗机",
+          "head": 43,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 40,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "研制",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "要求",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文阐述了强度设计团队围绕结构完整性要求,近年来在结构强度设计/分析/验证方面的研究成果、技术发展与设计实践,主要包括:面向新一代战斗机强度设计与验证的规范架构,基于多维包线的结构载荷筛选技术,基于统一模型的全机内力分析技术,复合材料整体化结构分析技术,高精度快速细节应力分析技术,内埋武器舱预紧舱门原理与强度设计,双曲面加筋壁板快速建模及声疲劳分析方法,结构故障预测与健康管理系统设计等",
+      "tokens": [
+        "本",
+        "文",
+        "阐述",
+        "了",
+        "强度",
+        "设计",
+        "团队",
+        "围绕",
+        "结构",
+        "完整性",
+        "要求",
+        ",",
+        "近年",
+        "来",
+        "在",
+        "结构",
+        "强度",
+        "设计",
+        "/",
+        "分析",
+        "/",
+        "验证",
+        "方面",
+        "的",
+        "研究",
+        "成果",
+        "、",
+        "技术",
+        "发展",
+        "与",
+        "设计",
+        "实践",
+        ",",
+        "主要",
+        "包括",
+        ":",
+        "面向",
+        "新",
+        "一",
+        "代",
+        "战斗机",
+        "强度",
+        "设计",
+        "与",
+        "验证",
+        "的",
+        "规范",
+        "架构",
+        ",",
+        "基于",
+        "多维",
+        "包线",
+        "的",
+        "结构",
+        "载荷",
+        "筛选",
+        "技术",
+        ",",
+        "基于",
+        "统一",
+        "模型",
+        "的",
+        "全",
+        "机",
+        "内力",
+        "分析",
+        "技术",
+        ",",
+        "复合",
+        "材料",
+        "整体化",
+        "结构",
+        "分析",
+        "技术",
+        ",",
+        "高",
+        "精度",
+        "快速",
+        "细节",
+        "应力",
+        "分析",
+        "技术",
+        ",",
+        "内埋",
+        "武器舱",
+        "预紧",
+        "舱门",
+        "原理",
+        "与",
+        "强度",
+        "设计",
+        ",",
+        "双",
+        "曲面",
+        "加筋",
+        "壁板",
+        "快速",
+        "建模",
+        "及",
+        "声",
+        "疲劳",
+        "分析",
+        "方法",
+        ",",
+        "结构",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "系统",
+        "设计",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "阐述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "强度",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "设计",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "团队",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "围绕",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "结构",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "完整性",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "要求",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "近年",
+          "head": 14,
+          "deprel": "lobj",
+          "pos": "NT"
+        },
+        {
+          "id": 14,
+          "form": "来",
+          "head": 32,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": "在",
+          "head": 32,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "结构",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "强度",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "设计",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "/",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "分析",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "/",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "验证",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "方面",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "研究",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "成果",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "、",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "技术",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "发展",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "与",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 31,
+          "form": "设计",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "实践",
+          "head": 35,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": ",",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "主要",
+          "head": 35,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 35,
+          "form": "包括",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": ":",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 37,
+          "form": "面向",
+          "head": 48,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "新",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 39,
+          "form": "一",
+          "head": 40,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 40,
+          "form": "代",
+          "head": 41,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 41,
+          "form": "战斗机",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "强度",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "设计",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "与",
+          "head": 45,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 45,
+          "form": "验证",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "的",
+          "head": 37,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 47,
+          "form": "规范",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "架构",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": ",",
+          "head": 112,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "基于",
+          "head": 57,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 51,
+          "form": "多维",
+          "head": 52,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 52,
+          "form": "包线",
+          "head": 50,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "的",
+          "head": 50,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 54,
+          "form": "结构",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "载荷",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "筛选",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "技术",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": ",",
+          "head": 112,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 59,
+          "form": "基于",
+          "head": 112,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 60,
+          "form": "统一",
+          "head": 61,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 61,
+          "form": "模型",
+          "head": 59,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "的",
+          "head": 59,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 63,
+          "form": "全",
+          "head": 64,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 64,
+          "form": "机",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "内力",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "分析",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "技术",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": ",",
+          "head": 112,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "复合",
+          "head": 70,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 70,
+          "form": "材料",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "整体化",
+          "head": 74,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "结构",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "分析",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "技术",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": ",",
+          "head": 112,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 76,
+          "form": "高",
+          "head": 77,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 77,
+          "form": "精度",
+          "head": 82,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "快速",
+          "head": 79,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 79,
+          "form": "细节",
+          "head": 81,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "应力",
+          "head": 81,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 81,
+          "form": "分析",
+          "head": 82,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "技术",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": ",",
+          "head": 112,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 84,
+          "form": "内埋",
+          "head": 85,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 85,
+          "form": "武器舱",
+          "head": 87,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": "预紧",
+          "head": 87,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 87,
+          "form": "舱门",
+          "head": 91,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": "原理",
+          "head": 91,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 89,
+          "form": "与",
+          "head": 91,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 90,
+          "form": "强度",
+          "head": 91,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 91,
+          "form": "设计",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 92,
+          "form": ",",
+          "head": 112,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 93,
+          "form": "双",
+          "head": 94,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 94,
+          "form": "曲面",
+          "head": 96,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 95,
+          "form": "加筋",
+          "head": 96,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": "壁板",
+          "head": 98,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "快速",
+          "head": 98,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 98,
+          "form": "建模",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 99,
+          "form": "及",
+          "head": 112,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 100,
+          "form": "声",
+          "head": 101,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 101,
+          "form": "疲劳",
+          "head": 102,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 102,
+          "form": "分析",
+          "head": 103,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 103,
+          "form": "方法",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 104,
+          "form": ",",
+          "head": 112,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 105,
+          "form": "结构",
+          "head": 107,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 106,
+          "form": "故障",
+          "head": 107,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 107,
+          "form": "预测",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 108,
+          "form": "与",
+          "head": 112,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 109,
+          "form": "健康",
+          "head": 112,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "管理",
+          "head": 112,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 111,
+          "form": "系统",
+          "head": 112,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 112,
+          "form": "设计",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 113,
+          "form": "等",
+          "head": 112,
+          "deprel": "etc",
+          "pos": "ETC"
+        }
+      ]
+    },
+    {
+      "sentence": "上述研究成果已成功应用于新一代战斗机机体平台研制",
+      "tokens": [
+        "上述",
+        "研究",
+        "成果",
+        "已",
+        "成功",
+        "应用",
+        "于",
+        "新",
+        "一",
+        "代",
+        "战斗机",
+        "机体",
+        "平台",
+        "研制"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "上述",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "研究",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "成果",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "已",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "成功",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "应用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "于",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "新",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "一",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 10,
+          "form": "代",
+          "head": 14,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 11,
+          "form": "战斗机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "机体",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "平台",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "研制",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

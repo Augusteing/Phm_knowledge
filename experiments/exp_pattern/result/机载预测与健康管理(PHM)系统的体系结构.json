@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "故障预测与健康管理(PHM)系统",
+    "subject_type": "系统",
+    "relation": "推动",
+    "object": "视情维修",
+    "object_type": "维修策略"
+  },
+  {
+    "subject": "故障预测与健康管理(PHM)系统",
+    "subject_type": "系统",
+    "relation": "应用于",
+    "object": "作战飞机",
+    "object_type": "装备"
+  },
+  {
+    "subject": "机载PHM系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "层次化体系结构",
+    "object_type": "体系结构"
+  },
+  {
+    "subject": "层次化体系结构",
+    "subject_type": "体系结构",
+    "relation": "针对",
+    "object": "新一代作战飞机",
+    "object_type": "装备"
+  },
+  {
+    "subject": "层次化体系结构",
+    "subject_type": "体系结构",
+    "relation": "包含",
+    "object": "模块/单元层PHM",
+    "object_type": "层级"
+  },
+  {
+    "subject": "层次化体系结构",
+    "subject_type": "体系结构",
+    "relation": "包含",
+    "object": "子系统级PHM",
+    "object_type": "层级"
+  },
+  {
+    "subject": "层次化体系结构",
+    "subject_type": "体系结构",
+    "relation": "包含",
+    "object": "区域级PHM",
+    "object_type": "层级"
+  },
+  {
+    "subject": "层次化体系结构",
+    "subject_type": "体系结构",
+    "relation": "包含",
+    "object": "平台级PHM",
+    "object_type": "层级"
+  }
+]

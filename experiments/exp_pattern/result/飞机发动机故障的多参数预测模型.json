@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "针对",
+    "object": "飞机发动机故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "借鉴",
+    "object": "灰色预测建模",
+    "object_type": "方法"
+  },
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "借鉴",
+    "object": "信息融合",
+    "object_type": "思想"
+  },
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "预测的准确性",
+    "object_type": "指标"
+  },
+  {
+    "subject": "飞机发动机故障",
+    "subject_type": "故障",
+    "relation": "表现出",
+    "object": "多种特征信号",
+    "object_type": "信号"
+  },
+  {
+    "subject": "特征信号",
+    "subject_type": "信号",
+    "relation": "反映",
+    "object": "飞机发动机故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "传统的基于灰色理论的飞机发动机故障预测",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "预测准确性不足",
+    "object_type": "问题"
+  },
+  {
+    "subject": "特征参数时间序列",
+    "subject_type": "数据",
+    "relation": "提供",
+    "object": "预测信息",
+    "object_type": "信息"
+  },
+  {
+    "subject": "仿真验证结果",
+    "subject_type": "验证",
+    "relation": "表明",
+    "object": "多参数预测模型具有较高的预测准确性",
+    "object_type": "结论"
+  }
+]

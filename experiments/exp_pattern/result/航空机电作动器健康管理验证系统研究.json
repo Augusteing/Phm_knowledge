@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "用于验证",
+    "object": "健康管理智能算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "用于评估",
+    "object": "推理模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "验证系统硬件平台",
+    "object_type": "硬件"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "通用软件运行环境",
+    "object_type": "软件环境"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "验证与评估模块",
+    "object_type": "模块"
+  },
+  {
+    "subject": "通用软件运行环境",
+    "subject_type": "软件环境",
+    "relation": "基于",
+    "object": "组件模式",
+    "object_type": "模式"
+  },
+  {
+    "subject": "验证与评估模块",
+    "subject_type": "模块",
+    "relation": "支持",
+    "object": "实时显示功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "提出",
+    "object": "数学建模方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "数学建模方法",
+    "subject_type": "方法",
+    "relation": "针对",
+    "object": "电机",
+    "object_type": "组件"
+  },
+  {
+    "subject": "数学建模方法",
+    "subject_type": "方法",
+    "relation": "针对",
+    "object": "控制器",
+    "object_type": "组件"
+  },
+  {
+    "subject": "数学建模方法",
+    "subject_type": "方法",
+    "relation": "针对",
+    "object": "齿轮减速器",
+    "object_type": "组件"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "提出",
+    "object": "故障注入方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障注入方法",
+    "subject_type": "方法",
+    "relation": "针对",
+    "object": "主要失效模式",
+    "object_type": "失效模式"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "支持",
+    "object": "健康管理算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "支持",
+    "object": "系统模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "航空机电作动器健康管理验证系统",
+    "subject_type": "系统",
+    "relation": "在线显示",
+    "object": "验证与评估信息",
+    "object_type": "信息"
+  }
+]

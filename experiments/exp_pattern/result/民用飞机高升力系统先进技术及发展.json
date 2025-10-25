@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "飞机高升力系统",
+    "subject_type": "系统",
+    "relation": "存在",
+    "object": "技术问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "飞机高升力系统",
+    "subject_type": "系统",
+    "relation": "存在",
+    "object": "技术瓶颈",
+    "object_type": "问题"
+  },
+  {
+    "subject": "新一代典型飞机高升力系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "先进技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "发展趋势预测",
+    "subject_type": "研究活动",
+    "relation": "结合",
+    "object": "绿色航空理念",
+    "object_type": "理念"
+  },
+  {
+    "subject": "发展趋势预测",
+    "subject_type": "研究活动",
+    "relation": "利用",
+    "object": "TRIZ",
+    "object_type": "理论"
+  },
+  {
+    "subject": "TRIZ",
+    "subject_type": "理论",
+    "relation": "全称是",
+    "object": "Theory of Inventive Problem Solving",
+    "object_type": "理论"
+  },
+  {
+    "subject": "分析研究工作",
+    "subject_type": "研究活动",
+    "relation": "包含维度",
+    "object": "飞机层级",
+    "object_type": "维度"
+  },
+  {
+    "subject": "分析研究工作",
+    "subject_type": "研究活动",
+    "relation": "包含维度",
+    "object": "系统层级",
+    "object_type": "维度"
+  },
+  {
+    "subject": "分析研究工作",
+    "subject_type": "研究活动",
+    "relation": "包含维度",
+    "object": "关键部件技术",
+    "object_type": "维度"
+  },
+  {
+    "subject": "分析研究工作",
+    "subject_type": "研究活动",
+    "relation": "包含维度",
+    "object": "材料",
+    "object_type": "维度"
+  },
+  {
+    "subject": "研究结论",
+    "subject_type": "成果",
+    "relation": "提供支持",
+    "object": "民用飞机高升力系统先进技术应用",
+    "object_type": "应用"
+  }
+]

@@ -1,0 +1,1490 @@
+{
+  "title": "基于静电互相关灵敏度加权的气路碎片监测",
+  "summary": "由于静电传感器阵列(ESA)安装位置及电极数目受到工作环境限制,导致航空发动机故障预测与健康管理(PHM)系统的线性独立测量信息数较少。针对此问题,提出了一种基于静电互相关(CC)灵敏度加权的气路碎片监测方法,在同一电极数目的条件下利用互相关聚焦原理有效增加了能够表征不同敏感区域的测量信息。在此基础上设计了8电极ESA,建立了不同电极对的互相关灵敏度分布,并以获取的16个相关速度值对其进行加权计算,计算结果反映了带电碎片的速度和位置信息。带式静电实验装置和颗粒落体实验装置的实验结果验证了所提方法的有效性,对单颗粒与多颗粒的监测结果和实际分布的平均相关系数分别达到了0.668与0.652,提高了PHM系统的监测信息量和稳定性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "由于静电传感器阵列(ESA)安装位置及电极数目受到工作环境限制,导致航空发动机故障预测与健康管理(PHM)系统的线性独立测量信息数较少",
+      "tokens": [
+        "由于",
+        "静电",
+        "传感器",
+        "阵列",
+        "(",
+        "ESA",
+        ")",
+        "安装",
+        "位置",
+        "及",
+        "电极",
+        "数目",
+        "受到",
+        "工作",
+        "环境",
+        "限制",
+        ",",
+        "导致",
+        "航空",
+        "发动机",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "系统",
+        "的",
+        "线性",
+        "独立",
+        "测量",
+        "信息数",
+        "较",
+        "少"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "由于",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "静电",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "传感器",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "阵列",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "(",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "ESA",
+          "head": 4,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ")",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "安装",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "位置",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "及",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "电极",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "数目",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "受到",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "工作",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "环境",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "限制",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "导致",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "航空",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "发动机",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "预测",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "与",
+          "head": 29,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "健康",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "管理",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "(",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "PHM",
+          "head": 29,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": ")",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "系统",
+          "head": 34,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 31,
+          "form": "线性",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "独立",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 33,
+          "form": "测量",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "信息数",
+          "head": 36,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "较",
+          "head": 36,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 36,
+          "form": "少",
+          "head": 18,
+          "deprel": "ccomp",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "针对此问题,提出了一种基于静电互相关(CC)灵敏度加权的气路碎片监测方法,在同一电极数目的条件下利用互相关聚焦原理有效增加了能够表征不同敏感区域的测量信息",
+      "tokens": [
+        "针对",
+        "此",
+        "问题",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "基于",
+        "静电",
+        "互",
+        "相关",
+        "(",
+        "CC",
+        ")",
+        "灵敏度",
+        "加权",
+        "的",
+        "气路",
+        "碎片",
+        "监测",
+        "方法",
+        ",",
+        "在",
+        "同",
+        "一",
+        "电极",
+        "数目",
+        "的",
+        "条件",
+        "下",
+        "利用",
+        "互",
+        "相关",
+        "聚焦",
+        "原理",
+        "有效",
+        "增加",
+        "了",
+        "能够",
+        "表征",
+        "不同",
+        "敏感",
+        "区域",
+        "的",
+        "测量",
+        "信息"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "一",
+          "head": 8,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 8,
+          "form": "种",
+          "head": 22,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 9,
+          "form": "基于",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "静电",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "互",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "相关",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "(",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "CC",
+          "head": 12,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 15,
+          "form": ")",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "灵敏度",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "加权",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "气路",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "碎片",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "监测",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "方法",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "在",
+          "head": 32,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "同",
+          "head": 28,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 26,
+          "form": "一",
+          "head": 25,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 27,
+          "form": "电极",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "数目",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "条件",
+          "head": 31,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "下",
+          "head": 24,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 32,
+          "form": "利用",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "互",
+          "head": 34,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 34,
+          "form": "相关",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "聚焦",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "原理",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "有效",
+          "head": 38,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 38,
+          "form": "增加",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "了",
+          "head": 38,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 40,
+          "form": "能够",
+          "head": 41,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "表征",
+          "head": 47,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "不同",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 43,
+          "form": "敏感",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 44,
+          "form": "区域",
+          "head": 41,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "的",
+          "head": 41,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 46,
+          "form": "测量",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "信息",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在此基础上设计了8电极ESA,建立了不同电极对的互相关灵敏度分布,并以获取的16个相关速度值对其进行加权计算,计算结果反映了带电碎片的速度和位置信息",
+      "tokens": [
+        "在",
+        "此",
+        "基础",
+        "上",
+        "设计",
+        "了",
+        "8",
+        "电极",
+        "ESA",
+        ",",
+        "建立",
+        "了",
+        "不同",
+        "电极",
+        "对",
+        "的",
+        "互",
+        "相关",
+        "灵敏度",
+        "分布",
+        ",",
+        "并",
+        "以",
+        "获取",
+        "的",
+        "16",
+        "个",
+        "相关",
+        "速度值",
+        "对",
+        "其",
+        "进行",
+        "加权",
+        "计算",
+        ",",
+        "计算",
+        "结果",
+        "反映",
+        "了",
+        "带",
+        "电",
+        "碎片",
+        "的",
+        "速度",
+        "和",
+        "位置",
+        "信息"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "基础",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "设计",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "8",
+          "head": 8,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 8,
+          "form": "电极",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "ESA",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "建立",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "不同",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "电极",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "对",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "互",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "相关",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "灵敏度",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "分布",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "并",
+          "head": 32,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "以",
+          "head": 32,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 24,
+          "form": "获取",
+          "head": 29,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "的",
+          "head": 24,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 26,
+          "form": "16",
+          "head": 27,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 27,
+          "form": "个",
+          "head": 29,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 28,
+          "form": "相关",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "速度值",
+          "head": 23,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "对",
+          "head": 32,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 31,
+          "form": "其",
+          "head": 30,
+          "deprel": "pobj",
+          "pos": "PN"
+        },
+        {
+          "id": 32,
+          "form": "进行",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "加权",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "计算",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "计算",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "结果",
+          "head": 38,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "反映",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "了",
+          "head": 38,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 40,
+          "form": "带",
+          "head": 47,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "电",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "碎片",
+          "head": 47,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "的",
+          "head": 42,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 44,
+          "form": "速度",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "和",
+          "head": 46,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 46,
+          "form": "位置",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "信息",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "带式静电实验装置和颗粒落体实验装置的实验结果验证了所提方法的有效性,对单颗粒与多颗粒的监测结果和实际分布的平均相关系数分别达到了0.668与0.652,提高了PHM系统的监测信息量和稳定性",
+      "tokens": [
+        "带式",
+        "静电",
+        "实验",
+        "装置",
+        "和",
+        "颗粒",
+        "落体",
+        "实验",
+        "装置",
+        "的",
+        "实验",
+        "结果",
+        "验证",
+        "了",
+        "所",
+        "提",
+        "方法",
+        "的",
+        "有效性",
+        ",",
+        "对",
+        "单",
+        "颗粒",
+        "与",
+        "多",
+        "颗粒",
+        "的",
+        "监测",
+        "结果",
+        "和",
+        "实际",
+        "分布",
+        "的",
+        "平均",
+        "相关",
+        "系数",
+        "分别",
+        "达到",
+        "了",
+        "0.668",
+        "与",
+        "0.652",
+        ",",
+        "提高",
+        "了",
+        "PHM",
+        "系统",
+        "的",
+        "监测",
+        "信息量",
+        "和",
+        "稳定性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "带式",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "静电",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "实验",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "装置",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "颗粒",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "落体",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "实验",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "装置",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "实验",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "结果",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "了",
+          "head": 13,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 15,
+          "form": "所",
+          "head": 16,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 16,
+          "form": "提",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "方法",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "有效性",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "对",
+          "head": 36,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 22,
+          "form": "单",
+          "head": 23,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 23,
+          "form": "颗粒",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "与",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "多",
+          "head": 26,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 26,
+          "form": "颗粒",
+          "head": 21,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 28,
+          "form": "监测",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "结果",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "和",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 31,
+          "form": "实际",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 32,
+          "form": "分布",
+          "head": 36,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 34,
+          "form": "平均",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "相关",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "系数",
+          "head": 38,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "分别",
+          "head": 38,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 38,
+          "form": "达到",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "了",
+          "head": 38,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 40,
+          "form": "0.668",
+          "head": 42,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 41,
+          "form": "与",
+          "head": 42,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 42,
+          "form": "0.652",
+          "head": 38,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "提高",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "了",
+          "head": 44,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 46,
+          "form": "PHM",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "系统",
+          "head": 52,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 47,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 49,
+          "form": "监测",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "信息量",
+          "head": 52,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "和",
+          "head": 52,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 52,
+          "form": "稳定性",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

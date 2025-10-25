@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "遗传神经网络",
+    "subject_type": "模型",
+    "relation": "实现",
+    "object": "故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "故障预测",
+    "subject_type": "任务",
+    "relation": "实现",
+    "object": "视情维修",
+    "object_type": "策略"
+  },
+  {
+    "subject": "遗传神经网络",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "保障能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "遗传神经网络",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "基本神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "改进遗传算法",
+    "subject_type": "算法",
+    "relation": "用于",
+    "object": "神经网络的权重学习",
+    "object_type": "过程"
+  },
+  {
+    "subject": "改进遗传算法",
+    "subject_type": "算法",
+    "relation": "构建",
+    "object": "遗传神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "遗传算法",
+    "subject_type": "算法",
+    "relation": "采用",
+    "object": "实数编码方式",
+    "object_type": "方法"
+  },
+  {
+    "subject": "遗传算法",
+    "subject_type": "算法",
+    "relation": "采用",
+    "object": "自适应的交叉率",
+    "object_type": "参数"
+  },
+  {
+    "subject": "遗传算法",
+    "subject_type": "算法",
+    "relation": "采用",
+    "object": "自适应的变异率",
+    "object_type": "参数"
+  },
+  {
+    "subject": "遗传神经网络",
+    "subject_type": "模型",
+    "relation": "利用",
+    "object": "装备特征参数数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "遗传神经网络",
+    "subject_type": "模型",
+    "relation": "预测",
+    "object": "装备特征参数的退化趋势",
+    "object_type": "指标"
+  },
+  {
+    "subject": "故障预测",
+    "subject_type": "任务",
+    "relation": "应用于",
+    "object": "航空装备",
+    "object_type": "研究对象"
+  }
+]

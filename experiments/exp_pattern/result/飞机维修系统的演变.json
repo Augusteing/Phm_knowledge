@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "按键测试",
+    "subject_type": "测试方法",
+    "relation": "是雏形",
+    "object": "机内测试设备(BITE)",
+    "object_type": "系统/技术"
+  },
+  {
+    "subject": "数字式系统",
+    "subject_type": "系统/技术",
+    "relation": "由...组成",
+    "object": "电子硬件和软件",
+    "object_type": "组件"
+  },
+  {
+    "subject": "数字式系统",
+    "subject_type": "系统/技术",
+    "relation": "应用于",
+    "object": "A320飞机",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "数字式系统",
+    "subject_type": "系统/技术",
+    "relation": "应用于",
+    "object": "波音737",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "数字式系统",
+    "subject_type": "系统/技术",
+    "relation": "应用于",
+    "object": "波音757",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "数字式系统",
+    "subject_type": "系统/技术",
+    "relation": "应用于",
+    "object": "波音767",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "数字式系统",
+    "subject_type": "系统/技术",
+    "relation": "应用于",
+    "object": "MD-90",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "数字式系统",
+    "subject_type": "系统/技术",
+    "relation": "挑战",
+    "object": "飞机维修人员",
+    "object_type": "人员"
+  },
+  {
+    "subject": "飞机维修人员",
+    "subject_type": "人员",
+    "relation": "执行",
+    "object": "故障检测和隔离",
+    "object_type": "任务"
+  },
+  {
+    "subject": "飞机维修人员",
+    "subject_type": "人员",
+    "relation": "依赖",
+    "object": "数字式系统",
+    "object_type": "系统/技术"
+  },
+  {
+    "subject": "波音727",
+    "subject_type": "飞机型号",
+    "relation": "采用",
+    "object": "机械和模拟系统",
+    "object_type": "系统/技术"
+  },
+  {
+    "subject": "经典型波音737",
+    "subject_type": "飞机型号",
+    "relation": "采用",
+    "object": "机械和模拟系统",
+    "object_type": "系统/技术"
+  },
+  {
+    "subject": "DC-9",
+    "subject_type": "飞机型号",
+    "relation": "采用",
+    "object": "机械和模拟系统",
+    "object_type": "系统/技术"
+  },
+  {
+    "subject": "MD-80",
+    "subject_type": "飞机型号",
+    "relation": "采用",
+    "object": "机械和模拟系统",
+    "object_type": "系统/技术"
+  }
+]

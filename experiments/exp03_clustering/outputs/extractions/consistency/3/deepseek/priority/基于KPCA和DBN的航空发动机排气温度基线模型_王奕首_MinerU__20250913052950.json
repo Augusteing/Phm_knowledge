@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "排气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "算法"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型"
+    },
+    {
+      "name": "EGT基线模型",
+      "type": "模型"
+    },
+    {
+      "name": "快速存取数据",
+      "type": "数据集"
+    },
+    {
+      "name": "高斯函数",
+      "type": "算法"
+    },
+    {
+      "name": "健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "气路监控",
+      "type": "研究方法"
+    },
+    {
+      "name": "神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法"
+    },
+    {
+      "name": "BP神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "受限玻尔兹曼机",
+      "type": "模型"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "KPCA-DBN混合模型",
+      "type": "模型"
+    },
+    {
+      "name": "GA-BP网络",
+      "type": "模型"
+    },
+    {
+      "name": "DBN网络",
+      "type": "模型"
+    }
+  ],
+  "relations": [
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "降维处理"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "基于",
+      "tail": "受限玻尔兹曼机"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "提出了",
+      "tail": "EGT基线模型"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "GA-BP网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "DBN网络"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯函数"
+    },
+    {
+      "head": "EGT基线模型",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "EGT基线模型",
+      "relation": "预测",
+      "tail": "排气温度"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "输入",
+      "tail": "降维数据"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "提高",
+      "tail": "模型精度"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "降低",
+      "tail": "网络结构复杂度"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "用于",
+      "tail": "模型精度评价"
+    },
+    {
+      "head": "健康管理",
+      "relation": "包括",
+      "tail": "气路监控"
+    },
+    {
+      "head": "神经网络",
+      "relation": "演化成",
+      "tail": "深度置信网络"
+    },
+    {
+      "head": "遗传算法",
+      "relation": "优化",
+      "tail": "BP神经网络"
+    }
+  ]
+}

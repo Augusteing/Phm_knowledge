@@ -1,0 +1,970 @@
+{
+  "title": "基于遗传神经网络的航空装备故障预测",
+  "summary": "为在武器系统故障发生前实现预测、实现装备的视情维修,开展基于遗传神经网络的故障预测技术研究。采用实数编码方式和自适应的交叉率、变异率改进遗传算法,并将改进遗传算法用于神经网络的权重学习得到遗传神经网络。利用监测到的装备特征参数数据进行网络训练,然后将遗传神经网络预测装备特征参数的退化趋势。预测实例表明遗传神经网络可在故障发生前实现故障预测,较基本神经网络有较大性能改善,可提高武器装备的保障能力,实现视情维修。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为在武器系统故障发生前实现预测、实现装备的视情维修,开展基于遗传神经网络的故障预测技术研究",
+      "tokens": [
+        "为",
+        "在",
+        "武器",
+        "系统",
+        "故障",
+        "发生",
+        "前",
+        "实现",
+        "预测",
+        "、",
+        "实现",
+        "装备",
+        "的",
+        "视情",
+        "维修",
+        ",",
+        "开展",
+        "基于",
+        "遗传",
+        "神经",
+        "网络",
+        "的",
+        "故障",
+        "预测",
+        "技术",
+        "研究"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "武器",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "故障",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发生",
+          "head": 7,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "前",
+          "head": 2,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "实现",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "实现",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "装备",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "视情",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "维修",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "开展",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "基于",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 19,
+          "form": "遗传",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "神经",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "网络",
+          "head": 18,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "故障",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "预测",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "技术",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "研究",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "采用实数编码方式和自适应的交叉率、变异率改进遗传算法,并将改进遗传算法用于神经网络的权重学习得到遗传神经网络",
+      "tokens": [
+        "采用",
+        "实数",
+        "编码",
+        "方式",
+        "和",
+        "自适应",
+        "的",
+        "交叉率",
+        "、",
+        "变异率",
+        "改进",
+        "遗传",
+        "算法",
+        ",",
+        "并",
+        "将",
+        "改进",
+        "遗传",
+        "算法",
+        "用",
+        "于",
+        "神经",
+        "网络",
+        "的",
+        "权重",
+        "学习",
+        "得到",
+        "遗传",
+        "神经",
+        "网络"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "实数",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "编码",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "方式",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "自适应",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "交叉率",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "变异率",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "改进",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "遗传",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "算法",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "将",
+          "head": 20,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 17,
+          "form": "改进",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "遗传",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "算法",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "用",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "于",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 22,
+          "form": "神经",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "网络",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "权重",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "学习",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "得到",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "遗传",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "神经",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "网络",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用监测到的装备特征参数数据进行网络训练,然后将遗传神经网络预测装备特征参数的退化趋势",
+      "tokens": [
+        "利用",
+        "监测",
+        "到",
+        "的",
+        "装备",
+        "特征",
+        "参数",
+        "数据",
+        "进行",
+        "网络",
+        "训练",
+        ",",
+        "然后",
+        "将",
+        "遗传",
+        "神经",
+        "网络",
+        "预测",
+        "装备",
+        "特征",
+        "参数",
+        "的",
+        "退化",
+        "趋势"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "监测",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "到",
+          "head": 2,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "装备",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "特征",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "参数",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "数据",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "网络",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "训练",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "然后",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "将",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 15,
+          "form": "遗传",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "神经",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "网络",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "预测",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "装备",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "特征",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "参数",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "退化",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "趋势",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "预测实例表明遗传神经网络可在故障发生前实现故障预测,较基本神经网络有较大性能改善,可提高武器装备的保障能力,实现视情维修",
+      "tokens": [
+        "预测",
+        "实例",
+        "表明",
+        "遗传",
+        "神经",
+        "网络",
+        "可",
+        "在",
+        "故障",
+        "发生",
+        "前",
+        "实现",
+        "故障",
+        "预测",
+        ",",
+        "较",
+        "基本",
+        "神经",
+        "网络",
+        "有",
+        "较",
+        "大",
+        "性能",
+        "改善",
+        ",",
+        "可",
+        "提高",
+        "武器",
+        "装备",
+        "的",
+        "保障",
+        "能力",
+        ",",
+        "实现",
+        "视",
+        "情",
+        "维修"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "预测",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "实例",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "遗传",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "神经",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "网络",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "可",
+          "head": 12,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "在",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "发生",
+          "head": 11,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "前",
+          "head": 8,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 12,
+          "form": "实现",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "预测",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "较",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "基本",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "神经",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "网络",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "有",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VE"
+        },
+        {
+          "id": 21,
+          "form": "较",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "大",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 23,
+          "form": "性能",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "改善",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "可",
+          "head": 27,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "提高",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "武器",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "装备",
+          "head": 32,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 31,
+          "form": "保障",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "能力",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": ",",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "实现",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "视",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "情",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "维修",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

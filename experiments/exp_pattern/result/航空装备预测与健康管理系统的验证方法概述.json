@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "PHM验证与确认方法",
+    "subject_type": "方法",
+    "relation": "制约",
+    "object": "PHM技术成果工程转化",
+    "object_type": "过程"
+  },
+  {
+    "subject": "PHM系统全寿命周期",
+    "subject_type": "生命周期",
+    "relation": "包含",
+    "object": "验证流程",
+    "object_type": "流程"
+  },
+  {
+    "subject": "验证流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "需求分析阶段",
+    "object_type": "阶段"
+  },
+  {
+    "subject": "验证流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "设计研制阶段",
+    "object_type": "阶段"
+  },
+  {
+    "subject": "验证流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "使用与维护阶段",
+    "object_type": "阶段"
+  },
+  {
+    "subject": "PHM验证和确认方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "航电PHM",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "PHM验证和确认方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "机电/动力PHM",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "PHM验证和确认方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "结构SHM",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "航空装备预测与健康管理系统的验证方法概述",
+    "subject_type": "文献",
+    "relation": "提出",
+    "object": "验证流程",
+    "object_type": "流程"
+  },
+  {
+    "subject": "航空装备预测与健康管理系统的验证方法概述",
+    "subject_type": "文献",
+    "relation": "阐述",
+    "object": "PHM验证和确认方法",
+    "object_type": "方法"
+  }
+]

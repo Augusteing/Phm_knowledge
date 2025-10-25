@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "基于KPCA和DBN的建模方法",
+    "subject_type": "方法",
+    "relation": "构建",
+    "object": "航空发动机排气温度基线模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "航空发动机排气温度基线模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "航空发动机健康管理",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "飞机",
+    "subject_type": "设备",
+    "relation": "配装",
+    "object": "CFM56-7B发动机",
+    "object_type": "组件"
+  },
+  {
+    "subject": "飞机",
+    "subject_type": "设备",
+    "relation": "产生",
+    "object": "快速存取数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "快速存取数据",
+    "subject_type": "数据",
+    "relation": "作为",
+    "object": "原始数据样本",
+    "object_type": "数据"
+  },
+  {
+    "subject": "核主成分分析",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "降维处理",
+    "object_type": "过程"
+  },
+  {
+    "subject": "核主成分分析",
+    "subject_type": "方法",
+    "relation": "选用",
+    "object": "高斯函数",
+    "object_type": "函数"
+  },
+  {
+    "subject": "高斯函数",
+    "subject_type": "函数",
+    "relation": "作为",
+    "object": "核函数",
+    "object_type": "概念"
+  },
+  {
+    "subject": "降维后的数据",
+    "subject_type": "数据",
+    "relation": "作为输入",
+    "object": "深度置信网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "深度置信网络",
+    "subject_type": "模型",
+    "relation": "建立",
+    "object": "航空发动机EGT基线模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "QAR数据",
+    "subject_type": "数据",
+    "relation": "验证",
+    "object": "航空发动机EGT基线模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "基于KPCA和DBN的建模方法",
+    "subject_type": "方法",
+    "relation": "降低",
+    "object": "网络结构复杂度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于KPCA和DBN的建模方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "模型精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于KPCA和DBN的建模方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "传统神经网络建模方法",
+    "object_type": "方法"
+  }
+]

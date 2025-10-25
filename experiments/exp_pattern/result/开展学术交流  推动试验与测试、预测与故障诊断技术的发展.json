@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "学术交流",
+    "subject_type": "活动",
+    "relation": "推动",
+    "object": "试验与测试技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "学术交流",
+    "subject_type": "活动",
+    "relation": "推动",
+    "object": "预测与故障诊断技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "自动化测试",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航天",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "先进总线技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "故障诊断技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "兵器",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "故障诊断技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "船舶",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "故障诊断技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "核工业",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "中国计算机自动测量与控制技术协会",
+    "subject_type": "组织机构",
+    "relation": "推动",
+    "object": "自动化测试",
+    "object_type": "技术"
+  },
+  {
+    "subject": "国防科技工业自动化测试技术研究应用中心",
+    "subject_type": "组织机构",
+    "relation": "推动",
+    "object": "自动化测试",
+    "object_type": "技术"
+  },
+  {
+    "subject": "北京航天测控技术有限公司",
+    "subject_type": "组织机构",
+    "relation": "推动",
+    "object": "自动化测试",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能诊断与健康管理",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "高速交通工具",
+    "object_type": "应用领域"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "智能BIT",
+    "subject_type": "技术",
+    "relation": "旨在提高",
+    "object": "故障诊断效能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "智能BIT",
+    "subject_type": "技术",
+    "relation": "旨在降低",
+    "object": "虚警率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "包含",
+    "object": "部件级故障模式分析",
+    "object_type": "方法"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "包含",
+    "object": "模糊神经网络故障诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "包含",
+    "object": "系统级故障预测",
+    "object_type": "方法"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "包含",
+    "object": "构建集成神经网络",
+    "object_type": "方法"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "用于发展",
+    "object": "飞机电源系统智能BIT",
+    "object_type": "技术"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "提高",
+    "object": "飞机电源系统可靠性",
+    "object_type": "系统属性"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "提高",
+    "object": "飞机电源系统测试性",
+    "object_type": "系统属性"
+  },
+  {
+    "subject": "系统解决方案",
+    "subject_type": "方案",
+    "relation": "提高",
+    "object": "飞机电源系统维护性",
+    "object_type": "系统属性"
+  }
+]

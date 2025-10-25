@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "Copula相似性",
+      "type": "方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "剩余寿命预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "线性退化模型",
+      "type": "模型"
+    },
+    {
+      "name": "Copula函数",
+      "type": "方法"
+    },
+    {
+      "name": "Kendall秩相关系数",
+      "type": "性能指标"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "预测与健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "性能退化",
+      "type": "故障模式"
+    },
+    {
+      "name": "非线性相关关系",
+      "type": "理论基础"
+    },
+    {
+      "name": "传感器",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "Ps30",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "T50",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "BPR",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "标准差",
+      "type": "性能指标"
+    },
+    {
+      "name": "传统方法",
+      "type": "方法"
+    },
+    {
+      "name": "Frank Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Clayton Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Gumbel Copula",
+      "type": "模型"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Copula相似性",
+      "relation": "提出了",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "剩余寿命预测",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "工作状态分类"
+    },
+    {
+      "head": "线性退化模型",
+      "relation": "建立了",
+      "tail": "退化模型"
+    },
+    {
+      "head": "线性退化模型",
+      "relation": "用于",
+      "tail": "传感器选择"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "基于",
+      "tail": "非线性相关关系"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "用于",
+      "tail": "相关性建模"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "构建了",
+      "tail": "Copula结构"
+    },
+    {
+      "head": "Copula相似性",
+      "relation": "基于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "Kendall秩相关系数",
+      "relation": "用于",
+      "tail": "相似性度量"
+    },
+    {
+      "head": "C-MAPSS数据集",
+      "relation": "支持",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "Ps30",
+      "relation": "用于",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "T50",
+      "relation": "用于",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "BPR",
+      "relation": "用于",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "Copula相似性",
+      "relation": "优于",
+      "tail": "传统方法"
+    },
+    {
+      "head": "标准差",
+      "relation": "用于",
+      "tail": "模型评价"
+    },
+    {
+      "head": "Frank Copula",
+      "relation": "用于",
+      "tail": "相关性建模"
+    },
+    {
+      "head": "Clayton Copula",
+      "relation": "用于",
+      "tail": "相关性建模"
+    },
+    {
+      "head": "Gumbel Copula",
+      "relation": "用于",
+      "tail": "相关性建模"
+    }
+  ]
+}

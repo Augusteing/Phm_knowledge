@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "航空电子预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "失效机理分析",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空电子预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "应力损伤评估",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空电子预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "故障先兆",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空电子预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "预警电路(canary)",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空电子预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "应用",
+    "object": "信息融合",
+    "object_type": "实现方法"
+  },
+  {
+    "subject": "航空电子预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "应用",
+    "object": "人工智能",
+    "object_type": "实现方法"
+  },
+  {
+    "subject": "航空电子预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "应用",
+    "object": "数据挖掘与预测",
+    "object_type": "实现方法"
+  },
+  {
+    "subject": "新一代综合模块化航空电子系统",
+    "subject_type": "系统架构",
+    "relation": "集成",
+    "object": "PHM",
+    "object_type": "技术"
+  }
+]

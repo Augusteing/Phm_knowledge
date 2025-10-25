@@ -1,0 +1,929 @@
+{
+  "title": "GA-WNN在飞机引气系统故障预测的研究",
+  "summary": "飞机的引气系统的正常运行对飞机的安全起着至关重要的作用,而引气系统的关键参数变化表现为非线性特性,提高了引气系统故障预测的难度。首先建立故障监控模型,然后根据故障预测的非线性特性,提出一种基于遗传算法的小波神经网络故障预测模型。模型结合遗传算法全局优化搜索能力和小波神经网络良好局部特性,避免BP神经网络缺陷。最后通过MATLAB仿真,验证故障预测模型的准确性。上述模型对飞机引气系统故障预测提高预测精度具有重要意义。",
+  "analyzed_sentences": [
+    {
+      "sentence": "飞机的引气系统的正常运行对飞机的安全起着至关重要的作用,而引气系统的关键参数变化表现为非线性特性,提高了引气系统故障预测的难度",
+      "tokens": [
+        "飞机",
+        "的",
+        "引气",
+        "系统",
+        "的",
+        "正常",
+        "运行",
+        "对",
+        "飞机",
+        "的",
+        "安全",
+        "起",
+        "着",
+        "至关",
+        "重要",
+        "的",
+        "作用",
+        ",",
+        "而",
+        "引气",
+        "系统",
+        "的",
+        "关键",
+        "参数",
+        "变化",
+        "表现",
+        "为",
+        "非线性",
+        "特性",
+        ",",
+        "提高",
+        "了",
+        "引气",
+        "系统",
+        "故障",
+        "预测",
+        "的",
+        "难度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 3,
+          "form": "引气",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "正常",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "运行",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "对",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "安全",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "起",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "着",
+          "head": 12,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "至关",
+          "head": 15,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 15,
+          "form": "重要",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "作用",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "而",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "引气",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "系统",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "关键",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "参数",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "变化",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "表现",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "为",
+          "head": 26,
+          "deprel": "dep",
+          "pos": "VC"
+        },
+        {
+          "id": 28,
+          "form": "非线性",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "特性",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "提高",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "了",
+          "head": 31,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 33,
+          "form": "引气",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "系统",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "故障",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "预测",
+          "head": 38,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 36,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 38,
+          "form": "难度",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "首先建立故障监控模型,然后根据故障预测的非线性特性,提出一种基于遗传算法的小波神经网络故障预测模型",
+      "tokens": [
+        "首先",
+        "建立",
+        "故障",
+        "监控",
+        "模型",
+        ",",
+        "然后",
+        "根据",
+        "故障",
+        "预测",
+        "的",
+        "非线性",
+        "特性",
+        ",",
+        "提出",
+        "一",
+        "种",
+        "基于",
+        "遗传",
+        "算法",
+        "的",
+        "小波",
+        "神经",
+        "网络",
+        "故障",
+        "预测",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "首先",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "监控",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "模型",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "然后",
+          "head": 15,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "根据",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "非线性",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "特性",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "提出",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "一",
+          "head": 17,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 17,
+          "form": "种",
+          "head": 27,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "基于",
+          "head": 27,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "遗传",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "算法",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 22,
+          "form": "小波",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "神经",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "网络",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "故障",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "预测",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "模型",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "模型结合遗传算法全局优化搜索能力和小波神经网络良好局部特性,避免BP神经网络缺陷",
+      "tokens": [
+        "模型",
+        "结合",
+        "遗传",
+        "算法",
+        "全局",
+        "优化",
+        "搜索",
+        "能力",
+        "和",
+        "小波",
+        "神经",
+        "网络",
+        "良好",
+        "局部",
+        "特性",
+        ",",
+        "避免",
+        "BP",
+        "神经",
+        "网络",
+        "缺陷"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "模型",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "遗传",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "算法",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "全局",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "优化",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "搜索",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "能力",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "小波",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "神经",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "网络",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "良好",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "局部",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "特性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "避免",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "BP",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 19,
+          "form": "神经",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "网络",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "缺陷",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后通过MATLAB仿真,验证故障预测模型的准确性",
+      "tokens": [
+        "最后",
+        "通过",
+        "MATLAB",
+        "仿真",
+        ",",
+        "验证",
+        "故障",
+        "预测",
+        "模型",
+        "的",
+        "准确性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "通过",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "MATLAB",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "仿真",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "模型",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "准确性",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "上述模型对飞机引气系统故障预测提高预测精度具有重要意义",
+      "tokens": [
+        "上述",
+        "模型",
+        "对",
+        "飞机",
+        "引气",
+        "系统",
+        "故障",
+        "预测",
+        "提高",
+        "预测",
+        "精度",
+        "具有",
+        "重要",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "上述",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "模型",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "对",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "引气",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "提高",
+          "head": 3,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "精度",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "重要",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "意义",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

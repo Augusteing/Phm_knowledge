@@ -1,0 +1,977 @@
+{
+  "title": "基于神经网络的军用飞机故障预报系统研究",
+  "summary": "在军用航空领域 ,及时准确的故障预报对提高飞行器的安全性具有极其重要的意义。针对飞机故障预报系统的设计要求 ,考虑到神经网络用于故障预测的优点 ,在神经网络技术应用于军用飞机的故障预测过程中提出了神经网络模型的训练算法。把神经网络、预测理论、专家系统有机地结合起来建立了一个故障预报系统。并以某型军用飞机冷气系统的典型故障为例 ,实现了故障的预测。实例预测结果证明 ,给出的神经网络预测模型和训练算法是可行的",
+  "analyzed_sentences": [
+    {
+      "sentence": "在军用航空领域 ,及时准确的故障预报对提高飞行器的安全性具有极其重要的意义",
+      "tokens": [
+        "在",
+        "军用",
+        "航空",
+        "领域",
+        ",",
+        "及时",
+        "准确",
+        "的",
+        "故障",
+        "预报",
+        "对",
+        "提高",
+        "飞行器",
+        "的",
+        "安全性",
+        "具有",
+        "极其",
+        "重要",
+        "的",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "军用",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "领域",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "及时",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 7,
+          "form": "准确",
+          "head": 6,
+          "deprel": "comod",
+          "pos": "VA"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预报",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "对",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "提高",
+          "head": 11,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "飞行器",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "安全性",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "极其",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "重要",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "意义",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对飞机故障预报系统的设计要求 ,考虑到神经网络用于故障预测的优点 ,在神经网络技术应用于军用飞机的故障预测过程中提出了神经网络模型的训练算法",
+      "tokens": [
+        "针对",
+        "飞机",
+        "故障",
+        "预报",
+        "系统",
+        "的",
+        "设计",
+        "要求",
+        ",",
+        "考虑",
+        "到",
+        "神经",
+        "网络",
+        "用",
+        "于",
+        "故障",
+        "预测",
+        "的",
+        "优点",
+        ",",
+        "在",
+        "神经",
+        "网络",
+        "技术",
+        "应用",
+        "于",
+        "军用",
+        "飞机",
+        "的",
+        "故障",
+        "预测",
+        "过程",
+        "中",
+        "提出",
+        "了",
+        "神经",
+        "网络",
+        "模型",
+        "的",
+        "训练",
+        "算法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 34,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预报",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "设计",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "要求",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "考虑",
+          "head": 34,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "到",
+          "head": 10,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "神经",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "网络",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "用",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "于",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "故障",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "预测",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "优点",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "在",
+          "head": 34,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 22,
+          "form": "神经",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "网络",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "技术",
+          "head": 25,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "应用",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "于",
+          "head": 25,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "军用",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "飞机",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "故障",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "预测",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "过程",
+          "head": 33,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "中",
+          "head": 21,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 34,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "了",
+          "head": 34,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 36,
+          "form": "神经",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "网络",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "模型",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "的",
+          "head": 38,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 40,
+          "form": "训练",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "算法",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "把神经网络、预测理论、专家系统有机地结合起来建立了一个故障预报系统",
+      "tokens": [
+        "把",
+        "神经",
+        "网络",
+        "、",
+        "预测",
+        "理论",
+        "、",
+        "专家",
+        "系统",
+        "有机",
+        "地",
+        "结合",
+        "起来",
+        "建立",
+        "了",
+        "一",
+        "个",
+        "故障",
+        "预报",
+        "系统"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "把",
+          "head": 12,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 2,
+          "form": "神经",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "网络",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "理论",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "专家",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "有机",
+          "head": 12,
+          "deprel": "dvpmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "地",
+          "head": 10,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 12,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "起来",
+          "head": 12,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "建立",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "了",
+          "head": 14,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 16,
+          "form": "一",
+          "head": 17,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 17,
+          "form": "个",
+          "head": 20,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "故障",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预报",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "系统",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并以某型军用飞机冷气系统的典型故障为例 ,实现了故障的预测",
+      "tokens": [
+        "并",
+        "以",
+        "某",
+        "型",
+        "军用",
+        "飞机",
+        "冷气",
+        "系统",
+        "的",
+        "典型",
+        "故障",
+        "为",
+        "例",
+        ",",
+        "实现",
+        "了",
+        "故障",
+        "的",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "以",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "某",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "型",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "军用",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "冷气",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "典型",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "故障",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "例",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "实现",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实例预测结果证明 ,给出的神经网络预测模型和训练算法是可行的",
+      "tokens": [
+        "实例",
+        "预测",
+        "结果",
+        "证明",
+        ",",
+        "给出",
+        "的",
+        "神经",
+        "网络",
+        "预测",
+        "模型",
+        "和",
+        "训练",
+        "算法",
+        "是",
+        "可行",
+        "的"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实例",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "预测",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "结果",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "证明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "给出",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "神经",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "网络",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "模型",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "训练",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "算法",
+          "head": 15,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "是",
+          "head": 4,
+          "deprel": "ccomp",
+          "pos": "VC"
+        },
+        {
+          "id": 16,
+          "form": "可行",
+          "head": 15,
+          "deprel": "attr",
+          "pos": "VA"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "dep",
+          "pos": "DEC"
+        }
+      ]
+    }
+  ]
+}

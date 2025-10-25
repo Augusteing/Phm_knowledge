@@ -1,0 +1,1449 @@
+{
+  "title": "智能航空发动机——本体智能化技术概述",
+  "summary": "智能化能提升什么、智能化的核心技术是什么、智能化靠什么实现，是目前在航空发动机领域应用智能技术面临的三个核心问题。本文从理解智能化思维与传统思维模式区别的角度去阐明上述三大问题，梳理航空发动机本体智能化的功能效用、核心技术和实现途径。通过文献梳理，总结出智能航空发动机与传统航空发动机的最大区别，即不在于结构和工作原理上的改变，而在于通过智能手段对数据利用的广度、深度和速度。可以进一步理解为，智能航空发动机摆脱了机械思维模式下追求参数因果关系的技术思路，转而追求大数据、多维度、高实时下的多源异构信息的关联性，从而能在常规技术水平下发挥出航空发动机的最佳性能，在新技术的匹配下更能实现发动机的性能跨越。",
+  "analyzed_sentences": [
+    {
+      "sentence": "智能化能提升什么、智能化的核心技术是什么、智能化靠什么实现",
+      "tokens": [
+        "智能化",
+        "能",
+        "提升",
+        "什么",
+        "、",
+        "智能化",
+        "的",
+        "核心",
+        "技术",
+        "是",
+        "什么",
+        "、",
+        "智能化",
+        "靠",
+        "什么",
+        "实现"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "智能化",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "能",
+          "head": 3,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "提升",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "什么",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "PN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "智能化",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "核心",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 10,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "是",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 11,
+          "form": "什么",
+          "head": 10,
+          "deprel": "attr",
+          "pos": "PN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "智能化",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "靠",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "什么",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "PN"
+        },
+        {
+          "id": 16,
+          "form": "实现",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "是目前在航空发动机领域应用智能技术面临的三个核心问题",
+      "tokens": [
+        "是",
+        "目前",
+        "在",
+        "航空",
+        "发动机",
+        "领域",
+        "应用",
+        "智能",
+        "技术",
+        "面临",
+        "的",
+        "三",
+        "个",
+        "核心",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 2,
+          "form": "目前",
+          "head": 7,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "在",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "领域",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "应用",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "智能",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "面临",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "三",
+          "head": 13,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 13,
+          "form": "个",
+          "head": 15,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 14,
+          "form": "核心",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "问题",
+          "head": 1,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文从理解智能化思维与传统思维模式区别的角度去阐明上述三大问题",
+      "tokens": [
+        "本",
+        "文",
+        "从",
+        "理解",
+        "智能化",
+        "思维",
+        "与",
+        "传统",
+        "思维",
+        "模式",
+        "区别",
+        "的",
+        "角度",
+        "去",
+        "阐明",
+        "上述",
+        "三",
+        "大",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "从",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "理解",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "智能化",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "思维",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "传统",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "思维",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "模式",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "区别",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "角度",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "去",
+          "head": 15,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 15,
+          "form": "阐明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "上述",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "三",
+          "head": 19,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 18,
+          "form": "大",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "问题",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "梳理航空发动机本体智能化的功能效用、核心技术和实现途径",
+      "tokens": [
+        "梳理",
+        "航空",
+        "发动机",
+        "本体",
+        "智能化",
+        "的",
+        "功能",
+        "效用",
+        "、",
+        "核心",
+        "技术",
+        "和",
+        "实现",
+        "途径"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "梳理",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "本体",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "智能化",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "功能",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "效用",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "核心",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "技术",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "实现",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "途径",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过文献梳理",
+      "tokens": [
+        "通过",
+        "文献",
+        "梳理"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "文献",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "梳理",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "总结出智能航空发动机与传统航空发动机的最大区别",
+      "tokens": [
+        "总结",
+        "出",
+        "智能",
+        "航空",
+        "发动机",
+        "与",
+        "传统",
+        "航空",
+        "发动机",
+        "的",
+        "最",
+        "大",
+        "区别"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "出",
+          "head": 1,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "智能",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "传统",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "航空",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "发动机",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "最",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "大",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "区别",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "即不在于结构和工作原理上的改变",
+      "tokens": [
+        "即",
+        "不",
+        "在于",
+        "结构",
+        "和",
+        "工作",
+        "原理",
+        "上",
+        "的",
+        "改变"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "即",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "不",
+          "head": 3,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "在于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "结构",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "工作",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "原理",
+          "head": 8,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "上",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "改变",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "而在于通过智能手段对数据利用的广度、深度和速度",
+      "tokens": [
+        "而",
+        "在于",
+        "通过",
+        "智能",
+        "手段",
+        "对",
+        "数据",
+        "利用",
+        "的",
+        "广度",
+        "、",
+        "深度",
+        "和",
+        "速度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "而",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "在于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "通过",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "智能",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "手段",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "数据",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "利用",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "广度",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "深度",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "速度",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "可以进一步理解为",
+      "tokens": [
+        "可以",
+        "进一步",
+        "理解",
+        "为"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "可以",
+          "head": 3,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "进一步",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "理解",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "为",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "VC"
+        }
+      ]
+    },
+    {
+      "sentence": "智能航空发动机摆脱了机械思维模式下追求参数因果关系的技术思路",
+      "tokens": [
+        "智能",
+        "航空",
+        "发动机",
+        "摆脱",
+        "了",
+        "机械",
+        "思维",
+        "模式",
+        "下",
+        "追求",
+        "参数",
+        "因果",
+        "关系",
+        "的",
+        "技术",
+        "思路"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "智能",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "摆脱",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "了",
+          "head": 4,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 6,
+          "form": "机械",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "思维",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "模式",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "下",
+          "head": 10,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "追求",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "参数",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "因果",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "关系",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 15,
+          "form": "技术",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "思路",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "转而追求大数据、多维度、高实时下的多源异构信息的关联性",
+      "tokens": [
+        "转而",
+        "追求",
+        "大",
+        "数据",
+        "、",
+        "多",
+        "维度",
+        "、",
+        "高",
+        "实时",
+        "下",
+        "的",
+        "多",
+        "源",
+        "异构",
+        "信息",
+        "的",
+        "关联性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "转而",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "追求",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "大",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "多",
+          "head": 7,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 7,
+          "form": "维度",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "高",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "实时",
+          "head": 11,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "下",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "多",
+          "head": 14,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "源",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "M"
+        },
+        {
+          "id": 15,
+          "form": "异构",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "信息",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "关联性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "从而能在常规技术水平下发挥出航空发动机的最佳性能",
+      "tokens": [
+        "从而",
+        "能",
+        "在",
+        "常规",
+        "技术",
+        "水平",
+        "下",
+        "发挥",
+        "出",
+        "航空",
+        "发动机",
+        "的",
+        "最佳",
+        "性能"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "从而",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "能",
+          "head": 8,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "在",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "常规",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "技术",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "水平",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "下",
+          "head": 3,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "发挥",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "出",
+          "head": 8,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "航空",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "发动机",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "最佳",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "性能",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在新技术的匹配下更能实现发动机的性能跨越",
+      "tokens": [
+        "在",
+        "新",
+        "技术",
+        "的",
+        "匹配",
+        "下",
+        "更",
+        "能",
+        "实现",
+        "发动机",
+        "的",
+        "性能",
+        "跨越"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "新",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "技术",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "匹配",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "下",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "更",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "能",
+          "head": 9,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "发动机",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "性能",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "跨越",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

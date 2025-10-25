@@ -1,0 +1,1004 @@
+{
+  "title": "2017预测与健康管理(PHM)研讨会在西安召开",
+  "summary": "2017年5月19日,2017预测与健康管理(PHM)研讨会在西安顺利召开,来自空军工程大学、浙江大学、哈尔滨工业大学、北京航空航天大学、南京航空航天大学等26个单位(其中高校14所,研究所7所,企业5家)共计70余位代表参加了此次研讨会。本次研讨会由中国电子学会电子测量与仪器分会和中困仪器仪表学会电子测量与仪器分会主办,空军工程大学航空航天工程学院PHM实验室承办,同时得到了《仪器仪表学报》、《电子测量与仪器学报》、INSTRUMENTATION、《电",
+  "analyzed_sentences": [
+    {
+      "sentence": "2017年5月19日,2017预测与健康管理(PHM)研讨会在西安顺利召开,来自空军工程大学、浙江大学、哈尔滨工业大学、北京航空航天大学、南京航空航天大学等26个单位(其中高校14所,研究所7所,企业5家)共计70余位代表参加了此次研讨会",
+      "tokens": [
+        "2017年",
+        "5月",
+        "19日",
+        ",",
+        "2017",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "研讨会",
+        "在",
+        "西安",
+        "顺利",
+        "召开",
+        ",",
+        "来自",
+        "空军",
+        "工程",
+        "大学",
+        "、",
+        "浙江",
+        "大学",
+        "、",
+        "哈尔滨",
+        "工业",
+        "大学",
+        "、",
+        "北京",
+        "航空",
+        "航天",
+        "大学",
+        "、",
+        "南京",
+        "航空",
+        "航天",
+        "大学",
+        "等",
+        "26",
+        "个",
+        "单位",
+        "(",
+        "其中",
+        "高校",
+        "14",
+        "所",
+        ",",
+        "研究所",
+        "7",
+        "所",
+        ",",
+        "企业",
+        "5",
+        "家",
+        ")",
+        "共",
+        "计",
+        "70余",
+        "位",
+        "代表",
+        "参加",
+        "了",
+        "此",
+        "次",
+        "研讨会"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "2017年",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 2,
+          "form": "5月",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "19日",
+          "head": 17,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "2017",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "(",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "PHM",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ")",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "研讨会",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "西安",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "顺利",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "召开",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "来自",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "空军",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "工程",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "大学",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "浙江",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 25,
+          "form": "大学",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "、",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "哈尔滨",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 28,
+          "form": "工业",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "大学",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "、",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "北京",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 32,
+          "form": "航空",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "航天",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "大学",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "、",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "南京",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 37,
+          "form": "航空",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "航天",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "大学",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "等",
+          "head": 39,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 41,
+          "form": "26",
+          "head": 42,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 42,
+          "form": "个",
+          "head": 43,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 43,
+          "form": "单位",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "(",
+          "head": 48,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 45,
+          "form": "其中",
+          "head": 48,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "高校",
+          "head": 48,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "14",
+          "head": 48,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 48,
+          "form": "所",
+          "head": 62,
+          "deprel": "rcmod",
+          "pos": "M"
+        },
+        {
+          "id": 49,
+          "form": ",",
+          "head": 48,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "研究所",
+          "head": 52,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "7",
+          "head": 52,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 52,
+          "form": "所",
+          "head": 48,
+          "deprel": "conj",
+          "pos": "M"
+        },
+        {
+          "id": 53,
+          "form": ",",
+          "head": 48,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 54,
+          "form": "企业",
+          "head": 56,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "5",
+          "head": 56,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 56,
+          "form": "家",
+          "head": 48,
+          "deprel": "conj",
+          "pos": "M"
+        },
+        {
+          "id": 57,
+          "form": ")",
+          "head": 48,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 58,
+          "form": "共",
+          "head": 59,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 59,
+          "form": "计",
+          "head": 62,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 60,
+          "form": "70余",
+          "head": 61,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 61,
+          "form": "位",
+          "head": 62,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 62,
+          "form": "代表",
+          "head": 63,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "参加",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "了",
+          "head": 63,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 65,
+          "form": "此",
+          "head": 67,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 66,
+          "form": "次",
+          "head": 65,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 67,
+          "form": "研讨会",
+          "head": 63,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本次研讨会由中国电子学会电子测量与仪器分会和中困仪器仪表学会电子测量与仪器分会主办,空军工程大学航空航天工程学院PHM实验室承办,同时得到了《仪器仪表学报》、《电子测量与仪器学报》、INSTRUMENTATION、《电",
+      "tokens": [
+        "本",
+        "次",
+        "研讨会",
+        "由",
+        "中国",
+        "电子",
+        "学会",
+        "电子",
+        "测量",
+        "与",
+        "仪器",
+        "分会",
+        "和",
+        "中困",
+        "仪器",
+        "仪表",
+        "学会",
+        "电子",
+        "测量",
+        "与",
+        "仪器",
+        "分会",
+        "主办",
+        ",",
+        "空军",
+        "工程",
+        "大学",
+        "航空",
+        "航天",
+        "工程",
+        "学院",
+        "PHM",
+        "实验室",
+        "承办",
+        ",",
+        "同时",
+        "得到",
+        "了",
+        "《",
+        "仪器",
+        "仪表",
+        "学报",
+        "》",
+        "、",
+        "《",
+        "电子",
+        "测量",
+        "与",
+        "仪器",
+        "学报",
+        "》",
+        "、",
+        "INSTRUMENTATION",
+        "、",
+        "《",
+        "电"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "次",
+          "head": 1,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 3,
+          "form": "研讨会",
+          "head": 23,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "由",
+          "head": 23,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "中国",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 6,
+          "form": "电子",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "学会",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "电子",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "测量",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "仪器",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "分会",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "和",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "中困",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "仪器",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "仪表",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "学会",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "电子",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "测量",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "与",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "仪器",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "分会",
+          "head": 4,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "主办",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 23,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "空军",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "工程",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "大学",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "航空",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "航天",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "工程",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "学院",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "PHM",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "实验室",
+          "head": 34,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "承办",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 23,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "同时",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 37,
+          "form": "得到",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "了",
+          "head": 37,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 39,
+          "form": "《",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "仪器",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "仪表",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "学报",
+          "head": 56,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "》",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "、",
+          "head": 56,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 45,
+          "form": "《",
+          "head": 50,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "电子",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "测量",
+          "head": 49,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "与",
+          "head": 49,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 49,
+          "form": "仪器",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "学报",
+          "head": 56,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "》",
+          "head": 50,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "、",
+          "head": 56,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 53,
+          "form": "INSTRUMENTATION",
+          "head": 56,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "、",
+          "head": 56,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 55,
+          "form": "《",
+          "head": 56,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 56,
+          "form": "电",
+          "head": 23,
+          "deprel": "dep",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

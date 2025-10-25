@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "贝叶斯优化LSTM",
+    "subject_type": "算法",
+    "relation": "用于预测",
+    "object": "航空发动机剩余寿命",
+    "object_type": "预测目标"
+  },
+  {
+    "subject": "贝叶斯优化LSTM",
+    "subject_type": "算法",
+    "relation": "基于",
+    "object": "LSTM",
+    "object_type": "算法"
+  },
+  {
+    "subject": "贝叶斯优化LSTM",
+    "subject_type": "算法",
+    "relation": "解决",
+    "object": "深度学习算法参数优化效率低",
+    "object_type": "问题"
+  },
+  {
+    "subject": "贝叶斯优化LSTM",
+    "subject_type": "算法",
+    "relation": "解决",
+    "object": "预测准确率差",
+    "object_type": "问题"
+  },
+  {
+    "subject": "贝叶斯优化算法",
+    "subject_type": "优化算法",
+    "relation": "优化",
+    "object": "LSTM的超参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "LSTM",
+    "subject_type": "算法",
+    "relation": "执行",
+    "object": "时间序列预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "LSTM",
+    "subject_type": "算法",
+    "relation": "处理",
+    "object": "航空发动机的传感器数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "NASA公开数据集",
+    "subject_type": "数据集",
+    "relation": "用于验证",
+    "object": "贝叶斯优化LSTM",
+    "object_type": "算法"
+  },
+  {
+    "subject": "贝叶斯优化LSTM",
+    "subject_type": "算法",
+    "relation": "提供参考",
+    "object": "维修替换策略",
+    "object_type": "应用"
+  },
+  {
+    "subject": "贝叶斯优化LSTM",
+    "subject_type": "算法",
+    "relation": "保障",
+    "object": "航空器安全使用",
+    "object_type": "应用"
+  }
+]

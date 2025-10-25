@@ -1,0 +1,135 @@
+[
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "依托",
+    "object": "电子科技大学",
+    "object_type": "依托单位"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "面向需求",
+    "object": "可靠性、维修性与故障诊断技术",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "主要研究",
+    "object": "关键技术装备",
+    "object_type": "装备类别"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "国防武器装备",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "航空器",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "航天器",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "大型数控机床",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "极大规模集成电路制造装备",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "轨道交通",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "汽车",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "工程机械",
+    "object_type": "装备"
+  },
+  {
+    "subject": "关键技术装备",
+    "subject_type": "装备类别",
+    "relation": "包含",
+    "object": "新能源设备",
+    "object_type": "装备"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "研究方向为",
+    "object": "大型复杂装备的可靠性建模、分析与评估",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "研究方向为",
+    "object": "复杂装备的可靠性设计",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "研究方向为",
+    "object": "基于可靠性的装备多学科设计优化",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "研究方向为",
+    "object": "大型装备故障诊断与健康管理",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "研究方向为",
+    "object": "剩余寿命预测",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "研究方向为",
+    "object": "复杂装备维修性分析及维护决策",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "可靠性工程四川省重点实验室",
+    "subject_type": "研究机构",
+    "relation": "研究方向为",
+    "object": "微纳机电系统(MEMS)可靠性设计分析与试验评价",
+    "object_type": "研究方向"
+  }
+]

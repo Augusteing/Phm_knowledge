@@ -1,0 +1,180 @@
+{
+  "entities": [
+    {
+      "name": "AFDX网络",
+      "type": "系统/部件"
+    },
+    {
+      "name": "综合模块化航空电子（IMA）系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "功能"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法"
+    },
+    {
+      "name": "数据传输策略",
+      "type": "方法"
+    },
+    {
+      "name": "故障注入装置",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "航空电子全双工交换式以太网（AFDX）",
+      "type": "系统/部件"
+    },
+    {
+      "name": "PHM进程",
+      "type": "系统/部件"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "故障模式"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "故障模式"
+    },
+    {
+      "name": "功能数据集合（FDS）",
+      "type": "数据"
+    },
+    {
+      "name": "接口控制文件（ICD）",
+      "type": "数据"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "软件工具"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "技术"
+    },
+    {
+      "name": "非实时操作系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "AFDX端系统卡",
+      "type": "系统/部件"
+    },
+    {
+      "name": "BAG",
+      "type": "参数"
+    },
+    {
+      "name": "VL",
+      "type": "系统/部件"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "软件工具"
+    }
+  ],
+  "relations": [
+    {
+      "head": "综合模块化航空电子（IMA）系统",
+      "relation": "包含",
+      "tail": "健康管理功能"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子（IMA）系统"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理功能"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "支持",
+      "tail": "故障注入技术"
+    },
+    {
+      "head": "数据传输策略",
+      "relation": "解决",
+      "tail": "主机数据更新间隔、发送间隔与AFDX端系统定时器周期不匹配问题"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "实现",
+      "tail": "故障注入技术"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "实现",
+      "tail": "故障数据配置管理方法"
+    },
+    {
+      "head": "航空电子全双工交换式以太网（AFDX）",
+      "relation": "支持",
+      "tail": "综合模块化航空电子体系结构"
+    },
+    {
+      "head": "PHM进程",
+      "relation": "属于",
+      "tail": "综合模块化航空电子（IMA）系统"
+    },
+    {
+      "head": "非法数据输入",
+      "relation": "导致",
+      "tail": "PHM进程"
+    },
+    {
+      "head": "特殊信令输入",
+      "relation": "导致",
+      "tail": "PHM进程"
+    },
+    {
+      "head": "功能数据集合（FDS）",
+      "relation": "基于",
+      "tail": "AFDX网络协议"
+    },
+    {
+      "head": "接口控制文件（ICD）",
+      "relation": "定义",
+      "tail": "功能数据集合（FDS）"
+    },
+    {
+      "head": "SQLite数据库",
+      "relation": "用于",
+      "tail": "管理接口控制文件（ICD）"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "改进了",
+      "tail": "非实时操作系统"
+    },
+    {
+      "head": "AFDX端系统卡",
+      "relation": "实现",
+      "tail": "BAG"
+    },
+    {
+      "head": "VL",
+      "relation": "组成",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控AFDX网络"
+    }
+  ]
+}

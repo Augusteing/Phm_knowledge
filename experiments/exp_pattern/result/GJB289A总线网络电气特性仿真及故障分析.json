@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "GJB289A总线",
+    "subject_type": "标准总线",
+    "relation": "实现",
+    "object": "航空电子设备物理连接",
+    "object_type": "功能"
+  },
+  {
+    "subject": "GJB289A总线",
+    "subject_type": "标准总线",
+    "relation": "影响",
+    "object": "飞机航电系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "两端口GJB289A总线网络模型",
+    "subject_type": "模型",
+    "relation": "构建于",
+    "object": "ADS软件",
+    "object_type": "软件"
+  },
+  {
+    "subject": "两端口GJB289A总线网络模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "有损耦合传输线模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "两端口GJB289A总线网络模型",
+    "subject_type": "模型",
+    "relation": "用于分析",
+    "object": "电气故障特性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "理论推导",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "两端口GJB289A总线网络模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "实验室实测",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "两端口GJB289A总线网络模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "两端口GJB289A总线网络模型",
+    "subject_type": "模型",
+    "relation": "实现",
+    "object": "电气故障快速判断",
+    "object_type": "功能"
+  },
+  {
+    "subject": "两端口GJB289A总线网络模型",
+    "subject_type": "模型",
+    "relation": "仿真获取",
+    "object": "电气故障的特征参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "两端口GJB289A总线网络模型",
+    "subject_type": "模型",
+    "relation": "提供技术支撑",
+    "object": "总线检测设备优化设计",
+    "object_type": "应用"
+  },
+  {
+    "subject": "两端口GJB289A总线网络模型",
+    "subject_type": "模型",
+    "relation": "提供技术支撑",
+    "object": "总线网络状态健康管理",
+    "object_type": "应用"
+  }
+]

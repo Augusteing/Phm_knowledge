@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "ARIMA模型",
+      "type": "模型"
+    },
+    {
+      "name": "回归分析法",
+      "type": "研究方法"
+    },
+    {
+      "name": "民用航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "低压转子",
+      "type": "系统/部件"
+    },
+    {
+      "name": "振动故障",
+      "type": "故障模式"
+    },
+    {
+      "name": "振动值",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "N1转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指数模型",
+      "type": "模型"
+    },
+    {
+      "name": "系数a",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "时间序列分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "可决系数R²",
+      "type": "性能指标"
+    },
+    {
+      "name": "均方根误差RMSE",
+      "type": "性能指标"
+    },
+    {
+      "name": "平均绝对误差MAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "最大绝对误差MaxAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "模型"
+    },
+    {
+      "name": "专家建模器",
+      "type": "软件工具"
+    },
+    {
+      "name": "故障预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "振动-转速特性",
+      "type": "特征/健康指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "ARIMA模型",
+      "relation": "基于",
+      "tail": "时间序列分析"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "用于",
+      "tail": "振动-转速特性拟合"
+    },
+    {
+      "head": "指数模型",
+      "relation": "用于",
+      "tail": "振动-转速特性拟合"
+    },
+    {
+      "head": "系数a",
+      "relation": "用于",
+      "tail": "ARIMA模型建模"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "应用于",
+      "tail": "振动故障预测"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "改进了",
+      "tail": "三次指数平滑法"
+    },
+    {
+      "head": "专家建模器",
+      "relation": "开发了",
+      "tail": "ARIMA模型"
+    },
+    {
+      "head": "振动故障",
+      "relation": "影响",
+      "tail": "民用航空发动机"
+    },
+    {
+      "head": "振动值",
+      "relation": "用于",
+      "tail": "故障预测"
+    },
+    {
+      "head": "N1转速",
+      "relation": "用于",
+      "tail": "故障预测"
+    },
+    {
+      "head": "可决系数R²",
+      "relation": "评价",
+      "tail": "模型拟合效果"
+    },
+    {
+      "head": "均方根误差RMSE",
+      "relation": "评价",
+      "tail": "模型拟合效果"
+    },
+    {
+      "head": "平均绝对误差MAE",
+      "relation": "评价",
+      "tail": "模型拟合效果"
+    },
+    {
+      "head": "最大绝对误差MaxAE",
+      "relation": "评价",
+      "tail": "模型拟合效果"
+    },
+    {
+      "head": "CFM56-7B发动机",
+      "relation": "包含",
+      "tail": "低压转子"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "支持",
+      "tail": "故障预测"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "卡尔曼滤波估计方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "航空发动机气路部件健康参数估计问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "卡尔曼滤波估计方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "线性模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "卡尔曼滤波估计方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "非线性模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "卡尔曼滤波",
+    "subject_type": "算法",
+    "relation": "估计",
+    "object": "健康参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "扩展卡尔曼滤波",
+    "subject_type": "算法",
+    "relation": "估计",
+    "object": "健康参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "无味卡尔曼滤波",
+    "subject_type": "算法",
+    "relation": "估计",
+    "object": "健康参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "扩展卡尔曼滤波",
+    "subject_type": "算法",
+    "relation": "是",
+    "object": "非线性参数估计方法",
+    "object_type": "方法类别"
+  },
+  {
+    "subject": "扩展卡尔曼滤波",
+    "subject_type": "算法",
+    "relation": "求取",
+    "object": "卡尔曼增益",
+    "object_type": "参数"
+  },
+  {
+    "subject": "仿真",
+    "subject_type": "活动",
+    "relation": "模拟",
+    "object": "气路部件渐变故障",
+    "object_type": "故障"
+  }
+]

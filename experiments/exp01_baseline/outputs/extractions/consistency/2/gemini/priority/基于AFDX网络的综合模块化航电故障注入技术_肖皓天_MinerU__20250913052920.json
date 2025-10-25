@@ -1,0 +1,279 @@
+{
+  "entities": [
+    {
+      "name": "AFDX网络故障注入技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "综合模块化航电(IMA)",
+      "type": "研究领域"
+    },
+    {
+      "name": "健康管理功能(PHM)",
+      "type": "系统/部件"
+    },
+    {
+      "name": "AFDX网络",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障数据的配置管理方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "算法"
+    },
+    {
+      "name": "数据更新率与定时器周期不匹配",
+      "type": "问题"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "本文",
+      "type": "研究主体"
+    },
+    {
+      "name": "空客A380",
+      "type": "应用场景"
+    },
+    {
+      "name": "波音B787",
+      "type": "应用场景"
+    },
+    {
+      "name": "PHM进程",
+      "type": "系统/部件"
+    },
+    {
+      "name": "PHM分区",
+      "type": "系统/部件"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "故障模式"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "故障模式"
+    },
+    {
+      "name": "故障注入系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "PC机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "AFDX交换机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "嵌入式系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "Visual C++ MFC框架",
+      "type": "软件工具"
+    },
+    {
+      "name": "AFDX端系统卡API",
+      "type": "软件工具"
+    },
+    {
+      "name": "SQLite",
+      "type": "软件工具"
+    },
+    {
+      "name": "二进制数据文件",
+      "type": "数据集"
+    },
+    {
+      "name": "功能数据集合(FDS)",
+      "type": "数据结构"
+    },
+    {
+      "name": "接口控制文件(ICD)",
+      "type": "数据/标准"
+    },
+    {
+      "name": "队列模式发送",
+      "type": "研究方法"
+    },
+    {
+      "name": "AFDX端系统板卡硬件定时",
+      "type": "理论基础"
+    },
+    {
+      "name": "定时精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "消息帧",
+      "type": "数据"
+    },
+    {
+      "name": "故障注入半物理仿真",
+      "type": "研究方法"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "系统/部件"
+    }
+  ],
+  "relations": [
+    {
+      "head": "本文",
+      "relation": "提出了",
+      "tail": "AFDX网络故障注入技术"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "应用于",
+      "tail": "综合模块化航电(IMA)"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "用于验证",
+      "tail": "健康管理功能(PHM)"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "基于",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "包含",
+      "tail": "故障数据的配置管理方法"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "包含",
+      "tail": "定时发送策略"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "解决",
+      "tail": "数据更新率与定时器周期不匹配"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "是...的骨干网络",
+      "tail": "综合模块化航电(IMA)"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "应用于",
+      "tail": "空客A380"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "应用于",
+      "tail": "波音B787"
+    },
+    {
+      "head": "综合模块化航电(IMA)",
+      "relation": "配备",
+      "tail": "健康管理功能(PHM)"
+    },
+    {
+      "head": "健康管理功能(PHM)",
+      "relation": "包含",
+      "tail": "PHM进程"
+    },
+    {
+      "head": "健康管理功能(PHM)",
+      "relation": "包含",
+      "tail": "PHM分区"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "包含",
+      "tail": "非法数据输入"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "包含",
+      "tail": "特殊信令输入"
+    },
+    {
+      "head": "故障注入系统",
+      "relation": "由...组成",
+      "tail": "PC机"
+    },
+    {
+      "head": "故障注入系统",
+      "relation": "由...组成",
+      "tail": "AFDX交换机"
+    },
+    {
+      "head": "故障注入系统",
+      "relation": "由...组成",
+      "tail": "嵌入式系统"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "Visual C++ MFC框架"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "调用",
+      "tail": "AFDX端系统卡API"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "使用",
+      "tail": "多媒体定时器"
+    },
+    {
+      "head": "故障数据的配置管理方法",
+      "relation": "采用",
+      "tail": "SQLite"
+    },
+    {
+      "head": "故障数据的配置管理方法",
+      "relation": "采用",
+      "tail": "二进制数据文件"
+    },
+    {
+      "head": "功能数据集合(FDS)",
+      "relation": "由...规范",
+      "tail": "接口控制文件(ICD)"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "利用",
+      "tail": "队列模式发送"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "利用",
+      "tail": "AFDX端系统板卡硬件定时"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "提高了",
+      "tail": "定时精度"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于监控",
+      "tail": "消息帧"
+    },
+    {
+      "head": "AFDX网络故障注入技术",
+      "relation": "实现",
+      "tail": "故障注入半物理仿真"
+    }
+  ]
+}

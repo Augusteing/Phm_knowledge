@@ -1,0 +1,204 @@
+{
+  "entities": [
+    {
+      "name": "PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "失效物理模型",
+      "type": "模型"
+    },
+    {
+      "name": "应力严重系数",
+      "type": "特征"
+    },
+    {
+      "name": "疲劳缺口系数",
+      "type": "特征"
+    },
+    {
+      "name": "局部应力应变法",
+      "type": "方法"
+    },
+    {
+      "name": "修正Neuber法",
+      "type": "方法"
+    },
+    {
+      "name": "Manson-Coffin公式",
+      "type": "模型"
+    },
+    {
+      "name": "Newton-Raphson迭代方法",
+      "type": "算法"
+    },
+    {
+      "name": "飞机结构连接件",
+      "type": "系统"
+    },
+    {
+      "name": "紧固件",
+      "type": "系统"
+    },
+    {
+      "name": "疲劳破坏",
+      "type": "故障模式"
+    },
+    {
+      "name": "疲劳寿命",
+      "type": "特征"
+    },
+    {
+      "name": "应力",
+      "type": "参数"
+    },
+    {
+      "name": "应变",
+      "type": "参数"
+    },
+    {
+      "name": "传感器",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "疲劳试验",
+      "type": "方法"
+    },
+    {
+      "name": "MTS Landmark试验机",
+      "type": "工具"
+    },
+    {
+      "name": "误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "航空结构",
+      "type": "应用领域"
+    },
+    {
+      "name": "2024铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "7050铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "有限元法",
+      "type": "方法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM技术",
+      "relation": "应用于",
+      "tail": "航空结构"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "疲劳寿命预测方法",
+      "relation": "基于",
+      "tail": "失效物理模型"
+    },
+    {
+      "head": "疲劳寿命预测方法",
+      "relation": "包括",
+      "tail": "应力严重系数"
+    },
+    {
+      "head": "疲劳寿命预测方法",
+      "relation": "包括",
+      "tail": "疲劳缺口系数"
+    },
+    {
+      "head": "疲劳寿命预测方法",
+      "relation": "包括",
+      "tail": "局部应力应变法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "采用",
+      "tail": "修正Neuber法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "用于",
+      "tail": "高周疲劳寿命预测"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "用于",
+      "tail": "低周疲劳寿命预测"
+    },
+    {
+      "head": "修正Neuber法",
+      "relation": "基于",
+      "tail": "Neuber规则"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "采用",
+      "tail": "Manson-Coffin公式"
+    },
+    {
+      "head": "Manson-Coffin公式",
+      "relation": "用于",
+      "tail": "疲劳寿命计算"
+    },
+    {
+      "head": "疲劳寿命计算",
+      "relation": "采用",
+      "tail": "Newton-Raphson迭代方法"
+    },
+    {
+      "head": "应力严重系数",
+      "relation": "用于",
+      "tail": "表征疲劳品质"
+    },
+    {
+      "head": "疲劳缺口系数",
+      "relation": "基于",
+      "tail": "应力严重系数"
+    },
+    {
+      "head": "疲劳破坏",
+      "relation": "导致",
+      "tail": "灾难性事故"
+    },
+    {
+      "head": "传感器",
+      "relation": "用于",
+      "tail": "获取应力数据"
+    },
+    {
+      "head": "传感器",
+      "relation": "用于",
+      "tail": "获取应变数据"
+    },
+    {
+      "head": "疲劳试验",
+      "relation": "采用",
+      "tail": "MTS Landmark试验机"
+    },
+    {
+      "head": "疲劳试验",
+      "relation": "用于",
+      "tail": "验证预测方法"
+    },
+    {
+      "head": "预测方法",
+      "relation": "具有",
+      "tail": "误差小于17%"
+    },
+    {
+      "head": "有限元法",
+      "relation": "用于",
+      "tail": "复杂结构应力分析"
+    }
+  ]
+}

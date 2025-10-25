@@ -1,0 +1,208 @@
+{
+  "entities": [
+    {
+      "name": "直升机涡轮发动机健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "Caps-BiGRU-Attention模型",
+      "type": "模型"
+    },
+    {
+      "name": "故障模式识别",
+      "type": "任务"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "任务"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "算法"
+    },
+    {
+      "name": "BiGRU层",
+      "type": "算法"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "算法"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "动态路由机制",
+      "type": "算法"
+    },
+    {
+      "name": "全局平均池化操作",
+      "type": "算法"
+    },
+    {
+      "name": "全连接层",
+      "type": "算法"
+    },
+    {
+      "name": "L2正则化",
+      "type": "算法"
+    },
+    {
+      "name": "交叉熵损失函数",
+      "type": "性能指标"
+    },
+    {
+      "name": "均方误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "ROC曲线",
+      "type": "性能指标"
+    },
+    {
+      "name": "AUC值",
+      "type": "性能指标"
+    },
+    {
+      "name": "SHAP模型",
+      "type": "算法"
+    },
+    {
+      "name": "混合高斯密度模型",
+      "type": "模型"
+    },
+    {
+      "name": "K-S检验",
+      "type": "算法"
+    },
+    {
+      "name": "AIC值",
+      "type": "性能指标"
+    },
+    {
+      "name": "极大似然估计",
+      "type": "算法"
+    },
+    {
+      "name": "粒子群优化方法",
+      "type": "算法"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "理论基础"
+    }
+  ],
+  "relations": [
+    {
+      "head": "直升机涡轮发动机健康管理",
+      "relation": "包括",
+      "tail": "故障模式识别"
+    },
+    {
+      "head": "直升机涡轮发动机健康管理",
+      "relation": "包括",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "BiGRU层",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "SE注意力机制",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "基于",
+      "tail": "直升机涡轮发动机数据集"
+    },
+    {
+      "head": "动态路由机制",
+      "relation": "改进了",
+      "tail": "胶囊网络"
+    },
+    {
+      "head": "全局平均池化操作",
+      "relation": "用于",
+      "tail": "SE注意力机制"
+    },
+    {
+      "head": "全连接层",
+      "relation": "用于",
+      "tail": "SE注意力机制"
+    },
+    {
+      "head": "L2正则化",
+      "relation": "用于",
+      "tail": "BiGRU层"
+    },
+    {
+      "head": "交叉熵损失函数",
+      "relation": "评估",
+      "tail": "故障模式识别"
+    },
+    {
+      "head": "均方误差",
+      "relation": "评估",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "ROC曲线",
+      "relation": "评估",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "AUC值",
+      "relation": "评估",
+      "tail": "ROC曲线"
+    },
+    {
+      "head": "SHAP模型",
+      "relation": "用于",
+      "tail": "特征分析"
+    },
+    {
+      "head": "混合高斯密度模型",
+      "relation": "基于",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "K-S检验",
+      "relation": "用于",
+      "tail": "混合高斯密度模型"
+    },
+    {
+      "head": "AIC值",
+      "relation": "评估",
+      "tail": "混合高斯密度模型"
+    },
+    {
+      "head": "极大似然估计",
+      "relation": "用于",
+      "tail": "贝塔分布"
+    },
+    {
+      "head": "粒子群优化方法",
+      "relation": "用于",
+      "tail": "箱数优化"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "拟合",
+      "tail": "扭矩裕度"
+    }
+  ]
+}

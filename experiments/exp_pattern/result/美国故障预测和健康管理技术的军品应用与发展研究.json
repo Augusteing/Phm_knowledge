@@ -1,0 +1,37 @@
+[
+  {
+    "subject": "故障预测和健康管理技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "武器装备系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "故障预测和健康管理技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "导弹武器系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "故障预测和健康管理技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "视情维护",
+    "object_type": "维护活动"
+  },
+  {
+    "subject": "美国",
+    "subject_type": "国家",
+    "relation": "研究",
+    "object": "故障预测和健康管理技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "导弹武器系统",
+    "subject_type": "系统",
+    "relation": "是一种",
+    "object": "武器装备系统",
+    "object_type": "系统"
+  }
+]

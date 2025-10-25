@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "大型飞机发动机",
+    "subject_type": "系统",
+    "relation": "存在问题",
+    "object": "故障",
+    "object_type": "问题"
+  },
+  {
+    "subject": "大型飞机发动机",
+    "subject_type": "系统",
+    "relation": "具有特征",
+    "object": "结构复杂",
+    "object_type": "特征"
+  },
+  {
+    "subject": "故障",
+    "subject_type": "问题",
+    "relation": "具有特征",
+    "object": "难以复现",
+    "object_type": "特征"
+  },
+  {
+    "subject": "故障难以复现",
+    "subject_type": "问题",
+    "relation": "导致",
+    "object": "信息关联断裂",
+    "object_type": "问题"
+  },
+  {
+    "subject": "传统的故障检测方法",
+    "subject_type": "方法",
+    "relation": "依赖",
+    "object": "故障信息之间的关联性",
+    "object_type": "依据"
+  },
+  {
+    "subject": "传统的故障检测方法",
+    "subject_type": "方法",
+    "relation": "导致",
+    "object": "判断失败",
+    "object_type": "问题"
+  },
+  {
+    "subject": "判断失败",
+    "subject_type": "问题",
+    "relation": "降低",
+    "object": "检测的准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "粒子群粗糙集约简的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "飞机发动机",
+    "object_type": "系统"
+  },
+  {
+    "subject": "粒子群粗糙集约简的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "重建",
+    "object": "故障信息断裂的关联性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "粒子群粗糙集约简的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "故障知识获取",
+    "object_type": "步骤"
+  },
+  {
+    "subject": "粒子群粗糙集约简的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "规则优化",
+    "object_type": "步骤"
+  },
+  {
+    "subject": "粒子群粗糙集约简的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "运用",
+    "object": "故障预测",
+    "object_type": "手段"
+  },
+  {
+    "subject": "粒子群粗糙集约简的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "完成",
+    "object": "故障识别",
+    "object_type": "目标"
+  },
+  {
+    "subject": "粒子群粗糙集约简的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "故障诊断的准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "实验结果",
+    "subject_type": "验证",
+    "relation": "证明",
+    "object": "粒子群粗糙集约简的故障诊断方法",
+    "object_type": "方法"
+  }
+]

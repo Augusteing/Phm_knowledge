@@ -1,0 +1,989 @@
+{
+  "title": "基于贝叶斯优化LSTM的发动机剩余寿命预测",
+  "summary": "针对航空发动机剩余寿命预测中深度学习算法参数优化效率低、预测准确率差等问题，在长短期记忆网络算法（LSTM）的基础上提出一种基于贝叶斯优化的LSTM算法。利用长短期记忆网络对航空发动机的传感器数据进行时间序列预测，并运用贝叶斯优化算法对长短期记忆网络的超参数进行迭代优化。利用NASA公开数据集对算法进行验证，结果表明，相较于其他算法，优化后的算法在优化参数、提高预测准确率方面有明显改善，能为保证航空器的安全使用以及制定维修替换策略提供参考。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对航空发动机剩余寿命预测中深度学习算法参数优化效率低、预测准确率差等问题",
+      "tokens": [
+        "针对",
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命",
+        "预测",
+        "中",
+        "深度",
+        "学习",
+        "算法",
+        "参数",
+        "优化",
+        "效率",
+        "低",
+        "、",
+        "预测",
+        "准确率",
+        "差",
+        "等",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "剩余",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "寿命",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "中",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "深度",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "学习",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "算法",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "参数",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "优化",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "效率",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "低",
+          "head": 20,
+          "deprel": "vmod",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "预测",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "准确率",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "差",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": "等",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 20,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在长短期记忆网络算法（LSTM）的基础上提出一种基于贝叶斯优化的LSTM算法",
+      "tokens": [
+        "在",
+        "长",
+        "短期",
+        "记忆",
+        "网络",
+        "算法",
+        "（",
+        "LSTM",
+        "）",
+        "的",
+        "基础",
+        "上",
+        "提出",
+        "一",
+        "种",
+        "基于",
+        "贝叶斯",
+        "优化",
+        "的",
+        "LSTM",
+        "算法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "长",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "短期",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "记忆",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "网络",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "算法",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "（",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "LSTM",
+          "head": 6,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "）",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "基础",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "一",
+          "head": 15,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 15,
+          "form": "种",
+          "head": 21,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 16,
+          "form": "基于",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "贝叶斯",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "NR"
+        },
+        {
+          "id": 18,
+          "form": "优化",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 16,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "LSTM",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "算法",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用长短期记忆网络对航空发动机的传感器数据进行时间序列预测",
+      "tokens": [
+        "利用",
+        "长",
+        "短期",
+        "记忆",
+        "网络",
+        "对",
+        "航空",
+        "发动机",
+        "的",
+        "传感器",
+        "数据",
+        "进行",
+        "时间",
+        "序列",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "长",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "短期",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "记忆",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "网络",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "航空",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "传感器",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "数据",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "时间",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "序列",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "预测",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并运用贝叶斯优化算法对长短期记忆网络的超参数进行迭代优化",
+      "tokens": [
+        "并",
+        "运用",
+        "贝叶斯",
+        "优化",
+        "算法",
+        "对",
+        "长",
+        "短期",
+        "记忆",
+        "网络",
+        "的",
+        "超",
+        "参数",
+        "进行",
+        "迭代",
+        "优化"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "运用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "贝叶斯",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "优化",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "算法",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "长",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "短期",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "记忆",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "网络",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "超",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "参数",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "进行",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "迭代",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "优化",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用NASA公开数据集对算法进行验证",
+      "tokens": [
+        "利用",
+        "NASA",
+        "公开",
+        "数据",
+        "集",
+        "对",
+        "算法",
+        "进行",
+        "验证"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "NASA",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "公开",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "集",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "算法",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "验证",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明",
+      "tokens": [
+        "结果",
+        "表明"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "相较于其他算法",
+      "tokens": [
+        "相较于",
+        "其他",
+        "算法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "相较于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "其他",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "算法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "优化后的算法在优化参数、提高预测准确率方面有明显改善",
+      "tokens": [
+        "优化",
+        "后",
+        "的",
+        "算法",
+        "在",
+        "优化",
+        "参数",
+        "、",
+        "提高",
+        "预测",
+        "准确率",
+        "方面",
+        "有",
+        "明显",
+        "改善"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "优化",
+          "head": 2,
+          "deprel": "lccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "后",
+          "head": 4,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "算法",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "优化",
+          "head": 12,
+          "deprel": "vmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "参数",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "提高",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "准确率",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方面",
+          "head": 5,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VE"
+        },
+        {
+          "id": 14,
+          "form": "明显",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "改善",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "能为保证航空器的安全使用以及制定维修替换策略提供参考",
+      "tokens": [
+        "能",
+        "为",
+        "保证",
+        "航空器",
+        "的",
+        "安全",
+        "使用",
+        "以及",
+        "制定",
+        "维修",
+        "替换",
+        "策略",
+        "提供",
+        "参考"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "能",
+          "head": 13,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "为",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "保证",
+          "head": 2,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "航空器",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "安全",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "使用",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "以及",
+          "head": 3,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "制定",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "维修",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "替换",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "策略",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "参考",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

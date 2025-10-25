@@ -1,0 +1,44 @@
+[
+  {
+    "subject": "飞机起落架电液换向阀内泄漏故障预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "电液换向阀内泄漏无法实施检测的问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "电液换向阀内泄漏",
+    "subject_type": "故障模式",
+    "relation": "导致",
+    "object": "飞机起落架故障",
+    "object_type": "故障现象"
+  },
+  {
+    "subject": "本文",
+    "subject_type": "研究",
+    "relation": "研究",
+    "object": "电液换向阀内泄漏机制",
+    "object_type": "理论"
+  },
+  {
+    "subject": "有源液压测试技术",
+    "subject_type": "技术",
+    "relation": "用于建立",
+    "object": "电液换向阀内泄漏模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "实验",
+    "subject_type": "研究方法",
+    "relation": "验证",
+    "object": "有源液压测试技术的可行性",
+    "object_type": "结论"
+  },
+  {
+    "subject": "有源液压测试技术",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "电液换向阀内泄漏无法预测的问题",
+    "object_type": "问题"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "评估模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "层次分析法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "评估模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "T-S模糊神经网络",
+    "object_type": "技术"
+  },
+  {
+    "subject": "评估模型",
+    "subject_type": "模型",
+    "relation": "评估",
+    "object": "飞机健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "T-S模糊神经网络系统",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "复杂系统建模和控制的有效工具",
+    "object_type": "工具"
+  },
+  {
+    "subject": "民航飞机健康管理状态评估",
+    "subject_type": "任务",
+    "relation": "需要",
+    "object": "传感器采集的基础数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "数据处理过程",
+    "subject_type": "过程",
+    "relation": "包含",
+    "object": "健康状态特征参数提取",
+    "object_type": "技术"
+  },
+  {
+    "subject": "数据处理过程",
+    "subject_type": "过程",
+    "relation": "包含",
+    "object": "故障诊断算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "数据处理过程",
+    "subject_type": "过程",
+    "relation": "包含",
+    "object": "故障预测技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "数据处理过程",
+    "subject_type": "过程",
+    "relation": "包含",
+    "object": "健康管理决策",
+    "object_type": "决策"
+  },
+  {
+    "subject": "评估结果分析",
+    "subject_type": "分析方法",
+    "relation": "有助于发现",
+    "object": "民航飞机健康状态的变化",
+    "object_type": "现象"
+  },
+  {
+    "subject": "健康状态变化趋势",
+    "subject_type": "现象",
+    "relation": "决定",
+    "object": "相关维护措施",
+    "object_type": "措施"
+  }
+]

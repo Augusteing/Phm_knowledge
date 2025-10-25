@@ -1,0 +1,269 @@
+{
+  "entities": [
+    {
+      "name": "EnsembleBRB-SHAP",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "集成置信规则库",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "置信规则库",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SHAP",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康状态预测",
+      "type": "研究方法",
+      "evaluation": "错误"
+    },
+    {
+      "name": "可解释性",
+      "type": "特征/健康指标",
+      "evaluation": "错误"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "均方根误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "集成学习算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "数据驱动模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "物理模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Bagging框架",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "低压涡轮机冷却液泄漏量",
+      "type": "传感器/监测参数",
+      "evaluation": "不确定"
+    },
+    {
+      "name": "风扇转速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高压压缩机出口燃料流量与静压比",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高压压缩机出口静态压力",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "低压压缩机出口温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "校正后的核心转速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高压压缩机出口温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "涵道比",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "核心转速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "校正后的风扇转速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "排气焰",
+      "type": "传感器/监测参数",
+      "evaluation": "错误"
+    },
+    {
+      "name": "发动机健康管理",
+      "type": "应用场景",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "提出了",
+      "tail": "健康状态预测",
+      "evaluation": "错误"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "基于",
+      "tail": "置信规则库",
+      "evaluation": "正确"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "采用",
+      "tail": "集成学习算法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "改进了",
+      "tail": "置信规则库",
+      "evaluation": "正确"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "应用于",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "基于",
+      "tail": "数据驱动模型",
+      "evaluation": "错误"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "区别于",
+      "tail": "物理模型",
+      "evaluation": "错误"
+    },
+    {
+      "head": "SHAP",
+      "relation": "用于",
+      "tail": "可解释性",
+      "evaluation": "正确"
+    },
+    {
+      "head": "SHAP",
+      "relation": "分析",
+      "tail": "集成置信规则库",
+      "evaluation": "正确"
+    },
+    {
+      "head": "C-MAPSS数据集",
+      "relation": "支持",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "均方根误差",
+      "relation": "评价指标是",
+      "tail": "健康状态预测",
+      "evaluation": "错误"
+    },
+    {
+      "head": "集成学习算法",
+      "relation": "包含",
+      "tail": "Bagging框架",
+      "evaluation": "正确"
+    },
+    {
+      "head": "低压涡轮机冷却液泄漏量",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "不确定"
+    },
+    {
+      "head": "风扇转速",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "高压压缩机出口燃料流量与静压比",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "高压压缩机出口静态压力",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "低压压缩机出口温度",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "校正后的核心转速",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "高压压缩机出口温度",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "涵道比",
+      "relation": "影响",
+      "tail": "健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核心转速",
+      "relation": "相似于",
+      "tail": "校正后的核心转速",
+      "evaluation": "正确"
+    },
+    {
+      "head": "风扇转速",
+      "relation": "相似于",
+      "tail": "校正后的风扇转速",
+      "evaluation": "正确"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "支持",
+      "tail": "发动机健康管理",
+      "evaluation": "正确"
+    }
+  ]
+}

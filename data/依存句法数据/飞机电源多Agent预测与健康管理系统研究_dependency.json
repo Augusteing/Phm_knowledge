@@ -1,0 +1,906 @@
+{
+  "title": "飞机电源多Agent预测与健康管理系统研究",
+  "summary": "针对复杂多任务的飞机电源预测与健康管理的需求,以状态维护开放系统体系结构OSA-CBM模型为标准架构,提出一种基于多Agent的飞机电源故障预测与健康管理系统体系结构模型。结合原型系统开发实例,详细阐述了各Agent的功能及相互关系。采用AUML技术构建基于多Agent的AEPHM系统模型,通过AUML协议图描述了Agent之间的主要交互活动。实践表明,该体系结构为航空机载设备预测与健康管理系统建设提供了一种新的设计开发模式。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对复杂多任务的飞机电源预测与健康管理的需求,以状态维护开放系统体系结构OSA-CBM模型为标准架构,提出一种基于多Agent的飞机电源故障预测与健康管理系统体系结构模型",
+      "tokens": [
+        "针对",
+        "复杂",
+        "多",
+        "任务",
+        "的",
+        "飞机",
+        "电源",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "的",
+        "需求",
+        ",",
+        "以",
+        "状态",
+        "维护",
+        "开放",
+        "系统",
+        "体系",
+        "结构",
+        "OSA-CBM",
+        "模型",
+        "为",
+        "标准",
+        "架构",
+        ",",
+        "提出",
+        "一",
+        "种",
+        "基于",
+        "多",
+        "Agent",
+        "的",
+        "飞机",
+        "电源",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "系统",
+        "体系",
+        "结构",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 24,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "复杂",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 3,
+          "form": "多",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "任务",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "电源",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "健康",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "管理",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "需求",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "以",
+          "head": 24,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "状态",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "维护",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "开放",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "体系",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "结构",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "OSA-CBM",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "模型",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "标准",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "架构",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "提出",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "一",
+          "head": 30,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 30,
+          "form": "种",
+          "head": 45,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 31,
+          "form": "基于",
+          "head": 45,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "多",
+          "head": 33,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 33,
+          "form": "Agent",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 31,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 35,
+          "form": "飞机",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "电源",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "故障",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "预测",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "与",
+          "head": 45,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "健康",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "管理",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "系统",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "体系",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "结构",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "模型",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合原型系统开发实例,详细阐述了各Agent的功能及相互关系",
+      "tokens": [
+        "结合",
+        "原型",
+        "系统",
+        "开发",
+        "实例",
+        ",",
+        "详细",
+        "阐述",
+        "了",
+        "各",
+        "Agent",
+        "的",
+        "功能",
+        "及",
+        "相互",
+        "关系"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "原型",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "开发",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "实例",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "详细",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "阐述",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "各",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 11,
+          "form": "Agent",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "功能",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "及",
+          "head": 16,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "相互",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "PN"
+        },
+        {
+          "id": 16,
+          "form": "关系",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "采用AUML技术构建基于多Agent的AEPHM系统模型,通过AUML协议图描述了Agent之间的主要交互活动",
+      "tokens": [
+        "采用",
+        "AUML",
+        "技术",
+        "构建",
+        "基于",
+        "多",
+        "Agent",
+        "的",
+        "AEPHM",
+        "系统",
+        "模型",
+        ",",
+        "通过",
+        "AUML",
+        "协议图",
+        "描述",
+        "了",
+        "Agent",
+        "之间",
+        "的",
+        "主要",
+        "交互",
+        "活动"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "AUML",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "技术",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "构建",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "基于",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "多",
+          "head": 7,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 7,
+          "form": "Agent",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "AEPHM",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "模型",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "通过",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "AUML",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 15,
+          "form": "协议图",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "描述",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "Agent",
+          "head": 19,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "之间",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "主要",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "交互",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "活动",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实践表明,该体系结构为航空机载设备预测与健康管理系统建设提供了一种新的设计开发模式",
+      "tokens": [
+        "实践",
+        "表明",
+        ",",
+        "该",
+        "体系",
+        "结构",
+        "为",
+        "航空",
+        "机载",
+        "设备",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "系统",
+        "建设",
+        "提供",
+        "了",
+        "一",
+        "种",
+        "新",
+        "的",
+        "设计",
+        "开发",
+        "模式"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实践",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "该",
+          "head": 6,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 5,
+          "form": "体系",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "结构",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "为",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "航空",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "机载",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "设备",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "与",
+          "head": 16,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "健康",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "管理",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "系统",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "建设",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "提供",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "一",
+          "head": 20,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 20,
+          "form": "种",
+          "head": 25,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 21,
+          "form": "新",
+          "head": 25,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 23,
+          "form": "设计",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "开发",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "模式",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

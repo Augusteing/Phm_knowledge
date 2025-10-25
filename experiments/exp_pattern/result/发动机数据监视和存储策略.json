@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "应用策略",
+    "subject_type": "策略",
+    "relation": "应用于",
+    "object": "发动机健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "机载设备",
+    "subject_type": "设备",
+    "relation": "具有",
+    "object": "在线监测",
+    "object_type": "需求"
+  },
+  {
+    "subject": "机载设备",
+    "subject_type": "设备",
+    "relation": "具有",
+    "object": "大容量存储发动机工作数据",
+    "object_type": "需求"
+  },
+  {
+    "subject": "应用策略",
+    "subject_type": "策略",
+    "relation": "包含",
+    "object": "多任务管理",
+    "object_type": "技术"
+  },
+  {
+    "subject": "应用策略",
+    "subject_type": "策略",
+    "relation": "包含",
+    "object": "存储管理",
+    "object_type": "技术"
+  },
+  {
+    "subject": "多任务管理",
+    "subject_type": "技术",
+    "relation": "采用",
+    "object": "优先级抢占机制",
+    "object_type": "机制"
+  },
+  {
+    "subject": "存储管理",
+    "subject_type": "技术",
+    "relation": "采用",
+    "object": "二级缓存模式",
+    "object_type": "模式"
+  },
+  {
+    "subject": "设计策略",
+    "subject_type": "策略",
+    "relation": "实现于",
+    "object": "VxWorks操作系统",
+    "object_type": "操作系统"
+  },
+  {
+    "subject": "设计策略",
+    "subject_type": "策略",
+    "relation": "实现于",
+    "object": "HRFS文件系统",
+    "object_type": "文件系统"
+  },
+  {
+    "subject": "设计策略",
+    "subject_type": "策略",
+    "relation": "验证了",
+    "object": "可行性",
+    "object_type": "属性"
+  }
+]

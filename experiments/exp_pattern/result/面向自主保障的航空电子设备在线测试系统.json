@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "故障预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "缺乏",
+    "object": "实时数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "故障预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "缺乏",
+    "object": "应用环境",
+    "object_type": "环境"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "故障预测与健康管理",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "自主保障",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "应用",
+    "object": "新算法",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "应用",
+    "object": "信息处理结构",
+    "object_type": "架构"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "分析",
+    "object": "航空电子设备异常",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "监测",
+    "object": "复杂异常",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "识别",
+    "object": "复杂异常",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "利用",
+    "object": "机上环境数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "航空电子设备在线测试系统",
+    "subject_type": "系统",
+    "relation": "提供基础",
+    "object": "在线和线下故障预测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "机上在线异常检测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "多元统计分析",
+    "object_type": "技术"
+  },
+  {
+    "subject": "机上在线异常检测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "混合SOM-RBF神经网络",
+    "object_type": "模型"
+  }
+]

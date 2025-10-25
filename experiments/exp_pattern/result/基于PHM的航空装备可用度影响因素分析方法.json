@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "影响",
+    "object": "航空装备保障过程",
+    "object_type": "过程"
+  },
+  {
+    "subject": "航空装备可用度影响因素",
+    "subject_type": "概念",
+    "relation": "分为",
+    "object": "使用影响因素",
+    "object_type": "因素"
+  },
+  {
+    "subject": "航空装备可用度影响因素",
+    "subject_type": "概念",
+    "relation": "分为",
+    "object": "设计影响因素",
+    "object_type": "因素"
+  },
+  {
+    "subject": "仿真假设条件",
+    "subject_type": "条件",
+    "relation": "简化",
+    "object": "仿真过程",
+    "object_type": "过程"
+  },
+  {
+    "subject": "仿真",
+    "subject_type": "过程",
+    "relation": "输出",
+    "object": "稳态可用度",
+    "object_type": "指标"
+  },
+  {
+    "subject": "基于PHM的航空装备可用度影响因素分析方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "解析计算公式",
+    "object_type": "公式"
+  },
+  {
+    "subject": "基于PHM的航空装备可用度影响因素分析方法",
+    "subject_type": "方法",
+    "relation": "描述",
+    "object": "仿真程序",
+    "object_type": "程序"
+  },
+  {
+    "subject": "仿真结果",
+    "subject_type": "结果",
+    "relation": "验证",
+    "object": "基于PHM的航空装备可用度影响因素分析方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "基于PHM的航空装备可用度影响因素分析方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "单因素分析",
+    "object_type": "分析"
+  },
+  {
+    "subject": "基于PHM的航空装备可用度影响因素分析方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "多因素耦合分析",
+    "object_type": "分析"
+  }
+]

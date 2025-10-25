@@ -1,0 +1,1497 @@
+{
+  "title": "基于健康监测的飞机结构寿命预测技术",
+  "summary": "飞机结构健康监测技术在飞机的结构设计、飞行及维护过程中发挥着重要作用，该技术可用于结构健康状况预判、辅助维修与维护决策。本文首先介绍了当前结构健康监测的概念及其适用范围，讨论了结构健康监测相关规范要求，以F-35和A400M为例分析了国外飞机结构健康监测技术的典型工程案例，并给出了典型飞机单机跟踪和寿命控制、某老龄飞机载荷谱实测及寿命预测，总结了基于裂纹的监测方法研究及限制其应用的主要因素。在此基础上，提出了飞机结构健康监测系统设计的主要思路，给出了寿命预计的基本流程，阐述了其中控制点选择、飞行参数筛选、载荷/应变方程构建、损伤计算及寿命评估、结果输出及方程验证等主要环节。最后，对航空领域未来开展结构健康监测智能化研究进行了展望。",
+  "analyzed_sentences": [
+    {
+      "sentence": "飞机结构健康监测技术在飞机的结构设计、飞行及维护过程中发挥着重要作用",
+      "tokens": [
+        "飞机",
+        "结构",
+        "健康",
+        "监测",
+        "技术",
+        "在",
+        "飞机",
+        "的",
+        "结构",
+        "设计",
+        "、",
+        "飞行",
+        "及",
+        "维护",
+        "过程",
+        "中",
+        "发挥",
+        "着",
+        "重要",
+        "作用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "结构",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "监测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "技术",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "飞机",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "结构",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "设计",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "飞行",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "及",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "维护",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "过程",
+          "head": 16,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "中",
+          "head": 6,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 17,
+          "form": "发挥",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "着",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "重要",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "作用",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "该技术可用于结构健康状况预判、辅助维修与维护决策",
+      "tokens": [
+        "该",
+        "技术",
+        "可",
+        "用于",
+        "结构",
+        "健康",
+        "状况",
+        "预判",
+        "、",
+        "辅助",
+        "维修",
+        "与",
+        "维护",
+        "决策"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "技术",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "可",
+          "head": 4,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "用于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "结构",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "状况",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预判",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "辅助",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "维修",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "与",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "维护",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "决策",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文首先介绍了当前结构健康监测的概念及其适用范围",
+      "tokens": [
+        "本",
+        "文",
+        "首先",
+        "介绍",
+        "了",
+        "当前",
+        "结构",
+        "健康",
+        "监测",
+        "的",
+        "概念",
+        "及",
+        "其",
+        "适用",
+        "范围"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "首先",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "了",
+          "head": 4,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 6,
+          "form": "当前",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 7,
+          "form": "结构",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "监测",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "概念",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "及",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "其",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 14,
+          "form": "适用",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "范围",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "讨论了结构健康监测相关规范要求",
+      "tokens": [
+        "讨论",
+        "了",
+        "结构",
+        "健康",
+        "监测",
+        "相关",
+        "规范",
+        "要求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "讨论",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "结构",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "监测",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "相关",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "规范",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "要求",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "以F-35和A400M为例分析了国外飞机结构健康监测技术的典型工程案例",
+      "tokens": [
+        "以",
+        "F-35",
+        "和",
+        "A400M",
+        "为",
+        "例",
+        "分析",
+        "了",
+        "国外",
+        "飞机",
+        "结构",
+        "健康",
+        "监测",
+        "技术",
+        "的",
+        "典型",
+        "工程",
+        "案例"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "F-35",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "和",
+          "head": 4,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "A400M",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "例",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "分析",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "了",
+          "head": 7,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 9,
+          "form": "国外",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "飞机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "结构",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "健康",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "监测",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "技术",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "典型",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "工程",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "案例",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并给出了典型飞机单机跟踪和寿命控制、某老龄飞机载荷谱实测及寿命预测",
+      "tokens": [
+        "并",
+        "给出",
+        "了",
+        "典型",
+        "飞机",
+        "单机",
+        "跟踪",
+        "和",
+        "寿命",
+        "控制",
+        "、",
+        "某",
+        "老龄",
+        "飞机",
+        "载荷谱",
+        "实测",
+        "及",
+        "寿命",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "典型",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "单机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "跟踪",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "寿命",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "控制",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "某",
+          "head": 14,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 13,
+          "form": "老龄",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "飞机",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "载荷谱",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "实测",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "及",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "寿命",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "总结了基于裂纹的监测方法研究及限制其应用的主要因素",
+      "tokens": [
+        "总结",
+        "了",
+        "基于",
+        "裂纹",
+        "的",
+        "监测",
+        "方法",
+        "研究",
+        "及",
+        "限制",
+        "其",
+        "应用",
+        "的",
+        "主要",
+        "因素"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "基于",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "裂纹",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "监测",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "研究",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "及",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "限制",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "其",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 12,
+          "form": "应用",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "主要",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "因素",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在此基础上",
+      "tokens": [
+        "在",
+        "此",
+        "基础",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "基础",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了飞机结构健康监测系统设计的主要思路",
+      "tokens": [
+        "提出",
+        "了",
+        "飞机",
+        "结构",
+        "健康",
+        "监测",
+        "系统",
+        "设计",
+        "的",
+        "主要",
+        "思路"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "结构",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "监测",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "主要",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "思路",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "给出了寿命预计的基本流程",
+      "tokens": [
+        "给出",
+        "了",
+        "寿命",
+        "预计",
+        "的",
+        "基本",
+        "流程"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "寿命",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预计",
+          "head": 7,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "基本",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "流程",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "阐述了其中控制点选择、飞行参数筛选、载荷/应变方程构建、损伤计算及寿命评估、结果输出及方程验证等主要环节",
+      "tokens": [
+        "阐述",
+        "了",
+        "其中",
+        "控制点",
+        "选择",
+        "、",
+        "飞行",
+        "参数",
+        "筛选",
+        "、",
+        "载荷",
+        "/",
+        "应变",
+        "方程",
+        "构建",
+        "、",
+        "损伤",
+        "计算",
+        "及",
+        "寿命",
+        "评估",
+        "、",
+        "结果",
+        "输出",
+        "及",
+        "方程",
+        "验证",
+        "等",
+        "主要",
+        "环节"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "阐述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "其中",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "控制点",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "选择",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "飞行",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "参数",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "筛选",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "载荷",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "/",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "应变",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "方程",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "构建",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "损伤",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "计算",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "及",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "寿命",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "评估",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "结果",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "输出",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "及",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "方程",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "验证",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "等",
+          "head": 27,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 29,
+          "form": "主要",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "环节",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后",
+      "tokens": [
+        "最后"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "对航空领域未来开展结构健康监测智能化研究进行了展望",
+      "tokens": [
+        "对",
+        "航空",
+        "领域",
+        "未来",
+        "开展",
+        "结构",
+        "健康",
+        "监测",
+        "智能化",
+        "研究",
+        "进行",
+        "了",
+        "展望"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "领域",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "未来",
+          "head": 5,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 5,
+          "form": "开展",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "结构",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "监测",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "智能化",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "研究",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "展望",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "新一代飞机设计的关键技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "新一代飞机设计的重要组成部分",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "系统工程方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "场景分析",
+    "object_type": "分析"
+  },
+  {
+    "subject": "场景分析",
+    "subject_type": "分析",
+    "relation": "针对",
+    "object": "有人机/无人机协同作战机群PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "系统用例图与活动图建模",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "系统需求分析",
+    "object_type": "分析"
+  },
+  {
+    "subject": "PHM系统顶层架构",
+    "subject_type": "架构",
+    "relation": "包含",
+    "object": "功能架构设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "PHM系统顶层架构",
+    "subject_type": "架构",
+    "relation": "包含",
+    "object": "逻辑体系架构设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "PHM系统顶层架构",
+    "subject_type": "架构",
+    "relation": "包含",
+    "object": "数据传输服务",
+    "object_type": "服务"
+  },
+  {
+    "subject": "系统设计",
+    "subject_type": "设计",
+    "relation": "涉及",
+    "object": "关键技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "研究成果",
+    "subject_type": "成果",
+    "relation": "指导",
+    "object": "机群PHM系统设计",
+    "object_type": "设计"
+  }
+]

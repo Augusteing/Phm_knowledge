@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "人工智能技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "未来民机",
+    "object_type": "产品"
+  },
+  {
+    "subject": "人工智能技术",
+    "subject_type": "技术",
+    "relation": "提升",
+    "object": "民用飞机国际竞争力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "智能装配技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "波音787",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "智能驾驶舱技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "波音787",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "智能飞控系统",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "波音787",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "智能维护技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "波音787",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "智能材料和标签",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "波音787",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "我国民机主制造商",
+    "subject_type": "组织",
+    "relation": "应进行变革",
+    "object": "智能技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "产品设计创新",
+    "object_type": "领域"
+  },
+  {
+    "subject": "智能技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "生产制造优化",
+    "object_type": "领域"
+  },
+  {
+    "subject": "智能技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "管理效率提升",
+    "object_type": "领域"
+  },
+  {
+    "subject": "智能技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "个性服务定制",
+    "object_type": "领域"
+  },
+  {
+    "subject": "智能技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "飞机健康管理",
+    "object_type": "领域"
+  },
+  {
+    "subject": "我国民机主制造商",
+    "subject_type": "组织",
+    "relation": "应研究",
+    "object": "新型智能技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "我国民机主制造商",
+    "subject_type": "组织",
+    "relation": "应储备",
+    "object": "新型智能技术",
+    "object_type": "技术"
+  }
+]

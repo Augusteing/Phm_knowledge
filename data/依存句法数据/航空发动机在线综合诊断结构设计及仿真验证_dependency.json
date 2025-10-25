@@ -1,0 +1,1209 @@
+{
+  "title": "航空发动机在线综合诊断结构设计及仿真验证",
+  "summary": "随着机载航空电子设备的快速发展,使得传统地面系统承担的发动机诊断任务可以在线实现。实时数据的使用,可以在线监测发动机性能退化,减少故障检测和隔离的潜伏期,增加间歇性故障的检测率。为此,提出并设计了一种用于航空发动机气路故障检测和隔离、健康监测及参数估计的在线综合诊断结构。基于xPC Target原理搭建了硬件实时仿真平台,对该结构进行了仿真验证。仿真结果表明,该结构中的机载自适应模型对发动机健康参数、可测参数和不可测参数的估计误差在0.5%以内;气路故障诊断系统采用实时数据,可以更早地检测和隔离包含间歇性故障在内的各种气路故障。",
+  "analyzed_sentences": [
+    {
+      "sentence": "随着机载航空电子设备的快速发展,使得传统地面系统承担的发动机诊断任务可以在线实现",
+      "tokens": [
+        "随着",
+        "机载",
+        "航空",
+        "电子",
+        "设备",
+        "的",
+        "快速",
+        "发展",
+        ",",
+        "使得",
+        "传统",
+        "地面",
+        "系统",
+        "承担",
+        "的",
+        "发动机",
+        "诊断",
+        "任务",
+        "可以",
+        "在线",
+        "实现"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "随着",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "机载",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "电子",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "设备",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "快速",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "使得",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "传统",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "地面",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "系统",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "承担",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 16,
+          "form": "发动机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "诊断",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "任务",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "可以",
+          "head": 21,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "在线",
+          "head": 21,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 21,
+          "form": "实现",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "实时数据的使用,可以在线监测发动机性能退化,减少故障检测和隔离的潜伏期,增加间歇性故障的检测率",
+      "tokens": [
+        "实时",
+        "数据",
+        "的",
+        "使用",
+        ",",
+        "可以",
+        "在线",
+        "监测",
+        "发动机",
+        "性能",
+        "退化",
+        ",",
+        "减少",
+        "故障",
+        "检测",
+        "和",
+        "隔离",
+        "的",
+        "潜伏期",
+        ",",
+        "增加",
+        "间歇性",
+        "故障",
+        "的",
+        "检测率"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实时",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "数据",
+          "head": 4,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "使用",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "可以",
+          "head": 8,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "在线",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "监测",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "发动机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "性能",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "退化",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "减少",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "检测",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "隔离",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "潜伏期",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "增加",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "间歇性",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "故障",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "检测率",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为此,提出并设计了一种用于航空发动机气路故障检测和隔离、健康监测及参数估计的在线综合诊断结构",
+      "tokens": [
+        "为",
+        "此",
+        ",",
+        "提出",
+        "并",
+        "设计",
+        "了",
+        "一",
+        "种",
+        "用",
+        "于",
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "检测",
+        "和",
+        "隔离",
+        "、",
+        "健康",
+        "监测",
+        "及",
+        "参数",
+        "估计",
+        "的",
+        "在线",
+        "综合",
+        "诊断",
+        "结构"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "PN"
+        },
+        {
+          "id": 3,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "并",
+          "head": 4,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "设计",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "了",
+          "head": 6,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 8,
+          "form": "一",
+          "head": 9,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 9,
+          "form": "种",
+          "head": 29,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 10,
+          "form": "用",
+          "head": 29,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "于",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "航空",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "发动机",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "气路",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "检测",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "和",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "隔离",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "健康",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "监测",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "及",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "参数",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "估计",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 26,
+          "form": "在线",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "综合",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "诊断",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "结构",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于xPC Target原理搭建了硬件实时仿真平台,对该结构进行了仿真验证",
+      "tokens": [
+        "基于",
+        "xPC",
+        "Target",
+        "原理",
+        "搭建",
+        "了",
+        "硬件",
+        "实时",
+        "仿真",
+        "平台",
+        ",",
+        "对",
+        "该",
+        "结构",
+        "进行",
+        "了",
+        "仿真",
+        "验证"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "xPC",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "Target",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "原理",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "搭建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "硬件",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "实时",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "仿真",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "平台",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "对",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "该",
+          "head": 14,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 14,
+          "form": "结构",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "进行",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "仿真",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "验证",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "仿真结果表明,该结构中的机载自适应模型对发动机健康参数、可测参数和不可测参数的估计误差在0.5%以内;气路故障诊断系统采用实时数据,可以更早地检测和隔离包含间歇性故障在内的各种气路故障",
+      "tokens": [
+        "仿真",
+        "结果",
+        "表明",
+        ",",
+        "该",
+        "结构",
+        "中",
+        "的",
+        "机载",
+        "自适应",
+        "模型",
+        "对",
+        "发动机",
+        "健康",
+        "参数",
+        "、",
+        "可测",
+        "参数",
+        "和",
+        "不",
+        "可测",
+        "参数",
+        "的",
+        "估计",
+        "误差",
+        "在",
+        "0.5%",
+        "以内",
+        ";",
+        "气路",
+        "故障",
+        "诊断",
+        "系统",
+        "采用",
+        "实时",
+        "数据",
+        ",",
+        "可以",
+        "更",
+        "早",
+        "地",
+        "检测",
+        "和",
+        "隔离",
+        "包含",
+        "间歇性",
+        "故障",
+        "在内",
+        "的",
+        "各",
+        "种",
+        "气路",
+        "故障"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "仿真",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "结果",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "该",
+          "head": 6,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 6,
+          "form": "结构",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "中",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "机载",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "自适应",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "模型",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "对",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "发动机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "健康",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "参数",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "可测",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "参数",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "和",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "不",
+          "head": 21,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 21,
+          "form": "可测",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "参数",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "估计",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "误差",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "在",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "0.5%",
+          "head": 28,
+          "deprel": "lobj",
+          "pos": "CD"
+        },
+        {
+          "id": 28,
+          "form": "以内",
+          "head": 26,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 29,
+          "form": ";",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "气路",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "故障",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "诊断",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "系统",
+          "head": 34,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "采用",
+          "head": 42,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "实时",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "数据",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "可以",
+          "head": 42,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "更",
+          "head": 40,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 40,
+          "form": "早",
+          "head": 42,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 41,
+          "form": "地",
+          "head": 40,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 42,
+          "form": "检测",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "和",
+          "head": 42,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 44,
+          "form": "隔离",
+          "head": 42,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "包含",
+          "head": 53,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "间歇性",
+          "head": 47,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "故障",
+          "head": 48,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "在内",
+          "head": 45,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 49,
+          "form": "的",
+          "head": 45,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 50,
+          "form": "各",
+          "head": 53,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 51,
+          "form": "种",
+          "head": 50,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 52,
+          "form": "气路",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "故障",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

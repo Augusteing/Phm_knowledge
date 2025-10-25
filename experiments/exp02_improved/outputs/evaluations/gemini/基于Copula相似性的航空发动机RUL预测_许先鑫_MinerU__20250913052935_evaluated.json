@@ -1,0 +1,223 @@
+{
+  "entities": [
+    {
+      "name": "基于Copula相似性的航空发动机RUL预测方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "剩余使用寿命(RUL)",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Copula函数",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Copula相似性",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "性能退化特征众多且相互影响",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "退化特征间的非线性相关关系",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "传感器",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "传统方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "预测与健康管理(PHM)",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "退化模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Copula结构",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Kendall秩相关系数",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Akaike信息准则(AIC)",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Ps30",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "T50",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "BPR",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "FrankCopula",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ClaytonCopula",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "JoeCopula",
+      "type": "模型",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "解决",
+      "tail": "性能退化特征众多且相互影响",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "考虑了",
+      "tail": "退化特征间的非线性相关关系",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "应用于",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "航空发动机工作状态分类",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "用于",
+      "tail": "相关性建模",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "构建",
+      "tail": "Copula结构",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula相似性",
+      "relation": "用于",
+      "tail": "剩余使用寿命(RUL)预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "优于",
+      "tail": "传统方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提高",
+      "tail": "预测精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "验证于",
+      "tail": "C-MAPSS数据集",
+      "evaluation": "正确"
+    },
+    {
+      "head": "退化模型",
+      "relation": "用于选取",
+      "tail": "退化趋势最明显的传感器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Akaike信息准则(AIC)",
+      "relation": "用于选择",
+      "tail": "最优Copula结构",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Kendall秩相关系数",
+      "relation": "作为",
+      "tail": "相似性度量依据",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "包含",
+      "tail": "FrankCopula",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "包含",
+      "tail": "ClaytonCopula",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "包含",
+      "tail": "JoeCopula",
+      "evaluation": "正确"
+    },
+    {
+      "head": "剩余使用寿命(RUL)预测",
+      "relation": "属于",
+      "tail": "预测与健康管理(PHM)",
+      "evaluation": "正确"
+    }
+  ]
+}

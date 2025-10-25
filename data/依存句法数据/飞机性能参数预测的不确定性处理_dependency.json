@@ -1,0 +1,1289 @@
+{
+  "title": "飞机性能参数预测的不确定性处理",
+  "summary": "利用飞机的性能参数对飞机进行故障预报和状态监控是非常重要的。飞机的性能参数不仅具有非线性而且往往包含噪声,使得故障预测结果具有不确定性。针对这些问题,研究了利用非线性支持向量机处理飞机性能参数的预测问题,通过增加线性约束的方式解决了噪声带来的不确定性问题。此种方法不仅提高了预测的精度,而且模型可以利用适用于处理大规模二次规划的序列最小最优化算法进行求解,使得其可以解决大数据量的预测问题。利用仿真数据以及实际飞机性能参数对该方法进行了实验分析,实验结果表明此方法在精度上较不考虑噪声影响的模型有所提高,对于进一步提高飞机故障预测的精度,从而提高飞机的安全性具有重要意义。",
+  "analyzed_sentences": [
+    {
+      "sentence": "利用飞机的性能参数对飞机进行故障预报和状态监控是非常重要的",
+      "tokens": [
+        "利用",
+        "飞机",
+        "的",
+        "性能",
+        "参数",
+        "对",
+        "飞机",
+        "进行",
+        "故障",
+        "预报",
+        "和",
+        "状态",
+        "监控",
+        "是",
+        "非常",
+        "重要",
+        "的"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 16,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "性能",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "参数",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预报",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "状态",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "监控",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "是",
+          "head": 16,
+          "deprel": "cop",
+          "pos": "VC"
+        },
+        {
+          "id": 15,
+          "form": "非常",
+          "head": 16,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "重要",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "dep",
+          "pos": "SP"
+        }
+      ]
+    },
+    {
+      "sentence": "飞机的性能参数不仅具有非线性而且往往包含噪声,使得故障预测结果具有不确定性",
+      "tokens": [
+        "飞机",
+        "的",
+        "性能",
+        "参数",
+        "不仅",
+        "具有",
+        "非线性",
+        "而且",
+        "往往",
+        "包含",
+        "噪声",
+        ",",
+        "使得",
+        "故障",
+        "预测",
+        "结果",
+        "具有",
+        "不确定性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 3,
+          "form": "性能",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "参数",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "不仅",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "非线性",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "而且",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "往往",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "包含",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "噪声",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "使得",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "预测",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "结果",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "具有",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "不确定性",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对这些问题,研究了利用非线性支持向量机处理飞机性能参数的预测问题,通过增加线性约束的方式解决了噪声带来的不确定性问题",
+      "tokens": [
+        "针对",
+        "这些",
+        "问题",
+        ",",
+        "研究",
+        "了",
+        "利用",
+        "非线性",
+        "支持",
+        "向量",
+        "机",
+        "处理",
+        "飞机",
+        "性能",
+        "参数",
+        "的",
+        "预测",
+        "问题",
+        ",",
+        "通过",
+        "增加",
+        "线性",
+        "约束",
+        "的",
+        "方式",
+        "解决",
+        "了",
+        "噪声",
+        "带来",
+        "的",
+        "不确定性",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "这些",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "利用",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "非线性",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "支持",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "向量",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "机",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "处理",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "飞机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "性能",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "参数",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "预测",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "问题",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "通过",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "增加",
+          "head": 25,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "线性",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "约束",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 21,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 25,
+          "form": "方式",
+          "head": 20,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "解决",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "了",
+          "head": 26,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 28,
+          "form": "噪声",
+          "head": 29,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "带来",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 31,
+          "form": "不确定性",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "问题",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "此种方法不仅提高了预测的精度,而且模型可以利用适用于处理大规模二次规划的序列最小最优化算法进行求解,使得其可以解决大数据量的预测问题",
+      "tokens": [
+        "此",
+        "种",
+        "方法",
+        "不仅",
+        "提高",
+        "了",
+        "预测",
+        "的",
+        "精度",
+        ",",
+        "而且",
+        "模型",
+        "可以",
+        "利用",
+        "适用于",
+        "处理",
+        "大",
+        "规模",
+        "二次",
+        "规划",
+        "的",
+        "序列",
+        "最",
+        "小",
+        "最优化",
+        "算法",
+        "进行",
+        "求解",
+        ",",
+        "使得",
+        "其",
+        "可以",
+        "解决",
+        "大",
+        "数据量",
+        "的",
+        "预测",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "种",
+          "head": 1,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 3,
+          "form": "方法",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "不仅",
+          "head": 5,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "提高",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "预测",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "精度",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "而且",
+          "head": 5,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "模型",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "可以",
+          "head": 14,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "利用",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "适用于",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "处理",
+          "head": 15,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "大",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "规模",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "二次",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "规划",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 22,
+          "form": "序列",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "最",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 24,
+          "form": "小",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "VA"
+        },
+        {
+          "id": 25,
+          "form": "最优化",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "算法",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "进行",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "求解",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "使得",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "其",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "PN"
+        },
+        {
+          "id": 32,
+          "form": "可以",
+          "head": 33,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "解决",
+          "head": 30,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "大",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "数据量",
+          "head": 38,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 35,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 37,
+          "form": "预测",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "问题",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用仿真数据以及实际飞机性能参数对该方法进行了实验分析,实验结果表明此方法在精度上较不考虑噪声影响的模型有所提高,对于进一步提高飞机故障预测的精度,从而提高飞机的安全性具有重要意义",
+      "tokens": [
+        "利用",
+        "仿真",
+        "数据",
+        "以及",
+        "实际",
+        "飞机",
+        "性能",
+        "参数",
+        "对",
+        "该",
+        "方法",
+        "进行",
+        "了",
+        "实验",
+        "分析",
+        ",",
+        "实验",
+        "结果",
+        "表明",
+        "此",
+        "方法",
+        "在",
+        "精度",
+        "上",
+        "较",
+        "不",
+        "考虑",
+        "噪声",
+        "影响",
+        "的",
+        "模型",
+        "有所",
+        "提高",
+        ",",
+        "对于",
+        "进一步",
+        "提高",
+        "飞机",
+        "故障",
+        "预测",
+        "的",
+        "精度",
+        ",",
+        "从而",
+        "提高",
+        "飞机",
+        "的",
+        "安全性",
+        "具有",
+        "重要",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "仿真",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "数据",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "以及",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "实际",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "性能",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "参数",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "对",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "该",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 11,
+          "form": "方法",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "了",
+          "head": 12,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "实验",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "分析",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "实验",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "结果",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "表明",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "此",
+          "head": 21,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 21,
+          "form": "方法",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "在",
+          "head": 32,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 23,
+          "form": "精度",
+          "head": 24,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "上",
+          "head": 22,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 25,
+          "form": "较",
+          "head": 32,
+          "deprel": "prep",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "不",
+          "head": 27,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 27,
+          "form": "考虑",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "噪声",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "影响",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 27,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 31,
+          "form": "模型",
+          "head": 25,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "有所",
+          "head": 19,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "提高",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 49,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "对于",
+          "head": 49,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 36,
+          "form": "进一步",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 37,
+          "form": "提高",
+          "head": 35,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "飞机",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "故障",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "预测",
+          "head": 42,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 40,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "精度",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "从而",
+          "head": 45,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 45,
+          "form": "提高",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "飞机",
+          "head": 48,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "的",
+          "head": 46,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 48,
+          "form": "安全性",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "具有",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 50,
+          "form": "重要",
+          "head": 51,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 51,
+          "form": "意义",
+          "head": 49,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

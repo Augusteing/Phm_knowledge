@@ -1,0 +1,867 @@
+{
+  "title": "机载航电系统射频信道健康表征及影响评估",
+  "summary": "提出了基于失效模式影响及危害性分析(FMECA)、故障树分析(FTA)和历史案例的健康表征参数选取原则和方法,探讨了基于隐马尔可夫模型(HMM)和贝叶斯的健康表征方法及其应用。结合机载航电系统综合化射频信道架构,通过建立的模型对射频信道的健康影响进行了初步分析,得到了射频信道健康表征的优先参量。基于射频信道的健康表征参量和影响评估方法的研究对促进开展先进战斗机健康管理技术研究具有重要意义。",
+  "analyzed_sentences": [
+    {
+      "sentence": "提出了基于失效模式影响及危害性分析(FMECA)、故障树分析(FTA)和历史案例的健康表征参数选取原则和方法,探讨了基于隐马尔可夫模型(HMM)和贝叶斯的健康表征方法及其应用",
+      "tokens": [
+        "提出",
+        "了",
+        "基于",
+        "失效",
+        "模式",
+        "影响",
+        "及",
+        "危害性",
+        "分析",
+        "(",
+        "FMECA",
+        ")",
+        "、",
+        "故障树",
+        "分析",
+        "(",
+        "FTA",
+        ")",
+        "和",
+        "历史",
+        "案例",
+        "的",
+        "健康",
+        "表征",
+        "参数",
+        "选取",
+        "原则",
+        "和",
+        "方法",
+        ",",
+        "探讨",
+        "了",
+        "基于",
+        "隐马尔可夫",
+        "模型",
+        "(",
+        "HMM",
+        ")",
+        "和",
+        "贝叶斯",
+        "的",
+        "健康",
+        "表征",
+        "方法",
+        "及",
+        "其",
+        "应用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "基于",
+          "head": 29,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "失效",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "模式",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "影响",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "及",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "危害性",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "分析",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "(",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "FMECA",
+          "head": 15,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ")",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "故障树",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "分析",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "(",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "FTA",
+          "head": 15,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ")",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "和",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "历史",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "案例",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "健康",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "表征",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "参数",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "选取",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "原则",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "和",
+          "head": 29,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "探讨",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "了",
+          "head": 31,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 33,
+          "form": "基于",
+          "head": 47,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 34,
+          "form": "隐马尔可夫",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 35,
+          "form": "模型",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "(",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 37,
+          "form": "HMM",
+          "head": 35,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 38,
+          "form": ")",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "和",
+          "head": 40,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "贝叶斯",
+          "head": 33,
+          "deprel": "pobj",
+          "pos": "NR"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "健康",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "表征",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "方法",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "及",
+          "head": 47,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 46,
+          "form": "其",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 47,
+          "form": "应用",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合机载航电系统综合化射频信道架构,通过建立的模型对射频信道的健康影响进行了初步分析,得到了射频信道健康表征的优先参量",
+      "tokens": [
+        "结合",
+        "机载",
+        "航电",
+        "系统",
+        "综合化",
+        "射频",
+        "信道",
+        "架构",
+        ",",
+        "通过",
+        "建立",
+        "的",
+        "模型",
+        "对",
+        "射频",
+        "信道",
+        "的",
+        "健康",
+        "影响",
+        "进行",
+        "了",
+        "初步",
+        "分析",
+        ",",
+        "得到",
+        "了",
+        "射频",
+        "信道",
+        "健康",
+        "表征",
+        "的",
+        "优先",
+        "参量"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "机载",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "航电",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "综合化",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "射频",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "信道",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "架构",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "通过",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "建立",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "模型",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "对",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "射频",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "信道",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "健康",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "影响",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "初步",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 23,
+          "form": "分析",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "得到",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "了",
+          "head": 25,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 27,
+          "form": "射频",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "信道",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "健康",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "表征",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 30,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 32,
+          "form": "优先",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 33,
+          "form": "参量",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于射频信道的健康表征参量和影响评估方法的研究对促进开展先进战斗机健康管理技术研究具有重要意义",
+      "tokens": [
+        "基于",
+        "射频",
+        "信道",
+        "的",
+        "健康",
+        "表征",
+        "参量",
+        "和",
+        "影响",
+        "评估",
+        "方法",
+        "的",
+        "研究",
+        "对",
+        "促进",
+        "开展",
+        "先进",
+        "战斗机",
+        "健康",
+        "管理",
+        "技术",
+        "研究",
+        "具有",
+        "重要",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "射频",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "信道",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "表征",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "参量",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "影响",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "评估",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "方法",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "研究",
+          "head": 23,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "对",
+          "head": 23,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "促进",
+          "head": 14,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "开展",
+          "head": 15,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "先进",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "战斗机",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "健康",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "管理",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "技术",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "研究",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "重要",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "意义",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

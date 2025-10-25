@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "南京航空航天大学导航研究中心",
+    "subject_type": "研究中心",
+    "relation": "依托",
+    "object": "导航、制导与控制学科平台",
+    "object_type": "学科平台"
+  },
+  {
+    "subject": "南京航空航天大学导航研究中心",
+    "subject_type": "研究中心",
+    "relation": "依托",
+    "object": "南京航空航天大学自动化学院",
+    "object_type": "学院"
+  },
+  {
+    "subject": "导航、制导与控制学科",
+    "subject_type": "学科",
+    "relation": "是",
+    "object": "国家重点(培育)学科",
+    "object_type": "学科类别"
+  },
+  {
+    "subject": "导航、制导与控制学科",
+    "subject_type": "学科",
+    "relation": "是",
+    "object": "国防重点学科",
+    "object_type": "学科类别"
+  },
+  {
+    "subject": "导航、制导与控制学科",
+    "subject_type": "学科",
+    "relation": "是",
+    "object": "首批国防特色学科",
+    "object_type": "学科类别"
+  },
+  {
+    "subject": "南京航空航天大学导航研究中心",
+    "subject_type": "研究中心",
+    "relation": "建有",
+    "object": "飞行器自主控制技术教育部工程中心",
+    "object_type": "科研基地"
+  },
+  {
+    "subject": "南京航空航天大学导航研究中心",
+    "subject_type": "研究中心",
+    "relation": "建有",
+    "object": "先进飞行器导航、控制与健康管理工信部重点实验室",
+    "object_type": "科研基地"
+  }
+]

@@ -1,0 +1,1100 @@
+{
+  "title": "多电飞机电力系统及其关键技术",
+  "summary": "多电飞机将机载二次能源逐步统一为电能，有效提高了飞机的燃油经济性、可靠性和维护性，已成为航空科技发展的重要方向。作为机载二次能源系统的核心，电力系统在多电飞机发展过程中起到了关键支撑作用。电力系统及其关键技术的创新发展是实现飞机综合性能提升和全局优化的必要基础。本文从多电飞机的基本概念与特点出发，分析对比了典型多电飞机的电力系统架构，在此基础上系统地总结了支撑多电飞机电力系统发展的关键技术，讨论了未来多电飞机电力系统高压、直流和智能化的发展趋势。",
+  "analyzed_sentences": [
+    {
+      "sentence": "多电飞机将机载二次能源逐步统一为电能",
+      "tokens": [
+        "多",
+        "电",
+        "飞机",
+        "将",
+        "机载",
+        "二次",
+        "能源",
+        "逐步",
+        "统一",
+        "为",
+        "电能"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "多",
+          "head": 2,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 2,
+          "form": "电",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "将",
+          "head": 9,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 5,
+          "form": "机载",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "二次",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "能源",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "逐步",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "统一",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "为",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "VC"
+        },
+        {
+          "id": 11,
+          "form": "电能",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "有效提高了飞机的燃油经济性、可靠性和维护性",
+      "tokens": [
+        "有效",
+        "提高",
+        "了",
+        "飞机",
+        "的",
+        "燃油",
+        "经济性",
+        "、",
+        "可靠性",
+        "和",
+        "维护性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "有效",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "提高",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "燃油",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "经济性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "可靠性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "维护性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "已成为航空科技发展的重要方向",
+      "tokens": [
+        "已",
+        "成为",
+        "航空",
+        "科技",
+        "发展",
+        "的",
+        "重要",
+        "方向"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "已",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "成为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "科技",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发展",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "重要",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "方向",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "作为机载二次能源系统的核心",
+      "tokens": [
+        "作为",
+        "机载",
+        "二次",
+        "能源",
+        "系统",
+        "的",
+        "核心"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "作为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "机载",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "二次",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "能源",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "核心",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "电力系统在多电飞机发展过程中起到了关键支撑作用",
+      "tokens": [
+        "电力",
+        "系统",
+        "在",
+        "多",
+        "电",
+        "飞机",
+        "发展",
+        "过程",
+        "中",
+        "起到",
+        "了",
+        "关键",
+        "支撑",
+        "作用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "电力",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "在",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "多",
+          "head": 5,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 5,
+          "form": "电",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发展",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "过程",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "中",
+          "head": 3,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "起到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 12,
+          "form": "关键",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "支撑",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "作用",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "电力系统及其关键技术的创新发展是实现飞机综合性能提升和全局优化的必要基础",
+      "tokens": [
+        "电力",
+        "系统",
+        "及",
+        "其",
+        "关键",
+        "技术",
+        "的",
+        "创新",
+        "发展",
+        "是",
+        "实现",
+        "飞机",
+        "综合",
+        "性能",
+        "提升",
+        "和",
+        "全局",
+        "优化",
+        "的",
+        "必要",
+        "基础"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "电力",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "系统",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "及",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "其",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 5,
+          "form": "关键",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "技术",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "创新",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "发展",
+          "head": 10,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 11,
+          "form": "实现",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "飞机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "综合",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "性能",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "提升",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "全局",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "优化",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "必要",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "基础",
+          "head": 10,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文从多电飞机的基本概念与特点出发",
+      "tokens": [
+        "本",
+        "文",
+        "从",
+        "多电",
+        "飞机",
+        "的",
+        "基本",
+        "概念",
+        "与",
+        "特点",
+        "出发"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "从",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "多电",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "基本",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "概念",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "与",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "特点",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "出发",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "分析对比了典型多电飞机的电力系统架构",
+      "tokens": [
+        "分析",
+        "对比",
+        "了",
+        "典型",
+        "多",
+        "电",
+        "飞机",
+        "的",
+        "电力",
+        "系统",
+        "架构"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "对比",
+          "head": 1,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "典型",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "多",
+          "head": 6,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 6,
+          "form": "电",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "电力",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "架构",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在此基础上系统地总结了支撑多电飞机电力系统发展的关键技术",
+      "tokens": [
+        "在",
+        "此",
+        "基础",
+        "上",
+        "系统",
+        "地",
+        "总结",
+        "了",
+        "支撑",
+        "多",
+        "电",
+        "飞机",
+        "电力",
+        "系统",
+        "发展",
+        "的",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "基础",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 7,
+          "deprel": "dvpmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "地",
+          "head": 5,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 7,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "了",
+          "head": 7,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 9,
+          "form": "支撑",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "多",
+          "head": 11,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 11,
+          "form": "电",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "飞机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "电力",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "系统",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "发展",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "关键",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "技术",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "讨论了未来多电飞机电力系统高压、直流和智能化的发展趋势",
+      "tokens": [
+        "讨论",
+        "了",
+        "未来",
+        "多",
+        "电",
+        "飞机",
+        "电力",
+        "系统",
+        "高压",
+        "、",
+        "直流",
+        "和",
+        "智能化",
+        "的",
+        "发展",
+        "趋势"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "讨论",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "未来",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": "多",
+          "head": 5,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 5,
+          "form": "电",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "电力",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "高压",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "直流",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "智能化",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "发展",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "趋势",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

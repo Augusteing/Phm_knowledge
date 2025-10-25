@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "民用航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "ARIMA模型",
+      "type": "模型"
+    },
+    {
+      "name": "回归分析法",
+      "type": "研究方法"
+    },
+    {
+      "name": "振动故障",
+      "type": "故障模式"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "N1转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "低压涡轮振动",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指数模型",
+      "type": "模型"
+    },
+    {
+      "name": "时间序列分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "ADF检验",
+      "type": "算法"
+    },
+    {
+      "name": "白噪声",
+      "type": "理论基础"
+    },
+    {
+      "name": "RMSE",
+      "type": "性能指标"
+    },
+    {
+      "name": "MAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "MaxAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "算法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "ARIMA模型",
+      "relation": "应用于",
+      "tail": "民用航空发动机"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "基于",
+      "tail": "回归分析法"
+    },
+    {
+      "head": "振动故障",
+      "relation": "导致",
+      "tail": "飞行安全影响"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "包含",
+      "tail": "N1转速"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "包含",
+      "tail": "低压涡轮振动"
+    },
+    {
+      "head": "指数模型",
+      "relation": "用于",
+      "tail": "描述低压涡轮振动与N1转速关系"
+    },
+    {
+      "head": "时间序列分析",
+      "relation": "包括",
+      "tail": "ARIMA模型"
+    },
+    {
+      "head": "ADF检验",
+      "relation": "用于",
+      "tail": "判断序列平稳性"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "评价指标是",
+      "tail": "RMSE"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "评价指标是",
+      "tail": "MAE"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "评价指标是",
+      "tail": "MaxAE"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "优于",
+      "tail": "三次指数平滑法"
+    },
+    {
+      "head": "白噪声",
+      "relation": "作为",
+      "tail": "模型适应性检验标准"
+    }
+  ]
+}

@@ -1,0 +1,788 @@
+{
+  "title": "基于模型的发动机喘振故障关键参量仿真与预测",
+  "summary": "航空发动机故障中的深喘严重破坏发动机运行稳定乃至飞机安全。针对该问题,分析了表征喘振故障关键参量的异常变化特征,基于航空发动机运行过程气动热力机理所构建的发动机整体仿真模型模拟的表征发生喘振故障的关键参量变化情况,利用长短记忆神经网络模型进行数据变化趋势预测,通过与其他类型的不同网络算法预报结果的比较,验证了LSTM模型用于喘振故障关键参量预测的有效性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机故障中的深喘严重破坏发动机运行稳定乃至飞机安全",
+      "tokens": [
+        "航空",
+        "发动机",
+        "故障",
+        "中",
+        "的",
+        "深",
+        "喘",
+        "严重",
+        "破坏",
+        "发动机",
+        "运行",
+        "稳定",
+        "乃至",
+        "飞机",
+        "安全"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "中",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "深",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "喘",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "严重",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "破坏",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "发动机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "运行",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "稳定",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "乃至",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "飞机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "安全",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对该问题,分析了表征喘振故障关键参量的异常变化特征,基于航空发动机运行过程气动热力机理所构建的发动机整体仿真模型模拟的表征发生喘振故障的关键参量变化情况,利用长短记忆神经网络模型进行数据变化趋势预测,通过与其他类型的不同网络算法预报结果的比较,验证了LSTM模型用于喘振故障关键参量预测的有效性",
+      "tokens": [
+        "针对",
+        "该",
+        "问题",
+        ",",
+        "分析",
+        "了",
+        "表征",
+        "喘振",
+        "故障",
+        "关键",
+        "参量",
+        "的",
+        "异常",
+        "变化",
+        "特征",
+        ",",
+        "基于",
+        "航空",
+        "发动机",
+        "运行",
+        "过程",
+        "气动",
+        "热力",
+        "机理",
+        "所",
+        "构建",
+        "的",
+        "发动机",
+        "整体",
+        "仿真",
+        "模型",
+        "模拟",
+        "的",
+        "表征",
+        "发生",
+        "喘振",
+        "故障",
+        "的",
+        "关键",
+        "参量",
+        "变化",
+        "情况",
+        ",",
+        "利用",
+        "长",
+        "短",
+        "记忆",
+        "神经",
+        "网络",
+        "模型",
+        "进行",
+        "数据",
+        "变化",
+        "趋势",
+        "预测",
+        ",",
+        "通过",
+        "与",
+        "其他",
+        "类型",
+        "的",
+        "不同",
+        "网络",
+        "算法",
+        "预报",
+        "结果",
+        "的",
+        "比较",
+        ",",
+        "验证",
+        "了",
+        "LSTM",
+        "模型",
+        "用于",
+        "喘振",
+        "故障",
+        "关键",
+        "参量",
+        "预测",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "该",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "表征",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "喘振",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "关键",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "参量",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "异常",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "变化",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "特征",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "基于",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "航空",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "发动机",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "运行",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "过程",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "气动",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "热力",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "机理",
+          "head": 17,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "所",
+          "head": 26,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 26,
+          "form": "构建",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 26,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 28,
+          "form": "发动机",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "整体",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "仿真",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "模型",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "模拟",
+          "head": 34,
+          "deprel": "dvpmod",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 34,
+          "form": "表征",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "发生",
+          "head": 42,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "喘振",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "故障",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 35,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 39,
+          "form": "关键",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "参量",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "变化",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "情况",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "利用",
+          "head": 34,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "长",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "短",
+          "head": 48,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "记忆",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "神经",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "网络",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "模型",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "进行",
+          "head": 44,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 52,
+          "form": "数据",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "变化",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "趋势",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "预测",
+          "head": 51,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "通过",
+          "head": 70,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 58,
+          "form": "与",
+          "head": 68,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 59,
+          "form": "其他",
+          "head": 60,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 60,
+          "form": "类型",
+          "head": 66,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "的",
+          "head": 60,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 62,
+          "form": "不同",
+          "head": 64,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 63,
+          "form": "网络",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "算法",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "预报",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "结果",
+          "head": 58,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "的",
+          "head": 58,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 68,
+          "form": "比较",
+          "head": 57,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": ",",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 70,
+          "form": "验证",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 71,
+          "form": "了",
+          "head": 70,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 72,
+          "form": "LSTM",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "模型",
+          "head": 74,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "用于",
+          "head": 81,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 75,
+          "form": "喘振",
+          "head": 76,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 76,
+          "form": "故障",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "关键",
+          "head": 78,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "参量",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "预测",
+          "head": 74,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 80,
+          "form": "的",
+          "head": 74,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 81,
+          "form": "有效性",
+          "head": 70,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

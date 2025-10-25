@@ -1,0 +1,1021 @@
+{
+  "title": "飞机液压泵源预测与健康管理系统",
+  "summary": "针对飞机液压泵源系统高可靠性和维修保障性要求,根据液压泵源系统故障特点提出了飞机液压泵源预测与健康管理系统的体系结构总体方案,描述了泵源预测与健康管理系统体系结构各层的功能,并对机载液压泵源健康监测系统和地面维护管理系统关键技术进行了研究.基于数字信号处理器设计了机载液压泵源健康监测系统和地面维护管理数据库,给出了鲁棒、快速和智能的故障诊断算法,为典型液压泵源系统故障预测和后勤保障提供了有效的方法,实现了液压泵源系统预测与健康管理的功能.",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对飞机液压泵源系统高可靠性和维修保障性要求,根据液压泵源系统故障特点提出了飞机液压泵源预测与健康管理系统的体系结构总体方案,描述了泵源预测与健康管理系统体系结构各层的功能,并对机载液压泵源健康监测系统和地面维护管理系统关键技术进行了研究.基于数字信号处理器设计了机载液压泵源健康监测系统和地面维护管理数据库,给出了鲁棒、快速和智能的故障诊断算法,为典型液压泵源系统故障预测和后勤保障提供了有效的方法,实现了液压泵源系统预测与健康管理的功能.",
+      "tokens": [
+        "针对",
+        "飞机",
+        "液压",
+        "泵源",
+        "系统",
+        "高",
+        "可靠性",
+        "和",
+        "维修",
+        "保障性",
+        "要求",
+        ",",
+        "根据",
+        "液压",
+        "泵源",
+        "系统",
+        "故障",
+        "特点",
+        "提出",
+        "了",
+        "飞机",
+        "液压",
+        "泵源",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "体系",
+        "结构",
+        "总体",
+        "方案",
+        ",",
+        "描述",
+        "了",
+        "泵源",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "系统",
+        "体系",
+        "结构",
+        "各",
+        "层",
+        "的",
+        "功能",
+        ",",
+        "并",
+        "对",
+        "机载",
+        "液压",
+        "泵源",
+        "健康",
+        "监测",
+        "系统",
+        "和",
+        "地面",
+        "维护",
+        "管理",
+        "系统",
+        "关键",
+        "技术",
+        "进行",
+        "了",
+        "研究",
+        ".",
+        "基于",
+        "数字",
+        "信号",
+        "处理器",
+        "设计",
+        "了",
+        "机载",
+        "液压",
+        "泵源",
+        "健康",
+        "监测",
+        "系统",
+        "和",
+        "地面",
+        "维护",
+        "管理",
+        "数据库",
+        ",",
+        "给出",
+        "了",
+        "鲁棒",
+        "、",
+        "快速",
+        "和",
+        "智能",
+        "的",
+        "故障",
+        "诊断",
+        "算法",
+        ",",
+        "为",
+        "典型",
+        "液压",
+        "泵源",
+        "系统",
+        "故障",
+        "预测",
+        "和",
+        "后勤",
+        "保障",
+        "提供",
+        "了",
+        "有效",
+        "的",
+        "方法",
+        ",",
+        "实现",
+        "了",
+        "液压",
+        "泵源",
+        "系统",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "的",
+        "功能",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "液压",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "泵源",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "高",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "可靠性",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "维修",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "保障性",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "要求",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "根据",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "液压",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "泵源",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "系统",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "特点",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "了",
+          "head": 19,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 21,
+          "form": "飞机",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "液压",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "泵源",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "预测",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "与",
+          "head": 28,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "健康",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "管理",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "系统",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "体系",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "结构",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "总体",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "方案",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "描述",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "了",
+          "head": 35,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 37,
+          "form": "泵源",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "预测",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "与",
+          "head": 42,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "健康",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "管理",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "系统",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "体系",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "结构",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "各",
+          "head": 48,
+          "deprel": "assmod",
+          "pos": "DT"
+        },
+        {
+          "id": 46,
+          "form": "层",
+          "head": 45,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 47,
+          "form": "的",
+          "head": 46,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 48,
+          "form": "功能",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "并",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 51,
+          "form": "对",
+          "head": 65,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 52,
+          "form": "机载",
+          "head": 54,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 53,
+          "form": "液压",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "泵源",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "健康",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "监测",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "系统",
+          "head": 62,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "和",
+          "head": 62,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 59,
+          "form": "地面",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "维护",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "管理",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "系统",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "关键",
+          "head": 64,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "技术",
+          "head": 51,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "进行",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 66,
+          "form": "了",
+          "head": 65,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 67,
+          "form": "研究",
+          "head": 65,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": ".",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "基于",
+          "head": 73,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 70,
+          "form": "数字",
+          "head": 72,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "信号",
+          "head": 72,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "处理器",
+          "head": 69,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "设计",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 74,
+          "form": "了",
+          "head": 73,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 75,
+          "form": "机载",
+          "head": 77,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 76,
+          "form": "液压",
+          "head": 77,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "泵源",
+          "head": 80,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "健康",
+          "head": 80,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "监测",
+          "head": 80,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "系统",
+          "head": 85,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 81,
+          "form": "和",
+          "head": 85,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 82,
+          "form": "地面",
+          "head": 83,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": "维护",
+          "head": 85,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 84,
+          "form": "管理",
+          "head": 85,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "数据库",
+          "head": 73,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 87,
+          "form": "给出",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 88,
+          "form": "了",
+          "head": 87,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 89,
+          "form": "鲁棒",
+          "head": 97,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 90,
+          "form": "、",
+          "head": 89,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 91,
+          "form": "快速",
+          "head": 89,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 92,
+          "form": "和",
+          "head": 89,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 93,
+          "form": "智能",
+          "head": 89,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "的",
+          "head": 89,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 95,
+          "form": "故障",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": "诊断",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "算法",
+          "head": 87,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 99,
+          "form": "为",
+          "head": 109,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 100,
+          "form": "典型",
+          "head": 103,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 101,
+          "form": "液压",
+          "head": 103,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 102,
+          "form": "泵源",
+          "head": 103,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 103,
+          "form": "系统",
+          "head": 108,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 104,
+          "form": "故障",
+          "head": 108,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 105,
+          "form": "预测",
+          "head": 108,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 106,
+          "form": "和",
+          "head": 108,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 107,
+          "form": "后勤",
+          "head": 108,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 108,
+          "form": "保障",
+          "head": 99,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 109,
+          "form": "提供",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 110,
+          "form": "了",
+          "head": 109,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 111,
+          "form": "有效",
+          "head": 113,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 112,
+          "form": "的",
+          "head": 111,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 113,
+          "form": "方法",
+          "head": 109,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 114,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 115,
+          "form": "实现",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 116,
+          "form": "了",
+          "head": 115,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 117,
+          "form": "液压",
+          "head": 119,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 118,
+          "form": "泵源",
+          "head": 119,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 119,
+          "form": "系统",
+          "head": 120,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 120,
+          "form": "预测",
+          "head": 123,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 121,
+          "form": "与",
+          "head": 123,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 122,
+          "form": "健康",
+          "head": 123,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 123,
+          "form": "管理",
+          "head": 125,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 124,
+          "form": "的",
+          "head": 123,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 125,
+          "form": "功能",
+          "head": 115,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 126,
+          "form": ".",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

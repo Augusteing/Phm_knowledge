@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "军用飞机PHM技术",
+    "subject_type": "技术领域",
+    "relation": "面临",
+    "object": "瓶颈问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "瓶颈问题",
+    "subject_type": "问题",
+    "relation": "体现在",
+    "object": "装备测试性设计与验证",
+    "object_type": "瓶颈问题领域"
+  },
+  {
+    "subject": "瓶颈问题",
+    "subject_type": "问题",
+    "relation": "体现在",
+    "object": "多源故障信息交互与管理",
+    "object_type": "瓶颈问题领域"
+  },
+  {
+    "subject": "瓶颈问题",
+    "subject_type": "问题",
+    "relation": "体现在",
+    "object": "寿命预测与维修支持",
+    "object_type": "瓶颈问题领域"
+  },
+  {
+    "subject": "瓶颈问题",
+    "subject_type": "问题",
+    "relation": "体现在",
+    "object": "验证评估",
+    "object_type": "瓶颈问题领域"
+  },
+  {
+    "subject": "瓶颈问题",
+    "subject_type": "问题",
+    "relation": "体现在",
+    "object": "标准制定",
+    "object_type": "瓶颈问题领域"
+  },
+  {
+    "subject": "军用飞机PHM技术",
+    "subject_type": "技术领域",
+    "relation": "需要研究",
+    "object": "测试性试验技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "军用飞机PHM技术",
+    "subject_type": "技术领域",
+    "relation": "需要研究",
+    "object": "智能信息处理与融合技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "军用飞机PHM技术",
+    "subject_type": "技术领域",
+    "relation": "需要研究",
+    "object": "航空装备与信息标准化管理技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "军用飞机PHM技术",
+    "subject_type": "技术领域",
+    "relation": "需要研究",
+    "object": "数据挖掘与平台构建技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "故障预测与健康管理(PHM)技术",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "技术体系构建",
+    "object_type": "技术组成"
+  },
+  {
+    "subject": "故障预测与健康管理(PHM)技术",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "数据采集与运用",
+    "object_type": "技术组成"
+  },
+  {
+    "subject": "故障预测与健康管理(PHM)技术",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "系统状态监测与故障预测",
+    "object_type": "技术组成"
+  },
+  {
+    "subject": "故障预测与健康管理(PHM)技术",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "验证评估",
+    "object_type": "技术组成"
+  }
+]

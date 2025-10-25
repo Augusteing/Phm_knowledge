@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "温度计量技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "试车台健康管理",
+    "object_type": "应用"
+  },
+  {
+    "subject": "传统离线校准方法",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "反复拆装耗时长",
+    "object_type": "问题"
+  },
+  {
+    "subject": "传统离线校准方法",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "易引发故障",
+    "object_type": "问题"
+  },
+  {
+    "subject": "传统离线校准方法",
+    "subject_type": "方法",
+    "relation": "缺少",
+    "object": "系统综合误差的判定方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "整机在线校准方法",
+    "subject_type": "方法",
+    "relation": "校准",
+    "object": "温度传感器",
+    "object_type": "组件"
+  },
+  {
+    "subject": "整机在线校准方法",
+    "subject_type": "方法",
+    "relation": "校准",
+    "object": "温度通道",
+    "object_type": "组件"
+  },
+  {
+    "subject": "整机在线校准方法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "标准热源",
+    "object_type": "设备"
+  },
+  {
+    "subject": "比较模拟仪表显示结果与标准器读数",
+    "subject_type": "过程",
+    "relation": "确认",
+    "object": "在线校准的有效性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "整机在线校准方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "试车台系统综合误差校准",
+    "object_type": "任务"
+  },
+  {
+    "subject": "试车台系统综合误差校准",
+    "subject_type": "任务",
+    "relation": "支撑",
+    "object": "试车台健康管理",
+    "object_type": "应用"
+  }
+]

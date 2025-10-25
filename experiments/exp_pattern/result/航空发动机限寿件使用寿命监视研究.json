@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "航空发动机限寿件使用寿命监视技术",
+    "subject_type": "技术",
+    "relation": "克服",
+    "object": "早期传统使用监视方法的不足",
+    "object_type": "问题"
+  },
+  {
+    "subject": "单元体设计",
+    "subject_type": "理念",
+    "relation": "促进",
+    "object": "航空发动机限寿件使用寿命监视技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "基于状态维修",
+    "subject_type": "理念",
+    "relation": "促进",
+    "object": "航空发动机限寿件使用寿命监视技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "使用寿命监视",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "功能结构",
+    "object_type": "属性"
+  },
+  {
+    "subject": "使用寿命监视",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "发展现状",
+    "object_type": "属性"
+  },
+  {
+    "subject": "使用寿命监视",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "未来趋势",
+    "object_type": "属性"
+  },
+  {
+    "subject": "使用寿命监视",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "优越性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "使用寿命监视",
+    "subject_type": "技术",
+    "relation": "需要解决",
+    "object": "关键技术",
+    "object_type": "问题"
+  },
+  {
+    "subject": "使用寿命监视",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "应用前景",
+    "object_type": "属性"
+  }
+]

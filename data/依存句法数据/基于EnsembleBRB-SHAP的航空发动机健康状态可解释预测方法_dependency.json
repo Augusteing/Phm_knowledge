@@ -1,0 +1,2121 @@
+{
+  "title": "基于EnsembleBRB-SHAP的航空发动机健康状态可解释预测方法",
+  "summary": "航空发动机健康状态预测作为发动机健康管理的重要环节之一，能够为提升飞机可靠性、降低发动机维护成本等工作提供定量化依据。然而，传统的航空发动机健康状态预测对可解释性关注度较低，导致对发动机视情维修等决策的支撑性不足。为此，本文面向发动机健康状态预测的可解释需求，提出基于EnsembleBRB-SHAP模型的航空发动机健康状态可解释预测方法。首先，采用数据驱动法训练多个航空发动机健康状态预测子置信规则库（Belief Rule-Based， BRB）模型。在此基础上，构建航空发动机健康状态预测集成置信规则库（EnsembleBRB）模型，在有效利用多源不确定数据的同时，保证模型的预测准确性。然后，基于沙普利加性解释（SHapley Additive exPlanations， SHAP），对EnsembleBRB模型进行分析解释，定位影响发动机健康状态的关键因素，实现航空发动机健康状态的可解释性预测。最后，引入商用模块化航空推进系统仿真软件记录的发动机故障实验监测数据，验证所提方法的可行性与有效性。结果表明，该方法在航空发动机健康状态预测中的准确性为MSE=0.0122，通过局部可解释性与全局可解释性分析，归纳得出低压涡轮机冷却液泄漏量、风扇转速等是决定发动机健康状态的关键参数，进而更好地支撑航空发动机健康管理等决策工作。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机健康状态预测作为发动机健康管理的重要环节之一",
+      "tokens": [
+        "航空",
+        "发动机",
+        "健康",
+        "状态",
+        "预测",
+        "作为",
+        "发动机",
+        "健康",
+        "管理",
+        "的",
+        "重要",
+        "环节",
+        "之一"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "状态",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "作为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "重要",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "环节",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "之一",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "能够为提升飞机可靠性、降低发动机维护成本等工作提供定量化依据",
+      "tokens": [
+        "能够",
+        "为",
+        "提升",
+        "飞机",
+        "可靠性",
+        "、",
+        "降低",
+        "发动机",
+        "维护",
+        "成本",
+        "等",
+        "工作",
+        "提供",
+        "定量化",
+        "依据"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "能够",
+          "head": 13,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "为",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "提升",
+          "head": 2,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "可靠性",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "降低",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "维护",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "成本",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "等",
+          "head": 10,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 12,
+          "form": "工作",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "定量化",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "依据",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "然而",
+      "tokens": [
+        "然而"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "然而",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "传统的航空发动机健康状态预测对可解释性关注度较低",
+      "tokens": [
+        "传统",
+        "的",
+        "航空",
+        "发动机",
+        "健康",
+        "状态",
+        "预测",
+        "对",
+        "可解释性",
+        "关注度",
+        "较",
+        "低"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "传统",
+          "head": 4,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "状态",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "预测",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "对",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "可解释性",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "关注度",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "较",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "低",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "导致对发动机视情维修等决策的支撑性不足",
+      "tokens": [
+        "导致",
+        "对",
+        "发动机",
+        "视",
+        "情",
+        "维修",
+        "等",
+        "决策",
+        "的",
+        "支撑性",
+        "不足"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "导致",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "视",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "情",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "维修",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "等",
+          "head": 6,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 8,
+          "form": "决策",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "支撑性",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "不足",
+          "head": 1,
+          "deprel": "ccomp",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "为此",
+      "tokens": [
+        "为",
+        "此"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "PN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文面向发动机健康状态预测的可解释需求",
+      "tokens": [
+        "本",
+        "文",
+        "面向",
+        "发动机",
+        "健康",
+        "状态",
+        "预测",
+        "的",
+        "可",
+        "解释",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "面向",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "状态",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "预测",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "可",
+          "head": 10,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "解释",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "需求",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出基于EnsembleBRB-SHAP模型的航空发动机健康状态可解释预测方法",
+      "tokens": [
+        "提出",
+        "基于",
+        "EnsembleBRB-SHAP",
+        "模型",
+        "的",
+        "航空",
+        "发动机",
+        "健康",
+        "状态",
+        "可",
+        "解释",
+        "预测",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "基于",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "EnsembleBRB-SHAP",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "模型",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "航空",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "状态",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "可",
+          "head": 11,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "解释",
+          "head": 13,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "预测",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "首先",
+      "tokens": [
+        "首先"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "首先",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "采用数据驱动法训练多个航空发动机健康状态预测子置信规则库（Belief Rule-Based",
+      "tokens": [
+        "采用",
+        "数据",
+        "驱动法",
+        "训练",
+        "多",
+        "个",
+        "航空",
+        "发动机",
+        "健康",
+        "状态",
+        "预测子",
+        "置信",
+        "规则库",
+        "（",
+        "Belief",
+        "Rule-Based"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "数据",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "驱动法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "训练",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "多",
+          "head": 6,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 6,
+          "form": "个",
+          "head": 8,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 7,
+          "form": "航空",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "健康",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "状态",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测子",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "置信",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "规则库",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "（",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "Belief",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "Rule-Based",
+          "head": 13,
+          "deprel": "prnmod",
+          "pos": "NR"
+        }
+      ]
+    },
+    {
+      "sentence": "BRB）模型",
+      "tokens": [
+        "BRB",
+        "）",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "BRB",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "）",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在此基础上",
+      "tokens": [
+        "在",
+        "此",
+        "基础",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "基础",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "构建航空发动机健康状态预测集成置信规则库（EnsembleBRB）模型",
+      "tokens": [
+        "构建",
+        "航空",
+        "发动机",
+        "健康",
+        "状态",
+        "预测",
+        "集成",
+        "置信",
+        "规则库",
+        "（",
+        "EnsembleBRB",
+        "）",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "构建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "状态",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "集成",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "置信",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "规则库",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "（",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "EnsembleBRB",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 12,
+          "form": "）",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在有效利用多源不确定数据的同时",
+      "tokens": [
+        "在",
+        "有效",
+        "利用",
+        "多",
+        "源",
+        "不确定",
+        "数据",
+        "的",
+        "同时"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "有效",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "利用",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "多",
+          "head": 5,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 5,
+          "form": "源",
+          "head": 7,
+          "deprel": "clf",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "不确定",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "数据",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "同时",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "保证模型的预测准确性",
+      "tokens": [
+        "保证",
+        "模型",
+        "的",
+        "预测",
+        "准确性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "保证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "模型",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "准确性",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "然后",
+      "tokens": [
+        "然后"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "然后",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "基于沙普利加性解释（SHapley Additive exPlanations",
+      "tokens": [
+        "基于",
+        "沙普利加性",
+        "解释",
+        "（",
+        "SHapley",
+        "Additive",
+        "exPlanations"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "沙普利加性",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "解释",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "（",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "SHapley",
+          "head": 6,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "Additive",
+          "head": 3,
+          "deprel": "prnmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "exPlanations",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "SHAP）",
+      "tokens": [
+        "SHAP",
+        "）"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "SHAP",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "）",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    },
+    {
+      "sentence": "对EnsembleBRB模型进行分析解释",
+      "tokens": [
+        "对",
+        "EnsembleBRB",
+        "模型",
+        "进行",
+        "分析",
+        "解释"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "EnsembleBRB",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "分析",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "解释",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "定位影响发动机健康状态的关键因素",
+      "tokens": [
+        "定位",
+        "影响",
+        "发动机",
+        "健康",
+        "状态",
+        "的",
+        "关键",
+        "因素"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "定位",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "影响",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "状态",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "关键",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "因素",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实现航空发动机健康状态的可解释性预测",
+      "tokens": [
+        "实现",
+        "航空",
+        "发动机",
+        "健康",
+        "状态",
+        "的",
+        "可解释性",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "状态",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "可解释性",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后",
+      "tokens": [
+        "最后"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "引入商用模块化航空推进系统仿真软件记录的发动机故障实验监测数据",
+      "tokens": [
+        "引入",
+        "商用",
+        "模块化",
+        "航空",
+        "推进",
+        "系统",
+        "仿真",
+        "软件",
+        "记录",
+        "的",
+        "发动机",
+        "故障",
+        "实验",
+        "监测",
+        "数据"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "引入",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "商用",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "模块化",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "推进",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "仿真",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "软件",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "记录",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "发动机",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "故障",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "实验",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "监测",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "数据",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "验证所提方法的可行性与有效性",
+      "tokens": [
+        "验证",
+        "所",
+        "提",
+        "方法",
+        "的",
+        "可行性",
+        "与",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "所",
+          "head": 3,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 3,
+          "form": "提",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "方法",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "可行性",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "有效性",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明",
+      "tokens": [
+        "结果",
+        "表明"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "该方法在航空发动机健康状态预测中的准确性为MSE=0.0122",
+      "tokens": [
+        "该",
+        "方法",
+        "在",
+        "航空",
+        "发动机",
+        "健康",
+        "状态",
+        "预测",
+        "中",
+        "的",
+        "准确性",
+        "为",
+        "MSE",
+        "=",
+        "0.0122"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "方法",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "在",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "状态",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "中",
+          "head": 3,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "准确性",
+          "head": 12,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 13,
+          "form": "MSE",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "=",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "0.0122",
+          "head": 12,
+          "deprel": "attr",
+          "pos": "CD"
+        }
+      ]
+    },
+    {
+      "sentence": "通过局部可解释性与全局可解释性分析",
+      "tokens": [
+        "通过",
+        "局部",
+        "可解释性",
+        "与",
+        "全局",
+        "可解释性",
+        "分析"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "局部",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "可解释性",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "全局",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "可解释性",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "分析",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "归纳得出低压涡轮机冷却液泄漏量、风扇转速等是决定发动机健康状态的关键参数",
+      "tokens": [
+        "归纳",
+        "得出",
+        "低压",
+        "涡轮机",
+        "冷却液",
+        "泄漏量",
+        "、",
+        "风扇",
+        "转速",
+        "等",
+        "是",
+        "决定",
+        "发动机",
+        "健康",
+        "状态",
+        "的",
+        "关键",
+        "参数"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "归纳",
+          "head": 11,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "得出",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "低压",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "涡轮机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "冷却液",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "泄漏量",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "风扇",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "转速",
+          "head": 11,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "等",
+          "head": 9,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 11,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 12,
+          "form": "决定",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "发动机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "健康",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "状态",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "关键",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "参数",
+          "head": 11,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "进而更好地支撑航空发动机健康管理等决策工作",
+      "tokens": [
+        "进而",
+        "更",
+        "好",
+        "地",
+        "支撑",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "等",
+        "决策",
+        "工作"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "进而",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "更",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "好",
+          "head": 5,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 4,
+          "form": "地",
+          "head": 3,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 5,
+          "form": "支撑",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "航空",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "等",
+          "head": 9,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 11,
+          "form": "决策",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "工作",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

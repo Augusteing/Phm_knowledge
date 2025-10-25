@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "军用飞机PHM系统",
+    "subject_type": "系统",
+    "relation": "存在",
+    "object": "设计标准缺失",
+    "object_type": "问题"
+  },
+  {
+    "subject": "军用飞机PHM系统",
+    "subject_type": "系统",
+    "relation": "存在",
+    "object": "复杂度高",
+    "object_type": "问题"
+  },
+  {
+    "subject": "军用飞机PHM系统",
+    "subject_type": "系统",
+    "relation": "存在",
+    "object": "准确率低",
+    "object_type": "问题"
+  },
+  {
+    "subject": "设计需求分析",
+    "subject_type": "方法",
+    "relation": "提出",
+    "object": "三维多相迭代设计准则",
+    "object_type": "设计准则"
+  },
+  {
+    "subject": "三维多相迭代设计准则",
+    "subject_type": "设计准则",
+    "relation": "用于",
+    "object": "PHM系统设计流程梳理",
+    "object_type": "任务"
+  },
+  {
+    "subject": "三化一体设计架构",
+    "subject_type": "设计架构",
+    "relation": "包含",
+    "object": "基于软硬件协同加速的健康管理实时化",
+    "object_type": "技术方案"
+  },
+  {
+    "subject": "三化一体设计架构",
+    "subject_type": "设计架构",
+    "relation": "包含",
+    "object": "基于知识图谱的知识逻辑可视化",
+    "object_type": "技术方案"
+  },
+  {
+    "subject": "三化一体设计架构",
+    "subject_type": "设计架构",
+    "relation": "包含",
+    "object": "基于MBSE的PHM系统模型化",
+    "object_type": "技术方案"
+  },
+  {
+    "subject": "多领域模型联合仿真",
+    "subject_type": "验证方法",
+    "relation": "验证",
+    "object": "三化一体设计架构",
+    "object_type": "设计架构"
+  },
+  {
+    "subject": "三化一体设计架构",
+    "subject_type": "设计架构",
+    "relation": "实现",
+    "object": "5.63倍的加速计算效果",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "三化一体设计架构",
+    "subject_type": "设计架构",
+    "relation": "实现",
+    "object": "82.7%的计算功耗缩减",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "三化一体设计架构",
+    "subject_type": "设计架构",
+    "relation": "提升",
+    "object": "可追溯性",
+    "object_type": "属性"
+  }
+]

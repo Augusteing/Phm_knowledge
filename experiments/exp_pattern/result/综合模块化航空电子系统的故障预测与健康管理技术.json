@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "故障预测及健康管理技术",
+    "subject_type": "技术",
+    "relation": "保证",
+    "object": "飞机安全性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "航空电子系统",
+    "subject_type": "系统",
+    "relation": "保障",
+    "object": "现代飞机性能",
+    "object_type": "性能"
+  },
+  {
+    "subject": "故障预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "面向",
+    "object": "综合模块化航空电子系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "综合模块化航空电子系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "分层结构",
+    "object_type": "结构"
+  },
+  {
+    "subject": "飞机PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "体系结构设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "体系结构",
+    "subject_type": "设计",
+    "relation": "满足",
+    "object": "标准化",
+    "object_type": "要求"
+  },
+  {
+    "subject": "体系结构",
+    "subject_type": "设计",
+    "relation": "满足",
+    "object": "层次化",
+    "object_type": "要求"
+  },
+  {
+    "subject": "体系结构",
+    "subject_type": "设计",
+    "relation": "满足",
+    "object": "模块化",
+    "object_type": "要求"
+  },
+  {
+    "subject": "体系结构",
+    "subject_type": "设计",
+    "relation": "满足",
+    "object": "开放性",
+    "object_type": "要求"
+  }
+]

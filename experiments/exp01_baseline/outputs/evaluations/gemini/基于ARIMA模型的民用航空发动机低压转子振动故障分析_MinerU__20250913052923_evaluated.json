@@ -1,0 +1,299 @@
+{
+  "entities": [
+    {
+      "name": "基于ARIMA模型的民用航空发动机低压转子振动故障分析方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ARIMA模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "回归分析法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "民用航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "低压转子",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "振动故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机振动值",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "低压转子转速N1",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "指数模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "指数模型系数a",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "系数a时间序列",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "过程的神经网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "可决系数R²",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "均方根误差RMSE",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均绝对误差MAE",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "专家建模器",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SPSS软件",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非平稳序列",
+      "type": "数据特征",
+      "evaluation": "正确"
+    },
+    {
+      "name": "差分法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ADF检验法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机振动故障预测",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "振动-转速特性",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "三次多项式模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "振动超限征兆",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "过拟合问题",
+      "type": "技术问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ARIMA(2,1,3)模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ARIMA(1,1,2)模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "快速存储记录器（QAR）",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于ARIMA模型的民用航空发动机低压转子振动故障分析方法",
+      "relation": "结合",
+      "tail": "回归分析法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于ARIMA模型的民用航空发动机低压转子振动故障分析方法",
+      "relation": "结合",
+      "tail": "ARIMA模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于ARIMA模型的民用航空发动机低压转子振动故障分析方法",
+      "relation": "应用于",
+      "tail": "CFM56-7B发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于ARIMA模型的民用航空发动机低压转子振动故障分析方法",
+      "relation": "用于",
+      "tail": "发动机振动故障预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "用于分析",
+      "tail": "振动-转速特性",
+      "evaluation": "正确"
+    },
+    {
+      "head": "指数模型",
+      "relation": "用于拟合",
+      "tail": "振动-转速特性",
+      "evaluation": "正确"
+    },
+    {
+      "head": "指数模型",
+      "relation": "生成",
+      "tail": "指数模型系数a",
+      "evaluation": "正确"
+    },
+    {
+      "head": "指数模型系数a",
+      "relation": "组成",
+      "tail": "系数a时间序列",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "用于建模分析",
+      "tail": "系数a时间序列",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "适用于",
+      "tail": "非平稳序列",
+      "evaluation": "正确"
+    },
+    {
+      "head": "差分法",
+      "relation": "处理",
+      "tail": "非平稳序列",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ADF检验法",
+      "relation": "检验",
+      "tail": "系数a时间序列",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ARIMA(2,1,3)模型",
+      "relation": "拟合效果优于",
+      "tail": "三次指数平滑法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "能够预测",
+      "tail": "振动故障",
+      "evaluation": "正确"
+    },
+    {
+      "head": "过程的神经网络",
+      "relation": "存在",
+      "tail": "过拟合问题",
+      "evaluation": "正确"
+    },
+    {
+      "head": "专家建模器",
+      "relation": "是...的功能",
+      "tail": "SPSS软件",
+      "evaluation": "正确"
+    },
+    {
+      "head": "专家建模器",
+      "relation": "得出",
+      "tail": "ARIMA(1,1,2)模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "可决系数R²",
+      "relation": "评价",
+      "tail": "指数模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "均方根误差RMSE",
+      "relation": "评价",
+      "tail": "ARIMA(2,1,3)模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "平均绝对误差MAE",
+      "relation": "评价",
+      "tail": "ARIMA(2,1,3)模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "指数模型",
+      "relation": "拟合效果优于",
+      "tail": "三次多项式模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "系数a时间序列",
+      "relation": "显示出",
+      "tail": "振动超限征兆",
+      "evaluation": "正确"
+    },
+    {
+      "head": "快速存储记录器（QAR）",
+      "relation": "记录",
+      "tail": "QAR数据",
+      "evaluation": "正确"
+    }
+  ]
+}

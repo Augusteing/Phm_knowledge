@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "容错控制系统",
+    "subject_type": "系统",
+    "relation": "基于",
+    "object": "模态切换",
+    "object_type": "技术"
+  },
+  {
+    "subject": "容错控制系统",
+    "subject_type": "系统",
+    "relation": "综合",
+    "object": "航空发动机控制",
+    "object_type": "方法"
+  },
+  {
+    "subject": "容错控制系统",
+    "subject_type": "系统",
+    "relation": "综合",
+    "object": "故障诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "任务级模式",
+    "subject_type": "系统模式",
+    "relation": "应对",
+    "object": "发动机部件故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "任务级模式",
+    "subject_type": "系统模式",
+    "relation": "切换",
+    "object": "控制策略",
+    "object_type": "策略"
+  },
+  {
+    "subject": "任务级模式",
+    "subject_type": "系统模式",
+    "relation": "恢复",
+    "object": "发动机性能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "发动机级模式",
+    "subject_type": "系统模式",
+    "relation": "应对",
+    "object": "控制回路失效",
+    "object_type": "故障"
+  },
+  {
+    "subject": "发动机级模式",
+    "subject_type": "系统模式",
+    "relation": "切换到",
+    "object": "容错控制回路",
+    "object_type": "控制回路"
+  },
+  {
+    "subject": "发动机级模式",
+    "subject_type": "系统模式",
+    "relation": "保证",
+    "object": "发动机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "容错控制系统",
+    "subject_type": "系统",
+    "relation": "恢复",
+    "object": "发动机的推力",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "容错控制系统",
+    "subject_type": "系统",
+    "relation": "应对",
+    "object": "压气机转速控制回路失效",
+    "object_type": "故障"
+  },
+  {
+    "subject": "容错控制系统",
+    "subject_type": "系统",
+    "relation": "切换到",
+    "object": "风扇转速控制回路",
+    "object_type": "控制回路"
+  },
+  {
+    "subject": "数字仿真",
+    "subject_type": "验证方法",
+    "relation": "验证",
+    "object": "容错控制系统",
+    "object_type": "系统"
+  }
+]

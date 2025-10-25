@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "大型客机飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "高度集成化",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "大型客机飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "功率电传化",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "大型客机飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "信号光传化",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "大型客机飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "液压高压化",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "大型客机飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "智能化",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "作动系统能源配置方案",
+    "subject_type": "技术方案",
+    "relation": "适用于",
+    "object": "我国大型客机",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "作动系统能源配置方案",
+    "subject_type": "技术方案",
+    "relation": "具体为",
+    "object": "3H+E方案",
+    "object_type": "技术方案"
+  },
+  {
+    "subject": "飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展需要解决",
+    "object": "体系架构",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展需要解决",
+    "object": "高可靠性作动器研制",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "飞控作动系统",
+    "subject_type": "系统",
+    "relation": "发展需要解决",
+    "object": "故障预测与健康管理",
+    "object_type": "关键技术"
+  }
+]

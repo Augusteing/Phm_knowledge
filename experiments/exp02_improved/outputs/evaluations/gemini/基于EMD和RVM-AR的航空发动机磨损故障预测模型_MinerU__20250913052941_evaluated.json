@@ -1,0 +1,315 @@
+{
+  "entities": [
+    {
+      "name": "基于EMD和RVM一AR的航空发动机磨损故障预测模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非线性非平稳特性",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "现有预测方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "经验模态分解(EMD)算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "相关向量机(RVM)",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "自回归(AR)模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "固有模态函数(IMF)",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "残余函数(RF)",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "趋势项",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "随机项",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "量子粒子群优化(QPSO)算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "最优核参数",
+      "type": "参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "嵌入维数",
+      "type": "参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "留一交叉验证误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AR方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SVM方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Fe元素",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Si元素",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障预测与健康管理(PHM)技术",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "油液光谱分析技术",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机磨损故障预测",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非平稳时间序列",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "支持向量机(SVM)预测模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Bayesian方法",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "镜像延拓法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "EMD端点效应",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "滑油金属含量",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "模型参数的自适应选择",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机磨损故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于EMD和RVM一AR的航空发动机磨损故障预测模型",
+      "relation": "解决",
+      "tail": "滑油光谱数据的非线性非平稳特性",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM一AR的航空发动机磨损故障预测模型",
+      "relation": "解决",
+      "tail": "现有预测方法的不足",
+      "evaluation": "正确"
+    },
+    {
+      "head": "经验模态分解(EMD)算法",
+      "relation": "分解",
+      "tail": "滑油光谱数据",
+      "evaluation": "正确"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "分解为",
+      "tail": "固有模态函数(IMF)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "分解为",
+      "tail": "残余函数(RF)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "经验模态分解(EMD)算法",
+      "relation": "分离",
+      "tail": "趋势项",
+      "evaluation": "正确"
+    },
+    {
+      "head": "经验模态分解(EMD)算法",
+      "relation": "分离",
+      "tail": "随机项",
+      "evaluation": "正确"
+    },
+    {
+      "head": "自回归(AR)模型",
+      "relation": "用于建模",
+      "tail": "固有模态函数(IMF)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "相关向量机(RVM)",
+      "relation": "用于建模",
+      "tail": "残余函数(RF)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "量子粒子群优化(QPSO)算法",
+      "relation": "优化",
+      "tail": "相关向量机(RVM)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "量子粒子群优化(QPSO)算法",
+      "relation": "搜索",
+      "tail": "最优核参数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "量子粒子群优化(QPSO)算法",
+      "relation": "搜索",
+      "tail": "嵌入维数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "量子粒子群优化(QPSO)算法",
+      "relation": "采用",
+      "tail": "留一交叉验证误差",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM一AR的航空发动机磨损故障预测模型",
+      "relation": "优于",
+      "tail": "AR方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM一AR的航空发动机磨损故障预测模型",
+      "relation": "优于",
+      "tail": "SVM方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM一AR的航空发动机磨损故障预测模型",
+      "relation": "提高",
+      "tail": "预测精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障预测与健康管理(PHM)技术",
+      "relation": "应用于",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "油液光谱分析技术",
+      "relation": "用于",
+      "tail": "发动机磨损故障预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "相关向量机(RVM)",
+      "relation": "基于",
+      "tail": "Bayesian方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "相关向量机(RVM)",
+      "relation": "优于",
+      "tail": "支持向量机(SVM)预测模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "镜像延拓法",
+      "relation": "抑制",
+      "tail": "EMD端点效应",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM一AR的航空发动机磨损故障预测模型",
+      "relation": "预测",
+      "tail": "滑油金属含量",
+      "evaluation": "正确"
+    },
+    {
+      "head": "量子粒子群优化(QPSO)算法",
+      "relation": "实现",
+      "tail": "模型参数的自适应选择",
+      "evaluation": "正确"
+    },
+    {
+      "head": "自回归(AR)模型",
+      "relation": "存在问题",
+      "tail": "处理非平稳时间序列时产生较大误差",
+      "evaluation": "正确"
+    }
+  ]
+}

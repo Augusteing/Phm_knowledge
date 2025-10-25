@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "综合诊断、预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "复杂系统五性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "综合诊断、预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "系统寿命周期费用",
+    "object_type": "成本"
+  },
+  {
+    "subject": "综合诊断、预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "关键使能技术",
+    "object_type": "技术定位"
+  },
+  {
+    "subject": "综合诊断、预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "军事领域",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "综合诊断、预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "民用领域",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "综合诊断、预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "学术研究领域",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "F-35战斗机",
+    "subject_type": "应用案例",
+    "relation": "应用",
+    "object": "综合诊断、预测与健康管理(PHM)技术",
+    "object_type": "技术"
+  }
+]

@@ -1,0 +1,184 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机健康状态预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "EnsembleBRB-SHAP模型",
+      "type": "模型"
+    },
+    {
+      "name": "置信规则库（Belief Rule-Based, BRB）",
+      "type": "模型"
+    },
+    {
+      "name": "沙普利加性解释（SHapley Additive exPlanations, SHAP）",
+      "type": "理论基础"
+    },
+    {
+      "name": "商用模块化航空推进系统仿真软件（C-MAPSS）",
+      "type": "软件工具"
+    },
+    {
+      "name": "低压涡轮机冷却液泄漏量",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "均方根误差（MSE）",
+      "type": "性能指标"
+    },
+    {
+      "name": "集成学习算法",
+      "type": "算法"
+    },
+    {
+      "name": "EnsembleBRB",
+      "type": "模型"
+    },
+    {
+      "name": "健康状态评估",
+      "type": "任务"
+    },
+    {
+      "name": "数据预处理",
+      "type": "流程"
+    },
+    {
+      "name": "异常值与缺项样本剔除",
+      "type": "环节"
+    },
+    {
+      "name": "数据噪声降低",
+      "type": "环节"
+    },
+    {
+      "name": "KernelSHAP",
+      "type": "算法"
+    },
+    {
+      "name": "力导向图",
+      "type": "工具"
+    },
+    {
+      "name": "瀑布图",
+      "type": "工具"
+    },
+    {
+      "name": "蜂群概括图",
+      "type": "工具"
+    },
+    {
+      "name": "依赖图",
+      "type": "工具"
+    },
+    {
+      "name": "热力图",
+      "type": "工具"
+    },
+    {
+      "name": "队列条形图",
+      "type": "工具"
+    },
+    {
+      "name": "特征聚类图",
+      "type": "工具"
+    }
+  ],
+  "relations": [
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "基于",
+      "tail": "EnsembleBRB-SHAP模型"
+    },
+    {
+      "head": "EnsembleBRB-SHAP模型",
+      "relation": "结合",
+      "tail": "置信规则库（Belief Rule-Based, BRB）"
+    },
+    {
+      "head": "EnsembleBRB-SHAP模型",
+      "relation": "结合",
+      "tail": "沙普利加性解释（SHapley Additive exPlanations, SHAP）"
+    },
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "验证方法",
+      "tail": "商用模块化航空推进系统仿真软件（C-MAPSS）"
+    },
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "评估指标为",
+      "tail": "均方根误差（MSE）"
+    },
+    {
+      "head": "EnsembleBRB",
+      "relation": "优于",
+      "tail": "集成学习算法"
+    },
+    {
+      "head": "EnsembleBRB",
+      "relation": "包含",
+      "tail": "低压涡轮机冷却液泄漏量"
+    },
+    {
+      "head": "EnsembleBRB",
+      "relation": "包含",
+      "tail": "风扇转速"
+    },
+    {
+      "head": "数据预处理",
+      "relation": "包括",
+      "tail": "异常值与缺项样本剔除"
+    },
+    {
+      "head": "数据预处理",
+      "relation": "包括",
+      "tail": "数据噪声降低"
+    },
+    {
+      "head": "EnsembleBRB",
+      "relation": "解释",
+      "tail": "KernelSHAP"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "包括",
+      "tail": "力导向图"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "包括",
+      "tail": "瀑布图"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "包括",
+      "tail": "蜂群概括图"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "包括",
+      "tail": "依赖图"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "包括",
+      "tail": "热力图"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "包括",
+      "tail": "队列条形图"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "包括",
+      "tail": "特征聚类图"
+    }
+  ]
+}

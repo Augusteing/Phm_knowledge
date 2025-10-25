@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "现有军机备件配置模型",
+    "subject_type": "模型",
+    "relation": "不能满足",
+    "object": "PHM技术支持下的军机备件配置",
+    "object_type": "需求"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "影响",
+    "object": "军机备件配置",
+    "object_type": "任务"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "用于构建",
+    "object": "基层级备件配置机制框架",
+    "object_type": "机制框架"
+  },
+  {
+    "subject": "后方基地自动化后勤信息系统",
+    "subject_type": "信息系统",
+    "relation": "用于构建",
+    "object": "后方基地备件配置机制框架",
+    "object_type": "机制框架"
+  },
+  {
+    "subject": "虚拟库存理论",
+    "subject_type": "理论",
+    "relation": "用于构建",
+    "object": "后方基地备件配置机制框架",
+    "object_type": "机制框架"
+  },
+  {
+    "subject": "信息共享理论",
+    "subject_type": "理论",
+    "relation": "用于构建",
+    "object": "联合共享备件配置机制框架",
+    "object_type": "机制框架"
+  },
+  {
+    "subject": "备件配置机制",
+    "subject_type": "机制",
+    "relation": "提供参考",
+    "object": "PHM技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "军机",
+    "object_type": "装备"
+  },
+  {
+    "subject": "备件配置机制",
+    "subject_type": "机制",
+    "relation": "基于",
+    "object": "军机PHM体系",
+    "object_type": "体系"
+  }
+]

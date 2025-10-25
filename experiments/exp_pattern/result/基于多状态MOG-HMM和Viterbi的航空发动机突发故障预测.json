@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "基于多状态MOG-HMM和Viterbi的预测方法",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "突发故障",
+    "object_type": "故障类型"
+  },
+  {
+    "subject": "基于多状态MOG-HMM和Viterbi的预测方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "航空发动机",
+    "object_type": "研究对象"
+  },
+  {
+    "subject": "基于多状态MOG-HMM和Viterbi的预测方法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "多状态混合高斯隐马尔科夫模型",
+    "object_type": "技术"
+  },
+  {
+    "subject": "基于多状态MOG-HMM和Viterbi的预测方法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "Viterbi算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "多状态MOG-HMM模型",
+    "subject_type": "模型",
+    "relation": "建立于",
+    "object": "历史监测数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "多状态MOG-HMM模型",
+    "subject_type": "模型",
+    "relation": "确定",
+    "object": "状态转移矩阵",
+    "object_type": "模型参数"
+  },
+  {
+    "subject": "多状态MOG-HMM模型",
+    "subject_type": "模型",
+    "relation": "确定",
+    "object": "观察值概率分布",
+    "object_type": "模型参数"
+  },
+  {
+    "subject": "多状态MOG-HMM模型",
+    "subject_type": "模型",
+    "relation": "确定",
+    "object": "突发故障状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "Viterbi算法",
+    "subject_type": "算法",
+    "relation": "解码",
+    "object": "当前状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "Viterbi算法",
+    "subject_type": "算法",
+    "relation": "处理",
+    "object": "新采集的观测数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "基于多状态MOG-HMM和Viterbi的预测方法",
+    "subject_type": "方法",
+    "relation": "计算",
+    "object": "时间间隔",
+    "object_type": "指标"
+  },
+  {
+    "subject": "基于多状态MOG-HMM和Viterbi的预测方法",
+    "subject_type": "方法",
+    "relation": "符合",
+    "object": "标准预测指标",
+    "object_type": "评价标准"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "产生式规则推理",
+    "subject_type": "技术",
+    "relation": "存在问题",
+    "object": "效率低下",
+    "object_type": "问题"
+  },
+  {
+    "subject": "异构信息融合",
+    "subject_type": "技术",
+    "relation": "存在问题",
+    "object": "知识元权重分配困难",
+    "object_type": "问题"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "产生式规则推理效率低下",
+    "object_type": "问题"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "知识元权重分配困难",
+    "object_type": "问题"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "数据和音频",
+    "object_type": "信息源"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "分组分级的推理策略",
+    "object_type": "策略"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "互信息-信息增益",
+    "object_type": "度量"
+  },
+  {
+    "subject": "互信息-信息增益",
+    "subject_type": "度量",
+    "relation": "作为",
+    "object": "获益尺度",
+    "object_type": "角色"
+  },
+  {
+    "subject": "知识元特征的获益值",
+    "subject_type": "参数",
+    "relation": "确定",
+    "object": "知识元权重",
+    "object_type": "参数"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "通过...验证",
+    "object": "发动机故障实例",
+    "object_type": "应用场景"
+  },
+  {
+    "subject": "发动机故障实例",
+    "subject_type": "应用场景",
+    "relation": "使用",
+    "object": "飞行数据",
+    "object_type": "信息源"
+  },
+  {
+    "subject": "发动机故障实例",
+    "subject_type": "应用场景",
+    "relation": "使用",
+    "object": "同步座舱音频",
+    "object_type": "信息源"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "较高的执行效率",
+    "object_type": "优点"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "较好的推理效果",
+    "object_type": "优点"
+  },
+  {
+    "subject": "梯次推理获益原则的产生式规则知识表示方法",
+    "subject_type": "方法",
+    "relation": "可应用于",
+    "object": "实际工程的故障诊断和预测",
+    "object_type": "应用领域"
+  }
+]

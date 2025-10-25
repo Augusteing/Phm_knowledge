@@ -1,0 +1,1035 @@
+{
+  "title": "改进FBPNN在飞机系统故障预测中的应用",
+  "summary": "针对飞机故障预测问题展开研究,提出一种改进的模糊BP神经网络(Fuzzy BP Neural Network,FBPNN)故障预测模型。在FBPNN第二层中,选取影响系统状态评估的多个因素,为各因素确定隶属度值,并利用方差-协方差法给每个因素的隶属度值赋权值,来减小传统FBPNN直接由专家经验选取已有的单因素隶属度函数或它们的演化形式带来的主观性,从而得到更满足实际要求的预测模型,最后利用MATLAB结合飞机襟缝翼系统的相关数据进行仿真研究。结果证明,改进的FBPNN较传统FBPNN具有更好的预测效果。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对飞机故障预测问题展开研究,提出一种改进的模糊BP神经网络(Fuzzy BP Neural Network,FBPNN)故障预测模型",
+      "tokens": [
+        "针对",
+        "飞机",
+        "故障",
+        "预测",
+        "问题",
+        "展开",
+        "研究",
+        ",",
+        "提出",
+        "一",
+        "种",
+        "改进",
+        "的",
+        "模糊",
+        "BP",
+        "神经",
+        "网络",
+        "(",
+        "Fuzzy",
+        "BP",
+        "Neural",
+        "Network",
+        ",",
+        "FBPNN",
+        ")",
+        "故障",
+        "预测",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "展开",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "研究",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "提出",
+          "head": 6,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "一",
+          "head": 11,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 11,
+          "form": "种",
+          "head": 28,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 12,
+          "form": "改进",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "模糊",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "BP",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "神经",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "网络",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "(",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "Fuzzy",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 20,
+          "form": "BP",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 21,
+          "form": "Neural",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "Network",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "FBPNN",
+          "head": 17,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 25,
+          "form": ")",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "故障",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "预测",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "模型",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在FBPNN第二层中,选取影响系统状态评估的多个因素,为各因素确定隶属度值,并利用方差-协方差法给每个因素的隶属度值赋权值,来减小传统FBPNN直接由专家经验选取已有的单因素隶属度函数或它们的演化形式带来的主观性,从而得到更满足实际要求的预测模型,最后利用MATLAB结合飞机襟缝翼系统的相关数据进行仿真研究",
+      "tokens": [
+        "在",
+        "FBPNN",
+        "第二",
+        "层",
+        "中",
+        ",",
+        "选取",
+        "影响",
+        "系统",
+        "状态",
+        "评估",
+        "的",
+        "多",
+        "个",
+        "因素",
+        ",",
+        "为",
+        "各",
+        "因素",
+        "确定",
+        "隶属度值",
+        ",",
+        "并",
+        "利用",
+        "方差",
+        "-",
+        "协方差法",
+        "给",
+        "每",
+        "个",
+        "因素",
+        "的",
+        "隶属度值",
+        "赋权值",
+        ",",
+        "来",
+        "减小",
+        "传统",
+        "FBPNN",
+        "直接",
+        "由",
+        "专家",
+        "经验",
+        "选取",
+        "已",
+        "有",
+        "的",
+        "单",
+        "因素",
+        "隶属度",
+        "函数",
+        "或",
+        "它们",
+        "的",
+        "演化",
+        "形式",
+        "带来",
+        "的",
+        "主观性",
+        ",",
+        "从而",
+        "得到",
+        "更",
+        "满足",
+        "实际",
+        "要求",
+        "的",
+        "预测",
+        "模型",
+        ",",
+        "最后",
+        "利用",
+        "MATLAB",
+        "结合",
+        "飞机",
+        "襟缝翼",
+        "系统",
+        "的",
+        "相关",
+        "数据",
+        "进行",
+        "仿真",
+        "研究"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "FBPNN",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "第二",
+          "head": 4,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 4,
+          "form": "层",
+          "head": 5,
+          "deprel": "lobj",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "中",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "选取",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "影响",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "状态",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "评估",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "多",
+          "head": 14,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "个",
+          "head": 15,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 15,
+          "form": "因素",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "为",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "各",
+          "head": 19,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 19,
+          "form": "因素",
+          "head": 17,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "确定",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "隶属度值",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "并",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "利用",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "方差",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "-",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "协方差法",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "给",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "P"
+        },
+        {
+          "id": 29,
+          "form": "每",
+          "head": 31,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 30,
+          "form": "个",
+          "head": 29,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 31,
+          "form": "因素",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 31,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 33,
+          "form": "隶属度值",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "赋权值",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "来",
+          "head": 37,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 37,
+          "form": "减小",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "传统",
+          "head": 39,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 39,
+          "form": "FBPNN",
+          "head": 44,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "直接",
+          "head": 44,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 41,
+          "form": "由",
+          "head": 44,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 42,
+          "form": "专家",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "经验",
+          "head": 41,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "选取",
+          "head": 59,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "已",
+          "head": 46,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 46,
+          "form": "有",
+          "head": 59,
+          "deprel": "rcmod",
+          "pos": "VE"
+        },
+        {
+          "id": 47,
+          "form": "的",
+          "head": 46,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 48,
+          "form": "单",
+          "head": 49,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 49,
+          "form": "因素",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "隶属度",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "函数",
+          "head": 56,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "或",
+          "head": 56,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 53,
+          "form": "它们",
+          "head": 56,
+          "deprel": "assmod",
+          "pos": "PN"
+        },
+        {
+          "id": 54,
+          "form": "的",
+          "head": 53,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 55,
+          "form": "演化",
+          "head": 56,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "形式",
+          "head": 57,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "带来",
+          "head": 59,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "的",
+          "head": 57,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 59,
+          "form": "主观性",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 61,
+          "form": "从而",
+          "head": 62,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 62,
+          "form": "得到",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 63,
+          "form": "更",
+          "head": 64,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 64,
+          "form": "满足",
+          "head": 69,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 65,
+          "form": "实际",
+          "head": 66,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 66,
+          "form": "要求",
+          "head": 64,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "的",
+          "head": 64,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 68,
+          "form": "预测",
+          "head": 69,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "模型",
+          "head": 62,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 71,
+          "form": "最后",
+          "head": 72,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 72,
+          "form": "利用",
+          "head": 7,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 73,
+          "form": "MATLAB",
+          "head": 72,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "结合",
+          "head": 72,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 75,
+          "form": "飞机",
+          "head": 77,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 76,
+          "form": "襟缝翼",
+          "head": 77,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "系统",
+          "head": 80,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "的",
+          "head": 77,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 79,
+          "form": "相关",
+          "head": 80,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 80,
+          "form": "数据",
+          "head": 74,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 81,
+          "form": "进行",
+          "head": 72,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 82,
+          "form": "仿真",
+          "head": 83,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": "研究",
+          "head": 81,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果证明,改进的FBPNN较传统FBPNN具有更好的预测效果",
+      "tokens": [
+        "结果",
+        "证明",
+        ",",
+        "改进",
+        "的",
+        "FBPNN",
+        "较",
+        "传统",
+        "FBPNN",
+        "具有",
+        "更",
+        "好",
+        "的",
+        "预测",
+        "效果"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "证明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "改进",
+          "head": 6,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "FBPNN",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "较",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "传统",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "FBPNN",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "具有",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "更",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "好",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "预测",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "效果",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

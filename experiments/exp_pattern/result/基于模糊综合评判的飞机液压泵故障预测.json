@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "飞机液压泵故障预测难题",
+    "object_type": "技术问题"
+  },
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "模糊综合评判",
+    "object_type": "方法"
+  },
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "层次分析法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "层次分析法",
+    "subject_type": "方法",
+    "relation": "用于计算",
+    "object": "权重",
+    "object_type": "参数"
+  },
+  {
+    "subject": "模糊综合评判法",
+    "subject_type": "方法",
+    "relation": "用于预测",
+    "object": "液压泵故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "得到",
+    "object": "常见故障模式",
+    "object_type": "分析结果"
+  },
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "得到",
+    "object": "故障因素集",
+    "object_type": "分析结果"
+  },
+  {
+    "subject": "飞机液压泵",
+    "subject_type": "组件",
+    "relation": "具有",
+    "object": "常见故障形式",
+    "object_type": "故障"
+  },
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "进行",
+    "object": "试验验证",
+    "object_type": "活动"
+  },
+  {
+    "subject": "试验验证",
+    "subject_type": "活动",
+    "relation": "研究对象为",
+    "object": "某型飞机液压泵",
+    "object_type": "组件"
+  },
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "故障预测效能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "飞机液压泵故障预测方法",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "应用前景",
+    "object_type": "评价"
+  },
+  {
+    "subject": "应用前景",
+    "subject_type": "评价",
+    "relation": "面向",
+    "object": "航空设备故障预测",
+    "object_type": "应用领域"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "民机维修工程",
+    "object_type": "领域"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "以...为例",
+    "object": "B737NG空调系统",
+    "object_type": "飞机系统"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "建立",
+    "object": "空调系统PHM模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "空调系统PHM模型",
+    "subject_type": "模型",
+    "relation": "是",
+    "object": "数据驱动",
+    "object_type": "方法"
+  },
+  {
+    "subject": "PHM维修模式",
+    "subject_type": "维修模式",
+    "relation": "可取消",
+    "object": "定期检查工作",
+    "object_type": "维修任务"
+  },
+  {
+    "subject": "PHM维修模式",
+    "subject_type": "维修模式",
+    "relation": "可减少",
+    "object": "非计划的维修事件",
+    "object_type": "维修事件"
+  },
+  {
+    "subject": "PHM维修模式",
+    "subject_type": "维修模式",
+    "relation": "可降低",
+    "object": "民机系统全寿命周期维修成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "PHM维修",
+    "subject_type": "维修模式",
+    "relation": "成本低于",
+    "object": "传统计划维修",
+    "object_type": "维修模式"
+  },
+  {
+    "subject": "PHM维修",
+    "subject_type": "维修模式",
+    "relation": "带来",
+    "object": "经济效益",
+    "object_type": "效益"
+  },
+  {
+    "subject": "PHM维修",
+    "subject_type": "维修模式",
+    "relation": "带来",
+    "object": "安全效益",
+    "object_type": "效益"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "初始维修任务分析流程",
+    "object_type": "流程"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "预测维修模式实施方法",
+    "object_type": "方法"
+  }
+]

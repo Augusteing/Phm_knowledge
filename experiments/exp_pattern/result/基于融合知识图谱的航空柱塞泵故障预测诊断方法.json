@@ -1,0 +1,121 @@
+[
+  {
+    "subject": "航空柱塞泵",
+    "subject_type": "组件",
+    "relation": "存在问题",
+    "object": "故障频率高",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空柱塞泵",
+    "subject_type": "组件",
+    "relation": "存在问题",
+    "object": "故障种类多",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空柱塞泵",
+    "subject_type": "组件",
+    "relation": "存在问题",
+    "object": "故障溯源难度大",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空柱塞泵",
+    "subject_type": "组件",
+    "relation": "存在问题",
+    "object": "预测准确率低",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空柱塞泵故障预测诊断方法",
+    "subject_type": "方法",
+    "relation": "融合",
+    "object": "知识图谱",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空柱塞泵故障预测诊断方法",
+    "subject_type": "方法",
+    "relation": "融合",
+    "object": "人工蜂群算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "航空柱塞泵故障预测诊断方法",
+    "subject_type": "方法",
+    "relation": "用于解决",
+    "object": "航空柱塞泵故障",
+    "object_type": "问题"
+  },
+  {
+    "subject": "人工蜂群故障预测算法",
+    "subject_type": "算法",
+    "relation": "包含",
+    "object": "输入层",
+    "object_type": "算法层"
+  },
+  {
+    "subject": "人工蜂群故障预测算法",
+    "subject_type": "算法",
+    "relation": "包含",
+    "object": "指派层",
+    "object_type": "算法层"
+  },
+  {
+    "subject": "人工蜂群故障预测算法",
+    "subject_type": "算法",
+    "relation": "包含",
+    "object": "传播层",
+    "object_type": "算法层"
+  },
+  {
+    "subject": "人工蜂群故障预测算法",
+    "subject_type": "算法",
+    "relation": "包含",
+    "object": "自注意力层",
+    "object_type": "算法层"
+  },
+  {
+    "subject": "人工蜂群故障预测算法",
+    "subject_type": "算法",
+    "relation": "包含",
+    "object": "输出层",
+    "object_type": "算法层"
+  },
+  {
+    "subject": "人工蜂群故障预测算法",
+    "subject_type": "算法",
+    "relation": "采用",
+    "object": "注意力机制",
+    "object_type": "技术"
+  },
+  {
+    "subject": "人工蜂群故障预测算法",
+    "subject_type": "算法",
+    "relation": "形成",
+    "object": "航空柱塞泵故障预测模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "特征向量",
+    "subject_type": "数据",
+    "relation": "用于训练",
+    "object": "航空柱塞泵故障预测模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "航空柱塞泵故障诊断的知识图谱",
+    "subject_type": "知识图谱",
+    "relation": "构建于",
+    "object": "实际维修案例",
+    "object_type": "数据"
+  },
+  {
+    "subject": "实验",
+    "subject_type": "验证方法",
+    "relation": "证明",
+    "object": "航空柱塞泵故障预测诊断方法",
+    "object_type": "方法"
+  }
+]

@@ -1,0 +1,612 @@
+{
+  "title": "发动机数据监视和存储策略",
+  "summary": "在航空发动机健康管理系统中,针对机载设备具有在线监测和大容量存储发动机工作数据等复杂业务要求,提出了一种多任务管理和存储管理的应用策略,前者采用优先级抢占机制,后者采用二级缓存模式。最后基于VxWorks操作系统和HRFS文件系统实现了该设计策略,从而验证了上述设计方法可行性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "在航空发动机健康管理系统中,针对机载设备具有在线监测和大容量存储发动机工作数据等复杂业务要求,提出了一种多任务管理和存储管理的应用策略,前者采用优先级抢占机制,后者采用二级缓存模式",
+      "tokens": [
+        "在",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "中",
+        ",",
+        "针对",
+        "机载",
+        "设备",
+        "具有",
+        "在线",
+        "监测",
+        "和",
+        "大",
+        "容量",
+        "存储",
+        "发动机",
+        "工作",
+        "数据",
+        "等",
+        "复杂",
+        "业务",
+        "要求",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "多",
+        "任务",
+        "管理",
+        "和",
+        "存储",
+        "管理",
+        "的",
+        "应用",
+        "策略",
+        ",",
+        "前者",
+        "采用",
+        "优先级",
+        "抢占",
+        "机制",
+        ",",
+        "后者",
+        "采用",
+        "二",
+        "级",
+        "缓存",
+        "模式"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 27,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "中",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "针对",
+          "head": 27,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "机载",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "设备",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "具有",
+          "head": 25,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "在线",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "监测",
+          "head": 25,
+          "deprel": "vmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "大",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "容量",
+          "head": 18,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "存储",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "发动机",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "工作",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "数据",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "等",
+          "head": 21,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 23,
+          "form": "复杂",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "业务",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "要求",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "了",
+          "head": 27,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 29,
+          "form": "一",
+          "head": 30,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 30,
+          "form": "种",
+          "head": 39,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 31,
+          "form": "多",
+          "head": 32,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 32,
+          "form": "任务",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "管理",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "和",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 35,
+          "form": "存储",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "管理",
+          "head": 39,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 36,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 38,
+          "form": "应用",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "策略",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": ",",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "前者",
+          "head": 42,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "采用",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "优先级",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "抢占",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "机制",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "后者",
+          "head": 48,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "采用",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "二",
+          "head": 50,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 50,
+          "form": "级",
+          "head": 52,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 51,
+          "form": "缓存",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "模式",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后基于VxWorks操作系统和HRFS文件系统实现了该设计策略,从而验证了上述设计方法可行性",
+      "tokens": [
+        "最后",
+        "基于",
+        "VxWorks",
+        "操作",
+        "系统",
+        "和",
+        "HRFS",
+        "文件",
+        "系统",
+        "实现",
+        "了",
+        "该",
+        "设计",
+        "策略",
+        ",",
+        "从而",
+        "验证",
+        "了",
+        "上述",
+        "设计",
+        "方法",
+        "可行性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "基于",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "VxWorks",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "操作",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "和",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "HRFS",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 8,
+          "form": "文件",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 12,
+          "form": "该",
+          "head": 14,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 13,
+          "form": "设计",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "策略",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "从而",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "验证",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "上述",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "设计",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "方法",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "可行性",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

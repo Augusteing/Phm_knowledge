@@ -1,0 +1,532 @@
+{
+  "title": "美军新机的综合诊断技术及启示",
+  "summary": "综合诊断是实现武器装备可靠性、维修性和保障性的重要技术手段和发展方向。本文分析了美军在新机研制中的综合诊断体系结构及其支撑技术;论述了实现综合诊断目前需要研究解决的问题;提出了我军在新机研制中应该注意解决的一些问题。",
+  "analyzed_sentences": [
+    {
+      "sentence": "综合诊断是实现武器装备可靠性、维修性和保障性的重要技术手段和发展方向",
+      "tokens": [
+        "综合",
+        "诊断",
+        "是",
+        "实现",
+        "武器",
+        "装备",
+        "可靠性",
+        "、",
+        "维修性",
+        "和",
+        "保障性",
+        "的",
+        "重要",
+        "技术",
+        "手段",
+        "和",
+        "发展",
+        "方向"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "综合",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "诊断",
+          "head": 3,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 4,
+          "form": "实现",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "武器",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "装备",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "可靠性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "维修性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "保障性",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "重要",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "技术",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "手段",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "发展",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "方向",
+          "head": 3,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文分析了美军在新机研制中的综合诊断体系结构及其支撑技术;论述了实现综合诊断目前需要研究解决的问题;提出了我军在新机研制中应该注意解决的一些问题",
+      "tokens": [
+        "本",
+        "文",
+        "分析",
+        "了",
+        "美军",
+        "在",
+        "新机",
+        "研制",
+        "中",
+        "的",
+        "综合",
+        "诊断",
+        "体系",
+        "结构",
+        "及",
+        "其",
+        "支撑",
+        "技术",
+        ";",
+        "论述",
+        "了",
+        "实现",
+        "综合",
+        "诊断",
+        "目前",
+        "需要",
+        "研究",
+        "解决",
+        "的",
+        "问题",
+        ";",
+        "提出",
+        "了",
+        "我",
+        "军",
+        "在",
+        "新",
+        "机",
+        "研制",
+        "中",
+        "应该",
+        "注意",
+        "解决",
+        "的",
+        "一些",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "美军",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "在",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "新机",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "研制",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "中",
+          "head": 6,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "综合",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "诊断",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "体系",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "结构",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "及",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "其",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 17,
+          "form": "支撑",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "技术",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ";",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "论述",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "实现",
+          "head": 30,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "综合",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "诊断",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "目前",
+          "head": 28,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 26,
+          "form": "需要",
+          "head": 28,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "研究",
+          "head": 28,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "解决",
+          "head": 30,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 30,
+          "form": "问题",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": ";",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "提出",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "了",
+          "head": 32,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 34,
+          "form": "我",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 35,
+          "form": "军",
+          "head": 42,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "在",
+          "head": 42,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 37,
+          "form": "新",
+          "head": 38,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 38,
+          "form": "机",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "研制",
+          "head": 40,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "中",
+          "head": 36,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 41,
+          "form": "应该",
+          "head": 42,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "注意",
+          "head": 46,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "解决",
+          "head": 42,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 42,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 45,
+          "form": "一些",
+          "head": 46,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 46,
+          "form": "问题",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

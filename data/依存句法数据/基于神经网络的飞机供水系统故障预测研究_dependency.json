@@ -1,0 +1,892 @@
+{
+  "title": "基于神经网络的飞机供水系统故障预测研究",
+  "summary": "对飞机水/废水系统进行基于数据驱动的故障预测算法仿真研究，鉴于系统故障原因、故障模式的复杂性，先基于AMESim软件建立系统仿真模型，并采取故障注入的方式得到系统关键部位故障数据(以空气压缩机为例)。在以上故障仿真模型的基础上，进一步采用神经网络故障预测方法来拟合系统性能衰退曲线。仿真验证表明，上述方法可以有效预测系统关键部件的性能衰退趋势及产品剩余寿命，便于后期维护保养，以保证系统的可靠性和安全性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "对飞机水/废水系统进行基于数据驱动的故障预测算法仿真研究",
+      "tokens": [
+        "对",
+        "飞机",
+        "水",
+        "/",
+        "废水",
+        "系统",
+        "进行",
+        "基于",
+        "数据",
+        "驱动",
+        "的",
+        "故障",
+        "预测",
+        "算法",
+        "仿真",
+        "研究"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "水",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "/",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "废水",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "基于",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "数据",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "驱动",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "预测",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "算法",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "仿真",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "研究",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "鉴于系统故障原因、故障模式的复杂性",
+      "tokens": [
+        "鉴于",
+        "系统",
+        "故障",
+        "原因",
+        "、",
+        "故障",
+        "模式",
+        "的",
+        "复杂性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "鉴于",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "系统",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "原因",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "模式",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "复杂性",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "先基于AMESim软件建立系统仿真模型",
+      "tokens": [
+        "先",
+        "基于",
+        "AMESim",
+        "软件",
+        "建立",
+        "系统",
+        "仿真",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "先",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "基于",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "AMESim",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "软件",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "仿真",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "模型",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并采取故障注入的方式得到系统关键部位故障数据(以空气压缩机为例)",
+      "tokens": [
+        "并",
+        "采取",
+        "故障",
+        "注入",
+        "的",
+        "方式",
+        "得到",
+        "系统",
+        "关键",
+        "部位",
+        "故障",
+        "数据",
+        "(",
+        "以",
+        "空气",
+        "压缩机",
+        "为例",
+        ")"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "采取",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "注入",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "方式",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "得到",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "关键",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "部位",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "故障",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "数据",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "(",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "以",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "空气",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "压缩机",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "为例",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": ")",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    },
+    {
+      "sentence": "在以上故障仿真模型的基础上",
+      "tokens": [
+        "在",
+        "以上",
+        "故障",
+        "仿真",
+        "模型",
+        "的",
+        "基础",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "以上",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "仿真",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "模型",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "基础",
+          "head": 8,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "进一步采用神经网络故障预测方法来拟合系统性能衰退曲线",
+      "tokens": [
+        "进一步",
+        "采用",
+        "神经",
+        "网络",
+        "故障",
+        "预测",
+        "方法",
+        "来",
+        "拟合",
+        "系统",
+        "性能",
+        "衰退",
+        "曲线"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "进一步",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "神经",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "网络",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "来",
+          "head": 9,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 9,
+          "form": "拟合",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "性能",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "衰退",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "曲线",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "仿真验证表明",
+      "tokens": [
+        "仿真",
+        "验证",
+        "表明"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "仿真",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "验证",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "上述方法可以有效预测系统关键部件的性能衰退趋势及产品剩余寿命",
+      "tokens": [
+        "上述",
+        "方法",
+        "可以",
+        "有效",
+        "预测",
+        "系统",
+        "关键",
+        "部件",
+        "的",
+        "性能",
+        "衰退",
+        "趋势",
+        "及",
+        "产品",
+        "剩余",
+        "寿命"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "上述",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "方法",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "可以",
+          "head": 5,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "有效",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "关键",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "部件",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "性能",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "衰退",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "趋势",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "及",
+          "head": 16,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "产品",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "剩余",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "寿命",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "便于后期维护保养",
+      "tokens": [
+        "便于",
+        "后期",
+        "维护",
+        "保养"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "便于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "后期",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "维护",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "保养",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "以保证系统的可靠性和安全性",
+      "tokens": [
+        "以",
+        "保证",
+        "系统",
+        "的",
+        "可靠性",
+        "和",
+        "安全性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 2,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 2,
+          "form": "保证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "可靠性",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "和",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "安全性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

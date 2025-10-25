@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "解决",
+    "object": "维修保障困难",
+    "object_type": "问题"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "基于",
+    "object": "新型飞机",
+    "object_type": "研究背景"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "结合",
+    "object": "关键系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "包含",
+    "object": "体系结构设计",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "包含",
+    "object": "技术实现",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "满足",
+    "object": "标准化要求",
+    "object_type": "要求"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "满足",
+    "object": "层次化要求",
+    "object_type": "要求"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "满足",
+    "object": "可进化要求",
+    "object_type": "要求"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "满足",
+    "object": "开放性要求",
+    "object_type": "要求"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "降低",
+    "object": "维护费用",
+    "object_type": "成本"
+  },
+  {
+    "subject": "PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "降低",
+    "object": "维护难度",
+    "object_type": "难度"
+  }
+]

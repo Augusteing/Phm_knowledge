@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "新一代先进战斗机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "轻重量",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "新一代先进战斗机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "长寿命",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "新一代先进战斗机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "多功能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "新一代先进战斗机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "高承载",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "适应",
+    "object": "先进战斗机研制要求",
+    "object_type": "要求"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "结构载荷筛选技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "全机内力分析技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "复合材料整体化结构分析技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "高精度快速细节应力分析技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "内埋武器舱预紧舱门强度设计",
+    "object_type": "技术"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "双曲面加筋壁板声疲劳分析方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "强度设计技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "结构故障预测与健康管理系统设计",
+    "object_type": "技术"
+  },
+  {
+    "subject": "强度设计研究成果",
+    "subject_type": "成果",
+    "relation": "应用于",
+    "object": "新一代战斗机机体平台",
+    "object_type": "部件"
+  }
+]

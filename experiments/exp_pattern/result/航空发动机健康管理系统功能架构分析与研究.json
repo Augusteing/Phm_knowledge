@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "五层协同建模框架",
+    "subject_type": "框架",
+    "relation": "融合",
+    "object": "MagicGrid方法论",
+    "object_type": "方法论"
+  },
+  {
+    "subject": "基于模型的系统工程",
+    "subject_type": "方法论",
+    "relation": "应用于",
+    "object": "航空发动机健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "基于模型的系统工程",
+    "subject_type": "方法论",
+    "relation": "使用",
+    "object": "系统建模语言",
+    "object_type": "语言"
+  },
+  {
+    "subject": "基于模型的系统工程",
+    "subject_type": "方法论",
+    "relation": "执行于",
+    "object": "MagicDraw平台",
+    "object_type": "工具"
+  },
+  {
+    "subject": "内部块图",
+    "subject_type": "模型",
+    "relation": "用于定义",
+    "object": "系统边界",
+    "object_type": "概念"
+  },
+  {
+    "subject": "需求图",
+    "subject_type": "模型",
+    "relation": "构建",
+    "object": "可追溯性矩阵",
+    "object_type": "产物"
+  },
+  {
+    "subject": "可追溯性矩阵",
+    "subject_type": "产物",
+    "relation": "用于",
+    "object": "需求完整性分析",
+    "object_type": "任务"
+  },
+  {
+    "subject": "用例图-活动图动态组合建模",
+    "subject_type": "技术",
+    "relation": "用于建模",
+    "object": "功能行为",
+    "object_type": "概念"
+  },
+  {
+    "subject": "模块化分解",
+    "subject_type": "技术",
+    "relation": "形成",
+    "object": "逻辑架构",
+    "object_type": "架构"
+  },
+  {
+    "subject": "块定义图与内部块图",
+    "subject_type": "模型",
+    "relation": "构建",
+    "object": "物理模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "接口标准化",
+    "subject_type": "设计原则",
+    "relation": "实现",
+    "object": "解耦设计",
+    "object_type": "设计原则"
+  },
+  {
+    "subject": "五层协同建模框架",
+    "subject_type": "框架",
+    "relation": "降低",
+    "object": "虚警率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "五层协同建模框架",
+    "subject_type": "框架",
+    "relation": "提升",
+    "object": "预测效率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "研究成果",
+    "subject_type": "成果",
+    "relation": "构建",
+    "object": "全生命周期建模范式",
+    "object_type": "范式"
+  },
+  {
+    "subject": "研究成果",
+    "subject_type": "成果",
+    "relation": "实现",
+    "object": "场景-需求-功能-物理全链条追溯",
+    "object_type": "能力"
+  },
+  {
+    "subject": "多视图协同建模机制",
+    "subject_type": "机制",
+    "relation": "适用于",
+    "object": "复杂装备系统设计",
+    "object_type": "领域"
+  }
+]

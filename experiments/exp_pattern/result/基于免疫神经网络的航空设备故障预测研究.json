@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "故障预测技术",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "全寿命周期费用",
+    "object_type": "问题"
+  },
+  {
+    "subject": "故障预测技术",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "经济可承受性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "免疫算法",
+    "subject_type": "算法",
+    "relation": "改进",
+    "object": "隐含层激励函数",
+    "object_type": "模型组件"
+  },
+  {
+    "subject": "免疫算法",
+    "subject_type": "算法",
+    "relation": "构建",
+    "object": "免疫神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "免疫神经网络",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "装备特征参数跟踪预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "免疫神经网络",
+    "subject_type": "模型",
+    "relation": "实现",
+    "object": "故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "免疫神经网络",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "BP网络",
+    "object_type": "模型"
+  }
+]

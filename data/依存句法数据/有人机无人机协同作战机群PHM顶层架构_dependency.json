@@ -1,0 +1,1059 @@
+{
+  "title": "有人机无人机协同作战机群PHM顶层架构",
+  "summary": "故障预测与健康管理(PHM)技术作为新一代飞机设计与使用中的关键技术和重要组成部分,受到国内外专家学者的广泛关注。针对未来航空装备无人化、协同化的特点,利用系统工程的方法对有人机/无人机协同作战机群PHM系统进行场景分析,通过系统用例图与活动图建模对系统需求进行分析综合,提出了一种面向机群的PHM系统顶层架构,包括功能架构设计、逻辑体系架构设计、数据传输服务,并针对系统设计中涉及的关键技术进行论述。研究成果对于协同作战场景下机群PHM系统设计具有一定的指导意义。",
+  "analyzed_sentences": [
+    {
+      "sentence": "故障预测与健康管理(PHM)技术作为新一代飞机设计与使用中的关键技术和重要组成部分,受到国内外专家学者的广泛关注",
+      "tokens": [
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "技术",
+        "作为",
+        "新",
+        "一",
+        "代",
+        "飞机",
+        "设计",
+        "与",
+        "使用",
+        "中",
+        "的",
+        "关键",
+        "技术",
+        "和",
+        "重要",
+        "组成",
+        "部分",
+        ",",
+        "受到",
+        "国内外",
+        "专家",
+        "学者",
+        "的",
+        "广泛",
+        "关注"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "预测",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "与",
+          "head": 5,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "(",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "PHM",
+          "head": 5,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ")",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 27,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "作为",
+          "head": 27,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "新",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "一",
+          "head": 13,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 13,
+          "form": "代",
+          "head": 17,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 14,
+          "form": "飞机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "设计",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "与",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "使用",
+          "head": 18,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "中",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "关键",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "技术",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "和",
+          "head": 25,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "重要",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "组成",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "部分",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "受到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "国内外",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "专家",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "学者",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 30,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 32,
+          "form": "广泛",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 33,
+          "form": "关注",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对未来航空装备无人化、协同化的特点,利用系统工程的方法对有人机/无人机协同作战机群PHM系统进行场景分析,通过系统用例图与活动图建模对系统需求进行分析综合,提出了一种面向机群的PHM系统顶层架构,包括功能架构设计、逻辑体系架构设计、数据传输服务,并针对系统设计中涉及的关键技术进行论述",
+      "tokens": [
+        "针对",
+        "未来",
+        "航空",
+        "装备",
+        "无人化",
+        "、",
+        "协同化",
+        "的",
+        "特点",
+        ",",
+        "利用",
+        "系统",
+        "工程",
+        "的",
+        "方法",
+        "对",
+        "有人",
+        "机",
+        "/",
+        "无人",
+        "机",
+        "协同",
+        "作战",
+        "机群",
+        "PHM",
+        "系统",
+        "进行",
+        "场景",
+        "分析",
+        ",",
+        "通过",
+        "系统用",
+        "例图",
+        "与",
+        "活动图",
+        "建模",
+        "对",
+        "系统",
+        "需求",
+        "进行",
+        "分析",
+        "综合",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "面向",
+        "机群",
+        "的",
+        "PHM",
+        "系统",
+        "顶层",
+        "架构",
+        ",",
+        "包括",
+        "功能",
+        "架构",
+        "设计",
+        "、",
+        "逻辑",
+        "体系",
+        "架构",
+        "设计",
+        "、",
+        "数据",
+        "传输",
+        "服务",
+        ",",
+        "并",
+        "针对",
+        "系统",
+        "设计",
+        "中",
+        "涉及",
+        "的",
+        "关键",
+        "技术",
+        "进行",
+        "论述"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "未来",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "装备",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "无人化",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "协同化",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "特点",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "系统",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "工程",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "方法",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "对",
+          "head": 27,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 17,
+          "form": "有人",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "机",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "/",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "无人",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "机",
+          "head": 23,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "协同",
+          "head": 23,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "作战",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "机群",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "PHM",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "系统",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "进行",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "场景",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "分析",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "通过",
+          "head": 40,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 32,
+          "form": "系统用",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "例图",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "与",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 35,
+          "form": "活动图",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "建模",
+          "head": 31,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "对",
+          "head": 40,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 38,
+          "form": "系统",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "需求",
+          "head": 37,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "进行",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "分析",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "综合",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "提出",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "了",
+          "head": 44,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 46,
+          "form": "一",
+          "head": 47,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 47,
+          "form": "种",
+          "head": 54,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 48,
+          "form": "面向",
+          "head": 54,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "机群",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "的",
+          "head": 48,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 51,
+          "form": "PHM",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "系统",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "顶层",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "架构",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": ",",
+          "head": 54,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 56,
+          "form": "包括",
+          "head": 54,
+          "deprel": "prnmod",
+          "pos": "VV"
+        },
+        {
+          "id": 57,
+          "form": "功能",
+          "head": 59,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "架构",
+          "head": 59,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "设计",
+          "head": 68,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "、",
+          "head": 68,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 61,
+          "form": "逻辑",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "体系",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "架构",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "设计",
+          "head": 68,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "、",
+          "head": 68,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 66,
+          "form": "数据",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "传输",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "服务",
+          "head": 56,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 70,
+          "form": "并",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 71,
+          "form": "针对",
+          "head": 79,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 72,
+          "form": "系统",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "设计",
+          "head": 74,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "中",
+          "head": 75,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 75,
+          "form": "涉及",
+          "head": 78,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 76,
+          "form": "的",
+          "head": 75,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 77,
+          "form": "关键",
+          "head": 78,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "技术",
+          "head": 71,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "进行",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 80,
+          "form": "论述",
+          "head": 79,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "研究成果对于协同作战场景下机群PHM系统设计具有一定的指导意义",
+      "tokens": [
+        "研究",
+        "成果",
+        "对于",
+        "协同",
+        "作战",
+        "场景",
+        "下",
+        "机群",
+        "PHM",
+        "系统",
+        "设计",
+        "具有",
+        "一定",
+        "的",
+        "指导",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "成果",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "对于",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "协同",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "作战",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "场景",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "下",
+          "head": 11,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "机群",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "PHM",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "设计",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "一定",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "指导",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "意义",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

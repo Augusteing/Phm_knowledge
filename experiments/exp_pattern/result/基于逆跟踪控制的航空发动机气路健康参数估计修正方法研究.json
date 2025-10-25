@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "发动机非线性模型",
+    "subject_type": "模型",
+    "relation": "用于获取",
+    "object": "故障样本",
+    "object_type": "数据"
+  },
+  {
+    "subject": "气路故障模拟方法",
+    "subject_type": "方法",
+    "relation": "用于获取",
+    "object": "故障样本",
+    "object_type": "数据"
+  },
+  {
+    "subject": "最小二乘支持向量回归机(LSSVR)",
+    "subject_type": "算法",
+    "relation": "用于建立",
+    "object": "理想估计器",
+    "object_type": "估计器"
+  },
+  {
+    "subject": "理想估计器",
+    "subject_type": "估计器",
+    "relation": "估计",
+    "object": "气路健康参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "修正系统",
+    "subject_type": "系统",
+    "relation": "基于",
+    "object": "逆模型在线辨识",
+    "object_type": "方法"
+  },
+  {
+    "subject": "修正系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "变结构控制",
+    "object_type": "控制理论"
+  },
+  {
+    "subject": "修正系统",
+    "subject_type": "系统",
+    "relation": "减小",
+    "object": "测量噪声的影响",
+    "object_type": "影响"
+  },
+  {
+    "subject": "修正系统",
+    "subject_type": "系统",
+    "relation": "减小",
+    "object": "系统噪声的影响",
+    "object_type": "影响"
+  },
+  {
+    "subject": "修正系统",
+    "subject_type": "系统",
+    "relation": "提高",
+    "object": "性能估计的准确度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "修正系统",
+    "subject_type": "系统",
+    "relation": "减小",
+    "object": "误判的概率",
+    "object_type": "风险"
+  },
+  {
+    "subject": "修正系统",
+    "subject_type": "系统",
+    "relation": "减小",
+    "object": "误诊的概率",
+    "object_type": "风险"
+  },
+  {
+    "subject": "航空发动机气路健康参数估计修正方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "航空发动机气路部件状态监控缺乏故障样本",
+    "object_type": "问题"
+  },
+  {
+    "subject": "离线修正",
+    "subject_type": "方法",
+    "relation": "缩小",
+    "object": "估计值的相对误差最大值",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "在线修正",
+    "subject_type": "方法",
+    "relation": "缩小",
+    "object": "估计值的相对误差最大值",
+    "object_type": "性能指标"
+  }
+]

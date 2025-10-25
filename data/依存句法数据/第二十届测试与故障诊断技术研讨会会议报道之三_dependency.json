@@ -1,0 +1,484 @@
+{
+  "title": "第二十届测试与故障诊断技术研讨会会议报道之三",
+  "summary": "北京航天测控技术有限公司伊大伟高级工程师:直升机旋翼系统失效机理与故障模式分析的故障预测与健康管理方法直升机旋翼系统由大量动部件组成,为单一通道无备份且所处工作环境复杂,是确保直升机可靠性和安全性的重要系统。现有的旋翼",
+  "analyzed_sentences": [
+    {
+      "sentence": "北京航天测控技术有限公司伊大伟高级工程师:直升机旋翼系统失效机理与故障模式分析的故障预测与健康管理方法直升机旋翼系统由大量动部件组成,为单一通道无备份且所处工作环境复杂,是确保直升机可靠性和安全性的重要系统",
+      "tokens": [
+        "北京",
+        "航天",
+        "测控",
+        "技术",
+        "有限",
+        "公司",
+        "伊大伟",
+        "高级",
+        "工程师",
+        ":",
+        "直升机",
+        "旋翼",
+        "系统",
+        "失效",
+        "机理",
+        "与",
+        "故障",
+        "模式",
+        "分析",
+        "的",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "方法",
+        "直升机",
+        "旋翼",
+        "系统",
+        "由",
+        "大量",
+        "动",
+        "部件",
+        "组成",
+        ",",
+        "为",
+        "单一",
+        "通道",
+        "无",
+        "备份",
+        "且",
+        "所处",
+        "工作",
+        "环境",
+        "复杂",
+        ",",
+        "是",
+        "确保",
+        "直升机",
+        "可靠性",
+        "和",
+        "安全性",
+        "的",
+        "重要",
+        "系统"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "北京",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 2,
+          "form": "航天",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "测控",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "技术",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "有限",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "公司",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "伊大伟",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 8,
+          "form": "高级",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "工程师",
+          "head": 34,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ":",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "直升机",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "旋翼",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "系统",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "失效",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "机理",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "与",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "模式",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "分析",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "预测",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "与",
+          "head": 25,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "健康",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "管理",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "方法",
+          "head": 34,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "直升机",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "旋翼",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "系统",
+          "head": 34,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "由",
+          "head": 34,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 31,
+          "form": "大量",
+          "head": 33,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 32,
+          "form": "动",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "部件",
+          "head": 30,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "组成",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "为",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 37,
+          "form": "单一",
+          "head": 38,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 38,
+          "form": "通道",
+          "head": 39,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "无",
+          "head": 36,
+          "deprel": "ccomp",
+          "pos": "VE"
+        },
+        {
+          "id": 40,
+          "form": "备份",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "且",
+          "head": 39,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 42,
+          "form": "所处",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "工作",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "环境",
+          "head": 45,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "复杂",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 46,
+          "form": ",",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "是",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 48,
+          "form": "确保",
+          "head": 55,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "直升机",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "可靠性",
+          "head": 52,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "和",
+          "head": 52,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 52,
+          "form": "安全性",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "的",
+          "head": 48,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 54,
+          "form": "重要",
+          "head": 55,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 55,
+          "form": "系统",
+          "head": 47,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "现有的旋翼",
+      "tokens": [
+        "现有",
+        "的",
+        "旋翼"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "现有",
+          "head": 3,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 3,
+          "form": "旋翼",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "subject": "多Agent飞机电源PHM系统架构",
+    "subject_type": "系统架构",
+    "relation": "基于",
+    "object": "OSA-CBM模型",
+    "object_type": "标准架构"
+  },
+  {
+    "subject": "多Agent飞机电源PHM系统架构",
+    "subject_type": "系统架构",
+    "relation": "满足",
+    "object": "飞机电源PHM需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "AUML技术",
+    "subject_type": "技术",
+    "relation": "用于构建",
+    "object": "多Agent AEPHM系统模型",
+    "object_type": "系统模型"
+  },
+  {
+    "subject": "AUML协议图",
+    "subject_type": "图表",
+    "relation": "描述",
+    "object": "Agent交互活动",
+    "object_type": "活动"
+  },
+  {
+    "subject": "多Agent飞机电源PHM系统架构",
+    "subject_type": "系统架构",
+    "relation": "提供",
+    "object": "设计开发模式",
+    "object_type": "模式"
+  },
+  {
+    "subject": "设计开发模式",
+    "subject_type": "模式",
+    "relation": "用于",
+    "object": "航空机载设备PHM系统建设",
+    "object_type": "应用领域"
+  }
+]

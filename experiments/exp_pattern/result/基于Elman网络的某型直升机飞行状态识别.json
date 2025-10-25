@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "Elman网络",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "非线性逼近能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "Elman网络",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "容错能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "Elman网络",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "泛化能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "Elman神经网络识别模型",
+    "subject_type": "模型",
+    "relation": "识别",
+    "object": "直升机飞行状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "飞行状态识别",
+    "subject_type": "任务",
+    "relation": "提供依据",
+    "object": "故障诊断",
+    "object_type": "任务"
+  },
+  {
+    "subject": "故障诊断",
+    "subject_type": "任务",
+    "relation": "针对",
+    "object": "直升机传动系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "飞行状态识别",
+    "subject_type": "任务",
+    "relation": "提供依据",
+    "object": "直升机健康管理",
+    "object_type": "应用领域"
+  }
+]

@@ -1,0 +1,732 @@
+{
+  "title": "ATML在综合运载器健康管理系统中的应用",
+  "summary": "综合运载器健康管理(IVHM)技术是提高飞机、航天飞行器安全性、可靠性及可维护性并有效降低成本的重要途径。针对IVHM系统的高互操作性以及复杂数据交换特点,提出采用自动测试标记语言(ATML)对航空机载设备进行形式化和规范化描述,有利于实现系统的高度集成以及可扩展性,结合航空电源故障诊断与预测系统的实例,论述了ATML在综合运载器健康管理系统中的应用。",
+  "analyzed_sentences": [
+    {
+      "sentence": "综合运载器健康管理(IVHM)技术是提高飞机、航天飞行器安全性、可靠性及可维护性并有效降低成本的重要途径",
+      "tokens": [
+        "综合",
+        "运载器",
+        "健康",
+        "管理",
+        "(",
+        "IVHM",
+        ")",
+        "技术",
+        "是",
+        "提高",
+        "飞机",
+        "、",
+        "航天",
+        "飞行器",
+        "安全性",
+        "、",
+        "可靠性",
+        "及",
+        "可维护性",
+        "并",
+        "有效",
+        "降低",
+        "成本",
+        "的",
+        "重要",
+        "途径"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "综合",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "运载器",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "管理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "(",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "IVHM",
+          "head": 4,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 7,
+          "form": ")",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 9,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 10,
+          "form": "提高",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "飞机",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "航天",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "飞行器",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "安全性",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "可靠性",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "及",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "可维护性",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "并",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "有效",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "降低",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "成本",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 25,
+          "form": "重要",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "途径",
+          "head": 9,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对IVHM系统的高互操作性以及复杂数据交换特点,提出采用自动测试标记语言(ATML)对航空机载设备进行形式化和规范化描述,有利于实现系统的高度集成以及可扩展性,结合航空电源故障诊断与预测系统的实例,论述了ATML在综合运载器健康管理系统中的应用",
+      "tokens": [
+        "针对",
+        "IVHM",
+        "系统",
+        "的",
+        "高",
+        "互操作性",
+        "以及",
+        "复杂",
+        "数据",
+        "交换",
+        "特点",
+        ",",
+        "提出",
+        "采用",
+        "自动",
+        "测试",
+        "标记",
+        "语言",
+        "(",
+        "ATML",
+        ")",
+        "对",
+        "航空",
+        "机载",
+        "设备",
+        "进行",
+        "形式化",
+        "和",
+        "规范化",
+        "描述",
+        ",",
+        "有利于",
+        "实现",
+        "系统",
+        "的",
+        "高度",
+        "集成",
+        "以及",
+        "可扩展性",
+        ",",
+        "结合",
+        "航空",
+        "电源",
+        "故障",
+        "诊断",
+        "与",
+        "预测",
+        "系统",
+        "的",
+        "实例",
+        ",",
+        "论述",
+        "了",
+        "ATML",
+        "在",
+        "综合",
+        "运载器",
+        "健康",
+        "管理",
+        "系统",
+        "中",
+        "的",
+        "应用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "IVHM",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "高",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "互操作性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "以及",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "复杂",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "数据",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "交换",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "特点",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "采用",
+          "head": 13,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "自动",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "测试",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "标记",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "语言",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "(",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "ATML",
+          "head": 18,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ")",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "对",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 23,
+          "form": "航空",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "机载",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "设备",
+          "head": 22,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "进行",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "形式化",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "和",
+          "head": 29,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "规范化",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "描述",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "有利于",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "实现",
+          "head": 32,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "系统",
+          "head": 37,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 36,
+          "form": "高度",
+          "head": 37,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 37,
+          "form": "集成",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "以及",
+          "head": 39,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 39,
+          "form": "可扩展性",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "结合",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "航空",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "电源",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "故障",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "诊断",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "与",
+          "head": 47,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 47,
+          "form": "预测",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "系统",
+          "head": 50,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "的",
+          "head": 48,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 50,
+          "form": "实例",
+          "head": 41,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "论述",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 53,
+          "form": "了",
+          "head": 52,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 54,
+          "form": "ATML",
+          "head": 63,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "在",
+          "head": 63,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 56,
+          "form": "综合",
+          "head": 57,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 57,
+          "form": "运载器",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "健康",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "管理",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "系统",
+          "head": 61,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "中",
+          "head": 55,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 62,
+          "form": "的",
+          "head": 55,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 63,
+          "form": "应用",
+          "head": 52,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

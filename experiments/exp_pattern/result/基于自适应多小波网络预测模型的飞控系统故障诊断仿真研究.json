@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "故障诊断方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "自适应多小波网络预测模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "故障诊断方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "飞控系统故障诊断",
+    "object_type": "任务"
+  },
+  {
+    "subject": "自适应多小波网络",
+    "subject_type": "网络模型",
+    "relation": "具有",
+    "object": "构造方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "自适应多小波网络",
+    "subject_type": "网络模型",
+    "relation": "具有",
+    "object": "训练算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "故障诊断方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "故障诊断能力",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "故障诊断方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "实时性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "计算机仿真",
+    "subject_type": "验证方法",
+    "relation": "验证",
+    "object": "故障诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障诊断方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "飞机作动器",
+    "object_type": "部件"
+  }
+]

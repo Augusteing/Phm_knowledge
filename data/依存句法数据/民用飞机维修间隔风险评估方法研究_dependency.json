@@ -1,0 +1,867 @@
+{
+  "title": "民用飞机维修间隔风险评估方法研究",
+  "summary": "鉴于维修间隔对飞行安全的重要性,针对民机维修间隔的风险评估问题,结合部件故障预测与机队风险评估模型,提出了基于蒙特卡罗仿真的民机维修间隔风险评估方法。通过实例对飞机总温探头的故障时间进行仿真,预测了机队飞行事故的发生次数,得出几种不同维修间隔方案的风险因子和飞行事故率。结果表明维修间隔风险水平与实际情况吻合,证明提出的方法能有效地对维修间隔的风险进行定量评估,具有一定的实用性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "鉴于维修间隔对飞行安全的重要性,针对民机维修间隔的风险评估问题,结合部件故障预测与机队风险评估模型,提出了基于蒙特卡罗仿真的民机维修间隔风险评估方法",
+      "tokens": [
+        "鉴于",
+        "维修",
+        "间隔",
+        "对",
+        "飞行",
+        "安全",
+        "的",
+        "重要性",
+        ",",
+        "针对",
+        "民机",
+        "维修",
+        "间隔",
+        "的",
+        "风险",
+        "评估",
+        "问题",
+        ",",
+        "结合",
+        "部件",
+        "故障",
+        "预测",
+        "与",
+        "机队",
+        "风险",
+        "评估",
+        "模型",
+        ",",
+        "提出",
+        "了",
+        "基于",
+        "蒙特卡罗",
+        "仿真",
+        "的",
+        "民机",
+        "维修",
+        "间隔",
+        "风险",
+        "评估",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "鉴于",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "维修",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "间隔",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "对",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "飞行",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "安全",
+          "head": 4,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "重要性",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "针对",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "民机",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "维修",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "间隔",
+          "head": 17,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "风险",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "评估",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "问题",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "部件",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "预测",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "与",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "机队",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "风险",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "评估",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "模型",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "提出",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "了",
+          "head": 29,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 31,
+          "form": "基于",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 32,
+          "form": "蒙特卡罗",
+          "head": 31,
+          "deprel": "pobj",
+          "pos": "NR"
+        },
+        {
+          "id": 33,
+          "form": "仿真",
+          "head": 40,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 35,
+          "form": "民机",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "维修",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "间隔",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "风险",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "评估",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "方法",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过实例对飞机总温探头的故障时间进行仿真,预测了机队飞行事故的发生次数,得出几种不同维修间隔方案的风险因子和飞行事故率",
+      "tokens": [
+        "通过",
+        "实例",
+        "对",
+        "飞机",
+        "总温",
+        "探头",
+        "的",
+        "故障",
+        "时间",
+        "进行",
+        "仿真",
+        ",",
+        "预测",
+        "了",
+        "机队",
+        "飞行",
+        "事故",
+        "的",
+        "发生",
+        "次数",
+        ",",
+        "得出",
+        "几",
+        "种",
+        "不同",
+        "维修",
+        "间隔",
+        "方案",
+        "的",
+        "风险",
+        "因子",
+        "和",
+        "飞行",
+        "事故率"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "实例",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "对",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "总温",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "探头",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "时间",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "进行",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "仿真",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "预测",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "了",
+          "head": 13,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 15,
+          "form": "机队",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "飞行",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "事故",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "发生",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "次数",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "得出",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "几",
+          "head": 24,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 24,
+          "form": "种",
+          "head": 34,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 25,
+          "form": "不同",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "维修",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "间隔",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "方案",
+          "head": 34,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "风险",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "因子",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "和",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 33,
+          "form": "飞行",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "事故率",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明维修间隔风险水平与实际情况吻合,证明提出的方法能有效地对维修间隔的风险进行定量评估,具有一定的实用性",
+      "tokens": [
+        "结果",
+        "表明",
+        "维修",
+        "间隔",
+        "风险",
+        "水平",
+        "与",
+        "实际",
+        "情况",
+        "吻合",
+        ",",
+        "证明",
+        "提出",
+        "的",
+        "方法",
+        "能",
+        "有效",
+        "地",
+        "对",
+        "维修",
+        "间隔",
+        "的",
+        "风险",
+        "进行",
+        "定量",
+        "评估",
+        ",",
+        "具有",
+        "一定",
+        "的",
+        "实用性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "维修",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "间隔",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "风险",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "水平",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "实际",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "情况",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "吻合",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "证明",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "提出",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 15,
+          "form": "方法",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "能",
+          "head": 24,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "有效",
+          "head": 24,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 18,
+          "form": "地",
+          "head": 17,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 19,
+          "form": "对",
+          "head": 24,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 20,
+          "form": "维修",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "间隔",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "风险",
+          "head": 19,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "进行",
+          "head": 12,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "定量",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "评估",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "具有",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "一定",
+          "head": 31,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 31,
+          "form": "实用性",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "改进的模糊BP神经网络",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "飞机故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "方差-协方差法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "为隶属度值赋权",
+    "object_type": "过程"
+  },
+  {
+    "subject": "为隶属度值赋权",
+    "subject_type": "过程",
+    "relation": "减小",
+    "object": "主观性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "传统FBPNN",
+    "subject_type": "模型",
+    "relation": "存在",
+    "object": "主观性问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "仿真研究",
+    "subject_type": "研究方法",
+    "relation": "使用",
+    "object": "MATLAB",
+    "object_type": "软件"
+  },
+  {
+    "subject": "仿真研究",
+    "subject_type": "研究方法",
+    "relation": "结合",
+    "object": "飞机襟缝翼系统数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "改进的FBPNN",
+    "subject_type": "模型",
+    "relation": "具有",
+    "object": "更好的预测效果",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "改进的FBPNN",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "传统FBPNN",
+    "object_type": "模型"
+  },
+  {
+    "subject": "多个因素",
+    "subject_type": "因素",
+    "relation": "影响",
+    "object": "系统状态评估",
+    "object_type": "任务"
+  }
+]

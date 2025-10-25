@@ -1,0 +1,221 @@
+{
+  "entities": [
+    {
+      "name": "ARIMA模型",
+      "type": "模型"
+    },
+    {
+      "name": "回归分析法",
+      "type": "方法"
+    },
+    {
+      "name": "民用航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "低压转子",
+      "type": "部件"
+    },
+    {
+      "name": "振动故障",
+      "type": "故障模式"
+    },
+    {
+      "name": "振动值",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "N1转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指数模型",
+      "type": "模型"
+    },
+    {
+      "name": "系数a",
+      "type": "参数"
+    },
+    {
+      "name": "时间序列",
+      "type": "数据"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统"
+    },
+    {
+      "name": "波音737-800",
+      "type": "系统"
+    },
+    {
+      "name": "LPT振动",
+      "type": "故障模式"
+    },
+    {
+      "name": "可决系数R²",
+      "type": "性能指标"
+    },
+    {
+      "name": "RMSE",
+      "type": "性能指标"
+    },
+    {
+      "name": "MAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "MaxAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "方法"
+    },
+    {
+      "name": "专家建模器",
+      "type": "工具"
+    },
+    {
+      "name": "SPSS软件",
+      "type": "工具"
+    },
+    {
+      "name": "ADF检验",
+      "type": "方法"
+    },
+    {
+      "name": "差分法",
+      "type": "方法"
+    },
+    {
+      "name": "故障预测",
+      "type": "任务"
+    },
+    {
+      "name": "发动机维护方案",
+      "type": "应用场景"
+    },
+    {
+      "name": "航空运输",
+      "type": "应用领域"
+    },
+    {
+      "name": "徐建新",
+      "type": "研究机构"
+    },
+    {
+      "name": "姜春生",
+      "type": "研究机构"
+    },
+    {
+      "name": "马超",
+      "type": "研究机构"
+    },
+    {
+      "name": "中国民航大学航空工程学院",
+      "type": "研究机构"
+    }
+  ],
+  "relations": [
+    {
+      "head": "ARIMA模型",
+      "relation": "基于",
+      "tail": "回归分析法"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "应用于",
+      "tail": "民用航空发动机"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "预测",
+      "tail": "振动故障"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "用于",
+      "tail": "拟合振动值和转速关系"
+    },
+    {
+      "head": "指数模型",
+      "relation": "基于",
+      "tail": "回归分析法"
+    },
+    {
+      "head": "系数a",
+      "relation": "组成",
+      "tail": "时间序列"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "输入",
+      "tail": "时间序列"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "输出",
+      "tail": "故障预测结果"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "优于",
+      "tail": "三次指数平滑法"
+    },
+    {
+      "head": "专家建模器",
+      "relation": "建立",
+      "tail": "ARIMA(1,1,2)模型"
+    },
+    {
+      "head": "SPSS软件",
+      "relation": "采用",
+      "tail": "专家建模器"
+    },
+    {
+      "head": "ADF检验",
+      "relation": "用于",
+      "tail": "平稳性检验"
+    },
+    {
+      "head": "差分法",
+      "relation": "用于",
+      "tail": "数据预处理"
+    },
+    {
+      "head": "故障预测",
+      "relation": "解决",
+      "tail": "振动故障问题"
+    },
+    {
+      "head": "发动机维护方案",
+      "relation": "基于",
+      "tail": "ARIMA模型预测结果"
+    },
+    {
+      "head": "徐建新",
+      "relation": "提出了",
+      "tail": "基于ARIMA模型的故障分析方法"
+    },
+    {
+      "head": "姜春生",
+      "relation": "提出了",
+      "tail": "基于ARIMA模型的故障分析方法"
+    },
+    {
+      "relation": "提出了",
+      "head": "马超",
+      "tail": "基于ARIMA模型的故障分析方法"
+    },
+    {
+      "head": "中国民航大学航空工程学院",
+      "relation": "研究方向为",
+      "tail": "航空发动机故障预测"
+    }
+  ]
+}

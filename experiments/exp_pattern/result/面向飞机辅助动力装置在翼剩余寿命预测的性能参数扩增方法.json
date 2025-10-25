@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "性能参数扩增方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "APU在翼性能参数维度低问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "性能参数扩增方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "生成对抗网络",
+    "object_type": "技术"
+  },
+  {
+    "subject": "网格搜索算法",
+    "subject_type": "算法",
+    "relation": "确定",
+    "object": "生成器与判别器的优化参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "性能参数扩增方法",
+    "subject_type": "方法",
+    "relation": "提供",
+    "object": "APU剩余寿命预测的输入参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "性能参数扩增方法",
+    "subject_type": "方法",
+    "relation": "验证于",
+    "object": "中国南方航空股份有限公司机队的APU在翼监测参数",
+    "object_type": "数据"
+  },
+  {
+    "subject": "生成对抗网络",
+    "subject_type": "技术",
+    "relation": "生成",
+    "object": "10维的排气温度参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "欧几里得距离",
+    "subject_type": "度量方法",
+    "relation": "度量",
+    "object": "生成参数与原始参数的一致性",
+    "object_type": "性能"
+  },
+  {
+    "subject": "皮尔森相关系数",
+    "subject_type": "度量方法",
+    "relation": "度量",
+    "object": "生成参数与原始参数的一致性",
+    "object_type": "性能"
+  },
+  {
+    "subject": "KL散度",
+    "subject_type": "度量方法",
+    "relation": "度量",
+    "object": "生成参数与原始参数的一致性",
+    "object_type": "性能"
+  },
+  {
+    "subject": "性能参数扩增方法",
+    "subject_type": "方法",
+    "relation": "提升",
+    "object": "APU剩余寿命预测的准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "平均绝对误差",
+    "subject_type": "评价指标",
+    "relation": "表征",
+    "object": "预测结果准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "均方根误差",
+    "subject_type": "评价指标",
+    "relation": "表征",
+    "object": "预测结果准确性",
+    "object_type": "性能指标"
+  }
+]

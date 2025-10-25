@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "基于静电互相关灵敏度加权的气路碎片监测方法",
+    "subject_type": "方法",
+    "relation": "监测",
+    "object": "气路碎片",
+    "object_type": "监测目标"
+  },
+  {
+    "subject": "基于静电互相关灵敏度加权的气路碎片监测方法",
+    "subject_type": "方法",
+    "relation": "利用",
+    "object": "互相关聚焦原理",
+    "object_type": "原理"
+  },
+  {
+    "subject": "基于静电互相关灵敏度加权的气路碎片监测方法",
+    "subject_type": "方法",
+    "relation": "增加",
+    "object": "测量信息",
+    "object_type": "信息"
+  },
+  {
+    "subject": "基于静电互相关灵敏度加权的气路碎片监测方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "PHM系统的监测信息量",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于静电互相关灵敏度加权的气路碎片监测方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "PHM系统的稳定性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "存在问题",
+    "object": "线性独立测量信息数较少",
+    "object_type": "问题"
+  },
+  {
+    "subject": "静电传感器阵列(ESA)",
+    "subject_type": "组件",
+    "relation": "受限于",
+    "object": "工作环境",
+    "object_type": "限制条件"
+  },
+  {
+    "subject": "计算结果",
+    "subject_type": "数据",
+    "relation": "反映",
+    "object": "带电碎片的速度和位置信息",
+    "object_type": "信息"
+  },
+  {
+    "subject": "实验结果",
+    "subject_type": "结果",
+    "relation": "验证",
+    "object": "基于静电互相关灵敏度加权的气路碎片监测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "单颗粒监测",
+    "subject_type": "实验",
+    "relation": "平均相关系数为",
+    "object": "0.668",
+    "object_type": "数值"
+  },
+  {
+    "subject": "多颗粒监测",
+    "subject_type": "实验",
+    "relation": "平均相关系数为",
+    "object": "0.652",
+    "object_type": "数值"
+  },
+  {
+    "subject": "本文",
+    "subject_type": "研究",
+    "relation": "设计",
+    "object": "8电极ESA",
+    "object_type": "组件"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "故障分析方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "回归分析",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障分析方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "ARIMA模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "故障分析方法",
+    "subject_type": "方法",
+    "relation": "分析",
+    "object": "CFM56-7B发动机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "回归分析",
+    "subject_type": "方法",
+    "relation": "拟合",
+    "object": "发动机振动值与转速的关系",
+    "object_type": "关系"
+  },
+  {
+    "subject": "ARIMA模型",
+    "subject_type": "模型",
+    "relation": "建立于",
+    "object": "指数项系数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "ARIMA模型",
+    "subject_type": "模型",
+    "relation": "描述",
+    "object": "发动机振动-转速拟合系数变化趋势",
+    "object_type": "趋势"
+  },
+  {
+    "subject": "ARIMA模型",
+    "subject_type": "模型",
+    "relation": "预测",
+    "object": "发动机振动故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "ARIMA模型",
+    "subject_type": "模型",
+    "relation": "提供依据",
+    "object": "发动机维护方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "发动机运行数据",
+    "subject_type": "数据",
+    "relation": "作为参考",
+    "object": "发动机维护方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "航空公司",
+    "subject_type": "组织",
+    "relation": "制定",
+    "object": "发动机维护方案",
+    "object_type": "方案"
+  }
+]

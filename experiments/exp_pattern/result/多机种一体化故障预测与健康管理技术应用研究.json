@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "自主式保障",
+    "subject_type": "能力",
+    "relation": "是",
+    "object": "新一代飞机设计的基本能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "飞机PHM系统体系结构",
+    "subject_type": "架构",
+    "relation": "划分出",
+    "object": "机载PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "飞机PHM系统体系结构",
+    "subject_type": "架构",
+    "relation": "划分出",
+    "object": "地面PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "机载PHM系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "分层智能推理机构",
+    "object_type": "机构"
+  },
+  {
+    "subject": "地面PHM系统",
+    "subject_type": "系统",
+    "relation": "宿驻在",
+    "object": "地面自主保障信息系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "本文",
+    "subject_type": "研究",
+    "relation": "优化",
+    "object": "PHM系统工作过程",
+    "object_type": "过程"
+  },
+  {
+    "subject": "本文",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "综合智能故障诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "本文",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "维修任务预测算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "本文",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "飞机多机种自主式保障设计关键技术",
+    "object_type": "技术"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "基本概念与内涵",
+    "object_type": "概念"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "飞机发动机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "固定翼飞机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "直升机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航天飞行器",
+    "object_type": "设备"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "舰船",
+    "object_type": "设备"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "车辆",
+    "object_type": "设备"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "轨道交通",
+    "object_type": "设备"
+  },
+  {
+    "subject": "故障预测与健康管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "故障预测与健康管理技术体系架构",
+    "object_type": "技术体系"
+  },
+  {
+    "subject": "故障预测与健康管理技术体系架构",
+    "subject_type": "技术体系",
+    "relation": "包含",
+    "object": "故障模型",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "故障预测与健康管理技术体系架构",
+    "subject_type": "技术体系",
+    "relation": "包含",
+    "object": "状态监测",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "故障预测与健康管理技术体系架构",
+    "subject_type": "技术体系",
+    "relation": "包含",
+    "object": "数据处理",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "故障预测与健康管理技术体系架构",
+    "subject_type": "技术体系",
+    "relation": "包含",
+    "object": "综合诊断",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "故障预测与健康管理技术体系架构",
+    "subject_type": "技术体系",
+    "relation": "包含",
+    "object": "健康管理",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "故障预测与健康管理技术体系架构",
+    "subject_type": "技术体系",
+    "relation": "包含",
+    "object": "维修决策",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "故障预测与健康管理技术体系架构",
+    "subject_type": "技术体系",
+    "relation": "包含",
+    "object": "后勤支援信息系统",
+    "object_type": "关键技术"
+  }
+]

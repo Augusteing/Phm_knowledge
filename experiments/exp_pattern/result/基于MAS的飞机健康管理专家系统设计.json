@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "飞机健康管理专家系统",
+    "subject_type": "系统",
+    "relation": "基于",
+    "object": "MAS",
+    "object_type": "技术"
+  },
+  {
+    "subject": "飞机健康管理专家系统",
+    "subject_type": "系统",
+    "relation": "满足",
+    "object": "地面机务维护需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "飞机健康管理专家系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "3层Browser/Server体系结构",
+    "object_type": "架构"
+  },
+  {
+    "subject": "飞机健康管理专家系统",
+    "subject_type": "系统",
+    "relation": "引入",
+    "object": "基于案例推理的预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "飞机健康管理专家系统",
+    "subject_type": "系统",
+    "relation": "引入",
+    "object": "基于规则的不确定性推理的预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "地面机务维护部门",
+    "subject_type": "组织",
+    "relation": "使用",
+    "object": "飞机健康管理专家系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "飞机健康管理专家系统",
+    "subject_type": "系统",
+    "relation": "减少",
+    "object": "地面维护时间",
+    "object_type": "指标"
+  },
+  {
+    "subject": "飞机健康管理专家系统",
+    "subject_type": "系统",
+    "relation": "增加",
+    "object": "飞机使用寿命",
+    "object_type": "指标"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "剩余寿命",
+    "subject_type": "指标",
+    "relation": "支撑",
+    "object": "预测性维修",
+    "object_type": "应用"
+  },
+  {
+    "subject": "智能预测",
+    "subject_type": "技术",
+    "relation": "识别",
+    "object": "寿命变化规律",
+    "object_type": "概念"
+  },
+  {
+    "subject": "智能预测",
+    "subject_type": "技术",
+    "relation": "预测",
+    "object": "剩余寿命",
+    "object_type": "指标"
+  },
+  {
+    "subject": "多层LSTM预测模型",
+    "subject_type": "模型",
+    "relation": "防止",
+    "object": "梯度消失",
+    "object_type": "问题"
+  },
+  {
+    "subject": "多层LSTM预测模型",
+    "subject_type": "模型",
+    "relation": "提取",
+    "object": "深层次关联性抽象特征",
+    "object_type": "特征"
+  },
+  {
+    "subject": "多层LSTM预测模型",
+    "subject_type": "模型",
+    "relation": "处理",
+    "object": "时序数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "Dropout方法",
+    "subject_type": "方法",
+    "relation": "减少",
+    "object": "过拟合",
+    "object_type": "问题"
+  },
+  {
+    "subject": "误差得分函数",
+    "subject_type": "方法",
+    "relation": "评估",
+    "object": "预测模型的不确定性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "应用案例",
+    "relation": "验证",
+    "object": "多层LSTM预测模型",
+    "object_type": "模型"
+  }
+]

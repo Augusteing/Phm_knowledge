@@ -1,0 +1,1907 @@
+{
+  "title": "航空发动机健康管理系统功能架构优化方法",
+  "summary": "航空发动机健康管理系统是目前先进发动机提升自身安全性、可靠性以及经济可承受性的核心系统之一，而架构设计是该系统的关键技术，高效合理的系统架构能够充分发挥系统的功能与作用。针对航空发动机健康管理系统架构设计需求，为了提升系统架构的高效性、合理性，实现系统功能的最优分配，开展航空发动机健康管理系统功能架构优化方法研究。比较和分析了国外发动机和飞机健康管理系统功能架构，总结了健康管理系统共同特征，并结合健康管理系统用户需求分析，提炼形成通用的发动机健康管理系统功能架构；基于该架构采用逻辑决断图和层次分析法（AHP），提出了一种针对部件和故障的功能分配方法。结果表明：所提出的分配方法可实现状态监测、故障诊断、故障预测、寿命管理及趋势分析功能向机载和地面系统的定性与定量分配；在军民用航空发动机健康管理系统设计中，可应用通用健康管理系统架构实现发动机健康管理系统核心功能及用户需求的全面覆盖，并根据发动机结构及特点采用功能分配方法实现机载、地面系统功能的优化配置。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机健康管理系统是目前先进发动机提升自身安全性、可靠性以及经济可承受性的核心系统之一",
+      "tokens": [
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "是",
+        "目前",
+        "先进",
+        "发动机",
+        "提升",
+        "自身",
+        "安全性",
+        "、",
+        "可靠性",
+        "以及",
+        "经济",
+        "可承受性",
+        "的",
+        "核心",
+        "系统",
+        "之一"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "管理",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 6,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 7,
+          "form": "目前",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 8,
+          "form": "先进",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "发动机",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "提升",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "自身",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 12,
+          "form": "安全性",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "可靠性",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "以及",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "经济",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "可承受性",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "核心",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "系统",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "之一",
+          "head": 6,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "而架构设计是该系统的关键技术",
+      "tokens": [
+        "而",
+        "架构",
+        "设计",
+        "是",
+        "该",
+        "系统",
+        "的",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "而",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "架构",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "设计",
+          "head": 4,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 5,
+          "form": "该",
+          "head": 6,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "关键",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 4,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "高效合理的系统架构能够充分发挥系统的功能与作用",
+      "tokens": [
+        "高效",
+        "合理",
+        "的",
+        "系统",
+        "架构",
+        "能够",
+        "充分",
+        "发挥",
+        "系统",
+        "的",
+        "功能",
+        "与",
+        "作用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "高效",
+          "head": 5,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 2,
+          "form": "合理",
+          "head": 1,
+          "deprel": "comod",
+          "pos": "VA"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 1,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "架构",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "能够",
+          "head": 8,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "充分",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "发挥",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "功能",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "与",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "作用",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对航空发动机健康管理系统架构设计需求",
+      "tokens": [
+        "针对",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "架构",
+        "设计",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "架构",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "需求",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为了提升系统架构的高效性、合理性",
+      "tokens": [
+        "为了",
+        "提升",
+        "系统",
+        "架构",
+        "的",
+        "高效性",
+        "、",
+        "合理性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "提升",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "架构",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "高效性",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "合理性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实现系统功能的最优分配",
+      "tokens": [
+        "实现",
+        "系统",
+        "功能",
+        "的",
+        "最优",
+        "分配"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "系统",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "功能",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "最优",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "分配",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "开展航空发动机健康管理系统功能架构优化方法研究",
+      "tokens": [
+        "开展",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "功能",
+        "架构",
+        "优化",
+        "方法",
+        "研究"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "开展",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "功能",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "架构",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "优化",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "方法",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "研究",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "比较和分析了国外发动机和飞机健康管理系统功能架构，总结了健康管理系统共同特征，并结合健康管理系统用户需求分析，提炼形成通用的发动机健康管理系统功能架构",
+      "tokens": [
+        "比较",
+        "和",
+        "分析",
+        "了",
+        "国外",
+        "发动机",
+        "和",
+        "飞机",
+        "健康",
+        "管理",
+        "系统",
+        "功能",
+        "架构",
+        "，",
+        "总结",
+        "了",
+        "健康",
+        "管理",
+        "系统",
+        "共同",
+        "特征",
+        "，",
+        "并",
+        "结合",
+        "健康",
+        "管理",
+        "系统",
+        "用户",
+        "需求",
+        "分析",
+        "，",
+        "提炼",
+        "形成",
+        "通用",
+        "的",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "功能",
+        "架构"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "比较",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "和",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 3,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "国外",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "飞机",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "健康",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "管理",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "功能",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "架构",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "，",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "总结",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "健康",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "管理",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "共同",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "特征",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "，",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "并",
+          "head": 3,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "结合",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "健康",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "管理",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "系统",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "用户",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "需求",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "分析",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "，",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "提炼",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "形成",
+          "head": 32,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "通用",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "VA"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 36,
+          "form": "发动机",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "健康",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "管理",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "系统",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "功能",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "架构",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于该架构采用逻辑决断图和层次分析法（AHP），提出了一种针对部件和故障的功能分配方法",
+      "tokens": [
+        "基于",
+        "该",
+        "架构",
+        "采用",
+        "逻辑",
+        "决断图",
+        "和",
+        "层次",
+        "分析法",
+        "（",
+        "AHP",
+        "）",
+        "，",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "针对",
+        "部件",
+        "和",
+        "故障",
+        "的",
+        "功能",
+        "分配",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "该",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "架构",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "采用",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "逻辑",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "决断图",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "层次",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "分析法",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "（",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "AHP",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 12,
+          "form": "）",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "，",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "了",
+          "head": 14,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 16,
+          "form": "一",
+          "head": 17,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 17,
+          "form": "种",
+          "head": 25,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "针对",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 19,
+          "form": "部件",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "和",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 18,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "功能",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "分配",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "方法",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明：所提出的分配方法可实现状态监测、故障诊断、故障预测、寿命管理及趋势分析功能向机载和地面系统的定性与定量分配",
+      "tokens": [
+        "结果",
+        "表明",
+        "：",
+        "所",
+        "提出",
+        "的",
+        "分配",
+        "方法",
+        "可",
+        "实现",
+        "状态",
+        "监测",
+        "、",
+        "故障",
+        "诊断",
+        "、",
+        "故障",
+        "预测",
+        "、",
+        "寿命",
+        "管理",
+        "及",
+        "趋势",
+        "分析",
+        "功能",
+        "向",
+        "机载",
+        "和",
+        "地面",
+        "系统",
+        "的",
+        "定性",
+        "与",
+        "定量",
+        "分配"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "：",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "所",
+          "head": 5,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 5,
+          "form": "提出",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "分配",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "方法",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "可",
+          "head": 10,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "实现",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "状态",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "监测",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "诊断",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "预测",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "寿命",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "管理",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "及",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "趋势",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "分析",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "功能",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "向",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "机载",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "和",
+          "head": 29,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "地面",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "系统",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 32,
+          "form": "定性",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "与",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "定量",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "分配",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在军民用航空发动机健康管理系统设计中，可应用通用健康管理系统架构实现发动机健康管理系统核心功能及用户需求的全面覆盖，并根据发动机结构及特点采用功能分配方法实现机载、地面系统功能的优化配置",
+      "tokens": [
+        "在",
+        "军民用",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "设计",
+        "中",
+        "，",
+        "可",
+        "应用",
+        "通用",
+        "健康",
+        "管理",
+        "系统",
+        "架构",
+        "实现",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "核心",
+        "功能",
+        "及",
+        "用户",
+        "需求",
+        "的",
+        "全面",
+        "覆盖",
+        "，",
+        "并",
+        "根据",
+        "发动机",
+        "结构",
+        "及",
+        "特点",
+        "采用",
+        "功能",
+        "分配",
+        "方法",
+        "实现",
+        "机载",
+        "、",
+        "地面",
+        "系统",
+        "功能",
+        "的",
+        "优化",
+        "配置"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "军民用",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "中",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "，",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "可",
+          "head": 18,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "应用",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "通用",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "健康",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "管理",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "系统",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "架构",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "发动机",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "健康",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "管理",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "系统",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "核心",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "功能",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "及",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "用户",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "需求",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "全面",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "覆盖",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "，",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "并",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 33,
+          "form": "根据",
+          "head": 38,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 34,
+          "form": "发动机",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "结构",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "及",
+          "head": 37,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 37,
+          "form": "特点",
+          "head": 33,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "采用",
+          "head": 18,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "功能",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "分配",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "方法",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "实现",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "机载",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "、",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 45,
+          "form": "地面",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "系统",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "功能",
+          "head": 50,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 47,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 49,
+          "form": "优化",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "配置",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

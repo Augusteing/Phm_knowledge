@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "故障预测",
+    "subject_type": "任务",
+    "relation": "支持",
+    "object": "飞机空调系统维护",
+    "object_type": "任务"
+  },
+  {
+    "subject": "传统GM(1,1)预测模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "灰色预测建模理论",
+    "object_type": "理论"
+  },
+  {
+    "subject": "传统GM(1,1)预测模型",
+    "subject_type": "模型",
+    "relation": "适用于",
+    "object": "指数规律序列",
+    "object_type": "数据类型"
+  },
+  {
+    "subject": "传统GM(1,1)预测模型",
+    "subject_type": "模型",
+    "relation": "不适用于",
+    "object": "波动序列",
+    "object_type": "数据类型"
+  },
+  {
+    "subject": "A320飞机空调系统参数",
+    "subject_type": "参数",
+    "relation": "具有",
+    "object": "波动性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "改进的GM(1,1)预测模型",
+    "subject_type": "模型",
+    "relation": "采用",
+    "object": "3点均值法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "3点均值法",
+    "subject_type": "方法",
+    "relation": "预处理",
+    "object": "原始波动序列",
+    "object_type": "数据类型"
+  },
+  {
+    "subject": "改进的GM(1,1)预测模型",
+    "subject_type": "模型",
+    "relation": "修正",
+    "object": "背景值",
+    "object_type": "参数"
+  },
+  {
+    "subject": "改进的GM(1,1)预测模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "指标"
+  },
+  {
+    "subject": "改进的GM(1,1)预测模型",
+    "subject_type": "模型",
+    "relation": "验证于",
+    "object": "水分离器出口温度",
+    "object_type": "参数"
+  },
+  {
+    "subject": "水分离器出口温度",
+    "subject_type": "参数",
+    "relation": "属于",
+    "object": "A320空调系统",
+    "object_type": "系统"
+  }
+]

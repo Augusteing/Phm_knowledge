@@ -1,0 +1,860 @@
+{
+  "title": "第四代战斗机动力技术特征和实现途径",
+  "summary": "介绍了第四代战斗机的典型特点和对发动机的要求,综述了第四代发动机采用高性能循环参数、高推重比技术、推力矢量技术、隐身技术、全权限数字式控制系统、健康管理系统、热管理技术、高可靠性和维修性的设计思路和典型技术特征,并研究分析了实现途径,同时指出第四代发动机的成功研制还需要依赖先进成熟的基础技术和科学的管理做支撑。总结了第四代发动机的设计特点,指出应注重综合权衡设计。",
+  "analyzed_sentences": [
+    {
+      "sentence": "介绍了第四代战斗机的典型特点和对发动机的要求,综述了第四代发动机采用高性能循环参数、高推重比技术、推力矢量技术、隐身技术、全权限数字式控制系统、健康管理系统、热管理技术、高可靠性和维修性的设计思路和典型技术特征,并研究分析了实现途径,同时指出第四代发动机的成功研制还需要依赖先进成熟的基础技术和科学的管理做支撑",
+      "tokens": [
+        "介绍",
+        "了",
+        "第四",
+        "代",
+        "战斗机",
+        "的",
+        "典型",
+        "特点",
+        "和",
+        "对",
+        "发动机",
+        "的",
+        "要求",
+        ",",
+        "综述",
+        "了",
+        "第四",
+        "代",
+        "发动机",
+        "采用",
+        "高",
+        "性能",
+        "循环",
+        "参数",
+        "、",
+        "高",
+        "推重比",
+        "技术",
+        "、",
+        "推力",
+        "矢量",
+        "技术",
+        "、",
+        "隐身",
+        "技术",
+        "、",
+        "全权限",
+        "数字式",
+        "控制",
+        "系统",
+        "、",
+        "健康",
+        "管理",
+        "系统",
+        "、",
+        "热",
+        "管理",
+        "技术",
+        "、",
+        "高",
+        "可靠性",
+        "和",
+        "维修性",
+        "的",
+        "设计",
+        "思路",
+        "和",
+        "典型",
+        "技术",
+        "特征",
+        ",",
+        "并",
+        "研究",
+        "分析",
+        "了",
+        "实现",
+        "途径",
+        ",",
+        "同时",
+        "指出",
+        "第四",
+        "代",
+        "发动机",
+        "的",
+        "成功",
+        "研制",
+        "还",
+        "需要",
+        "依赖",
+        "先进",
+        "成熟",
+        "的",
+        "基础",
+        "技术",
+        "和",
+        "科学",
+        "的",
+        "管理",
+        "做",
+        "支撑"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "第四",
+          "head": 4,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 4,
+          "form": "代",
+          "head": 5,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "战斗机",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "典型",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "特点",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "对",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "发动机",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "要求",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "综述",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "第四",
+          "head": 18,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 18,
+          "form": "代",
+          "head": 19,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 19,
+          "form": "发动机",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "采用",
+          "head": 15,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "高",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "性能",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "循环",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "参数",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "高",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "推重比",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "技术",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "推力",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "矢量",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "技术",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "隐身",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "技术",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 37,
+          "form": "全权限",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 38,
+          "form": "数字式",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 39,
+          "form": "控制",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "系统",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "健康",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "管理",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "系统",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "热",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 47,
+          "form": "管理",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "技术",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "高",
+          "head": 51,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 51,
+          "form": "可靠性",
+          "head": 53,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "和",
+          "head": 53,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 53,
+          "form": "维修性",
+          "head": 60,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "的",
+          "head": 53,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 55,
+          "form": "设计",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "思路",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "和",
+          "head": 60,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 58,
+          "form": "典型",
+          "head": 60,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 59,
+          "form": "技术",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "特征",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 62,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 63,
+          "form": "研究",
+          "head": 64,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "分析",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 65,
+          "form": "了",
+          "head": 64,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 66,
+          "form": "实现",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "途径",
+          "head": 64,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "同时",
+          "head": 70,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 70,
+          "form": "指出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 71,
+          "form": "第四",
+          "head": 72,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 72,
+          "form": "代",
+          "head": 73,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 73,
+          "form": "发动机",
+          "head": 76,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "的",
+          "head": 73,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 75,
+          "form": "成功",
+          "head": 76,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 76,
+          "form": "研制",
+          "head": 78,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "还",
+          "head": 78,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 78,
+          "form": "需要",
+          "head": 89,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 79,
+          "form": "依赖",
+          "head": 89,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 80,
+          "form": "先进",
+          "head": 88,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 81,
+          "form": "成熟",
+          "head": 80,
+          "deprel": "comod",
+          "pos": "VA"
+        },
+        {
+          "id": 82,
+          "form": "的",
+          "head": 80,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 83,
+          "form": "基础",
+          "head": 84,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 84,
+          "form": "技术",
+          "head": 88,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "和",
+          "head": 88,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 86,
+          "form": "科学",
+          "head": 88,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 87,
+          "form": "的",
+          "head": 86,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 88,
+          "form": "管理",
+          "head": 79,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 89,
+          "form": "做",
+          "head": 70,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 90,
+          "form": "支撑",
+          "head": 89,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "总结了第四代发动机的设计特点,指出应注重综合权衡设计",
+      "tokens": [
+        "总结",
+        "了",
+        "第四",
+        "代",
+        "发动机",
+        "的",
+        "设计",
+        "特点",
+        ",",
+        "指出",
+        "应",
+        "注重",
+        "综合",
+        "权衡",
+        "设计"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "第四",
+          "head": 4,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 4,
+          "form": "代",
+          "head": 5,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "设计",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "特点",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "指出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "应",
+          "head": 12,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "注重",
+          "head": 10,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "综合",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "权衡",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "设计",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

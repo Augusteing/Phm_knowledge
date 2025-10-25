@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "SMO-SVR预测方法",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "状态参量变化情况",
+    "object_type": "预测目标"
+  },
+  {
+    "subject": "改进C-C平均方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "相空间重构",
+    "object_type": "技术"
+  },
+  {
+    "subject": "相空间重构",
+    "subject_type": "技术",
+    "relation": "确定",
+    "object": "最优嵌入维数m",
+    "object_type": "参数"
+  },
+  {
+    "subject": "相空间重构",
+    "subject_type": "技术",
+    "relation": "确定",
+    "object": "延迟时间τd",
+    "object_type": "参数"
+  },
+  {
+    "subject": "区间自适应粒子群算法",
+    "subject_type": "优化算法",
+    "relation": "优化",
+    "object": "SVR参数",
+    "object_type": "模型参数"
+  },
+  {
+    "subject": "区间自适应粒子群算法",
+    "subject_type": "优化算法",
+    "relation": "提高",
+    "object": "参数优化速度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "SMO-SVR预测方法",
+    "subject_type": "方法",
+    "relation": "调整",
+    "object": "SMO算法的停机准则",
+    "object_type": "算法组件"
+  },
+  {
+    "subject": "SMO-SVR预测模型",
+    "subject_type": "预测模型",
+    "relation": "对比",
+    "object": "径向基函数神经网络",
+    "object_type": "预测模型"
+  },
+  {
+    "subject": "SMO-SVR预测模型",
+    "subject_type": "预测模型",
+    "relation": "具有",
+    "object": "预测能力",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "飞机舵面",
+    "subject_type": "飞机部件",
+    "relation": "发生",
+    "object": "损伤",
+    "object_type": "故障"
+  }
+]

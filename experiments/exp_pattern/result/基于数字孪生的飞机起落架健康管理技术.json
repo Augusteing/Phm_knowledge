@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "数字孪生健康管理技术",
+    "subject_type": "技术",
+    "relation": "针对",
+    "object": "飞机起落架系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "传统健康管理方式",
+    "subject_type": "方法",
+    "relation": "存在",
+    "object": "知识不完备",
+    "object_type": "问题"
+  },
+  {
+    "subject": "传统健康管理方式",
+    "subject_type": "方法",
+    "relation": "存在",
+    "object": "数据不平衡",
+    "object_type": "问题"
+  },
+  {
+    "subject": "传统健康管理方式",
+    "subject_type": "方法",
+    "relation": "存在",
+    "object": "模型固化",
+    "object_type": "问题"
+  },
+  {
+    "subject": "数字孪生健康管理框架",
+    "subject_type": "框架",
+    "relation": "基于",
+    "object": "自更新模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "数字孪生健康管理框架",
+    "subject_type": "框架",
+    "relation": "实现",
+    "object": "故障诊断",
+    "object_type": "功能"
+  },
+  {
+    "subject": "数字孪生健康管理框架",
+    "subject_type": "框架",
+    "relation": "实现",
+    "object": "故障预测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "孪生模型",
+    "subject_type": "模型",
+    "relation": "实现",
+    "object": "数字映射",
+    "object_type": "功能"
+  },
+  {
+    "subject": "强化学习算法",
+    "subject_type": "算法",
+    "relation": "用于更新",
+    "object": "数字孪生模型参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "孪生模型",
+    "subject_type": "模型",
+    "relation": "跟踪",
+    "object": "实体健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "孪生模型",
+    "subject_type": "模型",
+    "relation": "反映",
+    "object": "实体健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "数字孪生健康管理技术",
+    "subject_type": "技术",
+    "relation": "设计",
+    "object": "基于事件的故障诊断方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "数字孪生健康管理技术",
+    "subject_type": "技术",
+    "relation": "设计",
+    "object": "基于粒子滤波的故障预测方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "数字孪生健康管理技术",
+    "subject_type": "技术",
+    "relation": "验证于",
+    "object": "起落架收放系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "数字孪生健康管理技术",
+    "subject_type": "技术",
+    "relation": "优于",
+    "object": "传统方法",
+    "object_type": "方法"
+  }
+]

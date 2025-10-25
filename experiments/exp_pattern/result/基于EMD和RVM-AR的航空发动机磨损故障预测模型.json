@@ -1,0 +1,121 @@
+[
+  {
+    "subject": "基于EMD和RVM-AR的预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "滑油光谱数据非线性非平稳问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "滑油光谱数据",
+    "subject_type": "数据",
+    "relation": "具有",
+    "object": "非线性非平稳特性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "EMD算法",
+    "subject_type": "算法",
+    "relation": "分解",
+    "object": "滑油光谱数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "EMD算法",
+    "subject_type": "算法",
+    "relation": "分离",
+    "object": "趋势项",
+    "object_type": "数据成分"
+  },
+  {
+    "subject": "EMD算法",
+    "subject_type": "算法",
+    "relation": "分离",
+    "object": "随机项",
+    "object_type": "数据成分"
+  },
+  {
+    "subject": "EMD算法",
+    "subject_type": "算法",
+    "relation": "生成",
+    "object": "固有模态函数(IMF)",
+    "object_type": "数据分量"
+  },
+  {
+    "subject": "EMD算法",
+    "subject_type": "算法",
+    "relation": "生成",
+    "object": "残余函数(RF)",
+    "object_type": "数据分量"
+  },
+  {
+    "subject": "AR模型",
+    "subject_type": "模型",
+    "relation": "建模",
+    "object": "IMF分量",
+    "object_type": "数据分量"
+  },
+  {
+    "subject": "RVM模型",
+    "subject_type": "模型",
+    "relation": "建模",
+    "object": "RF分量",
+    "object_type": "数据分量"
+  },
+  {
+    "subject": "量子粒子群优化算法",
+    "subject_type": "优化算法",
+    "relation": "搜索",
+    "object": "RVM的最优核参数",
+    "object_type": "模型参数"
+  },
+  {
+    "subject": "量子粒子群优化算法",
+    "subject_type": "优化算法",
+    "relation": "搜索",
+    "object": "RVM的嵌入维数",
+    "object_type": "模型参数"
+  },
+  {
+    "subject": "留一交叉验证误差",
+    "subject_type": "评价指标",
+    "relation": "作为",
+    "object": "适应度函数",
+    "object_type": "函数"
+  },
+  {
+    "subject": "最终预测值",
+    "subject_type": "预测结果",
+    "relation": "由...叠加",
+    "object": "各AR模型和RVM模型的预测值",
+    "object_type": "中间结果"
+  },
+  {
+    "subject": "基于EMD和RVM-AR的预测方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "AR方法",
+    "object_type": "对比方法"
+  },
+  {
+    "subject": "基于EMD和RVM-AR的预测方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "SVM方法",
+    "object_type": "对比方法"
+  },
+  {
+    "subject": "基于EMD和RVM-AR的预测方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "Fe元素的预测精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于EMD和RVM-AR的预测方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "Si元素的预测精度",
+    "object_type": "性能指标"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "2020预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "举办于",
+    "object": "成都",
+    "object_type": "地点"
+  },
+  {
+    "subject": "2020预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "举办于",
+    "object": "2020年11月27日",
+    "object_type": "时间"
+  },
+  {
+    "subject": "四川大学",
+    "subject_type": "高校",
+    "relation": "参加",
+    "object": "2020预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "哈尔滨工业大学",
+    "subject_type": "高校",
+    "relation": "参加",
+    "object": "2020预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "北京航空航天大学",
+    "subject_type": "高校",
+    "relation": "参加",
+    "object": "2020预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "电子科技大学",
+    "subject_type": "高校",
+    "relation": "参加",
+    "object": "2020预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "中国核动力研究院",
+    "subject_type": "研究所",
+    "relation": "参加",
+    "object": "2020预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "华为技术有限公司",
+    "subject_type": "企业",
+    "relation": "参加",
+    "object": "2020预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "70余位代表",
+    "subject_type": "参会人员",
+    "relation": "参加",
+    "object": "2020预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  }
+]

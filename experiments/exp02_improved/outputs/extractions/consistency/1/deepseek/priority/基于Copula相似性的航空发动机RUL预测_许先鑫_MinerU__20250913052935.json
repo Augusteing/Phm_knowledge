@@ -1,0 +1,215 @@
+{
+  "entities": [
+    {
+      "name": "基于Copula相似性的航空发动机RUL预测方法",
+      "type": "方法"
+    },
+    {
+      "name": "Copula函数",
+      "type": "算法"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "线性退化模型",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "剩余使用寿命预测",
+      "type": "任务"
+    },
+    {
+      "name": "预测与健康管理",
+      "type": "应用领域"
+    },
+    {
+      "name": "性能退化",
+      "type": "问题"
+    },
+    {
+      "name": "非线性相关性",
+      "type": "属性"
+    },
+    {
+      "name": "传感器",
+      "type": "系统"
+    },
+    {
+      "name": "Ps30",
+      "type": "传感器"
+    },
+    {
+      "name": "T50",
+      "type": "传感器"
+    },
+    {
+      "name": "BPR",
+      "type": "传感器"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "Kendall秩相关系数",
+      "type": "指标"
+    },
+    {
+      "name": "Akaike信息准则",
+      "type": "指标"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "传统方法",
+      "type": "方法"
+    },
+    {
+      "name": "Frank Copula",
+      "type": "算法"
+    },
+    {
+      "name": "Clayton Copula",
+      "type": "算法"
+    },
+    {
+      "name": "Gumbel Copula",
+      "type": "算法"
+    },
+    {
+      "name": "Joe Copula",
+      "type": "算法"
+    },
+    {
+      "name": "Sklar定理",
+      "type": "理论基础"
+    },
+    {
+      "name": "两阶段极大似然估计",
+      "type": "算法"
+    },
+    {
+      "name": "标准差",
+      "type": "指标"
+    },
+    {
+      "name": "NASA",
+      "type": "研究机构"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出了",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "用于",
+      "tail": "剩余使用寿命预测"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "应用于",
+      "tail": "预测与健康管理"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "优于",
+      "tail": "传统方法"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "用于",
+      "tail": "非线性相关性建模"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "工作状态分类"
+    },
+    {
+      "head": "线性退化模型",
+      "relation": "建立",
+      "tail": "传感器退化趋势"
+    },
+    {
+      "head": "线性退化模型",
+      "relation": "基于",
+      "tail": "传感器数据"
+    },
+    {
+      "head": "剩余使用寿命预测",
+      "relation": "解决",
+      "tail": "性能退化"
+    },
+    {
+      "head": "传感器",
+      "relation": "用于",
+      "tail": "监测参数"
+    },
+    {
+      "head": "Ps30",
+      "relation": "具有",
+      "tail": "退化趋势"
+    },
+    {
+      "head": "T50",
+      "relation": "具有",
+      "tail": "退化趋势"
+    },
+    {
+      "head": "BPR",
+      "relation": "具有",
+      "tail": "退化趋势"
+    },
+    {
+      "head": "C-MAPSS数据集",
+      "relation": "用于",
+      "tail": "实验验证"
+    },
+    {
+      "head": "Kendall秩相关系数",
+      "relation": "用于",
+      "tail": "相似性度量"
+    },
+    {
+      "head": "Akaike信息准则",
+      "relation": "用于",
+      "tail": "Copula函数选择"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "基于",
+      "tail": "Sklar定理"
+    },
+    {
+      "head": "两阶段极大似然估计",
+      "relation": "用于",
+      "tail": "Copula参数估计"
+    },
+    {
+      "head": "标准差",
+      "relation": "用于",
+      "tail": "模型对比验证"
+    }
+  ]
+}

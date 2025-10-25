@@ -1,0 +1,375 @@
+# 实体关系抽取Prompt
+
+## 任务描述
+你的角色是一位专业的学术文献实体关系抽取专家，专精于从航空航天领域科研文献中识别和抽取实体及其关系。你的任务是通读给定文本，抽取文本中出现的核心实体，及其对应的关系，并以JSON格式输出。
+
+## 实体定义
+文献中出现的核心概念：算法、方法、模型、系统、故障、指标等都可视为实体。实体可以包括：
+- **研究领域**
+定义 ：PHM相关的研究方向和应用领域 
+示例 ：故障预测与健康管理(PHM)、故障诊断、剩余使用寿命预测(RUL)、健康状态评估、预测性维护等
+- **研究方法**
+定义 ：PHM研究中采用的具体方法和技术路线 
+示例 ：寿命预测、趋势预测、健康预测、风险评估、状态监测、故障诊断、性能评估等
+- **理论基础**
+定义 ：支撑PHM技术的基础理论和数学原理 
+示例 ：信号处理理论、机器学习理论、可靠性理论、概率统计理论、控制理论等
+- **模型**
+定义 ：基于特定算法构建的具体结构或实例 示例 ：LSTM神经网络、Transformer模型、深度置信网络(DBN)、隐马尔可夫模型(HMM)、ARIMA模型等
+- **算法**
+定义 ：用于解决特定问题的计算方法和程序步骤 
+示例 ：遗传算法、粒子群优化、支持向量机(SVM)、随机森林、卡尔曼滤波等
+- **系统/部件**
+定义 ：航空航天设备的系统或组成部件 
+示例 ：航空发动机、齿轮箱、轴承、叶片、燃油系统、液压系统、航电系统等
+- **故障模式**
+定义 ：设备可能出现的故障类型和失效模式 
+示例 ：轴承磨损、疲劳裂纹、腐蚀、过热、振动异常、性能退化等
+- **数据集**
+定义 ：用于训练和验证模型的标准数据集 
+示例 ：C-MAPSS数据集、CWRU轴承数据集、IMS轴承数据集、PHM Challenge数据集等
+- **传感器/监测参数**
+定义 ：用于监测设备状态的传感器设备和监测参数 
+示例 ：振动传感器、温度传感器、压力传感器、转速、振动信号、温度、压力等
+- **特征/健康指标**
+定义 ：表征设备健康状态的特征参数和指标 
+示例 ：剩余使用寿命(RUL)、健康指标(HI)、退化指标、频域特征、时域特征、统计特征等
+- **性能指标**
+定义 ：评估模型或方法性能的量化指标 
+示例 ：准确率、精确率、召回率、F1分数、均方根误差(RMSE)、平均绝对误差(MAE)等
+- **软件工具**
+定义 ：用于PHM研究和应用的软件平台和工具 
+示例 ：MATLAB、Python、TensorFlow、PyTorch、Simulink、LabVIEW等
+- **应用场景**
+定义 ：PHM技术的具体应用环境和场景 
+示例 ：发动机健康监测、结构健康监测、预测性维护、故障诊断系统、机载健康管理等
+
+## 关系定义
+文献中的实体之间通常存在逻辑、演进、依赖、功能、组合、比较、创新、评价或因果等联系。关系类型包括但不限于：
+### 1. 技术演进类
+- 发展为 ：传统RNN发展为LSTM
+- 改进了 ：注意力机制改进了Transformer性能
+- 演化成 ：专家系统演化成机器学习方法
+- 升级为 ：基础模型升级为集成模型
+### 2. 依赖关系类
+- 基于 ：健康预测模型基于振动信号特征
+- 依据 ：故障诊断依据传感器数据；轴承剩余寿命预测模型参数依据多传感器振动和温度信号
+- 利用 ：深度学习利用大数据优势
+- 采用 ：系统采用多传感器融合技术
+- 建立在 ：深度卷积残差网络模型建立在卷积神经网络理论
+### 3. 功能关系类
+- 应用于 ：机器学习应用于故障预测
+- 用于 ：卡尔曼滤波用于状态估计
+- 解决 ：深度学习解决特征提取问题
+- 实现 ：神经网络实现非线性映射
+- 支持 ：传感器网络支持实时监测
+- 处理 ：主成分分析方法处理航空发动机多维传感器振动数据
+- 预测/诊断 ：LSTM模型预测飞机发动机轴承剩余寿命
+### 4. 因果关系类
+- 导致 ：轴承磨损导致振动异常；高温导致涡轮叶片疲劳加速
+- 引起 ：温度升高引起性能退化；润滑不足引起齿轮磨损
+- 造成 ：疲劳载荷造成裂纹扩展
+- 产生 ：故障产生异常信号；振动异常产生轴承早期故障信号
+- 影响 ：载荷波动影响剩余寿命预测精度
+### 5. 组合关系类
+- 包含 ：PHM系统包含数据采集模块
+- 包括 ：航空装备可用度影响因素包括装备系统的构成及其可靠性、维修性参数
+- 组成 ：多个传感器组成监测网络
+- 结合 ：物理模型结合数据驱动方法
+- 融合 ：多源信息融合提高精度；多传感器数据融合方法融合时域和频域振动特征
+- 由…组成 ：传感器系统由加速度传感器、温度传感器和压力传感器组成
+### 6. 比较关系类
+- 优于 ：深度学习优于传统方法
+- 超越 ：新算法超越现有基准
+- 区别于 ：监督学习区别于无监督学习
+- 对比 ：不同方法的性能对比；基于Copula相似性的航空发动机RUL预测方法对比传统方法
+### 7. 创新关系类
+- 提出了 ：本文提出了一种结合小波变换的轴承故障诊断方法
+- 开发了 ：团队开发了创新算法
+- 设计了 ：研究设计了新型传感器
+- 创建了 ：本文创建了标准数据集
+- 创新了 ：多尺度特征融合方法创新了不同时间分辨率振动信号的联合分析
+- 突破了 ：Deep RUL预测方法突破了小样本寿命预测的限制
+### 8. 结果评价类
+- 评价指标是 ：RUL预测模型评价指标是均方根误差和平均绝对百分比误差
+- 得出 ：RUL预测模型得出航空发动机剩余寿命的数值估计
+### 关系抽取指导原则
+1.全面性 ：不遗漏任何有意义的实体间联系
+2.创新性 ：特别关注学术文献中的创新关系和技术演进
+3.灵活性 ：关系类型不限于上述分类，可根据实际语义创建新关系
+4.动态性 ：关注时间维度上的变化和发展关系
+5.隐含性 ：挖掘文本中隐含但语义明确的关系
+关系只需反映实体间实际存在的语义联系，具体类型无需严格限定，允许根据上下文灵活判断。
+
+### 关系抽取指导原则
+1. **全面性**：不遗漏任何有意义的实体间联系
+2. **创新性**：特别关注学术文献中的创新关系和技术演进
+3. **灵活性**：关系类型不限于上述分类，可根据实际语义创建新关系
+4. **动态性**：关注时间维度上的变化和发展关系
+5. **隐含性**：挖掘文本中隐含但语义明确的关系
+
+## schema 定义
+{schema_placeholder}
+
+## 抽取指令
+### 步骤1：核心实体识别
+- 重点扫描 摘要、引言和结论 部分，识别论文的核心研究对象、主要方法和关键成果
+- 从关键段落中提取第一批核心实体（通常是最重要的技术、模型、系统等）
+### 步骤2：关系发现与扩展
+- 围绕已识别的核心实体，在原文中寻找描述它们关系的 动词和关键短语
+- 构建核心关系三元组：(头实体, 关系类型, 尾实体)
+- 将关系中新出现的重要实体加入实体列表，继续寻找它们的关系
+### 步骤3：质量检查与输出
+- 确保relations中的所有实体都在entities列表中
+- 检查实体命名的一致性（统一同义词）
+- 验证关系的逻辑合理性和准确性
+- 按JSON格式输出最终结果
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+
+## 输出格式
+请严格按照以下JSON格式输出结果：
+
+```json
+{
+  "entities": [
+    {
+      "name": "航空发动机健康管理系统",
+      "type": "系统"
+    },
+    {
+      "name": "健康管理系统",
+      "type": "系统"
+    },
+    {
+      "name": "SDQ算法",
+      "type": "算法"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法"
+    },
+    {
+      "name": "AANN神经网络",
+      "type": "网络"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "多电飞机",
+      "type": "概念"
+    },
+    {
+      "name": "高压",
+      "type": "发展趋势"
+    },
+    {
+      "name": "直流",
+      "type": "发展趋势"
+    },
+    {
+      "name": "电机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "起动发电",
+      "type": "技术"
+    },
+    {
+      "name": "高压直流",
+      "type": "电源体制"
+    },
+    {
+      "name": "内装式高速起动发电机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "混合励磁电机",
+      "type": "电机"
+    },
+    {
+      "name": "多电发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "气路故障诊断",
+      "type": ""
+    }
+  ],
+  "relations": [
+    {
+      "head": "气路故障诊断",
+      "relation": "成为...重要组成部分",
+      "tail": "健康管理系统"
+    },
+    {
+      "head": "遗传算法",
+      "relation": "优化了",
+      "tail": "AANN神经网络"
+    },
+    {
+      "head": "电机",
+      "relation": "得到广泛应用",
+      "tail": "多电飞机"
+    }
+  ]
+}
+```
+
+## 注意事项
+###必须遵守的规则：
+1.严格按照JSON格式输出 ：确保entities和relations数组格式正确
+2.实体类型灵活性 ：不局限于给定的实体类型，可根据文本内容创建新类型
+3.关系类型创新性 ：优先使用已定义的关系类型，但允许根据语义创建新关系
+4.完整概念原则 ：选择最有意义的完整概念作为实体，避免过度分割
+5. **不受schema限制**：给定的schema和示例仅作参考，实体类型和关系类型均不仅限于此
+6. **实体一致性**：确保relations中引用的所有实体都在entities数组中明确定义
+7. **关系准确性**：关系表述应准确反映实体间的真实语义联系
+###特别关注：
+- 技术演进关系 ：重点识别"基于"、"改进"、"发展"、"演化"等创新关系
+- 比较关系 ：注意"优于"、"劣于"、"相似于"、"区别于"等对比关系
+- 应用关系 ：关注"应用于"、"解决"、"处理"等实际应用联系
+- 隐含关系 ：挖掘文本中未明确表述但语义清晰的关系
+
+质量保证：
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+- 保持实体边界的准确性，既不过度合并也不过度分割
+
+
+## 输入数据 
+现在，你将接收到用于处理的本次任务的全部输入数据。
+论文全文:
+```markdown```
+# 航空发动机健康参数的卡尔曼滤波估计方法分析
+
+杨振兴，黄金泉，鲁峰
+
+（南京航空航天大学能源与动力学院，江苏南京210016）
+
+摘要：针对航空发动机气路部件健康参数估计问题，研究了基于线性和非线性模型的卡尔曼滤波估计方法。通过对气路部件渐变故障的仿真，比较了卡尔曼滤波(KF)、扩展卡尔曼滤波(EKF)、无味卡尔曼滤波(UKF)三种方法对健康参数的估计效果，对EKF在常增益条件下的仿真用时与估计结果进行了研究。结果表明，EKF可根据需要求取卡尔曼增益，能在较少计算量下得到较好的估计结果，是一种实用的非线性参数估计方法。
+
+关键词：航空发动机；健康管理；气路故障；参数估计；非线性模型；卡尔曼滤波
+
+中图分类号：V233.7 文献标识码：A 文章编号：1672- 2620（2012）S0- 0041- 03
+
+# Kalman Filter for Aero-Engine Health Parameter Estimation Analysis
+
+YANG Zhen- xing, HUANG Jin- quan, LU Feng (College of Energy and Power Engineering, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China)
+
+Abstract: For health parameters estimation of aero- engine gas path components, we studied Kalman filter estimation methods which based on linear and nonlinear Kalman filter (KF). Through simulation of gradual faults of gas path components, the estimation results of KF, extended Kalman filter (EKF), and unscented Kalman filter (UKF) were compared. The simulation time and estimation results of EKF on the condition of constant gain were studied. Results show that EKF can obtain Kalman gain according to demand and get better estimation results with lower cost. EKF is a practical nonlinear parameter estimation method.
+
+Key words: aero- engine; health management; gas path fault; parameter estimation; non- linear model; Kalman filter
+
+# 1 引言
+
+健康管理系统是实现发动机从传统定期维修向视情维修转变的关键技术，已成为国内外研究热点。发动机性能参数估计技术作为健康管理的重要内容，为评估发动机健康状况信息、制定维修计划提供了重要依据。当前发动机气路部件故障诊断技术主要为：基于模型的诊断技术、基于数据驱动的诊断技术和基于知识的诊断技术。其中基于模型的诊断技术由于可估计发动机健康参数，并通过诊断逻辑实现故障的隔离和预测，已应用于发动机健康管理中。
+
+基于模型的性能参数估计中，卡尔曼滤波(KF)
+
+估计方法得到了广大学者和研究人员的重视。卡尔曼滤波是线性系统在过程噪声和观测噪声服从高斯分布下的最优估计。对非线性系统，扩展卡尔曼滤波(EKF)由于其算法简单、具有鲁棒性等优点而得到广泛应用，但当模型表现为强非线性时，其高阶误差不能被忽略，估计误差增大甚至发散。为此，Julier等提出了无味卡尔曼滤波(UKF)。该方法使用无味变换实现非线性变换，不仅避免了对非线性对象的线性化等近似、滤波发散等问题，而且比扩展卡尔曼滤波器具有更高的估计精度。在实际工程中，扩展卡尔曼、无味卡尔曼滤波方法由于需要多次调用非线性模型进行参数估计，计算时间较长，实时
+
+性差。为此，Kobayashi等研究了常增益扩展卡尔曼滤波(CGEKF)，该方法虽然估计精度略低，但大大减少了计算时间。
+
+本文研究了线性、非线性卡尔曼滤波器在发动机健康参数估计方面的应用，并以某型民用涡扇发动机为对象，进行了部件渐变故障仿真，给出了估计结果和仿真用时。
+
+# 2 发动机模型
+
+本文所用发动机非线性部件级模型，是用一组非线性气动热力学方程描述发动机对象，利用流量连续、功率平衡及转子动力学方程建立发动机共同工作方程，实现对发动机的稳态、动态仿真。其双轴涡扇发动机在稳态工作点附近的蜕化模型为[7]：
+
+$$
+\begin{array}{r}\Delta x_{k + 1} = f(\Delta x_k,\Delta u_k) + w_k\\ \Delta y_k = H(\Delta x_k,\Delta u_k) + v_k \end{array} \tag{1}
+$$
+
+式中：控制变量  $\Delta u = [\Delta wf,\Delta VSV,\Delta VBV]^T$  ，wf为发动机主燃油量，  $VBV$  为可调放气活门，  $VSV$  为可调静子导叶。  $\mathcal{X}$  为反映发动机工作状态的变量，包括高低压转子转速和反映部件效率、流量的健康参数。本文选取的健康参数有高压气机效率和流量的蜕化量、高压涡轮效率和流量的蜕化量，因此可得到 $\Delta x = [\Delta N_{l},\Delta N_{h},\Delta \eta_{hpc},\Delta W_{hpc},\Delta \eta_{hp},\Delta W_{hpt}]^{T}$  。输出参数 $\Delta y_{k} = [\Delta N_{l},\Delta N_{h},\Delta T_{25},\Delta P_{3},\Delta T_{3},\Delta T_{49.5}]^{T}$  ，分别为低压转子转速、高压转子转速、高压压气机进口温度、高压压气机出口压力、高压压气机出口温度、低压涡轮二导出口温度的变化量。  $w_{k},u_{k}$  为互不相关高斯白噪声，其协方差矩阵分别为  $Q$  和  $R$  。  $f(\cdot),H(\cdot)$  表示发动机工作过程的非线性函数。发动机运行过程中，由于腐蚀、积垢或吸入外物等因素，都会导致发动机气路部件性能下降，并表现为健康参数的缓慢或突然变化。
+
+# 3 基于卡尔曼滤波器的参数估计
+
+卡尔曼滤波器是典型的最小方差估计方法，它利用状态的估计值和实际测量值的偏差，对状态不断更新，使更新后的状态变量值的误差方差最小。基于卡尔曼滤波器的发动机健康参数估计结构如图1所示。
+
+# 3.1 线性卡尔曼滤波器
+
+对发动机非线性方程(1)，在某一稳态工作点进行线性化[2]：
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/c8b09070-7ccd-4334-b5dc-716074f06153/27546123e315747cba666eddc7bf5a7b7bd4e0c2e42b473d9bd4fb7625c549dd.jpg)  
+图1基于卡尔曼滤波器的发动机健康参数估计结构 Fig.1 Aero-engine performance parameters estimated based on Kalman filter
+
+$$
+\begin{array}{r}\Delta x_{k + 1} = A\Delta x_k + B\Delta u_k + w_k\\ \Delta y_k = C\Delta x_k + D\Delta u_k + v_k \end{array} \tag{2}
+$$
+
+式中：  $A = \frac{\partial f}{\partial x},B = \frac{\partial f}{\partial u},C = \frac{\partial H}{\partial x},D = \frac{\partial H}{\partial u}$
+
+其相应的卡尔曼滤波器方程为：
+
+$$
+\begin{array}{rl} & {\Delta \hat{x}_{k,k - 1} = A\Delta \hat{x}_{k - 1} + B\Delta u_{k - 1}}\\ & {P_{k,k - 1} = AP_{k - 1}A^T +Q}\\ & {K_k = P_{k,k - 1}C^T (CP_{k,k - 1}C^T +R)^{-1}}\\ & {\Delta \hat{y}_k = C\Delta \hat{x}_{k,k - 1} + \Delta \Delta y_k}\\ & {\Delta \hat{x}_k = \Delta \hat{x}_{k,k - 1} + K_k(\Delta y_k - \Delta \hat{y}_k)}\\ & {P_k = (I - K_kC)P_{k,k - 1}} \end{array} \tag{1}
+$$
+
+式中：  $\hat{x}$  为状态估计量，  $\hat{y}$  为模型预测输出量，  $K_{k}$  为卡尔曼增益，  $P_{k,k - 1}\setminus P_{k}$  分别为先验估计和后验估计误差协方差矩阵。
+
+# 3.2 扩展卡尔曼滤波器
+
+扩展卡尔曼滤波器利用泰勒级数将过程方程和测量方程在该状态点展开，用该点的雅可比矩阵求取卡尔曼增益，然后再利用卡尔曼滤波的方法进行估计[3]。方程(1)的扩展卡尔曼滤波过程为：
+
+$$
+\begin{array}{rl} & {\Delta \hat{x}_{k,k - 1} = f(\Delta x_{k - 1},\Delta u_{k - 1})}\\ & {\Delta \hat{x}_k = \Delta \hat{x}_{k,k - 1} + K_k(\Delta y_k - H(\Delta \hat{x}_{k,k - 1},\Delta u_k))} \end{array} \tag{4}
+$$
+
+式中：  $K_{k}$  的求取过程与方程(3)同，且  $A,C$  矩阵为动态求得，  $A = \frac{\partial f(\Delta\hat{x}_{k - 1},\Delta u_{k - 1})}{\partial\Delta x},C = \frac{\partial H(\Delta\hat{x}_{k,k - 1},\Delta u_k)}{\partial\Delta x}$
+
+# 3.3 无味卡尔曼滤波器
+
+无味卡尔曼滤波器是基于无味变换的非线性卡尔曼滤波器，通过构造一组确定的加权样本点，对待估计参数进行近似，避免了对非线性模型的线性化建模及雅可比矩阵计算，可直接应用于非线性状态估计[4]。方程(1)的无味卡尔曼滤波算法具体步骤可参考文献[7]。
+
+# 4 仿真实例
+
+民用航空发动机约有  $90\%$  的时间工作于巡航状
+
+态，本文主要针对该状态发动机发生的渐变故障进行仿真研究，并对高压压气机效率蜕化  $4\%$  、高压涡轮效率蜕化  $2\%$  时三种方法的估计结果进行比较。其中系统过程噪声和测量参数噪声均为  $0.002^{2}$
+
+对于卡尔曼滤波估计方法，若滤波过程收敛且 $Q_{\lambda}R$  为常值，经一定次数选代后卡尔曼增益趋于定值，即稳态卡尔曼增益  $K$  。由方程(4)可知，在扩展卡尔曼滤波过程中，除需要调用非线性模型对状态进行估计外，还需要动态计算  $K_{k}$  。  $K_{k}$  的计算过程首先要对方程(1)在发动机工作点进行线性化，然后根据滤波选代过程求出，整个计算过程需多次调用非线性模型，计算量大。考虑到发动机健康参数一般蜕
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/c8b09070-7ccd-4334-b5dc-716074f06153/e957aa7295bd4ba528ecd1169471884e824e12aadcb492e035c7c2ed668bad49.jpg)  
+图2高压压气机效率下降  $4\%$  高压涡轮效率下降  $2\%$  时的仿真结果 Fig.2 The simulation results when high pressure compressor efficiency degrade by  $4\%$  and high pressure turbine efficiency degrade by  $2\%$
+
+表1仿真误差与用时
+
+Table 1 Simulation error and time  
+
+<table><tr><td></td><td>KF</td><td>EKF</td><td>CGEKF</td><td>UKF</td></tr><tr><td>估计误差</td><td>0.067 2</td><td>0.029 7</td><td>0.029 9</td><td>0.029 1</td></tr><tr><td>仿真用时/s</td><td>0.072 1</td><td>27.021 2</td><td>4.706 0</td><td>40.291 6</td></tr><tr><td>模型调用次数</td><td>0</td><td>9</td><td>1</td><td>16</td></tr></table>
+
+化较慢，文中又对  $K_{k}$  采用常值进行了研究。仿真结果如图2和表1所示。表中，估计误差定义为仿真过程中健康参数误差的均方和，模型调用次数为一次预测过程中估计方法对非线性模型的调用次数
+
+由图2和表1可知，KF的估计误差最大，UKF的估计误差最小。对于KF，在建立线性化模型时，系数矩阵元素由单个性能参数扰动得到，没有考虑多个参数的耦合，故线性模型对多健康参数蜕化的估计效果较差。对于EKF与UKF，在相同收敛精度设置条件下，UKF由于可达到二阶精度，故估计结果更好，不过两者差距较小。这是因为发动机模型虽为非线性系统，但EKF滤波过程中高阶误差较小，对滤波效果影响较小。EKF动态求取  $A,C$  矩阵，故其估计结果比CGEKF的好
+
+在仿真用时与模型调用次数方面，KF不需要调用非线性模型，用时最短。CGEKF调用模型次数最少，故用时较少。UKF调用模型次数最多，用时最长。在EKF滤波过程中，  $A,C$  矩阵求取时选取的扰动量大小也会影响到仿真用时，本文中选取的扰动量为  $1\%$
+
+# 5结论
+
+本文使用卡尔曼滤波器对航空发动机健康参数的估计问题进行了仿真和比较研究，结果表明，扩展卡尔曼滤波虽然计算用时较长，但由于其可根据模型特点灵活选择增益更新周期与求取方法，如常增益扩展卡尔曼滤波，可在较少计算量下获得较好的估计结果，因此该方法是一种较为实用的非线性参数估计方法。
+
+# 参考文献：
+
+[1] 李一波，张光明，蒋丽英.航空发动机气路故障诊断技术研究现状[J].燃气轮机技术，2009，22(3)：10—15. [2] Lambert H H. A Simulation Study of Turbofan Engine Deterioration Estimation Using Kalman Filtering Techniques [R].NASA- TM- 104233,1991. [3] Quine B，Uhlmann J,Durrant- Whyte H. Implicit Jacobians for Linearised State Estimation in Nonlinear Systems [C]//. Proceedings of the 1995 American Control Conference. IEEE Press,1995. [4] Julier S,Uhlmann J K. A New Method for the Nonlinear Transformation of Means and Covariances in Filters and Estimators[J].IEEE Trans A C,2000,45(3):477—482. (下转第16页)
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/c8b09070-7ccd-4334-b5dc-716074f06153/d7560170aa85e50edcc818de161f634694ea339fa43f818c7d5217dd6c7c48c2.jpg)  
+图10不同弧长下的表面热膜原始信号分布 Fig.10 The distribution of the hot-film original signal along the non-dimensional arc length
+
+值才有意义。
+
+利用本文发展的表面热膜测试技术使用方法，对某一负荷分布下平板表面的边界层发展进行了测量。结果显示，表面热膜所测准剪切力的相对变化趋势很好地体现了边界层的状态变化过程，并且有效地捕捉到边界层转换的主要信息。这说明虽然表面热膜测试技术有一定的不确定性，但仍能反映边界层发展的主要过程，表明了表面热膜测试技术的
+
+有效性和可靠性。
+
+# 参考文献：
+
+[1] Anderson B T, Meyer R R, Chiest H R. Techniques Used in the F- 14 Variable- Sweep Transition Flight Experiment [J]. AIAA Journal of Aircraft, 1991, 28:622- 629. [2] Zhang X F. Hot- Film Measurements of the Steady and Unsteady Boundary Layer Development on a Low- Pressure Turbine Airfoil[D]. Canada: Carleton University, 2002. [3] Howell R J. Wake- Separation Bubble Interactions in Low Reynolds Number Turbomachinery[D]. England: Cambridge University, 1999. [4] Howell R J, Ramesh O N, Hodson H P, et al. High Lift and Aft Loaded Profiles for Low Pressure Turbines[R]. ASME 2000- GT- 261, 2000. [5] Ottavy X, Vilmin S, Hodson H, et al. The Effects of Wake- Passing Unsteadiness Over a Highly Loaded Compressor- Like Flat Plate [J]. Journal of Turbomachinery, 2004, 126(1):13- 23. [6] Stieger R D. The Effects of Wakes on Separating Boundary Layers in Low Pressure Turbines[D]. England: Cambridge University, 2002. [7] 张佩林，王铁城，吴志成，等. 热膜法测量壁面剪切应力的原理和 B- 1 型热膜的初步试验[J]. 南京航空学院学报, 1982, 27(2):95- 104. [8] 王铁城. 应用表面热膜测定 NACA0012 翼型边界层转换区的实验研究[J]. 航空学报, 1984, 5(4):401- 405. [9] 雷志军、王明杰、朱俊强. 低速压气机叶栅附面层分离的实验研究[J]. 工程热物理学报, 2008, 29(11):1839- 1843. [10] 李伟, 朱俊强, 徐燕骥. 低压涡轮叶栅吸力面附面层流动分离及转换的实验研究[C]/. 中国工程热物理学会学术会议论文集, 2009. [11] 王铁城. 表面热膜在空气动力学实验中的应用[J]. 空气动力学学报, 1984, 1:77- 84. [12] Funazaki K, Shiba T, Tanimitsu H. Effects of Blade Loading Distribution on Aerodynamic Performance of Ultra- High Lift LP Turbine Airfoils under the Influences of Wake Passing and Freestream Turbulence[R]. ASME GT2010- 22134, 2010.
+
+（上接第43页）
+
+[5] Kobayashi T, Simon D L, Litt J S. Application of a Constant Gain Extended Kalman Filter for In- Flight Estimation of Aircraft Engine Performance Parameters[R]. ASME GT2005- 68494, 2005.
+
+[6] 窦建平, 黄金泉, 周文祥. 基于 UML 的航空发动机仿真建模研究[J]. 航空动力学报, 2005, 20(4):684- 688. [7] Simon D L. A Comparison of Filtering Approaches for Aircraft Engine Health Estimation[J]. Aerospace Science and Technology, 2008, 12(4):276- 284.

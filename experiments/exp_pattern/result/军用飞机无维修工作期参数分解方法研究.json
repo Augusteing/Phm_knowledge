@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "MFOP参数分解方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "MFOP指标无法分解和落实的问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基本可靠性",
+    "subject_type": "影响因素",
+    "relation": "影响",
+    "object": "无维修工作期",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "故障预测",
+    "subject_type": "影响因素",
+    "relation": "影响",
+    "object": "无维修工作期",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "系统重构",
+    "subject_type": "影响因素",
+    "relation": "影响",
+    "object": "无维修工作期",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "冗余设计",
+    "subject_type": "影响因素",
+    "relation": "影响",
+    "object": "无维修工作期",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "MFOP参数分解方法",
+    "subject_type": "方法",
+    "relation": "提供",
+    "object": "方法基础",
+    "object_type": "基础"
+  },
+  {
+    "subject": "MFOP参数分解",
+    "subject_type": "过程",
+    "relation": "实现转化",
+    "object": "使用参数至合同参数",
+    "object_type": "目标"
+  },
+  {
+    "subject": "MFOP参数分解方法",
+    "subject_type": "方法",
+    "relation": "提供",
+    "object": "理论指导",
+    "object_type": "指导"
+  },
+  {
+    "subject": "理论指导",
+    "subject_type": "指导",
+    "relation": "用于",
+    "object": "MFOP指标分析论证",
+    "object_type": "任务"
+  },
+  {
+    "subject": "理论指导",
+    "subject_type": "指导",
+    "relation": "用于",
+    "object": "飞机可靠性设计",
+    "object_type": "任务"
+  }
+]

@@ -1,0 +1,615 @@
+# 实体关系抽取Prompt
+
+## 任务描述
+你的角色是一位专业的学术文献实体关系抽取专家，专精于从航空航天领域科研文献中识别和抽取实体及其关系。你的任务是通读给定文本，抽取文本中出现的核心实体，及其对应的关系，并以JSON格式输出。
+
+## 实体定义
+文献中出现的核心概念：算法、方法、模型、系统、故障、指标等都可视为实体。实体可以包括：
+- **研究领域**
+定义 ：PHM相关的研究方向和应用领域 
+示例 ：故障预测与健康管理(PHM)、故障诊断、剩余使用寿命预测(RUL)、健康状态评估、预测性维护等
+- **研究方法**
+定义 ：PHM研究中采用的具体方法和技术路线 
+示例 ：寿命预测、趋势预测、健康预测、风险评估、状态监测、故障诊断、性能评估等
+- **理论基础**
+定义 ：支撑PHM技术的基础理论和数学原理 
+示例 ：信号处理理论、机器学习理论、可靠性理论、概率统计理论、控制理论等
+- **模型**
+定义 ：基于特定算法构建的具体结构或实例 示例 ：LSTM神经网络、Transformer模型、深度置信网络(DBN)、隐马尔可夫模型(HMM)、ARIMA模型等
+- **算法**
+定义 ：用于解决特定问题的计算方法和程序步骤 
+示例 ：遗传算法、粒子群优化、支持向量机(SVM)、随机森林、卡尔曼滤波等
+- **系统/部件**
+定义 ：航空航天设备的系统或组成部件 
+示例 ：航空发动机、齿轮箱、轴承、叶片、燃油系统、液压系统、航电系统等
+- **故障模式**
+定义 ：设备可能出现的故障类型和失效模式 
+示例 ：轴承磨损、疲劳裂纹、腐蚀、过热、振动异常、性能退化等
+- **数据集**
+定义 ：用于训练和验证模型的标准数据集 
+示例 ：C-MAPSS数据集、CWRU轴承数据集、IMS轴承数据集、PHM Challenge数据集等
+- **传感器/监测参数**
+定义 ：用于监测设备状态的传感器设备和监测参数 
+示例 ：振动传感器、温度传感器、压力传感器、转速、振动信号、温度、压力等
+- **特征/健康指标**
+定义 ：表征设备健康状态的特征参数和指标 
+示例 ：剩余使用寿命(RUL)、健康指标(HI)、退化指标、频域特征、时域特征、统计特征等
+- **性能指标**
+定义 ：评估模型或方法性能的量化指标 
+示例 ：准确率、精确率、召回率、F1分数、均方根误差(RMSE)、平均绝对误差(MAE)等
+- **软件工具**
+定义 ：用于PHM研究和应用的软件平台和工具 
+示例 ：MATLAB、Python、TensorFlow、PyTorch、Simulink、LabVIEW等
+- **应用场景**
+定义 ：PHM技术的具体应用环境和场景 
+示例 ：发动机健康监测、结构健康监测、预测性维护、故障诊断系统、机载健康管理等
+
+## 关系定义
+文献中的实体之间通常存在逻辑、演进、依赖、功能、组合、比较、创新、评价或因果等联系。关系类型包括但不限于：
+### 1. 技术演进类
+- 发展为 ：传统RNN发展为LSTM
+- 改进了 ：注意力机制改进了Transformer性能
+- 演化成 ：专家系统演化成机器学习方法
+- 升级为 ：基础模型升级为集成模型
+### 2. 依赖关系类
+- 基于 ：健康预测模型基于振动信号特征
+- 依据 ：故障诊断依据传感器数据；轴承剩余寿命预测模型参数依据多传感器振动和温度信号
+- 利用 ：深度学习利用大数据优势
+- 采用 ：系统采用多传感器融合技术
+- 建立在 ：深度卷积残差网络模型建立在卷积神经网络理论
+### 3. 功能关系类
+- 应用于 ：机器学习应用于故障预测
+- 用于 ：卡尔曼滤波用于状态估计
+- 解决 ：深度学习解决特征提取问题
+- 实现 ：神经网络实现非线性映射
+- 支持 ：传感器网络支持实时监测
+- 处理 ：主成分分析方法处理航空发动机多维传感器振动数据
+- 预测/诊断 ：LSTM模型预测飞机发动机轴承剩余寿命
+### 4. 因果关系类
+- 导致 ：轴承磨损导致振动异常；高温导致涡轮叶片疲劳加速
+- 引起 ：温度升高引起性能退化；润滑不足引起齿轮磨损
+- 造成 ：疲劳载荷造成裂纹扩展
+- 产生 ：故障产生异常信号；振动异常产生轴承早期故障信号
+- 影响 ：载荷波动影响剩余寿命预测精度
+### 5. 组合关系类
+- 包含 ：PHM系统包含数据采集模块
+- 包括 ：航空装备可用度影响因素包括装备系统的构成及其可靠性、维修性参数
+- 组成 ：多个传感器组成监测网络
+- 结合 ：物理模型结合数据驱动方法
+- 融合 ：多源信息融合提高精度；多传感器数据融合方法融合时域和频域振动特征
+- 由…组成 ：传感器系统由加速度传感器、温度传感器和压力传感器组成
+### 6. 比较关系类
+- 优于 ：深度学习优于传统方法
+- 超越 ：新算法超越现有基准
+- 区别于 ：监督学习区别于无监督学习
+- 对比 ：不同方法的性能对比；基于Copula相似性的航空发动机RUL预测方法对比传统方法
+### 7. 创新关系类
+- 提出了 ：本文提出了一种结合小波变换的轴承故障诊断方法
+- 开发了 ：团队开发了创新算法
+- 设计了 ：研究设计了新型传感器
+- 创建了 ：本文创建了标准数据集
+- 创新了 ：多尺度特征融合方法创新了不同时间分辨率振动信号的联合分析
+- 突破了 ：Deep RUL预测方法突破了小样本寿命预测的限制
+### 8. 结果评价类
+- 评价指标是 ：RUL预测模型评价指标是均方根误差和平均绝对百分比误差
+- 得出 ：RUL预测模型得出航空发动机剩余寿命的数值估计
+### 关系抽取指导原则
+1.全面性 ：不遗漏任何有意义的实体间联系
+2.创新性 ：特别关注学术文献中的创新关系和技术演进
+3.灵活性 ：关系类型不限于上述分类，可根据实际语义创建新关系
+4.动态性 ：关注时间维度上的变化和发展关系
+5.隐含性 ：挖掘文本中隐含但语义明确的关系
+关系只需反映实体间实际存在的语义联系，具体类型无需严格限定，允许根据上下文灵活判断。
+
+### 关系抽取指导原则
+1. **全面性**：不遗漏任何有意义的实体间联系
+2. **创新性**：特别关注学术文献中的创新关系和技术演进
+3. **灵活性**：关系类型不限于上述分类，可根据实际语义创建新关系
+4. **动态性**：关注时间维度上的变化和发展关系
+5. **隐含性**：挖掘文本中隐含但语义明确的关系
+
+## schema 定义
+{schema_placeholder}
+
+## 抽取指令
+### 步骤1：核心实体识别
+- 重点扫描 摘要、引言和结论 部分，识别论文的核心研究对象、主要方法和关键成果
+- 从关键段落中提取第一批核心实体（通常是最重要的技术、模型、系统等）
+### 步骤2：关系发现与扩展
+- 围绕已识别的核心实体，在原文中寻找描述它们关系的 动词和关键短语
+- 构建核心关系三元组：(头实体, 关系类型, 尾实体)
+- 将关系中新出现的重要实体加入实体列表，继续寻找它们的关系
+### 步骤3：质量检查与输出
+- 确保relations中的所有实体都在entities列表中
+- 检查实体命名的一致性（统一同义词）
+- 验证关系的逻辑合理性和准确性
+- 按JSON格式输出最终结果
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+
+## 输出格式
+请严格按照以下JSON格式输出结果：
+
+```json
+{
+  "entities": [
+    {
+      "name": "健康评估技术",
+      "type": "技术"
+    },
+    {
+      "name": "装备故障预测与健康管理(PHM)",
+      "type": "技术"
+    },
+    {
+      "name": "五层结构的健康评估总体技术框架",
+      "type": "模型/框架"
+    },
+    {
+      "name": "导弹武器装备",
+      "type": "应用案例"
+    },
+    {
+      "name": "航天器",
+      "type": "应用案例"
+    },
+    {
+      "name": "空军工程大学",
+      "type": "机构"
+    },
+    {
+      "name": "浙江大学",
+      "type": "机构"
+    },
+    {
+      "name": "哈尔滨工业大学",
+      "type": "机构"
+    },
+    {
+      "name": "北京航空航天大学",
+      "type": "机构"
+    },
+    {
+      "name": "南京航空航天大学",
+      "type": "机构"
+    },
+    {
+      "name": "中国电子学会电子测量与仪器分会",
+      "type": "机构"
+    },
+    {
+      "name": "景博教授",
+      "type": "人物"
+    },
+    {
+      "name": "空军工程大学航空航天工程学院",
+      "type": "机构"
+    },
+    {
+      "name": "李学仁院长",
+      "type": "人物"
+    },
+    {
+      "name": "黄志尧教授",
+      "type": "人物"
+    },
+    {
+      "name": "彭宇教授",
+      "type": "人物"
+    },
+    {
+      "name": "于劲松教授",
+      "type": "人物"
+    },
+    {
+      "name": "王莉教授",
+      "type": "人物"
+    },
+    {
+      "name": "中国科学院自动化所",
+      "type": "机构"
+    },
+    {
+      "name": "王健教授",
+      "type": "人物"
+    },
+    {
+      "name": "何宇廷教授",
+      "type": "人物"
+    },
+    {
+      "name": "中国飞行试验研究院",
+      "type": "机构"
+    },
+    {
+      "name": "张联禾主任",
+      "type": "人物"
+    },
+    {
+      "name": "中国航空无线电电子研究所",
+      "type": "机构"
+    },
+    {
+      "name": "池程芝主任",
+      "type": "人物"
+    },
+    {
+      "name": "中航工业南京机电液压工程研究中心",
+      "type": "机构"
+    },
+    {
+      "name": "徐红专部长",
+      "type": "人物"
+    },
+    {
+      "name": "交流报告",
+      "type": "活动"
+    },
+    {
+      "name": "PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "军用飞机PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "工程应用",
+      "type": "概念"
+    },
+    {
+      "name": "无人系统PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "PHM",
+      "type": "技术"
+    },
+    {
+      "name": "预测与健康管理",
+      "type": "技术"
+    },
+    {
+      "name": "可用性",
+      "type": "性能指标"
+    },
+    {
+      "name": "预测与健康管理（Prognostic and Health Management，PHM）",
+      "type": "技术"
+    },
+    {
+      "name": "联合分布式信息系统（Joint Distributed Information System，JDIS）",
+      "type": "系统/部件"
+    },
+    {
+      "name": "自主后勤系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "系统的使用和保障成本",
+      "type": "成本"
+    },
+    {
+      "name": "系统安全性",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "健康评估技术",
+      "relation": "是...的核心技术之一",
+      "tail": "装备故障预测与健康管理(PHM)"
+    },
+    {
+      "head": "健康评估技术",
+      "relation": "提出了",
+      "tail": "五层结构的健康评估总体技术框架"
+    },
+    {
+      "head": "导弹武器装备",
+      "relation": "是...典型应用案例",
+      "tail": "健康评估技术"
+    },
+    {
+      "head": "航天器",
+      "relation": "是...典型应用案例",
+      "tail": "健康评估技术"
+    },
+    {
+      "head": "景博教授",
+      "relation": "任职于",
+      "tail": "空军工程大学"
+    },
+    {
+      "head": "李学仁院长",
+      "relation": "任职于",
+      "tail": "空军工程大学航空航天工程学院"
+    },
+    {
+      "head": "黄志尧教授",
+      "relation": "任职于",
+      "tail": "浙江大学"
+    },
+    {
+      "head": "彭宇教授",
+      "relation": "任职于",
+      "tail": "哈尔滨工业大学"
+    },
+    {
+      "head": "于劲松教授",
+      "relation": "任职于",
+      "tail": "北京航空航天大学"
+    },
+    {
+      "head": "王莉教授",
+      "relation": "任职于",
+      "tail": "南京航空航天大学"
+    },
+    {
+      "head": "王健教授",
+      "relation": "任职于",
+      "tail": "中国科学院自动化所"
+    },
+    {
+      "head": "何宇廷教授",
+      "relation": "任职于",
+      "tail": "空军工程大学"
+    },
+    {
+      "head": "张联禾主任",
+      "relation": "任职于",
+      "tail": "中国飞行试验研究院"
+    },
+    {
+      "head": "池程芝主任",
+      "relation": "任职于",
+      "tail": "中国航空无线电电子研究所"
+    },
+    {
+      "head": "徐红专部长",
+      "relation": "任职于",
+      "tail": "中航工业南京机电液压工程研究中心"
+    },
+    {
+      "head": "交流报告",
+      "relation": "围绕",
+      "tail": "PHM技术"
+    },
+    {
+      "head": "交流报告",
+      "relation": "围绕",
+      "tail": "军用飞机PHM技术"
+    },
+    {
+      "head": "交流报告",
+      "relation": "围绕",
+      "tail": "工程应用"
+    },
+    {
+      "head": "交流报告",
+      "relation": "涵盖",
+      "tail": "无人系统PHM技术"
+    },
+    {
+      "head": "预测与健康管理（Prognostic and Health Management，PHM）",
+      "relation": "是...的基础",
+      "tail": "自主后勤系统"
+    },
+    {
+      "head": "联合分布式信息系统（Joint Distributed Information System，JDIS）",
+      "relation": "是...的基础",
+      "tail": "自主后勤系统"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "降低",
+      "tail": "系统的使用和保障成本"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "提高",
+      "tail": "系统安全性"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "提高",
+      "tail": "可用性"
+    }
+  ]
+}
+```
+
+## 注意事项
+###必须遵守的规则：
+1.严格按照JSON格式输出 ：确保entities和relations数组格式正确
+2.实体类型灵活性 ：不局限于给定的实体类型，可根据文本内容创建新类型
+3.关系类型创新性 ：优先使用已定义的关系类型，但允许根据语义创建新关系
+4.完整概念原则 ：选择最有意义的完整概念作为实体，避免过度分割
+5. **不受schema限制**：给定的schema和示例仅作参考，实体类型和关系类型均不仅限于此
+6. **实体一致性**：确保relations中引用的所有实体都在entities数组中明确定义
+7. **关系准确性**：关系表述应准确反映实体间的真实语义联系
+###特别关注：
+- 技术演进关系 ：重点识别"基于"、"改进"、"发展"、"演化"等创新关系
+- 比较关系 ：注意"优于"、"劣于"、"相似于"、"区别于"等对比关系
+- 应用关系 ：关注"应用于"、"解决"、"处理"等实际应用联系
+- 隐含关系 ：挖掘文本中未明确表述但语义清晰的关系
+
+质量保证：
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+- 保持实体边界的准确性，既不过度合并也不过度分割
+
+
+## 输入数据 
+现在，你将接收到用于处理的本次任务的全部输入数据。
+论文全文:
+```markdown```
+# 基于PHM的军机备件配置机制
+
+毛德耀 周栋 文培乾
+
+（北京航空航天大学可算性与系统工程学院，北京100191） （驻上海航空电子公司军事代表室，上海201101）
+
+# 吕川
+
+（北京航空航天大学可算性与系统工程学院，北京100191）
+
+摘要：现有的军机备件配置模型不能满足预测与健康管理（PHM，Prognostics and Health Management）技术支持下的军机备件配置.分析了军机备件需求产生过程及现有军机备件预测配置机制，并在构建军机PHM体系基础上，分析了PHM技术对军机备件配置的影响，得出了PHM技术支持下的备件配置模式，最后运用PHM系统的预测构建了基层级备件配置机制框架；运用后方基地自动化后勤信息系统及虚拟库存理论构建了后方基地备件配置机制框架；运用信息共享理论构建了联合共享备件配置机制框架.该配置机制能够为PHM技术逐渐应用于军机提供备件配置方面指导性和可操作性的参考.
+
+关键词：PHM；备件；备件配置机制中图分类号：TB114- 3文献标识码：A 文章编号：1001- 5965（2011)09- 1160- 05
+
+# Allocation mechanism of military aircraft spares based on PHM
+
+Mao Deyao Zhou Dong
+
+(School of Reliability and Systems Engineering, Beijing University of Aeronautics and Astronautics, Beijing 100191, China)
+
+Wen Peiqian
+
+(The Military Representative Bureau of Shanghai Aeroelectronic Company, Shanghai 201101, China)
+
+Lu Chuan
+
+(School of Reliability and Systems Engineering, Beijing University of Aeronautics and Astronautics, Beijing 100191, China)
+
+Abstract: The existing allocation model of military aircraft spares can't meet the allocation of military aircraft spares based on prognostics and health management (PHM). First, the generation process of military aircraft spares demand and the existing allocation model of military aircraft spares were formulated. And on the base of under- built PHM system, analyses the effects of PHM on military aircraft spares allocation were analysed. Then, the spares allocation mode based on PHM was given. Last, the organizational- level spares allocation mechanism frame was built by use of the PHM system, the rear sustaining support base spares allocation mechanism frame was built by use of the automatic logistics information system and virtual inventory theory, and the information share theory was used to build the unite pooling spares allocation mechanism frame. This allocation mechanism can provide guidable and executive reference of spares allocation for the PHM technology gradually being applied on military aircrafts.
+
+Key words: prognostics and health management(PHM); spare; spare allocation mechanism
+
+现代武器装备的采购费用和使用与保障费用日益庞大，使经济可承受性成为一个不可回避的
+
+问题.根据美军综合数据，在武器装备的全寿命周期费用中，使用与保障费用占到了总费用的
+
+$72\%$  .与使用保障费用相比，维修保障费用在技术上更具有可压缩性，预测与健康管理（PHM，PrognosticsandHealthManagement）技术已成为压缩维修保障费用的重要手段  $\mathbb{E} - \mathbb{A}$
+
+备件是重要的维修保障资源，占据维修保障费用较大比重，其需求量的准确预测和配置对于保证装备完好能力和任务持续能力的要求、降低备件采购、管理费用有重要意义.因此，在PHM技术逐渐运用于军机趋势下，谋求军机维修、备件需求与备件配置的不断平衡是现阶段我军军机装备建设不容回避、函待解决的问题
+
+本文在介绍备件需求产生过程及现有军机备件预测、配置方法的基础上，分析了PHM技术对军机备件配置的影响，提出了相应要求，并构建了基于PHM的军机备件配置模型，有助于克服国内军机备件配置的不足，提高维修保障效益，并为国内军机在PHM技术研究上提供指导性和可操作性的参考.
+
+# 1 备件需求与配置模型
+
+备件需求主要由维修需求引起，其产生的过程如图1所示，目前表现出一种被动式的需求- 保障特点.维修活动根据其特点可以分为修复性维修活动和预防性维修活动，因此，备件需求分为2种类型：随机性备件需求和周期性备件需求
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/206c9e5ffa831e275a3213054d85d5954832c05c8b5009708618314d557858b8.jpg)  
+图1典型备件需求产生过程
+
+备件配置数量的多少是用来衡量维修保障程度的，配置数量少，就很难实施及时保障，造成装备失修、停机，严重影响战斗力；配置数量多，则会造成有限经费的浪费
+
+目前常用的备件配置预测模型  $\mathbb{E},\mathbb{I}$  有：1）模型法.通过对装备故障时间的统计数据
+
+分析，得到失效率数据，然后根据其寿命分布规律建立相应的模型，从而计算出备件的配置数量
+
+2）工程经验法.根据以往装备使用过程中备件消耗的情况和经验，以及装备的使用要求预测备件需求数量
+
+模型法将装备故障时间作为评估系统失效率的唯一变量，忽视了影响备件需求的其他因素，如图2为备件需求影响因素  $\mathbb{E},\mathbb{A}$  ，则计算出来的备件需求量与实际需求有较大出入.此外它需要积累大量准确的历史数据，当缺乏历史数据的积累，尤其是新装备、新器件无历史数据可查时，这种方法就无法应用，因此存在较大局限性
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/fcf0fb282a94f27939a174a4491ef4589dbb3d772ceee2edd4bd338ff93bb857.jpg)  
+图2备件需求影响因素
+
+图2中，自身可靠性即产品可靠性、维修性等；维修、供应体制即维修级别、策略，备件供应等；使用环境即备件使用中的温度、湿度、盐雾，腐蚀等；装备说明包括装备概述、装备部署、数量、使用频度等，其他因素涉及人为差错、使用维修人员技能水平等
+
+工程经验法有方便快捷的特点，尤其体现在对需求小、数据缺乏的低耗件或战时备件配置过程中，但忽略了备件配置对象不同的前提，必然会与实际需求产生较大误差
+
+# 2 PHM技术对军机备件配置影响分析
+
+# 2.1 PHM系统结构
+
+结合军机维修保障系统特点，将PHM系统分为2部分：机上PHM、机下（地面）PHM.
+
+机载PHM系统具有的能力包括：获取飞机部件和分系统的状态与使用信息，机内测试和自动隔离到现场可更换单元（LRU，Line Replaceable Unit）或现场可更换模块（LRM，Line Replaceable Module）级的能力，以及重现飞行过程所需信息的能力（如飞行过程、飞行员动作和向飞行员发出的提醒、警告等）.此外机载PHM系统还可确定飞机的维修要求，包括可能的备件需求以及所需工具、人员等，并通过飞行中的维修信息下行链路通知地面维修保障人员
+
+地面PHM系统要完成的主要功能是预测及诊断飞机故障、人员和装备的管理、数据的处理及传输、基层级维修决策辅助.借助于在线后勤信息网络，部队维修主管随时得到大量所需信息，同时
+
+借助于整个机队的维修历史数据及维修管理工具，及时对飞机各部件进行故障诊断、寿命预计，为飞机维修保障需求提供决策依据，包括人员配置、装备的可用性、飞机状态以及备件的需求。同时地面的便携式维修辅助设备（PMA，Portable Maintenance Aids）可以有效辅助基层级维修人员完成预定任务。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/97e313d653dea44a113fbcd3dd27a38374d1e160d0655c5154eadc3d509b02dc.jpg)  
+图3为一典型的PHM系统结构.其中地面 图3典型PHM系统结构  
+图3典型PHM系统结构 图4PHM技术支持下的备件供应模式
+
+PHM系统宿驻在自动化后勤信息系统（ALIS，Automatic Logistics Information System）中，其后方持续保障基地主要包括军方基地级保障中心、承包商等，完成的功能是备件的持续保障、基地级维修、信息数据的集成。依托一体化信息网络和高效的直达配送手段，实时掌握和预测部队需求，实现物资器材的需求可视和全资可视，并实时更新装备状态信息。
+
+# 2.2 影响分析
+
+由上面分析可知，PHM技术的运用将对国内军机备件需求产生较大影响：机载PHM系统的故障诊断、预测必然使得外场备件短期需求获得及时、准确预测，以缩短维修、保障时间，提高战备完好率；地面PHM平台的故障预测能力也必然使得维修机构的备件规划、维修决策更趋合理；此外承包商在军机备件保障中的作用必然提高，运用供应链理论减少军方每年因备件库存等所承担的高额费用，以提高维修保障的经济可承受性。
+
+因此基于PHM的军机维修保障系统的备件配置机制具有以下特点：
+
+1）预测性.通过状态数据融合和故障趋势分析，实现军机状态趋势预测、剩余寿命预测、功能故障预测，从而达到对备件需求的预测
+
+2）及时主动性.通过实时监测系统运行的状态及参数，利用强大的专家系统知识库和各种算法、模型，进行备件需求预测，在故障发生前备件已及时补充
+
+3）准确性.通过各类故障诊断技术、状态评估技术，实现故障精确定位和故障有效预测，并使维修保障备件资源信息准确可视可控
+
+4）协同性.通过信息接口，能与后方维修保障机构紧密协同，有求必应，同时，备件仓库间相互协同，构成一体化协作的维修保障备件配置网
+
+# 络.
+
+5）经济可承受性.通过减少备件库存、优化重组备件保障流程，最大限度降低备件费用
+
+# 3 备件配置机制分析
+
+从上面PHM技术对军机备件配置的影响分析知道，基于PHM的军机维修保障系统决定了相应的备件供应模式，以达到备件配置合理准确、备件补充及时主动、费用经济可承受等目标，图4为PHM技术支持下的备件供应模式
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/eb688bb2e6004824537aec19a9a2c6890eecc92832e73abb10f70eea6e7314be.jpg)
+
+易知，整个备件保障流程是一自主式后勤保障链，其开始于机载、地面PHM系统的故障诊断和预测，并触发后勤保障系统的响应
+
+显然PHM支持下的自主后勤保障系统正是通过PHM系统的实时状态监测、故障诊断和预测能力为外场备件的提前准备和规划提供了时间，即由PHM系统的故障预测能力实现了准确预测
+
+备件需求的目的。
+
+总之通过PHM系统的故障和剩余寿命预测功能，并结合产品模型、仿真工具、维修管理工具等，对外场备件、后方基地库存备件及联合共享备件进行预测，最终实现军机备件的优化配置。
+
+# 3.1 外场备件配置
+
+通过对PHM系统故障预测能力的分析，易知通过机载PHM及地面PHM系统的故障诊断、寿命预测等可及时获取飞机设备状态、残余使用寿命、性能降级趋势，并通过对部件寿命实时跟踪确定维修需求的时机，进而产生备件需求，图5所示为外场维修备件短期需求预测流程[0- 1]
+
+由图5可知，飞机备件预测配置主要由2部分组成。
+
+1）飞机执行任务过程中，机载PHM平台管理器通过对设备健康状态监控，故障智能诊断、推理，并同飞机历史监测、故障统计数据及产品可靠性模型输入至预测模块实现对飞机关键部件的综合预测推理，确认功能故障单元并隔离，产生维修需求，并在飞行过程中及时传递至地面PHM平台，并最终做出备件是否需要的决策。
+
+显而易见，本部分备件预测配置主要针对影响飞机任务完成的关键系统和部件，并要求地面
+
+维修人员及时准备好需求备件，当缺件时可从后方备件协调中心快速调配获得
+
+2）任务完成后，地面工程技术人员对机载PHM平台管理器中储存的飞机状态趋势预测数据、剩余寿命预计数据等信息进行下载，更新地面PHM平台中飞机状态信息，并负责隔离在机上先前没有隔离的故障、进一步完成部件寿命跟踪/趋势跟踪，最后综合历史监测、统计数据及产品模型对飞机所需备件进行预测配置。本部分主要完成对飞机执行任务过程中未隔离故障单元需求备件的配置，并通过对整个机群飞机状态的跟踪完成机群短期备件的预测配置。
+
+# 3.2 后方基地库存备件配置
+
+这部分备件配置主要从2方面进行分析：实体库存备件、虚拟库存备件。
+
+1）后方基地实体库存备件配置流程如图6所示。
+
+在外场地面PHM平台，其ALIS将飞机健康状况及各部件剩余寿命预测数据、产品模型、历史统计数据等信息及时传递至后方基地ALIS，并输入备件预测模型，完成对所需备件的预测配置，此外，外场送修故障件经后方基地修复后返回至仓库，它们共同组成后方基地实体备件配置。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/bec81bf15962ec8a0e1ecc54f8272a90db4980a4d5be72bcd08008f669b63702.jpg)
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/6195623d4d0ed5acdb09416eef19b31a20373288ae1e85fb37ff5d7ae06c85fe.jpg)  
+图5维修备件短期需求预测流程  
+图6实体库存备件配置流程
+
+2）虚拟库存备件如图7所示，在后方基地ALIS中，其库存信息一部分为虚拟库存，主要由承包商供应配置，包括部分飞机消耗品、通用备件及基层级直接送修备件，其配置范围及备件种类由军方与承包商协议要求决定
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/f6cb09d78353fa6033649c3ce99069759e7851974ccde92490b7e0053f0398bf.jpg)  
+虚线表示信息流，实线表示备件流
+
+# 图7虚拟库存备件配置
+
+# 3.3 联合共享备件配置
+
+借助于ALIS其集成式信息流运作模式（如图8所示）实现备件的联合共享4. 本部分备件配置主要从空军级的协调中心进行控制，包括为优化战区备件配置而专门订购的备件及部分价格昂贵而需求较少的军机战略性备件等，以最大程度降低维修保障费用及备件库存费用
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/2d6557d8-6cb2-4e4a-93d0-22443289d18f/7966e3dbe5b92d72651421af5464218304fc24a7da168f9b0f81d99ebfb70ccb.jpg)  
+图8备件联合共享配置
+
+# 4结束语
+
+PHM技术已经在军机装备中广泛应用，极大增强了装备故障预测诊断能力，有效降低维修保障费用，本文重点从军机备件需求产生过程及现有备件配置模型分析出发，指出传统方法存在不足，并基于这种需求，构建了典型军机PHM系统框架，分析了PHM支持下的军机维修保障系统对军机备件配置的影响和特点，在此基础上提出了相应的备件配置模式，最后分别对外场备件配置流程、后方基地备件配置流程及联合共享备件配置流程进行了分析，建立了相应的配置机制，为国内军机改进备件配置工作提供指导性和可操作性的参考.
+
+# 参考文献（References）
+
+[Alford L D Jr. The problem with aviation COTS [J. Aerospace and Electronic Systems Magazine IEEE,2001,16(2):33- 37 [Gartner D L, Dibbert S E. Application of integrated diagnostic
+
+[Alford L D Jr. The problem with aviation COTS [J. Aerospace and Electronic Systems Magazine IEEE,2001,16(2):33- 37 [Gartner D L, Dibbert S E. Application of integrated diagnostic process to non- avionics systems [J. // Gartner D L. Autotestcon Proceedings,2001 IEEE Systems Readiness Technology Conference. Valley Forge,PA: IEEE,2001:229- 238 [Gartner D L, Hess A, Fila L. Writing a convincing cost benefit analysis to substantiate autonomic logistics [J. // Hess A. 2001 IEEE Aerospace Conference Proceedings. Big Sky,MT: IEEE,2001,6: 3095- 3103 [Gartner D L, Hess A, Calvello G, Dabney T. PHM a key enabler for the JSF autonomic logistics support concept [J. // Hess A. 2004 IEEE Aerospace Conference Proceedings. Big Sky,MT: IEEE,2004,6: 3543- 3559 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvello G, Dabney T. PHM a key enabler for the JSF autonomic logistics support [J. // Hess A. 2004 IEEE Aerospace Conference Proceedings. Big Sky,MT: IEEE,2004,6: 3543- 3559 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvello G. Autotostcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163 - 1167 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvello G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvellos G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvellos G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvellos G. Autotestcon Proceedings,2008,29(5) :1163- 1167 [Gartner D L, Hess A, Calvellos G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hess A, Calvellos G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hesse G, Calvellos G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hesse G, Calvellos G. Autotestcon Proceedings,2008,29(5):1163- 1167 [Gartner D L, Hesse G, Calvellos G. Autotestcon Proceedings,2008,11(5):1163- 1167 [Gartner D L, Hesse G, Calvellos G. Autotestcon Proceedings,2008,11(5):1163- 1167 [Gartner D L, Hesse G, Calvellos G. Autotestcon Proceedings,2008,11(5):1163- 1167 [Gartner D l, Hesse G, Calvellos G. Autotestcon Proceedings,2008,11(5):1163- 1167 [Gartner D l, Hesse G, Calvellos G. Autotestcon Proceedings,2008,11(5):1163- 1167 [Gartner D l, Hesse G, Calvellos G. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l, Hesse G, Calvellos G. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l, Hesse G, Calvellos G. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l, Hesse G, Calvellos C. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l, Hesse G, Calvellos G. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l, Hesse G, Calvellos G. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 2129 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):120- 238 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):163- 1167 [Gartner D l. Autotestcon Proceedings,21(5):163- 1167 [Gartner D l. Autotestcon Proceedings,11(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,11(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,11(5):1163- 1167 [Gartner D l. Autotestcon Proceedings,11(5):1163- 1167 [Gartner D l. Autoteston Proceedings,11(5):1163- 1167 [Gartner D l. Autoteston Proceedings,11(5):1163- 1167 [Gartner D l. Autoteston Proceedings,11(5):1163- 1167 [Gartner D l. Autoteston Proceedings,11(5):1163- 1167 [Gl. Autoteston Proceedings,11(5):1163- 1167 [Gl. Autoteston Proceedings,11(5):1163- 1167 [Gl. Autoteston Proceedings,11(5):1163- 1167 [Gl. Autoteston Proceedings,11(5):1163- 1167 [Gl. Autotoston Proceedings,11(5):1163- 1167 [Gl. Autotoston Proceedings,11(5):1163- 1167 [Gl. Autotoston Proceedings,11(5):1163- 1167 [Gl. Autotoston Proceedings,11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings,11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 11(5):1163- 1167 [Gl. Autotoston Proceedings, 21(5):1163- 1167 [Gl. Autoteston Proceedings,
+
+[Gl. Autoteston Proceedings, 21(5):1163- 1167 Wang Naichao, Kang Rui. Research on spare demand generation, transfer and analytical algorithm [J. Acta Aeronautic et Astronautic Sinica,2008,29(5):1163- 1167(in Chinese) [Gl.赵修平,罗木生,王炼,等.维修保障中的备件分析]质量与可靠性,2009,4:18- 21 Zhao Xiuping, Luo Mosheng, Wang Dong, et al. The spares analysis of maintenance support support, 21(5):1163- 1167 [Gl.赵修平,罗木生,王炼,等.维修保障中的备件分析]质量与可靠性,2009,4:18- 21 Zhao Xiuping, Luo Mosheng, Wang Dong, et al. The spares analysis of maintenance support, 21(5):1163- 1167 [Gl.赵修平,罗木生,王炼,等.维修保障中的备件分析]质量与可靠性,2009,4:18- 21 Zhao Xiuping, Luo Mosheng, Wang Dong, et al. The spares analysis of maintenance support, 21(5):1163- 1167 [G.赵修平,罗木生,王炼,等.维修保障中的备件分析]质量与可靠性,2009,4:18- 21 Zhao Xiuping, Luo Mosheng, Wang Dong, et al. The spares analysis of maintenance support, 21(5):1163- 1167 [G.赵修平,罗木生,王炼,等.维修保障中的备件分析师]质量与可靠性,2009,4:18- 21 Zhao Xiuping, Luo Mosheng, Wang Dong, et al. The spares analysis of maintenance support, 21(5):1163- 1167 [G.赵修平,罗木生,王炼,等.维修保障中的备件分析师]质量与可靠性,2009,4:18- 21 Zhao Xie, Calvellos G. Calvellos G. Autoteston Proceedings, 21(5):1163- 1167 [Gl.赵修平,罗木生,王炼,等.维修保障中的备件分析师]质量与可靠性,2009,4:18- 21 Zhao Xie, Calvellos G. Calvellos G. Autoteston Proceedings, 21(5):1163- 1167 [Gl.赵修平,罗木生,王炼,等.维修保障中的备件分析师]质量与稳定性研究 [J. Autoteston Proceedings, 21(5):1163- 1167 [Gl.赵修平,罗木生,王炼,等.维修保障中的备件分析师]质量与稳定性研究 [J. Autoteston Proceedings, 21(5):1163- 1167 [Gl.赵修平,罗木生,王炼,等.维修保障中的备件分析师]质量

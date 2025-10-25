@@ -1,0 +1,246 @@
+{
+  "entities": [
+    {
+      "name": "Caps-BiGRU-Attention",
+      "type": "模型"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "模型"
+    },
+    {
+      "name": "BiGRU",
+      "type": "模型"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "方法"
+    },
+    {
+      "name": "直升机涡轮发动机",
+      "type": "系统"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "任务"
+    },
+    {
+      "name": "准确率",
+      "type": "指标"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "指标"
+    },
+    {
+      "name": "SHAP",
+      "type": "方法"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "特征"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "特征"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "特征"
+    },
+    {
+      "name": "净功率",
+      "type": "特征"
+    },
+    {
+      "name": "指示空速",
+      "type": "特征"
+    },
+    {
+      "name": "可用功率",
+      "type": "特征"
+    },
+    {
+      "name": "压缩机转速",
+      "type": "特征"
+    },
+    {
+      "name": "故障模式",
+      "type": "特征"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "模型"
+    },
+    {
+      "name": "健康管理",
+      "type": "任务"
+    },
+    {
+      "name": "CNN-BiGRU-Attention",
+      "type": "模型"
+    },
+    {
+      "name": "CNN-BiLstm",
+      "type": "模型"
+    },
+    {
+      "name": "CNN-BiGRU",
+      "type": "模型"
+    },
+    {
+      "name": "Random Forest",
+      "type": "模型"
+    },
+    {
+      "name": "交叉熵损失函数",
+      "type": "方法"
+    },
+    {
+      "name": "均方误差",
+      "type": "指标"
+    },
+    {
+      "name": "动态路由",
+      "type": "方法"
+    },
+    {
+      "name": "TensorFlow",
+      "type": "工具"
+    },
+    {
+      "name": "Python",
+      "type": "工具"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "胶囊网络"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "BiGRU"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "SE注意力机制"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "用于",
+      "tail": "故障诊断"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "用于",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "提高",
+      "tail": "准确率"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "降低",
+      "tail": "平均绝对误差"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "优于",
+      "tail": "卷积神经网络"
+    },
+    {
+      "head": "SHAP",
+      "relation": "用于",
+      "tail": "特征分析"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "净功率",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "指示空速",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "用于",
+      "tail": "健康管理"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiGRU-Attention"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiLstm"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiGRU"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "Random Forest"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "采用",
+      "tail": "动态路由"
+    },
+    {
+      "head": "实验",
+      "relation": "采用",
+      "tail": "TensorFlow"
+    },
+    {
+      "head": "实验",
+      "relation": "采用",
+      "tail": "Python"
+    },
+    {
+      "head": "实验",
+      "relation": "基于",
+      "tail": "直升机涡轮发动机数据集"
+    }
+  ]
+}

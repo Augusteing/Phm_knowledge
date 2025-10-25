@@ -1,0 +1,1472 @@
+{
+  "title": "舵面损伤在线故障模式预测及故障检测",
+  "summary": "舵面损伤的传统模型匹配检测方法只适用于线性气动模型 ,并且故障检测和定位能力受操纵和机动状态影响很大。产生这些问题的原因是在故障模式预测和故障检测中忽略了一些实时飞行状态和参数变化。文中将传统的离线故障模式预测改为在线计算 ,在计算中引入实时飞行状态及参数 ,并且在使用解析余度估算正常飞机运动时 ,考虑了实时飞行状态、舵面偏转、质量、惯量等参数变化 ,由实时估算值与实测值比较获得残差。此外 ,采用了故障模式空间最优方向匹配法进行故障隔离以减小残差决策的计算量。对所建立的新算法可以不使用任何简化、假定。使用某机舵面损伤非线性数据进行了分析和仿真 ,结果表明该方法可以适用于多种故障气动模型 ,而且不受机动状态、舵面操纵的影响",
+  "analyzed_sentences": [
+    {
+      "sentence": "舵面损伤的传统模型匹配检测方法只适用于线性气动模型 ,并且故障检测和定位能力受操纵和机动状态影响很大",
+      "tokens": [
+        "舵面",
+        "损伤",
+        "的",
+        "传统",
+        "模型",
+        "匹配",
+        "检测",
+        "方法",
+        "只",
+        "适用",
+        "于",
+        "线性",
+        "气动",
+        "模型",
+        ",",
+        "并且",
+        "故障",
+        "检测",
+        "和",
+        "定位",
+        "能力",
+        "受",
+        "操纵",
+        "和",
+        "机动",
+        "状态",
+        "影响",
+        "很",
+        "大"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "舵面",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "损伤",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 4,
+          "form": "传统",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "模型",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "匹配",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "检测",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "方法",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "只",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "适用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "于",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "线性",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "气动",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "模型",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "并且",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "检测",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "和",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "定位",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "能力",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "受",
+          "head": 29,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "操纵",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "和",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "机动",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "状态",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "影响",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "很",
+          "head": 29,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 29,
+          "form": "大",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "产生这些问题的原因是在故障模式预测和故障检测中忽略了一些实时飞行状态和参数变化",
+      "tokens": [
+        "产生",
+        "这些",
+        "问题",
+        "的",
+        "原因",
+        "是",
+        "在",
+        "故障",
+        "模式",
+        "预测",
+        "和",
+        "故障",
+        "检测",
+        "中",
+        "忽略",
+        "了",
+        "一些",
+        "实时",
+        "飞行",
+        "状态",
+        "和",
+        "参数",
+        "变化"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "产生",
+          "head": 5,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "这些",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "问题",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 1,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "原因",
+          "head": 6,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 7,
+          "form": "在",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "模式",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "检测",
+          "head": 14,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "中",
+          "head": 7,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": "忽略",
+          "head": 6,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "一些",
+          "head": 23,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 18,
+          "form": "实时",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "飞行",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "状态",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "和",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "参数",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "变化",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "文中将传统的离线故障模式预测改为在线计算 ,在计算中引入实时飞行状态及参数 ,并且在使用解析余度估算正常飞机运动时 ,考虑了实时飞行状态、舵面偏转、质量、惯量等参数变化 ,由实时估算值与实测值比较获得残差",
+      "tokens": [
+        "文",
+        "中",
+        "将",
+        "传统",
+        "的",
+        "离线",
+        "故障",
+        "模式",
+        "预测",
+        "改为",
+        "在线",
+        "计算",
+        ",",
+        "在",
+        "计算",
+        "中",
+        "引入",
+        "实时",
+        "飞行",
+        "状态",
+        "及",
+        "参数",
+        ",",
+        "并且",
+        "在",
+        "使用",
+        "解析",
+        "余度",
+        "估算",
+        "正常",
+        "飞机",
+        "运动",
+        "时",
+        ",",
+        "考虑",
+        "了",
+        "实时",
+        "飞行",
+        "状态",
+        "、",
+        "舵面",
+        "偏转",
+        "、",
+        "质量",
+        "、",
+        "惯量",
+        "等",
+        "参数",
+        "变化",
+        ",",
+        "由",
+        "实时",
+        "估算值",
+        "与",
+        "实测值",
+        "比较",
+        "获得",
+        "残差"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "文",
+          "head": 2,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "中",
+          "head": 10,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 3,
+          "form": "将",
+          "head": 10,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 4,
+          "form": "传统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "离线",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "模式",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "改为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "在线",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "计算",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "计算",
+          "head": 16,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "中",
+          "head": 14,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 17,
+          "form": "引入",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "实时",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "飞行",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "状态",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "及",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "参数",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "并且",
+          "head": 35,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "在",
+          "head": 35,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 26,
+          "form": "使用",
+          "head": 33,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "解析",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "余度",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "估算",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "正常",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 31,
+          "form": "飞机",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "运动",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "时",
+          "head": 25,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "考虑",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "了",
+          "head": 35,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 37,
+          "form": "实时",
+          "head": 39,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 38,
+          "form": "飞行",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "状态",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "舵面",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "偏转",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "质量",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "惯量",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "等",
+          "head": 46,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 48,
+          "form": "参数",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "变化",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": ",",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 51,
+          "form": "由",
+          "head": 57,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 52,
+          "form": "实时",
+          "head": 53,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 53,
+          "form": "估算值",
+          "head": 55,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "与",
+          "head": 55,
+          "deprel": "cc",
+          "pos": "P"
+        },
+        {
+          "id": 55,
+          "form": "实测值",
+          "head": 51,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "比较",
+          "head": 51,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 57,
+          "form": "获得",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "残差",
+          "head": 57,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "此外 ,采用了故障模式空间最优方向匹配法进行故障隔离以减小残差决策的计算量",
+      "tokens": [
+        "此外",
+        ",",
+        "采用",
+        "了",
+        "故障",
+        "模式",
+        "空间",
+        "最优",
+        "方向",
+        "匹配",
+        "法",
+        "进行",
+        "故障",
+        "隔离",
+        "以",
+        "减小",
+        "残差",
+        "决策",
+        "的",
+        "计算量"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "此外",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "模式",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "空间",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "最优",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "方向",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "匹配",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "法",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "进行",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "隔离",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "以",
+          "head": 16,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 16,
+          "form": "减小",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "残差",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "决策",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "计算量",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对所建立的新算法可以不使用任何简化、假定",
+      "tokens": [
+        "对",
+        "所",
+        "建立",
+        "的",
+        "新",
+        "算法",
+        "可以",
+        "不",
+        "使用",
+        "任何",
+        "简化",
+        "、",
+        "假定"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "所",
+          "head": 3,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 3,
+          "form": "建立",
+          "head": 6,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "新",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "算法",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "可以",
+          "head": 9,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "不",
+          "head": 9,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "使用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "任何",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 11,
+          "form": "简化",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "假定",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "使用某机舵面损伤非线性数据进行了分析和仿真 ,结果表明该方法可以适用于多种故障气动模型 ,而且不受机动状态、舵面操纵的影响",
+      "tokens": [
+        "使用",
+        "某",
+        "机",
+        "舵面",
+        "损伤",
+        "非线性",
+        "数据",
+        "进行",
+        "了",
+        "分析",
+        "和",
+        "仿真",
+        ",",
+        "结果",
+        "表明",
+        "该",
+        "方法",
+        "可以",
+        "适用于",
+        "多",
+        "种",
+        "故障",
+        "气动",
+        "模型",
+        ",",
+        "而且",
+        "不",
+        "受",
+        "机动",
+        "状态",
+        "、",
+        "舵面",
+        "操纵",
+        "的",
+        "影响"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "使用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "舵面",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "损伤",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "非线性",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "数据",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "分析",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "仿真",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "结果",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "表明",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "该",
+          "head": 17,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 17,
+          "form": "方法",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "可以",
+          "head": 19,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "适用于",
+          "head": 15,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "多",
+          "head": 21,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 21,
+          "form": "种",
+          "head": 24,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 22,
+          "form": "故障",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "气动",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "模型",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "而且",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 27,
+          "form": "不",
+          "head": 28,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 28,
+          "form": "受",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "机动",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "状态",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "舵面",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "操纵",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "影响",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+# 实体关系抽取Prompt
+
+## 任务描述
+你的角色是一位专业的学术文献实体关系抽取专家，专精于从航空航天领域科研文献中识别和抽取实体及其关系。你的任务是通读给定文本，抽取文本中出现的核心实体，及其对应的关系，并以JSON格式输出。
+
+## 实体定义
+文献中出现的核心概念：算法、方法、模型、系统、故障、指标等都可视为实体。实体可以包括：
+- **研究领域**
+定义 ：PHM相关的研究方向和应用领域 
+示例 ：故障预测与健康管理(PHM)、故障诊断、剩余使用寿命预测(RUL)、健康状态评估、预测性维护等
+- **研究方法**
+定义 ：PHM研究中采用的具体方法和技术路线 
+示例 ：寿命预测、趋势预测、健康预测、风险评估、状态监测、故障诊断、性能评估等
+- **理论基础**
+定义 ：支撑PHM技术的基础理论和数学原理 
+示例 ：信号处理理论、机器学习理论、可靠性理论、概率统计理论、控制理论等
+- **模型**
+定义 ：基于特定算法构建的具体结构或实例 示例 ：LSTM神经网络、Transformer模型、深度置信网络(DBN)、隐马尔可夫模型(HMM)、ARIMA模型等
+- **算法**
+定义 ：用于解决特定问题的计算方法和程序步骤 
+示例 ：遗传算法、粒子群优化、支持向量机(SVM)、随机森林、卡尔曼滤波等
+- **系统/部件**
+定义 ：航空航天设备的系统或组成部件 
+示例 ：航空发动机、齿轮箱、轴承、叶片、燃油系统、液压系统、航电系统等
+- **故障模式**
+定义 ：设备可能出现的故障类型和失效模式 
+示例 ：轴承磨损、疲劳裂纹、腐蚀、过热、振动异常、性能退化等
+- **数据集**
+定义 ：用于训练和验证模型的标准数据集 
+示例 ：C-MAPSS数据集、CWRU轴承数据集、IMS轴承数据集、PHM Challenge数据集等
+- **传感器/监测参数**
+定义 ：用于监测设备状态的传感器设备和监测参数 
+示例 ：振动传感器、温度传感器、压力传感器、转速、振动信号、温度、压力等
+- **特征/健康指标**
+定义 ：表征设备健康状态的特征参数和指标 
+示例 ：剩余使用寿命(RUL)、健康指标(HI)、退化指标、频域特征、时域特征、统计特征等
+- **性能指标**
+定义 ：评估模型或方法性能的量化指标 
+示例 ：准确率、精确率、召回率、F1分数、均方根误差(RMSE)、平均绝对误差(MAE)等
+- **软件工具**
+定义 ：用于PHM研究和应用的软件平台和工具 
+示例 ：MATLAB、Python、TensorFlow、PyTorch、Simulink、LabVIEW等
+- **应用场景**
+定义 ：PHM技术的具体应用环境和场景 
+示例 ：发动机健康监测、结构健康监测、预测性维护、故障诊断系统、机载健康管理等
+
+## 关系定义
+文献中的实体之间通常存在逻辑、演进、依赖、功能、组合、比较、创新、评价或因果等联系。关系类型包括但不限于：
+### 1. 技术演进类
+- 发展为 ：传统RNN发展为LSTM
+- 改进了 ：注意力机制改进了Transformer性能
+- 演化成 ：专家系统演化成机器学习方法
+- 升级为 ：基础模型升级为集成模型
+### 2. 依赖关系类
+- 基于 ：健康预测模型基于振动信号特征
+- 依据 ：故障诊断依据传感器数据；轴承剩余寿命预测模型参数依据多传感器振动和温度信号
+- 利用 ：深度学习利用大数据优势
+- 采用 ：系统采用多传感器融合技术
+- 建立在 ：深度卷积残差网络模型建立在卷积神经网络理论
+### 3. 功能关系类
+- 应用于 ：机器学习应用于故障预测
+- 用于 ：卡尔曼滤波用于状态估计
+- 解决 ：深度学习解决特征提取问题
+- 实现 ：神经网络实现非线性映射
+- 支持 ：传感器网络支持实时监测
+- 处理 ：主成分分析方法处理航空发动机多维传感器振动数据
+- 预测/诊断 ：LSTM模型预测飞机发动机轴承剩余寿命
+### 4. 因果关系类
+- 导致 ：轴承磨损导致振动异常；高温导致涡轮叶片疲劳加速
+- 引起 ：温度升高引起性能退化；润滑不足引起齿轮磨损
+- 造成 ：疲劳载荷造成裂纹扩展
+- 产生 ：故障产生异常信号；振动异常产生轴承早期故障信号
+- 影响 ：载荷波动影响剩余寿命预测精度
+### 5. 组合关系类
+- 包含 ：PHM系统包含数据采集模块
+- 包括 ：航空装备可用度影响因素包括装备系统的构成及其可靠性、维修性参数
+- 组成 ：多个传感器组成监测网络
+- 结合 ：物理模型结合数据驱动方法
+- 融合 ：多源信息融合提高精度；多传感器数据融合方法融合时域和频域振动特征
+- 由…组成 ：传感器系统由加速度传感器、温度传感器和压力传感器组成
+### 6. 比较关系类
+- 优于 ：深度学习优于传统方法
+- 超越 ：新算法超越现有基准
+- 区别于 ：监督学习区别于无监督学习
+- 对比 ：不同方法的性能对比；基于Copula相似性的航空发动机RUL预测方法对比传统方法
+### 7. 创新关系类
+- 提出了 ：本文提出了一种结合小波变换的轴承故障诊断方法
+- 开发了 ：团队开发了创新算法
+- 设计了 ：研究设计了新型传感器
+- 创建了 ：本文创建了标准数据集
+- 创新了 ：多尺度特征融合方法创新了不同时间分辨率振动信号的联合分析
+- 突破了 ：Deep RUL预测方法突破了小样本寿命预测的限制
+### 8. 结果评价类
+- 评价指标是 ：RUL预测模型评价指标是均方根误差和平均绝对百分比误差
+- 得出 ：RUL预测模型得出航空发动机剩余寿命的数值估计
+### 关系抽取指导原则
+1.全面性 ：不遗漏任何有意义的实体间联系
+2.创新性 ：特别关注学术文献中的创新关系和技术演进
+3.灵活性 ：关系类型不限于上述分类，可根据实际语义创建新关系
+4.动态性 ：关注时间维度上的变化和发展关系
+5.隐含性 ：挖掘文本中隐含但语义明确的关系
+关系只需反映实体间实际存在的语义联系，具体类型无需严格限定，允许根据上下文灵活判断。
+
+### 关系抽取指导原则
+1. **全面性**：不遗漏任何有意义的实体间联系
+2. **创新性**：特别关注学术文献中的创新关系和技术演进
+3. **灵活性**：关系类型不限于上述分类，可根据实际语义创建新关系
+4. **动态性**：关注时间维度上的变化和发展关系
+5. **隐含性**：挖掘文本中隐含但语义明确的关系
+
+## schema 定义
+{schema_placeholder}
+
+## 抽取指令
+### 步骤1：核心实体识别
+- 重点扫描 摘要、引言和结论 部分，识别论文的核心研究对象、主要方法和关键成果
+- 从关键段落中提取第一批核心实体（通常是最重要的技术、模型、系统等）
+### 步骤2：关系发现与扩展
+- 围绕已识别的核心实体，在原文中寻找描述它们关系的 动词和关键短语
+- 构建核心关系三元组：(头实体, 关系类型, 尾实体)
+- 将关系中新出现的重要实体加入实体列表，继续寻找它们的关系
+### 步骤3：质量检查与输出
+- 确保relations中的所有实体都在entities列表中
+- 检查实体命名的一致性（统一同义词）
+- 验证关系的逻辑合理性和准确性
+- 按JSON格式输出最终结果
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+
+## 输出格式
+请严格按照以下JSON格式输出结果：
+
+```json
+{
+  "entities": [
+    {
+      "name": "航空发动机健康管理系统",
+      "type": "系统"
+    },
+    {
+      "name": "健康管理系统",
+      "type": "系统"
+    },
+    {
+      "name": "SDQ算法",
+      "type": "算法"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法"
+    },
+    {
+      "name": "AANN神经网络",
+      "type": "网络"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "多电飞机",
+      "type": "概念"
+    },
+    {
+      "name": "高压",
+      "type": "发展趋势"
+    },
+    {
+      "name": "直流",
+      "type": "发展趋势"
+    },
+    {
+      "name": "电机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "起动发电",
+      "type": "技术"
+    },
+    {
+      "name": "高压直流",
+      "type": "电源体制"
+    },
+    {
+      "name": "内装式高速起动发电机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "混合励磁电机",
+      "type": "电机"
+    },
+    {
+      "name": "多电发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "气路故障诊断",
+      "type": ""
+    }
+  ],
+  "relations": [
+    {
+      "head": "气路故障诊断",
+      "relation": "成为...重要组成部分",
+      "tail": "健康管理系统"
+    },
+    {
+      "head": "遗传算法",
+      "relation": "优化了",
+      "tail": "AANN神经网络"
+    },
+    {
+      "head": "电机",
+      "relation": "得到广泛应用",
+      "tail": "多电飞机"
+    }
+  ]
+}
+```
+
+## 注意事项
+###必须遵守的规则：
+1.严格按照JSON格式输出 ：确保entities和relations数组格式正确
+2.实体类型灵活性 ：不局限于给定的实体类型，可根据文本内容创建新类型
+3.关系类型创新性 ：优先使用已定义的关系类型，但允许根据语义创建新关系
+4.完整概念原则 ：选择最有意义的完整概念作为实体，避免过度分割
+5. **不受schema限制**：给定的schema和示例仅作参考，实体类型和关系类型均不仅限于此
+6. **实体一致性**：确保relations中引用的所有实体都在entities数组中明确定义
+7. **关系准确性**：关系表述应准确反映实体间的真实语义联系
+###特别关注：
+- 技术演进关系 ：重点识别"基于"、"改进"、"发展"、"演化"等创新关系
+- 比较关系 ：注意"优于"、"劣于"、"相似于"、"区别于"等对比关系
+- 应用关系 ：关注"应用于"、"解决"、"处理"等实际应用联系
+- 隐含关系 ：挖掘文本中未明确表述但语义清晰的关系
+
+质量保证：
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+- 保持实体边界的准确性，既不过度合并也不过度分割
+
+
+## 输入数据 
+现在，你将接收到用于处理的本次任务的全部输入数据。
+论文全文:
+```markdown```
+# 飞行试验数据驱动的涡扇发动机模型辨识
+
+潘鹏飞，马明明，许艳芝（中国飞行试验研究院，西安710089）
+
+摘要：为实现航空发动机飞行试验实时监控，分析整理了涡扇发动机实际飞行试验数据，并以三层前向人工神经网络为基础，通过引入输出层反馈至输入层，形成该涡扇发动机的NNARX模型。对包括高压转子转速在内的11个发动机关键参数变化模型进行研究，并在额外架次全程飞行试验数据上验证和讨论辨识模型的推广能力。结果表明，辨识模型样本点上最大相对误差在  $5\%$  以内，辨识模型可以应用到该型发动机的试飞实时监控中，同时也可为后续建立涡扇发动机的全包线自适应实时监控模型提供参考。
+
+关键词：航空发动机；飞行试验；人工神经网络；NARX模型辨识；全飞行包线；趋势监控；健康管理中图分类号：V235.13 文献标识码：A 文章编号：1672- 2620（2016）06- 0021- 05
+
+# Flight test data-driven model identification of turbofan engine
+
+PAN Peng- fei，MA Ming- ming，XU Yan- zhi (Chinese Flight Test Establishment，Xi'an 710089，China)
+
+Abstract: To realize the real- time monitoring of flight test of aero- engine, the actual turbofan engine flight test data has been analyzed, and based on three- layer feedforward artificial neural network, which has been revised so that there is a backforward connection between output layer and input layer, finally the dynamic NNARX model of two- spool turbofan engine has been identified. During the identification of NNARX model, about 11 key parameters of the engine, which includes high pressure spool speed, have been studied. The identified model was implemented on totally new flight data, which has been used as non- samples in order to test the model, and the precision of identified model in new data has been discussed. It has been shown that good consistency has been achieved in both real flight samples and non- samples, and identified method and results can be used in such turbofan engine flight test to monitor the engine state. It could be a good reference for building real- time and adaptive model of turbofan engine in global flight envelope.
+
+Key words: aero- engine; flight test; artificial neural network (ANN); NARX model identification; global flight envelope; trend monitoring; health management
+
+# 1 引言
+
+用于飞行试验的航空发动机的技术状态通常都不成熟，在飞行条件、大气环境等不可预料因素的影响下，会遭遇稳定性故障、气路故障、振动故障及磨损故障。为提高航空发动机试飞安全，需要利用实时模型对发动机重要参数的变化趋势进行预测，以便实时掌握发动机工作状态，提前采取措施减小或消除异常工况。
+
+航空发动机飞行试验实时监控的关键在于发动
+
+机模型的获取。虽然传统的发动机部件模型充分考虑了工作中的气动热力过程，精度高，但由于计算复杂，实时计算时可能出现迭代不收敛等问题，尚未应用到航空发动机飞行试验实时监控中[1- 2]。现阶段可行的方案是基于系统辨识的方法，从航空发动机历史飞行试验数据中辨识出发动机模型用于实时飞行监控。
+
+基于人工神经网络的航空发动机NARX（非线性自回归)模型属于黑箱模型，从运行数据中直接辨
+
+识得到航空发动机模型，综合了人工神经网络强大非线性运算能力，同时还兼备NARX辨识方法的优点。NARX模型辨识方法的实用性已得到国内外学者的证实[3- 11]，然而其大部分研究工作是通过模拟数据或地面试验数据训练模型[12- 13]，难以在实际飞行试验中推广应用。本文以某型涡扇发动机实际飞行试验数据为基础，利用人工神经网络对该型发动机的NARX模型进行辨识，用于在实际试飞中基于模型实时监控发动机工作状态。
+
+# 2 模型辨识方法
+
+NARX模型采用输入延迟  $u(t - k)$  和输出延迟  $y(t - m)$  作为回归算子[14]，模型结构可写为  $y(t) = F^{\mathrm{nl}}\big[u(t),\dots ,u(t - k),y(t - 1),\dots ,y(t - m)\big]$ ，其中  $F^{\mathrm{nl}}$  代表合适的非线性函数。
+
+前人研究表明[1,3- 5,13- 16]，只要具有合适的隐含层及神经元个数，人工神经网络就能以任意精度逼近任何非线性函数。文中采用人工神经网络方法拟合NARX模型中的  $F^{\mathrm{nl}}$ ，模型结构可写为  $y(t) = F^{\mathrm{net}}\big[u(t),\dots ,u(t - k),y(t - 1),\dots ,y(t - m)\big]$ ，其中  $F^{\mathrm{net}}$  为基于人工神经网络在数据样本上训练得到的非线性函数。
+
+# 3 涡扇发动机非线性模型辨识
+
+飞行试验期间，通过机载测试系统测取了涡扇发动机各个截面处的压力、温度等参数，同时记录了飞机姿态、发动机控制器等参数。测试数据经遥测系统实时发送至地面监控室，由试飞工程师对发动机状态进行实时监控。
+
+# 3.1 神经网络输入输出参数
+
+涡扇发动机人工神经网络模型输入包括两部分：当前时刻和延迟后的外部输入参数，以及延迟后的模型预测参数。外部输入参数为：气压高度  $H_{\mathrm{p}}$ ，飞行马赫数  $Ma$ ，大气总温  $T_{\mathrm{th}}$ ，发动机油门杆角度  $\Phi$ ，发动机作战/训练信号  $G_{\mathrm{sr}}$ 。模型预测参数为：高压转子转速  $n_{\mathrm{H}}$ ，低压转子转速  $n_{\mathrm{L}}$ ，低压涡轮出口总温  $T_{\mathrm{c}}$ ，低压涡轮出口总压  $p_{\mathrm{G}}$ ，低压导向叶片角度  $\alpha_{1}$ ，高压导向叶片角度  $\alpha_{2}$ ，高压压气机出口压力  $p_{31}$ ，主燃油总管压力  $p_{\mathrm{f}}$ ，尾喷管喉部直径  $D_{\mathrm{g}}$ ，滑油回油温度  $T_{\mathrm{old}}$ ，发动机振动值  $B$ 。发动机人工神经网络模型结构如图1所示，图中TDL1、TDL2分别代表输入参数和输出参数的延迟环节。模型输入、输出参数信息见表1，表中  $t$  为当前时刻，  $k$  为输入最大延迟时间，  $m$  为输出最大
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/d2fedb27-722d-4df8-a4ca-08788ca26546/bc76fd8069b2f995e3a29f6071fcc2d9c29156d44d04597955cb27a5588f0a46.jpg)  
+图1涡扇发动机人工神经网络模型结构 Fig.1 The structure of turbofan engine ANN model
+
+表1发动机非线性模型输入输出参数信息 Table 1 Input and output parameters in the engine nonlinear model  
+
+<table><tr><td></td><td>输入参数</td><td>输出参数</td></tr><tr><td>Hp(t),...Hp(t-k),Ma(t-k),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nF(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nH(t-k),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nH(t-k),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nH(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nF(t-m),nH(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-k),nF(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t-k),nF(t-m),nF(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-m),nH(t-k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t(k),nH(t((</td><td></td><td></td></tr></table>
+
+延迟时间。
+
+# 3.2 飞行试验数据样本
+
+采用该型发动机试飞期间11架次飞行数据作为人工神经网络模型的训练学习样本。利用Euclidean距离对数据样本点进行筛选，剔除数据样本中状态相近的数据点。若需从原始数据样本库  $C$  中增加数据样本点  $P_{i}$  至训练学习样本集  $C_{\mathrm{sub}}$ ，首先将  $P_{i}$  与  $C_{\mathrm{sub}}$  中的样本点  $P_{i}(j = 1,2,\dots ,N)$  逐个进行Euclidean距离计算，若满足要求则将  $P_{i}$  增加至  $C_{\mathrm{sub}}$  中。记  $a_{ij}$  代表  $P_{i}$  到  $P_{j}$  之间的Euclidean距离，由于  $P_{i} = \left[H_{\mathrm{p},i},Ma_{i},\phi_{i},n_{\mathrm{H},i,j}\right]^{2}, P_{j} = \left[H_{\mathrm{p},j},Ma_{j},\phi_{j},n_{\mathrm{H},j}\right]^{T}$ ，则：
+
+$$
+d_{ij} = \left|P_{i} - P_{j}\right| =
+$$
+
+$$
+\sqrt{\left(H_{\mathrm{p},i} - H_{\mathrm{p},j}\right)^2 + \left(Ma_{i} - Ma_{j}\right)^2 + \left(\phi_{i} - \phi_{j}\right)^2 + \left(n_{\mathrm{H},i} - n_{\mathrm{H},j}\right)^2}
+$$
+
+# 3.3 神经网络训练学习
+
+选用三层神经网络结构。隐含层传递函数选用双曲正切函数，输出层传递函数选用纯线性函数，采
+
+用LM算法对人工神经网络进行训练学习。模型输出指标采用MSE性能函数以及输入、输出之间的回归系数  $R$ 。
+
+# 4 结果分析与讨论
+
+人工神经网络训练时，将数据样本按照  $70\%$ 、 $15\%$  和  $15\%$  的比例分为三组，分别用于模型训练、模型测试和模型验证。数据样本点在飞行包线内分布与分组情况见图2。为方便对比分析，文中对数据样本进行了归一化处理。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/d2fedb27-722d-4df8-a4ca-08788ca26546/073de6d2bb6a337517688485b5515574d86620e316a38481f5bcd7b20adab27f.jpg)  
+图2飞行试验数据样本在飞行包线内的分布 Fig.2 Distribution of flight test data samples in flight envelope
+
+为确定涡扇发动机人工神经网络模型输入、输出的延迟时间和隐含层神经元数目，以发动机高压转子转速为基准模型，训练学习得到人工神经网络模型性能指标，如表2所示。表中，NMSE代表神经网络模型的归一化均方差，其计算式见公式(2)； $\mathrm{NNARX}_{ij}$  代表输入延迟为  $i$  输出延迟为  $j$  的神经网络模型，  $i,j$  分别为取值1～3之间的整数。最后，从高压转子转速模型辨识结果中，选择精度最高的 $\mathrm{NNARX}_{23}$  作为最终非线性模型，对发动机11个关键参数进行研究。
+
+表2基于NNARX的高压转子转速模型结构 Table 2 Model structure based on NNARX of high pressure spool speed  
+
+<table><tr><td></td><td>NMSE</td><td>R</td></tr><tr><td>NNARX1</td><td>0.004 2</td><td>0.998 0</td></tr><tr><td>NNARX12</td><td>0.003 8</td><td>0.998 2</td></tr><tr><td>NNARX13</td><td>0.003 7</td><td>0.998 2</td></tr><tr><td>NNARX21</td><td>0.003 6</td><td>0.998 3</td></tr><tr><td>NNARX22</td><td>0.003 5</td><td>0.998 3</td></tr><tr><td>NNARX23</td><td>0.002 8</td><td>0.998 6</td></tr><tr><td>NNARX31</td><td>0.004 7</td><td>0.997 7</td></tr><tr><td>NNARX32</td><td>0.003 6</td><td>0.998 3</td></tr><tr><td>NNARX33</td><td>0.003 7</td><td>0.998 2</td></tr></table>
+
+$$
+NMSE = \frac{1}{N}\frac{\sum_{i}^{N}(x_{i} - \hat{y}_{i})^{2}}{\sum_{i}^{N}\sum_{j}\sum_{i}\hat{y}_{i}}\times 100\% \tag{2}
+$$
+
+# 4.1 模型辨识结果
+
+对发动机9个关键参数进行辨识，图3示出了发
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/d2fedb27-722d-4df8-a4ca-08788ca26546/a1eee78ee6b899a665bf9633d71a4e7da37a65c327c0ed5d71ae6e2e2fda3a4f.jpg)  
+图3涡扇发动机关键参数模型辨识结果 Fig.3 Identified results of key parameter model of turbofan engine
+
+动机高压转子转速、高压压气机出口压力、低压涡轮出口总温以及滑油回油温度的模型辨识结果。图中实线代表辨识模型输出结果，空心圆点代表飞行试验数据样本。训练学习过程中，辨识模型的最大相对误差  $R_{\mathrm{E,max}}$  分别为：高压转子转速  $R_{\mathrm{E,max}} = 2.4\%$  ，高压压气机出口压力  $R_{\mathrm{E,max}} = 4.6\%$  ，低压涡轮出口总温  $R_{\mathrm{E,max}} = 3.4\%$  ，滑油回油温度  $R_{\mathrm{E,max}} = 0.5\%$  。第25个数据样本点处因发动机执行了遭遇加速，所以高压转子转速偏低。
+
+# 4.2 模型推广能力验证
+
+采用额外一个架次全程飞行试验数据对辨识模型的非样本点推广能力进行检验。飞行过程中，气压高度、飞行马赫数、大气总温、油门杆角度的变化范围如图4所示。针对每1s数据，准备神经网络模型输入参数，由辨识模型计算出当前时刻的参数预测值，并与当前时刻该参数的飞行试验数据进行对比。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/d2fedb27-722d-4df8-a4ca-08788ca26546/049559f2f07ee7969413d2c57d332cbc78c048824dd53b4053225e4247800436.jpg)  
+图4辨识模型推广能力验证数据样本分布 Fig.4 Sample distribution of validated flight test samples for model generalization
+
+对发动机11个关键参数均进行了推广能力验证。图5给出了高压转子转速、高压压气机出口压力、低压涡轮出口总温以及滑油回油温度的模型推广能力检验结果。该架次飞行中，辨识模型输出结果与飞行试验数据吻合良好，模型最大相对误差分别为：高压转子转速  $R_{\mathrm{E,max}} = 1.0\%$  ，高压压气机出口压力  $R_{\mathrm{E,max}} = 1.7\%$  ，低压涡轮出口总温  $R_{\mathrm{E,max}} = 0.2\%$  ，滑油总回油温度  $R_{\mathrm{E,max}} = 1.2\%$  。最大相对误差对应时刻  $t_{\mathrm{RE}}$  分别为：高压转子转速  $t_{\mathrm{RE}} = 729 \mathrm{~s}$  ，高压压气机出口压力  $t_{\mathrm{RE}} = 2063 \mathrm{~s}$  ，低压涡轮出口总温  $t_{\mathrm{RE}} = 393 \mathrm{~s}$  ，滑油回油温度  $t_{\mathrm{RE}} = 58 \mathrm{~s}$  。
+
+# 5 结论
+
+通过分析整理涡扇发动机实际飞行试验数据，
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/d2fedb27-722d-4df8-a4ca-08788ca26546/db1a1885d50f487ba5b4eb498604b275dac72e348e13aa88689778cf8089cd44.jpg)  
+图5涡扇发动机辨识模型推广能力检验结果 Fig.5 Validated results of generalization of turbofan engine identified model
+
+基于人工神经网络辨识得到了发动机的NARX模型。在训练学习样本点上对模型精度进行了讨论，同时利用额外一个全架次的飞行试验数据对模型推广泛化能力进行了分析讨论。研究结论如下：
+
+(1) 模型预测包线范围内，涡扇发动机模型在稳态和动态过程中关键参数预测精度可靠，可用于该型发动机的试飞实时监控；(2) 文中采用的涡扇发动机试飞数据模型辨识方法具有通用性，可为航空发动机自适应控制、健康管理系统的开发提供参考。
+
+# 参考文献：
+
+[1] Kulikov G G, Thompson H A. Dynamic modeling of gas turbines identification, simulation, condition monitoring and optimal control[M]. London: Springer- Verlag, 2004: 90- 110. [2] Ruano A E, Fleming P J, Teixeira C, et al. Nonlinear identification of aircraft gas- turbine dynamics[J]. Neurocomputing, 2003, 55(3- 4): 551- 579. [3] Sina Tayarani- Bathaie S, Sadough Vanini Z N, Khorasani K. Dynamic neural network- based fault diagnosis of gas turbine engines[J]. Neurocomputing, 2014, 125(3): 153- 165. [4] Joly R B, Ogaji S O T, Singh R, et al. Gas- turbine diagnostics using artificial neural- networks for a high bypass ratio military turbofan engine[J]. Applied Energy, 2004, 78(4): 397- 418. [5] Jonas S, Zhang Q H, Lennart L, et al. Nonlinear black- box modeling in system identification: a unified overview[J]. Automatica, 1995, 31(12): 1691- 1724. [6] Clifton D A. Condition monitoring of gas- turbine engines [D]. London: University of Oxford, 2005.
+
+[7] Dawn A, Nam N K, Joo H C. Statistical aspects in neural network for the purpose of prognostics[R]. AIAA 2014- 0481, 2014. [8] 杨浩，姜斌，王骏. 基于神经网络与自适应控制的飞控系统重构方法[C]//. 第24届中国控制会议论文集. 广州: 2005: 1420- 1424. [9] 姚彦龙. 航空发动机神经网络直接推力逆控制[D]. 南京: 南京航天航空大学, 2008. [10] Fast M, Assadi M, De S. Development and multi- utility of an ANN model for an industrial gas turbine[J]. Applied Energy, 2009, 86(1): 9- 17. [11] Fast M. Artificial neural networks for gas turbine monitoring[D]. Sweden: Lund University, 2010. [12] Li W F, Wang Y S. Identifying the inlet pressure distortion signal based on wavelet- neural network[R]. AIAA 2004- 2604, 2004. [13] Chiras N, Evans C, Rees D. Nonlinear gas turbine modeling using feedforward networks[R]. ASME GT- 2002- 30035, 2002. [14] Lazzaretto A, Toffolo A. Analytical and neural network models for gas turbine design and off- design simulation[J]. International Journal of Applied Thermodynamics, 2001, 4(4): 173- 182. [15] Gupta M, Jin L, Hormma N. Static and dynamic neural networks: from fundamentals to advanced theory[M]. New York: John Wiley & Sons, Inc., 2003: 106- 140. [16] Leonard O, Borgue S, Dewalle P. Adaptive estimation algorithm for aircraft engine performance monitoring[J]. Journal of Propulsion and Power, 2008, 24(4): 763- 769.
+
+# （上接第5页）
+
+Congress of Aeronautical Sciences, 2004. [4] Daly M, Gunston B. Jane's aero- engines[M]. Coulsdon: Jane's Information Group Limited, 2014. [5] Sarvanamutto H I H, Rogers G F C, Cohen H, et al. Gas turbine theory[M]. 6th ed. US: Pearson Education Limited, 2009.
+
+[6] 江和甫, 黄顺洲, 用人治. “系列核心机及派生发展”的航空发动机发展思路[J]. 燃气涡轮试验与研究, 2004, 17(1): 1- 5. [7] 周人治. 航空发动机核心机技术及发动机发展型谱研究[D]. 成都: 电子科技大学, 2007. [8] 林左鸣, 胡晓煜, 胡松岩, 等. 世界航空发动机手册[K]. 北京: 航空工业出版社, 2012.

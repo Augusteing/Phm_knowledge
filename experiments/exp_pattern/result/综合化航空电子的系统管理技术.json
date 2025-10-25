@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "航空电子系统",
+    "subject_type": "系统",
+    "relation": "发展为",
+    "object": "综合化航空电子系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "系统管理技术",
+    "subject_type": "技术",
+    "relation": "应用在",
+    "object": "综合化航空电子平台",
+    "object_type": "平台"
+  },
+  {
+    "subject": "系统管理技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "健康管理",
+    "object_type": "管理方法"
+  },
+  {
+    "subject": "系统管理技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "故障管理",
+    "object_type": "管理方法"
+  },
+  {
+    "subject": "系统管理技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "安全管理",
+    "object_type": "管理方法"
+  },
+  {
+    "subject": "系统管理技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "配置管理",
+    "object_type": "管理方法"
+  },
+  {
+    "subject": "系统管理技术",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "可靠性问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "系统管理技术",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "可用性问题",
+    "object_type": "问题"
+  }
+]

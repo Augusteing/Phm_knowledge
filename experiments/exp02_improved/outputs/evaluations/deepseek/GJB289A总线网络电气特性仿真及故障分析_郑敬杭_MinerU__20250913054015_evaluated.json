@@ -1,0 +1,329 @@
+{
+  "entities": [
+    {
+      "name": "GJB289A总线",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空电子系统",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "总线连接组件",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "总线接口板",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "屏蔽双绞电缆",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "耦合器",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "终端电阻",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "连接器",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "有损耦合传输线模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "两端口GJB289A总线网络模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ADS软件",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "电气故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "终端电阻超差故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "耦合器故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "电缆故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "信号线Hi与屏蔽层短路",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "信号线Lo与屏蔽层短路",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "信号线Hi与Lo错接",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "插入损耗",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "电压波形",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "上升时间",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "下降时间",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "过冲",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "下冲",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障诊断",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "总线网络状态健康管理",
+      "type": "应用场景",
+      "evaluation": "正确"
+    },
+    {
+      "name": "总线检测设备",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "分布参数",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "信号完整性理论",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "差分信号传输",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "典型电气故障特征参数检查表",
+      "type": "模型",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "GJB289A总线",
+      "relation": "应用于",
+      "tail": "航空电子系统",
+      "evaluation": "正确"
+    },
+    {
+      "head": "GJB289A总线",
+      "relation": "包含",
+      "tail": "总线连接组件",
+      "evaluation": "正确"
+    },
+    {
+      "head": "总线连接组件",
+      "relation": "包括",
+      "tail": "屏蔽双绞电缆",
+      "evaluation": "正确"
+    },
+    {
+      "head": "总线连接组件",
+      "relation": "包括",
+      "tail": "耦合器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "总线连接组件",
+      "relation": "包括",
+      "tail": "终端电阻",
+      "evaluation": "正确"
+    },
+    {
+      "head": "总线连接组件",
+      "relation": "包括",
+      "tail": "连接器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "两端口GJB289A总线网络模型",
+      "relation": "基于",
+      "tail": "有损耦合传输线模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "两端口GJB289A总线网络模型",
+      "relation": "建立",
+      "tail": "分布参数",
+      "evaluation": "错误"
+    },
+    {
+      "head": "两端口GJB289A总线网络模型",
+      "relation": "用于",
+      "tail": "电气故障分析",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ADS软件",
+      "relation": "用于",
+      "tail": "仿真",
+      "evaluation": "正确"
+    },
+    {
+      "head": "电气故障",
+      "relation": "包括",
+      "tail": "终端电阻超差故障",
+      "evaluation": "正确"
+    },
+    {
+      "head": "电气故障",
+      "relation": "包括",
+      "tail": "耦合器故障",
+      "evaluation": "正确"
+    },
+    {
+      "head": "电气故障",
+      "relation": "包括",
+      "tail": "电缆故障",
+      "evaluation": "正确"
+    },
+    {
+      "head": "电缆故障",
+      "relation": "包括",
+      "tail": "信号线Hi与屏蔽层短路",
+      "evaluation": "正确"
+    },
+    {
+      "head": "电缆故障",
+      "relation": "包括",
+      "tail": "信号线Lo与屏蔽层短路",
+      "evaluation": "正确"
+    },
+    {
+      "head": "电缆故障",
+      "relation": "包括",
+      "tail": "信号线Hi与Lo错接",
+      "evaluation": "正确"
+    },
+    {
+      "head": "两端口GJB289A总线网络模型",
+      "relation": "用于",
+      "tail": "故障诊断",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "基于",
+      "tail": "电压波形",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "基于",
+      "tail": "插入损耗",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "基于",
+      "tail": "上升时间",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "基于",
+      "tail": "下降时间",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "基于",
+      "tail": "过冲",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "基于",
+      "tail": "下冲",
+      "evaluation": "正确"
+    },
+    {
+      "head": "典型电气故障特征参数检查表",
+      "relation": "用于",
+      "tail": "故障诊断",
+      "evaluation": "正确"
+    },
+    {
+      "head": "两端口GJB289A总线网络模型",
+      "relation": "支持",
+      "tail": "总线网络状态健康管理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "总线网络状态健康管理",
+      "relation": "用于",
+      "tail": "总线检测设备优化",
+      "evaluation": "正确"
+    },
+    {
+      "head": "信号完整性理论",
+      "relation": "应用于",
+      "tail": "电气特性仿真",
+      "evaluation": "正确"
+    },
+    {
+      "head": "差分信号传输",
+      "relation": "影响",
+      "tail": "电压波形",
+      "evaluation": "正确"
+    }
+  ]
+}

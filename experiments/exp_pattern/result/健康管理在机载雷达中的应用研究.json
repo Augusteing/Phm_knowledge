@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "综合应用",
+    "object": "测试技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "综合应用",
+    "object": "人工智能",
+    "object_type": "技术"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "综合应用",
+    "object": "信息技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "演变自",
+    "object": "FDIR技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "运用",
+    "object": "先进的推理技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "实现",
+    "object": "系统自主重构",
+    "object_type": "功能"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "实现",
+    "object": "系统资源重组",
+    "object_type": "功能"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "实现",
+    "object": "系统任务目标",
+    "object_type": "目标"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "减少",
+    "object": "维修人力",
+    "object_type": "成本"
+  },
+  {
+    "subject": "复杂系统健康管理",
+    "subject_type": "管理方法",
+    "relation": "减少",
+    "object": "保障费用",
+    "object_type": "成本"
+  },
+  {
+    "subject": "健康管理",
+    "subject_type": "管理方法",
+    "relation": "应用于",
+    "object": "机载雷达",
+    "object_type": "设备"
+  }
+]

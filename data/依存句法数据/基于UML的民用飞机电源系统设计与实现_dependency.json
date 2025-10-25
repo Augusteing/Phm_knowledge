@@ -1,0 +1,1027 @@
+{
+  "title": "基于UML的民用飞机电源系统设计与实现",
+  "summary": "针对民用飞机电源系统嵌入式软件的可移植性、可扩展性要求,提出基于统一建模语言(Unified Modeling Language,UML)的面向对象设计方法;针对不同硬件平台上软件开发周期长、成本高的问题,采用分层插件设计方法。按照UML设计的开发过程,建立系统需求的用例图、软件逻辑架构的静态结构模型和运行架构的动态行为模型;对电源系统进行实时健康监控,完成对输出的配电管理。实际使用证明,嵌入式软件具有良好的可移植性、扩展性,软硬件独立设计可缩短系统开发周期、降低成本,系统设计能够实现自身健康管理。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对民用飞机电源系统嵌入式软件的可移植性、可扩展性要求,提出基于统一建模语言(Unified Modeling Language,UML)的面向对象设计方法;针对不同硬件平台上软件开发周期长、成本高的问题,采用分层插件设计方法",
+      "tokens": [
+        "针对",
+        "民用",
+        "飞机",
+        "电源",
+        "系统",
+        "嵌入式",
+        "软件",
+        "的",
+        "可移植性",
+        "、",
+        "可扩展性",
+        "要求",
+        ",",
+        "提出",
+        "基于",
+        "统一",
+        "建模",
+        "语言",
+        "(",
+        "Unified",
+        "Modeling",
+        "Language",
+        ",",
+        "UML",
+        ")",
+        "的",
+        "面向",
+        "对象",
+        "设计",
+        "方法",
+        ";",
+        "针对",
+        "不同",
+        "硬件",
+        "平台",
+        "上",
+        "软件",
+        "开发",
+        "周期",
+        "长",
+        "、",
+        "成本",
+        "高",
+        "的",
+        "问题",
+        ",",
+        "采用",
+        "分层",
+        "插件",
+        "设计",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "民用",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "电源",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "嵌入式",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "软件",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "可移植性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "可扩展性",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "要求",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "基于",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "统一",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "建模",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "语言",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "(",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "Unified",
+          "head": 18,
+          "deprel": "prnmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "Modeling",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "Language",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "UML",
+          "head": 18,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ")",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 27,
+          "form": "面向",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "对象",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "设计",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "方法",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": ";",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "针对",
+          "head": 47,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 33,
+          "form": "不同",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 34,
+          "form": "硬件",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "平台",
+          "head": 36,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "上",
+          "head": 40,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 37,
+          "form": "软件",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "开发",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "周期",
+          "head": 40,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "长",
+          "head": 45,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 41,
+          "form": "、",
+          "head": 40,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "成本",
+          "head": 43,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "高",
+          "head": 40,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 40,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 45,
+          "form": "问题",
+          "head": 32,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": ",",
+          "head": 47,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "采用",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "分层",
+          "head": 51,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 49,
+          "form": "插件",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "设计",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "方法",
+          "head": 47,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "按照UML设计的开发过程,建立系统需求的用例图、软件逻辑架构的静态结构模型和运行架构的动态行为模型;对电源系统进行实时健康监控,完成对输出的配电管理",
+      "tokens": [
+        "按照",
+        "UML",
+        "设计",
+        "的",
+        "开发",
+        "过程",
+        ",",
+        "建立",
+        "系统",
+        "需求",
+        "的",
+        "用例图",
+        "、",
+        "软件",
+        "逻辑",
+        "架构",
+        "的",
+        "静态",
+        "结构",
+        "模型",
+        "和",
+        "运行",
+        "架构",
+        "的",
+        "动态",
+        "行为",
+        "模型",
+        ";",
+        "对",
+        "电源",
+        "系统",
+        "进行",
+        "实时",
+        "健康",
+        "监控",
+        ",",
+        "完成",
+        "对",
+        "输出",
+        "的",
+        "配电",
+        "管理"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "按照",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "UML",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "设计",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "开发",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "过程",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "需求",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "用例图",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "软件",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "逻辑",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "架构",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "静态",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "结构",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "模型",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "和",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "运行",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "架构",
+          "head": 27,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "动态",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "行为",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "模型",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": ";",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "对",
+          "head": 32,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 30,
+          "form": "电源",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "系统",
+          "head": 29,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "进行",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "实时",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 34,
+          "form": "健康",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "监控",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 37,
+          "form": "完成",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "对",
+          "head": 42,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 39,
+          "form": "输出",
+          "head": 38,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "的",
+          "head": 38,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 41,
+          "form": "配电",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "管理",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实际使用证明,嵌入式软件具有良好的可移植性、扩展性,软硬件独立设计可缩短系统开发周期、降低成本,系统设计能够实现自身健康管理",
+      "tokens": [
+        "实际",
+        "使用",
+        "证明",
+        ",",
+        "嵌入式",
+        "软件",
+        "具有",
+        "良好",
+        "的",
+        "可移植性",
+        "、",
+        "扩展性",
+        ",",
+        "软硬件",
+        "独立",
+        "设计",
+        "可",
+        "缩短",
+        "系统",
+        "开发",
+        "周期",
+        "、",
+        "降低",
+        "成本",
+        ",",
+        "系统",
+        "设计",
+        "能够",
+        "实现",
+        "自身",
+        "健康",
+        "管理"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实际",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "使用",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "证明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "嵌入式",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "软件",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "具有",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "良好",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "可移植性",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "扩展性",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "软硬件",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "独立",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "设计",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "可",
+          "head": 18,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "缩短",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "开发",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "周期",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "降低",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "成本",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "系统",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "设计",
+          "head": 29,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "能够",
+          "head": 29,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "实现",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "自身",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 31,
+          "form": "健康",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "管理",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

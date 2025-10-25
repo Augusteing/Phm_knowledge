@@ -1,0 +1,835 @@
+{
+  "title": "综合航空电子系统故障预测问题研究",
+  "summary": "航空电子系统正在向综合化方向发展,对故障预测技术提出了新的挑战。剖析了航空电子系统的综合化特征,综述航空电子产品故障预测结构,包括基于模型结构、数据驱动结构和综合预测结构,并讨论了这些结构的共性特征及其在航空领域的典型应用。在此基础上,依据综合化特征需求和航空电子产品故障预测结构的适用性,分析了综合航空电子系统故障预测面临的问题,并提出了初步解决思路。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空电子系统正在向综合化方向发展,对故障预测技术提出了新的挑战",
+      "tokens": [
+        "航空",
+        "电子",
+        "系统",
+        "正在",
+        "向",
+        "综合化",
+        "方向",
+        "发展",
+        ",",
+        "对",
+        "故障",
+        "预测",
+        "技术",
+        "提出",
+        "了",
+        "新",
+        "的",
+        "挑战"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "电子",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "正在",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "向",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "综合化",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方向",
+          "head": 5,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "对",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "预测",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "技术",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "提出",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "了",
+          "head": 14,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 16,
+          "form": "新",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 18,
+          "form": "挑战",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "剖析了航空电子系统的综合化特征,综述航空电子产品故障预测结构,包括基于模型结构、数据驱动结构和综合预测结构,并讨论了这些结构的共性特征及其在航空领域的典型应用",
+      "tokens": [
+        "剖析",
+        "了",
+        "航空",
+        "电子",
+        "系统",
+        "的",
+        "综合化",
+        "特征",
+        ",",
+        "综述",
+        "航空",
+        "电子",
+        "产品",
+        "故障",
+        "预测",
+        "结构",
+        ",",
+        "包括",
+        "基于",
+        "模型",
+        "结构",
+        "、",
+        "数据",
+        "驱动",
+        "结构",
+        "和",
+        "综合",
+        "预测",
+        "结构",
+        ",",
+        "并",
+        "讨论",
+        "了",
+        "这些",
+        "结构",
+        "的",
+        "共性",
+        "特征",
+        "及",
+        "其",
+        "在",
+        "航空",
+        "领域",
+        "的",
+        "典型",
+        "应用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "剖析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "电子",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "综合化",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "特征",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "综述",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "航空",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "电子",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "产品",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "预测",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "结构",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "包括",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "基于",
+          "head": 29,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "模型",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "结构",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 29,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "数据",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "驱动",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "结构",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "和",
+          "head": 29,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "综合",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "预测",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "结构",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "讨论",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "了",
+          "head": 32,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 34,
+          "form": "这些",
+          "head": 35,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 35,
+          "form": "结构",
+          "head": 38,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 35,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 37,
+          "form": "共性",
+          "head": 38,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "特征",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "及",
+          "head": 46,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "其",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 41,
+          "form": "在",
+          "head": 46,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 42,
+          "form": "航空",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "领域",
+          "head": 41,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 41,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "典型",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 46,
+          "form": "应用",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在此基础上,依据综合化特征需求和航空电子产品故障预测结构的适用性,分析了综合航空电子系统故障预测面临的问题,并提出了初步解决思路",
+      "tokens": [
+        "在",
+        "此",
+        "基础",
+        "上",
+        ",",
+        "依据",
+        "综合化",
+        "特征",
+        "需求",
+        "和",
+        "航空",
+        "电子",
+        "产品",
+        "故障",
+        "预测",
+        "结构",
+        "的",
+        "适用性",
+        ",",
+        "分析",
+        "了",
+        "综合",
+        "航空",
+        "电子",
+        "系统",
+        "故障",
+        "预测",
+        "面临",
+        "的",
+        "问题",
+        ",",
+        "并",
+        "提出",
+        "了",
+        "初步",
+        "解决",
+        "思路"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "基础",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "依据",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "综合化",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "特征",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "需求",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "航空",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "电子",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "产品",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "预测",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "结构",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "适用性",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "综合",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "航空",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "电子",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "系统",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "故障",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "预测",
+          "head": 28,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "面临",
+          "head": 30,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 30,
+          "form": "问题",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "并",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 33,
+          "form": "提出",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "了",
+          "head": 33,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 35,
+          "form": "初步",
+          "head": 37,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "解决",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "思路",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

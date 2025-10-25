@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "中国计算机自动测量与控制技术协会",
+    "subject_type": "组织",
+    "relation": "主办",
+    "object": "第二十一届测试与故障诊断技术研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "北京航天测控技术有限公司",
+    "subject_type": "组织",
+    "relation": "协办",
+    "object": "第二十一届测试与故障诊断技术研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "安捷伦科技公司",
+    "subject_type": "组织",
+    "relation": "协办",
+    "object": "第二十一届测试与故障诊断技术研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "《计算机测量与控制》杂志社",
+    "subject_type": "组织",
+    "relation": "协办",
+    "object": "第二十一届测试与故障诊断技术研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "第二十一届测试与故障诊断技术研讨会",
+    "subject_type": "会议",
+    "relation": "举办于",
+    "object": "南昌市",
+    "object_type": "地点"
+  },
+  {
+    "subject": "测试、预测与健康管理技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "军工装备测试",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "第二十一届测试与故障诊断技术研讨会",
+    "subject_type": "会议",
+    "relation": "旨在推进",
+    "object": "测试、预测与健康管理技术",
+    "object_type": "技术"
+  }
+]

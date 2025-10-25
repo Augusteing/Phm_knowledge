@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "健康管理与预测(PHM)技术",
+    "subject_type": "技术",
+    "relation": "保证",
+    "object": "飞行安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "健康管理与预测(PHM)技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "使用成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "健康管理与预测(PHM)技术",
+    "subject_type": "技术",
+    "relation": "安排",
+    "object": "维修计划",
+    "object_type": "计划"
+  },
+  {
+    "subject": "轻型飞机",
+    "subject_type": "产品",
+    "relation": "面临挑战",
+    "object": "可靠性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "轻型飞机",
+    "subject_type": "产品",
+    "relation": "面临挑战",
+    "object": "可用性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "轻型飞机PHM系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "框架",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "轻型飞机PHM系统",
+    "subject_type": "系统",
+    "relation": "存在",
+    "object": "关键问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "轻型飞机PHM技术",
+    "subject_type": "技术",
+    "relation": "面临",
+    "object": "关键技术难题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "轻型飞机PHM技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "未来发展方向",
+    "object_type": "概念"
+  }
+]

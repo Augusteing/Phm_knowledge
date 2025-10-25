@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "type": "模型"
+    },
+    {
+      "name": "经验模态分解（EMD）",
+      "type": "算法"
+    },
+    {
+      "name": "相关向量机-自回归模型（RVM-AR）",
+      "type": "模型"
+    },
+    {
+      "name": "量子粒子群优化算法（QPSO）",
+      "type": "算法"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "数据"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "固有模态函数（IMF）",
+      "type": "特征"
+    },
+    {
+      "name": "残余函数（RF）",
+      "type": "特征"
+    },
+    {
+      "name": "故障预测与健康管理（PHM）",
+      "type": "研究领域"
+    },
+    {
+      "name": "自回归（AR）模型",
+      "type": "模型"
+    },
+    {
+      "name": "支持向量机（SVM）",
+      "type": "模型"
+    },
+    {
+      "name": "滑油金属含量",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "算法"
+    },
+    {
+      "name": "最终预测误差（FPE）",
+      "type": "性能指标"
+    },
+    {
+      "name": "留一交叉验证",
+      "type": "方法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "基于",
+      "tail": "经验模态分解（EMD）"
+    },
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "基于",
+      "tail": "相关向量机-自回归模型（RVM-AR）"
+    },
+    {
+      "head": "相关向量机-自回归模型（RVM-AR）",
+      "relation": "优化算法",
+      "tail": "量子粒子群优化算法（QPSO）"
+    },
+    {
+      "head": "经验模态分解（EMD）",
+      "relation": "应用于",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "属于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "经验模态分解（EMD）",
+      "relation": "产生",
+      "tail": "固有模态函数（IMF）"
+    },
+    {
+      "head": "经验模态分解（EMD）",
+      "relation": "产生",
+      "tail": "残余函数（RF）"
+    },
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "应用于",
+      "tail": "故障预测与健康管理（PHM）"
+    },
+    {
+      "head": "自回归（AR）模型",
+      "relation": "对比",
+      "tail": "基于EMD和RVM-AR的航空发动机磨损故障预测模型"
+    },
+    {
+      "head": "支持向量机（SVM）",
+      "relation": "对比",
+      "tail": "基于EMD和RVM-AR的航空发动机磨损故障预测模型"
+    },
+    {
+      "head": "滑油金属含量",
+      "relation": "评估指标为",
+      "tail": "基于EMD和RVM-AR的航空发动机磨损故障预测模型"
+    },
+    {
+      "head": "相关向量机-自回归模型（RVM-AR）",
+      "relation": "采用",
+      "tail": "Gaussian核函数"
+    },
+    {
+      "head": "自回归（AR）模型",
+      "relation": "评估指标为",
+      "tail": "最终预测误差（FPE）"
+    },
+    {
+      "head": "相关向量机-自回归模型（RVM-AR）",
+      "relation": "评估指标为",
+      "tail": "留一交叉验证"
+    }
+  ]
+}

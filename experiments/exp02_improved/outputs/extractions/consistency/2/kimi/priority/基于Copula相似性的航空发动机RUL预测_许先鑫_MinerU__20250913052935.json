@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "基于Copula相似性的航空发动机RUL预测方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "Copula函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "传感器",
+      "type": "系统/部件"
+    },
+    {
+      "name": "性能退化特征",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "非线性相关性",
+      "type": "理论基础"
+    },
+    {
+      "name": "C-MAPSS航空发动机仿真模型数据",
+      "type": "数据集"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "NASA",
+      "type": "研究机构"
+    },
+    {
+      "name": "秩相关系数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "寿命预测",
+      "type": "任务"
+    },
+    {
+      "name": "Frank Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Clayton Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Joe Copula",
+      "type": "模型"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "利用",
+      "tail": "K-means聚类"
+    },
+    {
+      "head": "航空发动机",
+      "relation": "包括",
+      "tail": "传感器"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "处理",
+      "tail": "性能退化特征"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "考虑",
+      "tail": "非线性相关性"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "验证数据集为",
+      "tail": "C-MAPSS航空发动机仿真模型数据"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "C-MAPSS航空发动机仿真模型数据",
+      "relation": "来源于",
+      "tail": "NASA"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "使用",
+      "tail": "秩相关系数"
+    },
+    {
+      "head": "秩相关系数",
+      "relation": "评估",
+      "tail": "寿命预测"
+    },
+    {
+      "head": "Frank Copula",
+      "relation": "属于",
+      "tail": "模型"
+    },
+    {
+      "head": "Clayton Copula",
+      "relation": "属于",
+      "tail": "模型"
+    },
+    {
+      "head": "Joe Copula",
+      "relation": "属于",
+      "tail": "模型"
+    }
+  ]
+}

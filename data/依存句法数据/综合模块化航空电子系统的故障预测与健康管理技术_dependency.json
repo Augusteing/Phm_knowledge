@@ -1,0 +1,922 @@
+{
+  "title": "综合模块化航空电子系统的故障预测与健康管理技术",
+  "summary": "航空电子系统是保障现代飞机性能的非常关键因素之一,对其开展故障预测及健康管理技术的研究是保证飞机安全性的重要课题。针对航空电子系统综合模块化的发展趋势,研究了一种面向其开放式与模块化架构的故障预测与健康管理系统。通过对综合模块化航空电子系统的分层结构分析,结合关键子系统展开设计,包含了飞机PHM系统的体系结构设计及相关环节的技术实现。结果表明该体系结构可满足航空电子系统标准化、层次化、模块化、开放性的要求。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空电子系统是保障现代飞机性能的非常关键因素之一,对其开展故障预测及健康管理技术的研究是保证飞机安全性的重要课题",
+      "tokens": [
+        "航空",
+        "电子",
+        "系统",
+        "是",
+        "保障",
+        "现代",
+        "飞机",
+        "性能",
+        "的",
+        "非常",
+        "关键",
+        "因素",
+        "之一",
+        ",",
+        "对",
+        "其",
+        "开展",
+        "故障",
+        "预测",
+        "及",
+        "健康",
+        "管理",
+        "技术",
+        "的",
+        "研究",
+        "是",
+        "保证",
+        "飞机",
+        "安全性",
+        "的",
+        "重要",
+        "课题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "电子",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 4,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 5,
+          "form": "保障",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "现代",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "性能",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "非常",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "关键",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "因素",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "之一",
+          "head": 4,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "对",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "其",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "PN"
+        },
+        {
+          "id": 17,
+          "form": "开展",
+          "head": 26,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "故障",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "及",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "健康",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "管理",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "技术",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "研究",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "是",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 27,
+          "form": "保证",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "飞机",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "安全性",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 27,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 31,
+          "form": "重要",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 32,
+          "form": "课题",
+          "head": 26,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对航空电子系统综合模块化的发展趋势,研究了一种面向其开放式与模块化架构的故障预测与健康管理系统",
+      "tokens": [
+        "针对",
+        "航空",
+        "电子",
+        "系统",
+        "综合",
+        "模块化",
+        "的",
+        "发展",
+        "趋势",
+        ",",
+        "研究",
+        "了",
+        "一",
+        "种",
+        "面向",
+        "其",
+        "开放式",
+        "与",
+        "模块化",
+        "架构",
+        "的",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "系统"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "电子",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "综合",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "模块化",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "趋势",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "一",
+          "head": 14,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "种",
+          "head": 27,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 15,
+          "form": "面向",
+          "head": 27,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "其",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 17,
+          "form": "开放式",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "与",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "模块化",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "架构",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 22,
+          "form": "故障",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "预测",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "与",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "健康",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "管理",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "系统",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过对综合模块化航空电子系统的分层结构分析,结合关键子系统展开设计,包含了飞机PHM系统的体系结构设计及相关环节的技术实现",
+      "tokens": [
+        "通过",
+        "对",
+        "综合",
+        "模块化",
+        "航空",
+        "电子",
+        "系统",
+        "的",
+        "分层",
+        "结构",
+        "分析",
+        ",",
+        "结合",
+        "关键子",
+        "系统",
+        "展开",
+        "设计",
+        ",",
+        "包含",
+        "了",
+        "飞机",
+        "PHM",
+        "系统",
+        "的",
+        "体系",
+        "结构",
+        "设计",
+        "及",
+        "相关",
+        "环节",
+        "的",
+        "技术",
+        "实现"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "综合",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "模块化",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "电子",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "分层",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "结构",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "分析",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "关键子",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "系统",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "展开",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "设计",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "包含",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "了",
+          "head": 19,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 21,
+          "form": "飞机",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "PHM",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "系统",
+          "head": 27,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "体系",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "结构",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "设计",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "及",
+          "head": 33,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "相关",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "环节",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 30,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 32,
+          "form": "技术",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "实现",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明该体系结构可满足航空电子系统标准化、层次化、模块化、开放性的要求",
+      "tokens": [
+        "结果",
+        "表明",
+        "该",
+        "体系",
+        "结构",
+        "可",
+        "满足",
+        "航空",
+        "电子",
+        "系统",
+        "标准化",
+        "、",
+        "层次化",
+        "、",
+        "模块化",
+        "、",
+        "开放性",
+        "的",
+        "要求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "该",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "体系",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "结构",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "可",
+          "head": 7,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "满足",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "航空",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "电子",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "标准化",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "层次化",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "模块化",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "开放性",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "要求",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

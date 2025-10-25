@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "民用航空发动机健康管理",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "地面综合诊断",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "民用航空发动机健康管理",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "寿命管理",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "民用航空发动机健康管理",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "智能视情维护维修决策",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "民用航空发动机健康管理",
+    "subject_type": "技术领域",
+    "relation": "面临",
+    "object": "挑战",
+    "object_type": "问题"
+  },
+  {
+    "subject": "民用航空发动机健康管理",
+    "subject_type": "技术领域",
+    "relation": "存在",
+    "object": "差距",
+    "object_type": "问题"
+  },
+  {
+    "subject": "民用航空发动机健康管理",
+    "subject_type": "技术领域",
+    "relation": "具有",
+    "object": "研发方向",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "CBM+全流程",
+    "subject_type": "方法论",
+    "relation": "用于分析",
+    "object": "民用航空发动机健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "地面综合诊断",
+    "subject_type": "功能模块",
+    "relation": "具有",
+    "object": "热点技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "寿命管理",
+    "subject_type": "功能模块",
+    "relation": "具有",
+    "object": "热点技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能视情维护维修决策",
+    "subject_type": "功能模块",
+    "relation": "具有",
+    "object": "热点技术",
+    "object_type": "技术"
+  }
+]

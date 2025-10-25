@@ -1,0 +1,1267 @@
+{
+  "title": "基于逆跟踪控制的航空发动机气路健康参数估计修正方法研究",
+  "summary": "针对新型航空发动机气路部件状态监控缺乏故障样本的不足,利用发动机非线性模型和气路故障模拟方法,获取故障样本,运用最小二乘支持向量回归机(LSSVR)建立气路健康参数的(理想)估计器。主要工作是在LSSVR的基础上,从逆跟踪控制的角度,设计了基于逆模型在线辨识与变结构控制相结合的修正系统,减小理想估计器与真实发动机之间由于测量噪声与系统噪声对估计精度造成的影响。通过仿真实验,离线修正后,估计值的相对误差最大值从69%缩小5%,在线修正后,估计值的相对误差最大值从69%缩小13%,修正系统有效地提高了性能估计的准确度,减小了气路部件状态监控的误判和误诊的概率。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对新型航空发动机气路部件状态监控缺乏故障样本的不足,利用发动机非线性模型和气路故障模拟方法,获取故障样本,运用最小二乘支持向量回归机(LSSVR)建立气路健康参数的(理想)估计器",
+      "tokens": [
+        "针对",
+        "新型",
+        "航空",
+        "发动机",
+        "气路",
+        "部件",
+        "状态",
+        "监控",
+        "缺乏",
+        "故障",
+        "样本",
+        "的",
+        "不足",
+        ",",
+        "利用",
+        "发动机",
+        "非线性",
+        "模型",
+        "和",
+        "气路",
+        "故障",
+        "模拟",
+        "方法",
+        ",",
+        "获取",
+        "故障",
+        "样本",
+        ",",
+        "运用",
+        "最",
+        "小",
+        "二",
+        "乘",
+        "支持",
+        "向量",
+        "回归机",
+        "(",
+        "LSSVR",
+        ")",
+        "建立",
+        "气路",
+        "健康",
+        "参数",
+        "的",
+        "(",
+        "理想",
+        ")",
+        "估计器"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "新型",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "气路",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "部件",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "状态",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "监控",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "缺乏",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "样本",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "不足",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "发动机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "非线性",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "模型",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "和",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "气路",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "模拟",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "方法",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "获取",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "故障",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "样本",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "运用",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "最",
+          "head": 31,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 31,
+          "form": "小",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 32,
+          "form": "二",
+          "head": 33,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 33,
+          "form": "乘",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "支持",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "向量",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "回归机",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "(",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "LSSVR",
+          "head": 36,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 39,
+          "form": ")",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "建立",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "气路",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "健康",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "参数",
+          "head": 48,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 43,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "(",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "理想",
+          "head": 48,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 47,
+          "form": ")",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 48,
+          "form": "估计器",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "主要工作是在LSSVR的基础上,从逆跟踪控制的角度,设计了基于逆模型在线辨识与变结构控制相结合的修正系统,减小理想估计器与真实发动机之间由于测量噪声与系统噪声对估计精度造成的影响",
+      "tokens": [
+        "主要",
+        "工作",
+        "是",
+        "在",
+        "LSSVR",
+        "的",
+        "基础",
+        "上",
+        ",",
+        "从",
+        "逆",
+        "跟踪",
+        "控制",
+        "的",
+        "角度",
+        ",",
+        "设计",
+        "了",
+        "基于",
+        "逆",
+        "模型",
+        "在线",
+        "辨识",
+        "与",
+        "变",
+        "结构",
+        "控制",
+        "相",
+        "结合",
+        "的",
+        "修正",
+        "系统",
+        ",",
+        "减小",
+        "理想",
+        "估计器",
+        "与",
+        "真实",
+        "发动机",
+        "之间",
+        "由于",
+        "测量",
+        "噪声",
+        "与",
+        "系统",
+        "噪声",
+        "对",
+        "估计",
+        "精度",
+        "造成",
+        "的",
+        "影响"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "主要",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "工作",
+          "head": 3,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 4,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "LSSVR",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NR"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "基础",
+          "head": 8,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "上",
+          "head": 4,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "从",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "逆",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "跟踪",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "控制",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "角度",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "设计",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "基于",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 20,
+          "form": "逆",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "模型",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "在线",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "辨识",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "与",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "变",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "结构",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "控制",
+          "head": 19,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "相",
+          "head": 29,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 29,
+          "form": "结合",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 31,
+          "form": "修正",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "系统",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "减小",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "理想",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "估计器",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "与",
+          "head": 39,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 38,
+          "form": "真实",
+          "head": 39,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 39,
+          "form": "发动机",
+          "head": 40,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "之间",
+          "head": 52,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 41,
+          "form": "由于",
+          "head": 50,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 42,
+          "form": "测量",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "噪声",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "与",
+          "head": 46,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 45,
+          "form": "系统",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "噪声",
+          "head": 50,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "对",
+          "head": 50,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 48,
+          "form": "估计",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "精度",
+          "head": 47,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "造成",
+          "head": 52,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 51,
+          "form": "的",
+          "head": 50,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 52,
+          "form": "影响",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过仿真实验,离线修正后,估计值的相对误差最大值从69%缩小5%,在线修正后,估计值的相对误差最大值从69%缩小13%,修正系统有效地提高了性能估计的准确度,减小了气路部件状态监控的误判和误诊的概率",
+      "tokens": [
+        "通过",
+        "仿真",
+        "实验",
+        ",",
+        "离线",
+        "修正",
+        "后",
+        ",",
+        "估计值",
+        "的",
+        "相对",
+        "误差",
+        "最大值",
+        "从",
+        "69%",
+        "缩小",
+        "5%",
+        ",",
+        "在线",
+        "修正",
+        "后",
+        ",",
+        "估计值",
+        "的",
+        "相对",
+        "误差",
+        "最大值",
+        "从",
+        "69%",
+        "缩小",
+        "13%",
+        ",",
+        "修正",
+        "系统",
+        "有效",
+        "地",
+        "提高",
+        "了",
+        "性能",
+        "估计",
+        "的",
+        "准确度",
+        ",",
+        "减小",
+        "了",
+        "气路",
+        "部件",
+        "状态",
+        "监控",
+        "的",
+        "误判",
+        "和",
+        "误诊",
+        "的",
+        "概率"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "仿真",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "实验",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "离线",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "修正",
+          "head": 7,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "后",
+          "head": 16,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "估计值",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "相对",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "误差",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "最大值",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "从",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "69%",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "CD"
+        },
+        {
+          "id": 16,
+          "form": "缩小",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "5%",
+          "head": 16,
+          "deprel": "range",
+          "pos": "CD"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "在线",
+          "head": 20,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "修正",
+          "head": 21,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "后",
+          "head": 30,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "估计值",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "相对",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "误差",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "最大值",
+          "head": 30,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "从",
+          "head": 30,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 29,
+          "form": "69%",
+          "head": 28,
+          "deprel": "pobj",
+          "pos": "CD"
+        },
+        {
+          "id": 30,
+          "form": "缩小",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "13%",
+          "head": 30,
+          "deprel": "range",
+          "pos": "CD"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "修正",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "系统",
+          "head": 37,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "有效",
+          "head": 37,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 36,
+          "form": "地",
+          "head": 35,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 37,
+          "form": "提高",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "了",
+          "head": 37,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 39,
+          "form": "性能",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "估计",
+          "head": 42,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 40,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "准确度",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "减小",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "了",
+          "head": 44,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 46,
+          "form": "气路",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "部件",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "状态",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "监控",
+          "head": 51,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "的",
+          "head": 49,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 51,
+          "form": "误判",
+          "head": 55,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "和",
+          "head": 55,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 53,
+          "form": "误诊",
+          "head": 55,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "的",
+          "head": 53,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 55,
+          "form": "概率",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

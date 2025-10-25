@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "针对",
+    "object": "航空电子产品故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "航空电子产品故障预测",
+    "subject_type": "任务",
+    "relation": "面临",
+    "object": "退化趋势差异大",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空电子产品故障预测",
+    "subject_type": "任务",
+    "relation": "面临",
+    "object": "训练数据样本量小",
+    "object_type": "问题"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "改进LSTM神经网络模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "集成学习框架",
+    "object_type": "框架"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "满足",
+    "object": "自主维护保障",
+    "object_type": "需求"
+  },
+  {
+    "subject": "改进LSTM神经网络模型",
+    "subject_type": "模型",
+    "relation": "引入",
+    "object": "Dropout机制",
+    "object_type": "技术"
+  },
+  {
+    "subject": "Dropout机制",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "过拟合问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "Adaboosting算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "Adaboosting算法",
+    "subject_type": "算法",
+    "relation": "滤除",
+    "object": "预测误差",
+    "object_type": "问题"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "NASA锂电池退化数据集",
+    "object_type": "数据集"
+  },
+  {
+    "subject": "NASA锂电池退化数据集",
+    "subject_type": "数据集",
+    "relation": "用于",
+    "object": "仿真验证",
+    "object_type": "任务"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "高预测精度",
+    "object_type": "性能"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "BP神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "多模型融合故障预测方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "经典LSTM",
+    "object_type": "模型"
+  }
+]

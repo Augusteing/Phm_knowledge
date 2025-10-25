@@ -1,0 +1,1641 @@
+{
+  "title": "某地区民航空勤人员健康状况分析",
+  "summary": "目的了解某地区民航空勤人员的健康状况,为飞行人员健康管理及常见病防治提供依据。方法以2015年1—12月在民航某管理局医学中心参加健康体检的空勤人员为研究对象,采用t检验、Wilcoxon秩和检验、χ2检验对空勤人员体检指标、患病率进行比较。结果体检人群中高尿酸血症患病率最高为29.2%,脂肪肝、超重次之,其患病率分别为28.9%、18.2%。在<35岁组及35～45岁组中安全员总体健康状况好于驾驶员(P<0.;各年龄组安全员与驾驶员心电图异常及听力异常患病率差异均有统计学意义(P<0.,与安全员比较,驾驶员高尿酸血症、高脂血症、脂肪肝等代谢性疾病患病率较高(P<0.。结论某地区民航空勤人员总体健康水平较低,空勤人员的健康主要受高尿酸血症、脂肪肝、超重等疾病威胁;应有针对性的制订健康管理方案,加强不同工种空勤人员的健康管理。",
+  "analyzed_sentences": [
+    {
+      "sentence": "目的了解某地区民航空勤人员的健康状况,为飞行人员健康管理及常见病防治提供依据",
+      "tokens": [
+        "目的",
+        "了解",
+        "某",
+        "地区",
+        "民航",
+        "空勤",
+        "人员",
+        "的",
+        "健康",
+        "状况",
+        ",",
+        "为",
+        "飞行",
+        "人员",
+        "健康",
+        "管理",
+        "及",
+        "常见病",
+        "防治",
+        "提供",
+        "依据"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "目的",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "了解",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "某",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "地区",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "民航",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "空勤",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "人员",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "健康",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "状况",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "为",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "飞行",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "人员",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "健康",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "管理",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "及",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "常见病",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "防治",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "提供",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "依据",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "方法以2015年1—12月在民航某管理局医学中心参加健康体检的空勤人员为研究对象,采用t检验、Wilcoxon秩和检验、χ2检验对空勤人员体检指标、患病率进行比较",
+      "tokens": [
+        "方法",
+        "以",
+        "2015年",
+        "1",
+        "—",
+        "12月",
+        "在",
+        "民航",
+        "某",
+        "管理局",
+        "医学",
+        "中心",
+        "参加",
+        "健康",
+        "体检",
+        "的",
+        "空勤",
+        "人员",
+        "为",
+        "研究",
+        "对象",
+        ",",
+        "采用",
+        "t",
+        "检验",
+        "、",
+        "Wilcoxon",
+        "秩和",
+        "检验",
+        "、",
+        "χ2",
+        "检验",
+        "对",
+        "空勤",
+        "人员",
+        "体检",
+        "指标",
+        "、",
+        "患病率",
+        "进行",
+        "比较"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "方法",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "以",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "2015年",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": "1",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NT"
+        },
+        {
+          "id": 5,
+          "form": "—",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "12月",
+          "head": 13,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 7,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "民航",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "某",
+          "head": 12,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 10,
+          "form": "管理局",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "医学",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "中心",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "参加",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "健康",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "体检",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "空勤",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "人员",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "研究",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "对象",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "采用",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "t",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "检验",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "、",
+          "head": 29,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "Wilcoxon",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 28,
+          "form": "秩和",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "检验",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "、",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "χ2",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "检验",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "对",
+          "head": 40,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 34,
+          "form": "空勤",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "人员",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "体检",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "指标",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "、",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "患病率",
+          "head": 33,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "进行",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "比较",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果体检人群中高尿酸血症患病率最高为29.2%,脂肪肝、超重次之,其患病率分别为28.9%、18.2%",
+      "tokens": [
+        "结果",
+        "体检",
+        "人群",
+        "中",
+        "高尿酸",
+        "血症",
+        "患病率",
+        "最",
+        "高",
+        "为",
+        "29.2%",
+        ",",
+        "脂肪肝",
+        "、",
+        "超重",
+        "次",
+        "之",
+        ",",
+        "其",
+        "患病率",
+        "分别",
+        "为",
+        "28.9%",
+        "、",
+        "18.2%"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "体检",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "人群",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "中",
+          "head": 10,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "高尿酸",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "血症",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "患病率",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "最",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "高",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 11,
+          "form": "29.2%",
+          "head": 10,
+          "deprel": "attr",
+          "pos": "CD"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "脂肪肝",
+          "head": 10,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "超重",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "次",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "之",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "PN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "其",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 20,
+          "form": "患病率",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "分别",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "为",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 23,
+          "form": "28.9%",
+          "head": 25,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 24,
+          "form": "、",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "18.2%",
+          "head": 22,
+          "deprel": "attr",
+          "pos": "CD"
+        }
+      ]
+    },
+    {
+      "sentence": "在<35岁组及35～45岁组中安全员总体健康状况好于驾驶员(P<0.;各年龄组安全员与驾驶员心电图异常及听力异常患病率差异均有统计学意义(P<0.,与安全员比较,驾驶员高尿酸血症、高脂血症、脂肪肝等代谢性疾病患病率较高(P<0.",
+      "tokens": [
+        "在",
+        "<",
+        "35",
+        "岁",
+        "组",
+        "及",
+        "35",
+        "～",
+        "45",
+        "岁",
+        "组",
+        "中",
+        "安全员",
+        "总体",
+        "健康",
+        "状况",
+        "好于",
+        "驾驶员",
+        "(",
+        "P",
+        "<",
+        "0",
+        ".",
+        ";",
+        "各",
+        "年龄",
+        "组",
+        "安全员",
+        "与",
+        "驾驶员",
+        "心电图",
+        "异常",
+        "及",
+        "听力",
+        "异常",
+        "患病率",
+        "差异",
+        "均",
+        "有",
+        "统计学",
+        "意义",
+        "(",
+        "P",
+        "<",
+        "0",
+        ".",
+        ",",
+        "与",
+        "安全员",
+        "比较",
+        ",",
+        "驾驶员",
+        "高尿酸血症",
+        "、",
+        "高脂血症",
+        "、",
+        "脂肪肝",
+        "等",
+        "代谢性",
+        "疾病",
+        "患病率",
+        "较",
+        "高",
+        "(",
+        "P",
+        "<",
+        "0",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "<",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "35",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "岁",
+          "head": 5,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "组",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "及",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "35",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 8,
+          "form": "～",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "45",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 10,
+          "form": "岁",
+          "head": 11,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 11,
+          "form": "组",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "中",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "安全员",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "总体",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "健康",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "状况",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "好于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "驾驶员",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "(",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "P",
+          "head": 22,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "<",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "0",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 23,
+          "form": ".",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": ";",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "各",
+          "head": 27,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 26,
+          "form": "年龄",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "组",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "安全员",
+          "head": 39,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "与",
+          "head": 30,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 30,
+          "form": "驾驶员",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "心电图",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "异常",
+          "head": 37,
+          "deprel": "vmod",
+          "pos": "VA"
+        },
+        {
+          "id": 33,
+          "form": "及",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "听力",
+          "head": 35,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "异常",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 36,
+          "form": "患病率",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "差异",
+          "head": 39,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "均",
+          "head": 39,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 39,
+          "form": "有",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VE"
+        },
+        {
+          "id": 40,
+          "form": "统计学",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "意义",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "(",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "P",
+          "head": 45,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "<",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 45,
+          "form": "0",
+          "head": 39,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 46,
+          "form": ".",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 48,
+          "form": "与",
+          "head": 50,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 49,
+          "form": "安全员",
+          "head": 48,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "比较",
+          "head": 63,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 63,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "驾驶员",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "高尿酸血症",
+          "head": 57,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "、",
+          "head": 57,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 55,
+          "form": "高脂血症",
+          "head": 57,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "、",
+          "head": 57,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "脂肪肝",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "等",
+          "head": 57,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 59,
+          "form": "代谢性",
+          "head": 60,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 60,
+          "form": "疾病",
+          "head": 63,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "患病率",
+          "head": 63,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "较",
+          "head": 63,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 63,
+          "form": "高",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 64,
+          "form": "(",
+          "head": 67,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 65,
+          "form": "P",
+          "head": 67,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "<",
+          "head": 67,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 67,
+          "form": "0",
+          "head": 63,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 68,
+          "form": ".",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    },
+    {
+      "sentence": "结论某地区民航空勤人员总体健康水平较低,空勤人员的健康主要受高尿酸血症、脂肪肝、超重等疾病威胁;应有针对性的制订健康管理方案,加强不同工种空勤人员的健康管理",
+      "tokens": [
+        "结论",
+        "某",
+        "地区",
+        "民航",
+        "空勤",
+        "人员",
+        "总体",
+        "健康",
+        "水平",
+        "较",
+        "低",
+        ",",
+        "空勤",
+        "人员",
+        "的",
+        "健康",
+        "主要",
+        "受",
+        "高尿酸",
+        "血症",
+        "、",
+        "脂肪肝",
+        "、",
+        "超重",
+        "等",
+        "疾病",
+        "威胁",
+        ";",
+        "应",
+        "有",
+        "针对性",
+        "的",
+        "制订",
+        "健康",
+        "管理",
+        "方案",
+        ",",
+        "加强",
+        "不同",
+        "工种",
+        "空勤",
+        "人员",
+        "的",
+        "健康",
+        "管理"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结论",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "地区",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "民航",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "空勤",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "人员",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "总体",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "水平",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "较",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "低",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "空勤",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "人员",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "健康",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "主要",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "受",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "LB"
+        },
+        {
+          "id": 19,
+          "form": "高尿酸",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "血症",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "脂肪肝",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "超重",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "等",
+          "head": 24,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 26,
+          "form": "疾病",
+          "head": 27,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "威胁",
+          "head": 18,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": ";",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "应",
+          "head": 33,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "有",
+          "head": 33,
+          "deprel": "dvpmod",
+          "pos": "VE"
+        },
+        {
+          "id": 31,
+          "form": "针对性",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "JJ"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 30,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 33,
+          "form": "制订",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "健康",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "管理",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "方案",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "加强",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "不同",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 40,
+          "form": "工种",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "空勤",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "人员",
+          "head": 45,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "的",
+          "head": 42,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 44,
+          "form": "健康",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "管理",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

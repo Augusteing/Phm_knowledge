@@ -1,0 +1,2137 @@
+{
+  "title": "可解释性智能监测诊断网络构造及航空发动机整机试车与中介轴承诊断应用",
+  "summary": "航空发动机故障预测与健康管理是提高航空发动机安全性、可靠性以及经济可承受性的关键技术。基于深度学习的人工智能方法在机械故障诊断领域受到广泛关注并开展了深入研究，但现有深度学习“黑箱算法”的现状仍然存在模型可解释性差、理论基础薄弱等问题。针对航空发动机健康管理与智能运维的迫切需求，提出航空发动机可解释性智能监测诊断网络，并在某型涡扇发动机整机长试试验中验证了异常检测与中介轴承故障诊断的有效性。将发动机振动信号先验信息融入稀疏表示模型，对模型的迭代求解算法进行展开得到结构具有可解释性的核心网络；针对航空发动机异常检测与智能诊断任务构造了基于对抗训练框架的可解释性异常检测子网络和基于特征提取框架的可解释性故障诊断子网络。本文提出的基于迭代算法展开的网络构造框架具备明确的理论基础，即网络设计有依据；稀疏表示模型驱动的可视化方法能够检验网络是否学到了与发动机故障相符的有意义的特征，即学习结果可信任。最后，通过某型涡扇发动机整机长试试验积累的超过500小时的试车数据，验证了本文提出的模型驱动的可解释性智能监测诊断网络在航空发动机异常检测与中介轴承故障诊断方面的有效性与可靠性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机故障预测与健康管理是提高航空发动机安全性、可靠性以及经济可承受性的关键技术",
+      "tokens": [
+        "航空",
+        "发动机",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "是",
+        "提高",
+        "航空",
+        "发动机",
+        "安全性",
+        "、",
+        "可靠性",
+        "以及",
+        "经济",
+        "可承受性",
+        "的",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 8,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 9,
+          "form": "提高",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "航空",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "发动机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "安全性",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "可靠性",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "以及",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "经济",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "可承受性",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "关键",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "技术",
+          "head": 8,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于深度学习的人工智能方法在机械故障诊断领域受到广泛关注并开展了深入研究",
+      "tokens": [
+        "基于",
+        "深度",
+        "学习",
+        "的",
+        "人工",
+        "智能",
+        "方法",
+        "在",
+        "机械",
+        "故障",
+        "诊断",
+        "领域",
+        "受到",
+        "广泛",
+        "关注",
+        "并",
+        "开展",
+        "了",
+        "深入",
+        "研究"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 7,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "深度",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "学习",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 1,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "人工",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "智能",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "机械",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "诊断",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "领域",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "受到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "广泛",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "关注",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "并",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "开展",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "深入",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "研究",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "但现有深度学习“黑箱算法”的现状仍然存在模型可解释性差、理论基础薄弱等问题",
+      "tokens": [
+        "但",
+        "现有",
+        "深度",
+        "学习",
+        "“",
+        "黑箱",
+        "算法",
+        "”",
+        "的",
+        "现状",
+        "仍然",
+        "存在",
+        "模型",
+        "可解释性",
+        "差",
+        "、",
+        "理论",
+        "基础",
+        "薄弱",
+        "等",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "但",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "现有",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "深度",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "学习",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "“",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "黑箱",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "算法",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "”",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "现状",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "仍然",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "存在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "模型",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "可解释性",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "差",
+          "head": 21,
+          "deprel": "vmod",
+          "pos": "VA"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "理论",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "基础",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "薄弱",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 20,
+          "form": "等",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 21,
+          "form": "问题",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对航空发动机健康管理与智能运维的迫切需求",
+      "tokens": [
+        "针对",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "与",
+        "智能",
+        "运维",
+        "的",
+        "迫切",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "智能",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "运维",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "迫切",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "需求",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出航空发动机可解释性智能监测诊断网络",
+      "tokens": [
+        "提出",
+        "航空",
+        "发动机",
+        "可解释性",
+        "智能",
+        "监测",
+        "诊断",
+        "网络"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "可解释性",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "智能",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "监测",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "诊断",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "网络",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并在某型涡扇发动机整机长试试验中验证了异常检测与中介轴承故障诊断的有效性",
+      "tokens": [
+        "并",
+        "在",
+        "某",
+        "型",
+        "涡扇",
+        "发动机",
+        "整机长试",
+        "试验",
+        "中",
+        "验证",
+        "了",
+        "异常",
+        "检测",
+        "与",
+        "中介",
+        "轴承",
+        "故障",
+        "诊断",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "某",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "型",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "涡扇",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "整机长试",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "试验",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "中",
+          "head": 2,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 12,
+          "form": "异常",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "检测",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "与",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "中介",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "轴承",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "诊断",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "有效性",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "将发动机振动信号先验信息融入稀疏表示模型，对模型的迭代求解算法进行展开得到结构具有可解释性的核心网络",
+      "tokens": [
+        "将",
+        "发动机",
+        "振动",
+        "信号",
+        "先验",
+        "信息",
+        "融入",
+        "稀疏",
+        "表示",
+        "模型",
+        "，",
+        "对",
+        "模型",
+        "的",
+        "迭代",
+        "求解",
+        "算法",
+        "进行",
+        "展开",
+        "得到",
+        "结构",
+        "具有",
+        "可解释性",
+        "的",
+        "核心",
+        "网络"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "将",
+          "head": 7,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "振动",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "信号",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "先验",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "信息",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "融入",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "稀疏",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "表示",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "模型",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "，",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "对",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "模型",
+          "head": 17,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "迭代",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "求解",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "算法",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "进行",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "展开",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "得到",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "结构",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "具有",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "可解释性",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 22,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 25,
+          "form": "核心",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "网络",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对航空发动机异常检测与智能诊断任务构造了基于对抗训练框架的可解释性异常检测子网络和基于特征提取框架的可解释性故障诊断子网络",
+      "tokens": [
+        "针对",
+        "航空",
+        "发动机",
+        "异常",
+        "检测",
+        "与",
+        "智能",
+        "诊断",
+        "任务",
+        "构造",
+        "了",
+        "基于",
+        "对抗",
+        "训练",
+        "框架",
+        "的",
+        "可解释性",
+        "异常",
+        "检测",
+        "子",
+        "网络",
+        "和",
+        "基于",
+        "特征",
+        "提取",
+        "框架",
+        "的",
+        "可解释性",
+        "故障",
+        "诊断",
+        "子",
+        "网络"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "异常",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "检测",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "智能",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "诊断",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "任务",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "构造",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 12,
+          "form": "基于",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "对抗",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "训练",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "框架",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "可解释性",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "异常",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "检测",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "子",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "网络",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "和",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "基于",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 24,
+          "form": "特征",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "提取",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "框架",
+          "head": 23,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 28,
+          "form": "可解释性",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "故障",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "诊断",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "子",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "网络",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文提出的基于迭代算法展开的网络构造框架具备明确的理论基础，即网络设计有依据",
+      "tokens": [
+        "本",
+        "文",
+        "提出",
+        "的",
+        "基于",
+        "迭代",
+        "算法",
+        "展开",
+        "的",
+        "网络",
+        "构造",
+        "框架",
+        "具备",
+        "明确",
+        "的",
+        "理论",
+        "基础",
+        "，",
+        "即",
+        "网络",
+        "设计",
+        "有",
+        "依据"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "提出",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "基于",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "迭代",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "算法",
+          "head": 5,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "展开",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "网络",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "构造",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "框架",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "具备",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "明确",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 16,
+          "form": "理论",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "基础",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "，",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "即",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "网络",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "设计",
+          "head": 22,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "有",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VE"
+        },
+        {
+          "id": 23,
+          "form": "依据",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "稀疏表示模型驱动的可视化方法能够检验网络是否学到了与发动机故障相符的有意义的特征，即学习结果可信任",
+      "tokens": [
+        "稀疏",
+        "表示",
+        "模型",
+        "驱动",
+        "的",
+        "可视化",
+        "方法",
+        "能够",
+        "检验",
+        "网络",
+        "是否",
+        "学到",
+        "了",
+        "与",
+        "发动机",
+        "故障",
+        "相符",
+        "的",
+        "有",
+        "意义",
+        "的",
+        "特征",
+        "，",
+        "即",
+        "学习",
+        "结果",
+        "可",
+        "信任"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "稀疏",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "表示",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "驱动",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "可视化",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "能够",
+          "head": 9,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "检验",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "网络",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "是否",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "学到",
+          "head": 9,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "了",
+          "head": 12,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "与",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "发动机",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "故障",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "相符",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 19,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "有",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VE"
+        },
+        {
+          "id": 20,
+          "form": "意义",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 19,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 22,
+          "form": "特征",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "，",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "即",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "AD"
+        },
+        {
+          "id": 25,
+          "form": "学习",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "结果",
+          "head": 28,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "可",
+          "head": 28,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "信任",
+          "head": 24,
+          "deprel": "ccomp",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "最后",
+      "tokens": [
+        "最后"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "通过某型涡扇发动机整机长试试验积累的超过500小时的试车数据",
+      "tokens": [
+        "通过",
+        "某",
+        "型",
+        "涡扇",
+        "发动机",
+        "整机长",
+        "试",
+        "试验",
+        "积累",
+        "的",
+        "超过",
+        "500",
+        "小时",
+        "的",
+        "试车",
+        "数据"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "型",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "涡扇",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "整机长",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "试",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "试验",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "积累",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "超过",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "500",
+          "head": 13,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 13,
+          "form": "小时",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 15,
+          "form": "试车",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "数据",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "验证了本文提出的模型驱动的可解释性智能监测诊断网络在航空发动机异常检测与中介轴承故障诊断方面的有效性与可靠性",
+      "tokens": [
+        "验证",
+        "了",
+        "本",
+        "文",
+        "提出",
+        "的",
+        "模型",
+        "驱动",
+        "的",
+        "可解释性",
+        "智能",
+        "监测",
+        "诊断",
+        "网络",
+        "在",
+        "航空",
+        "发动机",
+        "异常",
+        "检测",
+        "与",
+        "中介",
+        "轴承",
+        "故障",
+        "诊断",
+        "方面",
+        "的",
+        "有效性",
+        "与",
+        "可靠性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "本",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "文",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "提出",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "模型",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "驱动",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "可解释性",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "智能",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "监测",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "诊断",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "网络",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "在",
+          "head": 29,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "航空",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "发动机",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "异常",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "检测",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "与",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "中介",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "轴承",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "故障",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "诊断",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "方面",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 27,
+          "form": "有效性",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "与",
+          "head": 29,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "可靠性",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

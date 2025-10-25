@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "飞机性能参数",
+    "subject_type": "参数",
+    "relation": "用于",
+    "object": "故障预报",
+    "object_type": "应用"
+  },
+  {
+    "subject": "飞机性能参数",
+    "subject_type": "参数",
+    "relation": "用于",
+    "object": "状态监控",
+    "object_type": "应用"
+  },
+  {
+    "subject": "飞机性能参数",
+    "subject_type": "参数",
+    "relation": "具有",
+    "object": "非线性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "飞机性能参数",
+    "subject_type": "参数",
+    "relation": "包含",
+    "object": "噪声",
+    "object_type": "问题"
+  },
+  {
+    "subject": "噪声",
+    "subject_type": "问题",
+    "relation": "导致",
+    "object": "不确定性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "非线性支持向量机",
+    "subject_type": "方法",
+    "relation": "处理",
+    "object": "飞机性能参数预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "非线性支持向量机",
+    "subject_type": "方法",
+    "relation": "通过增加",
+    "object": "线性约束",
+    "object_type": "技术"
+  },
+  {
+    "subject": "增加线性约束",
+    "subject_type": "技术",
+    "relation": "解决",
+    "object": "不确定性问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "非线性支持向量机",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "指标"
+  },
+  {
+    "subject": "非线性支持向量机",
+    "subject_type": "方法",
+    "relation": "利用",
+    "object": "序列最小最优化算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "序列最小最优化算法",
+    "subject_type": "算法",
+    "relation": "用于处理",
+    "object": "大规模二次规划",
+    "object_type": "问题"
+  },
+  {
+    "subject": "非线性支持向量机",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "大数据量预测问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "非线性支持向量机",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "飞机安全性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "仿真数据",
+    "subject_type": "数据",
+    "relation": "用于验证",
+    "object": "非线性支持向量机",
+    "object_type": "方法"
+  }
+]

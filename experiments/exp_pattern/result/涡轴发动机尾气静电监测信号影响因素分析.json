@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "发动机工作状态",
+    "subject_type": "状态",
+    "relation": "影响",
+    "object": "尾气静电监测信号",
+    "object_type": "信号"
+  },
+  {
+    "subject": "发动机健康状态",
+    "subject_type": "状态",
+    "relation": "影响",
+    "object": "尾气静电监测信号",
+    "object_type": "信号"
+  },
+  {
+    "subject": "燃油供给量",
+    "subject_type": "参数",
+    "relation": "影响",
+    "object": "尾气静电信号",
+    "object_type": "信号"
+  },
+  {
+    "subject": "燃油供给量",
+    "subject_type": "参数",
+    "relation": "导致增加",
+    "object": "尾气静电信号能量",
+    "object_type": "参数"
+  },
+  {
+    "subject": "发动机性能衰退",
+    "subject_type": "现象",
+    "relation": "导致增加",
+    "object": "尾气静电信号能量",
+    "object_type": "参数"
+  },
+  {
+    "subject": "尾气静电信号",
+    "subject_type": "信号",
+    "relation": "用于建立",
+    "object": "健康基线",
+    "object_type": "基准"
+  },
+  {
+    "subject": "健康基线",
+    "subject_type": "基准",
+    "relation": "用于",
+    "object": "气路状态监测",
+    "object_type": "应用"
+  },
+  {
+    "subject": "健康基线",
+    "subject_type": "基准",
+    "relation": "用于",
+    "object": "故障识别",
+    "object_type": "应用"
+  },
+  {
+    "subject": "静电监测技术",
+    "subject_type": "技术",
+    "relation": "提供",
+    "object": "预警信息",
+    "object_type": "信息"
+  },
+  {
+    "subject": "预警信息",
+    "subject_type": "信息",
+    "relation": "针对",
+    "object": "突发性故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "静电监测技术",
+    "subject_type": "技术",
+    "relation": "反映",
+    "object": "发动机整机性能衰退",
+    "object_type": "现象"
+  },
+  {
+    "subject": "静电监测技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空发动机健康管理",
+    "object_type": "领域"
+  },
+  {
+    "subject": "静电监测技术",
+    "subject_type": "技术",
+    "relation": "拓展能力",
+    "object": "静电传感器",
+    "object_type": "组件"
+  }
+]

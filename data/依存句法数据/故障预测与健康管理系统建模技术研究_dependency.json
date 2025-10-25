@@ -1,0 +1,381 @@
+{
+  "title": "故障预测与健康管理系统建模技术研究",
+  "summary": "简要介绍了PHM系统建模的主要方法,并依据飞机特征,给出飞机PHM系统分层体系模型,提出了基于数据的飞机典型部件液压泵PHM系统的建模方法,通过试验对该方法进行了验证。",
+  "analyzed_sentences": [
+    {
+      "sentence": "简要介绍了PHM系统建模的主要方法,并依据飞机特征,给出飞机PHM系统分层体系模型,提出了基于数据的飞机典型部件液压泵PHM系统的建模方法,通过试验对该方法进行了验证",
+      "tokens": [
+        "简要",
+        "介绍",
+        "了",
+        "PHM",
+        "系统",
+        "建模",
+        "的",
+        "主要",
+        "方法",
+        ",",
+        "并",
+        "依据",
+        "飞机",
+        "特征",
+        ",",
+        "给出",
+        "飞机",
+        "PHM",
+        "系统",
+        "分层",
+        "体系",
+        "模型",
+        ",",
+        "提出",
+        "了",
+        "基于",
+        "数据",
+        "的",
+        "飞机",
+        "典型",
+        "部件",
+        "液压泵",
+        "PHM",
+        "系统",
+        "的",
+        "建模",
+        "方法",
+        ",",
+        "通过",
+        "试验",
+        "对",
+        "该",
+        "方法",
+        "进行",
+        "了",
+        "验证"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "简要",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "PHM",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "建模",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "主要",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "方法",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "并",
+          "head": 2,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "依据",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "飞机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "特征",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "给出",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "飞机",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "PHM",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "分层",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "体系",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "模型",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "提出",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "了",
+          "head": 24,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 26,
+          "form": "基于",
+          "head": 37,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "数据",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 26,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 29,
+          "form": "飞机",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "典型",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "部件",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "液压泵",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "PHM",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "系统",
+          "head": 37,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 36,
+          "form": "建模",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "方法",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "通过",
+          "head": 44,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 40,
+          "form": "试验",
+          "head": 39,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "对",
+          "head": 44,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 42,
+          "form": "该",
+          "head": 43,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 43,
+          "form": "方法",
+          "head": 41,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "进行",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "了",
+          "head": 44,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 46,
+          "form": "验证",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

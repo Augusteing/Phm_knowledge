@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "故障注入技术",
+    "subject_type": "技术",
+    "relation": "验证",
+    "object": "综合模块化航电系统的健康管理功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "故障注入技术",
+    "subject_type": "技术",
+    "relation": "通过",
+    "object": "AFDX网络",
+    "object_type": "网络"
+  },
+  {
+    "subject": "技术解决方案",
+    "subject_type": "方案",
+    "relation": "提出",
+    "object": "故障数据的配置管理方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "技术解决方案",
+    "subject_type": "方案",
+    "relation": "提出",
+    "object": "发送策略",
+    "object_type": "策略"
+  },
+  {
+    "subject": "发送策略",
+    "subject_type": "策略",
+    "relation": "解决",
+    "object": "主机数据更新间隔、发送间隔与AFDX端系统定时器周期不匹配问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "技术解决方案",
+    "subject_type": "方案",
+    "relation": "搭建",
+    "object": "故障注入装置",
+    "object_type": "装置"
+  },
+  {
+    "subject": "技术解决方案",
+    "subject_type": "方案",
+    "relation": "开发",
+    "object": "故障注入软件",
+    "object_type": "软件"
+  },
+  {
+    "subject": "实验测试",
+    "subject_type": "实验",
+    "relation": "验证",
+    "object": "配置管理方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "实验测试",
+    "subject_type": "实验",
+    "relation": "验证",
+    "object": "发送策略",
+    "object_type": "策略"
+  }
+]

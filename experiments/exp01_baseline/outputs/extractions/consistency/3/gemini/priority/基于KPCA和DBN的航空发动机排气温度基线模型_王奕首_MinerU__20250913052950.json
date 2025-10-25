@@ -1,0 +1,239 @@
+{
+  "entities": [
+    {
+      "name": "KPCA-DBN混合模型",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机排气温度基线模型",
+      "type": "模型"
+    },
+    {
+      "name": "核主成分分析 (KPCA)",
+      "type": "算法"
+    },
+    {
+      "name": "深度置信网络 (DBN)",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机健康管理 (EHM)",
+      "type": "研究领域"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "快速存取数据 (QAR)",
+      "type": "数据集"
+    },
+    {
+      "name": "排气温度 (EGT)",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "遗传算法优化的BP神经网络 (GA-BP)",
+      "type": "模型"
+    },
+    {
+      "name": "DBN网络模型",
+      "type": "模型"
+    },
+    {
+      "name": "主成分分析法 (PCA)",
+      "type": "算法"
+    },
+    {
+      "name": "深度学习",
+      "type": "理论基础"
+    },
+    {
+      "name": "受限玻尔兹曼机 (RBM)",
+      "type": "模型"
+    },
+    {
+      "name": "反向传播网络 (BP)",
+      "type": "模型"
+    },
+    {
+      "name": "平均绝对误差 (MAE)",
+      "type": "性能指标"
+    },
+    {
+      "name": "模型精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "网络结构复杂度",
+      "type": "性能指标"
+    },
+    {
+      "name": "降维处理",
+      "type": "研究方法"
+    },
+    {
+      "name": "高斯函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "发动机工作状况",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "部件异常",
+      "type": "故障模式"
+    },
+    {
+      "name": "EGT超限",
+      "type": "故障模式"
+    },
+    {
+      "name": "EGT相关参数",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "遗传算法 (GA)",
+      "type": "算法"
+    },
+    {
+      "name": "核方法",
+      "type": "理论基础"
+    },
+    {
+      "name": "BP网络局部最优缺点",
+      "type": "问题"
+    },
+    {
+      "name": "传统神经网络建模方法",
+      "type": "研究方法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "用于构建",
+      "tail": "航空发动机排气温度基线模型"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "结合",
+      "tail": "核主成分分析 (KPCA)"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "结合",
+      "tail": "深度置信网络 (DBN)"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "应用于",
+      "tail": "航空发动机健康管理 (EHM)"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "处理",
+      "tail": "快速存取数据 (QAR)"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "用于",
+      "tail": "降维处理"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "采用",
+      "tail": "高斯函数"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "简化",
+      "tail": "网络结构复杂度"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "提高",
+      "tail": "模型精度"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "改进了",
+      "tail": "主成分分析法 (PCA)"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "融合",
+      "tail": "核方法"
+    },
+    {
+      "head": "深度置信网络 (DBN)",
+      "relation": "基于",
+      "tail": "深度学习"
+    },
+    {
+      "head": "深度置信网络 (DBN)",
+      "relation": "由...组成",
+      "tail": "受限玻尔兹曼机 (RBM)"
+    },
+    {
+      "head": "深度置信网络 (DBN)",
+      "relation": "由...组成",
+      "tail": "反向传播网络 (BP)"
+    },
+    {
+      "head": "深度置信网络 (DBN)",
+      "relation": "克服了",
+      "tail": "BP网络局部最优缺点"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "EGT相关参数"
+    },
+    {
+      "head": "EGT相关参数",
+      "relation": "来源于",
+      "tail": "快速存取数据 (QAR)"
+    },
+    {
+      "head": "快速存取数据 (QAR)",
+      "relation": "产生于",
+      "tail": "CFM56-7B发动机"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "遗传算法优化的BP神经网络 (GA-BP)"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "DBN网络模型"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "传统神经网络建模方法"
+    },
+    {
+      "head": "平均绝对误差 (MAE)",
+      "relation": "评价",
+      "tail": "模型精度"
+    },
+    {
+      "head": "遗传算法 (GA)",
+      "relation": "用于优化",
+      "tail": "反向传播网络 (BP)"
+    },
+    {
+      "head": "排气温度 (EGT)",
+      "relation": "反映",
+      "tail": "发动机工作状况"
+    },
+    {
+      "head": "部件异常",
+      "relation": "导致",
+      "tail": "EGT超限"
+    }
+  ]
+}

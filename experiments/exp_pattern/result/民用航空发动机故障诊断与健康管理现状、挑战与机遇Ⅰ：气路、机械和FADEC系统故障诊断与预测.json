@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "发动机健康管理 (EHM)",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "气路性能退化诊断和预测",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "发动机健康管理 (EHM)",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "发动机机械系统故障诊断",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "发动机健康管理 (EHM)",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "FADEC系统故障诊断",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "发动机气路故障诊断算法",
+    "subject_type": "算法",
+    "relation": "基于",
+    "object": "非线性无迹卡尔曼滤波器 (UKF)",
+    "object_type": "算法"
+  },
+  {
+    "subject": "发动机气路故障诊断算法",
+    "subject_type": "算法",
+    "relation": "基于",
+    "object": "深度学习神经网络",
+    "object_type": "算法"
+  },
+  {
+    "subject": "复合材料叶片",
+    "subject_type": "组件",
+    "relation": "应用于",
+    "object": "涡扇发动机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "增材制造技术",
+    "subject_type": "技术",
+    "relation": "用于制造",
+    "object": "复杂发动机零部件",
+    "object_type": "组件"
+  },
+  {
+    "subject": "金属屑末传感器",
+    "subject_type": "传感器",
+    "relation": "促进",
+    "object": "融合诊断",
+    "object_type": "方法"
+  },
+  {
+    "subject": "融合诊断",
+    "subject_type": "方法",
+    "relation": "融合",
+    "object": "振动信号",
+    "object_type": "信号"
+  },
+  {
+    "subject": "全权限数字控制系统 (FADEC)",
+    "subject_type": "控制系统",
+    "relation": "挑战",
+    "object": "故障诊断算法",
+    "object_type": "算法"
+  }
+]

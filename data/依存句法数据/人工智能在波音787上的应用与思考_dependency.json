@@ -1,0 +1,979 @@
+{
+  "title": "人工智能在波音787上的应用与思考",
+  "summary": "将人工智能技术应用于未来民机,是全面提升我国民用飞机国际竞争力的重要手段。研究智能装配技术、智能驾驶舱技术、智能飞控系统、智能维护技术、智能材料和标签等在波音787上的成功应用,是识别和借鉴新型民机智能技术的有效途径。新形势下,我国民机主制造商应积极把握人工智能发展动向,从产品设计创新、生产制造优化、管理效率提升、个性服务定制和飞机健康管理等方面进行智能技术的变革,不断研究和储备新型智能技术,从容应对技术变革的挑战。",
+  "analyzed_sentences": [
+    {
+      "sentence": "将人工智能技术应用于未来民机,是全面提升我国民用飞机国际竞争力的重要手段",
+      "tokens": [
+        "将",
+        "人工",
+        "智能",
+        "技术",
+        "应用",
+        "于",
+        "未来",
+        "民机",
+        ",",
+        "是",
+        "全面",
+        "提升",
+        "我",
+        "国",
+        "民用",
+        "飞机",
+        "国际",
+        "竞争力",
+        "的",
+        "重要",
+        "手段"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "将",
+          "head": 5,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 2,
+          "form": "人工",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "智能",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "技术",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "应用",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "于",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "未来",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 8,
+          "form": "民机",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 11,
+          "form": "全面",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "提升",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "我",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 14,
+          "form": "国",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "民用",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "飞机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "国际",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "竞争力",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "重要",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "手段",
+          "head": 10,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "研究智能装配技术、智能驾驶舱技术、智能飞控系统、智能维护技术、智能材料和标签等在波音787上的成功应用,是识别和借鉴新型民机智能技术的有效途径",
+      "tokens": [
+        "研究",
+        "智能",
+        "装配",
+        "技术",
+        "、",
+        "智能",
+        "驾驶舱",
+        "技术",
+        "、",
+        "智能",
+        "飞控",
+        "系统",
+        "、",
+        "智能",
+        "维护",
+        "技术",
+        "、",
+        "智能",
+        "材料",
+        "和",
+        "标签",
+        "等",
+        "在",
+        "波音787",
+        "上",
+        "的",
+        "成功",
+        "应用",
+        ",",
+        "是",
+        "识别",
+        "和",
+        "借鉴",
+        "新型",
+        "民机",
+        "智能",
+        "技术",
+        "的",
+        "有效",
+        "途径"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "智能",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "装配",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "技术",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "智能",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "驾驶舱",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "智能",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "飞控",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "系统",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "智能",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "维护",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "技术",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "、",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "智能",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "材料",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "和",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "标签",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "等",
+          "head": 21,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 23,
+          "form": "在",
+          "head": 28,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 24,
+          "form": "波音787",
+          "head": 25,
+          "deprel": "lobj",
+          "pos": "NR"
+        },
+        {
+          "id": 25,
+          "form": "上",
+          "head": 23,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 27,
+          "form": "成功",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "应用",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": ",",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 31,
+          "form": "识别",
+          "head": 40,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "和",
+          "head": 31,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 33,
+          "form": "借鉴",
+          "head": 31,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "新型",
+          "head": 37,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "民机",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "智能",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "技术",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 31,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 39,
+          "form": "有效",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 40,
+          "form": "途径",
+          "head": 30,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "新形势下,我国民机主制造商应积极把握人工智能发展动向,从产品设计创新、生产制造优化、管理效率提升、个性服务定制和飞机健康管理等方面进行智能技术的变革,不断研究和储备新型智能技术,从容应对技术变革的挑战",
+      "tokens": [
+        "新",
+        "形势",
+        "下",
+        ",",
+        "我",
+        "国",
+        "民机主",
+        "制造商",
+        "应",
+        "积极",
+        "把握",
+        "人工",
+        "智能",
+        "发展",
+        "动向",
+        ",",
+        "从",
+        "产品",
+        "设计",
+        "创新",
+        "、",
+        "生产",
+        "制造",
+        "优化",
+        "、",
+        "管理",
+        "效率",
+        "提升",
+        "、",
+        "个性",
+        "服务",
+        "定制",
+        "和",
+        "飞机",
+        "健康",
+        "管理",
+        "等",
+        "方面",
+        "进行",
+        "智能",
+        "技术",
+        "的",
+        "变革",
+        ",",
+        "不断",
+        "研究",
+        "和",
+        "储备",
+        "新型",
+        "智能",
+        "技术",
+        ",",
+        "从容",
+        "应对",
+        "技术",
+        "变革",
+        "的",
+        "挑战"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "新",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "形势",
+          "head": 3,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "下",
+          "head": 11,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "我",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 6,
+          "form": "国",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "民机主",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "制造商",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "应",
+          "head": 11,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "积极",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "把握",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "人工",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "智能",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "发展",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "动向",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "从",
+          "head": 39,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "产品",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "设计",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "创新",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "生产",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "制造",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "优化",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "管理",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "效率",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "提升",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "个性",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "服务",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "定制",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "和",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "飞机",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "健康",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "管理",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "等",
+          "head": 36,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 38,
+          "form": "方面",
+          "head": 17,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "进行",
+          "head": 11,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "智能",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "技术",
+          "head": 43,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "的",
+          "head": 41,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 43,
+          "form": "变革",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 45,
+          "form": "不断",
+          "head": 46,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 46,
+          "form": "研究",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 47,
+          "form": "和",
+          "head": 46,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 48,
+          "form": "储备",
+          "head": 46,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "新型",
+          "head": 51,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 50,
+          "form": "智能",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "技术",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": ",",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 53,
+          "form": "从容",
+          "head": 54,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 54,
+          "form": "应对",
+          "head": 46,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 55,
+          "form": "技术",
+          "head": 56,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "变革",
+          "head": 58,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "的",
+          "head": 56,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 58,
+          "form": "挑战",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

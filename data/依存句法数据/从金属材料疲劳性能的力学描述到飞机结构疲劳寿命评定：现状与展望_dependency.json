@@ -1,0 +1,1430 @@
+{
+  "title": "从金属材料疲劳性能的力学描述到飞机结构疲劳寿命评定：现状与展望",
+  "summary": "疲劳失效是影响飞机金属结构安全性和使用寿命的主要因素，金属疲劳的学术研究和工程实践在相互促进中得以不断发展.论文总结了飞机传统金属结构疲劳问题的特点，综述了当前飞机金属结构疲劳分析方法的三种思路，即从材料疲劳性能出发的唯象疲劳分析方法、从结构疲劳品质出发的唯象疲劳分析方法、以及以断裂力学为基础的分析方法，剖析了不同思路分析方法的内涵、流程及潜在发展，讨论了学术研究和分析方法的进步对飞机结构抗疲劳保安全策略的变革性影响.在此基础上，结合先进材料与新型结构的发展和应用所提出的新挑战和新思路、以及未来飞机结构对疲劳与损伤容限评价工作的新需求，对结构疲劳分析方法研究的未来发展作出浅析和展望.",
+  "analyzed_sentences": [
+    {
+      "sentence": "疲劳失效是影响飞机金属结构安全性和使用寿命的主要因素",
+      "tokens": [
+        "疲劳",
+        "失效",
+        "是",
+        "影响",
+        "飞机",
+        "金属",
+        "结构",
+        "安全性",
+        "和",
+        "使用",
+        "寿命",
+        "的",
+        "主要",
+        "因素"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "疲劳",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "失效",
+          "head": 3,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 4,
+          "form": "影响",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "金属",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "结构",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "安全性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "使用",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "寿命",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "主要",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "因素",
+          "head": 3,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "金属疲劳的学术研究和工程实践在相互促进中得以不断发展.论文总结了飞机传统金属结构疲劳问题的特点",
+      "tokens": [
+        "金属",
+        "疲劳",
+        "的",
+        "学术",
+        "研究",
+        "和",
+        "工程",
+        "实践",
+        "在",
+        "相互",
+        "促进",
+        "中",
+        "得以",
+        "不断",
+        "发展",
+        ".",
+        "论文",
+        "总结",
+        "了",
+        "飞机",
+        "传统",
+        "金属",
+        "结构",
+        "疲劳",
+        "问题",
+        "的",
+        "特点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "金属",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "疲劳",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "学术",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "研究",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "工程",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "实践",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "相互",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "促进",
+          "head": 12,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "中",
+          "head": 9,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "得以",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "不断",
+          "head": 15,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 15,
+          "form": "发展",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": ".",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "论文",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "总结",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "了",
+          "head": 18,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 20,
+          "form": "飞机",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "传统",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "金属",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "结构",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "疲劳",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "问题",
+          "head": 27,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 25,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 27,
+          "form": "特点",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "综述了当前飞机金属结构疲劳分析方法的三种思路",
+      "tokens": [
+        "综述",
+        "了",
+        "当前",
+        "飞机",
+        "金属",
+        "结构",
+        "疲劳",
+        "分析",
+        "方法",
+        "的",
+        "三",
+        "种",
+        "思路"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "综述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "当前",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "金属",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "结构",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "疲劳",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "分析",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "方法",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "三",
+          "head": 12,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 12,
+          "form": "种",
+          "head": 13,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 13,
+          "form": "思路",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "即从材料疲劳性能出发的唯象疲劳分析方法、从结构疲劳品质出发的唯象疲劳分析方法、以及以断裂力学为基础的分析方法",
+      "tokens": [
+        "即",
+        "从",
+        "材料",
+        "疲劳",
+        "性能",
+        "出发",
+        "的",
+        "唯象",
+        "疲劳",
+        "分析",
+        "方法",
+        "、",
+        "从",
+        "结构",
+        "疲劳",
+        "品质",
+        "出发",
+        "的",
+        "唯象",
+        "疲劳",
+        "分析",
+        "方法",
+        "、",
+        "以及",
+        "以",
+        "断裂",
+        "力学",
+        "为",
+        "基础",
+        "的",
+        "分析",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "即",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "从",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "材料",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "疲劳",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "性能",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "出发",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "唯象",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "疲劳",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "分析",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "方法",
+          "head": 32,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "从",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "结构",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "疲劳",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "品质",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "出发",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "唯象",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "疲劳",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "分析",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "方法",
+          "head": 32,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "以及",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "以",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 26,
+          "form": "断裂",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "力学",
+          "head": 25,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "为",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "基础",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 31,
+          "form": "分析",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "方法",
+          "head": 1,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "剖析了不同思路分析方法的内涵、流程及潜在发展",
+      "tokens": [
+        "剖析",
+        "了",
+        "不同",
+        "思路",
+        "分析",
+        "方法",
+        "的",
+        "内涵",
+        "、",
+        "流程",
+        "及",
+        "潜在",
+        "发展"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "剖析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "不同",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "思路",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "分析",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "方法",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "内涵",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "流程",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "及",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "潜在",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "发展",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "讨论了学术研究和分析方法的进步对飞机结构抗疲劳保安全策略的变革性影响.在此基础上",
+      "tokens": [
+        "讨论",
+        "了",
+        "学术",
+        "研究",
+        "和",
+        "分析",
+        "方法",
+        "的",
+        "进步",
+        "对",
+        "飞机",
+        "结构",
+        "抗",
+        "疲劳",
+        "保",
+        "安全",
+        "策略",
+        "的",
+        "变革性",
+        "影响",
+        ".",
+        "在",
+        "此",
+        "基础",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "讨论",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "学术",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "研究",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "分析",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "进步",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "对",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "飞机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "结构",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "抗",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "疲劳",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "保",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "安全",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "策略",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "变革性",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "影响",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ".",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "在",
+          "head": 1,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 23,
+          "form": "此",
+          "head": 24,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 24,
+          "form": "基础",
+          "head": 25,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "上",
+          "head": 22,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "结合先进材料与新型结构的发展和应用所提出的新挑战和新思路、以及未来飞机结构对疲劳与损伤容限评价工作的新需求",
+      "tokens": [
+        "结合",
+        "先进",
+        "材料",
+        "与",
+        "新型",
+        "结构",
+        "的",
+        "发展",
+        "和",
+        "应用",
+        "所",
+        "提出",
+        "的",
+        "新",
+        "挑战",
+        "和",
+        "新",
+        "思路",
+        "、",
+        "以及",
+        "未来",
+        "飞机",
+        "结构",
+        "对",
+        "疲劳",
+        "与",
+        "损伤",
+        "容限",
+        "评价",
+        "工作",
+        "的",
+        "新",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 33,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "先进",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "材料",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "与",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "新型",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "结构",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "应用",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "所",
+          "head": 12,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 12,
+          "form": "提出",
+          "head": 33,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "新",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "挑战",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "新",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "思路",
+          "head": 33,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "以及",
+          "head": 33,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "未来",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 22,
+          "form": "飞机",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "结构",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "对",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "疲劳",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "与",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "损伤",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "容限",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "评价",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "工作",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 24,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 32,
+          "form": "新",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 33,
+          "form": "需求",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对结构疲劳分析方法研究的未来发展作出浅析和展望.",
+      "tokens": [
+        "对",
+        "结构",
+        "疲劳",
+        "分析",
+        "方法",
+        "研究",
+        "的",
+        "未来",
+        "发展",
+        "作出",
+        "浅析",
+        "和",
+        "展望",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "结构",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "疲劳",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "分析",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "方法",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "研究",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "未来",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 9,
+          "form": "发展",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "作出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "浅析",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "展望",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ".",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

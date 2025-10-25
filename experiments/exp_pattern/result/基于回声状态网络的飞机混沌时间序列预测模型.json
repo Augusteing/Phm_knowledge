@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "故障检测",
+    "subject_type": "任务",
+    "relation": "保障",
+    "object": "飞行安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "状态变化趋势预测",
+    "subject_type": "任务",
+    "relation": "保障",
+    "object": "飞行安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "基于小波降噪的回声状态网络预测模型",
+    "subject_type": "预测模型",
+    "relation": "改进",
+    "object": "回声状态网络",
+    "object_type": "基础模型"
+  },
+  {
+    "subject": "基于小波降噪的回声状态网络预测模型",
+    "subject_type": "预测模型",
+    "relation": "采用",
+    "object": "小波变换",
+    "object_type": "方法"
+  },
+  {
+    "subject": "小波变换",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "降噪预处理",
+    "object_type": "处理步骤"
+  },
+  {
+    "subject": "降噪预处理",
+    "subject_type": "处理步骤",
+    "relation": "针对",
+    "object": "混沌时间序列",
+    "object_type": "数据"
+  },
+  {
+    "subject": "基于小波降噪的回声状态网络预测模型",
+    "subject_type": "预测模型",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "飞机发动机滑油散热器温度时间序列数据",
+    "subject_type": "数据",
+    "relation": "用于验证",
+    "object": "基于小波降噪的回声状态网络预测模型",
+    "object_type": "预测模型"
+  }
+]

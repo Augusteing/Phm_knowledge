@@ -1,0 +1,972 @@
+{
+  "title": "关于故障预测与健康管理技术的几点认识",
+  "summary": "介绍了故障预测与健康管理技术(PHM)基本概念与内涵,回顾了国外飞机发动机、固定翼飞机、直升机、航天飞行器、舰船、车辆和轨道交通等设备PHM技术发展历程及发展现状,分析了我国PHM技术的发展现状及存在的问题,预测了未来发展方向和应用领域。梳理了故障预测与健康管理技术体系架构,介绍了故障模型、状态监测、数据处理、综合诊断、健康管理、维修决策和后勤支援信息系统等关键技术,最后给出了我国发展PHM技术的意见和建议。",
+  "analyzed_sentences": [
+    {
+      "sentence": "介绍了故障预测与健康管理技术(PHM)基本概念与内涵,回顾了国外飞机发动机、固定翼飞机、直升机、航天飞行器、舰船、车辆和轨道交通等设备PHM技术发展历程及发展现状,分析了我国PHM技术的发展现状及存在的问题,预测了未来发展方向和应用领域",
+      "tokens": [
+        "介绍",
+        "了",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "技术",
+        "(",
+        "PHM",
+        ")",
+        "基本",
+        "概念",
+        "与",
+        "内涵",
+        ",",
+        "回顾",
+        "了",
+        "国外",
+        "飞机",
+        "发动机",
+        "、",
+        "固定翼",
+        "飞机",
+        "、",
+        "直升机",
+        "、",
+        "航天",
+        "飞行器",
+        "、",
+        "舰船",
+        "、",
+        "车辆",
+        "和",
+        "轨道",
+        "交通",
+        "等",
+        "设备",
+        "PHM",
+        "技术",
+        "发展",
+        "历程",
+        "及",
+        "发展",
+        "现状",
+        ",",
+        "分析",
+        "了",
+        "我",
+        "国",
+        "PHM",
+        "技术",
+        "的",
+        "发展",
+        "现状",
+        "及",
+        "存在",
+        "的",
+        "问题",
+        ",",
+        "预测",
+        "了",
+        "未来",
+        "发展",
+        "方向",
+        "和",
+        "应用",
+        "领域"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "(",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "PHM",
+          "head": 8,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ")",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "基本",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "概念",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "与",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "内涵",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "回顾",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "国外",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "飞机",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "发动机",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "固定翼",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "飞机",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "直升机",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "航天",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "飞行器",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "舰船",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "车辆",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "和",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 35,
+          "form": "轨道",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "交通",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "等",
+          "head": 36,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 38,
+          "form": "设备",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "PHM",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "技术",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "发展",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "历程",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "及",
+          "head": 45,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 44,
+          "form": "发展",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "现状",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "分析",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "了",
+          "head": 47,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 49,
+          "form": "我",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 50,
+          "form": "国",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "PHM",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "技术",
+          "head": 55,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "的",
+          "head": 52,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 54,
+          "form": "发展",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "现状",
+          "head": 59,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "及",
+          "head": 59,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 57,
+          "form": "存在",
+          "head": 59,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "的",
+          "head": 57,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 59,
+          "form": "问题",
+          "head": 47,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": ",",
+          "head": 47,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 61,
+          "form": "预测",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 62,
+          "form": "了",
+          "head": 61,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 63,
+          "form": "未来",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 64,
+          "form": "发展",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "方向",
+          "head": 68,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "和",
+          "head": 68,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 67,
+          "form": "应用",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "领域",
+          "head": 61,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "梳理了故障预测与健康管理技术体系架构,介绍了故障模型、状态监测、数据处理、综合诊断、健康管理、维修决策和后勤支援信息系统等关键技术,最后给出了我国发展PHM技术的意见和建议",
+      "tokens": [
+        "梳理",
+        "了",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "技术",
+        "体系",
+        "架构",
+        ",",
+        "介绍",
+        "了",
+        "故障",
+        "模型",
+        "、",
+        "状态",
+        "监测",
+        "、",
+        "数据",
+        "处理",
+        "、",
+        "综合",
+        "诊断",
+        "、",
+        "健康",
+        "管理",
+        "、",
+        "维修",
+        "决策",
+        "和",
+        "后勤",
+        "支援",
+        "信息",
+        "系统",
+        "等",
+        "关键",
+        "技术",
+        ",",
+        "最后",
+        "给出",
+        "了",
+        "我",
+        "国",
+        "发展",
+        "PHM",
+        "技术",
+        "的",
+        "意见",
+        "和",
+        "建议"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "梳理",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "体系",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "架构",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "介绍",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "了",
+          "head": 12,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "模型",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "状态",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "监测",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "数据",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "处理",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "综合",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "诊断",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "健康",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "管理",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "维修",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "决策",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "和",
+          "head": 35,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "后勤",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "支援",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "信息",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "系统",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "等",
+          "head": 35,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 37,
+          "form": "关键",
+          "head": 38,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "技术",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "最后",
+          "head": 41,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 41,
+          "form": "给出",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "了",
+          "head": 41,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 43,
+          "form": "我",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 44,
+          "form": "国",
+          "head": 45,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "发展",
+          "head": 51,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "PHM",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "技术",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 45,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 49,
+          "form": "意见",
+          "head": 51,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "和",
+          "head": 51,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 51,
+          "form": "建议",
+          "head": 41,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

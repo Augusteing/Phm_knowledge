@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "保障",
+    "object": "任务完成成功率",
+    "object_type": "指标"
+  },
+  {
+    "subject": "健康管理体系",
+    "subject_type": "体系",
+    "relation": "适用于",
+    "object": "综合化航空电子系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "PHM工程实现",
+    "subject_type": "工程",
+    "relation": "包含",
+    "object": "关键技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "PHM工程实现",
+    "subject_type": "工程",
+    "relation": "包含",
+    "object": "解决方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "多信号增强诊断方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "测试性模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "马尔科夫网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "贝叶斯网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "多信号增强诊断方法",
+    "subject_type": "方法",
+    "relation": "是",
+    "object": "关键技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "方法",
+    "relation": "是",
+    "object": "关键技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空电子系统",
+    "object_type": "系统"
+  }
+]

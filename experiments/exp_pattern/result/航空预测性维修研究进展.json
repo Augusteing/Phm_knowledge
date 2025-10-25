@@ -1,0 +1,121 @@
+[
+  {
+    "subject": "飞机维修保障模式",
+    "subject_type": "维修模式",
+    "relation": "演变为",
+    "object": "基于状态的预测性维修",
+    "object_type": "维修模式"
+  },
+  {
+    "subject": "预测性维修",
+    "subject_type": "维修模式",
+    "relation": "是",
+    "object": "系统工程",
+    "object_type": "工程方法"
+  },
+  {
+    "subject": "预测性维修",
+    "subject_type": "维修模式",
+    "relation": "整合",
+    "object": "技术",
+    "object_type": "要素"
+  },
+  {
+    "subject": "预测性维修",
+    "subject_type": "维修模式",
+    "relation": "整合",
+    "object": "过程",
+    "object_type": "要素"
+  },
+  {
+    "subject": "预测性维修",
+    "subject_type": "维修模式",
+    "relation": "整合",
+    "object": "能力",
+    "object_type": "要素"
+  },
+  {
+    "subject": "预测性维修",
+    "subject_type": "维修模式",
+    "relation": "涉及",
+    "object": "管理政策",
+    "object_type": "规范/政策"
+  },
+  {
+    "subject": "预测性维修",
+    "subject_type": "维修模式",
+    "relation": "涉及",
+    "object": "标准规范",
+    "object_type": "规范/政策"
+  },
+  {
+    "subject": "预测性维修",
+    "subject_type": "维修模式",
+    "relation": "贯穿",
+    "object": "寿命周期",
+    "object_type": "阶段"
+  },
+  {
+    "subject": "航空预测性维修",
+    "subject_type": "维修模式",
+    "relation": "包含",
+    "object": "航空健康监测",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空预测性维修",
+    "subject_type": "维修模式",
+    "relation": "包含",
+    "object": "故障诊断",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空预测性维修",
+    "subject_type": "维修模式",
+    "relation": "包含",
+    "object": "失效预测",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空预测性维修",
+    "subject_type": "维修模式",
+    "relation": "包含",
+    "object": "预测性维修决策技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空预测性维修",
+    "subject_type": "维修模式",
+    "relation": "面临",
+    "object": "技术挑战",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "航空预测性维修",
+    "subject_type": "维修模式",
+    "relation": "面临",
+    "object": "应用挑战",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "预测性维修实践",
+    "subject_type": "实践",
+    "relation": "涉及",
+    "object": "行业标准",
+    "object_type": "规范/政策"
+  },
+  {
+    "subject": "预测性维修实践",
+    "subject_type": "实践",
+    "relation": "涉及",
+    "object": "工业界实践",
+    "object_type": "实践"
+  },
+  {
+    "subject": "预测性维修实践",
+    "subject_type": "实践",
+    "relation": "涉及",
+    "object": "用户实践",
+    "object_type": "实践"
+  }
+]

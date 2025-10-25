@@ -1,0 +1,171 @@
+{
+  "entities": [
+    {
+      "name": "PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "飞机机体结构疲劳失效",
+      "type": "问题"
+    },
+    {
+      "name": "自助式保障",
+      "type": "功能"
+    },
+    {
+      "name": "使用和保障费用",
+      "type": "成本"
+    },
+    {
+      "name": "失效物理模型",
+      "type": "理论基础"
+    },
+    {
+      "name": "应力严重系数",
+      "type": "特征"
+    },
+    {
+      "name": "局部应力应变法",
+      "type": "方法"
+    },
+    {
+      "name": "疲劳寿命预测",
+      "type": "任务"
+    },
+    {
+      "name": "修正Neuber法",
+      "type": "方法"
+    },
+    {
+      "name": "应变-寿命曲线",
+      "type": "数据"
+    },
+    {
+      "name": "Manson-Coffin公式",
+      "type": "理论基础"
+    },
+    {
+      "name": "疲劳缺口系数",
+      "type": "参数"
+    },
+    {
+      "name": "MTS Landmark试验机",
+      "type": "工具"
+    },
+    {
+      "name": "2024铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "7050铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "牛顿-拉弗森迭代方法",
+      "type": "算法"
+    },
+    {
+      "name": "飞机结构PHM系统",
+      "type": "系统"
+    },
+    {
+      "name": "应力应变历史记录数据",
+      "type": "数据"
+    },
+    {
+      "name": "当前状态监测数据",
+      "type": "数据"
+    },
+    {
+      "name": "有限元法",
+      "type": "方法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM技术",
+      "relation": "用于",
+      "tail": "飞机机体结构疲劳失效"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "实现",
+      "tail": "自助式保障"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "降低",
+      "tail": "使用和保障费用"
+    },
+    {
+      "head": "失效物理模型",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "应力严重系数",
+      "relation": "基于",
+      "tail": "失效物理模型"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "修正",
+      "tail": "修正Neuber法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "应用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "Manson-Coffin公式",
+      "relation": "描述",
+      "tail": "应变-寿命曲线"
+    },
+    {
+      "head": "疲劳缺口系数",
+      "relation": "影响",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "MTS Landmark试验机",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "2024铝合金",
+      "relation": "属于",
+      "tail": "材料"
+    },
+    {
+      "head": "7050铝合金",
+      "relation": "属于",
+      "tail": "材料"
+    },
+    {
+      "head": "牛顿-拉弗森迭代方法",
+      "relation": "解决",
+      "tail": "非线性方程求根问题"
+    },
+    {
+      "head": "飞机结构PHM系统",
+      "relation": "集成",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "飞机结构PHM系统",
+      "relation": "依据",
+      "tail": "应力应变历史记录数据"
+    },
+    {
+      "head": "飞机结构PHM系统",
+      "relation": "依据",
+      "tail": "当前状态监测数据"
+    },
+    {
+      "head": "有限元法",
+      "relation": "适用于",
+      "tail": "复杂机体结构"
+    }
+  ]
+}

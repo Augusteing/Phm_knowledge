@@ -1,0 +1,128 @@
+[
+  {
+    "subject": "大型飞机机载系统",
+    "subject_type": "系统",
+    "relation": "装备",
+    "object": "PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "高可靠运行",
+    "object_type": "目标"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "健康服役",
+    "object_type": "目标"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "确保",
+    "object": "高可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "确保",
+    "object": "高安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "确保",
+    "object": "高维修保障性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "故障预测与健康管理空地结构",
+    "subject_type": "体系结构",
+    "relation": "具有",
+    "object": "开放式规范",
+    "object_type": "规范"
+  },
+  {
+    "subject": "故障预测与健康管理空地结构",
+    "subject_type": "体系结构",
+    "relation": "具有",
+    "object": "模块化规范",
+    "object_type": "规范"
+  },
+  {
+    "subject": "故障预测与健康管理空地结构",
+    "subject_type": "体系结构",
+    "relation": "具有",
+    "object": "标准接口规范",
+    "object_type": "规范"
+  },
+  {
+    "subject": "智能故障诊断算法",
+    "subject_type": "算法",
+    "relation": "采用",
+    "object": "分层聚类",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能故障诊断算法",
+    "subject_type": "算法",
+    "relation": "采用",
+    "object": "交叉增强校核",
+    "object_type": "技术"
+  },
+  {
+    "subject": "故障预测算法",
+    "subject_type": "算法",
+    "relation": "结合",
+    "object": "数据驱动方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障预测算法",
+    "subject_type": "算法",
+    "relation": "结合",
+    "object": "失效物理方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "维修保障决策方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "领域",
+    "relation": "包含关键技术",
+    "object": "机载健康管理传感器网络",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "领域",
+    "relation": "包含关键技术",
+    "object": "鲁棒故障特征提取方法",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "领域",
+    "relation": "包含关键技术",
+    "object": "智能故障诊断算法",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "领域",
+    "relation": "包含关键技术",
+    "object": "故障预测算法",
+    "object_type": "关键技术"
+  }
+]

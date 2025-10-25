@@ -1,0 +1,220 @@
+{
+  "entities": [
+    {
+      "name": "KPCA-DBN模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "排气温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康管理",
+      "type": "应用领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高斯核函数",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "受限玻尔兹曼机",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "反向传播网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "GA-BP网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "传统神经网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "主成分分析",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "BP神经网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非线性特征提取",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "数据降维",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "模型精度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "基于",
+      "tail": "核主成分分析",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "基于",
+      "tail": "深度置信网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "应用于",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "预测",
+      "tail": "排气温度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "支持",
+      "tail": "健康管理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "训练",
+      "tail": "QAR数据",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯核函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "数据降维",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "包含",
+      "tail": "受限玻尔兹曼机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "包含",
+      "tail": "反向传播网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "GA-BP网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "传统神经网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "提高",
+      "tail": "模型精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "降低",
+      "tail": "网络结构复杂度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "改进了",
+      "tail": "主成分分析",
+      "evaluation": "正确"
+    },
+    {
+      "head": "GA-BP网络",
+      "relation": "基于",
+      "tail": "遗传算法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "GA-BP网络",
+      "relation": "基于",
+      "tail": "BP神经网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "评价指标是",
+      "tail": "平均绝对误差",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "实现",
+      "tail": "非线性特征提取",
+      "evaluation": "正确"
+    }
+  ]
+}

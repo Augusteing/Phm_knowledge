@@ -1,0 +1,805 @@
+{
+  "title": "飞机供电系统的改进型PHM方案",
+  "summary": "针对目前飞机供电系统中集中式PHM设计方案无法满足日趋复杂的供电系统要求这一问题,在对飞机供电系统进行扩展式FMEA分析及故障分类的基础上,为供电系统设计了分布—集中式PHM系统,并采用了基于扩展FMEA分析和模糊综合评判的诊断预测模型,最后将供电系统PHM很好地融入到飞机原有的总体PHM系统中,具有一定的实用价值,为后续供电系统PHM系统开发研究提供参考。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对目前飞机供电系统中集中式PHM设计方案无法满足日趋复杂的供电系统要求这一问题,在对飞机供电系统进行扩展式FMEA分析及故障分类的基础上,为供电系统设计了分布—集中式PHM系统,并采用了基于扩展FMEA分析和模糊综合评判的诊断预测模型,最后将供电系统PHM很好地融入到飞机原有的总体PHM系统中,具有一定的实用价值,为后续供电系统PHM系统开发研究提供参考",
+      "tokens": [
+        "针对",
+        "目前",
+        "飞机",
+        "供电",
+        "系统",
+        "中",
+        "集中式",
+        "PHM",
+        "设计",
+        "方案",
+        "无法",
+        "满足",
+        "日趋",
+        "复杂",
+        "的",
+        "供电",
+        "系统",
+        "要求",
+        "这",
+        "一",
+        "问题",
+        ",",
+        "在",
+        "对",
+        "飞机",
+        "供电",
+        "系统",
+        "进行",
+        "扩展式",
+        "FMEA",
+        "分析",
+        "及",
+        "故障",
+        "分类",
+        "的",
+        "基础",
+        "上",
+        ",",
+        "为",
+        "供电",
+        "系统",
+        "设计",
+        "了",
+        "分布",
+        "—",
+        "集中式",
+        "PHM",
+        "系统",
+        ",",
+        "并",
+        "采用",
+        "了",
+        "基于",
+        "扩展",
+        "FMEA",
+        "分析",
+        "和",
+        "模糊",
+        "综合",
+        "评判",
+        "的",
+        "诊断",
+        "预测",
+        "模型",
+        ",",
+        "最后",
+        "将",
+        "供电",
+        "系统",
+        "PHM",
+        "很",
+        "好",
+        "地",
+        "融入",
+        "到",
+        "飞机",
+        "原有",
+        "的",
+        "总体",
+        "PHM",
+        "系统",
+        "中",
+        ",",
+        "具有",
+        "一定",
+        "的",
+        "实用",
+        "价值",
+        ",",
+        "为",
+        "后续",
+        "供电",
+        "系统",
+        "PHM",
+        "系统",
+        "开发",
+        "研究",
+        "提供",
+        "参考"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 42,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "目前",
+          "head": 12,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "供电",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "中",
+          "head": 12,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "集中式",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "PHM",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "设计",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "方案",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "无法",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "满足",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "日趋",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "复杂",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 16,
+          "form": "供电",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "系统",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "要求",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "这",
+          "head": 21,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 20,
+          "form": "一",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 21,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "在",
+          "head": 42,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 24,
+          "form": "对",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "飞机",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "供电",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "系统",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "进行",
+          "head": 36,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "扩展式",
+          "head": 34,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "FMEA",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "分析",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "及",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 33,
+          "form": "故障",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "分类",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 36,
+          "form": "基础",
+          "head": 37,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "上",
+          "head": 23,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 38,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "为",
+          "head": 42,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 40,
+          "form": "供电",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "系统",
+          "head": 39,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "设计",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "了",
+          "head": 42,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 44,
+          "form": "分布",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "—",
+          "head": 48,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "集中式",
+          "head": 48,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 47,
+          "form": "PHM",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "系统",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "并",
+          "head": 42,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 51,
+          "form": "采用",
+          "head": 42,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 52,
+          "form": "了",
+          "head": 51,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 53,
+          "form": "基于",
+          "head": 64,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 54,
+          "form": "扩展",
+          "head": 53,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 55,
+          "form": "FMEA",
+          "head": 56,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "分析",
+          "head": 58,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "和",
+          "head": 58,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 58,
+          "form": "模糊",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "综合",
+          "head": 60,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 60,
+          "form": "评判",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "的",
+          "head": 53,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 62,
+          "form": "诊断",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "预测",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "模型",
+          "head": 51,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 66,
+          "form": "最后",
+          "head": 74,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 67,
+          "form": "将",
+          "head": 74,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 68,
+          "form": "供电",
+          "head": 69,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "系统",
+          "head": 70,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": "PHM",
+          "head": 74,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "很",
+          "head": 72,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 72,
+          "form": "好",
+          "head": 74,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 73,
+          "form": "地",
+          "head": 72,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 74,
+          "form": "融入",
+          "head": 42,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 75,
+          "form": "到",
+          "head": 74,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 76,
+          "form": "飞机",
+          "head": 81,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "原有",
+          "head": 81,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 78,
+          "form": "的",
+          "head": 77,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 79,
+          "form": "总体",
+          "head": 81,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 80,
+          "form": "PHM",
+          "head": 81,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 81,
+          "form": "系统",
+          "head": 82,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "中",
+          "head": 74,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 83,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 84,
+          "form": "具有",
+          "head": 42,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 85,
+          "form": "一定",
+          "head": 88,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 86,
+          "form": "的",
+          "head": 85,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 87,
+          "form": "实用",
+          "head": 88,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 88,
+          "form": "价值",
+          "head": 84,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 89,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 90,
+          "form": "为",
+          "head": 98,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 91,
+          "form": "后续",
+          "head": 93,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 92,
+          "form": "供电",
+          "head": 93,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 93,
+          "form": "系统",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "PHM",
+          "head": 95,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 95,
+          "form": "系统",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": "开发",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "研究",
+          "head": 90,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": "提供",
+          "head": 42,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 99,
+          "form": "参考",
+          "head": 98,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

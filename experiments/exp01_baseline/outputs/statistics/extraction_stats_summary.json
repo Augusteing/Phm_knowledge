@@ -1,0 +1,45 @@
+{
+  "total_papers": 8,
+  "by_model": {
+    "DeepSeek": {
+      "paper_count": 1,
+      "entity_count_total": 20,
+      "entity_count_avg": 20.0,
+      "entity_count_median": 20,
+      "entity_count_min": 20,
+      "entity_count_max": 20,
+      "entity_type_count_avg": 10.0,
+      "entity_type_count_median": 10,
+      "relation_count_total": 20,
+      "relation_count_avg": 20.0,
+      "relation_count_median": 20,
+      "relation_count_min": 20,
+      "relation_count_max": 20,
+      "relation_type_count_avg": 1.0,
+      "relation_type_count_median": 1
+    },
+    "Gemini": {
+      "paper_count": 7,
+      "entity_count_total": 190,
+      "entity_count_avg": 27.14,
+      "entity_count_median": 31,
+      "entity_count_min": 13,
+      "entity_count_max": 35,
+      "entity_type_count_avg": 9.57,
+      "entity_type_count_median": 10,
+      "relation_count_total": 155,
+      "relation_count_avg": 22.14,
+      "relation_count_median": 25,
+      "relation_count_min": 13,
+      "relation_count_max": 28,
+      "relation_type_count_avg": 1.0,
+      "relation_type_count_median": 1
+    }
+  },
+  "overall": {
+    "entity_count_total": 210,
+    "entity_count_avg": 26.25,
+    "relation_count_total": 175,
+    "relation_count_avg": 21.88
+  }
+}

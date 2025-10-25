@@ -1,0 +1,135 @@
+[
+  {
+    "subject": "航空发动机健康管理",
+    "subject_type": "关键技术",
+    "relation": "提高",
+    "object": "安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机健康管理",
+    "subject_type": "关键技术",
+    "relation": "提高",
+    "object": "可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机健康管理",
+    "subject_type": "关键技术",
+    "relation": "提高",
+    "object": "经济可承受性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机健康管理",
+    "subject_type": "关键技术",
+    "relation": "实现",
+    "object": "发动机视情维修",
+    "object_type": "维修方法"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "支撑技术",
+    "relation": "支撑",
+    "object": "健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "航空发动机气路故障诊断的总体实施流程",
+    "subject_type": "流程",
+    "relation": "包括",
+    "object": "气路测量参数的选择",
+    "object_type": "步骤"
+  },
+  {
+    "subject": "航空发动机气路故障诊断的总体实施流程",
+    "subject_type": "流程",
+    "relation": "包括",
+    "object": "参数预处理方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机气路故障诊断的总体实施流程",
+    "subject_type": "流程",
+    "relation": "包括",
+    "object": "基线模型的构建方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "基于模型的诊断方法",
+    "object_type": "诊断方法"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "数据驱动的诊断方法",
+    "object_type": "诊断方法"
+  },
+  {
+    "subject": "气路故障诊断",
+    "subject_type": "技术领域",
+    "relation": "未来发展方向",
+    "object": "性能预测",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "气路故障诊断",
+    "subject_type": "技术领域",
+    "relation": "未来发展方向",
+    "object": "在线气路故障诊断",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "气路故障诊断",
+    "subject_type": "技术领域",
+    "relation": "未来发展方向",
+    "object": "信息融合",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "气路故障诊断",
+    "subject_type": "技术领域",
+    "relation": "未来发展方向",
+    "object": "过渡态气路故障诊断",
+    "object_type": "研究方向"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术领域",
+    "relation": "形成",
+    "object": "诊断方法体系",
+    "object_type": "体系"
+  },
+  {
+    "subject": "诊断方法体系",
+    "subject_type": "体系",
+    "relation": "基于",
+    "object": "基于模型的诊断方法",
+    "object_type": "诊断方法"
+  },
+  {
+    "subject": "诊断方法体系",
+    "subject_type": "体系",
+    "relation": "基于",
+    "object": "数据驱动的诊断方法",
+    "object_type": "诊断方法"
+  },
+  {
+    "subject": "中国",
+    "subject_type": "国家",
+    "relation": "应建立",
+    "object": "航空发动机健康管理系统的设计体系",
+    "object_type": "设计体系"
+  },
+  {
+    "subject": "多方协作",
+    "subject_type": "合作模式",
+    "relation": "提供技术支撑",
+    "object": "先进航空发动机健康管理系统",
+    "object_type": "系统"
+  }
+]

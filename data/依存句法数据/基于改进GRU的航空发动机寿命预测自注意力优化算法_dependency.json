@@ -1,0 +1,1137 @@
+{
+  "title": "基于改进GRU的航空发动机寿命预测自注意力优化算法",
+  "summary": "航空发动机性能参数具有多元高维及时序性，可表征寿命退行，采用常规模型训练易导致梯度消失。因此提出一种改进门控循环单元（gated recurrent unit）的自注意力（self-attention）优化算法，分析数据源域行梯度及列间相关性，扩增寿命强相关列优化特征权重，加速模型收敛，提高预测精度。在发动机寿命预测数据集（C-MAPSS）上实验表明：该算法得到的寿命方均根误差（RMSE）落在区间[10.52,18.91]，超前预测分值（score）落在区间[48.69,204.98]，相比传统方法大幅降低，改善了寿命预测效果，能够为发动机寿命预测和超前维护提供有效解决方案。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机性能参数具有多元高维及时序性",
+      "tokens": [
+        "航空",
+        "发动机",
+        "性能",
+        "参数",
+        "具有",
+        "多元",
+        "高维",
+        "及",
+        "时序性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "性能",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "参数",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "多元",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "高维",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "及",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "时序性",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "可表征寿命退行",
+      "tokens": [
+        "可",
+        "表征",
+        "寿命",
+        "退行"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "可",
+          "head": 2,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "表征",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "寿命",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "退行",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "采用常规模型训练易导致梯度消失",
+      "tokens": [
+        "采用",
+        "常规",
+        "模型",
+        "训练",
+        "易",
+        "导致",
+        "梯度",
+        "消失"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 6,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "常规",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "训练",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "易",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "导致",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "梯度",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "消失",
+          "head": 6,
+          "deprel": "ccomp",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "因此提出一种改进门控循环单元（gated recurrent unit）的自注意力（self-attention）优化算法",
+      "tokens": [
+        "因此",
+        "提出",
+        "一",
+        "种",
+        "改",
+        "进",
+        "门控",
+        "循环",
+        "单元",
+        "（",
+        "gated",
+        "recurrent",
+        "unit",
+        "）",
+        "的",
+        "自注意力",
+        "（",
+        "self-attention",
+        "）",
+        "优化",
+        "算法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "因此",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "一",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "种",
+          "head": 21,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "改",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "进",
+          "head": 5,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "门控",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "循环",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "单元",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "（",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "gated",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "recurrent",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "unit",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "）",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "自注意力",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "（",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "self-attention",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "）",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "优化",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "算法",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "分析数据源域行梯度及列间相关性",
+      "tokens": [
+        "分析",
+        "数据源",
+        "域行",
+        "梯度",
+        "及",
+        "列间",
+        "相关性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "数据源",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "域行",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "梯度",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "及",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "列间",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "相关性",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "扩增寿命强相关列优化特征权重",
+      "tokens": [
+        "扩增",
+        "寿命",
+        "强",
+        "相关",
+        "列",
+        "优化",
+        "特征",
+        "权",
+        "重"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "扩增",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "寿命",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "强",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "VA"
+        },
+        {
+          "id": 4,
+          "form": "相关",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "列",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "优化",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "特征",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "权",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "重",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "加速模型收敛",
+      "tokens": [
+        "加速",
+        "模型",
+        "收敛"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "加速",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "模型",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "收敛",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提高预测精度",
+      "tokens": [
+        "提高",
+        "预测",
+        "精度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提高",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "预测",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "精度",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在发动机寿命预测数据集（C-MAPSS）上实验表明：该算法得到的寿命方均根误差（RMSE）落在区间[10.52,18.91]",
+      "tokens": [
+        "在",
+        "发动机",
+        "寿命",
+        "预测",
+        "数据集",
+        "（",
+        "C-MAPSS",
+        "）",
+        "上",
+        "实验",
+        "表明",
+        "：",
+        "该",
+        "算法",
+        "得到",
+        "的",
+        "寿命",
+        "方均根",
+        "误差",
+        "（",
+        "RMSE",
+        "）",
+        "落",
+        "在",
+        "区间",
+        "[",
+        "10.52",
+        ",",
+        "18.91",
+        "]"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "寿命",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "数据集",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "（",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "C-MAPSS",
+          "head": 5,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "）",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "实验",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "：",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "该",
+          "head": 14,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 14,
+          "form": "算法",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "得到",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "寿命",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "方均根",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "误差",
+          "head": 23,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "（",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "RMSE",
+          "head": 19,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 22,
+          "form": "）",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "落",
+          "head": 11,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "在",
+          "head": 23,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "区间",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "[",
+          "head": 29,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "10.52",
+          "head": 29,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 28,
+          "form": ",",
+          "head": 29,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "18.91",
+          "head": 23,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 30,
+          "form": "]",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    },
+    {
+      "sentence": "超前预测分值（score）落在区间[48.69,204.98]",
+      "tokens": [
+        "超前",
+        "预测",
+        "分值",
+        "（",
+        "score",
+        "）",
+        "落",
+        "在",
+        "区间",
+        "[",
+        "48.69",
+        ",",
+        "204.98",
+        "]"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "超前",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "预测",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "分值",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "（",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "score",
+          "head": 3,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "）",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "落",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "在",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "区间",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "[",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "48.69",
+          "head": 13,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "204.98",
+          "head": 7,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "]",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    },
+    {
+      "sentence": "相比传统方法大幅降低",
+      "tokens": [
+        "相比",
+        "传统",
+        "方法",
+        "大幅",
+        "降低"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "相比",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "传统",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "大幅",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "降低",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "改善了寿命预测效果",
+      "tokens": [
+        "改善",
+        "了",
+        "寿命",
+        "预测",
+        "效果"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "改善",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "寿命",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "效果",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "能够为发动机寿命预测和超前维护提供有效解决方案",
+      "tokens": [
+        "能够",
+        "为",
+        "发动机",
+        "寿命",
+        "预测",
+        "和",
+        "超前",
+        "维护",
+        "提供",
+        "有效",
+        "解决",
+        "方案"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "能够",
+          "head": 9,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "为",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "寿命",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "超前",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "维护",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "有效",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "解决",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方案",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

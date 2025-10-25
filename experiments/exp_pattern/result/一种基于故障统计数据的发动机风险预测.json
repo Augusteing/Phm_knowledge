@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "发动机风险预测",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "故障统计数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "发动机多故障模式风险评估流程",
+    "subject_type": "流程",
+    "relation": "基于",
+    "object": "蒙特卡罗仿真",
+    "object_type": "技术"
+  },
+  {
+    "subject": "发动机多故障模式风险评估流程",
+    "subject_type": "流程",
+    "relation": "用于预测",
+    "object": "发动机故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "发动机多故障模式风险评估流程",
+    "subject_type": "流程",
+    "relation": "用于评估",
+    "object": "故障风险",
+    "object_type": "风险"
+  },
+  {
+    "subject": "风险预测方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "风险因子计算方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "风险预测方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "飞行风险计算方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "风险预测",
+    "subject_type": "任务",
+    "relation": "基于",
+    "object": "历史故障数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "风险预测",
+    "subject_type": "任务",
+    "relation": "针对",
+    "object": "多种故障模式",
+    "object_type": "故障"
+  },
+  {
+    "subject": "维修周期",
+    "subject_type": "参数",
+    "relation": "影响",
+    "object": "风险因子",
+    "object_type": "指标"
+  },
+  {
+    "subject": "降低风险的方案",
+    "subject_type": "方案",
+    "relation": "用于降低",
+    "object": "飞行风险",
+    "object_type": "风险"
+  }
+]

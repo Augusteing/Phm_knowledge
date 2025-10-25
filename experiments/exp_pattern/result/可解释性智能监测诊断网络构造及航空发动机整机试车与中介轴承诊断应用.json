@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "航空发动机故障预测与健康管理",
+    "subject_type": "技术领域",
+    "relation": "是",
+    "object": "关键技术",
+    "object_type": "技术类别"
+  },
+  {
+    "subject": "航空发动机故障预测与健康管理",
+    "subject_type": "技术领域",
+    "relation": "提高",
+    "object": "航空发动机安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机故障预测与健康管理",
+    "subject_type": "技术领域",
+    "relation": "提高",
+    "object": "航空发动机可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "深度学习",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "模型可解释性差",
+    "object_type": "问题"
+  },
+  {
+    "subject": "深度学习",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "理论基础薄弱",
+    "object_type": "问题"
+  },
+  {
+    "subject": "可解释性智能监测诊断网络",
+    "subject_type": "网络模型",
+    "relation": "应用于",
+    "object": "异常检测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "可解释性智能监测诊断网络",
+    "subject_type": "网络模型",
+    "relation": "应用于",
+    "object": "中介轴承故障诊断",
+    "object_type": "任务"
+  },
+  {
+    "subject": "可解释性智能监测诊断网络",
+    "subject_type": "网络模型",
+    "relation": "验证于",
+    "object": "某型涡扇发动机",
+    "object_type": "研究对象"
+  },
+  {
+    "subject": "稀疏表示模型",
+    "subject_type": "模型",
+    "relation": "融入",
+    "object": "发动机振动信号先验信息",
+    "object_type": "数据"
+  },
+  {
+    "subject": "核心网络",
+    "subject_type": "网络模块",
+    "relation": "展开自",
+    "object": "迭代求解算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "可解释性异常检测子网络",
+    "subject_type": "网络模块",
+    "relation": "基于",
+    "object": "对抗训练框架",
+    "object_type": "技术框架"
+  },
+  {
+    "subject": "可解释性故障诊断子网络",
+    "subject_type": "网络模块",
+    "relation": "基于",
+    "object": "特征提取框架",
+    "object_type": "技术框架"
+  },
+  {
+    "subject": "迭代算法展开的网络构造框架",
+    "subject_type": "技术框架",
+    "relation": "具备",
+    "object": "明确的理论基础",
+    "object_type": "属性"
+  },
+  {
+    "subject": "可视化方法",
+    "subject_type": "方法",
+    "relation": "检验",
+    "object": "网络学习效果",
+    "object_type": "评估指标"
+  },
+  {
+    "subject": "试车数据",
+    "subject_type": "数据",
+    "relation": "验证",
+    "object": "可解释性智能监测诊断网络",
+    "object_type": "网络模型"
+  }
+]

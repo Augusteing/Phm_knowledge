@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "时间序列分析方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "航空发动机状态监视",
+    "object_type": "应用"
+  },
+  {
+    "subject": "时间序列分析方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "故障诊断",
+    "object_type": "任务"
+  },
+  {
+    "subject": "时间序列分析方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "自回归模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "自回归模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "趋势预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "趋势预测",
+    "subject_type": "任务",
+    "relation": "针对",
+    "object": "监视参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "故障识别法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "时间序列分析方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障识别法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "模式识别技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "故障识别法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "判别函数",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障识别法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "参数相关分析法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障识别法",
+    "subject_type": "方法",
+    "relation": "识别",
+    "object": "发动机典型故障",
+    "object_type": "故障"
+  }
+]

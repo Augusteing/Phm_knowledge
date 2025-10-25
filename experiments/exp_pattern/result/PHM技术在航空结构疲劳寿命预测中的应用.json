@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "疲劳寿命预测",
+    "object_type": "应用"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "预报",
+    "object": "疲劳故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "使用和保障费用",
+    "object_type": "成本"
+  },
+  {
+    "subject": "飞机机体结构疲劳失效",
+    "subject_type": "事件",
+    "relation": "发生于",
+    "object": "紧固件孔的孔边位置",
+    "object_type": "位置"
+  },
+  {
+    "subject": "结构疲劳断裂",
+    "subject_type": "事件",
+    "relation": "导致",
+    "object": "灾难性的事故",
+    "object_type": "事件"
+  },
+  {
+    "subject": "疲劳寿命预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "失效物理模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "疲劳寿命预测方法",
+    "subject_type": "方法",
+    "relation": "求解",
+    "object": "应力严重系数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "疲劳寿命预测方法",
+    "subject_type": "方法",
+    "relation": "求解",
+    "object": "疲劳缺口系数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "疲劳寿命预测方法",
+    "subject_type": "方法",
+    "relation": "修正",
+    "object": "应变-寿命曲线",
+    "object_type": "模型"
+  },
+  {
+    "subject": "局部应力应变法",
+    "subject_type": "方法",
+    "relation": "适用於",
+    "object": "高、低周疲劳寿命的预测",
+    "object_type": "应用"
+  }
+]

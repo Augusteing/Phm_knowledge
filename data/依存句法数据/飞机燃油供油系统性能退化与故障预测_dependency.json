@@ -1,0 +1,969 @@
+{
+  "title": "飞机燃油供油系统性能退化与故障预测",
+  "summary": "飞机燃油系统对飞机的安全性有着重大的影响。在飞机燃油系统中应用健康管理技术,可以达到有效保证飞机飞行安全的目的。通过分析飞机燃油供油系统的工作状况,研究了飞机燃油供油系统因供油增压泵叶片磨损导致性能退化的过程,并利用Simulink建立了相应的性能退化模型,仿真了整个性能退化历程。给出了相应的飞机燃油供油系统健康状态指数,并利用灰色预测模型进行了故障预测。为飞机燃油系统的健康管理打下了基础,具有理论和实际的工程应用价值。",
+  "analyzed_sentences": [
+    {
+      "sentence": "飞机燃油系统对飞机的安全性有着重大的影响",
+      "tokens": [
+        "飞机",
+        "燃油",
+        "系统",
+        "对",
+        "飞机",
+        "的",
+        "安全性",
+        "有",
+        "着",
+        "重大",
+        "的",
+        "影响"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "燃油",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "对",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "安全性",
+          "head": 4,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VE"
+        },
+        {
+          "id": 9,
+          "form": "着",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "重大",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "影响",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在飞机燃油系统中应用健康管理技术,可以达到有效保证飞机飞行安全的目的",
+      "tokens": [
+        "在",
+        "飞机",
+        "燃油",
+        "系统",
+        "中",
+        "应用",
+        "健康",
+        "管理",
+        "技术",
+        ",",
+        "可以",
+        "达到",
+        "有效",
+        "保证",
+        "飞机",
+        "飞行",
+        "安全",
+        "的",
+        "目的"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "燃油",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 5,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "中",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 6,
+          "form": "应用",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "可以",
+          "head": 12,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "达到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "有效",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "保证",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "飞机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "飞行",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "安全",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "目的",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过分析飞机燃油供油系统的工作状况,研究了飞机燃油供油系统因供油增压泵叶片磨损导致性能退化的过程,并利用Simulink建立了相应的性能退化模型,仿真了整个性能退化历程",
+      "tokens": [
+        "通过",
+        "分析",
+        "飞机",
+        "燃油",
+        "供油",
+        "系统",
+        "的",
+        "工作",
+        "状况",
+        ",",
+        "研究",
+        "了",
+        "飞机",
+        "燃油",
+        "供油",
+        "系统",
+        "因",
+        "供油",
+        "增压泵",
+        "叶片",
+        "磨损",
+        "导致",
+        "性能",
+        "退化",
+        "的",
+        "过程",
+        ",",
+        "并",
+        "利用",
+        "Simulink",
+        "建立",
+        "了",
+        "相应",
+        "的",
+        "性能",
+        "退化",
+        "模型",
+        ",",
+        "仿真",
+        "了",
+        "整",
+        "个",
+        "性能",
+        "退化",
+        "历程"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "燃油",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "供油",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "工作",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "状况",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "飞机",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "燃油",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "供油",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "系统",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "因",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "供油",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "增压泵",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "叶片",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "磨损",
+          "head": 17,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "导致",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "性能",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "退化",
+          "head": 22,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "的",
+          "head": 22,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 26,
+          "form": "过程",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "并",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "利用",
+          "head": 11,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "Simulink",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "建立",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "了",
+          "head": 31,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 33,
+          "form": "相应",
+          "head": 37,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "性能",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "退化",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "模型",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": ",",
+          "head": 29,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "仿真",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "了",
+          "head": 39,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 41,
+          "form": "整",
+          "head": 45,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 42,
+          "form": "个",
+          "head": 41,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 43,
+          "form": "性能",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "退化",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "历程",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "给出了相应的飞机燃油供油系统健康状态指数,并利用灰色预测模型进行了故障预测",
+      "tokens": [
+        "给出",
+        "了",
+        "相应",
+        "的",
+        "飞机",
+        "燃油",
+        "供油",
+        "系统",
+        "健康",
+        "状态",
+        "指数",
+        ",",
+        "并",
+        "利用",
+        "灰色",
+        "预测",
+        "模型",
+        "进行",
+        "了",
+        "故障",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "相应",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "燃油",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "供油",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "健康",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "状态",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "指数",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "利用",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "灰色",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "预测",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "模型",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "进行",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "了",
+          "head": 18,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 20,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "预测",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为飞机燃油系统的健康管理打下了基础,具有理论和实际的工程应用价值",
+      "tokens": [
+        "为",
+        "飞机",
+        "燃油",
+        "系统",
+        "的",
+        "健康",
+        "管理",
+        "打下",
+        "了",
+        "基础",
+        ",",
+        "具有",
+        "理论",
+        "和",
+        "实际",
+        "的",
+        "工程",
+        "应用",
+        "价值"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "燃油",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "打下",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "基础",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "具有",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "理论",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "和",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "实际",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "工程",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "应用",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "价值",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "title": "虚拟仪器技术在飞机燃油系统健康监控中的应用",
+  "summary": "以飞机燃油系统为对象,采用虚拟仪器技术来实现油压的采集和分析,进而判断燃油系统的故障模式。研究结果表明,虚拟仪器技术不仅为燃油系统的故障监控提供了演示验证的手段,更充分证明了半物理演示验证实验的可行性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "以飞机燃油系统为对象,采用虚拟仪器技术来实现油压的采集和分析,进而判断燃油系统的故障模式",
+      "tokens": [
+        "以",
+        "飞机",
+        "燃油",
+        "系统",
+        "为",
+        "对象",
+        ",",
+        "采用",
+        "虚拟",
+        "仪器",
+        "技术",
+        "来",
+        "实现",
+        "油压",
+        "的",
+        "采集",
+        "和",
+        "分析",
+        ",",
+        "进而",
+        "判断",
+        "燃油",
+        "系统",
+        "的",
+        "故障",
+        "模式"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "燃油",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "对象",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "采用",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "虚拟",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "仪器",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "技术",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "来",
+          "head": 13,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 13,
+          "form": "实现",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "油压",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "采集",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "分析",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "进而",
+          "head": 21,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 21,
+          "form": "判断",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "燃油",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "系统",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "故障",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "模式",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "研究结果表明,虚拟仪器技术不仅为燃油系统的故障监控提供了演示验证的手段,更充分证明了半物理演示验证实验的可行性",
+      "tokens": [
+        "研究",
+        "结果",
+        "表明",
+        ",",
+        "虚拟",
+        "仪器",
+        "技术",
+        "不仅",
+        "为",
+        "燃油",
+        "系统",
+        "的",
+        "故障",
+        "监控",
+        "提供",
+        "了",
+        "演示",
+        "验证",
+        "的",
+        "手段",
+        ",",
+        "更",
+        "充分",
+        "证明",
+        "了",
+        "半",
+        "物理",
+        "演示",
+        "验证",
+        "实验",
+        "的",
+        "可行性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "结果",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "虚拟",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "仪器",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "技术",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "不仅",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "为",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "燃油",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "监控",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "提供",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "演示",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "验证",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "手段",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "更",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "充分",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 24,
+          "form": "证明",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "了",
+          "head": 24,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 26,
+          "form": "半",
+          "head": 27,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 27,
+          "form": "物理",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "演示",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "验证",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "实验",
+          "head": 32,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 30,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 32,
+          "form": "可行性",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

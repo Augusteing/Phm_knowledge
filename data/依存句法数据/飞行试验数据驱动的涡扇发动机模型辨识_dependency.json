@@ -1,0 +1,1019 @@
+{
+  "title": "飞行试验数据驱动的涡扇发动机模型辨识",
+  "summary": "为实现航空发动机飞行试验实时监控,分析整理了涡扇发动机实际飞行试验数据,并以三层前向人工神经网络为基础,通过引入输出层反馈至输入层,形成该涡扇发动机的NNARX模型。对包括高压转子转速在内的11个发动机关键参数变化模型进行研究,并在额外架次全程飞行试验数据上验证和讨论辨识模型的推广能力。结果表明,辨识模型样本点上最大相对误差在5%以内,辨识模型可以应用到该型发动机的试飞实时监控中,同时也可为后续建立涡扇发动机的全包线自适应实时监控模型提供参考。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为实现航空发动机飞行试验实时监控,分析整理了涡扇发动机实际飞行试验数据,并以三层前向人工神经网络为基础,通过引入输出层反馈至输入层,形成该涡扇发动机的NNARX模型",
+      "tokens": [
+        "为",
+        "实现",
+        "航空",
+        "发动机",
+        "飞行",
+        "试验",
+        "实时",
+        "监控",
+        ",",
+        "分析",
+        "整理",
+        "了",
+        "涡扇",
+        "发动机",
+        "实际",
+        "飞行",
+        "试验",
+        "数据",
+        ",",
+        "并",
+        "以",
+        "三",
+        "层",
+        "前向",
+        "人工",
+        "神经",
+        "网络",
+        "为",
+        "基础",
+        ",",
+        "通过",
+        "引入",
+        "输出层",
+        "反馈",
+        "至",
+        "输入层",
+        ",",
+        "形成",
+        "该",
+        "涡扇",
+        "发动机",
+        "的",
+        "NNARX",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "实现",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "飞行",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "试验",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "实时",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "监控",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "整理",
+          "head": 10,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "涡扇",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "发动机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "实际",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "飞行",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "试验",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "数据",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "并",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "以",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 22,
+          "form": "三",
+          "head": 23,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 23,
+          "form": "层",
+          "head": 27,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 24,
+          "form": "前向",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "人工",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "神经",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "网络",
+          "head": 21,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "为",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VC"
+        },
+        {
+          "id": 29,
+          "form": "基础",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "通过",
+          "head": 34,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 32,
+          "form": "引入",
+          "head": 31,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "输出层",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "反馈",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "至",
+          "head": 34,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "输入层",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "形成",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "该",
+          "head": 41,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 40,
+          "form": "涡扇",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "发动机",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "的",
+          "head": 41,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 43,
+          "form": "NNARX",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 44,
+          "form": "模型",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对包括高压转子转速在内的11个发动机关键参数变化模型进行研究,并在额外架次全程飞行试验数据上验证和讨论辨识模型的推广能力",
+      "tokens": [
+        "对",
+        "包括",
+        "高压",
+        "转子",
+        "转速",
+        "在内",
+        "的",
+        "11",
+        "个",
+        "发动机",
+        "关键",
+        "参数",
+        "变化",
+        "模型",
+        "进行",
+        "研究",
+        ",",
+        "并",
+        "在",
+        "额外",
+        "架次",
+        "全程",
+        "飞行",
+        "试验",
+        "数据",
+        "上",
+        "验证",
+        "和",
+        "讨论",
+        "辨识",
+        "模型",
+        "的",
+        "推广",
+        "能力"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "包括",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "高压",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "转子",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "转速",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "在内",
+          "head": 2,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "11",
+          "head": 9,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 9,
+          "form": "个",
+          "head": 14,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 10,
+          "form": "发动机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "关键",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "参数",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "变化",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "模型",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "研究",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "并",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "在",
+          "head": 27,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 20,
+          "form": "额外",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "架次",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "全程",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 23,
+          "form": "飞行",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "试验",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "数据",
+          "head": 26,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "上",
+          "head": 19,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 27,
+          "form": "验证",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "和",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "讨论",
+          "head": 27,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "辨识",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "模型",
+          "head": 34,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 31,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 33,
+          "form": "推广",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "能力",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明,辨识模型样本点上最大相对误差在5%以内,辨识模型可以应用到该型发动机的试飞实时监控中,同时也可为后续建立涡扇发动机的全包线自适应实时监控模型提供参考",
+      "tokens": [
+        "结果",
+        "表明",
+        ",",
+        "辨识",
+        "模型",
+        "样本点",
+        "上",
+        "最",
+        "大",
+        "相对",
+        "误差",
+        "在",
+        "5%",
+        "以内",
+        ",",
+        "辨识",
+        "模型",
+        "可以",
+        "应用",
+        "到",
+        "该",
+        "型",
+        "发动机",
+        "的",
+        "试飞",
+        "实时",
+        "监控",
+        "中",
+        ",",
+        "同时",
+        "也",
+        "可",
+        "为",
+        "后续",
+        "建立",
+        "涡扇",
+        "发动机",
+        "的",
+        "全",
+        "包线",
+        "自适应",
+        "实时",
+        "监控",
+        "模型",
+        "提供",
+        "参考"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "辨识",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "模型",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "样本点",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "上",
+          "head": 12,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "最",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "大",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "相对",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "误差",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "在",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "5%",
+          "head": 14,
+          "deprel": "lobj",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "以内",
+          "head": 12,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "辨识",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "模型",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "可以",
+          "head": 19,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "应用",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "到",
+          "head": 19,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "该",
+          "head": 22,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 22,
+          "form": "型",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "发动机",
+          "head": 27,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "试飞",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "实时",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "监控",
+          "head": 28,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "中",
+          "head": 19,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 29,
+          "form": ",",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "同时",
+          "head": 45,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 31,
+          "form": "也",
+          "head": 45,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 32,
+          "form": "可",
+          "head": 45,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "为",
+          "head": 45,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 34,
+          "form": "后续",
+          "head": 35,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 35,
+          "form": "建立",
+          "head": 33,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "涡扇",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "发动机",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 37,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 39,
+          "form": "全",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "DT"
+        },
+        {
+          "id": 40,
+          "form": "包线",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "自适应",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 42,
+          "form": "实时",
+          "head": 43,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 43,
+          "form": "监控",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "模型",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "提供",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "参考",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

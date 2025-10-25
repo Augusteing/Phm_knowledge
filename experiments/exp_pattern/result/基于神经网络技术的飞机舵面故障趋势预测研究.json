@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "故障预报",
+    "subject_type": "功能",
+    "relation": "提高",
+    "object": "飞机安全性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "飞机舵面故障诊断系统",
+    "subject_type": "系统",
+    "relation": "需要",
+    "object": "故障预报",
+    "object_type": "功能"
+  },
+  {
+    "subject": "神经网络故障预测模型",
+    "subject_type": "模型",
+    "relation": "采用",
+    "object": "三层BP网络模型",
+    "object_type": "模型架构"
+  },
+  {
+    "subject": "评价函数",
+    "subject_type": "函数",
+    "relation": "评价",
+    "object": "神经网络的预测精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "神经网络故障预测模型",
+    "subject_type": "模型",
+    "relation": "使用",
+    "object": "风洞实验数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "神经网络故障预测模型",
+    "subject_type": "模型",
+    "relation": "预测",
+    "object": "方向舵卡死",
+    "object_type": "故障模式"
+  },
+  {
+    "subject": "方向舵卡死",
+    "subject_type": "故障模式",
+    "relation": "属于",
+    "object": "舵面故障模式",
+    "object_type": "故障类型"
+  },
+  {
+    "subject": "神经网络预测模型",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "ARMA方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "飞机舵面故障趋势预测研究",
+    "subject_type": "研究",
+    "relation": "基于",
+    "object": "神经网络技术",
+    "object_type": "技术"
+  }
+]

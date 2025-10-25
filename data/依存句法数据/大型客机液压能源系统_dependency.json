@@ -1,0 +1,962 @@
+{
+  "title": "大型客机液压能源系统",
+  "summary": "介绍了开展大飞机项目研制工作的背景和意义,分别阐述了当前空客公司与波音公司主流客机与新型客机的液压能源系统结构及特点。指出商用客机液压系统发展趋势的特点是高压化、分布式、故障诊断及健康管理、自增压油箱、智能泵源系统。对主流客机A320和B737的液压能源系统进行了对比分析,提出了2种大型客机液压能源系统方案。指出发展飞机液压能源系统尚需解决的关键技术问题——高可靠性液压系统设计、压力脉动抑制、油温控制、油液污染度控制等。",
+  "analyzed_sentences": [
+    {
+      "sentence": "介绍了开展大飞机项目研制工作的背景和意义,分别阐述了当前空客公司与波音公司主流客机与新型客机的液压能源系统结构及特点",
+      "tokens": [
+        "介绍",
+        "了",
+        "开展",
+        "大",
+        "飞机",
+        "项目",
+        "研制",
+        "工作",
+        "的",
+        "背景",
+        "和",
+        "意义",
+        ",",
+        "分别",
+        "阐述",
+        "了",
+        "当前",
+        "空客",
+        "公司",
+        "与",
+        "波音",
+        "公司",
+        "主流",
+        "客机",
+        "与",
+        "新型",
+        "客机",
+        "的",
+        "液压",
+        "能源",
+        "系统",
+        "结构",
+        "及",
+        "特点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "开展",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "大",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "项目",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "研制",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "工作",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "背景",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "意义",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "分别",
+          "head": 15,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 15,
+          "form": "阐述",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "当前",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 18,
+          "form": "空客",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "公司",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "与",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "波音",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 22,
+          "form": "公司",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "主流",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "客机",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "与",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "新型",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "客机",
+          "head": 34,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "液压",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "能源",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "系统",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "结构",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "及",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "特点",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "指出商用客机液压系统发展趋势的特点是高压化、分布式、故障诊断及健康管理、自增压油箱、智能泵源系统",
+      "tokens": [
+        "指出",
+        "商用",
+        "客机",
+        "液压",
+        "系统",
+        "发展",
+        "趋势",
+        "的",
+        "特点",
+        "是",
+        "高压化",
+        "、",
+        "分布式",
+        "、",
+        "故障",
+        "诊断",
+        "及",
+        "健康",
+        "管理",
+        "、",
+        "自增压",
+        "油箱",
+        "、",
+        "智能",
+        "泵源",
+        "系统"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "指出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "商用",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "客机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "液压",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发展",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "趋势",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "特点",
+          "head": 10,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "是",
+          "head": 1,
+          "deprel": "ccomp",
+          "pos": "VC"
+        },
+        {
+          "id": 11,
+          "form": "高压化",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "分布式",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "诊断",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "及",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "健康",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "管理",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "、",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "自增压",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "油箱",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "智能",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "泵源",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "系统",
+          "head": 10,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对主流客机A320和B737的液压能源系统进行了对比分析,提出了2种大型客机液压能源系统方案",
+      "tokens": [
+        "对",
+        "主流",
+        "客机",
+        "A320",
+        "和",
+        "B737",
+        "的",
+        "液压",
+        "能源",
+        "系统",
+        "进行",
+        "了",
+        "对比",
+        "分析",
+        ",",
+        "提出",
+        "了",
+        "2",
+        "种",
+        "大型",
+        "客机",
+        "液压",
+        "能源",
+        "系统",
+        "方案"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "主流",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "客机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "A320",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "B737",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NR"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "液压",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "能源",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "对比",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "分析",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "提出",
+          "head": 11,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "2",
+          "head": 19,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 19,
+          "form": "种",
+          "head": 21,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 20,
+          "form": "大型",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "客机",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "液压",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "能源",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "系统",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "方案",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "指出发展飞机液压能源系统尚需解决的关键技术问题——高可靠性液压系统设计、压力脉动抑制、油温控制、油液污染度控制等",
+      "tokens": [
+        "指出",
+        "发展",
+        "飞机",
+        "液压",
+        "能源",
+        "系统",
+        "尚",
+        "需",
+        "解决",
+        "的",
+        "关键",
+        "技术",
+        "问题",
+        "——",
+        "高",
+        "可靠性",
+        "液压",
+        "系统",
+        "设计",
+        "、",
+        "压力",
+        "脉动",
+        "抑制",
+        "、",
+        "油温",
+        "控制",
+        "、",
+        "油液",
+        "污染度",
+        "控制",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "指出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "发展",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "液压",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "能源",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "尚",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "需",
+          "head": 9,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "解决",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "关键",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "技术",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "问题",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "——",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "高",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "可靠性",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "液压",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "系统",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "设计",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "、",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "压力",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "脉动",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "抑制",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "、",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "油温",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "控制",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "、",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "油液",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "污染度",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "控制",
+          "head": 13,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "等",
+          "head": 30,
+          "deprel": "etc",
+          "pos": "ETC"
+        }
+      ]
+    }
+  ]
+}

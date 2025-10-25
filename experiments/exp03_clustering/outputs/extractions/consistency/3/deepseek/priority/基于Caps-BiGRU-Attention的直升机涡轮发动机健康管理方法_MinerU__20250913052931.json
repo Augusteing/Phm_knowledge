@@ -1,0 +1,236 @@
+{
+  "entities": [
+    {
+      "name": "Caps-BiGRU-Attention",
+      "type": "模型"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "模型"
+    },
+    {
+      "name": "BiGRU",
+      "type": "模型"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "方法"
+    },
+    {
+      "name": "直升机涡轮发动机",
+      "type": "系统"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "任务"
+    },
+    {
+      "name": "准确率",
+      "type": "指标"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "指标"
+    },
+    {
+      "name": "SHAP",
+      "type": "方法"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "净功率",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指示空速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "可用功率",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "压缩机转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "故障模式",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "模型"
+    },
+    {
+      "name": "严重失效",
+      "type": "故障模式"
+    },
+    {
+      "name": "轻微失效",
+      "type": "故障模式"
+    },
+    {
+      "name": "衰减状态",
+      "type": "故障模式"
+    },
+    {
+      "name": "健康状态",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "CNN-BiGRU-Attention",
+      "type": "模型"
+    },
+    {
+      "name": "CNN-BiLstm",
+      "type": "模型"
+    },
+    {
+      "name": "CNN-BiGRU",
+      "type": "模型"
+    },
+    {
+      "name": "Random Forest",
+      "type": "模型"
+    },
+    {
+      "name": "TensorFlow",
+      "type": "软件工具"
+    },
+    {
+      "name": "Python",
+      "type": "软件工具"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "胶囊网络"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "BiGRU"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "SE注意力机制"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "用于",
+      "tail": "故障诊断"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "用于",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "提高",
+      "tail": "准确率"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "降低",
+      "tail": "平均绝对误差"
+    },
+    {
+      "head": "SHAP",
+      "relation": "用于",
+      "tail": "特征分析"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "故障模式",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "净功率",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "指示空速",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "扭矩裕度",
+      "relation": "基于",
+      "tail": "贝塔分布"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiGRU-Attention"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiLstm"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiGRU"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "Random Forest"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "采用",
+      "tail": "TensorFlow"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "采用",
+      "tail": "Python"
+    }
+  ]
+}

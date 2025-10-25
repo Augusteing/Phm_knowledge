@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "健康表征参数选取原则和方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "失效模式影响及危害性分析",
+    "object_type": "分析方法"
+  },
+  {
+    "subject": "健康表征参数选取原则和方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "故障树分析",
+    "object_type": "分析方法"
+  },
+  {
+    "subject": "健康表征参数选取原则和方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "历史案例",
+    "object_type": "数据源"
+  },
+  {
+    "subject": "健康表征方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "隐马尔可夫模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "健康表征方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "贝叶斯",
+    "object_type": "方法"
+  },
+  {
+    "subject": "模型",
+    "subject_type": "模型",
+    "relation": "分析",
+    "object": "射频信道的健康影响",
+    "object_type": "影响"
+  },
+  {
+    "subject": "健康影响分析",
+    "subject_type": "分析",
+    "relation": "得到",
+    "object": "射频信道健康表征的优先参量",
+    "object_type": "参数"
+  },
+  {
+    "subject": "射频信道健康表征及影响评估",
+    "subject_type": "技术研究",
+    "relation": "促进",
+    "object": "先进战斗机健康管理技术研究",
+    "object_type": "研究领域"
+  }
+]

@@ -1,0 +1,173 @@
+{
+  "entities": [
+    {
+      "name": "民用航空发动机低压转子振动故障分析",
+      "type": "研究领域"
+    },
+    {
+      "name": "ARIMA模型",
+      "type": "模型"
+    },
+    {
+      "name": "回归分析法",
+      "type": "研究方法"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "振动故障",
+      "type": "故障模式"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "N1转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "低压涡轮振动",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "时间序列分析",
+      "type": "理论基础"
+    },
+    {
+      "name": "一元线性回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "二次多项式回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "三次多项式回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "指数模型",
+      "type": "模型"
+    },
+    {
+      "name": "可决系数R^2",
+      "type": "性能指标"
+    },
+    {
+      "name": "ADF检验",
+      "type": "方法"
+    },
+    {
+      "name": "平稳性",
+      "type": "性能指标"
+    },
+    {
+      "name": "白噪声",
+      "type": "理论基础"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "方法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "民用航空发动机低压转子振动故障分析",
+      "relation": "基于",
+      "tail": "ARIMA模型"
+    },
+    {
+      "head": "民用航空发动机低压转子振动故障分析",
+      "relation": "基于",
+      "tail": "回归分析法"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "应用于",
+      "tail": "振动故障"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "应用于",
+      "tail": "CFM56-7B发动机"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "包含",
+      "tail": "N1转速"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "包含",
+      "tail": "低压涡轮振动"
+    },
+    {
+      "head": "时间序列分析",
+      "relation": "基于",
+      "tail": "平稳性"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "一元线性回归模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "二次多项式回归模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "三次多项式回归模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "指数模型"
+    },
+    {
+      "head": "一元线性回归模型",
+      "relation": "评价指标是",
+      "tail": "可决系数R^2"
+    },
+    {
+      "head": "二次多项式回归模型",
+      "relation": "评价指标是",
+      "tail": "可决系数R^2"
+    },
+    {
+      "head": "三次多项式回归模型",
+      "relation": "评价指标是",
+      "tail": "可决系数R^2"
+    },
+    {
+      "head": "指数模型",
+      "relation": "评价指标是",
+      "tail": "可决系数R^2"
+    },
+    {
+      "head": "ADF检验",
+      "relation": "用于检验",
+      "tail": "平稳性"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "优于",
+      "tail": "三次指数平滑法"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "预测",
+      "tail": "振动故障"
+    },
+    {
+      "head": "白噪声",
+      "relation": "作为",
+      "tail": "模型适应性检验标准"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "基于云计算的PHM体系架构",
+    "subject_type": "体系架构",
+    "relation": "解决",
+    "object": "飞机维修资源利用率低问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于云计算的PHM体系架构",
+    "subject_type": "体系架构",
+    "relation": "提高",
+    "object": "PHM系统通用性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于云计算的PHM体系架构",
+    "subject_type": "体系架构",
+    "relation": "提高",
+    "object": "知识利用率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于云计算的PHM体系架构",
+    "subject_type": "体系架构",
+    "relation": "解决",
+    "object": "资源优化问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "资源分配模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "粒子群算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "仿真实验",
+    "subject_type": "实验",
+    "relation": "运用",
+    "object": "CloudSim平台",
+    "object_type": "平台"
+  },
+  {
+    "subject": "资源分配模型",
+    "subject_type": "模型",
+    "relation": "分配",
+    "object": "虚拟层PHM资源",
+    "object_type": "资源"
+  }
+]

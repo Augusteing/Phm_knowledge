@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "综合诊断",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "可靠性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "综合诊断",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "维修性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "综合诊断",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "保障性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "综合诊断",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "技术手段",
+    "object_type": "概念"
+  },
+  {
+    "subject": "综合诊断",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "发展方向",
+    "object_type": "概念"
+  },
+  {
+    "subject": "美军",
+    "subject_type": "组织",
+    "relation": "拥有",
+    "object": "综合诊断体系结构",
+    "object_type": "架构"
+  },
+  {
+    "subject": "综合诊断体系结构",
+    "subject_type": "架构",
+    "relation": "拥有",
+    "object": "支撑技术",
+    "object_type": "技术"
+  }
+]

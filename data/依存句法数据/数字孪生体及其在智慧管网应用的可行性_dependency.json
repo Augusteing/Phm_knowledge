@@ -1,0 +1,1259 @@
+{
+  "title": "数字孪生体及其在智慧管网应用的可行性",
+  "summary": "伴随着工业4.0时代的来临,数字孪生体(Digital Twin)概念蓬勃发展,在航空航天、汽车制造、军事、能源等行业中逐步得到应用,为其在管道行业的应用发展起到良好示范。介绍了数字孪生体的内涵和发展演化过程,分析了数字孪生体在产品设计、飞机故障预测、汽车制造、电厂发电机组智能健康管理、复杂产品装配等行业的应用案例,并从管道设计、调度优化、管道设备运行维护、管道全生命周期管理4个方面分析数字孪生体在油气管道中的应用前景。数字孪生体为真实管道系统与虚拟管道系统的信息交互及融合提供了新的技术手段,可以实现虚拟管道的仿真优化,有利于促进智慧管网建设。",
+  "analyzed_sentences": [
+    {
+      "sentence": "伴随着工业4.0时代的来临,数字孪生体(Digital Twin)概念蓬勃发展,在航空航天、汽车制造、军事、能源等行业中逐步得到应用,为其在管道行业的应用发展起到良好示范",
+      "tokens": [
+        "伴随",
+        "着",
+        "工业",
+        "4.0",
+        "时代",
+        "的",
+        "来临",
+        ",",
+        "数字",
+        "孪生体",
+        "(",
+        "Digital",
+        "Twin",
+        ")",
+        "概念",
+        "蓬勃",
+        "发展",
+        ",",
+        "在",
+        "航空",
+        "航天",
+        "、",
+        "汽车",
+        "制造",
+        "、",
+        "军事",
+        "、",
+        "能源",
+        "等",
+        "行业",
+        "中",
+        "逐步",
+        "得到",
+        "应用",
+        ",",
+        "为",
+        "其",
+        "在",
+        "管道",
+        "行业",
+        "的",
+        "应用",
+        "发展",
+        "起到",
+        "良好",
+        "示范"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "伴随",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "着",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "工业",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "4.0",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "CD"
+        },
+        {
+          "id": 5,
+          "form": "时代",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "来临",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "数字",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "孪生体",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "(",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "Digital",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "Twin",
+          "head": 10,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ")",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "概念",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "蓬勃",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "发展",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "在",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 20,
+          "form": "航空",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "航天",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "汽车",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "制造",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "军事",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "、",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "能源",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "等",
+          "head": 28,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 30,
+          "form": "行业",
+          "head": 31,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "中",
+          "head": 19,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 32,
+          "form": "逐步",
+          "head": 33,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 33,
+          "form": "得到",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "应用",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "为",
+          "head": 44,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 37,
+          "form": "其",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 38,
+          "form": "在",
+          "head": 43,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 39,
+          "form": "管道",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "行业",
+          "head": 38,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 38,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "应用",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "发展",
+          "head": 36,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "起到",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "良好",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 46,
+          "form": "示范",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "介绍了数字孪生体的内涵和发展演化过程,分析了数字孪生体在产品设计、飞机故障预测、汽车制造、电厂发电机组智能健康管理、复杂产品装配等行业的应用案例,并从管道设计、调度优化、管道设备运行维护、管道全生命周期管理4个方面分析数字孪生体在油气管道中的应用前景",
+      "tokens": [
+        "介绍",
+        "了",
+        "数字",
+        "孪生体",
+        "的",
+        "内涵",
+        "和",
+        "发展",
+        "演化",
+        "过程",
+        ",",
+        "分析",
+        "了",
+        "数字",
+        "孪生体",
+        "在",
+        "产品",
+        "设计",
+        "、",
+        "飞机",
+        "故障",
+        "预测",
+        "、",
+        "汽车",
+        "制造",
+        "、",
+        "电厂",
+        "发电",
+        "机组",
+        "智能",
+        "健康",
+        "管理",
+        "、",
+        "复杂",
+        "产品",
+        "装配",
+        "等",
+        "行业",
+        "的",
+        "应用",
+        "案例",
+        ",",
+        "并",
+        "从",
+        "管道",
+        "设计",
+        "、",
+        "调度",
+        "优化",
+        "、",
+        "管道",
+        "设备",
+        "运行",
+        "维护",
+        "、",
+        "管道",
+        "全",
+        "生命",
+        "周期",
+        "管理",
+        "4",
+        "个",
+        "方面",
+        "分析",
+        "数字",
+        "孪生体",
+        "在",
+        "油气",
+        "管道",
+        "中",
+        "的",
+        "应用",
+        "前景"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "数字",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "孪生体",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "内涵",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "演化",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "过程",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "分析",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "了",
+          "head": 12,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "数字",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "孪生体",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "在",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 17,
+          "form": "产品",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "设计",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "飞机",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "预测",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "汽车",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "制造",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "电厂",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "发电",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "机组",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "智能",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "健康",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "管理",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "复杂",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "产品",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "装配",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "等",
+          "head": 36,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 38,
+          "form": "行业",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 40,
+          "form": "应用",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "案例",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 44,
+          "form": "从",
+          "head": 64,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 45,
+          "form": "管道",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "设计",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 48,
+          "form": "调度",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "优化",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 51,
+          "form": "管道",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "设备",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "运行",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "维护",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "、",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 56,
+          "form": "管道",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "全",
+          "head": 58,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 58,
+          "form": "生命",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "周期",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "管理",
+          "head": 63,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "4",
+          "head": 62,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 62,
+          "form": "个",
+          "head": 63,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 63,
+          "form": "方面",
+          "head": 44,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "分析",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 65,
+          "form": "数字",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "孪生体",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "在",
+          "head": 73,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 68,
+          "form": "油气",
+          "head": 69,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "管道",
+          "head": 70,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": "中",
+          "head": 67,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 71,
+          "form": "的",
+          "head": 67,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 72,
+          "form": "应用",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "前景",
+          "head": 64,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "数字孪生体为真实管道系统与虚拟管道系统的信息交互及融合提供了新的技术手段,可以实现虚拟管道的仿真优化,有利于促进智慧管网建设",
+      "tokens": [
+        "数字",
+        "孪生体",
+        "为",
+        "真实",
+        "管道",
+        "系统",
+        "与",
+        "虚拟",
+        "管道",
+        "系统",
+        "的",
+        "信息",
+        "交互",
+        "及",
+        "融合",
+        "提供",
+        "了",
+        "新",
+        "的",
+        "技术",
+        "手段",
+        ",",
+        "可以",
+        "实现",
+        "虚拟",
+        "管道",
+        "的",
+        "仿真",
+        "优化",
+        ",",
+        "有利于",
+        "促进",
+        "智慧",
+        "管网",
+        "建设"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "数字",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "孪生体",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "为",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "真实",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "管道",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "虚拟",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "管道",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "信息",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "交互",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "及",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "融合",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "新",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "技术",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "手段",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "可以",
+          "head": 24,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "实现",
+          "head": 16,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "虚拟",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "管道",
+          "head": 29,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 28,
+          "form": "仿真",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "优化",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "有利于",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "促进",
+          "head": 31,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "智慧",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "管网",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "建设",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

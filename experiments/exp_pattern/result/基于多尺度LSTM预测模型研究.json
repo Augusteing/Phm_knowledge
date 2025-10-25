@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "航空发动机剩余寿命预测",
+    "subject_type": "核心问题",
+    "relation": "属于",
+    "object": "设备故障预测与健康管理",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "多尺度注意力双向长短期记忆神经网络模型",
+    "subject_type": "模型",
+    "relation": "解决",
+    "object": "航空发动机剩余寿命预测",
+    "object_type": "核心问题"
+  },
+  {
+    "subject": "发动机数据",
+    "subject_type": "数据",
+    "relation": "具有",
+    "object": "高维度",
+    "object_type": "数据特点"
+  },
+  {
+    "subject": "发动机数据",
+    "subject_type": "数据",
+    "relation": "具有",
+    "object": "强滞后性",
+    "object_type": "数据特点"
+  },
+  {
+    "subject": "发动机数据",
+    "subject_type": "数据",
+    "relation": "具有",
+    "object": "高复杂度",
+    "object_type": "数据特点"
+  },
+  {
+    "subject": "双向长短期记忆神经网络",
+    "subject_type": "技术",
+    "relation": "提取",
+    "object": "多尺度特征",
+    "object_type": "特征"
+  },
+  {
+    "subject": "自训练权重融合算法",
+    "subject_type": "算法",
+    "relation": "引入",
+    "object": "注意力机制",
+    "object_type": "技术"
+  },
+  {
+    "subject": "自训练权重融合算法",
+    "subject_type": "算法",
+    "relation": "用于",
+    "object": "特征筛选",
+    "object_type": "任务"
+  },
+  {
+    "subject": "自训练权重融合算法",
+    "subject_type": "算法",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "评价指标"
+  },
+  {
+    "subject": "多尺度注意力双向长短期记忆神经网络模型",
+    "subject_type": "模型",
+    "relation": "在...上验证",
+    "object": "C-MAPSS数据集",
+    "object_type": "数据集"
+  },
+  {
+    "subject": "多尺度注意力双向长短期记忆神经网络模型",
+    "subject_type": "模型",
+    "relation": "提升",
+    "object": "准确率",
+    "object_type": "评价指标"
+  },
+  {
+    "subject": "多尺度注意力双向长短期记忆神经网络模型",
+    "subject_type": "模型",
+    "relation": "提升",
+    "object": "均方根误差",
+    "object_type": "评价指标"
+  }
+]

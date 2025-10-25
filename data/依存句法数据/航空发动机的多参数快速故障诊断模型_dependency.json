@@ -1,0 +1,747 @@
+{
+  "title": "航空发动机的多参数快速故障诊断模型",
+  "summary": "为了提高诊断效率,降低故障诊断对人的过分依赖,建立了一个航空发动机故障快速诊断模型。该模型结合粗糙集和灰色理论各自特点,利用粗糙集去除特征信息中的冗余信息;再通过多参数灰色模型对约简后的信息进行快速准确的预测。仿真对比表明,该模型在不降低预测精度的情况下能显著减少计算时间,有效提高故障预测的快速性和实时性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为了提高诊断效率,降低故障诊断对人的过分依赖,建立了一个航空发动机故障快速诊断模型",
+      "tokens": [
+        "为了",
+        "提高",
+        "诊断",
+        "效率",
+        ",",
+        "降低",
+        "故障",
+        "诊断",
+        "对",
+        "人",
+        "的",
+        "过分",
+        "依赖",
+        ",",
+        "建立",
+        "了",
+        "一",
+        "个",
+        "航空",
+        "发动机",
+        "故障",
+        "快速",
+        "诊断",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "提高",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "诊断",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "效率",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "降低",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "诊断",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "对",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "人",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "过分",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "依赖",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "一",
+          "head": 18,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 18,
+          "form": "个",
+          "head": 24,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 19,
+          "form": "航空",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "发动机",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "快速",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "诊断",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "模型",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "该模型结合粗糙集和灰色理论各自特点,利用粗糙集去除特征信息中的冗余信息;再通过多参数灰色模型对约简后的信息进行快速准确的预测",
+      "tokens": [
+        "该",
+        "模型",
+        "结合",
+        "粗糙",
+        "集",
+        "和",
+        "灰色",
+        "理论",
+        "各自",
+        "特点",
+        ",",
+        "利用",
+        "粗糙",
+        "集",
+        "去除",
+        "特征",
+        "信息",
+        "中",
+        "的",
+        "冗余",
+        "信息",
+        ";",
+        "再",
+        "通过",
+        "多",
+        "参数",
+        "灰色",
+        "模型",
+        "对",
+        "约简",
+        "后",
+        "的",
+        "信息",
+        "进行",
+        "快速",
+        "准确",
+        "的",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "模型",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "粗糙",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "集",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "灰色",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "理论",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "各自",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "PN"
+        },
+        {
+          "id": 10,
+          "form": "特点",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "利用",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "粗糙",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "集",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "去除",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "特征",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "信息",
+          "head": 18,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "中",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "冗余",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "信息",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ";",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "再",
+          "head": 34,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 24,
+          "form": "通过",
+          "head": 34,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "多",
+          "head": 26,
+          "deprel": "nummod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "参数",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "灰色",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "模型",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "对",
+          "head": 34,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 30,
+          "form": "约简",
+          "head": 31,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "后",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 31,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 33,
+          "form": "信息",
+          "head": 29,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "进行",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "快速",
+          "head": 38,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 36,
+          "form": "准确",
+          "head": 35,
+          "deprel": "comod",
+          "pos": "VA"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 35,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 38,
+          "form": "预测",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "仿真对比表明,该模型在不降低预测精度的情况下能显著减少计算时间,有效提高故障预测的快速性和实时性",
+      "tokens": [
+        "仿真",
+        "对比",
+        "表明",
+        ",",
+        "该",
+        "模型",
+        "在",
+        "不",
+        "降低",
+        "预测",
+        "精度",
+        "的",
+        "情况",
+        "下",
+        "能",
+        "显著",
+        "减少",
+        "计算",
+        "时间",
+        ",",
+        "有效",
+        "提高",
+        "故障",
+        "预测",
+        "的",
+        "快速性",
+        "和",
+        "实时性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "仿真",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "对比",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "该",
+          "head": 6,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 6,
+          "form": "模型",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "不",
+          "head": 9,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "降低",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "精度",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "情况",
+          "head": 14,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "下",
+          "head": 7,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": "能",
+          "head": 17,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "显著",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "减少",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "计算",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "时间",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "有效",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "提高",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "故障",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "预测",
+          "head": 28,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "的",
+          "head": 24,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 26,
+          "form": "快速性",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "和",
+          "head": 28,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "实时性",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

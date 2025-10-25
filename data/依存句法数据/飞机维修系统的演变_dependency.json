@@ -1,0 +1,993 @@
+{
+  "title": "飞机维修系统的演变",
+  "summary": "早期的飞机健康管理系统像波音727和经典型波音737、DC-9和 MD-80等飞机,机械和模拟系统的测试只是按下一个按钮为内部电路提供电流,绿灯亮表示一切正常。这种按键测试是机内测试设备(BITE)的雏形。自20世纪80年代初,由电子硬件和软件组成的数字式系统被引入到波音737、757、767、MD-90和 A320飞机上。这些新的数字式系统向飞机维修人员提出了挑战,因为他们只能根据系统自身提供的指示获取信息并进行故障检测和隔离。面对这种技术挑战,诞",
+  "analyzed_sentences": [
+    {
+      "sentence": "早期的飞机健康管理系统像波音727和经典型波音737、DC-9和 MD-80等飞机,机械和模拟系统的测试只是按下一个按钮为内部电路提供电流,绿灯亮表示一切正常",
+      "tokens": [
+        "早期",
+        "的",
+        "飞机",
+        "健康",
+        "管理",
+        "系统",
+        "像",
+        "波音727",
+        "和",
+        "经典型",
+        "波音737",
+        "、",
+        "DC-9",
+        "和",
+        "MD-80",
+        "等",
+        "飞机",
+        ",",
+        "机械",
+        "和",
+        "模拟",
+        "系统",
+        "的",
+        "测试",
+        "只是",
+        "按下",
+        "一",
+        "个",
+        "按钮",
+        "为",
+        "内部",
+        "电路",
+        "提供",
+        "电流",
+        ",",
+        "绿灯亮",
+        "表示",
+        "一切",
+        "正常"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "早期",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "像",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "波音727",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "经典型",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "波音737",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "DC-9",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 14,
+          "form": "和",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "MD-80",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "等",
+          "head": 15,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 17,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "机械",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "和",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "模拟",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "系统",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 22,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "测试",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "只是",
+          "head": 26,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "按下",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "一",
+          "head": 28,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 28,
+          "form": "个",
+          "head": 29,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 29,
+          "form": "按钮",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "为",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 31,
+          "form": "内部",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "电路",
+          "head": 30,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "提供",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "电流",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "绿灯亮",
+          "head": 37,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "表示",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "一切",
+          "head": 39,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 39,
+          "form": "正常",
+          "head": 37,
+          "deprel": "ccomp",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "这种按键测试是机内测试设备(BITE)的雏形",
+      "tokens": [
+        "这",
+        "种",
+        "按键",
+        "测试",
+        "是",
+        "机内",
+        "测试",
+        "设备",
+        "(",
+        "BITE",
+        ")",
+        "的",
+        "雏形"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "这",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "种",
+          "head": 1,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 3,
+          "form": "按键",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "测试",
+          "head": 5,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 6,
+          "form": "机内",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "测试",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "设备",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "(",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "BITE",
+          "head": 8,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ")",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "雏形",
+          "head": 5,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "自20世纪80年代初,由电子硬件和软件组成的数字式系统被引入到波音737、757、767、MD-90和 A320飞机上",
+      "tokens": [
+        "自",
+        "20世纪",
+        "80年代",
+        "初",
+        ",",
+        "由",
+        "电子",
+        "硬件",
+        "和",
+        "软件",
+        "组成",
+        "的",
+        "数字式",
+        "系统",
+        "被",
+        "引入",
+        "到",
+        "波音",
+        "737",
+        "、",
+        "757",
+        "、",
+        "767",
+        "、",
+        "MD-90",
+        "和",
+        "A320",
+        "飞机",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "自",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "20世纪",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "80年代",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": "初",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "由",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "电子",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "硬件",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "软件",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "组成",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "数字式",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "系统",
+          "head": 16,
+          "deprel": "nsubjpass",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "被",
+          "head": 16,
+          "deprel": "pass",
+          "pos": "SB"
+        },
+        {
+          "id": 16,
+          "form": "引入",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "到",
+          "head": 16,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "波音",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 19,
+          "form": "737",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 20,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "757",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "767",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "CD"
+        },
+        {
+          "id": 24,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "MD-90",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 26,
+          "form": "和",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "A320",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 28,
+          "form": "飞机",
+          "head": 29,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "上",
+          "head": 16,
+          "deprel": "loc",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "这些新的数字式系统向飞机维修人员提出了挑战,因为他们只能根据系统自身提供的指示获取信息并进行故障检测和隔离",
+      "tokens": [
+        "这些",
+        "新",
+        "的",
+        "数字式",
+        "系统",
+        "向",
+        "飞机",
+        "维修",
+        "人员",
+        "提出",
+        "了",
+        "挑战",
+        ",",
+        "因为",
+        "他们",
+        "只",
+        "能",
+        "根据",
+        "系统",
+        "自身",
+        "提供",
+        "的",
+        "指示",
+        "获取",
+        "信息",
+        "并",
+        "进行",
+        "故障",
+        "检测",
+        "和",
+        "隔离"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "这些",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "新",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "VA"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 4,
+          "form": "数字式",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "向",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "飞机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "维修",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "人员",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 12,
+          "form": "挑战",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "因为",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "他们",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 16,
+          "form": "只",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "能",
+          "head": 24,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "根据",
+          "head": 24,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "自身",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 21,
+          "form": "提供",
+          "head": 23,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 23,
+          "form": "指示",
+          "head": 18,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "获取",
+          "head": 14,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "信息",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "并",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "进行",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "故障",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "检测",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "和",
+          "head": 31,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 31,
+          "form": "隔离",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "面对这种技术挑战,诞",
+      "tokens": [
+        "面对",
+        "这",
+        "种",
+        "技术",
+        "挑战",
+        ",",
+        "诞"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "面对",
+          "head": 7,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "这",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "种",
+          "head": 2,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 4,
+          "form": "技术",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "挑战",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "诞",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "飞机结构",
+    "subject_type": "结构",
+    "relation": "是...的基础",
+    "object": "飞机平台",
+    "object_type": "系统"
+  },
+  {
+    "subject": "飞机结构",
+    "subject_type": "结构",
+    "relation": "是",
+    "object": "承力架构",
+    "object_type": "结构"
+  },
+  {
+    "subject": "飞机结构",
+    "subject_type": "结构",
+    "relation": "确保",
+    "object": "飞机安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "飞机结构",
+    "subject_type": "结构",
+    "relation": "确保",
+    "object": "长寿命使用",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空技术",
+    "subject_type": "技术领域",
+    "relation": "提出要求",
+    "object": "飞机机体结构性能",
+    "object_type": "性能"
+  },
+  {
+    "subject": "严酷的使用环境",
+    "subject_type": "环境",
+    "relation": "挑战",
+    "object": "结构完整性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "飞机结构健康监测与管理技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "实时性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "飞机结构健康监测与管理技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "在线性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "飞机结构健康监测与管理技术",
+    "subject_type": "技术",
+    "relation": "保证",
+    "object": "结构安全性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "飞机结构健康监测与管理技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "维护费用",
+    "object_type": "成本"
+  },
+  {
+    "subject": "飞机结构健康监测与管理技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "基本内涵",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "飞机结构健康监测与管理技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "任务",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "飞机结构健康监测与管理技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "实施方法",
+    "object_type": "组成部分"
+  }
+]

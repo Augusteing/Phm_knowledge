@@ -1,0 +1,428 @@
+{
+  "entities": [
+    {
+      "name": "KPCA-DBN建模方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "核主成分分析 (KPCA)",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "深度置信网络 (DBN)",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "实时监控与健康管理",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "降维处理",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高斯函数",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "核函数",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机EGT基线模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "快速存取数据 (QAR数据)",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "网络结构复杂度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "模型精度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "传统神经网络建模方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机健康管理 (EHM)",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "气路监控",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机排气温度 (EGT)",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机工作状况",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "深度学习",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "自编码器 (AE)",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "卷积神经网络 (CNN)",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "循环神经网络 (RNN)",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非线性特征提取问题",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "主成分分析法 (PCA)",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非线性问题",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "核方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "受限玻尔兹曼机 (RBM)",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "反向传播网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均绝对误差 (MAE)",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "KPCA-DBN模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "GA-BP神经网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "DBN模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "遗传算法 (GA)",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "反向传播(BP)神经网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "网络结构",
+      "type": "属性",
+      "evaluation": "正确"
+    },
+    {
+      "name": "降维后的数据",
+      "type": "数据",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CFM56-7B发动机EGT基线模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "语音识别",
+      "type": "应用场景",
+      "evaluation": "正确"
+    },
+    {
+      "name": "图像处理",
+      "type": "应用场景",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障分类",
+      "type": "应用场景",
+      "evaluation": "正确"
+    },
+    {
+      "name": "局部最优",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "EGT超限",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "燃烧室",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "涡轮叶片",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "尾喷管",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "提供技术手段",
+      "tail": "实时监控与健康管理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "结合",
+      "tail": "核主成分分析 (KPCA)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "结合",
+      "tail": "深度置信网络 (DBN)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "用于",
+      "tail": "降维处理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "采用",
+      "tail": "高斯函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "高斯函数",
+      "relation": "作为",
+      "tail": "核函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "降维后的数据",
+      "relation": "作为输入",
+      "tail": "深度置信网络 (DBN)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "构建",
+      "tail": "航空发动机EGT基线模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "快速存取数据 (QAR数据)",
+      "relation": "用于验证",
+      "tail": "航空发动机EGT基线模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "降低",
+      "tail": "网络结构复杂度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "提高",
+      "tail": "模型精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "传统神经网络建模方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "气路监控",
+      "relation": "是...的核心",
+      "tail": "航空发动机健康管理 (EHM)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机排气温度 (EGT)",
+      "relation": "反映",
+      "tail": "发动机工作状况",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度学习",
+      "relation": "包括",
+      "tail": "深度置信网络 (DBN)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "解决",
+      "tail": "非线性特征提取问题",
+      "evaluation": "正确"
+    },
+    {
+      "head": "主成分分析法 (PCA)",
+      "relation": "不适用于",
+      "tail": "非线性问题",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "融合",
+      "tail": "主成分分析法 (PCA)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "融合",
+      "tail": "核方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络 (DBN)",
+      "relation": "由...组成",
+      "tail": "受限玻尔兹曼机 (RBM)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络 (DBN)",
+      "relation": "由...组成",
+      "tail": "反向传播网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "构建",
+      "tail": "CFM56-7B发动机EGT基线模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "平均绝对误差 (MAE)",
+      "relation": "评价",
+      "tail": "模型精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "GA-BP神经网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "DBN模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "遗传算法 (GA)",
+      "relation": "优化",
+      "tail": "反向传播(BP)神经网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析 (KPCA)",
+      "relation": "简化",
+      "tail": "网络结构",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "具有最高的",
+      "tail": "预测精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络 (DBN)",
+      "relation": "克服",
+      "tail": "局部最优",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EGT超限",
+      "relation": "指示故障",
+      "tail": "燃烧室",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EGT超限",
+      "relation": "指示故障",
+      "tail": "涡轮叶片",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EGT超限",
+      "relation": "指示故障",
+      "tail": "尾喷管",
+      "evaluation": "正确"
+    }
+  ]
+}

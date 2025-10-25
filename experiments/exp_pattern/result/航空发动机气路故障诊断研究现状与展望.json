@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "分析",
+    "object": "气路参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "识别",
+    "object": "气路部件性能退化",
+    "object_type": "故障"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "识别",
+    "object": "故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "飞行安全性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "可靠性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "发动机维修成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "航空发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "飞行推进技术研究领域的热点",
+    "object_type": "研究现状"
+  },
+  {
+    "subject": "发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "包含方法",
+    "object": "基于线性/非线性模型的诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "包含方法",
+    "object": "基于数据驱动的诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "发动机气路故障诊断",
+    "subject_type": "技术",
+    "relation": "包含方法",
+    "object": "基于信息融合的诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "存在",
+    "object": "关键技术",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "存在",
+    "object": "难点",
+    "object_type": "挑战"
+  }
+]

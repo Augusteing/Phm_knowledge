@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "气路故障诊断技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "飞行安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "视情维修成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "军用航空发动机",
+    "subject_type": "装备",
+    "relation": "需要",
+    "object": "气路故障诊断设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "气路故障诊断设计",
+    "subject_type": "设计",
+    "relation": "提升",
+    "object": "发动机工作安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "气路故障诊断",
+    "subject_type": "技术",
+    "relation": "包含方法",
+    "object": "基于数学模型的方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "气路故障诊断",
+    "subject_type": "技术",
+    "relation": "包含方法",
+    "object": "数据驱动的方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "气路故障诊断",
+    "subject_type": "技术",
+    "relation": "包含方法",
+    "object": "信息融合的方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "气路故障诊断设计",
+    "subject_type": "设计",
+    "relation": "针对",
+    "object": "先进军用变循环发动机",
+    "object_type": "装备"
+  },
+  {
+    "subject": "机载实时模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "不可测参数与可测参数关联研究",
+    "object_type": "研究"
+  },
+  {
+    "subject": "控制系统",
+    "subject_type": "系统",
+    "relation": "存在功能分配关系",
+    "object": "健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "气路故障诊断设计",
+    "subject_type": "设计",
+    "relation": "需要加强",
+    "object": "过渡态气路故障诊断",
+    "object_type": "技术"
+  },
+  {
+    "subject": "本文研究",
+    "subject_type": "研究",
+    "relation": "提供参考",
+    "object": "自适应循环发动机的气路故障诊断设计",
+    "object_type": "设计"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "航空发动机预测健康管理系统 (EPHM)",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "定义",
+    "object_type": "概念"
+  },
+  {
+    "subject": "航空发动机预测健康管理系统 (EPHM)",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "设计目标",
+    "object_type": "概念"
+  },
+  {
+    "subject": "航空发动机预测健康管理系统 (EPHM)",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "功能",
+    "object_type": "概念"
+  },
+  {
+    "subject": "第四代战斗机发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含实例",
+    "object": "EJ200",
+    "object_type": "发动机型号"
+  },
+  {
+    "subject": "第四代战斗机发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含实例",
+    "object": "F119",
+    "object_type": "发动机型号"
+  },
+  {
+    "subject": "第四代战斗机发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "技术特点",
+    "object_type": "属性"
+  },
+  {
+    "subject": "航空发动机预测健康管理系统 (EPHM)",
+    "subject_type": "系统",
+    "relation": "需要",
+    "object": "交联方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "交联方案",
+    "subject_type": "方案",
+    "relation": "连接",
+    "object": "飞机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "交联方案",
+    "subject_type": "方案",
+    "relation": "连接",
+    "object": "发动机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "航空发动机预测健康管理系统 (EPHM)",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "在线机载EPHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "航空发动机预测健康管理系统 (EPHM)",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "离线EPHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "在线机载EPHM系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "基本结构设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "离线EPHM系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "基本结构设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "航空发动机机载预测健康管理系统",
+    "subject_type": "系统",
+    "relation": "应实现",
+    "object": "技术指标",
+    "object_type": "指标"
+  },
+  {
+    "subject": "航空发动机预测健康管理系统设计",
+    "subject_type": "任务",
+    "relation": "涉及",
+    "object": "关键技术",
+    "object_type": "技术"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "基于多因子高阶模糊变动的方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "飞机操纵面故障趋势预测问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "系统可测状态参量",
+    "subject_type": "参数",
+    "relation": "表现",
+    "object": "操纵面故障情况",
+    "object_type": "故障"
+  },
+  {
+    "subject": "基于多因子高阶模糊变动的方法",
+    "subject_type": "方法",
+    "relation": "扩展",
+    "object": "模糊时间序列预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "基于多因子高阶模糊变动的方法",
+    "subject_type": "方法",
+    "relation": "利用",
+    "object": "多元时间序列的变动值",
+    "object_type": "数据"
+  },
+  {
+    "subject": "多元时间序列的变动值",
+    "subject_type": "数据",
+    "relation": "构建",
+    "object": "多辅助因子模糊逻辑关系",
+    "object_type": "模型组件"
+  },
+  {
+    "subject": "自组织映射(SOM)方法",
+    "subject_type": "方法",
+    "relation": "划分",
+    "object": "论域",
+    "object_type": "概念"
+  },
+  {
+    "subject": "多因子高阶模糊变动预测模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "时间序列的周期性特点",
+    "object_type": "特性"
+  },
+  {
+    "subject": "多因子高阶模糊变动预测模型",
+    "subject_type": "模型",
+    "relation": "预测",
+    "object": "左副翼损伤故障趋势",
+    "object_type": "应用案例"
+  },
+  {
+    "subject": "故障映射模型",
+    "subject_type": "模型",
+    "relation": "判别",
+    "object": "故障类型",
+    "object_type": "指标"
+  },
+  {
+    "subject": "故障映射模型",
+    "subject_type": "模型",
+    "relation": "判别",
+    "object": "故障程度",
+    "object_type": "指标"
+  },
+  {
+    "subject": "多因子高阶模糊变动预测模型",
+    "subject_type": "模型",
+    "relation": "具有",
+    "object": "更好的故障趋势预测能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "多因子高阶模糊变动预测模型",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "传统模糊时间序列预测方法",
+    "object_type": "方法"
+  }
+]

@@ -1,0 +1,1333 @@
+{
+  "title": "GJB289A总线网络电气特性仿真及故障分析",
+  "summary": "机载GJB289A总线用于实现各类航空电子设备之间的物理连接，其可靠性直接影响着飞机航电系统的正常运行。为了分析GJB289A总线网络典型电气故障特性，根据GJB289A总线网络变压器、终端电阻分布参数及有损耦合传输线模型，在ADS软件中构建包含两个耦合变压器的两端口GJB289A总线网络模型；并通过理论推导和实验室实测对比分析，验证该模型的有效性。依托两端口网络分布参数模型分析梳理典型电气故障类型的特征波形和参数，实现典型电气故障的快速判断。结果表明：结合实装GJB289A总线网络拓扑结构、物理尺寸和分布参数，利用该模型可仿真获取测试端口精确波形和典型电气故障的特征参数，为总线检测设备的优化设计及总线网络状态健康管理提供技术支撑。",
+  "analyzed_sentences": [
+    {
+      "sentence": "机载GJB289A总线用于实现各类航空电子设备之间的物理连接",
+      "tokens": [
+        "机载",
+        "GJB289A",
+        "总线",
+        "用",
+        "于",
+        "实现",
+        "各",
+        "类",
+        "航空",
+        "电子",
+        "设备",
+        "之间",
+        "的",
+        "物理",
+        "连接"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "机载",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "GJB289A",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "总线",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "于",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "实现",
+          "head": 4,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "各",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 8,
+          "form": "类",
+          "head": 7,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 9,
+          "form": "航空",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "电子",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "设备",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "之间",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "物理",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "连接",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "其可靠性直接影响着飞机航电系统的正常运行",
+      "tokens": [
+        "其",
+        "可靠性",
+        "直接",
+        "影响",
+        "着",
+        "飞机",
+        "航电",
+        "系统",
+        "的",
+        "正常",
+        "运行"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "其",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 2,
+          "form": "可靠性",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "直接",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "影响",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "着",
+          "head": 4,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "航电",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "正常",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "运行",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为了分析GJB289A总线网络典型电气故障特性，根据GJB289A总线网络变压器、终端电阻分布参数及有损耦合传输线模型，在ADS软件中构建包含两个耦合变压器的两端口GJB289A总线网络模型",
+      "tokens": [
+        "为了",
+        "分析",
+        "GJB289A",
+        "总线",
+        "网络",
+        "典型",
+        "电气",
+        "故障",
+        "特性",
+        "，",
+        "根据",
+        "GJB289A",
+        "总线",
+        "网络",
+        "变压器",
+        "、",
+        "终端",
+        "电阻",
+        "分布",
+        "参数",
+        "及",
+        "有损",
+        "耦合",
+        "传输线",
+        "模型",
+        "，",
+        "在",
+        "ADS",
+        "软件",
+        "中",
+        "构建",
+        "包含",
+        "两",
+        "个",
+        "耦合",
+        "变压器",
+        "的",
+        "两",
+        "端口",
+        "GJB289A",
+        "总线",
+        "网络",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "GJB289A",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "总线",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "网络",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "典型",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "电气",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "特性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "，",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "根据",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "GJB289A",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 13,
+          "form": "总线",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "网络",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "变压器",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "终端",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "电阻",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "分布",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "参数",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "及",
+          "head": 25,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "有损",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "耦合",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "传输线",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "模型",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "，",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "在",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 28,
+          "form": "ADS",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "软件",
+          "head": 30,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "中",
+          "head": 27,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 31,
+          "form": "构建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "包含",
+          "head": 43,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "两",
+          "head": 34,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 34,
+          "form": "个",
+          "head": 36,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 35,
+          "form": "耦合",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "变压器",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 32,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 38,
+          "form": "两",
+          "head": 39,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 39,
+          "form": "端口",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "GJB289A",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 41,
+          "form": "总线",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "网络",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "模型",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并通过理论推导和实验室实测对比分析，验证该模型的有效性",
+      "tokens": [
+        "并",
+        "通过",
+        "理论",
+        "推导",
+        "和",
+        "实验室",
+        "实测",
+        "对比",
+        "分析",
+        "，",
+        "验证",
+        "该",
+        "模型",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "通过",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "理论",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "推导",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "实验室",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "实测",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "对比",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "分析",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "，",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "该",
+          "head": 13,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 13,
+          "form": "模型",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "有效性",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "依托两端口网络分布参数模型分析梳理典型电气故障类型的特征波形和参数",
+      "tokens": [
+        "依托",
+        "两",
+        "端口",
+        "网络",
+        "分布",
+        "参数",
+        "模型",
+        "分析",
+        "梳理",
+        "典型",
+        "电气",
+        "故障",
+        "类型",
+        "的",
+        "特征",
+        "波形",
+        "和",
+        "参数"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "依托",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "两",
+          "head": 3,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 3,
+          "form": "端口",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "网络",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "分布",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "参数",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "分析",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "梳理",
+          "head": 8,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "典型",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "电气",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "类型",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "特征",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "波形",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "参数",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实现典型电气故障的快速判断",
+      "tokens": [
+        "实现",
+        "典型",
+        "电气",
+        "故障",
+        "的",
+        "快速",
+        "判断"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "典型",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "电气",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "故障",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "快速",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "判断",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明：结合实装GJB289A总线网络拓扑结构、物理尺寸和分布参数",
+      "tokens": [
+        "结果",
+        "表明",
+        "：",
+        "结合",
+        "实装",
+        "GJB289A",
+        "总线",
+        "网络",
+        "拓扑",
+        "结构",
+        "、",
+        "物理",
+        "尺寸",
+        "和",
+        "分布",
+        "参数"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "：",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "结合",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "实装",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "GJB289A",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 7,
+          "form": "总线",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "网络",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "拓扑",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "结构",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "物理",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "尺寸",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "和",
+          "head": 16,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "分布",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "参数",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用该模型可仿真获取测试端口精确波形和典型电气故障的特征参数",
+      "tokens": [
+        "利用",
+        "该",
+        "模型",
+        "可",
+        "仿真",
+        "获取",
+        "测试",
+        "端口",
+        "精确",
+        "波形",
+        "和",
+        "典型",
+        "电气",
+        "故障",
+        "的",
+        "特征",
+        "参数"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "该",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "可",
+          "head": 6,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "仿真",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "获取",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "测试",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "端口",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "精确",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "波形",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "典型",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "电气",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "特征",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "参数",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为总线检测设备的优化设计及总线网络状态健康管理提供技术支撑",
+      "tokens": [
+        "为",
+        "总线",
+        "检测",
+        "设备",
+        "的",
+        "优化",
+        "设计",
+        "及",
+        "总线",
+        "网络",
+        "状态",
+        "健康",
+        "管理",
+        "提供",
+        "技术",
+        "支撑"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "总线",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "检测",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "设备",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "优化",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "设计",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "及",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "总线",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "网络",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "状态",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "健康",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "管理",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "技术",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "支撑",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

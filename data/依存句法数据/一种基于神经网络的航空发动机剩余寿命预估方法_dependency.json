@@ -1,0 +1,1561 @@
+{
+  "title": "一种基于神经网络的航空发动机剩余寿命预估方法",
+  "summary": "针对航空发动机剩余寿命预估中模型建立困难且计算精度低等问题,提出了一种基于卷积神经网络和长短期记忆神经网络进行航空发动机剩余寿命预估的方法。利用卷积神经网络中的卷积层与池化层提取传感器数据中的特征,并依据卷积层提取出的特征,利用长短期记忆神经网络进行时间序列预测,并使用全连接层输出航空发动机剩余寿命。在NASA的C-MAPSS提供的涡扇发动机退化仿真数据集上对该方法进行了验证。结果表明:基于卷积神经网络和长短期记忆神经网络的航空发动机剩余寿命预估方法,可以在保证预测精度的前提下,对航空发动机剩余寿命进行较为保守的预估,在保证资源不被浪费的情况下,尽可能提前发出故障预警信号,从而提高飞行的安全性,进而为航空发动机健康管理系统提供有用信息。该预测方法在对称指标和非对称指标上均优于此前提出的方法。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对航空发动机剩余寿命预估中模型建立困难且计算精度低等问题,提出了一种基于卷积神经网络和长短期记忆神经网络进行航空发动机剩余寿命预估的方法",
+      "tokens": [
+        "针对",
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命",
+        "预估",
+        "中",
+        "模型",
+        "建立",
+        "困难",
+        "且",
+        "计算",
+        "精度",
+        "低",
+        "等",
+        "问题",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "基于",
+        "卷积",
+        "神经",
+        "网络",
+        "和",
+        "长短期",
+        "记忆",
+        "神经",
+        "网络",
+        "进行",
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命",
+        "预估",
+        "的",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "剩余",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "寿命",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "预估",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "中",
+          "head": 10,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "模型",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "建立",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "困难",
+          "head": 16,
+          "deprel": "vmod",
+          "pos": "VA"
+        },
+        {
+          "id": 11,
+          "form": "且",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "计算",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "精度",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "低",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": "等",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 16,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "了",
+          "head": 18,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 20,
+          "form": "一",
+          "head": 21,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 21,
+          "form": "种",
+          "head": 38,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 22,
+          "form": "基于",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "卷积",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "神经",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "网络",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "和",
+          "head": 30,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "长短期",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "记忆",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "神经",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "网络",
+          "head": 22,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "进行",
+          "head": 38,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "航空",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "发动机",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "剩余",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "寿命",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "预估",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 31,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 38,
+          "form": "方法",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用卷积神经网络中的卷积层与池化层提取传感器数据中的特征,并依据卷积层提取出的特征,利用长短期记忆神经网络进行时间序列预测,并使用全连接层输出航空发动机剩余寿命",
+      "tokens": [
+        "利用",
+        "卷积",
+        "神经",
+        "网络",
+        "中",
+        "的",
+        "卷积层",
+        "与",
+        "池化层",
+        "提取",
+        "传感器",
+        "数据",
+        "中",
+        "的",
+        "特征",
+        ",",
+        "并",
+        "依据",
+        "卷积层",
+        "提取",
+        "出",
+        "的",
+        "特征",
+        ",",
+        "利用",
+        "长短期",
+        "记忆",
+        "神经",
+        "网络",
+        "进行",
+        "时间",
+        "序列",
+        "预测",
+        ",",
+        "并",
+        "使用",
+        "全",
+        "连接层",
+        "输出",
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "卷积",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "神经",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "网络",
+          "head": 5,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "中",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "卷积层",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "池化层",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "提取",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "传感器",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "数据",
+          "head": 13,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "中",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "特征",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "依据",
+          "head": 25,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 19,
+          "form": "卷积层",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "提取",
+          "head": 23,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "出",
+          "head": 20,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 23,
+          "form": "特征",
+          "head": 18,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "利用",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "长短期",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "记忆",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "神经",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "网络",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "进行",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "时间",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "序列",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "预测",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 36,
+          "form": "使用",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "全",
+          "head": 38,
+          "deprel": "amod",
+          "pos": "DT"
+        },
+        {
+          "id": 38,
+          "form": "连接层",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "输出",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "航空",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "发动机",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "剩余",
+          "head": 43,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 43,
+          "form": "寿命",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在NASA的C-MAPSS提供的涡扇发动机退化仿真数据集上对该方法进行了验证",
+      "tokens": [
+        "在",
+        "NASA",
+        "的",
+        "C-MAPSS",
+        "提供",
+        "的",
+        "涡扇",
+        "发动机",
+        "退化",
+        "仿真",
+        "数据集",
+        "上",
+        "对",
+        "该",
+        "方法",
+        "进行",
+        "了",
+        "验证"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "NASA",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "C-MAPSS",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NR"
+        },
+        {
+          "id": 5,
+          "form": "提供",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "涡扇",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "退化",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "仿真",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "数据集",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "对",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "该",
+          "head": 15,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 15,
+          "form": "方法",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "验证",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明:基于卷积神经网络和长短期记忆神经网络的航空发动机剩余寿命预估方法,可以在保证预测精度的前提下,对航空发动机剩余寿命进行较为保守的预估,在保证资源不被浪费的情况下,尽可能提前发出故障预警信号,从而提高飞行的安全性,进而为航空发动机健康管理系统提供有用信息",
+      "tokens": [
+        "结果",
+        "表明",
+        ":",
+        "基于",
+        "卷积",
+        "神经",
+        "网络",
+        "和",
+        "长",
+        "短期",
+        "记忆",
+        "神经",
+        "网络",
+        "的",
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命",
+        "预估",
+        "方法",
+        ",",
+        "可以",
+        "在",
+        "保证",
+        "预测",
+        "精度",
+        "的",
+        "前提",
+        "下",
+        ",",
+        "对",
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命",
+        "进行",
+        "较为",
+        "保守",
+        "的",
+        "预估",
+        ",",
+        "在",
+        "保证",
+        "资源",
+        "不",
+        "被",
+        "浪费",
+        "的",
+        "情况",
+        "下",
+        ",",
+        "尽可能",
+        "提前",
+        "发出",
+        "故障",
+        "预警",
+        "信号",
+        ",",
+        "从而",
+        "提高",
+        "飞行",
+        "的",
+        "安全性",
+        ",",
+        "进而",
+        "为",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "提供",
+        "有用",
+        "信息"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": ":",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "基于",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "卷积",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "神经",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "网络",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "长",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "短期",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "记忆",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "神经",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "网络",
+          "head": 4,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "航空",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "发动机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "剩余",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "寿命",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预估",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "方法",
+          "head": 36,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "可以",
+          "head": 36,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "在",
+          "head": 36,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 24,
+          "form": "保证",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "预测",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "精度",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 24,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 28,
+          "form": "前提",
+          "head": 29,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "下",
+          "head": 23,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "对",
+          "head": 36,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 32,
+          "form": "航空",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "发动机",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "剩余",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "寿命",
+          "head": 31,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "进行",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "较为",
+          "head": 38,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 38,
+          "form": "保守",
+          "head": 40,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 39,
+          "form": "的",
+          "head": 38,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 40,
+          "form": "预估",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "在",
+          "head": 54,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 43,
+          "form": "保证",
+          "head": 49,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "资源",
+          "head": 47,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "不",
+          "head": 47,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 46,
+          "form": "被",
+          "head": 47,
+          "deprel": "pass",
+          "pos": "SB"
+        },
+        {
+          "id": 47,
+          "form": "浪费",
+          "head": 43,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 43,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 49,
+          "form": "情况",
+          "head": 50,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "下",
+          "head": 42,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 54,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "尽可能",
+          "head": 54,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 53,
+          "form": "提前",
+          "head": 54,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 54,
+          "form": "发出",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 55,
+          "form": "故障",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "预警",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "信号",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 59,
+          "form": "从而",
+          "head": 60,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 60,
+          "form": "提高",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 61,
+          "form": "飞行",
+          "head": 63,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "的",
+          "head": 61,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 63,
+          "form": "安全性",
+          "head": 60,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 65,
+          "form": "进而",
+          "head": 72,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 66,
+          "form": "为",
+          "head": 72,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 67,
+          "form": "航空",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "发动机",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "健康",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": "管理",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "系统",
+          "head": 66,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "提供",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 73,
+          "form": "有用",
+          "head": 74,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 74,
+          "form": "信息",
+          "head": 72,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "该预测方法在对称指标和非对称指标上均优于此前提出的方法",
+      "tokens": [
+        "该",
+        "预测",
+        "方法",
+        "在",
+        "对称",
+        "指标",
+        "和",
+        "非",
+        "对称",
+        "指标",
+        "上",
+        "均",
+        "优于",
+        "此前",
+        "提出",
+        "的",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "预测",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "方法",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "对称",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "指标",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "非",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "对称",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "指标",
+          "head": 11,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "上",
+          "head": 4,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 12,
+          "form": "均",
+          "head": 13,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "优于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "此前",
+          "head": 15,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 15,
+          "form": "提出",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "方法",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

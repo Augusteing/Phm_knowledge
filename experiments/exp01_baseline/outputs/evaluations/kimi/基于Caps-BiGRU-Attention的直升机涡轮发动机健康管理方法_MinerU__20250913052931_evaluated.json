@@ -1,0 +1,263 @@
+{
+  "entities": [
+    {
+      "name": "直升机涡轮发动机健康管理方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Caps-BiGRU-Attention模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "双向门控循环单元",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障模式识别",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "动态路由算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "更新门和重置门",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "压缩激活注意力机制",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "特征分析",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "概率分布拟合",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障目标值",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "可用功率",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "指示空速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "净功率",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "压缩机转速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "深度学习",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SHAP模型",
+      "type": "软件工具",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "直升机涡轮发动机健康管理方法",
+      "relation": "基于",
+      "tail": "Caps-BiGRU-Attention模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "包含",
+      "tail": "胶囊网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "包含",
+      "tail": "双向门控循环单元",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "包含",
+      "tail": "SE注意力机制",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障模式识别",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机健康管理方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "扭矩裕度预测",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机健康管理方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "动态路由算法",
+      "relation": "改进了",
+      "tail": "信息传递",
+      "evaluation": "正确"
+    },
+    {
+      "head": "更新门和重置门",
+      "relation": "改进了",
+      "tail": "信息控制",
+      "evaluation": "正确"
+    },
+    {
+      "head": "压缩激活注意力机制",
+      "relation": "改进了",
+      "tail": "特征加权",
+      "evaluation": "正确"
+    },
+    {
+      "head": "特征分析",
+      "relation": "用于",
+      "tail": "寻找有利于发动机健康状态的特征取值范围",
+      "evaluation": "正确"
+    },
+    {
+      "head": "概率分布拟合",
+      "relation": "用于",
+      "tail": "确定发动机扭矩裕度分布",
+      "evaluation": "正确"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "确定为",
+      "tail": "扭矩裕度分布的最佳分布",
+      "evaluation": "正确"
+    },
+    {
+      "head": "直升机涡轮发动机数据集",
+      "relation": "支持",
+      "tail": "Caps-BiGRU-Attention模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "可用功率",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "指示空速",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "净功率",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "压缩机转速",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "基于",
+      "tail": "深度学习",
+      "evaluation": "正确"
+    },
+    {
+      "head": "特征分析",
+      "relation": "利用",
+      "tail": "SHAP模型",
+      "evaluation": "正确"
+    }
+  ]
+}

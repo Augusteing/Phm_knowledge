@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "航空发动机",
+    "subject_type": "研究对象",
+    "relation": "汇集",
+    "object": "高精尖技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "研究对象",
+    "relation": "体现",
+    "object": "国家科技、工业和国防实力",
+    "object_type": "概念"
+  },
+  {
+    "subject": "复杂结构",
+    "subject_type": "属性",
+    "relation": "导致",
+    "object": "故障频发",
+    "object_type": "现象"
+  },
+  {
+    "subject": "恶劣服役环境",
+    "subject_type": "环境",
+    "relation": "导致",
+    "object": "故障频发",
+    "object_type": "现象"
+  },
+  {
+    "subject": "发动机故障诊断与健康管理技术",
+    "subject_type": "技术",
+    "relation": "保障",
+    "object": "安全、可靠运行",
+    "object_type": "目标"
+  },
+  {
+    "subject": "振动类故障",
+    "subject_type": "故障类型",
+    "relation": "是",
+    "object": "主要故障模式",
+    "object_type": "概念"
+  },
+  {
+    "subject": "航空发动机振动类故障诊断技术",
+    "subject_type": "技术",
+    "relation": "包括",
+    "object": "动力学分析",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机振动类故障诊断技术",
+    "subject_type": "技术",
+    "relation": "包括",
+    "object": "信号处理",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机振动类故障诊断技术",
+    "subject_type": "技术",
+    "relation": "包括",
+    "object": "深度学习",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机振动类故障诊断",
+    "subject_type": "任务",
+    "relation": "面临",
+    "object": "问题与挑战",
+    "object_type": "问题"
+  }
+]

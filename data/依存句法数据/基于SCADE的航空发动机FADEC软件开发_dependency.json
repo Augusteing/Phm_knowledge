@@ -1,0 +1,1184 @@
+{
+  "title": "基于SCADE的航空发动机FADEC软件开发",
+  "summary": "机载软件开发面临复杂性、安全性和成本等方面的巨大挑战。针对某航空发动机数控系统的研制,结合FADEC软件的开发特点和目标,探索SCADE基于模型开发在FADEC软件开发中的应用。探索了两种不同的SCADE基于模型开发解决方案,基于这两种方案分别完成两个FADEC软件配置项的应用软件开发。通过模型测试、模型覆盖率分析和软件硬件集成测试验证了开发结果的正确性。提出了联合SCADE和Simulink的基于模型开发流程并明确其注意事项。分析SCADE的两种基于模型开发解决方案的适用范围以及方案选择时的考虑因素,总结分析了SCADE用于机载软件开发的优势和不足。",
+  "analyzed_sentences": [
+    {
+      "sentence": "机载软件开发面临复杂性、安全性和成本等方面的巨大挑战",
+      "tokens": [
+        "机载",
+        "软件",
+        "开发",
+        "面临",
+        "复杂性",
+        "、",
+        "安全性",
+        "和",
+        "成本",
+        "等",
+        "方面",
+        "的",
+        "巨大",
+        "挑战"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "机载",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "软件",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "开发",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "面临",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "复杂性",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "安全性",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "成本",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "等",
+          "head": 9,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 11,
+          "form": "方面",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "巨大",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "挑战",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对某航空发动机数控系统的研制,结合FADEC软件的开发特点和目标,探索SCADE基于模型开发在FADEC软件开发中的应用",
+      "tokens": [
+        "针对",
+        "某",
+        "航空",
+        "发动机",
+        "数控",
+        "系统",
+        "的",
+        "研制",
+        ",",
+        "结合",
+        "FADEC",
+        "软件",
+        "的",
+        "开发",
+        "特点",
+        "和",
+        "目标",
+        ",",
+        "探索",
+        "SCADE",
+        "基于",
+        "模型",
+        "开发",
+        "在",
+        "FADEC",
+        "软件",
+        "开发",
+        "中",
+        "的",
+        "应用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "数控",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "研制",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "FADEC",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "软件",
+          "head": 17,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "开发",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "特点",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "目标",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "探索",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "SCADE",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "基于",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "P"
+        },
+        {
+          "id": 22,
+          "form": "模型",
+          "head": 21,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "开发",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "在",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "FADEC",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "软件",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "开发",
+          "head": 28,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "中",
+          "head": 24,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 24,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "应用",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "探索了两种不同的SCADE基于模型开发解决方案,基于这两种方案分别完成两个FADEC软件配置项的应用软件开发",
+      "tokens": [
+        "探索",
+        "了",
+        "两",
+        "种",
+        "不同",
+        "的",
+        "SCADE",
+        "基于",
+        "模型",
+        "开发",
+        "解决",
+        "方案",
+        ",",
+        "基于",
+        "这",
+        "两",
+        "种",
+        "方案",
+        "分别",
+        "完成",
+        "两",
+        "个",
+        "FADEC",
+        "软件",
+        "配置",
+        "项",
+        "的",
+        "应用",
+        "软件",
+        "开发"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "探索",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "两",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "种",
+          "head": 12,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "不同",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "SCADE",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "基于",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "模型",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "开发",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "解决",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方案",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "基于",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "这",
+          "head": 18,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 16,
+          "form": "两",
+          "head": 17,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 17,
+          "form": "种",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "方案",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "分别",
+          "head": 20,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "完成",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "两",
+          "head": 22,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 22,
+          "form": "个",
+          "head": 26,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 23,
+          "form": "FADEC",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "软件",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "配置",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "项",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 28,
+          "form": "应用",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "软件",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "开发",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过模型测试、模型覆盖率分析和软件硬件集成测试验证了开发结果的正确性",
+      "tokens": [
+        "通过",
+        "模型",
+        "测试",
+        "、",
+        "模型",
+        "覆盖率",
+        "分析",
+        "和",
+        "软件",
+        "硬件",
+        "集成",
+        "测试",
+        "验证",
+        "了",
+        "开发",
+        "结果",
+        "的",
+        "正确性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "模型",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "测试",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "模型",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "覆盖率",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "分析",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "软件",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "硬件",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "集成",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "测试",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "了",
+          "head": 13,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 15,
+          "form": "开发",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "结果",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "正确性",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了联合SCADE和Simulink的基于模型开发流程并明确其注意事项",
+      "tokens": [
+        "提出",
+        "了",
+        "联合",
+        "SCADE",
+        "和",
+        "Simulink",
+        "的",
+        "基于",
+        "模型",
+        "开发",
+        "流程",
+        "并",
+        "明确",
+        "其",
+        "注意",
+        "事项"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "联合",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "SCADE",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "Simulink",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "基于",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "模型",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "开发",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "流程",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "明确",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "其",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 15,
+          "form": "注意",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "事项",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "分析SCADE的两种基于模型开发解决方案的适用范围以及方案选择时的考虑因素,总结分析了SCADE用于机载软件开发的优势和不足",
+      "tokens": [
+        "分析",
+        "SCADE",
+        "的",
+        "两",
+        "种",
+        "基于",
+        "模型",
+        "开发",
+        "解决",
+        "方案",
+        "的",
+        "适用",
+        "范围",
+        "以及",
+        "方案",
+        "选择",
+        "时",
+        "的",
+        "考虑",
+        "因素",
+        ",",
+        "总结",
+        "分析",
+        "了",
+        "SCADE",
+        "用",
+        "于",
+        "机载",
+        "软件",
+        "开发",
+        "的",
+        "优势",
+        "和",
+        "不足"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "SCADE",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "两",
+          "head": 5,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 5,
+          "form": "种",
+          "head": 20,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 6,
+          "form": "基于",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "模型",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "开发",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "解决",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "方案",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "适用",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "范围",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "以及",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "方案",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "选择",
+          "head": 17,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "时",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "考虑",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "因素",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "总结",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "分析",
+          "head": 22,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "了",
+          "head": 22,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 25,
+          "form": "SCADE",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "用",
+          "head": 34,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "于",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 28,
+          "form": "机载",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "软件",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "开发",
+          "head": 27,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 26,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 32,
+          "form": "优势",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "和",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "不足",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

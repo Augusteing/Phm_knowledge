@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "基于半监督迁移学习的轴承故障诊断方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "预测精度不足",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于半监督迁移学习的轴承故障诊断方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "过拟合",
+    "object_type": "问题"
+  },
+  {
+    "subject": "半监督集成学习器(SSIT)",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "发动机轴承故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "航空发动机轴承故障诊断",
+    "subject_type": "任务",
+    "relation": "存在问题",
+    "object": "预测精度不足",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空发动机轴承故障诊断",
+    "subject_type": "任务",
+    "relation": "存在问题",
+    "object": "过拟合",
+    "object_type": "问题"
+  },
+  {
+    "subject": "极限学习机(TELM)",
+    "subject_type": "方法",
+    "relation": "迁移",
+    "object": "高相似度样本",
+    "object_type": "数据"
+  },
+  {
+    "subject": "支持向量机(TSVM)",
+    "subject_type": "方法",
+    "relation": "迁移",
+    "object": "高相似度样本",
+    "object_type": "数据"
+  },
+  {
+    "subject": "高相似度样本",
+    "subject_type": "数据",
+    "relation": "加入",
+    "object": "源样本空间",
+    "object_type": "数据"
+  },
+  {
+    "subject": "同簇学习器",
+    "subject_type": "方法",
+    "relation": "识别",
+    "object": "未标记样本",
+    "object_type": "数据"
+  },
+  {
+    "subject": "半监督学习器",
+    "subject_type": "方法",
+    "relation": "调整",
+    "object": "初始基学习器权重",
+    "object_type": "参数"
+  },
+  {
+    "subject": "半监督集成学习器(SSIT)",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "故障识别",
+    "object_type": "任务"
+  },
+  {
+    "subject": "基于半监督迁移学习的轴承故障诊断方法",
+    "subject_type": "方法",
+    "relation": "降低",
+    "object": "负迁移效果",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于半监督迁移学习的轴承故障诊断方法",
+    "subject_type": "方法",
+    "relation": "提升",
+    "object": "迁移精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于半监督迁移学习的轴承故障诊断方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "半监督学习稳定性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于半监督迁移学习的轴承故障诊断方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "精度",
+    "object_type": "性能指标"
+  }
+]

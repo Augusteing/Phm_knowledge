@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "民机维修间隔的风险评估问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "部件故障预测",
+    "object_type": "技术"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "机队风险评估模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "蒙特卡罗仿真",
+    "object_type": "技术"
+  },
+  {
+    "subject": "维修间隔",
+    "subject_type": "参数",
+    "relation": "影响",
+    "object": "飞行安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "仿真",
+    "object": "飞机总温探头的故障时间",
+    "object_type": "数据"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "机队飞行事故的发生次数",
+    "object_type": "风险"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "得出",
+    "object": "风险因子",
+    "object_type": "指标"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "得出",
+    "object": "飞行事故率",
+    "object_type": "指标"
+  },
+  {
+    "subject": "民用飞机维修间隔风险评估方法",
+    "subject_type": "方法",
+    "relation": "评估",
+    "object": "维修间隔的风险",
+    "object_type": "风险"
+  },
+  {
+    "subject": "维修间隔方案",
+    "subject_type": "方案",
+    "relation": "具有",
+    "object": "风险因子",
+    "object_type": "指标"
+  },
+  {
+    "subject": "维修间隔方案",
+    "subject_type": "方案",
+    "relation": "具有",
+    "object": "飞行事故率",
+    "object_type": "指标"
+  }
+]

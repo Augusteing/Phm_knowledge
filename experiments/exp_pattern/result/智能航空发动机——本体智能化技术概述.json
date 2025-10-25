@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "智能化技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空发动机领域",
+    "object_type": "领域"
+  },
+  {
+    "subject": "智能航空发动机",
+    "subject_type": "技术概念",
+    "relation": "区别于",
+    "object": "传统航空发动机",
+    "object_type": "技术概念"
+  },
+  {
+    "subject": "智能航空发动机",
+    "subject_type": "技术概念",
+    "relation": "强调",
+    "object": "数据利用",
+    "object_type": "能力"
+  },
+  {
+    "subject": "智能航空发动机",
+    "subject_type": "技术概念",
+    "relation": "摆脱",
+    "object": "机械思维模式",
+    "object_type": "思维模式"
+  },
+  {
+    "subject": "智能航空发动机",
+    "subject_type": "技术概念",
+    "relation": "追求",
+    "object": "多源异构信息的关联性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "机械思维模式",
+    "subject_type": "思维模式",
+    "relation": "追求",
+    "object": "参数因果关系",
+    "object_type": "目标"
+  },
+  {
+    "subject": "智能航空发动机",
+    "subject_type": "技术概念",
+    "relation": "发挥",
+    "object": "最佳性能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "智能航空发动机",
+    "subject_type": "技术概念",
+    "relation": "实现",
+    "object": "性能跨越",
+    "object_type": "性能指标"
+  }
+]

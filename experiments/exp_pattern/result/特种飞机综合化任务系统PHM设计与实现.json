@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "任务系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "任务系统",
+    "subject_type": "系统",
+    "relation": "是...的关键因素",
+    "object": "特种飞机能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "任务系统",
+    "subject_type": "系统",
+    "relation": "导致",
+    "object": "故障诊断难度加大",
+    "object_type": "问题"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "层次结构",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "基础资源要素",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "功能要素",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "综合诊断",
+    "object_type": "功能"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "状态策略",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "故障管理",
+    "object_type": "功能"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "提高",
+    "object": "故障诊断准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "降低",
+    "object": "飞机再次出动执行任务的间隔时间",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM系统",
+    "subject_type": "系统",
+    "relation": "缩短",
+    "object": "地面维修时间",
+    "object_type": "性能指标"
+  }
+]

@@ -1,0 +1,410 @@
+{
+  "entities": [
+    {
+      "name": "基于Copula相似性的航空发动机RUL预测方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "剩余使用寿命(RUL)",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Copula函数",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "线性退化模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "传感器",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Ps30",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "T50",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "BPR",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Kendall秩相关系数",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "传统方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "预测与健康管理(PHM)",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非线性相关关系",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "许先鑫",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "李娟",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "孙秀慧",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "戴洪德",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "鲁东大学",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "海军航空大学",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "NASA",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Frank Copula",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Clayton Copula",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Gumbel Copula",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Joe Copula",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Akaike信息准则(AIC)",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "标准差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "性能退化特征",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障预测",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康评估",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "预测性维护",
+      "type": "应用场景",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机健康监测",
+      "type": "应用场景",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "许先鑫",
+      "evaluation": "错误"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "李娟",
+      "evaluation": "错误"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "孙秀慧",
+      "evaluation": "错误"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "戴洪德",
+      "evaluation": "错误"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "非线性相关关系",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "应用于",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "用于",
+      "tail": "剩余使用寿命(RUL)预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "优于",
+      "tail": "传统方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提高",
+      "tail": "预测精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "工作状态分类",
+      "evaluation": "正确"
+    },
+    {
+      "head": "线性退化模型",
+      "relation": "建立",
+      "tail": "退化模型",
+      "evaluation": "错误"
+    },
+    {
+      "head": "线性退化模型",
+      "relation": "用于",
+      "tail": "传感器选择",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "用于",
+      "tail": "相关性建模",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "构建",
+      "tail": "Copula结构",
+      "evaluation": "错误"
+    },
+    {
+      "head": "Ps30",
+      "relation": "属于",
+      "tail": "传感器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "T50",
+      "relation": "属于",
+      "tail": "传感器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "BPR",
+      "relation": "属于",
+      "tail": "传感器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Kendall秩相关系数",
+      "relation": "用于",
+      "tail": "相似性度量",
+      "evaluation": "正确"
+    },
+    {
+      "head": "C-MAPSS数据集",
+      "relation": "用于",
+      "tail": "实验验证",
+      "evaluation": "正确"
+    },
+    {
+      "head": "预测与健康管理(PHM)",
+      "relation": "应用于",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "预测与健康管理(PHM)",
+      "relation": "降低",
+      "tail": "维护成本",
+      "evaluation": "正确"
+    },
+    {
+      "head": "预测与健康管理(PHM)",
+      "relation": "降低",
+      "tail": "风险",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机",
+      "relation": "具有",
+      "tail": "性能退化特征",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机",
+      "relation": "用于",
+      "tail": "故障预测",
+      "evaluation": "错误"
+    },
+    {
+      "head": "航空发动机",
+      "relation": "用于",
+      "tail": "健康评估",
+      "evaluation": "错误"
+    },
+    {
+      "head": "航空发动机",
+      "relation": "用于",
+      "tail": "预测性维护",
+      "evaluation": "错误"
+    },
+    {
+      "head": "航空发动机",
+      "relation": "用于",
+      "tail": "发动机健康监测",
+      "evaluation": "错误"
+    },
+    {
+      "head": "许先鑫",
+      "relation": "属于",
+      "tail": "鲁东大学",
+      "evaluation": "正确"
+    },
+    {
+      "head": "李娟",
+      "relation": "属于",
+      "tail": "鲁东大学",
+      "evaluation": "正确"
+    },
+    {
+      "head": "孙秀慧",
+      "relation": "属于",
+      "tail": "鲁东大学",
+      "evaluation": "正确"
+    },
+    {
+      "head": "戴洪德",
+      "relation": "属于",
+      "tail": "海军航空大学",
+      "evaluation": "正确"
+    },
+    {
+      "head": "C-MAPSS数据集",
+      "relation": "来源于",
+      "tail": "NASA",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Frank Copula",
+      "relation": "属于",
+      "type": "Copula函数",
+      "evaluation": "错误"
+    },
+    {
+      "head": "Clayton Copula",
+      "relation": "属于",
+      "type": "Copula函数",
+      "evaluation": "错误"
+    },
+    {
+      "head": "Gumbel Copula",
+      "relation": "属于",
+      "type": "Copula函数",
+      "evaluation": "错误"
+    },
+    {
+      "head": "Joe Copula",
+      "relation": "属于",
+      "type": "Copula函数",
+      "evaluation": "错误"
+    },
+    {
+      "head": "Akaike信息准则(AIC)",
+      "relation": "用于",
+      "tail": "模型选择",
+      "evaluation": "正确"
+    },
+    {
+      "head": "标准差",
+      "relation": "用于",
+      "tail": "模型评估",
+      "evaluation": "正确"
+    }
+  ]
+}

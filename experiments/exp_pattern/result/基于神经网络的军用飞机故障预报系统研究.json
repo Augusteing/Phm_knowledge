@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "故障预报",
+    "subject_type": "任务",
+    "relation": "提高",
+    "object": "飞行器安全性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "神经网络技术",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "故障预报系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "神经网络",
+    "object_type": "技术"
+  },
+  {
+    "subject": "故障预报系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "预测理论",
+    "object_type": "理论"
+  },
+  {
+    "subject": "故障预报系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "专家系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "神经网络模型",
+    "subject_type": "模型",
+    "relation": "具有",
+    "object": "训练算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "故障预报系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "故障的预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "故障的预测",
+    "subject_type": "任务",
+    "relation": "针对",
+    "object": "某型军用飞机冷气系统",
+    "object_type": "飞机部件"
+  }
+]

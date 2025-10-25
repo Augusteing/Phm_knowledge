@@ -1,0 +1,928 @@
+{
+  "title": "先进航空发动机核心关键技术",
+  "summary": "航空发动机是实现先进战机作战能力全面提升的核心关键，先进战机对航空发动机高性能、高可靠性、长寿命、良好维护性等方面的要求不断提高，给航空发动机技术和产品发展带来了重大挑战。本文针对先进战机对航空发动机在综合控温、转子结构系统稳健性、全权限数字控制、飞发综合热管理、健康管理、推力矢量、高隐身等七个方面的核心技术需求，研究分析了实现需求的技术途径和主要关键技术，可为先进航空发动机发展提供技术支撑。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机是实现先进战机作战能力全面提升的核心关键",
+      "tokens": [
+        "航空",
+        "发动机",
+        "是",
+        "实现",
+        "先进",
+        "战机",
+        "作战",
+        "能力",
+        "全面",
+        "提升",
+        "的",
+        "核心",
+        "关键"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 3,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 4,
+          "form": "实现",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "先进",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "战机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "作战",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "能力",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "全面",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "提升",
+          "head": 4,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "核心",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "关键",
+          "head": 3,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "先进战机对航空发动机高性能、高可靠性、长寿命、良好维护性等方面的要求不断提高",
+      "tokens": [
+        "先进",
+        "战机",
+        "对",
+        "航空",
+        "发动机",
+        "高",
+        "性能",
+        "、",
+        "高",
+        "可靠性",
+        "、",
+        "长",
+        "寿命",
+        "、",
+        "良好",
+        "维护性",
+        "等",
+        "方面",
+        "的",
+        "要求",
+        "不断",
+        "提高"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "先进",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "战机",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "对",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "高",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "性能",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "高",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "可靠性",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "长",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "寿命",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "良好",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "维护性",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "等",
+          "head": 16,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 18,
+          "form": "方面",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "要求",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "不断",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "提高",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "给航空发动机技术和产品发展带来了重大挑战",
+      "tokens": [
+        "给",
+        "航空",
+        "发动机",
+        "技术",
+        "和",
+        "产品",
+        "发展",
+        "带来",
+        "了",
+        "重大",
+        "挑战"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "给",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "技术",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "产品",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发展",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "带来",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "重大",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "挑战",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文针对先进战机对航空发动机在综合控温、转子结构系统稳健性、全权限数字控制、飞发综合热管理、健康管理、推力矢量、高隐身等七个方面的核心技术需求",
+      "tokens": [
+        "本",
+        "文",
+        "针对",
+        "先进",
+        "战机",
+        "对",
+        "航空",
+        "发动机",
+        "在",
+        "综合",
+        "控温",
+        "、",
+        "转子",
+        "结构",
+        "系统",
+        "稳健性",
+        "、",
+        "全",
+        "权限",
+        "数字",
+        "控制",
+        "、",
+        "飞发",
+        "综合",
+        "热",
+        "管理",
+        "、",
+        "健康",
+        "管理",
+        "、",
+        "推力",
+        "矢量",
+        "、",
+        "高",
+        "隐身",
+        "等",
+        "七",
+        "个",
+        "方面",
+        "的",
+        "核心",
+        "技术",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "先进",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "战机",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 43,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "航空",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "在",
+          "head": 43,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "综合",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "控温",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "转子",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "结构",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "系统",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "稳健性",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "全",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "DT"
+        },
+        {
+          "id": 19,
+          "form": "权限",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "数字",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "控制",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "飞发",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "综合",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "热",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "管理",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "健康",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "管理",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "推力",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "矢量",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "高",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "隐身",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "等",
+          "head": 35,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 37,
+          "form": "七",
+          "head": 38,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 38,
+          "form": "个",
+          "head": 39,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 39,
+          "form": "方面",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 41,
+          "form": "核心",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "技术",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "需求",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "研究分析了实现需求的技术途径和主要关键技术",
+      "tokens": [
+        "研究",
+        "分析",
+        "了",
+        "实现",
+        "需求",
+        "的",
+        "技术",
+        "途径",
+        "和",
+        "主要",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "实现",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "需求",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "技术",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "途径",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "主要",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "关键",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "技术",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "可为先进航空发动机发展提供技术支撑",
+      "tokens": [
+        "可",
+        "为",
+        "先进",
+        "航空",
+        "发动机",
+        "发展",
+        "提供",
+        "技术",
+        "支撑"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "可",
+          "head": 7,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "为",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "先进",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发展",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "支撑",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

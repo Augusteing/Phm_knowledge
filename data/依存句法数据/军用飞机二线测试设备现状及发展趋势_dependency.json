@@ -1,0 +1,652 @@
+{
+  "title": "军用飞机二线测试设备现状及发展趋势",
+  "summary": "分析了美、英、俄军飞机二线测试设备使用情况,针对二级维修体制已成为下一代飞机维护保障模式的发展方向,提出了二线测试设备应基于飞机可测试性设计和PHM技术,功能应前移和后推,故障定位应更强的需求。提出了综合化高、通用性强、管用、好用、耐用是二线测试设备的发展趋势。",
+  "analyzed_sentences": [
+    {
+      "sentence": "分析了美、英、俄军飞机二线测试设备使用情况,针对二级维修体制已成为下一代飞机维护保障模式的发展方向,提出了二线测试设备应基于飞机可测试性设计和PHM技术,功能应前移和后推,故障定位应更强的需求",
+      "tokens": [
+        "分析",
+        "了",
+        "美",
+        "、",
+        "英",
+        "、",
+        "俄军",
+        "飞机",
+        "二线",
+        "测试",
+        "设备",
+        "使用",
+        "情况",
+        ",",
+        "针对",
+        "二",
+        "级",
+        "维修",
+        "体制",
+        "已",
+        "成为",
+        "下",
+        "一",
+        "代",
+        "飞机",
+        "维护",
+        "保障",
+        "模式",
+        "的",
+        "发展",
+        "方向",
+        ",",
+        "提出",
+        "了",
+        "二线",
+        "测试",
+        "设备",
+        "应",
+        "基于",
+        "飞机",
+        "可测试性",
+        "设计",
+        "和",
+        "PHM",
+        "技术",
+        ",",
+        "功能",
+        "应",
+        "前移",
+        "和",
+        "后推",
+        ",",
+        "故障",
+        "定位",
+        "应",
+        "更",
+        "强",
+        "的",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "美",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "、",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "英",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "俄军",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "二线",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "测试",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "设备",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "使用",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "情况",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "针对",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "二",
+          "head": 17,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 17,
+          "form": "级",
+          "head": 19,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "维修",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "体制",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "已",
+          "head": 21,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 21,
+          "form": "成为",
+          "head": 15,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "下",
+          "head": 25,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 23,
+          "form": "一",
+          "head": 24,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 24,
+          "form": "代",
+          "head": 22,
+          "deprel": "dep",
+          "pos": "M"
+        },
+        {
+          "id": 25,
+          "form": "飞机",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "维护",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "保障",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "模式",
+          "head": 31,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "发展",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "方向",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "提出",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "了",
+          "head": 33,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 35,
+          "form": "二线",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "测试",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "设备",
+          "head": 39,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "应",
+          "head": 39,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "基于",
+          "head": 33,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "飞机",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "可测试性",
+          "head": 42,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "设计",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "和",
+          "head": 45,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 44,
+          "form": "PHM",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "技术",
+          "head": 39,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": ",",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "功能",
+          "head": 49,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "应",
+          "head": 49,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "前移",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 50,
+          "form": "和",
+          "head": 49,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 51,
+          "form": "后推",
+          "head": 49,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 52,
+          "form": ",",
+          "head": 49,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 53,
+          "form": "故障",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "定位",
+          "head": 57,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "应",
+          "head": 57,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 56,
+          "form": "更",
+          "head": 57,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 57,
+          "form": "强",
+          "head": 59,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 58,
+          "form": "的",
+          "head": 57,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 59,
+          "form": "需求",
+          "head": 49,
+          "deprel": "dep",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了综合化高、通用性强、管用、好用、耐用是二线测试设备的发展趋势",
+      "tokens": [
+        "提出",
+        "了",
+        "综合化",
+        "高",
+        "、",
+        "通用性",
+        "强",
+        "、",
+        "管用",
+        "、",
+        "好用",
+        "、",
+        "耐用",
+        "是",
+        "二线",
+        "测试",
+        "设备",
+        "的",
+        "发展",
+        "趋势"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "综合化",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "高",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "通用性",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "强",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "管用",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "好用",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "耐用",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "是",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 15,
+          "form": "二线",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "测试",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "设备",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "发展",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "趋势",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

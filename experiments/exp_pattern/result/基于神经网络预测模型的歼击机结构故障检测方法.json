@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "神经网络预测模型故障检测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "预测神经网络",
+    "object_type": "技术"
+  },
+  {
+    "subject": "神经网络方法",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "非线性逼近能力强",
+    "object_type": "优点"
+  },
+  {
+    "subject": "神经网络方法",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "故障检测实时性好",
+    "object_type": "优点"
+  },
+  {
+    "subject": "神经网络预测模型故障检测方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "多步直接预测算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "神经网络预测模型故障检测方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "阈值选取原则",
+    "object_type": "原则"
+  },
+  {
+    "subject": "神经网络预测模型故障检测方法",
+    "subject_type": "方法",
+    "relation": "检测",
+    "object": "歼击机结构故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "仿真验证",
+    "subject_type": "验证方法",
+    "relation": "验证",
+    "object": "神经网络预测模型故障检测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "神经网络预测模型故障检测方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "某型歼击机",
+    "object_type": "应用对象"
+  },
+  {
+    "subject": "神经网络方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "传统故障检测方法",
+    "object_type": "方法"
+  }
+]

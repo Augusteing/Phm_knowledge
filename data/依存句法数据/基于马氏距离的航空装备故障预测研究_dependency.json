@@ -1,0 +1,989 @@
+{
+  "title": "基于马氏距离的航空装备故障预测研究",
+  "summary": "故障状态类型的判别是航空装备故障预测系统的核心环节,它直接影响到故障预测的准确性;针对航空装备的故障状态类型判别问题,提出一种基于马氏距离的故障预测方法;首先介绍了马氏距离,其次建立了状态数据库矩阵及状态判别模型,并给出了基于马氏距离的故障预测流程;最后将该方法用于某型飞机火控系统的故障预测中,使得在线和离线的平均故障预测准确度分别达到98.48%和97.77%,表明马氏距离在航空装备的故障预测中有较好的应用和推广价值。",
+  "analyzed_sentences": [
+    {
+      "sentence": "故障状态类型的判别是航空装备故障预测系统的核心环节,它直接影响到故障预测的准确性;针对航空装备的故障状态类型判别问题,提出一种基于马氏距离的故障预测方法;首先介绍了马氏距离,其次建立了状态数据库矩阵及状态判别模型,并给出了基于马氏距离的故障预测流程;最后将该方法用于某型飞机火控系统的故障预测中,使得在线和离线的平均故障预测准确度分别达到98.48%和97.77%,表明马氏距离在航空装备的故障预测中有较好的应用和推广价值",
+      "tokens": [
+        "故障",
+        "状态",
+        "类型",
+        "的",
+        "判别",
+        "是",
+        "航空",
+        "装备",
+        "故障",
+        "预测",
+        "系统",
+        "的",
+        "核心",
+        "环节",
+        ",",
+        "它",
+        "直接",
+        "影响",
+        "到",
+        "故障",
+        "预测",
+        "的",
+        "准确性",
+        ";",
+        "针对",
+        "航空",
+        "装备",
+        "的",
+        "故障",
+        "状态",
+        "类型",
+        "判别",
+        "问题",
+        ",",
+        "提出",
+        "一",
+        "种",
+        "基于",
+        "马氏",
+        "距离",
+        "的",
+        "故障",
+        "预测",
+        "方法",
+        ";",
+        "首先",
+        "介绍",
+        "了",
+        "马氏",
+        "距离",
+        ",",
+        "其次",
+        "建立",
+        "了",
+        "状态",
+        "数据库",
+        "矩阵",
+        "及",
+        "状态",
+        "判别",
+        "模型",
+        ",",
+        "并",
+        "给出",
+        "了",
+        "基于",
+        "马氏",
+        "距离",
+        "的",
+        "故障",
+        "预测",
+        "流程",
+        ";",
+        "最后",
+        "将",
+        "该",
+        "方法",
+        "用",
+        "于",
+        "某",
+        "型",
+        "飞机",
+        "火控",
+        "系统",
+        "的",
+        "故障",
+        "预测",
+        "中",
+        ",",
+        "使得",
+        "在线",
+        "和",
+        "离线",
+        "的",
+        "平均",
+        "故障",
+        "预测",
+        "准确度",
+        "分别",
+        "达到",
+        "98.48%",
+        "和",
+        "97.77%",
+        ",",
+        "表明",
+        "马氏",
+        "距离",
+        "在",
+        "航空",
+        "装备",
+        "的",
+        "故障",
+        "预测",
+        "中",
+        "有",
+        "较",
+        "好",
+        "的",
+        "应用",
+        "和",
+        "推广",
+        "价值"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "故障",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "状态",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "类型",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "判别",
+          "head": 6,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 7,
+          "form": "航空",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "装备",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "核心",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "环节",
+          "head": 6,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "它",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 17,
+          "form": "直接",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "影响",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "到",
+          "head": 18,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "预测",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "准确性",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ";",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "针对",
+          "head": 35,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 26,
+          "form": "航空",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "装备",
+          "head": 31,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "故障",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "状态",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "类型",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "判别",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "问题",
+          "head": 25,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "提出",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "一",
+          "head": 37,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 37,
+          "form": "种",
+          "head": 44,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 38,
+          "form": "基于",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 39,
+          "form": "马氏",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 40,
+          "form": "距离",
+          "head": 38,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 38,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "故障",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "预测",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "方法",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": ";",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "首先",
+          "head": 47,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 47,
+          "form": "介绍",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "了",
+          "head": 47,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 49,
+          "form": "马氏",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 50,
+          "form": "距离",
+          "head": 47,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 47,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "其次",
+          "head": 53,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 53,
+          "form": "建立",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 54,
+          "form": "了",
+          "head": 53,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 55,
+          "form": "状态",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "数据库",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "矩阵",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "及",
+          "head": 61,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 59,
+          "form": "状态",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "判别",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "模型",
+          "head": 53,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": ",",
+          "head": 47,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 63,
+          "form": "并",
+          "head": 47,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 64,
+          "form": "给出",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 65,
+          "form": "了",
+          "head": 64,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 66,
+          "form": "基于",
+          "head": 72,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 67,
+          "form": "马氏",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 68,
+          "form": "距离",
+          "head": 66,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "的",
+          "head": 66,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 70,
+          "form": "故障",
+          "head": 72,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "预测",
+          "head": 72,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "流程",
+          "head": 64,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": ";",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 74,
+          "form": "最后",
+          "head": 78,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 75,
+          "form": "将",
+          "head": 78,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 76,
+          "form": "该",
+          "head": 77,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 77,
+          "form": "方法",
+          "head": 78,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "用",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 79,
+          "form": "于",
+          "head": 78,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 80,
+          "form": "某",
+          "head": 81,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 81,
+          "form": "型",
+          "head": 84,
+          "deprel": "nn",
+          "pos": "M"
+        },
+        {
+          "id": 82,
+          "form": "飞机",
+          "head": 84,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": "火控",
+          "head": 84,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 84,
+          "form": "系统",
+          "head": 87,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "的",
+          "head": 84,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 86,
+          "form": "故障",
+          "head": 87,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 87,
+          "form": "预测",
+          "head": 88,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": "中",
+          "head": 79,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 89,
+          "form": ",",
+          "head": 78,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 90,
+          "form": "使得",
+          "head": 78,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 91,
+          "form": "在线",
+          "head": 93,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 92,
+          "form": "和",
+          "head": 93,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 93,
+          "form": "离线",
+          "head": 98,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "的",
+          "head": 93,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 95,
+          "form": "平均",
+          "head": 98,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 96,
+          "form": "故障",
+          "head": 98,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "预测",
+          "head": 98,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": "准确度",
+          "head": 90,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 99,
+          "form": "分别",
+          "head": 100,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 100,
+          "form": "达到",
+          "head": 90,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 101,
+          "form": "98.48%",
+          "head": 103,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 102,
+          "form": "和",
+          "head": 103,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 103,
+          "form": "97.77%",
+          "head": 100,
+          "deprel": "range",
+          "pos": "CD"
+        },
+        {
+          "id": 104,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 105,
+          "form": "表明",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 106,
+          "form": "马氏",
+          "head": 107,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 107,
+          "form": "距离",
+          "head": 115,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 108,
+          "form": "在",
+          "head": 115,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 109,
+          "form": "航空",
+          "head": 110,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "装备",
+          "head": 113,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 111,
+          "form": "的",
+          "head": 110,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 112,
+          "form": "故障",
+          "head": 113,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 113,
+          "form": "预测",
+          "head": 114,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 114,
+          "form": "中",
+          "head": 108,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 115,
+          "form": "有",
+          "head": 105,
+          "deprel": "ccomp",
+          "pos": "VE"
+        },
+        {
+          "id": 116,
+          "form": "较",
+          "head": 117,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 117,
+          "form": "好",
+          "head": 122,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 118,
+          "form": "的",
+          "head": 117,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 119,
+          "form": "应用",
+          "head": 121,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 120,
+          "form": "和",
+          "head": 121,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 121,
+          "form": "推广",
+          "head": 122,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 122,
+          "form": "价值",
+          "head": 115,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

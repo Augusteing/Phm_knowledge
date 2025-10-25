@@ -1,0 +1,796 @@
+{
+  "title": "基于AFDX网络的综合模块化航电故障注入技术",
+  "summary": "为了对综合模块化航空电子(IMA)系统的健康管理功能进行验证,给出了通过航空电子全双工交换式以太网(AFDX)进行故障注入的技术解决方案。在该方案下,提出了故障数据的配置管理方法,以及一种解决主机数据更新间隔、发送间隔与AFDX端系统定时器周期不匹配的发送策略,搭建了相应故障注入装置,开发了故障注入软件,通过实验测试说明了上述方法和策略的有效性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为了对综合模块化航空电子(IMA)系统的健康管理功能进行验证,给出了通过航空电子全双工交换式以太网(AFDX)进行故障注入的技术解决方案",
+      "tokens": [
+        "为了",
+        "对",
+        "综合",
+        "模块化",
+        "航空",
+        "电子",
+        "(",
+        "IMA",
+        ")",
+        "系统",
+        "的",
+        "健康",
+        "管理",
+        "功能",
+        "进行",
+        "验证",
+        ",",
+        "给出",
+        "了",
+        "通过",
+        "航空",
+        "电子",
+        "全",
+        "双工",
+        "交换式",
+        "以太网",
+        "(",
+        "AFDX",
+        ")",
+        "进行",
+        "故障",
+        "注入",
+        "的",
+        "技术",
+        "解决",
+        "方案"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "综合",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "模块化",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "电子",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "(",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "IMA",
+          "head": 10,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ")",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "健康",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "管理",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "功能",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "进行",
+          "head": 18,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "验证",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "了",
+          "head": 18,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 20,
+          "form": "通过",
+          "head": 30,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "航空",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "电子",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "全",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "DT"
+        },
+        {
+          "id": 24,
+          "form": "双工",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "交换式",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "以太网",
+          "head": 20,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "(",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "AFDX",
+          "head": 26,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 29,
+          "form": ")",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "进行",
+          "head": 36,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "故障",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "注入",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 30,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 34,
+          "form": "技术",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "解决",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "方案",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在该方案下,提出了故障数据的配置管理方法,以及一种解决主机数据更新间隔、发送间隔与AFDX端系统定时器周期不匹配的发送策略,搭建了相应故障注入装置,开发了故障注入软件,通过实验测试说明了上述方法和策略的有效性",
+      "tokens": [
+        "在",
+        "该",
+        "方案",
+        "下",
+        ",",
+        "提出",
+        "了",
+        "故障",
+        "数据",
+        "的",
+        "配置",
+        "管理",
+        "方法",
+        ",",
+        "以及",
+        "一",
+        "种",
+        "解决",
+        "主机",
+        "数据",
+        "更新",
+        "间隔",
+        "、",
+        "发送",
+        "间隔",
+        "与",
+        "AFDX",
+        "端",
+        "系统",
+        "定时器",
+        "周期",
+        "不",
+        "匹配",
+        "的",
+        "发送",
+        "策略",
+        ",",
+        "搭建",
+        "了",
+        "相应",
+        "故障",
+        "注入",
+        "装置",
+        ",",
+        "开发",
+        "了",
+        "故障",
+        "注入",
+        "软件",
+        ",",
+        "通过",
+        "实验",
+        "测试",
+        "说明",
+        "了",
+        "上述",
+        "方法",
+        "和",
+        "策略",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "该",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "方案",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "下",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "了",
+          "head": 6,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "数据",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "配置",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "管理",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "方法",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "以及",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "一",
+          "head": 17,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 17,
+          "form": "种",
+          "head": 36,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "解决",
+          "head": 36,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "主机",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "数据",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "更新",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "间隔",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "发送",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "间隔",
+          "head": 33,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "与",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "AFDX",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 28,
+          "form": "端",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "系统",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "定时器",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "周期",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "不",
+          "head": 33,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 33,
+          "form": "匹配",
+          "head": 18,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 35,
+          "form": "发送",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "策略",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "搭建",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "了",
+          "head": 38,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 40,
+          "form": "相应",
+          "head": 43,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "故障",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "注入",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "装置",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": ",",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 45,
+          "form": "开发",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "了",
+          "head": 45,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 47,
+          "form": "故障",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "注入",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "软件",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 51,
+          "form": "通过",
+          "head": 54,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 52,
+          "form": "实验",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "测试",
+          "head": 51,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "说明",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 55,
+          "form": "了",
+          "head": 54,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 56,
+          "form": "上述",
+          "head": 59,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 57,
+          "form": "方法",
+          "head": 59,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "和",
+          "head": 59,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 59,
+          "form": "策略",
+          "head": 61,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "的",
+          "head": 59,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 61,
+          "form": "有效性",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

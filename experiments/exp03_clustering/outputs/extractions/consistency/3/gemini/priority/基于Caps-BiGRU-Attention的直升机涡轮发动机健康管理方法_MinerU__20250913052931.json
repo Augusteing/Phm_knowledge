@@ -1,0 +1,404 @@
+{
+  "entities": [
+    {
+      "name": "Caps-BiGRU-Attention",
+      "type": "模型"
+    },
+    {
+      "name": "直升机涡轮发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "故障模式识别",
+      "type": "任务"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "任务"
+    },
+    {
+      "name": "涡轮发动机故障识别",
+      "type": "问题"
+    },
+    {
+      "name": "健康状况量化",
+      "type": "问题"
+    },
+    {
+      "name": "胶囊层",
+      "type": "模型/部件"
+    },
+    {
+      "name": "BiGRU层",
+      "type": "模型/部件"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "技术"
+    },
+    {
+      "name": "空间关系",
+      "type": "特征"
+    },
+    {
+      "name": "时间序列特征",
+      "type": "特征"
+    },
+    {
+      "name": "特征加权",
+      "type": "方法"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "准确率",
+      "type": "性能指标"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "特征分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "概率分布拟合",
+      "type": "研究方法"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "模型"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "严重失效",
+      "type": "健康状态"
+    },
+    {
+      "name": "轻微失效",
+      "type": "健康状态"
+    },
+    {
+      "name": "健康状态",
+      "type": "健康状态"
+    },
+    {
+      "name": "衰减状态",
+      "type": "健康状态"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "模型"
+    },
+    {
+      "name": "传统卷积网络",
+      "type": "模型"
+    },
+    {
+      "name": "动态路由算法",
+      "type": "算法"
+    },
+    {
+      "name": "双向门控循环单元",
+      "type": "模型"
+    },
+    {
+      "name": "门控循环单元",
+      "type": "模型"
+    },
+    {
+      "name": "压缩激活注意力机制",
+      "type": "技术"
+    },
+    {
+      "name": "注意力机制",
+      "type": "技术"
+    },
+    {
+      "name": "Python",
+      "type": "软件工具"
+    },
+    {
+      "name": "TensorFlow",
+      "type": "软件工具"
+    },
+    {
+      "name": "交叉熵损失函数",
+      "type": "性能指标"
+    },
+    {
+      "name": "均方误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "CNN-BiGRU-Attention",
+      "type": "模型"
+    },
+    {
+      "name": "CNN-BiLstm",
+      "type": "模型"
+    },
+    {
+      "name": "CNN-BiGRU",
+      "type": "模型"
+    },
+    {
+      "name": "RandomForest",
+      "type": "模型"
+    },
+    {
+      "name": "CNN网络",
+      "type": "模型"
+    },
+    {
+      "name": "SHAP",
+      "type": "方法"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "故障模式",
+      "type": "故障模式"
+    },
+    {
+      "name": "净功率",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指示空速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "K-S检验",
+      "type": "研究方法"
+    },
+    {
+      "name": "AIC值",
+      "type": "性能指标"
+    },
+    {
+      "name": "混合高斯密度模型",
+      "type": "模型"
+    },
+    {
+      "name": "粒子群优化方法",
+      "type": "算法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "用于",
+      "tail": "故障模式识别"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "用于",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "解决",
+      "tail": "涡轮发动机故障识别"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "解决",
+      "tail": "健康状况量化"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "包含",
+      "tail": "胶囊层"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "包含",
+      "tail": "BiGRU层"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "包含",
+      "tail": "SE注意力机制"
+    },
+    {
+      "head": "胶囊层",
+      "relation": "用于",
+      "tail": "捕捉空间关系"
+    },
+    {
+      "head": "BiGRU层",
+      "relation": "用于",
+      "tail": "提取时间序列特征"
+    },
+    {
+      "head": "SE注意力机制",
+      "relation": "用于",
+      "tail": "特征加权"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "在...上验证",
+      "tail": "直升机涡轮发动机数据集"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiGRU-Attention"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiLstm"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "CNN-BiGRU"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "优于",
+      "tail": "RandomForest"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "替代",
+      "tail": "传统卷积网络"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "采用",
+      "tail": "动态路由算法"
+    },
+    {
+      "head": "双向门控循环单元",
+      "relation": "基于",
+      "tail": "门控循环单元"
+    },
+    {
+      "head": "压缩激活注意力机制",
+      "relation": "属于",
+      "tail": "注意力机制"
+    },
+    {
+      "head": "SHAP",
+      "relation": "用于",
+      "tail": "特征分析"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "故障模式",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "指示空速",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "净功率",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "概率分布拟合",
+      "relation": "应用于",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "K-S检验",
+      "relation": "用于评估",
+      "tail": "概率分布拟合"
+    },
+    {
+      "head": "AIC值",
+      "relation": "用于评估",
+      "tail": "概率分布拟合"
+    },
+    {
+      "head": "粒子群优化方法",
+      "relation": "用于",
+      "tail": "寻找最优箱数"
+    },
+    {
+      "head": "严重失效",
+      "relation": "最佳分布为",
+      "tail": "贝塔分布"
+    },
+    {
+      "head": "轻微失效",
+      "relation": "最佳分布为",
+      "tail": "贝塔分布"
+    },
+    {
+      "head": "健康状态",
+      "relation": "最佳分布为",
+      "tail": "贝塔分布"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "采用",
+      "tail": "交叉熵损失函数"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "采用",
+      "tail": "均方误差"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "TensorFlow"
+    },
+    {
+      "head": "Caps-BiGRU-Attention",
+      "relation": "基于",
+      "tail": "Python"
+    }
+  ]
+}

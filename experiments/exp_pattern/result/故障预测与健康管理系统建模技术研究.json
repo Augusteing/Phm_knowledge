@@ -1,0 +1,37 @@
+[
+  {
+    "subject": "飞机PHM系统",
+    "subject_type": "系统",
+    "relation": "构建",
+    "object": "分层体系模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "分层体系模型",
+    "subject_type": "模型",
+    "relation": "依据",
+    "object": "飞机特征",
+    "object_type": "属性"
+  },
+  {
+    "subject": "基于数据的建模方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "液压泵PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "液压泵",
+    "subject_type": "部件",
+    "relation": "是",
+    "object": "飞机典型部件",
+    "object_type": "部件类别"
+  },
+  {
+    "subject": "试验",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "基于数据的建模方法",
+    "object_type": "方法"
+  }
+]

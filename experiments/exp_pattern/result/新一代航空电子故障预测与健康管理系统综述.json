@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "系统可用性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "维修效率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "寿命周期成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "成为",
+    "object": "飞机航空电子系统设计的关键技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "综合化系统检测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "故障诊断",
+    "object_type": "功能"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "故障预测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "健康管理",
+    "object_type": "功能"
+  },
+  {
+    "subject": "APHM系统设计",
+    "subject_type": "系统设计",
+    "relation": "包含",
+    "object": "层次化体系结构",
+    "object_type": "系统架构"
+  },
+  {
+    "subject": "APHM系统设计",
+    "subject_type": "系统设计",
+    "relation": "包含",
+    "object": "功能要求",
+    "object_type": "设计要求"
+  },
+  {
+    "subject": "APHM",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "故障预测",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "APHM",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "健康评估",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "APHM",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "系统维护",
+    "object_type": "关键技术"
+  }
+]

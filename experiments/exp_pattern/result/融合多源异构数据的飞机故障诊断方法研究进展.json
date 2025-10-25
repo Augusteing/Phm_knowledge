@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "飞机",
+    "subject_type": "产品",
+    "relation": "产生",
+    "object": "多源异构数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "多源异构数据",
+    "subject_type": "数据",
+    "relation": "保障",
+    "object": "飞机安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "飞机全寿命周期",
+    "subject_type": "阶段",
+    "relation": "包含",
+    "object": "数据源类型",
+    "object_type": "类别"
+  },
+  {
+    "subject": "数据源类型",
+    "subject_type": "类别",
+    "relation": "包括",
+    "object": "初始适航设计数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "数据源类型",
+    "subject_type": "类别",
+    "relation": "包括",
+    "object": "运营可靠性数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "数据源类型",
+    "subject_type": "类别",
+    "relation": "包括",
+    "object": "运行维护数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "数据源类型",
+    "subject_type": "类别",
+    "relation": "包括",
+    "object": "机载设备数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "多源异构数据的融合应用",
+    "subject_type": "方法",
+    "relation": "分析",
+    "object": "故障成因",
+    "object_type": "原因"
+  },
+  {
+    "subject": "多源异构数据的融合应用",
+    "subject_type": "方法",
+    "relation": "辅助",
+    "object": "排故",
+    "object_type": "活动"
+  },
+  {
+    "subject": "多源异构数据的融合应用",
+    "subject_type": "方法",
+    "relation": "辅助",
+    "object": "维修性设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "融合数据的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "传统单一数据来源的故障诊断分析方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "多源异构数据的融合应用",
+    "subject_type": "方法",
+    "relation": "是",
+    "object": "发展趋势",
+    "object_type": "概念"
+  }
+]

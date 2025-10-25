@@ -1,0 +1,1241 @@
+{
+  "title": "飞机空调冷却子系统故障预测",
+  "summary": "针对近年来飞机空调冷却子系统维修次数超警戒从而导致航空公司运营效率低下的问题,提出了一种基于某机型系统失效数据的失效模型建立新方法。对换拆率超警戒的热交换器这一特定部件运用扩展的Weibull分步建模,分别研究了其在2参数Weibull分步、3参数Weibull分步、双Weibull分步、三Weibull分步和2段Weibull分步模型下的拟合质量,运用更新过程解出期望失效数。随后对整个子系统运用幂律过程建模,使用拉普拉斯算法进行故障趋势预测。通过理论计算与实际维修资料对比,验证了模型准确性,修改了维修计划。该模型可用于航空公司对该子系统及其部件进行故障预测和拟定可靠性方案。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对近年来飞机空调冷却子系统维修次数超警戒从而导致航空公司运营效率低下的问题,提出了一种基于某机型系统失效数据的失效模型建立新方法",
+      "tokens": [
+        "针对",
+        "近年",
+        "来",
+        "飞机",
+        "空调",
+        "冷却子",
+        "系统",
+        "维修",
+        "次数",
+        "超",
+        "警戒",
+        "从而",
+        "导致",
+        "航空",
+        "公司",
+        "运营",
+        "效率",
+        "低下",
+        "的",
+        "问题",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "基于",
+        "某",
+        "机型",
+        "系统",
+        "失效",
+        "数据",
+        "的",
+        "失效",
+        "模型",
+        "建立",
+        "新",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "近年",
+          "head": 3,
+          "deprel": "lobj",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "来",
+          "head": 10,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "空调",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "冷却子",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "维修",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "次数",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "超",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "警戒",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "从而",
+          "head": 13,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "导致",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "航空",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "公司",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "运营",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "效率",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "低下",
+          "head": 13,
+          "deprel": "ccomp",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "了",
+          "head": 22,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 24,
+          "form": "一",
+          "head": 25,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 25,
+          "form": "种",
+          "head": 37,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 26,
+          "form": "基于",
+          "head": 37,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "某",
+          "head": 29,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 28,
+          "form": "机型",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "系统",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "失效",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "数据",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 33,
+          "form": "失效",
+          "head": 34,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "模型",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "建立",
+          "head": 37,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "新",
+          "head": 37,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 37,
+          "form": "方法",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对换拆率超警戒的热交换器这一特定部件运用扩展的Weibull分步建模,分别研究了其在2参数Weibull分步、3参数Weibull分步、双Weibull分步、三Weibull分步和2段Weibull分步模型下的拟合质量,运用更新过程解出期望失效数",
+      "tokens": [
+        "对",
+        "换拆率",
+        "超",
+        "警戒",
+        "的",
+        "热",
+        "交换器",
+        "这",
+        "一",
+        "特定",
+        "部件",
+        "运用",
+        "扩展",
+        "的",
+        "Weibull",
+        "分步",
+        "建模",
+        ",",
+        "分别",
+        "研究",
+        "了",
+        "其",
+        "在",
+        "2",
+        "参数",
+        "Weibull",
+        "分步",
+        "、",
+        "3",
+        "参数",
+        "Weibull",
+        "分步",
+        "、",
+        "双",
+        "Weibull",
+        "分步",
+        "、",
+        "三",
+        "Weibull",
+        "分步",
+        "和",
+        "2",
+        "段",
+        "Weibull",
+        "分步",
+        "模型",
+        "下",
+        "的",
+        "拟合",
+        "质量",
+        ",",
+        "运用",
+        "更新",
+        "过程",
+        "解出",
+        "期望",
+        "失效",
+        "数"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "换拆率",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "超",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "警戒",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "热",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "交换器",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "这",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 9,
+          "form": "一",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 10,
+          "form": "特定",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "部件",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "运用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "扩展",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 15,
+          "form": "Weibull",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "分步",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "建模",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "分别",
+          "head": 20,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "研究",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "其",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 23,
+          "form": "在",
+          "head": 50,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 24,
+          "form": "2",
+          "head": 25,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 25,
+          "form": "参数",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "Weibull",
+          "head": 27,
+          "deprel": "nsubj",
+          "pos": "NR"
+        },
+        {
+          "id": 27,
+          "form": "分步",
+          "head": 46,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "3",
+          "head": 30,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 30,
+          "form": "参数",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "Weibull",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "NR"
+        },
+        {
+          "id": 32,
+          "form": "分步",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "双",
+          "head": 35,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 35,
+          "form": "Weibull",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 36,
+          "form": "分步",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "、",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "三",
+          "head": 39,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 39,
+          "form": "Weibull",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 40,
+          "form": "分步",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "和",
+          "head": 45,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 42,
+          "form": "2",
+          "head": 43,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 43,
+          "form": "段",
+          "head": 45,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 44,
+          "form": "Weibull",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 45,
+          "form": "分步",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "模型",
+          "head": 47,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "下",
+          "head": 23,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 49,
+          "form": "拟合",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "质量",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "运用",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 53,
+          "form": "更新",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "过程",
+          "head": 52,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "解出",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 56,
+          "form": "期望",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "失效",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "数",
+          "head": 55,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "随后对整个子系统运用幂律过程建模,使用拉普拉斯算法进行故障趋势预测",
+      "tokens": [
+        "随后",
+        "对",
+        "整",
+        "个",
+        "子系统",
+        "运用",
+        "幂律",
+        "过程",
+        "建模",
+        ",",
+        "使用",
+        "拉普拉斯",
+        "算法",
+        "进行",
+        "故障",
+        "趋势",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "随后",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "整",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "个",
+          "head": 3,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "子系统",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "运用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "幂律",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "过程",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "建模",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "使用",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "拉普拉斯",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 13,
+          "form": "算法",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "进行",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "趋势",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "预测",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过理论计算与实际维修资料对比,验证了模型准确性,修改了维修计划",
+      "tokens": [
+        "通过",
+        "理论",
+        "计算",
+        "与",
+        "实际",
+        "维修",
+        "资料",
+        "对比",
+        ",",
+        "验证",
+        "了",
+        "模型",
+        "准确性",
+        ",",
+        "修改",
+        "了",
+        "维修",
+        "计划"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "理论",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "计算",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "实际",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "维修",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "资料",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "对比",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 12,
+          "form": "模型",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "准确性",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "修改",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "维修",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "计划",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "该模型可用于航空公司对该子系统及其部件进行故障预测和拟定可靠性方案",
+      "tokens": [
+        "该",
+        "模型",
+        "可",
+        "用于",
+        "航空",
+        "公司",
+        "对",
+        "该",
+        "子",
+        "系统",
+        "及",
+        "其",
+        "部件",
+        "进行",
+        "故障",
+        "预测",
+        "和",
+        "拟定",
+        "可靠性",
+        "方案"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "模型",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "可",
+          "head": 4,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "用于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "公司",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "对",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "该",
+          "head": 10,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 9,
+          "form": "子",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "及",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "其",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 13,
+          "form": "部件",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "进行",
+          "head": 4,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "预测",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "拟定",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "可靠性",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "方案",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

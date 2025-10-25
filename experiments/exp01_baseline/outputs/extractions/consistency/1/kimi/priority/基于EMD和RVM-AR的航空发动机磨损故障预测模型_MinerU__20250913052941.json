@@ -1,0 +1,153 @@
+{
+  "entities": [
+    {
+      "name": "EMD算法",
+      "type": "算法"
+    },
+    {
+      "name": "RVM-AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "固有模态函数（IMF）",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "残余函数（RF）",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "SVM模型",
+      "type": "模型"
+    },
+    {
+      "name": "量子粒子群优化算法",
+      "type": "算法"
+    },
+    {
+      "name": "RVM模型",
+      "type": "模型"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "Fe元素",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "Si元素",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "油液光谱分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "预测健康管理系统（PHM）",
+      "type": "系统/部件"
+    },
+    {
+      "name": "非线性非平稳时间序列",
+      "type": "理论基础"
+    },
+    {
+      "name": "留一交叉验证误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "最终预测误差（FPE）",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EMD算法",
+      "relation": "应用于",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "结合了",
+      "tail": "EMD算法"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "结合了",
+      "tail": "RVM模型"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "包含",
+      "tail": "Fe元素"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "包含",
+      "tail": "Si元素"
+    },
+    {
+      "head": "AR模型",
+      "relation": "发展为",
+      "tail": "RVM-AR模型"
+    },
+    {
+      "head": "SVM模型",
+      "relation": "改进了",
+      "tail": "RVM模型"
+    },
+    {
+      "head": "量子粒子群优化算法",
+      "relation": "用于",
+      "tail": "RVM模型"
+    },
+    {
+      "head": "Gaussian核函数",
+      "relation": "基于",
+      "tail": "RVM模型"
+    },
+    {
+      "head": "油液光谱分析",
+      "relation": "用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "预测健康管理系统（PHM）",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "非线性非平稳时间序列",
+      "relation": "导致",
+      "tail": "AR模型预测误差大"
+    },
+    {
+      "head": "留一交叉验证误差",
+      "relation": "评估",
+      "tail": "RVM模型"
+    },
+    {
+      "head": "最终预测误差（FPE）",
+      "relation": "评估",
+      "tail": "AR模型"
+    }
+  ]
+}

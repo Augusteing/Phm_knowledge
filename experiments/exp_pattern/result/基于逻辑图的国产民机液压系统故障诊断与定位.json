@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "贝叶斯网络",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "故障诊断与故障部件定位",
+    "object_type": "任务"
+  },
+  {
+    "subject": "故障逻辑图",
+    "subject_type": "模型",
+    "relation": "用于构建",
+    "object": "贝叶斯网络",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障逻辑图",
+    "subject_type": "模型",
+    "relation": "构建依据",
+    "object": "故障形成条件",
+    "object_type": "信息"
+  },
+  {
+    "subject": "故障逻辑图",
+    "subject_type": "模型",
+    "relation": "反映",
+    "object": "故障形成逻辑关系",
+    "object_type": "关系"
+  },
+  {
+    "subject": "贝叶斯网络",
+    "subject_type": "方法",
+    "relation": "表示",
+    "object": "故障形成逻辑关系",
+    "object_type": "关系"
+  },
+  {
+    "subject": "故障形成逻辑关系",
+    "subject_type": "关系",
+    "relation": "表示为",
+    "object": "条件概率分布值",
+    "object_type": "参数"
+  },
+  {
+    "subject": "正向推理",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "液压系统故障诊断",
+    "object_type": "任务"
+  },
+  {
+    "subject": "反向推理",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "液压系统故障部件定位",
+    "object_type": "任务"
+  },
+  {
+    "subject": "贝叶斯网络",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "QAR数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "QAR参数信息",
+    "subject_type": "数据",
+    "relation": "获取依据",
+    "object": "逻辑图输入信息",
+    "object_type": "信息"
+  },
+  {
+    "subject": "基于逻辑图的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "辅助",
+    "object": "故障部件定位",
+    "object_type": "任务"
+  },
+  {
+    "subject": "基于逻辑图的故障诊断方法",
+    "subject_type": "方法",
+    "relation": "完善",
+    "object": "健康管理系统",
+    "object_type": "系统"
+  }
+]

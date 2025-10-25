@@ -1,0 +1,1108 @@
+{
+  "title": "基于SOA的航空发动机健康管理系统设计",
+  "summary": "为了解决航空发动机健康管理过程中存在的效率低、费用高、资源相对缺乏等问题,实现航空发动机全生命周期的健康管理,将面向服务的架构(SOA)引入到航空发动机健康管理领域中,提出基于SOA的航空发动机健康管理系统的架构模型,实现不同软件平台的资源共享、降低系统间的耦合性、增加系统的扩展性和伸缩性,缩短了开发时间。结合某航空发动机企业的具体网络环境,设计实现了基于SOA的系统集成方法,给出了详细的工作流程,验证了该体系的有效性,指出SOA在航空发动机健康管理系统开发与应用中的重要价值。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为了解决航空发动机健康管理过程中存在的效率低、费用高、资源相对缺乏等问题,实现航空发动机全生命周期的健康管理,将面向服务的架构(SOA)引入到航空发动机健康管理领域中,提出基于SOA的航空发动机健康管理系统的架构模型,实现不同软件平台的资源共享、降低系统间的耦合性、增加系统的扩展性和伸缩性,缩短了开发时间",
+      "tokens": [
+        "为了",
+        "解决",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "过程",
+        "中",
+        "存在",
+        "的",
+        "效率",
+        "低",
+        "、",
+        "费用",
+        "高",
+        "、",
+        "资源",
+        "相对",
+        "缺乏",
+        "等",
+        "问题",
+        ",",
+        "实现",
+        "航空",
+        "发动机",
+        "全",
+        "生命",
+        "周期",
+        "的",
+        "健康",
+        "管理",
+        ",",
+        "将",
+        "面向",
+        "服务",
+        "的",
+        "架构",
+        "(",
+        "SOA",
+        ")",
+        "引入",
+        "到",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "领域",
+        "中",
+        ",",
+        "提出",
+        "基于",
+        "SOA",
+        "的",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "架构",
+        "模型",
+        ",",
+        "实现",
+        "不同",
+        "软件",
+        "平台",
+        "的",
+        "资源",
+        "共享",
+        "、",
+        "降低",
+        "系统",
+        "间",
+        "的",
+        "耦合性",
+        "、",
+        "增加",
+        "系统",
+        "的",
+        "扩展性",
+        "和",
+        "伸缩性",
+        ",",
+        "缩短",
+        "了",
+        "开发",
+        "时间"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 41,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "解决",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "过程",
+          "head": 8,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "中",
+          "head": 9,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 9,
+          "form": "存在",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "效率",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "低",
+          "head": 21,
+          "deprel": "vmod",
+          "pos": "VA"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "费用",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "高",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "资源",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "相对",
+          "head": 19,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 19,
+          "form": "缺乏",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "等",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 21,
+          "form": "问题",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "实现",
+          "head": 41,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "航空",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "发动机",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "全",
+          "head": 27,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 27,
+          "form": "生命",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "周期",
+          "head": 31,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "健康",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "管理",
+          "head": 41,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "将",
+          "head": 41,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 34,
+          "form": "面向",
+          "head": 37,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "服务",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 34,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 37,
+          "form": "架构",
+          "head": 41,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "(",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "SOA",
+          "head": 37,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": ")",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "引入",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "到",
+          "head": 41,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "航空",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "发动机",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "健康",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "管理",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "领域",
+          "head": 48,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "中",
+          "head": 41,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 49,
+          "form": ",",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "提出",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 51,
+          "form": "基于",
+          "head": 61,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 52,
+          "form": "SOA",
+          "head": 51,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "的",
+          "head": 51,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 54,
+          "form": "航空",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "发动机",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "健康",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "管理",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "系统",
+          "head": 61,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "的",
+          "head": 58,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 60,
+          "form": "架构",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "模型",
+          "head": 50,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": ",",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 63,
+          "form": "实现",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "不同",
+          "head": 66,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 65,
+          "form": "软件",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "平台",
+          "head": 69,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "的",
+          "head": 66,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 68,
+          "form": "资源",
+          "head": 69,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "共享",
+          "head": 63,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": "、",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 71,
+          "form": "降低",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 72,
+          "form": "系统",
+          "head": 73,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "间",
+          "head": 75,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 74,
+          "form": "的",
+          "head": 73,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 75,
+          "form": "耦合性",
+          "head": 71,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 76,
+          "form": "、",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 77,
+          "form": "增加",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 78,
+          "form": "系统",
+          "head": 82,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "的",
+          "head": 78,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 80,
+          "form": "扩展性",
+          "head": 82,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 81,
+          "form": "和",
+          "head": 82,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 82,
+          "form": "伸缩性",
+          "head": 77,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": ",",
+          "head": 41,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 84,
+          "form": "缩短",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 85,
+          "form": "了",
+          "head": 84,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 86,
+          "form": "开发",
+          "head": 87,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 87,
+          "form": "时间",
+          "head": 84,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合某航空发动机企业的具体网络环境,设计实现了基于SOA的系统集成方法,给出了详细的工作流程,验证了该体系的有效性,指出SOA在航空发动机健康管理系统开发与应用中的重要价值",
+      "tokens": [
+        "结合",
+        "某",
+        "航空",
+        "发动机",
+        "企业",
+        "的",
+        "具体",
+        "网络",
+        "环境",
+        ",",
+        "设计",
+        "实现",
+        "了",
+        "基于",
+        "SOA",
+        "的",
+        "系统",
+        "集成",
+        "方法",
+        ",",
+        "给出",
+        "了",
+        "详细",
+        "的",
+        "工作",
+        "流程",
+        ",",
+        "验证",
+        "了",
+        "该",
+        "体系",
+        "的",
+        "有效性",
+        ",",
+        "指出",
+        "SOA",
+        "在",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "开发",
+        "与",
+        "应用",
+        "中",
+        "的",
+        "重要",
+        "价值"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "企业",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "具体",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "网络",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "环境",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "设计",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "实现",
+          "head": 11,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "基于",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "SOA",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "系统",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "集成",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "方法",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "给出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "了",
+          "head": 21,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 23,
+          "form": "详细",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 25,
+          "form": "工作",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "流程",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "验证",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "了",
+          "head": 28,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 30,
+          "form": "该",
+          "head": 31,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 31,
+          "form": "体系",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 31,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 33,
+          "form": "有效性",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "指出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "SOA",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "在",
+          "head": 49,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 38,
+          "form": "航空",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "发动机",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "健康",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "管理",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "系统",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "开发",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "与",
+          "head": 45,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 45,
+          "form": "应用",
+          "head": 46,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "中",
+          "head": 37,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 47,
+          "form": "的",
+          "head": 37,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 48,
+          "form": "重要",
+          "head": 49,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 49,
+          "form": "价值",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

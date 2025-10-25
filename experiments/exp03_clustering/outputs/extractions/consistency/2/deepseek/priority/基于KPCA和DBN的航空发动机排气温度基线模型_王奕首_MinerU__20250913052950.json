@@ -1,0 +1,216 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "排气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "算法"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型"
+    },
+    {
+      "name": "EGT基线模型",
+      "type": "模型"
+    },
+    {
+      "name": "快速存取数据",
+      "type": "数据集"
+    },
+    {
+      "name": "高斯函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "气路监控",
+      "type": "研究方法"
+    },
+    {
+      "name": "神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法"
+    },
+    {
+      "name": "BP神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "KPCA-DBN模型",
+      "type": "模型"
+    },
+    {
+      "name": "GA-BP网络",
+      "type": "模型"
+    },
+    {
+      "name": "DBN网络",
+      "type": "模型"
+    },
+    {
+      "name": "受限玻尔兹曼机",
+      "type": "模型"
+    },
+    {
+      "name": "反向传播网络",
+      "type": "模型"
+    },
+    {
+      "name": "主成分分析法",
+      "type": "算法"
+    },
+    {
+      "name": "非线性特征提取",
+      "type": "研究方法"
+    },
+    {
+      "name": "数据降维",
+      "type": "研究方法"
+    },
+    {
+      "name": "模型精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "基于",
+      "tail": "核主成分分析"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "基于",
+      "tail": "深度置信网络"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "用于",
+      "tail": "排气温度基线建模"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "提高",
+      "tail": "模型精度"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "降低",
+      "tail": "网络结构复杂度"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "GA-BP网络"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "DBN网络"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "数据降维"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯函数"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "包含",
+      "tail": "受限玻尔兹曼机"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "包含",
+      "tail": "反向传播网络"
+    },
+    {
+      "head": "EGT基线模型",
+      "relation": "建立",
+      "tail": "KPCA-DBN模型"
+    },
+    {
+      "head": "EGT基线模型",
+      "relation": "基于",
+      "tail": "快速存取数据"
+    },
+    {
+      "head": "健康管理",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "气路监控",
+      "relation": "属于",
+      "tail": "健康管理"
+    },
+    {
+      "head": "排气温度",
+      "relation": "用于",
+      "tail": "气路监控"
+    },
+    {
+      "head": "遗传算法",
+      "relation": "优化",
+      "tail": "BP神经网络"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "用于",
+      "tail": "评估模型精度"
+    },
+    {
+      "head": "非线性特征提取",
+      "relation": "解决",
+      "tail": "维度灾难问题"
+    },
+    {
+      "head": "数据降维",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "提出",
+      "tail": "本文"
+    }
+  ]
+}

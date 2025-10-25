@@ -1,0 +1,780 @@
+{
+  "title": "航空装备预测与健康管理系统的验证方法概述",
+  "summary": "随着国内PHM(预测与健康管理)技术发展迅速,航空装备PHM验证与确认方法成为制约PHM技术成果工程转化的难点。针对上述问题,提出了PHM系统全寿命周期内的验证流程,明确了在需求分析、设计研制、使用与维护等阶段PHM验证与确认的具体内容与要求,结合PHM对象的特点,阐述了目前典型的航电PHM、机电/动力PHM、结构SHM的验证和确认方法。",
+  "analyzed_sentences": [
+    {
+      "sentence": "随着国内PHM(预测与健康管理)技术发展迅速,航空装备PHM验证与确认方法成为制约PHM技术成果工程转化的难点",
+      "tokens": [
+        "随着",
+        "国内",
+        "PHM",
+        "(",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        ")",
+        "技术",
+        "发展",
+        "迅速",
+        ",",
+        "航空",
+        "装备",
+        "PHM",
+        "验证",
+        "与",
+        "确认",
+        "方法",
+        "成为",
+        "制约",
+        "PHM",
+        "技术",
+        "成果",
+        "工程",
+        "转化",
+        "的",
+        "难点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "随着",
+          "head": 21,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "国内",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "PHM",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "(",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ")",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "技术",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "发展",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "迅速",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VA"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "航空",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "装备",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "PHM",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "验证",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "与",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "确认",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "方法",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "成为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "制约",
+          "head": 29,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "PHM",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "技术",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "成果",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "工程",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "转化",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 22,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 29,
+          "form": "难点",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对上述问题,提出了PHM系统全寿命周期内的验证流程,明确了在需求分析、设计研制、使用与维护等阶段PHM验证与确认的具体内容与要求,结合PHM对象的特点,阐述了目前典型的航电PHM、机电/动力PHM、结构SHM的验证和确认方法",
+      "tokens": [
+        "针对",
+        "上述",
+        "问题",
+        ",",
+        "提出",
+        "了",
+        "PHM",
+        "系统",
+        "全",
+        "寿命",
+        "周期",
+        "内",
+        "的",
+        "验证",
+        "流程",
+        ",",
+        "明确",
+        "了",
+        "在",
+        "需求",
+        "分析",
+        "、",
+        "设计",
+        "研制",
+        "、",
+        "使用",
+        "与",
+        "维护",
+        "等",
+        "阶段",
+        "PHM",
+        "验证",
+        "与",
+        "确认",
+        "的",
+        "具体",
+        "内容",
+        "与",
+        "要求",
+        ",",
+        "结合",
+        "PHM",
+        "对象",
+        "的",
+        "特点",
+        ",",
+        "阐述",
+        "了",
+        "目前",
+        "典型",
+        "的",
+        "航电",
+        "PHM",
+        "、",
+        "机电",
+        "/",
+        "动力",
+        "PHM",
+        "、",
+        "结构",
+        "SHM",
+        "的",
+        "验证",
+        "和",
+        "确认",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "上述",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "PHM",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "全",
+          "head": 10,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 10,
+          "form": "寿命",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "周期",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "内",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "验证",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "流程",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "明确",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "在",
+          "head": 39,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 20,
+          "form": "需求",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "分析",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "设计",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "研制",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "使用",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "与",
+          "head": 28,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "维护",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "等",
+          "head": 28,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 30,
+          "form": "阶段",
+          "head": 19,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "PHM",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "验证",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "与",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "确认",
+          "head": 39,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 36,
+          "form": "具体",
+          "head": 39,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 37,
+          "form": "内容",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "与",
+          "head": 39,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 39,
+          "form": "要求",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "结合",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "PHM",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "对象",
+          "head": 45,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 43,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "特点",
+          "head": 41,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "阐述",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "了",
+          "head": 47,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 49,
+          "form": "目前",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 50,
+          "form": "典型",
+          "head": 66,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 51,
+          "form": "的",
+          "head": 50,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 52,
+          "form": "航电",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "PHM",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 55,
+          "form": "机电",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "/",
+          "head": 57,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "动力",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "PHM",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 60,
+          "form": "结构",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "SHM",
+          "head": 66,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "的",
+          "head": 61,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 63,
+          "form": "验证",
+          "head": 65,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "和",
+          "head": 65,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 65,
+          "form": "确认",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "方法",
+          "head": 47,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

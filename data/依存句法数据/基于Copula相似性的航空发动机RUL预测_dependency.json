@@ -1,0 +1,1137 @@
+{
+  "title": "基于Copula相似性的航空发动机RUL预测",
+  "summary": "针对航空发动机性能退化特征众多，以及特征相互影响等问题，考虑退化特征间的非线性相关关系，提出了基于Copula相似性的航空发动机RUL(remaining useful life)预测方法。通过K-means聚类将航空发动机的工作状态分类，建立退化模型，选取退化性能趋势最明显的3组传感器。基于Copula函数对选取的3组传感器进行相关性建模分析，构建发动机传感器之间的Copula结构。基于Copula相似性实现对航空发动机的剩余寿命预测。结果表明：基于Copula相似性的航空发动机RUL预测方法相较传统方法，在发动机运行周期的50%、70%、90%预测误差分别减少13.053%、31.328%、74.602%，预测精度得到提高。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对航空发动机性能退化特征众多",
+      "tokens": [
+        "针对",
+        "航空",
+        "发动机",
+        "性能",
+        "退化",
+        "特征",
+        "众多"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "性能",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "退化",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "特征",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "众多",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "以及特征相互影响等问题",
+      "tokens": [
+        "以及",
+        "特征",
+        "相互",
+        "影响",
+        "等",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以及",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 2,
+          "form": "特征",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "相互",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "影响",
+          "head": 6,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "等",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 6,
+          "form": "问题",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "考虑退化特征间的非线性相关关系",
+      "tokens": [
+        "考虑",
+        "退化",
+        "特征",
+        "间",
+        "的",
+        "非",
+        "线性",
+        "相关",
+        "关系"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "考虑",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "退化",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "特征",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "间",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "非",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "线性",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "相关",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "关系",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了基于Copula相似性的航空发动机RUL(remaining useful life)预测方法",
+      "tokens": [
+        "提出",
+        "了",
+        "基于",
+        "Copula",
+        "相似性",
+        "的",
+        "航空",
+        "发动机",
+        "RUL",
+        "(",
+        "remaining",
+        "useful",
+        "life",
+        ")",
+        "预测",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "基于",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "Copula",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 5,
+          "form": "相似性",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "航空",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "RUL",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 10,
+          "form": "(",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "remaining",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "useful",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "life",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ")",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "预测",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过K-means聚类将航空发动机的工作状态分类",
+      "tokens": [
+        "通过",
+        "K-means",
+        "聚类",
+        "将",
+        "航空",
+        "发动机",
+        "的",
+        "工作",
+        "状态",
+        "分类"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "K-means",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "聚类",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "将",
+          "head": 10,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "工作",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "状态",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "分类",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "建立退化模型",
+      "tokens": [
+        "建立",
+        "退化",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "退化",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "选取退化性能趋势最明显的3组传感器",
+      "tokens": [
+        "选取",
+        "退化",
+        "性能",
+        "趋势",
+        "最",
+        "明显",
+        "的",
+        "3",
+        "组",
+        "传感器"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "选取",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "退化",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "性能",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "趋势",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "最",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "明显",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "3",
+          "head": 9,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 9,
+          "form": "组",
+          "head": 10,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 10,
+          "form": "传感器",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于Copula函数对选取的3组传感器进行相关性建模分析",
+      "tokens": [
+        "基于",
+        "Copula",
+        "函数",
+        "对",
+        "选取",
+        "的",
+        "3",
+        "组",
+        "传感器",
+        "进行",
+        "相关性",
+        "建模",
+        "分析"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "Copula",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "函数",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "对",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "选取",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "3",
+          "head": 8,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 8,
+          "form": "组",
+          "head": 9,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 9,
+          "form": "传感器",
+          "head": 4,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "相关性",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "建模",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "分析",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "构建发动机传感器之间的Copula结构",
+      "tokens": [
+        "构建",
+        "发动机",
+        "传感器",
+        "之间",
+        "的",
+        "Copula",
+        "结构"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "构建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "传感器",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "之间",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "Copula",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "结构",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于Copula相似性实现对航空发动机的剩余寿命预测",
+      "tokens": [
+        "基于",
+        "Copula",
+        "相似性",
+        "实现",
+        "对",
+        "航空",
+        "发动机",
+        "的",
+        "剩余",
+        "寿命",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "Copula",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "相似性",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "对",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "航空",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "剩余",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "寿命",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明：基于Copula相似性的航空发动机RUL预测方法相较传统方法",
+      "tokens": [
+        "结果",
+        "表明",
+        "：",
+        "基于",
+        "Copula",
+        "相似性",
+        "的",
+        "航空",
+        "发动机",
+        "RUL",
+        "预测",
+        "方法",
+        "相较",
+        "传统",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "：",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "基于",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "Copula",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 6,
+          "form": "相似性",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "航空",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "发动机",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "RUL",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方法",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "相较",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "传统",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "方法",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在发动机运行周期的50%、70%、90%预测误差分别减少13.053%、31.328%、74.602%",
+      "tokens": [
+        "在",
+        "发动机",
+        "运行",
+        "周期",
+        "的",
+        "50%",
+        "、",
+        "70%",
+        "、",
+        "90%",
+        "预测",
+        "误差",
+        "分别",
+        "减少",
+        "13.053%",
+        "、",
+        "31.328%",
+        "、",
+        "74.602%"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "运行",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "周期",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "50%",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "70%",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "90%",
+          "head": 12,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "误差",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "分别",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "减少",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "13.053%",
+          "head": 19,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "31.328%",
+          "head": 19,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 18,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "74.602%",
+          "head": 14,
+          "deprel": "range",
+          "pos": "CD"
+        }
+      ]
+    },
+    {
+      "sentence": "预测精度得到提高",
+      "tokens": [
+        "预测",
+        "精度",
+        "得到",
+        "提高"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "预测",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "精度",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "得到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "提高",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

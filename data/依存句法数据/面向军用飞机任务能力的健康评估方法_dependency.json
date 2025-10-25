@@ -1,0 +1,907 @@
+{
+  "title": "面向军用飞机任务能力的健康评估方法",
+  "summary": "军用飞机健康评估在工程实际中存在应用困难的问题。以军用飞机为研究对象,开展包括面向任务的能力分析、基于故障劣化的功能分析以及参数化的健康评估等研究,得到基于任务分析的\"飞机-任务功能-影响参数\"两级映射作为健康评估的对象;综合利用劣化度、严酷度及极大熵改进区间层次分析法等多种方法,得到飞机健康状态评估结果。结合具体实例及参数分析结果,表明该评估方法可信度高,具有较高的工程实用价值。",
+  "analyzed_sentences": [
+    {
+      "sentence": "军用飞机健康评估在工程实际中存在应用困难的问题",
+      "tokens": [
+        "军用",
+        "飞机",
+        "健康",
+        "评估",
+        "在",
+        "工程",
+        "实际",
+        "中",
+        "存在",
+        "应用",
+        "困难",
+        "的",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "军用",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "评估",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "在",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "工程",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "实际",
+          "head": 8,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "中",
+          "head": 5,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 9,
+          "form": "存在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "应用",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "困难",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "问题",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "以军用飞机为研究对象,开展包括面向任务的能力分析、基于故障劣化的功能分析以及参数化的健康评估等研究,得到基于任务分析的\"飞机-任务功能-影响参数\"两级映射作为健康评估的对象;综合利用劣化度、严酷度及极大熵改进区间层次分析法等多种方法,得到飞机健康状态评估结果",
+      "tokens": [
+        "以",
+        "军用",
+        "飞机",
+        "为",
+        "研究",
+        "对象",
+        ",",
+        "开展",
+        "包括",
+        "面向",
+        "任务",
+        "的",
+        "能力",
+        "分析",
+        "、",
+        "基于",
+        "故障",
+        "劣化",
+        "的",
+        "功能",
+        "分析",
+        "以及",
+        "参数化",
+        "的",
+        "健康",
+        "评估",
+        "等",
+        "研究",
+        ",",
+        "得到",
+        "基于",
+        "任务",
+        "分析",
+        "的",
+        "\"",
+        "飞机",
+        "-",
+        "任务",
+        "功能",
+        "-",
+        "影响",
+        "参数",
+        "\"",
+        "两",
+        "级",
+        "映射",
+        "作为",
+        "健康",
+        "评估",
+        "的",
+        "对象",
+        ";",
+        "综合",
+        "利用",
+        "劣化度",
+        "、",
+        "严酷度",
+        "及",
+        "极大",
+        "熵",
+        "改进",
+        "区间",
+        "层次",
+        "分析法",
+        "等",
+        "多",
+        "种",
+        "方法",
+        ",",
+        "得到",
+        "飞机",
+        "健康",
+        "状态",
+        "评估",
+        "结果"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "军用",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "研究",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对象",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "开展",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "包括",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "面向",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "任务",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "能力",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "分析",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "、",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "基于",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "劣化",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "功能",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "分析",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "以及",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "参数化",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "健康",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "评估",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "等",
+          "head": 26,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 28,
+          "form": "研究",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "得到",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "基于",
+          "head": 46,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 32,
+          "form": "任务",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "分析",
+          "head": 31,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 31,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 35,
+          "form": "\"",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "飞机",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "-",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "任务",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "功能",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "-",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "影响",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "参数",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "\"",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "两",
+          "head": 45,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 45,
+          "form": "级",
+          "head": 46,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 46,
+          "form": "映射",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "作为",
+          "head": 30,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "健康",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "评估",
+          "head": 51,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "的",
+          "head": 49,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 51,
+          "form": "对象",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": ";",
+          "head": 54,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 53,
+          "form": "综合",
+          "head": 54,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 54,
+          "form": "利用",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 55,
+          "form": "劣化度",
+          "head": 64,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "、",
+          "head": 64,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "严酷度",
+          "head": 64,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "及",
+          "head": 64,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 59,
+          "form": "极大",
+          "head": 60,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 60,
+          "form": "熵",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "改进",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "区间",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "层次",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "分析法",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "等",
+          "head": 64,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 66,
+          "form": "多",
+          "head": 67,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 67,
+          "form": "种",
+          "head": 68,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 68,
+          "form": "方法",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": ",",
+          "head": 54,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 70,
+          "form": "得到",
+          "head": 54,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 71,
+          "form": "飞机",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "健康",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "状态",
+          "head": 75,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "评估",
+          "head": 75,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "结果",
+          "head": 70,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合具体实例及参数分析结果,表明该评估方法可信度高,具有较高的工程实用价值",
+      "tokens": [
+        "结合",
+        "具体",
+        "实例",
+        "及",
+        "参数",
+        "分析",
+        "结果",
+        ",",
+        "表明",
+        "该",
+        "评估",
+        "方法",
+        "可信度",
+        "高",
+        ",",
+        "具有",
+        "较",
+        "高",
+        "的",
+        "工程",
+        "实用",
+        "价值"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "具体",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "实例",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "及",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "参数",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "分析",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "结果",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "该",
+          "head": 12,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 11,
+          "form": "评估",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方法",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "可信度",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "高",
+          "head": 9,
+          "deprel": "ccomp",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "具有",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "较",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "高",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 20,
+          "form": "工程",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "实用",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "价值",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

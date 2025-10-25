@@ -1,0 +1,128 @@
+[
+  {
+    "subject": "航空产品",
+    "subject_type": "产品",
+    "relation": "具有特征",
+    "object": "结构复杂",
+    "object_type": "特征"
+  },
+  {
+    "subject": "航空产品",
+    "subject_type": "产品",
+    "relation": "具有特征",
+    "object": "制造环节多",
+    "object_type": "特征"
+  },
+  {
+    "subject": "航空产品",
+    "subject_type": "产品",
+    "relation": "具有特征",
+    "object": "研制周期长",
+    "object_type": "特征"
+  },
+  {
+    "subject": "航空产品",
+    "subject_type": "产品",
+    "relation": "包含",
+    "object": "产品生命周期",
+    "object_type": "概念"
+  },
+  {
+    "subject": "产品生命周期",
+    "subject_type": "概念",
+    "relation": "划分为",
+    "object": "研发设计",
+    "object_type": "环节"
+  },
+  {
+    "subject": "产品生命周期",
+    "subject_type": "概念",
+    "relation": "划分为",
+    "object": "生产制造",
+    "object_type": "环节"
+  },
+  {
+    "subject": "产品生命周期",
+    "subject_type": "概念",
+    "relation": "划分为",
+    "object": "使用维护",
+    "object_type": "环节"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "基于",
+    "object": "网络",
+    "object_type": "技术"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "运用",
+    "object": "通信技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "运用",
+    "object": "传感技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "运用",
+    "object": "云计算",
+    "object_type": "技术"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "运用",
+    "object": "大数据分析",
+    "object_type": "技术"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "联系",
+    "object": "设计环节",
+    "object_type": "环节"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "联系",
+    "object": "制造环节",
+    "object_type": "环节"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "联系",
+    "object": "使用环节",
+    "object_type": "环节"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "航空产品技术水平",
+    "object_type": "指标"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "产品质量",
+    "object_type": "指标"
+  },
+  {
+    "subject": "设计制造服务一体化技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "服务水平",
+    "object_type": "指标"
+  }
+]

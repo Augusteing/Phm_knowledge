@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "正向设计流程不清晰",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "设计需求不明确",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "需求设计对应及追溯不规范",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "研究",
+    "object": "正向设计基本流程",
+    "object_type": "流程"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "引入",
+    "object": "基于模型的系统工程思想",
+    "object_type": "思想"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "面向对象的工程设计思路",
+    "object_type": "思想"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "图形化设计方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "图形化设计方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "功能目标量化",
+    "object_type": "设计内容"
+  },
+  {
+    "subject": "图形化设计方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "功能描述",
+    "object_type": "设计内容"
+  },
+  {
+    "subject": "图形化设计方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "模块定义",
+    "object_type": "设计内容"
+  },
+  {
+    "subject": "研究",
+    "subject_type": "活动",
+    "relation": "开发",
+    "object": "航空发动机健康管理正向设计流程平台",
+    "object_type": "平台"
+  },
+  {
+    "subject": "航空发动机健康管理正向设计流程平台",
+    "subject_type": "平台",
+    "relation": "实现",
+    "object": "机载功能架构的设计",
+    "object_type": "任务"
+  },
+  {
+    "subject": "模型设计方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "硬件设计模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "可用于",
+    "object": "硬件设计",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "航空发动机机载健康管理系统设计方法",
+    "subject_type": "方法",
+    "relation": "提供参考",
+    "object": "航空发动机机载健康管理系统设计",
+    "object_type": "领域"
+  }
+]

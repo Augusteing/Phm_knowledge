@@ -1,0 +1,1043 @@
+{
+  "title": "基于RFID技术的机载设备维护管理系统",
+  "summary": "无线射频识别(RFID)技术近年来在民用航空机场运输领域得到了较为广泛的应用,但在国内民用航空制造领域和飞机运营维护领域还未得到推广应用,其中大量的工作仍通过原始人工处理等方式进行。提出一种将RFID技术应用于民用飞机机载设备全生命周期维护和管理的系统,对其关键组成部分的功能及配置进行说明,并通过一项客舱应急设备的例行维护任务对该系统进行验证。结果表明:本文提出的系统可以实现机载设备全生命周期的高效维护和管理,具有广阔的应用前景。",
+  "analyzed_sentences": [
+    {
+      "sentence": "无线射频识别(RFID)技术近年来在民用航空机场运输领域得到了较为广泛的应用,但在国内民用航空制造领域和飞机运营维护领域还未得到推广应用,其中大量的工作仍通过原始人工处理等方式进行",
+      "tokens": [
+        "无线",
+        "射频",
+        "识别",
+        "(",
+        "RFID",
+        ")",
+        "技术",
+        "近年",
+        "来",
+        "在",
+        "民用",
+        "航空",
+        "机场",
+        "运输",
+        "领域",
+        "得到",
+        "了",
+        "较为",
+        "广泛",
+        "的",
+        "应用",
+        ",",
+        "但",
+        "在",
+        "国内",
+        "民用",
+        "航空",
+        "制造",
+        "领域",
+        "和",
+        "飞机",
+        "运营",
+        "维护",
+        "领域",
+        "还",
+        "未",
+        "得到",
+        "推广",
+        "应用",
+        ",",
+        "其中",
+        "大量",
+        "的",
+        "工作",
+        "仍",
+        "通过",
+        "原始",
+        "人工",
+        "处理",
+        "等",
+        "方式",
+        "进行"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "无线",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "射频",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "识别",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "(",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "RFID",
+          "head": 3,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ")",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "技术",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "近年",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NT"
+        },
+        {
+          "id": 9,
+          "form": "来",
+          "head": 16,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "在",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "民用",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "航空",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "机场",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "运输",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "领域",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "得到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "较为",
+          "head": 19,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 19,
+          "form": "广泛",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 21,
+          "form": "应用",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "但",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 24,
+          "form": "在",
+          "head": 37,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "国内",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "民用",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "航空",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "制造",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "领域",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "和",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 31,
+          "form": "飞机",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "运营",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "维护",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "领域",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "还",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 36,
+          "form": "未",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 37,
+          "form": "得到",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "推广",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "应用",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 41,
+          "form": "其中",
+          "head": 52,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "大量",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "CD"
+        },
+        {
+          "id": 43,
+          "form": "的",
+          "head": 42,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 44,
+          "form": "工作",
+          "head": 52,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "仍",
+          "head": 52,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 46,
+          "form": "通过",
+          "head": 52,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 47,
+          "form": "原始",
+          "head": 49,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 48,
+          "form": "人工",
+          "head": 49,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 49,
+          "form": "处理",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "等",
+          "head": 49,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 51,
+          "form": "方式",
+          "head": 46,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "进行",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "提出一种将RFID技术应用于民用飞机机载设备全生命周期维护和管理的系统,对其关键组成部分的功能及配置进行说明,并通过一项客舱应急设备的例行维护任务对该系统进行验证",
+      "tokens": [
+        "提出",
+        "一",
+        "种",
+        "将",
+        "RFID",
+        "技术",
+        "应用",
+        "于",
+        "民用",
+        "飞机",
+        "机载",
+        "设备",
+        "全",
+        "生命",
+        "周期",
+        "维护",
+        "和",
+        "管理",
+        "的",
+        "系统",
+        ",",
+        "对",
+        "其",
+        "关键",
+        "组成",
+        "部分",
+        "的",
+        "功能",
+        "及",
+        "配置",
+        "进行",
+        "说明",
+        ",",
+        "并",
+        "通过",
+        "一",
+        "项",
+        "客舱",
+        "应急",
+        "设备",
+        "的",
+        "例行",
+        "维护",
+        "任务",
+        "对",
+        "该",
+        "系统",
+        "进行",
+        "验证"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "一",
+          "head": 3,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 3,
+          "form": "种",
+          "head": 20,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 4,
+          "form": "将",
+          "head": 7,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 5,
+          "form": "RFID",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "技术",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "应用",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "于",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "民用",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "飞机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "机载",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "设备",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "全",
+          "head": 14,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 14,
+          "form": "生命",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "周期",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "维护",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "管理",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "系统",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "对",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 23,
+          "form": "其",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 24,
+          "form": "关键",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "组成",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "部分",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 28,
+          "form": "功能",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "及",
+          "head": 30,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 30,
+          "form": "配置",
+          "head": 22,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "说明",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 35,
+          "form": "通过",
+          "head": 48,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 36,
+          "form": "一",
+          "head": 37,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 37,
+          "form": "项",
+          "head": 44,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 38,
+          "form": "客舱",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "应急",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 40,
+          "form": "设备",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 40,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "例行",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 43,
+          "form": "维护",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "任务",
+          "head": 35,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "对",
+          "head": 48,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 46,
+          "form": "该",
+          "head": 47,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 47,
+          "form": "系统",
+          "head": 45,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "验证",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明:本文提出的系统可以实现机载设备全生命周期的高效维护和管理,具有广阔的应用前景",
+      "tokens": [
+        "结果",
+        "表明",
+        ":",
+        "本",
+        "文",
+        "提出",
+        "的",
+        "系统",
+        "可以",
+        "实现",
+        "机载",
+        "设备",
+        "全",
+        "生命",
+        "周期",
+        "的",
+        "高效",
+        "维护",
+        "和",
+        "管理",
+        ",",
+        "具有",
+        "广阔",
+        "的",
+        "应用",
+        "前景"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": ":",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "本",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 5,
+          "form": "文",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "提出",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "可以",
+          "head": 10,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "实现",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "机载",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "设备",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "全",
+          "head": 14,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 14,
+          "form": "生命",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "周期",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "高效",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "维护",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "和",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "管理",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "具有",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "广阔",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 25,
+          "form": "应用",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "前景",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

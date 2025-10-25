@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "飞机液压泵源预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "提出",
+    "object": "体系结构总体方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "飞机液压泵源预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "机载液压泵源健康监测系统",
+    "object_type": "子系统"
+  },
+  {
+    "subject": "飞机液压泵源预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "地面维护管理系统",
+    "object_type": "子系统"
+  },
+  {
+    "subject": "机载液压泵源健康监测系统",
+    "subject_type": "子系统",
+    "relation": "基于",
+    "object": "数字信号处理器",
+    "object_type": "技术/组件"
+  },
+  {
+    "subject": "飞机液压泵源预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "故障诊断算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "飞机液压泵源预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "用于",
+    "object": "典型液压泵源系统故障预测",
+    "object_type": "应用"
+  },
+  {
+    "subject": "飞机液压泵源预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "用于",
+    "object": "后勤保障",
+    "object_type": "应用"
+  },
+  {
+    "subject": "地面维护管理系统",
+    "subject_type": "子系统",
+    "relation": "包含",
+    "object": "地面维护管理数据库",
+    "object_type": "数据库"
+  },
+  {
+    "subject": "飞机液压泵源预测与健康管理系统",
+    "subject_type": "系统",
+    "relation": "管理",
+    "object": "飞机液压泵源系统",
+    "object_type": "被监测对象"
+  }
+]

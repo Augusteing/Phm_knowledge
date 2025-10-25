@@ -1,0 +1,128 @@
+[
+  {
+    "subject": "未来航空运输系统",
+    "subject_type": "概念",
+    "relation": "提出需求",
+    "object": "大型客机航电系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "提升",
+    "object": "大型客机安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "提升",
+    "object": "空域运行效能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "现代综合化航电系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "先进的航电系统架构",
+    "object_type": "系统架构"
+  },
+  {
+    "subject": "现代综合化航电系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "功能特征",
+    "object_type": "属性"
+  },
+  {
+    "subject": "现代综合化航电系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "安全性设计流程",
+    "object_type": "方法流程"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "航电系统综合集成",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "驾驶舱显示与控制",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "综合模块化航电",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "飞行管理",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "无线电导航",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "综合监视",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "机载数据链",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "大气惯导",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "机载信息",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "下一代大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "应用需求",
+    "object_type": "属性"
+  },
+  {
+    "subject": "下一代大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "技术特征",
+    "object_type": "属性"
+  },
+  {
+    "subject": "下一代大型客机航电系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "研究方向",
+    "object_type": "属性"
+  }
+]

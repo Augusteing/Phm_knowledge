@@ -1,0 +1,1280 @@
+{
+  "title": "融合多源异构数据的飞机故障诊断方法研究进展",
+  "summary": "随着飞机数字化程度的提高，飞机在全寿命周期内会产生大量的多源异构数据，这些数据为保障飞机的安全提供了重要支持。本文梳理了飞机全寿命周期内常见的数据源类型，包括初始适航设计数据、运营可靠性数据、运行维护数据以及机载设备数据等，结合不同数据源类型的数据特征，介绍了多源异构数据的融合应用措施，详细分析了数据融合技术历经的四个阶段。在此基础上，介绍了融合数据的故障诊断方法，并与传统单一数据来源的故障诊断分析方法对比，得出多源异构数据的融合应用能够更加准确地分析故障成因，起到辅助排故与维修性设计的作用，是飞机故障诊断中数据应用技术的发展趋势。",
+  "analyzed_sentences": [
+    {
+      "sentence": "随着飞机数字化程度的提高",
+      "tokens": [
+        "随着",
+        "飞机",
+        "数字化",
+        "程度",
+        "的",
+        "提高"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "随着",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "数字化",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "程度",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "提高",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "飞机在全寿命周期内会产生大量的多源异构数据",
+      "tokens": [
+        "飞机",
+        "在",
+        "全",
+        "寿命",
+        "周期",
+        "内",
+        "会",
+        "产生",
+        "大量",
+        "的",
+        "多源",
+        "异构",
+        "数据"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "全",
+          "head": 4,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "寿命",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "周期",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "内",
+          "head": 2,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "会",
+          "head": 8,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "产生",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "大量",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "CD"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "多源",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "异构",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "数据",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "这些数据为保障飞机的安全提供了重要支持",
+      "tokens": [
+        "这些",
+        "数据",
+        "为",
+        "保障",
+        "飞机",
+        "的",
+        "安全",
+        "提供",
+        "了",
+        "重要",
+        "支持"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "这些",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "数据",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "为",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "保障",
+          "head": 3,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "安全",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "重要",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "支持",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文梳理了飞机全寿命周期内常见的数据源类型",
+      "tokens": [
+        "本",
+        "文",
+        "梳理",
+        "了",
+        "飞机",
+        "全",
+        "寿命",
+        "周期",
+        "内",
+        "常见",
+        "的",
+        "数据源",
+        "类型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "梳理",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "全",
+          "head": 7,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 7,
+          "form": "寿命",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "周期",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "内",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "常见",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "VA"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "数据源",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "类型",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "包括初始适航设计数据、运营可靠性数据、运行维护数据以及机载设备数据等",
+      "tokens": [
+        "包括",
+        "初始",
+        "适航",
+        "设计",
+        "数据",
+        "、",
+        "运营",
+        "可靠性",
+        "数据",
+        "、",
+        "运行",
+        "维护",
+        "数据",
+        "以及",
+        "机载",
+        "设备",
+        "数据",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "包括",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "初始",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "适航",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "设计",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "数据",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "运营",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "可靠性",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "数据",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "运行",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "维护",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "数据",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "以及",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "机载",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "设备",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "数据",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "等",
+          "head": 17,
+          "deprel": "etc",
+          "pos": "ETC"
+        }
+      ]
+    },
+    {
+      "sentence": "结合不同数据源类型的数据特征",
+      "tokens": [
+        "结合",
+        "不同",
+        "数据源",
+        "类型",
+        "的",
+        "数据",
+        "特征"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "不同",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "数据源",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "类型",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "数据",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "特征",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "介绍了多源异构数据的融合应用措施",
+      "tokens": [
+        "介绍",
+        "了",
+        "多",
+        "源",
+        "异构",
+        "数据",
+        "的",
+        "融合",
+        "应用",
+        "措施"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "多",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "源",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "异构",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "数据",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "融合",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "应用",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "措施",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "详细分析了数据融合技术历经的四个阶段",
+      "tokens": [
+        "详细",
+        "分析",
+        "了",
+        "数据",
+        "融合",
+        "技术",
+        "历经",
+        "的",
+        "四",
+        "个",
+        "阶段"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "详细",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "融合",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "技术",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "历经",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "四",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 10,
+          "form": "个",
+          "head": 11,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 11,
+          "form": "阶段",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在此基础上",
+      "tokens": [
+        "在",
+        "此",
+        "基础",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "基础",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "介绍了融合数据的故障诊断方法",
+      "tokens": [
+        "介绍",
+        "了",
+        "融合",
+        "数据",
+        "的",
+        "故障",
+        "诊断",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "融合",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "诊断",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并与传统单一数据来源的故障诊断分析方法对比",
+      "tokens": [
+        "并",
+        "与",
+        "传统",
+        "单一",
+        "数据",
+        "来源",
+        "的",
+        "故障",
+        "诊断",
+        "分析",
+        "方法",
+        "对比"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "与",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "传统",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "单一",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "数据",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "来源",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "诊断",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "分析",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "方法",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "对比",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "得出多源异构数据的融合应用能够更加准确地分析故障成因",
+      "tokens": [
+        "得出",
+        "多",
+        "源",
+        "异构",
+        "数据",
+        "的",
+        "融合",
+        "应用",
+        "能够",
+        "更加",
+        "准确",
+        "地",
+        "分析",
+        "故障",
+        "成因"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "得出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "多",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "CD"
+        },
+        {
+          "id": 3,
+          "form": "源",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "异构",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "数据",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "融合",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "应用",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "能够",
+          "head": 13,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "更加",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "准确",
+          "head": 13,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 12,
+          "form": "地",
+          "head": 11,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 13,
+          "form": "分析",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "成因",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "起到辅助排故与维修性设计的作用",
+      "tokens": [
+        "起到",
+        "辅助",
+        "排故",
+        "与",
+        "维修性",
+        "设计",
+        "的",
+        "作用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "起到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "辅助",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "排故",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "与",
+          "head": 3,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "维修性",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "设计",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "作用",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "是飞机故障诊断中数据应用技术的发展趋势",
+      "tokens": [
+        "是",
+        "飞机",
+        "故障",
+        "诊断",
+        "中",
+        "数据",
+        "应用",
+        "技术",
+        "的",
+        "发展",
+        "趋势"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "诊断",
+          "head": 5,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "中",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 6,
+          "form": "数据",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "应用",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "发展",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "趋势",
+          "head": 1,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

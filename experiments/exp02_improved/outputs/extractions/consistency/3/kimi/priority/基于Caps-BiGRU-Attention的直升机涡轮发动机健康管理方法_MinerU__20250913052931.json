@@ -1,0 +1,199 @@
+{
+  "entities": [
+    {
+      "name": "直升机涡轮发动机健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "Caps-BiGRU-Attention模型",
+      "type": "模型"
+    },
+    {
+      "name": "故障模式识别",
+      "type": "研究方法"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "算法"
+    },
+    {
+      "name": "BiGRU层",
+      "type": "算法"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "算法"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "概率分布拟合",
+      "type": "理论基础"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "理论基础"
+    },
+    {
+      "name": "混合高斯密度模型",
+      "type": "理论基础"
+    },
+    {
+      "name": "K-S检验",
+      "type": "算法"
+    },
+    {
+      "name": "Akaike信息准则值（AIC）",
+      "type": "性能指标"
+    },
+    {
+      "name": "SHAP模型",
+      "type": "算法"
+    },
+    {
+      "name": "净功率",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指示空速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "压缩机转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "传感器/监测参数"
+    }
+  ],
+  "relations": [
+    {
+      "head": "直升机涡轮发动机健康管理",
+      "relation": "包括",
+      "tail": "故障模式识别"
+    },
+    {
+      "head": "直升机涡轮发动机健康管理",
+      "relation": "包括",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "BiGRU层",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "SE注意力机制",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "直升机涡轮发动机数据集",
+      "relation": "支持",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "扭矩裕度",
+      "relation": "评估指标为",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "导致",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "概率分布拟合",
+      "relation": "用于",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "优于",
+      "tail": "其他分布"
+    },
+    {
+      "head": "混合高斯密度模型",
+      "relation": "基于",
+      "tail": "概率分布拟合"
+    },
+    {
+      "head": "K-S检验",
+      "relation": "用于",
+      "tail": "验证集的扭矩裕度"
+    },
+    {
+      "head": "Akaike信息准则值（AIC）",
+      "relation": "评价指标是",
+      "tail": "模型"
+    },
+    {
+      "head": "SHAP模型",
+      "relation": "用于",
+      "tail": "特征影响分析"
+    },
+    {
+      "head": "净功率",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "指示空速",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "压缩机转速",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    }
+  ]
+}

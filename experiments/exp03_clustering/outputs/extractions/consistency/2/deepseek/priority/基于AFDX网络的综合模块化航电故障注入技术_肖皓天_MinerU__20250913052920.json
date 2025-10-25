@@ -1,0 +1,336 @@
+{
+  "entities": [
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX网络",
+      "type": "系统"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "方法"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "功能"
+    },
+    {
+      "name": "故障预测与健康管理",
+      "type": "技术"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "方法"
+    },
+    {
+      "name": "PC主机",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX端系统板卡",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX交换机",
+      "type": "系统"
+    },
+    {
+      "name": "嵌入式系统",
+      "type": "系统"
+    },
+    {
+      "name": "Visual C++ MFC框架",
+      "type": "工具"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "工具"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "方法"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "方法"
+    },
+    {
+      "name": "SetTimer函数",
+      "type": "方法"
+    },
+    {
+      "name": "带宽分配间隔",
+      "type": "参数"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "工具"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "方法"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "方法"
+    },
+    {
+      "name": "空客A380",
+      "type": "系统"
+    },
+    {
+      "name": "波音B787",
+      "type": "系统"
+    },
+    {
+      "name": "分时分区操作系统",
+      "type": "系统"
+    },
+    {
+      "name": "PHM进程",
+      "type": "功能"
+    },
+    {
+      "name": "PHM分区",
+      "type": "功能"
+    },
+    {
+      "name": "时间误差",
+      "type": "指标"
+    },
+    {
+      "name": "数据更新间隔",
+      "type": "参数"
+    },
+    {
+      "name": "发送间隔",
+      "type": "参数"
+    },
+    {
+      "name": "定时器周期",
+      "type": "参数"
+    },
+    {
+      "name": "虚拟链路",
+      "type": "系统"
+    },
+    {
+      "name": "采样端口",
+      "type": "系统"
+    },
+    {
+      "name": "队列端口",
+      "type": "系统"
+    },
+    {
+      "name": "缓冲区溢出触发",
+      "type": "方法"
+    },
+    {
+      "name": "数据结构溢出触发",
+      "type": "方法"
+    },
+    {
+      "name": "故障场景",
+      "type": "应用场景"
+    },
+    {
+      "name": "故障日志记录",
+      "type": "数据"
+    },
+    {
+      "name": "故障码",
+      "type": "数据"
+    },
+    {
+      "name": "均方误差",
+      "type": "指标"
+    },
+    {
+      "name": "定时精度",
+      "type": "指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "基于",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理功能验证"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "包含",
+      "tail": "SQLite数据库"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "包含",
+      "tail": "功能数据集合"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "解决",
+      "tail": "数据更新间隔与定时器周期不匹配问题"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "多媒体定时器"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "提高",
+      "tail": "定时精度"
+    },
+    {
+      "head": "故障注入系统",
+      "relation": "包含",
+      "tail": "PC主机"
+    },
+    {
+      "head": "故障注入系统",
+      "relation": "包含",
+      "tail": "AFDX端系统板卡"
+    },
+    {
+      "head": "故障注入系统",
+      "relation": "包含",
+      "tail": "AFDX交换机"
+    },
+    {
+      "head": "故障注入系统",
+      "relation": "包含",
+      "tail": "嵌入式系统"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "采用",
+      "tail": "Visual C++ MFC框架"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "用于",
+      "tail": "故障注入操作"
+    },
+    {
+      "head": "功能数据集合",
+      "relation": "基于",
+      "tail": "接口控制文件"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "优于",
+      "tail": "SetTimer函数"
+    },
+    {
+      "head": "AFDX端系统板卡",
+      "relation": "具有",
+      "tail": "带宽分配间隔"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "消息监控"
+    },
+    {
+      "head": "非法数据输入",
+      "relation": "是",
+      "tail": "故障注入方式"
+    },
+    {
+      "head": "特殊信令输入",
+      "relation": "是",
+      "tail": "故障注入方式"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "应用于",
+      "tail": "空客A380"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "应用于",
+      "tail": "波音B787"
+    },
+    {
+      "head": "分时分区操作系统",
+      "relation": "包含",
+      "tail": "PHM进程"
+    },
+    {
+      "head": "分时分区操作系统",
+      "relation": "包含",
+      "tail": "PHM分区"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "降低",
+      "tail": "时间误差"
+    },
+    {
+      "head": "均方误差",
+      "relation": "用于",
+      "tail": "性能评估"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "支持",
+      "tail": "故障预测与健康管理"
+    },
+    {
+      "head": "故障场景",
+      "relation": "用于",
+      "tail": "故障注入半物理仿真"
+    },
+    {
+      "head": "故障日志记录",
+      "relation": "用于",
+      "tail": "观测PHM进程响应"
+    },
+    {
+      "head": "故障码",
+      "relation": "用于",
+      "tail": "信令型故障注入"
+    },
+    {
+      "head": "虚拟链路",
+      "relation": "配置为",
+      "tail": "采样端口"
+    },
+    {
+      "head": "虚拟链路",
+      "relation": "配置为",
+      "tail": "队列端口"
+    },
+    {
+      "head": "缓冲区溢出触发",
+      "relation": "是",
+      "tail": "故障注入方式"
+    },
+    {
+      "head": "数据结构溢出触发",
+      "relation": "是",
+      "tail": "故障注入方式"
+    }
+  ]
+}

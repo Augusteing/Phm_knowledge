@@ -1,0 +1,1703 @@
+{
+  "title": "飞机电源系统故障诊断方法综述及发展趋势",
+  "summary": "飞机电源系统是机上一切用电设备的电能来源，其安全性与可靠性至关重要。在环保和高效发展需求的背景下，现代航空工业正在推进以电能为核心的多电/全电飞机技术的研究和应用。电驱动装置和电力电子器件的广泛使用导致飞机电源系统结构的复杂化，对飞机的可靠性、安全性、测试性和维修性提出了更高的要求，研究飞机电源系统的故障诊断技术具有重要意义。本文首先介绍了飞机电源系统的组成结构和各自功能，概述了飞机电源系统的发展历程，对比分析国内外典型电源系统的特征，总结了飞机电源系统中的主要故障模式、故障特点和失效原因，并提出一种飞机电源健康管理系统的设计架构，然后综述了国内外基于模型和基于数据的故障诊断方法研究进展，从准确度、数据需求量、适用性和实现难易程度等方面评述了各类诊断方法的特点，最后指出了飞机电源系统故障诊断技术面临的挑战和发展趋势。",
+  "analyzed_sentences": [
+    {
+      "sentence": "飞机电源系统是机上一切用电设备的电能来源",
+      "tokens": [
+        "飞机",
+        "电源",
+        "系统",
+        "是",
+        "机",
+        "上",
+        "一切",
+        "用电",
+        "设备",
+        "的",
+        "电能",
+        "来源"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "电源",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 4,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 5,
+          "form": "机",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "上",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "一切",
+          "head": 9,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 8,
+          "form": "用电",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "设备",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "电能",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "来源",
+          "head": 4,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "其安全性与可靠性至关重要",
+      "tokens": [
+        "其",
+        "安全性",
+        "与",
+        "可靠性",
+        "至关重要"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "其",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 2,
+          "form": "安全性",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "与",
+          "head": 4,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "可靠性",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "至关重要",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "在环保和高效发展需求的背景下",
+      "tokens": [
+        "在",
+        "环保",
+        "和",
+        "高效",
+        "发展",
+        "需求",
+        "的",
+        "背景",
+        "下"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "环保",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "和",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "高效",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "发展",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "需求",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "背景",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "下",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "现代航空工业正在推进以电能为核心的多电/全电飞机技术的研究和应用",
+      "tokens": [
+        "现代",
+        "航空",
+        "工业",
+        "正在",
+        "推进",
+        "以",
+        "电能",
+        "为",
+        "核心",
+        "的",
+        "多",
+        "电",
+        "/",
+        "全",
+        "电",
+        "飞机",
+        "技术",
+        "的",
+        "研究",
+        "和",
+        "应用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "现代",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "工业",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "正在",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "推进",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "以",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "电能",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "为",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "核心",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "多",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "CD"
+        },
+        {
+          "id": 12,
+          "form": "电",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "/",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "全",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "DT"
+        },
+        {
+          "id": 15,
+          "form": "电",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "飞机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "技术",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "研究",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "和",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "应用",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "电驱动装置和电力电子器件的广泛使用导致飞机电源系统结构的复杂化",
+      "tokens": [
+        "电驱动",
+        "装置",
+        "和",
+        "电力",
+        "电子",
+        "器件",
+        "的",
+        "广泛",
+        "使用",
+        "导致",
+        "飞机",
+        "电源",
+        "系统",
+        "结构",
+        "的",
+        "复杂化"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "电驱动",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "装置",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "和",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "电力",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "电子",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "器件",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "广泛",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "使用",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "导致",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "飞机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "电源",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "系统",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "结构",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "复杂化",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对飞机的可靠性、安全性、测试性和维修性提出了更高的要求",
+      "tokens": [
+        "对",
+        "飞机",
+        "的",
+        "可靠性",
+        "、",
+        "安全性",
+        "、",
+        "测试性",
+        "和",
+        "维修性",
+        "提出",
+        "了",
+        "更",
+        "高",
+        "的",
+        "要求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "可靠性",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "安全性",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "测试性",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "维修性",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "更",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "高",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 16,
+          "form": "要求",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "研究飞机电源系统的故障诊断技术具有重要意义",
+      "tokens": [
+        "研究",
+        "飞机",
+        "电源",
+        "系统",
+        "的",
+        "故障",
+        "诊断",
+        "技术",
+        "具有",
+        "重要",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "电源",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "诊断",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "重要",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "意义",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文首先介绍了飞机电源系统的组成结构和各自功能",
+      "tokens": [
+        "本",
+        "文",
+        "首先",
+        "介绍",
+        "了",
+        "飞机",
+        "电源",
+        "系统",
+        "的",
+        "组成",
+        "结构",
+        "和",
+        "各自",
+        "功能"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "首先",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "了",
+          "head": 4,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "电源",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "组成",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "结构",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "各自",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 14,
+          "form": "功能",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "概述了飞机电源系统的发展历程",
+      "tokens": [
+        "概述",
+        "了",
+        "飞机",
+        "电源",
+        "系统",
+        "的",
+        "发展",
+        "历程"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "概述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "电源",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "发展",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "历程",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对比分析国内外典型电源系统的特征",
+      "tokens": [
+        "对比",
+        "分析",
+        "国内外",
+        "典型",
+        "电源",
+        "系统",
+        "的",
+        "特征"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对比",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 1,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "国内外",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "典型",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "电源",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "特征",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "总结了飞机电源系统中的主要故障模式、故障特点和失效原因",
+      "tokens": [
+        "总结",
+        "了",
+        "飞机",
+        "电源",
+        "系统",
+        "中",
+        "的",
+        "主要",
+        "故障",
+        "模式",
+        "、",
+        "故障",
+        "特点",
+        "和",
+        "失效",
+        "原因"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "电源",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "中",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "主要",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "模式",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "特点",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "和",
+          "head": 16,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "失效",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "原因",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并提出一种飞机电源健康管理系统的设计架构",
+      "tokens": [
+        "并",
+        "提出",
+        "一",
+        "种",
+        "飞机",
+        "电源",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "设计",
+        "架构"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "一",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "种",
+          "head": 12,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "电源",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "设计",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "架构",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "然后综述了国内外基于模型和基于数据的故障诊断方法研究进展",
+      "tokens": [
+        "然后",
+        "综述",
+        "了",
+        "国内外",
+        "基于",
+        "模型",
+        "和",
+        "基于",
+        "数据",
+        "的",
+        "故障",
+        "诊断",
+        "方法",
+        "研究",
+        "进展"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "然后",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "综述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "国内外",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "基于",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "模型",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 5,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "基于",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "数据",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "诊断",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "方法",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "研究",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "进展",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "从准确度、数据需求量、适用性和实现难易程度等方面评述了各类诊断方法的特点",
+      "tokens": [
+        "从",
+        "准确度",
+        "、",
+        "数据",
+        "需求量",
+        "、",
+        "适用性",
+        "和",
+        "实现",
+        "难易",
+        "程度",
+        "等",
+        "方面",
+        "评述",
+        "了",
+        "各",
+        "类",
+        "诊断",
+        "方法",
+        "的",
+        "特点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "从",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "准确度",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "、",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "需求量",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "适用性",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "实现",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "难易",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "程度",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "等",
+          "head": 11,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 13,
+          "form": "方面",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "评述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "了",
+          "head": 14,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 16,
+          "form": "各",
+          "head": 19,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 17,
+          "form": "类",
+          "head": 16,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "诊断",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "方法",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "特点",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后指出了飞机电源系统故障诊断技术面临的挑战和发展趋势",
+      "tokens": [
+        "最后",
+        "指出",
+        "了",
+        "飞机",
+        "电源",
+        "系统",
+        "故障",
+        "诊断",
+        "技术",
+        "面临",
+        "的",
+        "挑战",
+        "和",
+        "发展",
+        "趋势"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "指出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "电源",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "诊断",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "面临",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "挑战",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "和",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "发展",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "趋势",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

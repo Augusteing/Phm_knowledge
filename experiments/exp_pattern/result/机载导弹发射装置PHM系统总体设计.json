@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "保障技术手段",
+    "object_type": "技术类型"
+  },
+  {
+    "subject": "机载导弹发射装置",
+    "subject_type": "设备",
+    "relation": "是配套产品",
+    "object": "机载武器系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "机载导弹发射装置",
+    "subject_type": "设备",
+    "relation": "纳入",
+    "object": "飞机PHM系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "关键技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "发射装置PHM框架结构",
+    "subject_type": "架构",
+    "relation": "针对",
+    "object": "机载导弹发射装置",
+    "object_type": "设备"
+  },
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "故障预测",
+    "object_type": "方法"
+  },
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "维护管理方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "需要选取",
+    "object": "监测参数",
+    "object_type": "参数"
+  }
+]

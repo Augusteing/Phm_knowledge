@@ -1,0 +1,134 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Data files (large files should not be committed)
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+data/raw/papers/*.pdf
+data/results/**/*.json
+data/results/**/*.csv
+
+# API Keys and Secrets
+.env
+.env.local
+config/secrets.yaml
+*.key
+
+# Logs
+logs/
+*.log
+*.ndjson
+_log/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Model outputs
+models/checkpoints/
+*.pkl
+*.h5
+*.pth
+*.ckpt
+
+# Experiment results (可选择性忽略)
+# experiments/*/results/
+# experiments/*/_log/
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Pytest
+.pytest_cache/
+.tox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling
+*.prof
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Large result files
+*.xlsx
+**/*千字密度*.csv
+**/打分结果/
+**/统计结果/
+
+# Backup files
+*副本/
+*backup/
+*_backup.*

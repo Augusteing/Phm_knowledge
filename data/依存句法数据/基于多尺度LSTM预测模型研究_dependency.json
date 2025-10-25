@@ -1,0 +1,1190 @@
+{
+  "title": "基于多尺度LSTM预测模型研究",
+  "summary": "航空发动机剩余寿命（remaining useful life,RUL）预测是设备故障预测与健康管理（prognostics and health management,PHM）的核心问题。针对发动机数据维度高、滞后性强和复杂度高等挑战，提出了一种基于自训练权重的多尺度注意力双向长短期记忆神经网络模型。通过不同尺度的双向长短期记忆神经网络（bidirectional long short-term memory neural network,BiLSTM）提取多尺度特征；提出一种基于自训练权重的融合算法，通过引入注意力机制进行不同尺度的特征筛选，以提高预测精度。将各模型在NASA的C-MAPSS数据集上进行实验对比，结果证明，所提出预测模型在准确率和均方根误差指标上均有所提升。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机剩余寿命（remaining useful life,RUL）预测是设备故障预测与健康管理（prognostics and health management,PHM）的核心问题",
+      "tokens": [
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命",
+        "（",
+        "remaining",
+        "useful",
+        "life",
+        ",",
+        "RUL",
+        "）",
+        "预测",
+        "是",
+        "设备",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "（",
+        "prognostics",
+        "and",
+        "health",
+        "management",
+        ",",
+        "PHM",
+        "）",
+        "的",
+        "核心",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "剩余",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "寿命",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "（",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "remaining",
+          "head": 4,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "useful",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "life",
+          "head": 4,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "RUL",
+          "head": 4,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 11,
+          "form": "）",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "预测",
+          "head": 13,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 14,
+          "form": "设备",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "预测",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "与",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "健康",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "管理",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "（",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "prognostics",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "and",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "health",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "management",
+          "head": 26,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "PHM",
+          "head": 19,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "）",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "核心",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "问题",
+          "head": 13,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对发动机数据维度高、滞后性强和复杂度高等挑战",
+      "tokens": [
+        "针对",
+        "发动机",
+        "数据",
+        "维度",
+        "高",
+        "、",
+        "滞后性",
+        "强",
+        "和",
+        "复杂度",
+        "高",
+        "等",
+        "挑战"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "数据",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "维度",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "高",
+          "head": 13,
+          "deprel": "vmod",
+          "pos": "VA"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "滞后性",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "强",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 5,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "复杂度",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "高",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 12,
+          "form": "等",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 13,
+          "form": "挑战",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了一种基于自训练权重的多尺度注意力双向长短期记忆神经网络模型",
+      "tokens": [
+        "提出",
+        "了",
+        "一",
+        "种",
+        "基于",
+        "自",
+        "训练",
+        "权重",
+        "的",
+        "多",
+        "尺度",
+        "注意力",
+        "双向",
+        "长",
+        "短期",
+        "记忆",
+        "神经",
+        "网络",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "一",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "种",
+          "head": 19,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "基于",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "自",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "训练",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "权重",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "多",
+          "head": 11,
+          "deprel": "nummod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "尺度",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "注意力",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "双向",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "长",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "短期",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "记忆",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "神经",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "网络",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过不同尺度的双向长短期记忆神经网络（bidirectional long short-term memory neural network,BiLSTM）提取多尺度特征",
+      "tokens": [
+        "通过",
+        "不同",
+        "尺度",
+        "的",
+        "双向",
+        "长",
+        "短期",
+        "记忆",
+        "神经",
+        "网络",
+        "（",
+        "bidirectional",
+        "long",
+        "short-",
+        "term",
+        "memory",
+        "neural",
+        "network",
+        ",",
+        "BiLSTM",
+        "）",
+        "提取",
+        "多",
+        "尺度",
+        "特征"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "不同",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "尺度",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "双向",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "长",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "短期",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "记忆",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "神经",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "网络",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "（",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "bidirectional",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "long",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "short-",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "term",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "memory",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "neural",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "network",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "BiLSTM",
+          "head": 10,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "）",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "提取",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "多",
+          "head": 24,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 24,
+          "form": "尺度",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "特征",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出一种基于自训练权重的融合算法，通过引入注意力机制进行不同尺度的特征筛选，以提高预测精度",
+      "tokens": [
+        "提出",
+        "一",
+        "种",
+        "基于",
+        "自",
+        "训练",
+        "权重",
+        "的",
+        "融合",
+        "算法",
+        "，",
+        "通过",
+        "引入",
+        "注意力",
+        "机制",
+        "进行",
+        "不同",
+        "尺度",
+        "的",
+        "特征",
+        "筛选",
+        "，",
+        "以",
+        "提高",
+        "预测",
+        "精度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "一",
+          "head": 3,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 3,
+          "form": "种",
+          "head": 10,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 4,
+          "form": "基于",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "自",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 6,
+          "form": "训练",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "权重",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "融合",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "算法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "，",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "通过",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "引入",
+          "head": 12,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "注意力",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "机制",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "不同",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "尺度",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "特征",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "筛选",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "，",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "以",
+          "head": 24,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 24,
+          "form": "提高",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "预测",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "精度",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "将各模型在NASA的C-MAPSS数据集上进行实验对比",
+      "tokens": [
+        "将",
+        "各",
+        "模型",
+        "在",
+        "NASA",
+        "的",
+        "C-MAPSS",
+        "数据集",
+        "上",
+        "进行",
+        "实验",
+        "对比"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "将",
+          "head": 10,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 2,
+          "form": "各",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "在",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "NASA",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NR"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "C-MAPSS",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "数据集",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "上",
+          "head": 4,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "实验",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "对比",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果证明",
+      "tokens": [
+        "结果",
+        "证明"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "证明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "所提出预测模型在准确率和均方根误差指标上均有所提升",
+      "tokens": [
+        "所",
+        "提出",
+        "预测",
+        "模型",
+        "在",
+        "准确率",
+        "和",
+        "均方根",
+        "误差",
+        "指标",
+        "上",
+        "均",
+        "有所",
+        "提升"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "所",
+          "head": 2,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 2,
+          "form": "提出",
+          "head": 4,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "预测",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "模型",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "准确率",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "均方根",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "误差",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "指标",
+          "head": 11,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "上",
+          "head": 5,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 12,
+          "form": "均",
+          "head": 13,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "有所",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "提升",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

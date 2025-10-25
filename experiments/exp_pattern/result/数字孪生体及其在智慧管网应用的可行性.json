@@ -1,0 +1,135 @@
+[
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空航天",
+    "object_type": "行业"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "汽车制造",
+    "object_type": "行业"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "军事",
+    "object_type": "行业"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "能源",
+    "object_type": "行业"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "管道行业",
+    "object_type": "行业"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "产品设计",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "飞机故障预测",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "电厂发电机组智能健康管理",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "复杂产品装配",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "油气管道",
+    "object_type": "领域"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "管道设计",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "调度优化",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "管道设备运行维护",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "管道全生命周期管理",
+    "object_type": "应用"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "提供技术手段",
+    "object": "信息交互及融合",
+    "object_type": "功能"
+  },
+  {
+    "subject": "信息交互及融合",
+    "subject_type": "功能",
+    "relation": "连接",
+    "object": "真实管道系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "信息交互及融合",
+    "subject_type": "功能",
+    "relation": "连接",
+    "object": "虚拟管道系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "虚拟管道的仿真优化",
+    "object_type": "功能"
+  },
+  {
+    "subject": "数字孪生体",
+    "subject_type": "技术",
+    "relation": "促进",
+    "object": "智慧管网建设",
+    "object_type": "目标"
+  }
+]

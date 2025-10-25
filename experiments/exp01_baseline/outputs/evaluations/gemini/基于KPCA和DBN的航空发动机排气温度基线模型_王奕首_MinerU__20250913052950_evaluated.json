@@ -1,0 +1,291 @@
+{
+  "entities": [
+    {
+      "name": "KPCA-DBN建模方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机EGT基线模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机健康管理",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "快速存取数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "排气温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "降维处理",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非线性特征提取",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高斯函数",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "主成分分析法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "受限玻尔兹曼机",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "反向传播网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "GA-BP网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "单一DBN网络模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "传统神经网络建模方法",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "模型精度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "网络结构的复杂度",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "EGT超限",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "燃烧室",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "涡轮叶片",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "尾喷管",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机部件异常",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "提出了",
+      "tail": "航空发动机EGT基线模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "结合了",
+      "tail": "核主成分分析",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "结合了",
+      "tail": "深度置信网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机EGT基线模型",
+      "relation": "应用于",
+      "tail": "航空发动机健康管理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机EGT基线模型",
+      "relation": "基于",
+      "tail": "快速存取数据",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "降维处理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "非线性特征提取",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "改进了",
+      "tail": "主成分分析法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "由...组成",
+      "tail": "受限玻尔兹曼机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "包含",
+      "tail": "反向传播网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "快速存取数据",
+      "relation": "采集于",
+      "tail": "CFM56-7B发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "CFM56-7B发动机",
+      "relation": "是一种",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "发动机部件异常",
+      "relation": "导致",
+      "tail": "EGT超限",
+      "evaluation": "正确"
+    },
+    {
+      "head": "发动机部件异常",
+      "relation": "可发生在",
+      "tail": "燃烧室",
+      "evaluation": "正确"
+    },
+    {
+      "head": "发动机部件异常",
+      "relation": "可发生在",
+      "tail": "涡轮叶片",
+      "evaluation": "正确"
+    },
+    {
+      "head": "发动机部件异常",
+      "relation": "可发生在",
+      "tail": "尾喷管",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "优于",
+      "tail": "传统神经网络建模方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "预测精度优于",
+      "tail": "GA-BP网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "预测精度优于",
+      "tail": "单一DBN网络模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "提高了",
+      "tail": "模型精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN建模方法",
+      "relation": "降低了",
+      "tail": "网络结构的复杂度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "评价",
+      "tail": "模型精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "GA-BP网络",
+      "relation": "利用",
+      "tail": "遗传算法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "遗传算法",
+      "relation": "优化",
+      "tail": "反向传播网络",
+      "evaluation": "正确"
+    }
+  ]
+}

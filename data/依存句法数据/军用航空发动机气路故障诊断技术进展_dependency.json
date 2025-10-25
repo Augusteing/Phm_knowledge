@@ -1,0 +1,1555 @@
+{
+  "title": "军用航空发动机气路故障诊断技术进展",
+  "summary": "随着航空发动机健康管理系统中气路故障诊断技术的日趋进步，从提高飞行安全性及降低视情维修成本的角度出发，越来越多的军用航空发动机在研发过程中更聚焦于气路故障诊断设计。为了提升发动机工作安全性，系统梳理了国内外军用航空发动机气路故障诊断技术的发展历程，并按4个阶段对技术特征进行总结归纳。核心研究了基于数学模型、数据驱动和信息融合的气路故障诊断的一般方法和各自方法的优缺点，并提出了军用航空发动机气路故障诊断的关键技术，针对先进军用变循环发动机的特点和需求，给出了军用发动机气路故障诊断设计工程上应分阶段实施、利用机载实时模型开展不可测参数与可测参数关联研究、加强模式转换等过渡态气路故障诊断设计、辩证地处理控制系统和健康管理系统的功能分配关系等，可供中国未来开展自适应循环发动机的气路故障诊断设计时参考。",
+  "analyzed_sentences": [
+    {
+      "sentence": "随着航空发动机健康管理系统中气路故障诊断技术的日趋进步",
+      "tokens": [
+        "随着",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "中",
+        "气路",
+        "故障",
+        "诊断",
+        "技术",
+        "的",
+        "日趋",
+        "进步"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "随着",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "中",
+          "head": 11,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "气路",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "诊断",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "技术",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "日趋",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "进步",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "从提高飞行安全性及降低视情维修成本的角度出发",
+      "tokens": [
+        "从",
+        "提高",
+        "飞行",
+        "安全性",
+        "及",
+        "降低",
+        "视情",
+        "维修",
+        "成本",
+        "的",
+        "角度",
+        "出发"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "从",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "提高",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "飞行",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "安全性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "及",
+          "head": 2,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "降低",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "视情",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "维修",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "成本",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "角度",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "出发",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "越来越多的军用航空发动机在研发过程中更聚焦于气路故障诊断设计",
+      "tokens": [
+        "越来越",
+        "多",
+        "的",
+        "军用",
+        "航空",
+        "发动机",
+        "在",
+        "研发",
+        "过程",
+        "中",
+        "更",
+        "聚焦于",
+        "气路",
+        "故障",
+        "诊断",
+        "设计"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "越来越",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "多",
+          "head": 6,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 4,
+          "form": "军用",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "在",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "研发",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "过程",
+          "head": 10,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "中",
+          "head": 7,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 11,
+          "form": "更",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "聚焦于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "气路",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "诊断",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "设计",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为了提升发动机工作安全性",
+      "tokens": [
+        "为了",
+        "提升",
+        "发动机",
+        "工作",
+        "安全性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "提升",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "工作",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "安全性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "系统梳理了国内外军用航空发动机气路故障诊断技术的发展历程",
+      "tokens": [
+        "系统",
+        "梳理",
+        "了",
+        "国内外",
+        "军用",
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "技术",
+        "的",
+        "发展",
+        "历程"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "系统",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "梳理",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "国内外",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "军用",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "航空",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发动机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "气路",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "诊断",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "技术",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "发展",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "历程",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并按4个阶段对技术特征进行总结归纳",
+      "tokens": [
+        "并",
+        "按",
+        "4",
+        "个",
+        "阶段",
+        "对",
+        "技术",
+        "特征",
+        "进行",
+        "总结",
+        "归纳"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "按",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "4",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "个",
+          "head": 5,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "阶段",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "技术",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "特征",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "总结",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "归纳",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "核心研究了基于数学模型、数据驱动和信息融合的气路故障诊断的一般方法和各自方法的优缺点",
+      "tokens": [
+        "核心",
+        "研究",
+        "了",
+        "基于",
+        "数学",
+        "模型",
+        "、",
+        "数据",
+        "驱动",
+        "和",
+        "信息",
+        "融合",
+        "的",
+        "气路",
+        "故障",
+        "诊断",
+        "的",
+        "一般",
+        "方法",
+        "和",
+        "各自",
+        "方法",
+        "的",
+        "优缺点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "核心",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "基于",
+          "head": 24,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "数学",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "模型",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "数据",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "驱动",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "信息",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "融合",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "气路",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "诊断",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "一般",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "方法",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "和",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "各自",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 22,
+          "form": "方法",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 22,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "优缺点",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并提出了军用航空发动机气路故障诊断的关键技术",
+      "tokens": [
+        "并",
+        "提出",
+        "了",
+        "军用",
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "的",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "军用",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "气路",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "诊断",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "关键",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "技术",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对先进军用变循环发动机的特点和需求",
+      "tokens": [
+        "针对",
+        "先进",
+        "军用",
+        "变循环",
+        "发动机",
+        "的",
+        "特点",
+        "和",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "先进",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "军用",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "变循环",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "特点",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "需求",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "给出了军用发动机气路故障诊断设计工程上应分阶段实施、利用机载实时模型开展不可测参数与可测参数关联研究、加强模式转换等过渡态气路故障诊断设计、辩证地处理控制系统和健康管理系统的功能分配关系等",
+      "tokens": [
+        "给出",
+        "了",
+        "军用",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "设计",
+        "工程",
+        "上",
+        "应",
+        "分",
+        "阶段",
+        "实施",
+        "、",
+        "利用",
+        "机载",
+        "实时",
+        "模型",
+        "开展",
+        "不",
+        "可测",
+        "参数",
+        "与",
+        "可测",
+        "参数",
+        "关联",
+        "研究",
+        "、",
+        "加强",
+        "模式",
+        "转换",
+        "等",
+        "过渡态",
+        "气路",
+        "故障",
+        "诊断",
+        "设计",
+        "、",
+        "辩证",
+        "地处理",
+        "控制",
+        "系统",
+        "和",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "功能",
+        "分配",
+        "关系",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "军用",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "气路",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "诊断",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "工程",
+          "head": 10,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "上",
+          "head": 14,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 11,
+          "form": "应",
+          "head": 14,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "分",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "阶段",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "实施",
+          "head": 1,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "利用",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "机载",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "实时",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "模型",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "开展",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "不",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "可测",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "参数",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "与",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "可测",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "参数",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "关联",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "研究",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "加强",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "模式",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "转换",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "等",
+          "head": 32,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 34,
+          "form": "过渡态",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "气路",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "故障",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "诊断",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "设计",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "、",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "辩证",
+          "head": 1,
+          "deprel": "dvpmod",
+          "pos": "AD"
+        },
+        {
+          "id": 41,
+          "form": "地处理",
+          "head": 40,
+          "deprel": "dvpm",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "控制",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "系统",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "和",
+          "head": 47,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 45,
+          "form": "健康",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "管理",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "系统",
+          "head": 51,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 47,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 49,
+          "form": "功能",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "分配",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "关系",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "等",
+          "head": 51,
+          "deprel": "etc",
+          "pos": "ETC"
+        }
+      ]
+    },
+    {
+      "sentence": "可供中国未来开展自适应循环发动机的气路故障诊断设计时参考",
+      "tokens": [
+        "可",
+        "供",
+        "中国",
+        "未来",
+        "开展",
+        "自适应",
+        "循环",
+        "发动机",
+        "的",
+        "气路",
+        "故障",
+        "诊断",
+        "设计",
+        "时",
+        "参考"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "可",
+          "head": 2,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "中国",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "未来",
+          "head": 5,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 5,
+          "form": "开展",
+          "head": 14,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "自适应",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "循环",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "气路",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "诊断",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "设计",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "时",
+          "head": 2,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": "参考",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        }
+      ]
+    }
+  ]
+}

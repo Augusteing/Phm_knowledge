@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "故障特征提取",
+    "subject_type": "技术",
+    "relation": "是关键技术",
+    "object": "航空电子设备故障预测",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "小波变换",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "故障特征提取",
+    "object_type": "技术"
+  },
+  {
+    "subject": "傅里叶变换",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "故障特征提取",
+    "object_type": "技术"
+  },
+  {
+    "subject": "经验模态分解",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "故障特征提取",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空电子设备",
+    "subject_type": "设备",
+    "relation": "属于",
+    "object": "大规模集成电路",
+    "object_type": "组件类型"
+  },
+  {
+    "subject": "故障特征数量大",
+    "subject_type": "问题",
+    "relation": "影响",
+    "object": "故障预测精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "故障特征数量大",
+    "subject_type": "问题",
+    "relation": "影响",
+    "object": "故障预测速度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "新方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "极大似然法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "新方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "降噪自编码神经网络",
+    "object_type": "方法"
+  },
+  {
+    "subject": "极大似然法",
+    "subject_type": "方法",
+    "relation": "分析",
+    "object": "高维数据集",
+    "object_type": "数据"
+  },
+  {
+    "subject": "极大似然法",
+    "subject_type": "方法",
+    "relation": "估计",
+    "object": "故障特征维数",
+    "object_type": "属性"
+  },
+  {
+    "subject": "降噪自编码神经网络",
+    "subject_type": "方法",
+    "relation": "提取",
+    "object": "关键故障特征",
+    "object_type": "数据"
+  },
+  {
+    "subject": "降噪自编码神经网络",
+    "subject_type": "方法",
+    "relation": "去除",
+    "object": "冗余信息",
+    "object_type": "数据"
+  },
+  {
+    "subject": "新方法",
+    "subject_type": "方法",
+    "relation": "验证于",
+    "object": "航空电子系统电源模块",
+    "object_type": "组件"
+  },
+  {
+    "subject": "健康评估",
+    "subject_type": "技术",
+    "relation": "验证",
+    "object": "新方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障特征可视化",
+    "subject_type": "技术",
+    "relation": "验证",
+    "object": "新方法",
+    "object_type": "方法"
+  }
+]

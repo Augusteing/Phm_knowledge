@@ -1,0 +1,524 @@
+{
+  "title": "产品新闻发布",
+  "summary": "航天科工集团一院测控公司参与大飞机健康管理项目本刊讯:9月中旬,中国航天科工集团公司一院测控公司与中国商飞上海飞机客户服务有限公司新成立的联合攻关团队,将对大飞机实时监测与健康管理项目的总体方案加以确定。这标志着双",
+  "analyzed_sentences": [
+    {
+      "sentence": "航天科工集团一院测控公司参与大飞机健康管理项目本刊讯:9月中旬,中国航天科工集团公司一院测控公司与中国商飞上海飞机客户服务有限公司新成立的联合攻关团队,将对大飞机实时监测与健康管理项目的总体方案加以确定",
+      "tokens": [
+        "航天",
+        "科工",
+        "集团",
+        "一",
+        "院",
+        "测控",
+        "公司",
+        "参与",
+        "大",
+        "飞机",
+        "健康",
+        "管理",
+        "项目",
+        "本",
+        "刊讯",
+        ":",
+        "9月",
+        "中旬",
+        ",",
+        "中国",
+        "航天",
+        "科工",
+        "集团",
+        "公司",
+        "一",
+        "院",
+        "测控",
+        "公司",
+        "与",
+        "中国",
+        "商飞",
+        "上海",
+        "飞机",
+        "客户",
+        "服务",
+        "有限",
+        "公司",
+        "新",
+        "成立",
+        "的",
+        "联合",
+        "攻关",
+        "团队",
+        ",",
+        "将",
+        "对",
+        "大",
+        "飞机",
+        "实时",
+        "监测",
+        "与",
+        "健康",
+        "管理",
+        "项目",
+        "的",
+        "总体",
+        "方案",
+        "加以",
+        "确定"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航天",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "科工",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "集团",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "一",
+          "head": 5,
+          "deprel": "nummod",
+          "pos": "OD"
+        },
+        {
+          "id": 5,
+          "form": "院",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "测控",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "公司",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "参与",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "大",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "飞机",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "健康",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "管理",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "项目",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "本",
+          "head": 15,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 15,
+          "form": "刊讯",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ":",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "9月",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 18,
+          "form": "中旬",
+          "head": 58,
+          "deprel": "tmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 58,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "中国",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 21,
+          "form": "航天",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "科工",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "集团",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "公司",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "一",
+          "head": 26,
+          "deprel": "nummod",
+          "pos": "OD"
+        },
+        {
+          "id": 26,
+          "form": "院",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "测控",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "公司",
+          "head": 43,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "与",
+          "head": 43,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 30,
+          "form": "中国",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 31,
+          "form": "商飞",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "上海",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 33,
+          "form": "飞机",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "客户",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "服务",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "有限",
+          "head": 37,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 37,
+          "form": "公司",
+          "head": 39,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "新",
+          "head": 39,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 39,
+          "form": "成立",
+          "head": 43,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "的",
+          "head": 39,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 41,
+          "form": "联合",
+          "head": 43,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 42,
+          "form": "攻关",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "团队",
+          "head": 58,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": ",",
+          "head": 58,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 45,
+          "form": "将",
+          "head": 58,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 46,
+          "form": "对",
+          "head": 58,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 47,
+          "form": "大",
+          "head": 48,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 48,
+          "form": "飞机",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "实时",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 50,
+          "form": "监测",
+          "head": 53,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "与",
+          "head": 53,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 52,
+          "form": "健康",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "管理",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "项目",
+          "head": 57,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "的",
+          "head": 54,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 56,
+          "form": "总体",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "方案",
+          "head": 46,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "加以",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 59,
+          "form": "确定",
+          "head": 58,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "这标志着双",
+      "tokens": [
+        "这",
+        "标志",
+        "着",
+        "双"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "这",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 2,
+          "form": "标志",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "着",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "双",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

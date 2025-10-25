@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "航空电子系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "综合化",
+    "object_type": "趋势"
+  },
+  {
+    "subject": "综合化",
+    "subject_type": "趋势",
+    "relation": "对...提出挑战",
+    "object": "故障预测技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空电子产品故障预测结构",
+    "subject_type": "技术架构",
+    "relation": "包括",
+    "object": "基于模型结构",
+    "object_type": "技术架构"
+  },
+  {
+    "subject": "航空电子产品故障预测结构",
+    "subject_type": "技术架构",
+    "relation": "包括",
+    "object": "数据驱动结构",
+    "object_type": "技术架构"
+  },
+  {
+    "subject": "航空电子产品故障预测结构",
+    "subject_type": "技术架构",
+    "relation": "包括",
+    "object": "综合预测结构",
+    "object_type": "技术架构"
+  },
+  {
+    "subject": "航空电子产品故障预测结构",
+    "subject_type": "技术架构",
+    "relation": "具有",
+    "object": "共性特征",
+    "object_type": "特征"
+  },
+  {
+    "subject": "航空电子产品故障预测结构",
+    "subject_type": "技术架构",
+    "relation": "应用于",
+    "object": "航空领域",
+    "object_type": "领域"
+  },
+  {
+    "subject": "综合航空电子系统故障预测",
+    "subject_type": "研究问题",
+    "relation": "面临",
+    "object": "问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "综合航空电子系统故障预测问题",
+    "subject_type": "研究问题",
+    "relation": "具有",
+    "object": "初步解决思路",
+    "object_type": "解决方案"
+  }
+]

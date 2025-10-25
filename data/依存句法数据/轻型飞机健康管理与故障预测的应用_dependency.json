@@ -1,0 +1,905 @@
+{
+  "title": "轻型飞机健康管理与故障预测的应用",
+  "summary": "随着轻型飞机的大量使用,其可靠性和和可用性不断面临新的挑战。因此,轻型飞机的健康管理与预测(PHM)技术显得日益重要,它不仅能够保证飞行安全,同时也可以降低使用成本、合理安排维修计划。针对目前尚未成熟的PHM技术,本文首先对轻型飞机PHM系统的框架以及受益进行了分析。其次,讨论了轻型飞机PHM系统设计与分析中的关键问题。最后,阐述了轻型飞机PHM技术应用的关键技术难题以及未来发展方向。",
+  "analyzed_sentences": [
+    {
+      "sentence": "随着轻型飞机的大量使用,其可靠性和和可用性不断面临新的挑战",
+      "tokens": [
+        "随着",
+        "轻型",
+        "飞机",
+        "的",
+        "大量",
+        "使用",
+        ",",
+        "其",
+        "可靠性",
+        "和",
+        "和",
+        "可用性",
+        "不断",
+        "面临",
+        "新",
+        "的",
+        "挑战"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "随着",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "轻型",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "大量",
+          "head": 6,
+          "deprel": "nummod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "使用",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "其",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 9,
+          "form": "可靠性",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "可用性",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "不断",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "面临",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "新",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "挑战",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "因此,轻型飞机的健康管理与预测(PHM)技术显得日益重要,它不仅能够保证飞行安全,同时也可以降低使用成本、合理安排维修计划",
+      "tokens": [
+        "因此",
+        ",",
+        "轻型",
+        "飞机",
+        "的",
+        "健康",
+        "管理",
+        "与",
+        "预测",
+        "(",
+        "PHM",
+        ")",
+        "技术",
+        "显得",
+        "日益",
+        "重要",
+        ",",
+        "它",
+        "不仅",
+        "能够",
+        "保证",
+        "飞行",
+        "安全",
+        ",",
+        "同时",
+        "也",
+        "可以",
+        "降低",
+        "使用",
+        "成本",
+        "、",
+        "合理",
+        "安排",
+        "维修",
+        "计划"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "因此",
+          "head": 16,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "轻型",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "(",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "PHM",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ")",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "技术",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "显得",
+          "head": 16,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "日益",
+          "head": 16,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "重要",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "它",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 19,
+          "form": "不仅",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "能够",
+          "head": 21,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "保证",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "飞行",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "安全",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "同时",
+          "head": 28,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "也",
+          "head": 28,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 27,
+          "form": "可以",
+          "head": 28,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "降低",
+          "head": 21,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "使用",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "成本",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "、",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "合理",
+          "head": 33,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 33,
+          "form": "安排",
+          "head": 21,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "维修",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "计划",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对目前尚未成熟的PHM技术,本文首先对轻型飞机PHM系统的框架以及受益进行了分析",
+      "tokens": [
+        "针对",
+        "目前",
+        "尚",
+        "未",
+        "成熟",
+        "的",
+        "PHM",
+        "技术",
+        ",",
+        "本",
+        "文",
+        "首先",
+        "对",
+        "轻型",
+        "飞机",
+        "PHM",
+        "系统",
+        "的",
+        "框架",
+        "以及",
+        "受益",
+        "进行",
+        "了",
+        "分析"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "目前",
+          "head": 5,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "尚",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "未",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "成熟",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "PHM",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "本",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 11,
+          "form": "文",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "首先",
+          "head": 22,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "对",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "轻型",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "飞机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "PHM",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "系统",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "框架",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "以及",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "受益",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "了",
+          "head": 22,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 24,
+          "form": "分析",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "其次,讨论了轻型飞机PHM系统设计与分析中的关键问题",
+      "tokens": [
+        "其次",
+        ",",
+        "讨论",
+        "了",
+        "轻型",
+        "飞机",
+        "PHM",
+        "系统",
+        "设计",
+        "与",
+        "分析",
+        "中",
+        "的",
+        "关键",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "其次",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "讨论",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "轻型",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "PHM",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "设计",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "分析",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "中",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "关键",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "问题",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后,阐述了轻型飞机PHM技术应用的关键技术难题以及未来发展方向",
+      "tokens": [
+        "最后",
+        ",",
+        "阐述",
+        "了",
+        "轻型",
+        "飞机",
+        "PHM",
+        "技术",
+        "应用",
+        "的",
+        "关键",
+        "技术",
+        "难题",
+        "以及",
+        "未来",
+        "发展",
+        "方向"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "阐述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "轻型",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "PHM",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "应用",
+          "head": 17,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "关键",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "技术",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "难题",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "以及",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "未来",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 16,
+          "form": "发展",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "方向",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

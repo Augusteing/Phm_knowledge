@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "核主成分分析(KPCA)",
+      "type": "算法"
+    },
+    {
+      "name": "深度置信网络(DBN)",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机排气温度基线模型",
+      "type": "系统/部件"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "平均绝对误差(MAE)",
+      "type": "性能指标"
+    },
+    {
+      "name": "高斯函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "非线性特征提取",
+      "type": "研究方法"
+    },
+    {
+      "name": "数据预处理",
+      "type": "研究方法"
+    },
+    {
+      "name": "KPCA-DBN混合模型",
+      "type": "模型"
+    },
+    {
+      "name": "GA-BP神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "DBN网络",
+      "type": "模型"
+    },
+    {
+      "name": "EGT基线模型",
+      "type": "系统/部件"
+    }
+  ],
+  "relations": [
+    {
+      "head": "核主成分分析(KPCA)",
+      "relation": "结合",
+      "tail": "深度置信网络(DBN)"
+    },
+    {
+      "head": "核主成分分析(KPCA)",
+      "relation": "用于",
+      "tail": "非线性特征提取"
+    },
+    {
+      "head": "深度置信网络(DBN)",
+      "relation": "应用于",
+      "tail": "航空发动机排气温度基线模型"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "核主成分分析(KPCA)"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "深度置信网络(DBN)"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "支持",
+      "tail": "航空发动机排气温度基线模型"
+    },
+    {
+      "head": "平均绝对误差(MAE)",
+      "relation": "评估",
+      "tail": "KPCA-DBN混合模型"
+    },
+    {
+      "head": "高斯函数",
+      "relation": "作为",
+      "tail": "核主成分分析(KPCA)"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "GA-BP神经网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "DBN网络"
+    },
+    {
+      "head": "EGT基线模型",
+      "relation": "基于",
+      "tail": "KPCA-DBN混合模型"
+    },
+    {
+      "head": "数据预处理",
+      "relation": "包括",
+      "tail": "野点剔除"
+    },
+    {
+      "head": "数据预处理",
+      "relation": "包括",
+      "tail": "参数修正"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "subject": "航空电子系统健康管理专家系统",
+    "subject_type": "专家系统",
+    "relation": "涉及",
+    "object": "健康状态的管理模式",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空电子系统健康管理专家系统",
+    "subject_type": "专家系统",
+    "relation": "涉及",
+    "object": "推理机的模型设计",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空电子系统健康管理专家系统",
+    "subject_type": "专家系统",
+    "relation": "涉及",
+    "object": "故障修复策略",
+    "object_type": "关键技术"
+  }
+]

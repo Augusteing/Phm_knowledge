@@ -1,0 +1,1176 @@
+{
+  "title": "大型飞机发动机故障智能诊断方法研究与仿真",
+  "summary": "研究大型飞机发动机中故障准确诊断的问题。与一般元器件不同,大型飞机发动机结构复杂,工作中出现故障频率较高,故障出现时间较短,并且很难复现,导致在建立故障间的关联时出现信息关联断裂。传统的故障检测方法多是根据故障信息之间的关联性进行判断,一旦故障不能复现,将导致判断失败,降低了检测的准确性。提出了粒子群粗糙集约简的故障诊断方法,并且应用到飞机发动机中,通过对故障知识获取、规则优化,运用故障预测的手段,重建故障信息断裂的关联性。完成故障识别。实验结果证明,这种方法较好地提高了故障诊断的准确性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "研究大型飞机发动机中故障准确诊断的问题",
+      "tokens": [
+        "研究",
+        "大型",
+        "飞机",
+        "发动机",
+        "中",
+        "故障",
+        "准确",
+        "诊断",
+        "的",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "大型",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "中",
+          "head": 8,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "准确",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "诊断",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "问题",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "与一般元器件不同,大型飞机发动机结构复杂,工作中出现故障频率较高,故障出现时间较短,并且很难复现,导致在建立故障间的关联时出现信息关联断裂",
+      "tokens": [
+        "与",
+        "一般",
+        "元器件",
+        "不同",
+        ",",
+        "大型",
+        "飞机",
+        "发动机",
+        "结构",
+        "复杂",
+        ",",
+        "工作",
+        "中",
+        "出现",
+        "故障",
+        "频率",
+        "较",
+        "高",
+        ",",
+        "故障",
+        "出现",
+        "时间",
+        "较",
+        "短",
+        ",",
+        "并且",
+        "很",
+        "难",
+        "复现",
+        ",",
+        "导致",
+        "在",
+        "建立",
+        "故障",
+        "间",
+        "的",
+        "关联",
+        "时",
+        "出现",
+        "信息",
+        "关联",
+        "断裂"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "与",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "一般",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "元器件",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "不同",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VA"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "大型",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "结构",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "复杂",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "工作",
+          "head": 13,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "中",
+          "head": 14,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 14,
+          "form": "出现",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "频率",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "较",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "高",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "出现",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "时间",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "较",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 24,
+          "form": "短",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "并且",
+          "head": 29,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "很",
+          "head": 29,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 28,
+          "form": "难",
+          "head": 29,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 29,
+          "form": "复现",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "导致",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "在",
+          "head": 39,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 33,
+          "form": "建立",
+          "head": 38,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "故障",
+          "head": 35,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "间",
+          "head": 37,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 35,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 37,
+          "form": "关联",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "时",
+          "head": 32,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 39,
+          "form": "出现",
+          "head": 31,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "信息",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "关联",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "断裂",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "传统的故障检测方法多是根据故障信息之间的关联性进行判断,一旦故障不能复现,将导致判断失败,降低了检测的准确性",
+      "tokens": [
+        "传统",
+        "的",
+        "故障",
+        "检测",
+        "方法",
+        "多",
+        "是",
+        "根据",
+        "故障",
+        "信息",
+        "之间",
+        "的",
+        "关联性",
+        "进行",
+        "判断",
+        ",",
+        "一旦",
+        "故障",
+        "不",
+        "能",
+        "复现",
+        ",",
+        "将",
+        "导致",
+        "判断",
+        "失败",
+        ",",
+        "降低",
+        "了",
+        "检测",
+        "的",
+        "准确性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "传统",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "的",
+          "head": 1,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "检测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "方法",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "多",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 7,
+          "form": "是",
+          "head": 14,
+          "deprel": "cop",
+          "pos": "VC"
+        },
+        {
+          "id": 8,
+          "form": "根据",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "信息",
+          "head": 11,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "之间",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "关联性",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "判断",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "一旦",
+          "head": 21,
+          "deprel": "advmod",
+          "pos": "CS"
+        },
+        {
+          "id": 18,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "不",
+          "head": 21,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "能",
+          "head": 21,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "复现",
+          "head": 24,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "将",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 24,
+          "form": "导致",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "判断",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "失败",
+          "head": 24,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "降低",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "了",
+          "head": 28,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 30,
+          "form": "检测",
+          "head": 32,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 30,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 32,
+          "form": "准确性",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了粒子群粗糙集约简的故障诊断方法,并且应用到飞机发动机中,通过对故障知识获取、规则优化,运用故障预测的手段,重建故障信息断裂的关联性",
+      "tokens": [
+        "提出",
+        "了",
+        "粒子群",
+        "粗糙",
+        "集约简",
+        "的",
+        "故障",
+        "诊断",
+        "方法",
+        ",",
+        "并且",
+        "应用",
+        "到",
+        "飞机",
+        "发动机",
+        "中",
+        ",",
+        "通过",
+        "对",
+        "故障",
+        "知识",
+        "获取",
+        "、",
+        "规则",
+        "优化",
+        ",",
+        "运用",
+        "故障",
+        "预测",
+        "的",
+        "手段",
+        ",",
+        "重建",
+        "故障",
+        "信息",
+        "断裂",
+        "的",
+        "关联性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "粒子群",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "粗糙",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 5,
+          "form": "集约简",
+          "head": 4,
+          "deprel": "comod",
+          "pos": "VA"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "诊断",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "并且",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "应用",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "到",
+          "head": 12,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "飞机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "发动机",
+          "head": 16,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "中",
+          "head": 12,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "通过",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 19,
+          "form": "对",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 20,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "知识",
+          "head": 19,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "获取",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "规则",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "优化",
+          "head": 18,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "运用",
+          "head": 18,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "故障",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "预测",
+          "head": 31,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 31,
+          "form": "手段",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "重建",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "故障",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "信息",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "断裂",
+          "head": 38,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 36,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 38,
+          "form": "关联性",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "完成故障识别",
+      "tokens": [
+        "完成",
+        "故障",
+        "识别"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "完成",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "故障",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "识别",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实验结果证明,这种方法较好地提高了故障诊断的准确性",
+      "tokens": [
+        "实验",
+        "结果",
+        "证明",
+        ",",
+        "这",
+        "种",
+        "方法",
+        "较",
+        "好",
+        "地",
+        "提高",
+        "了",
+        "故障",
+        "诊断",
+        "的",
+        "准确性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实验",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "结果",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "证明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "这",
+          "head": 7,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 6,
+          "form": "种",
+          "head": 5,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "较",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "好",
+          "head": 11,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "地",
+          "head": 9,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 11,
+          "form": "提高",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "诊断",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "准确性",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

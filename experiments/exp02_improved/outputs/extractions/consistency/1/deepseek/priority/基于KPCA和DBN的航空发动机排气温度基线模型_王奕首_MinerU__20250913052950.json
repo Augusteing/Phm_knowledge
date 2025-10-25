@@ -1,0 +1,162 @@
+{
+  "entities": [
+    {
+      "name": "KPCA-DBN混合模型",
+      "type": "模型"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "方法"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "排气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "高斯核函数",
+      "type": "算法"
+    },
+    {
+      "name": "受限玻尔兹曼机",
+      "type": "模型"
+    },
+    {
+      "name": "反向传播网络",
+      "type": "模型"
+    },
+    {
+      "name": "遗传算法优化的BP神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "传统神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "主成分分析",
+      "type": "方法"
+    },
+    {
+      "name": "非线性特征提取",
+      "type": "方法"
+    },
+    {
+      "name": "数据降维",
+      "type": "方法"
+    },
+    {
+      "name": "模型精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "网络结构复杂度",
+      "type": "属性"
+    }
+  ],
+  "relations": [
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "基于",
+      "tail": "核主成分分析"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "基于",
+      "tail": "深度置信网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "用于",
+      "tail": "排气温度基线建模"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "非线性特征提取"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "数据降维"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯核函数"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "包含",
+      "tail": "受限玻尔兹曼机"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "包含",
+      "tail": "反向传播网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "遗传算法优化的BP神经网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "传统神经网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "提高",
+      "tail": "模型精度"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "降低",
+      "tail": "网络结构复杂度"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "改进了",
+      "tail": "主成分分析"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "基于",
+      "tail": "CFM56-7B发动机"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "用于",
+      "tail": "评估模型精度"
+    }
+  ]
+}

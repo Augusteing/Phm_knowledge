@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "航空发动机故障风险预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "蒙特卡罗模拟技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空发动机故障风险预测方法",
+    "subject_type": "方法",
+    "relation": "用于评估",
+    "object": "发动机部件故障可能性",
+    "object_type": "指标"
+  },
+  {
+    "subject": "故障概率模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "威布尔分布",
+    "object_type": "概率分布"
+  },
+  {
+    "subject": "中位秩回归参数法",
+    "subject_type": "方法",
+    "relation": "用于估计",
+    "object": "威布尔分布参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "乘同余组合发生器",
+    "subject_type": "方法",
+    "relation": "用于产生",
+    "object": "随机数",
+    "object_type": "数据"
+  },
+  {
+    "subject": "反变换法",
+    "subject_type": "方法",
+    "relation": "用于产生",
+    "object": "随机数",
+    "object_type": "数据"
+  },
+  {
+    "subject": "随机数",
+    "subject_type": "数据",
+    "relation": "满足",
+    "object": "威布尔分布",
+    "object_type": "概率分布"
+  },
+  {
+    "subject": "蒙特卡罗模拟方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "航空发动机故障风险预测",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "发动机厂商预测数据",
+    "subject_type": "数据",
+    "relation": "用于验证",
+    "object": "算法有效性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "设备",
+    "relation": "具有",
+    "object": "复杂结构",
+    "object_type": "特性"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "设备",
+    "relation": "具有",
+    "object": "多样故障模式",
+    "object_type": "特性"
+  }
+]

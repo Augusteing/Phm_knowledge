@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "飞机空调冷却子系统",
+    "subject_type": "系统",
+    "relation": "存在问题",
+    "object": "维修次数超警戒",
+    "object_type": "问题"
+  },
+  {
+    "subject": "维修次数超警戒",
+    "subject_type": "问题",
+    "relation": "导致",
+    "object": "航空公司运营效率低下",
+    "object_type": "问题"
+  },
+  {
+    "subject": "失效模型建立新方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "系统失效数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "扩展Weibull分步建模",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "热交换器",
+    "object_type": "部件"
+  },
+  {
+    "subject": "热交换器",
+    "subject_type": "部件",
+    "relation": "属于",
+    "object": "飞机空调冷却子系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "更新过程",
+    "subject_type": "方法",
+    "relation": "解出",
+    "object": "期望失效数",
+    "object_type": "指标"
+  },
+  {
+    "subject": "幂律过程建模",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "飞机空调冷却子系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "拉普拉斯算法",
+    "subject_type": "算法",
+    "relation": "用于",
+    "object": "故障趋势预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "理论计算与实际维修资料对比",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "模型准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "失效模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "失效模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "拟定可靠性方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "失效模型",
+    "subject_type": "模型",
+    "relation": "修改",
+    "object": "维修计划",
+    "object_type": "方案"
+  }
+]

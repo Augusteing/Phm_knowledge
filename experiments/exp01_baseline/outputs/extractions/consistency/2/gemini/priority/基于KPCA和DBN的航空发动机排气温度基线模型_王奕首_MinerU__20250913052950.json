@@ -1,0 +1,276 @@
+{
+  "entities": [
+    {
+      "name": "本研究",
+      "type": "研究方法"
+    },
+    {
+      "name": "KPCA-DBN模型",
+      "type": "模型"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "算法"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机EGT基线模型",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "排气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "降维处理",
+      "type": "研究方法"
+    },
+    {
+      "name": "高斯函数",
+      "type": "算法"
+    },
+    {
+      "name": "传统神经网络建模方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "网络结构复杂度",
+      "type": "性能指标"
+    },
+    {
+      "name": "模型精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "主成分分析法",
+      "type": "算法"
+    },
+    {
+      "name": "核方法",
+      "type": "理论基础"
+    },
+    {
+      "name": "非线性特征提取问题",
+      "type": "研究问题"
+    },
+    {
+      "name": "受限玻尔兹曼机",
+      "type": "模型"
+    },
+    {
+      "name": "反向传播网络",
+      "type": "模型"
+    },
+    {
+      "name": "深度学习",
+      "type": "理论基础"
+    },
+    {
+      "name": "GA-BP网络",
+      "type": "模型"
+    },
+    {
+      "name": "单一的DBN网络模型",
+      "type": "模型"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "EGT相关参数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "部件异常",
+      "type": "故障模式"
+    },
+    {
+      "name": "排气温度超限",
+      "type": "故障模式"
+    },
+    {
+      "name": "燃烧室",
+      "type": "系统/部件"
+    },
+    {
+      "name": "涡轮叶片",
+      "type": "系统/部件"
+    },
+    {
+      "name": "尾喷管",
+      "type": "系统/部件"
+    },
+    {
+      "name": "降维后的数据",
+      "type": "数据集"
+    }
+  ],
+  "relations": [
+    {
+      "head": "本研究",
+      "relation": "提出了",
+      "tail": "KPCA-DBN模型"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "结合",
+      "tail": "核主成分分析"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "结合",
+      "tail": "深度置信网络"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "用于构建",
+      "tail": "航空发动机EGT基线模型"
+    },
+    {
+      "head": "航空发动机EGT基线模型",
+      "relation": "支持",
+      "tail": "航空发动机健康管理"
+    },
+    {
+      "head": "航空发动机EGT基线模型",
+      "relation": "预测",
+      "tail": "排气温度"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "降维处理"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯函数"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "融合",
+      "tail": "主成分分析法"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "融合",
+      "tail": "核方法"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "解决",
+      "tail": "非线性特征提取问题"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "产生",
+      "tail": "降维后的数据"
+    },
+    {
+      "head": "降维后的数据",
+      "relation": "作为输入",
+      "tail": "深度置信网络"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "由...组成",
+      "tail": "受限玻尔兹曼机"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "由...组成",
+      "tail": "反向传播网络"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "基于",
+      "tail": "深度学习"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "采用",
+      "tail": "QAR数据"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "来自",
+      "tail": "CFM56-7B发动机"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "包含",
+      "tail": "EGT相关参数"
+    },
+    {
+      "head": "EGT相关参数",
+      "relation": "影响",
+      "tail": "排气温度"
+    },
+    {
+      "head": "部件异常",
+      "relation": "导致",
+      "tail": "排气温度超限"
+    },
+    {
+      "head": "燃烧室",
+      "relation": "可能出现",
+      "tail": "部件异常"
+    },
+    {
+      "head": "涡轮叶片",
+      "relation": "可能出现",
+      "tail": "部件异常"
+    },
+    {
+      "head": "尾喷管",
+      "relation": "可能出现",
+      "tail": "部件异常"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "GA-BP网络"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "单一的DBN网络模型"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "传统神经网络建模方法"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "评价",
+      "tail": "KPCA-DBN模型"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "降低了",
+      "tail": "网络结构复杂度"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "提高了",
+      "tail": "模型精度"
+    }
+  ]
+}

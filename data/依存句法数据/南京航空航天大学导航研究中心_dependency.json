@@ -1,0 +1,563 @@
+{
+  "title": "南京航空航天大学导航研究中心",
+  "summary": "学科实力中心依托南京航空航天大学自动化学院\"导航、制导与控制\"学科平台。该学科是国家重点(培育)学科、国防重点学科、首批国防特色学科。建有\"飞行器自主控制技术\"教育部工程中心、\"先进飞行器导航、控制与健康管理\"工信部重点实验室等7个科研基地。",
+  "analyzed_sentences": [
+    {
+      "sentence": "学科实力中心依托南京航空航天大学自动化学院\"导航、制导与控制\"学科平台",
+      "tokens": [
+        "学科",
+        "实力",
+        "中心",
+        "依托",
+        "南京",
+        "航空",
+        "航天",
+        "大学",
+        "自动化",
+        "学院",
+        "\"",
+        "导航",
+        "、",
+        "制导",
+        "与",
+        "控制",
+        "\"",
+        "学科",
+        "平台"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "学科",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "实力",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "中心",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "依托",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "南京",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 6,
+          "form": "航空",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "航天",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "大学",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "自动化",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "学院",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "\"",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "导航",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "制导",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "与",
+          "head": 16,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "控制",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "\"",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "学科",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "平台",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "该学科是国家重点(培育)学科、国防重点学科、首批国防特色学科",
+      "tokens": [
+        "该",
+        "学科",
+        "是",
+        "国家",
+        "重点",
+        "(",
+        "培育",
+        ")",
+        "学科",
+        "、",
+        "国防",
+        "重点",
+        "学科",
+        "、",
+        "首",
+        "批",
+        "国防",
+        "特色",
+        "学科"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "学科",
+          "head": 3,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 4,
+          "form": "国家",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "重点",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "(",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "培育",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ")",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "学科",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "国防",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "重点",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "学科",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "首",
+          "head": 16,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 16,
+          "form": "批",
+          "head": 19,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 17,
+          "form": "国防",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "特色",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "学科",
+          "head": 3,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "建有\"飞行器自主控制技术\"教育部工程中心、\"先进飞行器导航、控制与健康管理\"工信部重点实验室等7个科研基地",
+      "tokens": [
+        "建有",
+        "\"",
+        "飞行器",
+        "自主",
+        "控制",
+        "技术",
+        "\"",
+        "教育部",
+        "工程",
+        "中心",
+        "、",
+        "\"",
+        "先进",
+        "飞行器",
+        "导航",
+        "、",
+        "控制",
+        "与",
+        "健康",
+        "管理",
+        "\"",
+        "工信部",
+        "重点",
+        "实验室",
+        "等",
+        "7",
+        "个",
+        "科研",
+        "基地"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "建有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "\"",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "飞行器",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "自主",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "控制",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "技术",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "\"",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "教育部",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 9,
+          "form": "工程",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "中心",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "\"",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "先进",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "飞行器",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "导航",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "控制",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "与",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "健康",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "管理",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "\"",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "工信部",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 23,
+          "form": "重点",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "实验室",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "等",
+          "head": 24,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 26,
+          "form": "7",
+          "head": 27,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 27,
+          "form": "个",
+          "head": 29,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 28,
+          "form": "科研",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "基地",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

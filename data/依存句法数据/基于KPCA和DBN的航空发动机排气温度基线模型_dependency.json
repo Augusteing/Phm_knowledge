@@ -1,0 +1,1115 @@
+{
+  "title": "基于KPCA和DBN的航空发动机排气温度基线模型",
+  "summary": "为了给航空发动机整体性能的实时监控与健康管理提供技术手段,提出1种基于核主成分分析和深度置信网络相结合的航空发动机排气温度基线模型构建方法。以配装CFM56-7B发动机的飞机在运行过程中各系统产生的快速存取数据作为原始的数据样本,利用核主成分分析进行降维处理,选用高斯函数作为核函数,将降维后的数据作为深度置信网络的输入,建立航空发动机EGT基线模型,通过大量QAR数据验证了模型的有效性和正确性。与传统神经网络建模方法相比,所提出的建模方法不但降低了网络结构的复杂度,同时也提高了模型的精度。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为了给航空发动机整体性能的实时监控与健康管理提供技术手段,提出1种基于核主成分分析和深度置信网络相结合的航空发动机排气温度基线模型构建方法",
+      "tokens": [
+        "为了",
+        "给",
+        "航空",
+        "发动机",
+        "整体",
+        "性能",
+        "的",
+        "实时",
+        "监控",
+        "与",
+        "健康",
+        "管理",
+        "提供",
+        "技术",
+        "手段",
+        ",",
+        "提出",
+        "1",
+        "种",
+        "基于",
+        "核",
+        "主",
+        "成分",
+        "分析",
+        "和",
+        "深度",
+        "置信",
+        "网络",
+        "相",
+        "结合",
+        "的",
+        "航空",
+        "发动机",
+        "排气",
+        "温度",
+        "基线",
+        "模型",
+        "构建",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "给",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "整体",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "性能",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "实时",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "监控",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "健康",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "管理",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "技术",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "手段",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "提出",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "1",
+          "head": 19,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 19,
+          "form": "种",
+          "head": 39,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 20,
+          "form": "基于",
+          "head": 39,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "核",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "主",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "成分",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "分析",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "和",
+          "head": 28,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "深度",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "置信",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "网络",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "相",
+          "head": 30,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 30,
+          "form": "结合",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 32,
+          "form": "航空",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "发动机",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "排气",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "温度",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "基线",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "模型",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "构建",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "方法",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "以配装CFM56-7B发动机的飞机在运行过程中各系统产生的快速存取数据作为原始的数据样本,利用核主成分分析进行降维处理,选用高斯函数作为核函数,将降维后的数据作为深度置信网络的输入,建立航空发动机EGT基线模型,通过大量QAR数据验证了模型的有效性和正确性",
+      "tokens": [
+        "以",
+        "配装",
+        "CFM56-7B",
+        "发动机",
+        "的",
+        "飞机",
+        "在",
+        "运行",
+        "过程",
+        "中",
+        "各",
+        "系统",
+        "产生",
+        "的",
+        "快速",
+        "存取",
+        "数据",
+        "作为",
+        "原始",
+        "的",
+        "数据",
+        "样本",
+        ",",
+        "利用",
+        "核",
+        "主",
+        "成分",
+        "分析",
+        "进行",
+        "降维",
+        "处理",
+        ",",
+        "选用",
+        "高斯",
+        "函数",
+        "作为",
+        "核",
+        "函数",
+        ",",
+        "将",
+        "降维",
+        "后",
+        "的",
+        "数据",
+        "作为",
+        "深度",
+        "置信",
+        "网络",
+        "的",
+        "输入",
+        ",",
+        "建立",
+        "航空",
+        "发动机",
+        "EGT",
+        "基线",
+        "模型",
+        ",",
+        "通过",
+        "大量",
+        "QAR",
+        "数据",
+        "验证",
+        "了",
+        "模型",
+        "的",
+        "有效性",
+        "和",
+        "正确性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "配装",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "CFM56-7B",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "飞机",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "在",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "运行",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "过程",
+          "head": 10,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "中",
+          "head": 7,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 11,
+          "form": "各",
+          "head": 12,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 12,
+          "form": "系统",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "产生",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 15,
+          "form": "快速",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "存取",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "数据",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "作为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "原始",
+          "head": 22,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "数据",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "样本",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "利用",
+          "head": 18,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "核",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "主",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "成分",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "分析",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "进行",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "降维",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "处理",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "选用",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "高斯",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "函数",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "作为",
+          "head": 33,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "核",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "函数",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "将",
+          "head": 45,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 41,
+          "form": "降维",
+          "head": 42,
+          "deprel": "lccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "后",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 43,
+          "form": "的",
+          "head": 42,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 44,
+          "form": "数据",
+          "head": 45,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "作为",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "P"
+        },
+        {
+          "id": 46,
+          "form": "深度",
+          "head": 48,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "置信",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "网络",
+          "head": 50,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "的",
+          "head": 48,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 50,
+          "form": "输入",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "建立",
+          "head": 18,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 53,
+          "form": "航空",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "发动机",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "EGT",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "基线",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "模型",
+          "head": 52,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 59,
+          "form": "通过",
+          "head": 63,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 60,
+          "form": "大量",
+          "head": 62,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 61,
+          "form": "QAR",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "数据",
+          "head": 59,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "验证",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "了",
+          "head": 63,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 65,
+          "form": "模型",
+          "head": 69,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "的",
+          "head": 65,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 67,
+          "form": "有效性",
+          "head": 69,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "和",
+          "head": 69,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 69,
+          "form": "正确性",
+          "head": 63,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "与传统神经网络建模方法相比,所提出的建模方法不但降低了网络结构的复杂度,同时也提高了模型的精度",
+      "tokens": [
+        "与",
+        "传统",
+        "神经",
+        "网络",
+        "建模",
+        "方法",
+        "相比",
+        ",",
+        "所",
+        "提出",
+        "的",
+        "建模",
+        "方法",
+        "不但",
+        "降低",
+        "了",
+        "网络",
+        "结构",
+        "的",
+        "复杂度",
+        ",",
+        "同时",
+        "也",
+        "提高",
+        "了",
+        "模型",
+        "的",
+        "精度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "与",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "传统",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "神经",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "网络",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "建模",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "方法",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "相比",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "所",
+          "head": 10,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 10,
+          "form": "提出",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "建模",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "方法",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "不但",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 15,
+          "form": "降低",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "网络",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "结构",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "复杂度",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "同时",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "也",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 24,
+          "form": "提高",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "了",
+          "head": 24,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 26,
+          "form": "模型",
+          "head": 28,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 28,
+          "form": "精度",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

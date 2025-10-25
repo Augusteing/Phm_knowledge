@@ -1,0 +1,210 @@
+{
+  "entities": [
+    {
+      "name": "故障预测与健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "滑油光谱分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "经验模态分解",
+      "type": "算法"
+    },
+    {
+      "name": "相关向量机",
+      "type": "算法"
+    },
+    {
+      "name": "自回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "量子粒子群优化",
+      "type": "算法"
+    },
+    {
+      "name": "支持向量机",
+      "type": "算法"
+    },
+    {
+      "name": "固有模态函数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "残余函数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "镜像延拓法",
+      "type": "算法"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "算法"
+    },
+    {
+      "name": "Fe元素",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "Si元素",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "非线性非平稳特性",
+      "type": "理论基础"
+    },
+    {
+      "name": "稀疏概率模型",
+      "type": "模型"
+    },
+    {
+      "name": "Bayesian方法",
+      "type": "理论基础"
+    },
+    {
+      "name": "交叉验证误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "最终预测误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "油液光谱数据",
+      "type": "数据集"
+    }
+  ],
+  "relations": [
+    {
+      "head": "经验模态分解",
+      "relation": "用于",
+      "tail": "滑油光谱分析"
+    },
+    {
+      "head": "相关向量机",
+      "relation": "基于",
+      "tail": "稀疏概率模型"
+    },
+    {
+      "head": "相关向量机",
+      "relation": "基于",
+      "tail": "Bayesian方法"
+    },
+    {
+      "head": "相关向量机",
+      "relation": "优于",
+      "tail": "支持向量机"
+    },
+    {
+      "head": "量子粒子群优化",
+      "relation": "用于",
+      "tail": "相关向量机"
+    },
+    {
+      "head": "量子粒子群优化",
+      "relation": "优化",
+      "tail": "Gaussian核函数"
+    },
+    {
+      "head": "量子粒子群优化",
+      "relation": "优化",
+      "tail": "嵌入维数"
+    },
+    {
+      "head": "镜像延拓法",
+      "relation": "抑制",
+      "tail": "端点效应"
+    },
+    {
+      "head": "经验模态分解",
+      "relation": "分解",
+      "tail": "固有模态函数"
+    },
+    {
+      "head": "经验模态分解",
+      "relation": "分解",
+      "tail": "残余函数"
+    },
+    {
+      "head": "自回归模型",
+      "relation": "应用于",
+      "tail": "固有模态函数"
+    },
+    {
+      "head": "相关向量机",
+      "relation": "应用于",
+      "tail": "残余函数"
+    },
+    {
+      "head": "滑油光谱分析",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "故障预测与健康管理",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "基于EMD和RVM-AR的预测方法",
+      "relation": "提出了",
+      "tail": "本文"
+    },
+    {
+      "head": "基于EMD和RVM-AR的预测方法",
+      "relation": "优于",
+      "tail": "自回归模型"
+    },
+    {
+      "head": "基于EMD和RVM-AR的预测方法",
+      "relation": "优于",
+      "tail": "支持向量机"
+    },
+    {
+      "head": "基于EMD和RVM-AR的预测方法",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "Fe元素",
+      "relation": "预测",
+      "tail": "基于EMD和RVM-AR的预测方法"
+    },
+    {
+      "head": "Si元素",
+      "relation": "预测",
+      "tail": "基于EMD和RVM-AR的预测方法"
+    },
+    {
+      "head": "平均相对预测误差",
+      "relation": "评估",
+      "tail": "基于EMD和RVM-AR的预测方法"
+    },
+    {
+      "head": "交叉验证误差",
+      "relation": "用于",
+      "tail": "量子粒子群优化"
+    },
+    {
+      "head": "最终预测误差",
+      "relation": "用于",
+      "tail": "自回归模型"
+    },
+    {
+      "head": "非线性非平稳特性",
+      "relation": "影响",
+      "tail": "滑油光谱数据"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "ARIMA模型",
+      "type": "模型"
+    },
+    {
+      "name": "民用航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "振动故障",
+      "type": "故障模式"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "回归分析法",
+      "type": "研究方法"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "低压转子转速N1",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "低压涡轮振动单位值TN1VIB",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指数模型",
+      "type": "模型"
+    },
+    {
+      "name": "时间序列分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "ADF检验",
+      "type": "算法"
+    },
+    {
+      "name": "ARIMA(2,1,3)模型",
+      "type": "模型"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "算法"
+    },
+    {
+      "name": "RMSE",
+      "type": "性能指标"
+    },
+    {
+      "name": "MAE",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "ARIMA模型",
+      "relation": "应用于",
+      "tail": "民用航空发动机"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "预测",
+      "tail": "振动故障"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "用于",
+      "tail": "振动故障分析"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "支持",
+      "tail": "时间序列分析"
+    },
+    {
+      "head": "低压转子转速N1",
+      "relation": "结合",
+      "tail": "低压涡轮振动单位值TN1VIB"
+    },
+    {
+      "head": "指数模型",
+      "relation": "基于",
+      "tail": "ARIMA模型"
+    },
+    {
+      "head": "时间序列分析",
+      "relation": "包括",
+      "tail": "ADF检验"
+    },
+    {
+      "head": "ARIMA(2,1,3)模型",
+      "relation": "优于",
+      "tail": "三次指数平滑法"
+    },
+    {
+      "head": "ARIMA(2,1,3)模型",
+      "relation": "评估指标为",
+      "tail": "RMSE"
+    },
+    {
+      "head": "ARIMA(2,1,3)模型",
+      "relation": "评估指标为",
+      "tail": "MAE"
+    }
+  ]
+}

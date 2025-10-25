@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "粗糙集",
+    "object_type": "理论"
+  },
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "灰色理论",
+    "object_type": "理论"
+  },
+  {
+    "subject": "粗糙集",
+    "subject_type": "理论",
+    "relation": "去除",
+    "object": "冗余信息",
+    "object_type": "数据"
+  },
+  {
+    "subject": "多参数灰色模型",
+    "subject_type": "模型",
+    "relation": "预测",
+    "object": "约简后的信息",
+    "object_type": "数据"
+  },
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "诊断效率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "降低",
+    "object": "对人的过分依赖",
+    "object_type": "问题"
+  },
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "减少",
+    "object": "计算时间",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "快速性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "实时性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多参数快速故障诊断模型",
+    "subject_type": "模型",
+    "relation": "保持",
+    "object": "预测精度",
+    "object_type": "性能指标"
+  }
+]

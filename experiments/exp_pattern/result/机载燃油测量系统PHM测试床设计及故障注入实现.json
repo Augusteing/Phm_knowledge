@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "以...为例",
+    "object": "燃油测量系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "燃油测量系统",
+    "subject_type": "系统",
+    "relation": "是",
+    "object": "飞机典型机电子系统",
+    "object_type": "系统类别"
+  },
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "采用",
+    "object": "NI虚拟仪器",
+    "object_type": "组件"
+  },
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "采用",
+    "object": "PXI总线模块仪器",
+    "object_type": "组件"
+  },
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "实现",
+    "object": "故障注入功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "解决",
+    "object": "数据源匮乏",
+    "object_type": "问题"
+  },
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "再现",
+    "object": "故障模式",
+    "object_type": "状态"
+  },
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "提供验证",
+    "object": "PHM技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "PHM测试床",
+    "subject_type": "平台",
+    "relation": "为...提供参考",
+    "object": "机电系统PHM通用化验证平台研究",
+    "object_type": "研究"
+  }
+]

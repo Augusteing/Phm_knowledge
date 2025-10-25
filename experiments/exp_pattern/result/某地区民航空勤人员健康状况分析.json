@@ -1,0 +1,135 @@
+[
+  {
+    "subject": "某地区民航空勤人员健康状况分析",
+    "subject_type": "研究",
+    "relation": "目的为",
+    "object": "了解民航空勤人员的健康状况",
+    "object_type": "目标"
+  },
+  {
+    "subject": "某地区民航空勤人员健康状况分析",
+    "subject_type": "研究",
+    "relation": "提供依据",
+    "object": "飞行人员健康管理",
+    "object_type": "措施"
+  },
+  {
+    "subject": "某地区民航空勤人员健康状况分析",
+    "subject_type": "研究",
+    "relation": "提供依据",
+    "object": "常见病防治",
+    "object_type": "措施"
+  },
+  {
+    "subject": "研究",
+    "subject_type": "活动",
+    "relation": "采用",
+    "object": "t检验",
+    "object_type": "统计方法"
+  },
+  {
+    "subject": "研究",
+    "subject_type": "活动",
+    "relation": "采用",
+    "object": "Wilcoxon秩和检验",
+    "object_type": "统计方法"
+  },
+  {
+    "subject": "研究",
+    "subject_type": "活动",
+    "relation": "采用",
+    "object": "χ2检验",
+    "object_type": "统计方法"
+  },
+  {
+    "subject": "空勤人员",
+    "subject_type": "人群",
+    "relation": "主要健康威胁",
+    "object": "高尿酸血症",
+    "object_type": "疾病"
+  },
+  {
+    "subject": "空勤人员",
+    "subject_type": "人群",
+    "relation": "主要健康威胁",
+    "object": "脂肪肝",
+    "object_type": "疾病"
+  },
+  {
+    "subject": "空勤人员",
+    "subject_type": "人群",
+    "relation": "主要健康威胁",
+    "object": "超重",
+    "object_type": "疾病"
+  },
+  {
+    "subject": "高尿酸血症",
+    "subject_type": "疾病",
+    "relation": "患病率为",
+    "object": "29.2%",
+    "object_type": "比率"
+  },
+  {
+    "subject": "脂肪肝",
+    "subject_type": "疾病",
+    "relation": "患病率为",
+    "object": "28.9%",
+    "object_type": "比率"
+  },
+  {
+    "subject": "超重",
+    "subject_type": "疾病",
+    "relation": "患病率为",
+    "object": "18.2%",
+    "object_type": "比率"
+  },
+  {
+    "subject": "安全员",
+    "subject_type": "职业",
+    "relation": "健康状况优于",
+    "object": "驾驶员",
+    "object_type": "职业"
+  },
+  {
+    "subject": "驾驶员",
+    "subject_type": "职业",
+    "relation": "患病率较高",
+    "object": "高尿酸血症",
+    "object_type": "疾病"
+  },
+  {
+    "subject": "驾驶员",
+    "subject_type": "职业",
+    "relation": "患病率较高",
+    "object": "高脂血症",
+    "object_type": "疾病"
+  },
+  {
+    "subject": "驾驶员",
+    "subject_type": "职业",
+    "relation": "患病率较高",
+    "object": "脂肪肝",
+    "object_type": "疾病"
+  },
+  {
+    "subject": "驾驶员",
+    "subject_type": "职业",
+    "relation": "患病率较高",
+    "object": "代谢性疾病",
+    "object_type": "疾病类别"
+  },
+  {
+    "subject": "研究",
+    "subject_type": "活动",
+    "relation": "建议",
+    "object": "制订健康管理方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "空勤人员",
+    "subject_type": "人群",
+    "relation": "健康水平",
+    "object": "较低",
+    "object_type": "状态"
+  }
+]

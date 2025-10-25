@@ -1,0 +1,597 @@
+{
+  "title": "后人工智能背景下装备测试研讨会在成都召开",
+  "summary": "2020年11月27日,2020预测与健康管理(PHM)研讨会在成都顺利召开,此次会议来自四川大学、哈尔滨工业大学、北京航空航天大学、电子科技大学、中国核动力研究院、华为技术有限公司等25个单位(其中高校15所,研究所6所,企业4家)共计70余位代表参加了此次研讨会。",
+  "analyzed_sentences": [
+    {
+      "sentence": "2020年11月27日,2020预测与健康管理(PHM)研讨会在成都顺利召开,此次会议来自四川大学、哈尔滨工业大学、北京航空航天大学、电子科技大学、中国核动力研究院、华为技术有限公司等25个单位(其中高校15所,研究所6所,企业4家)共计70余位代表参加了此次研讨会",
+      "tokens": [
+        "2020年",
+        "11月",
+        "27日",
+        ",",
+        "2020",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "研讨会",
+        "在",
+        "成都",
+        "顺利",
+        "召开",
+        ",",
+        "此",
+        "次",
+        "会议",
+        "来自",
+        "四川",
+        "大学",
+        "、",
+        "哈尔滨",
+        "工业",
+        "大学",
+        "、",
+        "北京",
+        "航空",
+        "航天",
+        "大学",
+        "、",
+        "电子",
+        "科技",
+        "大学",
+        "、",
+        "中国",
+        "核动力",
+        "研究院",
+        "、",
+        "华为",
+        "技术",
+        "有限",
+        "公司",
+        "等",
+        "25",
+        "个",
+        "单位",
+        "(",
+        "其中",
+        "高校",
+        "15",
+        "所",
+        ",",
+        "研究所",
+        "6",
+        "所",
+        ",",
+        "企业",
+        "4",
+        "家",
+        ")",
+        "共计",
+        "70余",
+        "位",
+        "代表",
+        "参加",
+        "了",
+        "此",
+        "次",
+        "研讨会"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "2020年",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 2,
+          "form": "11月",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "27日",
+          "head": 17,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "2020",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "(",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "PHM",
+          "head": 9,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ")",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "研讨会",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "成都",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "顺利",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "召开",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "此",
+          "head": 21,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 20,
+          "form": "次",
+          "head": 19,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 21,
+          "form": "会议",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "来自",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "四川",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 24,
+          "form": "大学",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "哈尔滨",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 27,
+          "form": "工业",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "大学",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "北京",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 31,
+          "form": "航空",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "航天",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "大学",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "电子",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "科技",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "大学",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "中国",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 40,
+          "form": "核动力",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "研究院",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "、",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "华为",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 44,
+          "form": "技术",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "有限",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 46,
+          "form": "公司",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "等",
+          "head": 46,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 48,
+          "form": "25",
+          "head": 49,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 49,
+          "form": "个",
+          "head": 50,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 50,
+          "form": "单位",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "(",
+          "head": 55,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "其中",
+          "head": 55,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "高校",
+          "head": 55,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "15",
+          "head": 55,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 55,
+          "form": "所",
+          "head": 68,
+          "deprel": "rcmod",
+          "pos": "M"
+        },
+        {
+          "id": 56,
+          "form": ",",
+          "head": 55,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "研究所",
+          "head": 59,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "6",
+          "head": 59,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 59,
+          "form": "所",
+          "head": 55,
+          "deprel": "conj",
+          "pos": "M"
+        },
+        {
+          "id": 60,
+          "form": ",",
+          "head": 55,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 61,
+          "form": "企业",
+          "head": 63,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "4",
+          "head": 63,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 63,
+          "form": "家",
+          "head": 55,
+          "deprel": "conj",
+          "pos": "M"
+        },
+        {
+          "id": 64,
+          "form": ")",
+          "head": 55,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 65,
+          "form": "共计",
+          "head": 68,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 66,
+          "form": "70余",
+          "head": 67,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 67,
+          "form": "位",
+          "head": 68,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 68,
+          "form": "代表",
+          "head": 69,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "参加",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 70,
+          "form": "了",
+          "head": 69,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 71,
+          "form": "此",
+          "head": 73,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 72,
+          "form": "次",
+          "head": 71,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 73,
+          "form": "研讨会",
+          "head": 69,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

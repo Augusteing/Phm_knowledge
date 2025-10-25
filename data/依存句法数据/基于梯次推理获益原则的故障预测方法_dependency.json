@@ -1,0 +1,1243 @@
+{
+  "title": "基于梯次推理获益原则的故障预测方法",
+  "summary": "针对大数据下产生式规则推理效率低下的缺点以及异构信息融合时知识元权重分配困难的问题,以数据和音频两种异构信息为信息源,设计了基于梯次推理获益原则的产生式规则知识表示方法。根据映射特征向量与非映射特征向量知识元灵敏度的不同,采用分组分级的推理策略;采用互信息-信息增益作为获益尺度,根据知识元特征的获益值确定各知识元的权重。以某飞行数据和同步座舱音频为信源模拟了发动机故障实例并进行故障预测,验证了梯次推理和获益原则的产生式规则表示方法具有较高的执行效率、知识元结构强度和较好的推理效果,可以应用于实际工程的故障诊断和预测。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对大数据下产生式规则推理效率低下的缺点以及异构信息融合时知识元权重分配困难的问题,以数据和音频两种异构信息为信息源,设计了基于梯次推理获益原则的产生式规则知识表示方法",
+      "tokens": [
+        "针对",
+        "大",
+        "数据",
+        "下",
+        "产生式",
+        "规则",
+        "推理",
+        "效率",
+        "低下",
+        "的",
+        "缺点",
+        "以及",
+        "异构",
+        "信息",
+        "融合",
+        "时",
+        "知识",
+        "元权",
+        "重",
+        "分配",
+        "困难",
+        "的",
+        "问题",
+        ",",
+        "以",
+        "数据",
+        "和",
+        "音频",
+        "两",
+        "种",
+        "异构",
+        "信息",
+        "为",
+        "信息源",
+        ",",
+        "设计",
+        "了",
+        "基于",
+        "梯次",
+        "推理",
+        "获益",
+        "原则",
+        "的",
+        "产生式",
+        "规则",
+        "知识",
+        "表示",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "大",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "数据",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "下",
+          "head": 23,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "产生式",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "规则",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "推理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "效率",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "低下",
+          "head": 23,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "缺点",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "以及",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "异构",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "信息",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "融合",
+          "head": 16,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "时",
+          "head": 21,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 17,
+          "form": "知识",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "元权",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "重",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "分配",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "困难",
+          "head": 23,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 23,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "以",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 26,
+          "form": "数据",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "和",
+          "head": 28,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "音频",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "两",
+          "head": 30,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 30,
+          "form": "种",
+          "head": 32,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 31,
+          "form": "异构",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 32,
+          "form": "信息",
+          "head": 25,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "信息源",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "设计",
+          "head": 33,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "了",
+          "head": 36,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 38,
+          "form": "基于",
+          "head": 48,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 39,
+          "form": "梯次",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "推理",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "获益",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "原则",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "的",
+          "head": 38,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 44,
+          "form": "产生式",
+          "head": 48,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "规则",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "知识",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "表示",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "方法",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "根据映射特征向量与非映射特征向量知识元灵敏度的不同,采用分组分级的推理策略;采用互信息-信息增益作为获益尺度,根据知识元特征的获益值确定各知识元的权重",
+      "tokens": [
+        "根据",
+        "映射",
+        "特征",
+        "向",
+        "量",
+        "与",
+        "非",
+        "映射",
+        "特征",
+        "向",
+        "量",
+        "知识元",
+        "灵敏度",
+        "的",
+        "不同",
+        ",",
+        "采用",
+        "分组",
+        "分级",
+        "的",
+        "推理",
+        "策略",
+        ";",
+        "采用",
+        "互",
+        "信息",
+        "-",
+        "信息",
+        "增益",
+        "作为",
+        "获益",
+        "尺度",
+        ",",
+        "根据",
+        "知识",
+        "元",
+        "特征",
+        "的",
+        "获益值",
+        "确定",
+        "各",
+        "知识",
+        "元",
+        "的",
+        "权重"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "根据",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "映射",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "特征",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "向",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "量",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "非",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "映射",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "特征",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "向",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "量",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "知识元",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "灵敏度",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "不同",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "分组",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "分级",
+          "head": 18,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 21,
+          "form": "推理",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "策略",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ";",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "采用",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "互",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "信息",
+          "head": 29,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "-",
+          "head": 29,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "信息",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "增益",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "作为",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "获益",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "尺度",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "根据",
+          "head": 40,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 35,
+          "form": "知识",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "元",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "特征",
+          "head": 39,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 37,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 39,
+          "form": "获益值",
+          "head": 34,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "确定",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "各",
+          "head": 43,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 42,
+          "form": "知识",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "元",
+          "head": 45,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 43,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "权重",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "以某飞行数据和同步座舱音频为信源模拟了发动机故障实例并进行故障预测,验证了梯次推理和获益原则的产生式规则表示方法具有较高的执行效率、知识元结构强度和较好的推理效果,可以应用于实际工程的故障诊断和预测",
+      "tokens": [
+        "以",
+        "某",
+        "飞行",
+        "数据",
+        "和",
+        "同步",
+        "座舱",
+        "音频",
+        "为",
+        "信源",
+        "模拟",
+        "了",
+        "发动机",
+        "故障",
+        "实例",
+        "并",
+        "进行",
+        "故障",
+        "预测",
+        ",",
+        "验证",
+        "了",
+        "梯次",
+        "推理",
+        "和",
+        "获益",
+        "原则",
+        "的",
+        "产生式",
+        "规则",
+        "表示",
+        "方法",
+        "具有",
+        "较",
+        "高",
+        "的",
+        "执行",
+        "效率",
+        "、",
+        "知识元",
+        "结构",
+        "强度",
+        "和",
+        "较",
+        "好",
+        "的",
+        "推理",
+        "效果",
+        ",",
+        "可以",
+        "应用",
+        "于",
+        "实际",
+        "工程",
+        "的",
+        "故障",
+        "诊断",
+        "和",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 8,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "飞行",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "同步",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "座舱",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "音频",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 10,
+          "form": "信源",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "模拟",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "发动机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "实例",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "并",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "进行",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "故障",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "验证",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "了",
+          "head": 21,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 23,
+          "form": "梯次",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "推理",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "和",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "获益",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "原则",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "产生式",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "规则",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "表示",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "方法",
+          "head": 33,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "具有",
+          "head": 21,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "较",
+          "head": 35,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 35,
+          "form": "高",
+          "head": 38,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 35,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 37,
+          "form": "执行",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "效率",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "知识元",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "结构",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "强度",
+          "head": 48,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "和",
+          "head": 48,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 44,
+          "form": "较",
+          "head": 45,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 45,
+          "form": "好",
+          "head": 48,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 46,
+          "form": "的",
+          "head": 45,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 47,
+          "form": "推理",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "效果",
+          "head": 51,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": ",",
+          "head": 51,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "可以",
+          "head": 51,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 51,
+          "form": "应用",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 52,
+          "form": "于",
+          "head": 51,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 53,
+          "form": "实际",
+          "head": 54,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 54,
+          "form": "工程",
+          "head": 59,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "的",
+          "head": 54,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 56,
+          "form": "故障",
+          "head": 59,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "诊断",
+          "head": 59,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "和",
+          "head": 59,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 59,
+          "form": "预测",
+          "head": 52,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

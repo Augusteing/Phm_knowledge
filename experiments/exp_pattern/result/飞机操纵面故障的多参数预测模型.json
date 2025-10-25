@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "飞机操纵面故障的准确预测",
+    "subject_type": "任务",
+    "relation": "保障",
+    "object": "飞机安全可靠工作",
+    "object_type": "目标"
+  },
+  {
+    "subject": "操纵面故障",
+    "subject_type": "故障",
+    "relation": "表征出",
+    "object": "多种特征信号",
+    "object_type": "信号"
+  },
+  {
+    "subject": "特征信号",
+    "subject_type": "信号",
+    "relation": "反映",
+    "object": "不同的故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "借鉴",
+    "object": "灰色预测建模",
+    "object_type": "思想"
+  },
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "借鉴",
+    "object": "信息融合",
+    "object_type": "思想"
+  },
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "增加",
+    "object": "预测的准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多参数预测模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "飞机操纵面故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "现有故障预测方法",
+    "subject_type": "方法",
+    "relation": "存在不足",
+    "object": "缺乏对各特征参数的统一考虑",
+    "object_type": "问题"
+  }
+]

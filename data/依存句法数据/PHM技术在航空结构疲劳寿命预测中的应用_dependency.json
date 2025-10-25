@@ -1,0 +1,1043 @@
+{
+  "title": "PHM技术在航空结构疲劳寿命预测中的应用",
+  "summary": "飞机机体结构疲劳失效几乎都发生在紧固件孔的孔边位置,结构疲劳断裂会导致飞机出现灾难性的事故,PHM技术可用于预报疲劳故障何时可能发生,从而实现自助式保障,降低使用和保障费用。基于失效物理模型,建立连接件疲劳寿命的预测方法,方法首先求解含孔构件的应力严重系数和疲劳缺口系数,然后对应变-寿命曲线的弹性段进行了修正使局部应力应变法同时适用于高、低周疲劳寿命的预测。结果表明,建立的疲劳寿命预测方法的计算结果与疲劳试验结果相比误差小于17%,说明了方法的有效性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "飞机机体结构疲劳失效几乎都发生在紧固件孔的孔边位置,结构疲劳断裂会导致飞机出现灾难性的事故,PHM技术可用于预报疲劳故障何时可能发生,从而实现自助式保障,降低使用和保障费用",
+      "tokens": [
+        "飞机",
+        "机体",
+        "结构",
+        "疲劳",
+        "失效",
+        "几乎",
+        "都",
+        "发生",
+        "在",
+        "紧固件",
+        "孔",
+        "的",
+        "孔边",
+        "位置",
+        ",",
+        "结构",
+        "疲劳",
+        "断裂",
+        "会",
+        "导致",
+        "飞机",
+        "出现",
+        "灾难性",
+        "的",
+        "事故",
+        ",",
+        "PHM",
+        "技术",
+        "可",
+        "用于",
+        "预报",
+        "疲劳",
+        "故障",
+        "何时",
+        "可能",
+        "发生",
+        ",",
+        "从而",
+        "实现",
+        "自助式",
+        "保障",
+        ",",
+        "降低",
+        "使用",
+        "和",
+        "保障",
+        "费用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "机体",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "结构",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "疲劳",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "失效",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "几乎",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 7,
+          "form": "都",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "发生",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "在",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "紧固件",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "孔",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "孔边",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "位置",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "结构",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "疲劳",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "断裂",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "会",
+          "head": 20,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "导致",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "飞机",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "出现",
+          "head": 20,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "灾难性",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "事故",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "PHM",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "技术",
+          "head": 30,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "可",
+          "head": 30,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "用于",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "预报",
+          "head": 30,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "疲劳",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "故障",
+          "head": 36,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "何时",
+          "head": 36,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 35,
+          "form": "可能",
+          "head": 36,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "发生",
+          "head": 31,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "从而",
+          "head": 39,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 39,
+          "form": "实现",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "自助式",
+          "head": 41,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "保障",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": ",",
+          "head": 39,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "降低",
+          "head": 39,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "使用",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "和",
+          "head": 47,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 46,
+          "form": "保障",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "费用",
+          "head": 43,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于失效物理模型,建立连接件疲劳寿命的预测方法,方法首先求解含孔构件的应力严重系数和疲劳缺口系数,然后对应变-寿命曲线的弹性段进行了修正使局部应力应变法同时适用于高、低周疲劳寿命的预测",
+      "tokens": [
+        "基于",
+        "失效",
+        "物理",
+        "模型",
+        ",",
+        "建立",
+        "连接件",
+        "疲劳",
+        "寿命",
+        "的",
+        "预测",
+        "方法",
+        ",",
+        "方法",
+        "首先",
+        "求解",
+        "含孔",
+        "构件",
+        "的",
+        "应力",
+        "严重",
+        "系数",
+        "和",
+        "疲劳",
+        "缺口",
+        "系数",
+        ",",
+        "然后",
+        "对",
+        "应变",
+        "-",
+        "寿命",
+        "曲线",
+        "的",
+        "弹性段",
+        "进行",
+        "了",
+        "修正",
+        "使",
+        "局部",
+        "应力",
+        "应变",
+        "法",
+        "同时",
+        "适用",
+        "于",
+        "高",
+        "、",
+        "低",
+        "周",
+        "疲劳",
+        "寿命",
+        "的",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "失效",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "物理",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "模型",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "连接件",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "疲劳",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "寿命",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方法",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "方法",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "首先",
+          "head": 16,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "求解",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "含孔",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "构件",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "应力",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "严重",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "系数",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "和",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "疲劳",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "缺口",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "系数",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "然后",
+          "head": 36,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 29,
+          "form": "对",
+          "head": 36,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 30,
+          "form": "应变",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 31,
+          "form": "-",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "寿命",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "曲线",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "弹性段",
+          "head": 29,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "进行",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "了",
+          "head": 36,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 38,
+          "form": "修正",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "使",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "局部",
+          "head": 43,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "应力",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "应变",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "法",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "同时",
+          "head": 45,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 45,
+          "form": "适用",
+          "head": 39,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "于",
+          "head": 45,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 47,
+          "form": "高",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 48,
+          "form": "、",
+          "head": 50,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 49,
+          "form": "低",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 50,
+          "form": "周",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "疲劳",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "寿命",
+          "head": 54,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "的",
+          "head": 52,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 54,
+          "form": "预测",
+          "head": 46,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明,建立的疲劳寿命预测方法的计算结果与疲劳试验结果相比误差小于17%,说明了方法的有效性",
+      "tokens": [
+        "结果",
+        "表明",
+        ",",
+        "建立",
+        "的",
+        "疲劳",
+        "寿命",
+        "预测",
+        "方法",
+        "的",
+        "计算",
+        "结果",
+        "与",
+        "疲劳",
+        "试验",
+        "结果",
+        "相比",
+        "误差",
+        "小于",
+        "17%",
+        ",",
+        "说明",
+        "了",
+        "方法",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "建立",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "疲劳",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "寿命",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "方法",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "计算",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "结果",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "与",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "疲劳",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "试验",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "结果",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "相比",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "误差",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "小于",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "17%",
+          "head": 19,
+          "deprel": "range",
+          "pos": "CD"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "说明",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "了",
+          "head": 22,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 24,
+          "form": "方法",
+          "head": 26,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "的",
+          "head": 24,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 26,
+          "form": "有效性",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

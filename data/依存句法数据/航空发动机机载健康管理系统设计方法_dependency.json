@@ -1,0 +1,1424 @@
+{
+  "title": "航空发动机机载健康管理系统设计方法",
+  "summary": "为解决航空发动机机载健康管理系统正向设计流程不清晰、设计需求不明确、需求设计对应及追溯不规范的问题，在对比国内外现有健康管理功能架构体系的基础上，结合正向设计中需求捕获、需求分析和功能分配，研究了由上到下的航空发动机健康管理系统正向设计基本流程，开发了航空发动机健康管理正向设计流程平台，实现了机载功能架构的设计。引入基于模型的系统工程思想，采用面向对象的工程设计思路，建立功能目标量化、功能描述、模块定义等图形化设计方法，验证了该设计方法在硬件设计中的可用性。通过研究航空发动机机载健康管理系统设计方法并分析机载功能组成，建立了可扩展的流程平台，基于模型设计方法建立了可用的硬件设计模型，可为航空发动机机载健康管理系统设计提供参考。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为解决航空发动机机载健康管理系统正向设计流程不清晰、设计需求不明确、需求设计对应及追溯不规范的问题",
+      "tokens": [
+        "为",
+        "解决",
+        "航空",
+        "发动机",
+        "机载",
+        "健康",
+        "管理",
+        "系统",
+        "正向",
+        "设计",
+        "流程",
+        "不",
+        "清晰",
+        "、",
+        "设计",
+        "需求",
+        "不",
+        "明确",
+        "、",
+        "需求",
+        "设计",
+        "对应",
+        "及",
+        "追溯",
+        "不",
+        "规范",
+        "的",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "解决",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "机载",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "正向",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "设计",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "流程",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "不",
+          "head": 13,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "清晰",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "设计",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "需求",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "不",
+          "head": 18,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "明确",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "需求",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "设计",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "对应",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "及",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "追溯",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "不",
+          "head": 26,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "规范",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 28,
+          "form": "问题",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在对比国内外现有健康管理功能架构体系的基础上",
+      "tokens": [
+        "在",
+        "对比",
+        "国内外",
+        "现有",
+        "健康",
+        "管理",
+        "功能",
+        "架构",
+        "体系",
+        "的",
+        "基础",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "对比",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "国内外",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "现有",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "功能",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "架构",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "体系",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "基础",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "结合正向设计中需求捕获、需求分析和功能分配",
+      "tokens": [
+        "结合",
+        "正向",
+        "设计",
+        "中",
+        "需求",
+        "捕获",
+        "、",
+        "需求",
+        "分析",
+        "和",
+        "功能",
+        "分配"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "正向",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "设计",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "中",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": "需求",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "捕获",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "需求",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "分析",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "功能",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "分配",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "研究了由上到下的航空发动机健康管理系统正向设计基本流程",
+      "tokens": [
+        "研究",
+        "了",
+        "由上到下",
+        "的",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "正向",
+        "设计",
+        "基本",
+        "流程"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "由上到下",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "正向",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "设计",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "基本",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "流程",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "开发了航空发动机健康管理正向设计流程平台",
+      "tokens": [
+        "开发",
+        "了",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "正向",
+        "设计",
+        "流程",
+        "平台"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "开发",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "正向",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "流程",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "平台",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实现了机载功能架构的设计",
+      "tokens": [
+        "实现",
+        "了",
+        "机载",
+        "功能",
+        "架构",
+        "的",
+        "设计"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "机载",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "功能",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "架构",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "设计",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "引入基于模型的系统工程思想",
+      "tokens": [
+        "引入",
+        "基于",
+        "模型",
+        "的",
+        "系统",
+        "工程",
+        "思想"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "引入",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "基于",
+          "head": 7,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "工程",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "思想",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "采用面向对象的工程设计思路",
+      "tokens": [
+        "采用",
+        "面向",
+        "对象",
+        "的",
+        "工程",
+        "设计",
+        "思路"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "面向",
+          "head": 7,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "对象",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "工程",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "设计",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "思路",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "建立功能目标量化、功能描述、模块定义等图形化设计方法",
+      "tokens": [
+        "建立",
+        "功能",
+        "目标",
+        "量化",
+        "、",
+        "功能",
+        "描述",
+        "、",
+        "模块",
+        "定义",
+        "等",
+        "图形化",
+        "设计",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "功能",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "目标",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "量化",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "功能",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "描述",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "模块",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "定义",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "等",
+          "head": 10,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 12,
+          "form": "图形化",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "设计",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "验证了该设计方法在硬件设计中的可用性",
+      "tokens": [
+        "验证",
+        "了",
+        "该",
+        "设计",
+        "方法",
+        "在",
+        "硬件",
+        "设计",
+        "中",
+        "的",
+        "可用性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "该",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "设计",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "方法",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "在",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "硬件",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "中",
+          "head": 6,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "可用性",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过研究航空发动机机载健康管理系统设计方法并分析机载功能组成",
+      "tokens": [
+        "通过",
+        "研究",
+        "航空",
+        "发动机",
+        "机载",
+        "健康",
+        "管理",
+        "系统",
+        "设计",
+        "方法",
+        "并",
+        "分析",
+        "机载",
+        "功能",
+        "组成"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "研究",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "机载",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "设计",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "方法",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "并",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "机载",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "功能",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "组成",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "建立了可扩展的流程平台",
+      "tokens": [
+        "建立",
+        "了",
+        "可",
+        "扩展",
+        "的",
+        "流程",
+        "平台"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "可",
+          "head": 4,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "扩展",
+          "head": 7,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 6,
+          "form": "流程",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "平台",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于模型设计方法建立了可用的硬件设计模型",
+      "tokens": [
+        "基于",
+        "模型",
+        "设计",
+        "方法",
+        "建立",
+        "了",
+        "可用",
+        "的",
+        "硬件",
+        "设计",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "模型",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "设计",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "方法",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "了",
+          "head": 5,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 7,
+          "form": "可用",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "硬件",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "设计",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "模型",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "可为航空发动机机载健康管理系统设计提供参考",
+      "tokens": [
+        "可",
+        "为",
+        "航空",
+        "发动机",
+        "机载",
+        "健康",
+        "管理",
+        "系统",
+        "设计",
+        "提供",
+        "参考"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "可",
+          "head": 10,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "为",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "机载",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "设计",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "参考",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

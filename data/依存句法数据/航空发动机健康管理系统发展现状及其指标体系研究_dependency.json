@@ -1,0 +1,659 @@
+{
+  "title": "航空发动机健康管理系统发展现状及其指标体系研究",
+  "summary": "简述了航空发动机故障检测与诊断的发展历程,表明预测与健康管理(PHM)系统是实现先进发动机的必备功能。在分析典型先进航空发动机预测与健康管理(EPHM)系统的基础上,详细阐述了EPHM的需求,并基于需求系统梳理了EPHM系统的指标体系。最后对我国航空发动机健康管理的研究提出了几点展望。",
+  "analyzed_sentences": [
+    {
+      "sentence": "简述了航空发动机故障检测与诊断的发展历程,表明预测与健康管理(PHM)系统是实现先进发动机的必备功能",
+      "tokens": [
+        "简述",
+        "了",
+        "航空",
+        "发动机",
+        "故障",
+        "检测",
+        "与",
+        "诊断",
+        "的",
+        "发展",
+        "历程",
+        ",",
+        "表明",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "系统",
+        "是",
+        "实现",
+        "先进",
+        "发动机",
+        "的",
+        "必备",
+        "功能"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "简述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "检测",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "诊断",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "发展",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "历程",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "表明",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "预测",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "与",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "健康",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "管理",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "(",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "PHM",
+          "head": 17,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ")",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "系统",
+          "head": 22,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "是",
+          "head": 13,
+          "deprel": "ccomp",
+          "pos": "VC"
+        },
+        {
+          "id": 23,
+          "form": "实现",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "先进",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "发动机",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 23,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 27,
+          "form": "必备",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "功能",
+          "head": 22,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在分析典型先进航空发动机预测与健康管理(EPHM)系统的基础上,详细阐述了EPHM的需求,并基于需求系统梳理了EPHM系统的指标体系",
+      "tokens": [
+        "在",
+        "分析",
+        "典型",
+        "先进",
+        "航空",
+        "发动机",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "EPHM",
+        ")",
+        "系统",
+        "的",
+        "基础",
+        "上",
+        ",",
+        "详细",
+        "阐述",
+        "了",
+        "EPHM",
+        "的",
+        "需求",
+        ",",
+        "并",
+        "基于",
+        "需求",
+        "系统",
+        "梳理",
+        "了",
+        "EPHM",
+        "系统",
+        "的",
+        "指标",
+        "体系"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "典型",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "VA"
+        },
+        {
+          "id": 4,
+          "form": "先进",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "预测",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "与",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "健康",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "管理",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "(",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "EPHM",
+          "head": 14,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ")",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "系统",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 16,
+          "form": "基础",
+          "head": 17,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "上",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "详细",
+          "head": 20,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "阐述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "EPHM",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 22,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "需求",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "并",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "基于",
+          "head": 30,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 28,
+          "form": "需求",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "系统",
+          "head": 27,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "梳理",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "了",
+          "head": 30,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 32,
+          "form": "EPHM",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "系统",
+          "head": 36,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "指标",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "体系",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后对我国航空发动机健康管理的研究提出了几点展望",
+      "tokens": [
+        "最后",
+        "对",
+        "我",
+        "国",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "的",
+        "研究",
+        "提出",
+        "了",
+        "几",
+        "点",
+        "展望"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "我",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 4,
+          "form": "国",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "管理",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "研究",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "几",
+          "head": 14,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "点",
+          "head": 15,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 15,
+          "form": "展望",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

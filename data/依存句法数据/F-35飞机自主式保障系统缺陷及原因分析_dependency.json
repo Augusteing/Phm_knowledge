@@ -1,0 +1,1163 @@
+{
+  "title": "F-35飞机自主式保障系统缺陷及原因分析",
+  "summary": "通过研究美国政府问责局(GAO) 2016—2019年发布的关于F-35飞机保障的系列调查报告,分析了其自主式保障系统的缺陷和产生的原因,以期对先进战机维护提供有益的借鉴。F-35自主式保障系统存在的缺陷包括:信息系统自动化程度有限且所需数据不完整或错误,可部署性较弱和信息交流不顺畅,以及备件短缺和不匹配,备件运输困难,紧缺备件分配优先级难以确定,备件管理混乱等。上述缺陷的产生原因主要是装备成熟度与保障性之间的矛盾,保障管理的组织架构有待完善,对全球供应链建设方面的困难估计不足,以及保障管理方面的政策法规不完备等。",
+  "analyzed_sentences": [
+    {
+      "sentence": "通过研究美国政府问责局(GAO) 2016—2019年发布的关于F-35飞机保障的系列调查报告,分析了其自主式保障系统的缺陷和产生的原因,以期对先进战机维护提供有益的借鉴",
+      "tokens": [
+        "通过",
+        "研究",
+        "美国",
+        "政府",
+        "问责局",
+        "(",
+        "GAO",
+        ")",
+        "2016",
+        "—",
+        "2019年",
+        "发布",
+        "的",
+        "关于",
+        "F-35",
+        "飞机",
+        "保障",
+        "的",
+        "系列",
+        "调查",
+        "报告",
+        ",",
+        "分析",
+        "了",
+        "其",
+        "自主式",
+        "保障",
+        "系统",
+        "的",
+        "缺陷",
+        "和",
+        "产生",
+        "的",
+        "原因",
+        ",",
+        "以",
+        "期",
+        "对",
+        "先进",
+        "战机",
+        "维护",
+        "提供",
+        "有益",
+        "的",
+        "借鉴"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 23,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "研究",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "美国",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "政府",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "问责局",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "(",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "GAO",
+          "head": 5,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 8,
+          "form": ")",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "2016",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NT"
+        },
+        {
+          "id": 10,
+          "form": "—",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "2019年",
+          "head": 12,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 12,
+          "form": "发布",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "关于",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "F-35",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "飞机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "保障",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "系列",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "调查",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "报告",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ",",
+          "head": 23,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "了",
+          "head": 23,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 25,
+          "form": "其",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 26,
+          "form": "自主式",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "保障",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "系统",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "缺陷",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "和",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "产生",
+          "head": 34,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 34,
+          "form": "原因",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 23,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "以",
+          "head": 37,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 37,
+          "form": "期",
+          "head": 23,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "对",
+          "head": 42,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 39,
+          "form": "先进",
+          "head": 41,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 40,
+          "form": "战机",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "维护",
+          "head": 38,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "提供",
+          "head": 37,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "有益",
+          "head": 45,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 43,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 45,
+          "form": "借鉴",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "F-35自主式保障系统存在的缺陷包括:信息系统自动化程度有限且所需数据不完整或错误,可部署性较弱和信息交流不顺畅,以及备件短缺和不匹配,备件运输困难,紧缺备件分配优先级难以确定,备件管理混乱等",
+      "tokens": [
+        "F-35",
+        "自主式",
+        "保障",
+        "系统",
+        "存在",
+        "的",
+        "缺陷",
+        "包括",
+        ":",
+        "信息",
+        "系统",
+        "自动化",
+        "程度",
+        "有限",
+        "且",
+        "所",
+        "需",
+        "数据",
+        "不",
+        "完整",
+        "或",
+        "错误",
+        ",",
+        "可部署性",
+        "较",
+        "弱",
+        "和",
+        "信息",
+        "交流",
+        "不",
+        "顺畅",
+        ",",
+        "以及",
+        "备件",
+        "短缺",
+        "和",
+        "不",
+        "匹配",
+        ",",
+        "备件",
+        "运输",
+        "困难",
+        ",",
+        "紧缺",
+        "备件",
+        "分配",
+        "优先级",
+        "难以",
+        "确定",
+        ",",
+        "备件",
+        "管理",
+        "混乱",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "F-35",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 2,
+          "form": "自主式",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "保障",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "存在",
+          "head": 7,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "缺陷",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "包括",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": ":",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "信息",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "自动化",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "程度",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "有限",
+          "head": 8,
+          "deprel": "ccomp",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": "且",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "所",
+          "head": 17,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 17,
+          "form": "需",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "数据",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "不",
+          "head": 20,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "完整",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 21,
+          "form": "或",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "错误",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "可部署性",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "较",
+          "head": 26,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "弱",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 27,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "信息",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "交流",
+          "head": 31,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "不",
+          "head": 31,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 31,
+          "form": "顺畅",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "以及",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "备件",
+          "head": 35,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "短缺",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 36,
+          "form": "和",
+          "head": 35,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 37,
+          "form": "不",
+          "head": 38,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 38,
+          "form": "匹配",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "备件",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "运输",
+          "head": 42,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "困难",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "紧缺",
+          "head": 45,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 45,
+          "form": "备件",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "分配",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "优先级",
+          "head": 49,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "难以",
+          "head": 49,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 49,
+          "form": "确定",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 50,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 51,
+          "form": "备件",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "管理",
+          "head": 53,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "混乱",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 54,
+          "form": "等",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "ETC"
+        }
+      ]
+    },
+    {
+      "sentence": "上述缺陷的产生原因主要是装备成熟度与保障性之间的矛盾,保障管理的组织架构有待完善,对全球供应链建设方面的困难估计不足,以及保障管理方面的政策法规不完备等",
+      "tokens": [
+        "上述",
+        "缺陷",
+        "的",
+        "产生",
+        "原因",
+        "主要",
+        "是",
+        "装备",
+        "成熟度",
+        "与",
+        "保障性",
+        "之间",
+        "的",
+        "矛盾",
+        ",",
+        "保障",
+        "管理",
+        "的",
+        "组织",
+        "架构",
+        "有待",
+        "完善",
+        ",",
+        "对",
+        "全球",
+        "供应链",
+        "建设",
+        "方面",
+        "的",
+        "困难",
+        "估计",
+        "不足",
+        ",",
+        "以及",
+        "保障",
+        "管理",
+        "方面",
+        "的",
+        "政策",
+        "法规",
+        "不",
+        "完备",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "上述",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "缺陷",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "产生",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "原因",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "主要",
+          "head": 7,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 7,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 8,
+          "form": "装备",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "成熟度",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "保障性",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "之间",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "矛盾",
+          "head": 7,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "保障",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "管理",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "组织",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "架构",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "有待",
+          "head": 14,
+          "deprel": "prnmod",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "完善",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "对",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "全球",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "供应链",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "建设",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "方面",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "困难",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "估计",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "不足",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 33,
+          "form": ",",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "以及",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 35,
+          "form": "保障",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "管理",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "方面",
+          "head": 40,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 37,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 39,
+          "form": "政策",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "法规",
+          "head": 42,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "不",
+          "head": 42,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 42,
+          "form": "完备",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 43,
+          "form": "等",
+          "head": 42,
+          "deprel": "dep",
+          "pos": "ETC"
+        }
+      ]
+    }
+  ]
+}

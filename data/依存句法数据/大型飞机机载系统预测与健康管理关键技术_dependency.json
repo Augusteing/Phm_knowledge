@@ -1,0 +1,1226 @@
+{
+  "title": "大型飞机机载系统预测与健康管理关键技术",
+  "summary": "为确保飞机的高可靠性、高安全性和高维修保障性,大型飞机机载系统均装备了先进的故障预测与健康管理(PHM)系统,以实现高可靠运行和健康服役。从大型飞机健康管理体系结构入手,介绍了基于国际标准分层开放式的故障预测与健康管理空地结构,及其开放式、模块化和标准接口规范。着重分析了机载健康管理传感器网络和鲁棒故障特征提取方法、分层聚类和交叉增强校核的智能故障诊断算法和基于数据驱动与失效物理结合的故障预测算法等关键技术,探讨了基于健康状态的维修保障决策方法。最后,给出了空地一体的飞机故障预测与健康管理评价方法和健康管理技术的适用性分析。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为确保飞机的高可靠性、高安全性和高维修保障性,大型飞机机载系统均装备了先进的故障预测与健康管理(PHM)系统,以实现高可靠运行和健康服役",
+      "tokens": [
+        "为",
+        "确保",
+        "飞机",
+        "的",
+        "高",
+        "可靠性",
+        "、",
+        "高",
+        "安全性",
+        "和",
+        "高",
+        "维修",
+        "保障性",
+        ",",
+        "大型",
+        "飞机",
+        "机载",
+        "系统",
+        "均",
+        "装备",
+        "了",
+        "先进",
+        "的",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "系统",
+        ",",
+        "以",
+        "实现",
+        "高",
+        "可靠",
+        "运行",
+        "和",
+        "健康",
+        "服役"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "确保",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "高",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "可靠性",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "高",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "安全性",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "高",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "维修",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "保障性",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "大型",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "飞机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "机载",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "系统",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "均",
+          "head": 20,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "装备",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "先进",
+          "head": 32,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 22,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 24,
+          "form": "故障",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "预测",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "与",
+          "head": 28,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "健康",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "管理",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "(",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "PHM",
+          "head": 28,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": ")",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "系统",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "以",
+          "head": 35,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 35,
+          "form": "实现",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "高",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 37,
+          "form": "可靠",
+          "head": 38,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 38,
+          "form": "运行",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "和",
+          "head": 41,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "健康",
+          "head": 41,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "服役",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "从大型飞机健康管理体系结构入手,介绍了基于国际标准分层开放式的故障预测与健康管理空地结构,及其开放式、模块化和标准接口规范",
+      "tokens": [
+        "从",
+        "大型",
+        "飞机",
+        "健康",
+        "管理",
+        "体系",
+        "结构",
+        "入手",
+        ",",
+        "介绍",
+        "了",
+        "基于",
+        "国际",
+        "标准",
+        "分层",
+        "开放式",
+        "的",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "空地",
+        "结构",
+        ",",
+        "及",
+        "其",
+        "开放式",
+        "、",
+        "模块化",
+        "和",
+        "标准",
+        "接口",
+        "规范"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "从",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "大型",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "体系",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "结构",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "入手",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "介绍",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "了",
+          "head": 10,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 12,
+          "form": "基于",
+          "head": 34,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 13,
+          "form": "国际",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "标准",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "分层",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "开放式",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "故障",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "与",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "健康",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "管理",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "空地",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "结构",
+          "head": 34,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "及",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "其",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 28,
+          "form": "开放式",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "模块化",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "和",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "标准",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "接口",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "规范",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "着重分析了机载健康管理传感器网络和鲁棒故障特征提取方法、分层聚类和交叉增强校核的智能故障诊断算法和基于数据驱动与失效物理结合的故障预测算法等关键技术,探讨了基于健康状态的维修保障决策方法",
+      "tokens": [
+        "着重",
+        "分析",
+        "了",
+        "机载",
+        "健康",
+        "管理",
+        "传感器",
+        "网络",
+        "和",
+        "鲁棒",
+        "故障",
+        "特征",
+        "提取",
+        "方法",
+        "、",
+        "分层",
+        "聚类",
+        "和",
+        "交叉",
+        "增强",
+        "校核",
+        "的",
+        "智能",
+        "故障",
+        "诊断",
+        "算法",
+        "和",
+        "基于",
+        "数据",
+        "驱动",
+        "与",
+        "失效",
+        "物理",
+        "结合",
+        "的",
+        "故障",
+        "预测",
+        "算法",
+        "等",
+        "关键",
+        "技术",
+        ",",
+        "探讨",
+        "了",
+        "基于",
+        "健康",
+        "状态",
+        "的",
+        "维修",
+        "保障",
+        "决策",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "着重",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "机载",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "传感器",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "网络",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 38,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "鲁棒",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 11,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "特征",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "提取",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "方法",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "、",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "分层",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "聚类",
+          "head": 38,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "和",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "交叉",
+          "head": 20,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 20,
+          "form": "增强",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "校核",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 17,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "智能",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "故障",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "诊断",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "算法",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "和",
+          "head": 38,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "基于",
+          "head": 38,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 29,
+          "form": "数据",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "驱动",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "与",
+          "head": 33,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "失效",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 33,
+          "form": "物理",
+          "head": 28,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "结合",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 36,
+          "form": "故障",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "预测",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "算法",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "等",
+          "head": 38,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 40,
+          "form": "关键",
+          "head": 41,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "技术",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "探讨",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "了",
+          "head": 43,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 45,
+          "form": "基于",
+          "head": 52,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 46,
+          "form": "健康",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "状态",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 45,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 49,
+          "form": "维修",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "保障",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "决策",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "方法",
+          "head": 43,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后,给出了空地一体的飞机故障预测与健康管理评价方法和健康管理技术的适用性分析",
+      "tokens": [
+        "最后",
+        ",",
+        "给出",
+        "了",
+        "空地",
+        "一体",
+        "的",
+        "飞机",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "评价",
+        "方法",
+        "和",
+        "健康",
+        "管理",
+        "技术",
+        "的",
+        "适用性",
+        "分析"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "空地",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "一体",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "飞机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "与",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "健康",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "管理",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "评价",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "方法",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "健康",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "管理",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "技术",
+          "head": 22,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "适用性",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "分析",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

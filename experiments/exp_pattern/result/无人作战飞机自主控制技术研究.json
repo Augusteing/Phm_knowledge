@@ -1,0 +1,30 @@
+[
+  {
+    "subject": "MMS/EVMS结构",
+    "subject_type": "系统架构",
+    "relation": "实现",
+    "object": "自主控制技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "无人作战飞机",
+    "subject_type": "飞行器",
+    "relation": "需要",
+    "object": "自主控制",
+    "object_type": "功能"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "设计",
+    "object": "MMS/EVMS结构",
+    "object_type": "系统架构"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "可变权限自主的结构和实现方法",
+    "object_type": "方法"
+  }
+]

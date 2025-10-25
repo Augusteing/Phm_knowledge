@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "在...召开",
+    "object": "西安",
+    "object_type": "地点"
+  },
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "于...召开",
+    "object": "2017年5月19日",
+    "object_type": "日期"
+  },
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "由...主办",
+    "object": "中国电子学会电子测量与仪器分会",
+    "object_type": "机构"
+  },
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "由...主办",
+    "object": "中国仪器仪表学会电子测量与仪器分会",
+    "object_type": "机构"
+  },
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "由...承办",
+    "object": "空军工程大学航空航天工程学院PHM实验室",
+    "object_type": "机构"
+  },
+  {
+    "subject": "空军工程大学",
+    "subject_type": "机构",
+    "relation": "参加",
+    "object": "2017预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "浙江大学",
+    "subject_type": "机构",
+    "relation": "参加",
+    "object": "2017预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "哈尔滨工业大学",
+    "subject_type": "机构",
+    "relation": "参加",
+    "object": "2017预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "北京航空航天大学",
+    "subject_type": "机构",
+    "relation": "参加",
+    "object": "2017预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "南京航空航天大学",
+    "subject_type": "机构",
+    "relation": "参加",
+    "object": "2017预测与健康管理(PHM)研讨会",
+    "object_type": "会议"
+  },
+  {
+    "subject": "空军工程大学航空航天工程学院PHM实验室",
+    "subject_type": "机构",
+    "relation": "隶属于",
+    "object": "空军工程大学",
+    "object_type": "机构"
+  },
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "得到...支持",
+    "object": "《仪器仪表学报》",
+    "object_type": "期刊"
+  },
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "得到...支持",
+    "object": "《电子测量与仪器学报》",
+    "object_type": "期刊"
+  },
+  {
+    "subject": "2017预测与健康管理(PHM)研讨会",
+    "subject_type": "会议",
+    "relation": "得到...支持",
+    "object": "INSTRUMENTATION",
+    "object_type": "期刊"
+  }
+]

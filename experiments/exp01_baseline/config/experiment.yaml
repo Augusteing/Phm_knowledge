@@ -1,0 +1,12 @@
+# exp01_baseline 实验配置
+
+experiment:
+  name: "EXP-1"
+  description: "实验一仅为基线实验。仅使用prompt，不使用任何scheama。"
+  date: "2025-09-15"
+  
+# 数据路径（相对于实验目录）
+data:
+  input: "data/"
+  output: "results/"
+

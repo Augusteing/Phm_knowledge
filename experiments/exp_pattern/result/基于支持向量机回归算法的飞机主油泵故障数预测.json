@@ -1,0 +1,30 @@
+[
+  {
+    "subject": "支持向量机回归算法",
+    "subject_type": "算法",
+    "relation": "分析",
+    "object": "飞机主油泵故障数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "支持向量机回归算法",
+    "subject_type": "算法",
+    "relation": "用于",
+    "object": "飞机部件故障数预测",
+    "object_type": "应用"
+  },
+  {
+    "subject": "支持向量机回归算法",
+    "subject_type": "算法",
+    "relation": "用于",
+    "object": "可靠性评估",
+    "object_type": "应用"
+  },
+  {
+    "subject": "支持向量机回归算法",
+    "subject_type": "算法",
+    "relation": "用于",
+    "object": "备件需求预测",
+    "object_type": "应用"
+  }
+]

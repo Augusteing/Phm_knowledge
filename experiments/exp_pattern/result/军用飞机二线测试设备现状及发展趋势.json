@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "二级维修体制",
+    "subject_type": "维修体制",
+    "relation": "成为",
+    "object": "下一代飞机维护保障模式",
+    "object_type": "保障模式"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "基于",
+    "object": "飞机可测试性设计",
+    "object_type": "技术"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "基于",
+    "object": "PHM技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "需要",
+    "object": "功能前移和后推",
+    "object_type": "功能需求"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "需要",
+    "object": "更强的故障定位能力",
+    "object_type": "能力需求"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "发展趋势为",
+    "object": "综合化高",
+    "object_type": "特性"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "发展趋势为",
+    "object": "通用性强",
+    "object_type": "特性"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "发展趋势为",
+    "object": "管用",
+    "object_type": "特性"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "发展趋势为",
+    "object": "好用",
+    "object_type": "特性"
+  },
+  {
+    "subject": "二线测试设备",
+    "subject_type": "测试设备",
+    "relation": "发展趋势为",
+    "object": "耐用",
+    "object_type": "特性"
+  }
+]

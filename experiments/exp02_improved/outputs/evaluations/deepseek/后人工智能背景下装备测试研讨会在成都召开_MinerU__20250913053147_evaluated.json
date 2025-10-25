@@ -1,0 +1,275 @@
+{
+  "entities": [
+    {
+      "name": "预测与健康管理（PHM）",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "装备测试技术",
+      "type": "技术",
+      "evaluation": "正确"
+    },
+    {
+      "name": "状态监测与管理",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障诊断与预测",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "维护决策与优化",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空航天领域智能健康管理技术",
+      "type": "应用领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "反应堆系统故障诊断技术",
+      "type": "应用领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "先进战机预测与健康管理技术",
+      "type": "应用领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "智能阴联汽车测试评价",
+      "type": "应用领域",
+      "evaluation": "错误"
+    },
+    {
+      "name": "PHM工程实践",
+      "type": "应用领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "后人工智能时代",
+      "type": "技术趋势",
+      "evaluation": "正确"
+    },
+    {
+      "name": "中国仪器仪表学会",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "四川大学",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "哈尔滨工业大学",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "北京航空航天大学",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "电子科技大学",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "中国核动力研究院",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "华为技术有限公司",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "四川大学电气工程学院",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "四川省空天信息与智能装备国际科技合作基地",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "中国仪器仪表学会电子测量与仪器分会",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "中国电子学会电子测量与仪器分会",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "苗强教授",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "肖先勇",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "张莉",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "于功敬研究员",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "代言副总师",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "刘大同教授",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "何正熙研究员",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "王友清教授",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "陈银超",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "李巍华教授",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "孙博副教授",
+      "type": "研究机构",
+      "evaluation": "错误"
+    },
+    {
+      "name": "高校",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "研究所",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "企业",
+      "type": "研究机构",
+      "evaluation": "正确"
+    },
+    {
+      "name": "装备测试技术成熟与发展",
+      "type": "技术趋势",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "预测与健康管理（PHM）",
+      "relation": "应用于",
+      "tail": "装备测试技术",
+      "evaluation": "正确"
+    },
+    {
+      "head": "状态监测与管理",
+      "relation": "包括",
+      "tail": "装备测试技术",
+      "evaluation": "错误"
+    },
+    {
+      "head": "故障诊断与预测",
+      "relation": "包括",
+      "tail": "装备测试技术",
+      "evaluation": "错误"
+    },
+    {
+      "head": "维护决策与优化",
+      "relation": "包括",
+      "tail": "装备测试技术",
+      "evaluation": "错误"
+    },
+    {
+      "head": "装备测试技术",
+      "relation": "基于",
+      "tail": "后人工智能时代",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空航天领域智能健康管理技术",
+      "relation": "属于",
+      "tail": "预测与健康管理（PHM）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "反应堆系统故障诊断技术",
+      "relation": "属于",
+      "tail": "预测与健康管理（PHM）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "先进战机预测与健康管理技术",
+      "relation": "属于",
+      "tail": "预测与健康管理（PHM）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "智能阴联汽车测试评价",
+      "relation": "属于",
+      "tail": "预测与健康管理（PHM）",
+      "evaluation": "错误"
+    },
+    {
+      "head": "PHM工程实践",
+      "relation": "属于",
+      "tail": "预测与健康管理（PHM）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "研讨会",
+      "relation": "促进",
+      "tail": "装备测试技术成熟与发展",
+      "evaluation": "错误"
+    },
+    {
+      "head": "高校",
+      "relation": "合作",
+      "tail": "研究所",
+      "evaluation": "正确"
+    },
+    {
+      "head": "高校",
+      "relation": "合作",
+      "tail": "企业",
+      "evaluation": "正确"
+    },
+    {
+      "head": "研究所",
+      "relation": "合作",
+      "tail": "企业",
+      "evaluation": "正确"
+    }
+  ]
+}

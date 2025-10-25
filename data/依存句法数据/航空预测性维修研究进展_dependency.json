@@ -1,0 +1,1226 @@
+{
+  "title": "航空预测性维修研究进展",
+  "summary": "现代飞机的维修保障模式正经历以可靠性为中心的计划维修向基于状态的预测性维修演变。实施预测性维修是一项系统工程，需要将各种适用的技术、过程和能力整合应用，涉及到管理政策、标准规范、业务流程、新技术等，贯穿寿命周期设计、运行、保障各阶段。从关键技术研究和应用角度，综述航空预测性维修研究进展，梳理航空健康监测、故障诊断、失效预测以及预测性维修决策技术研究现状，总结军民航空预测性维修实践应用情况，涉及预测性维修的政策、行业标准、工业界以及用户实践等。进一步分析航空预测性维修目前面临的技术与应用方面的挑战，提出了未来需要重点关注的领域方向。",
+  "analyzed_sentences": [
+    {
+      "sentence": "现代飞机的维修保障模式正经历以可靠性为中心的计划维修向基于状态的预测性维修演变",
+      "tokens": [
+        "现代",
+        "飞机",
+        "的",
+        "维修",
+        "保障",
+        "模式",
+        "正",
+        "经历",
+        "以",
+        "可靠性",
+        "为",
+        "中心",
+        "的",
+        "计划",
+        "维修",
+        "向",
+        "基于",
+        "状态",
+        "的",
+        "预测性",
+        "维修",
+        "演变"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "现代",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "维修",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "保障",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "模式",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "正",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "经历",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "以",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "可靠性",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "为",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VC"
+        },
+        {
+          "id": 12,
+          "form": "中心",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "计划",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "维修",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "向",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 17,
+          "form": "基于",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "状态",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "预测性",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "维修",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "演变",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "实施预测性维修是一项系统工程",
+      "tokens": [
+        "实施",
+        "预测性",
+        "维修",
+        "是",
+        "一",
+        "项",
+        "系统",
+        "工程"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实施",
+          "head": 4,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "预测性",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "维修",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 5,
+          "form": "一",
+          "head": 6,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 6,
+          "form": "项",
+          "head": 8,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "工程",
+          "head": 4,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "需要将各种适用的技术、过程和能力整合应用",
+      "tokens": [
+        "需要",
+        "将",
+        "各",
+        "种",
+        "适用",
+        "的",
+        "技术",
+        "、",
+        "过程",
+        "和",
+        "能力",
+        "整合",
+        "应用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "需要",
+          "head": 13,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "将",
+          "head": 13,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 3,
+          "form": "各",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "种",
+          "head": 3,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "适用",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 7,
+          "form": "技术",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "过程",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "能力",
+          "head": 13,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "整合",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "应用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "涉及到管理政策、标准规范、业务流程、新技术等",
+      "tokens": [
+        "涉及",
+        "到",
+        "管理",
+        "政策",
+        "、",
+        "标准",
+        "规范",
+        "、",
+        "业务",
+        "流程",
+        "、",
+        "新",
+        "技术",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "涉及",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "到",
+          "head": 1,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "管理",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "政策",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "标准",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "规范",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "业务",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "流程",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "新",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "技术",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "等",
+          "head": 13,
+          "deprel": "etc",
+          "pos": "ETC"
+        }
+      ]
+    },
+    {
+      "sentence": "贯穿寿命周期设计、运行、保障各阶段",
+      "tokens": [
+        "贯穿",
+        "寿命",
+        "周期",
+        "设计",
+        "、",
+        "运行",
+        "、",
+        "保障",
+        "各",
+        "阶段"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "贯穿",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "寿命",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "周期",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "设计",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "运行",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "保障",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "各",
+          "head": 10,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 10,
+          "form": "阶段",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "从关键技术研究和应用角度",
+      "tokens": [
+        "从",
+        "关键",
+        "技术",
+        "研究",
+        "和",
+        "应用",
+        "角度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "从",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "关键",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "技术",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "研究",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "应用",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "角度",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "综述航空预测性维修研究进展",
+      "tokens": [
+        "综述",
+        "航空",
+        "预测性",
+        "维修",
+        "研究",
+        "进展"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "综述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "预测性",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "维修",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "研究",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "进展",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "梳理航空健康监测、故障诊断、失效预测以及预测性维修决策技术研究现状",
+      "tokens": [
+        "梳理",
+        "航空",
+        "健康",
+        "监测",
+        "、",
+        "故障",
+        "诊断",
+        "、",
+        "失效",
+        "预测",
+        "以及",
+        "预测性",
+        "维修",
+        "决策",
+        "技术",
+        "研究",
+        "现状"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "梳理",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "监测",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "诊断",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "失效",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "预测",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "以及",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "预测性",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "维修",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "决策",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "技术",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "研究",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "现状",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "总结军民航空预测性维修实践应用情况",
+      "tokens": [
+        "总结",
+        "军民",
+        "航空",
+        "预测性",
+        "维修",
+        "实践",
+        "应用",
+        "情况"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "军民",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测性",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "维修",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "实践",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "应用",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "情况",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "涉及预测性维修的政策、行业标准、工业界以及用户实践等",
+      "tokens": [
+        "涉及",
+        "预测性",
+        "维修",
+        "的",
+        "政策",
+        "、",
+        "行业",
+        "标准",
+        "、",
+        "工业界",
+        "以及",
+        "用户",
+        "实践",
+        "等"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "涉及",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "预测性",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "维修",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "政策",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "行业",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "标准",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "工业界",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "以及",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "用户",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "实践",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "等",
+          "head": 13,
+          "deprel": "etc",
+          "pos": "ETC"
+        }
+      ]
+    },
+    {
+      "sentence": "进一步分析航空预测性维修目前面临的技术与应用方面的挑战",
+      "tokens": [
+        "进一步",
+        "分析",
+        "航空",
+        "预测性",
+        "维修",
+        "目前",
+        "面临",
+        "的",
+        "技术",
+        "与",
+        "应用",
+        "方面",
+        "的",
+        "挑战"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "进一步",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测性",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "维修",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "目前",
+          "head": 7,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 7,
+          "form": "面临",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "技术",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "应用",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方面",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "挑战",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了未来需要重点关注的领域方向",
+      "tokens": [
+        "提出",
+        "了",
+        "未来",
+        "需要",
+        "重点",
+        "关注",
+        "的",
+        "领域",
+        "方向"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "未来",
+          "head": 6,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": "需要",
+          "head": 6,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "重点",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "关注",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "领域",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "方向",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

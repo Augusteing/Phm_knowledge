@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "核主成分分析(KPCA)",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "深度置信网络(DBN)",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机排气温度基线模型",
+      "type": "系统/部件",
+      "evaluation": "错误"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均绝对误差(MAE)",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "遗传算法优化的BP神经网络(GA-BP)",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "KPCA-DBN模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机健康管理(EHM)",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "排气温度(EGT)",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高斯函数",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "主成分分析(PCA)",
+      "type": "算法",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "核主成分分析(KPCA)",
+      "relation": "改进了",
+      "tail": "主成分分析(PCA)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "深度置信网络(DBN)",
+      "relation": "基于",
+      "tail": "核主成分分析(KPCA)",
+      "evaluation": "错误"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "应用于",
+      "tail": "CFM56-7B发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "核主成分分析(KPCA)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "深度置信网络(DBN)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "结合",
+      "tail": "核主成分分析(KPCA)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "结合",
+      "tail": "深度置信网络(DBN)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "优于",
+      "tail": "遗传算法优化的BP神经网络(GA-BP)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "评估指标为",
+      "tail": "平均绝对误差(MAE)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机健康管理(EHM)",
+      "relation": "包括",
+      "tail": "排气温度(EGT)",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析(KPCA)",
+      "relation": "采用",
+      "tail": "高斯函数",
+      "evaluation": "正确"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "subject": "支持向量机",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "发动机油液磨粒与故障关系预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "支持向量机",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "稀疏性不强",
+    "object_type": "问题"
+  },
+  {
+    "subject": "支持向量机",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "计算量大",
+    "object_type": "问题"
+  },
+  {
+    "subject": "支持向量机",
+    "subject_type": "方法",
+    "relation": "存在问题",
+    "object": "核函数必须满足Mercer条件",
+    "object_type": "问题"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "支持向量机问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "滑油光谱分析",
+    "subject_type": "分析技术",
+    "relation": "获取",
+    "object": "金属磨粒浓度",
+    "object_type": "数据"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "使用数据",
+    "object": "金属磨粒浓度",
+    "object_type": "数据"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "发动机工作状态",
+    "object_type": "数据"
+  },
+  {
+    "subject": "最小二乘支持向量机",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "发动机工作状态",
+    "object_type": "数据"
+  },
+  {
+    "subject": "反向传播神经网络",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "发动机工作状态",
+    "object_type": "数据"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "最小二乘支持向量机",
+    "object_type": "方法"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "反向传播神经网络",
+    "object_type": "方法"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "计算量较少",
+    "object_type": "优势"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "预测时间较短",
+    "object_type": "优势"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "具有",
+    "object": "精度较高",
+    "object_type": "优势"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "可应用于",
+    "object": "发动机油液磨粒分析",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "相关向量机",
+    "subject_type": "方法",
+    "relation": "可应用于",
+    "object": "故障预测",
+    "object_type": "应用领域"
+  }
+]

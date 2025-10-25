@@ -1,0 +1,273 @@
+{
+  "entities": [
+    {
+      "name": "EnsembleBRB-SHAP",
+      "type": "方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "健康状态预测",
+      "type": "任务"
+    },
+    {
+      "name": "置信规则库",
+      "type": "模型"
+    },
+    {
+      "name": "集成学习",
+      "type": "方法"
+    },
+    {
+      "name": "SHAP",
+      "type": "方法"
+    },
+    {
+      "name": "数据驱动模型",
+      "type": "方法"
+    },
+    {
+      "name": "物理模型",
+      "type": "模型"
+    },
+    {
+      "name": "可解释性",
+      "type": "属性"
+    },
+    {
+      "name": "C-MAPSS",
+      "type": "数据集"
+    },
+    {
+      "name": "均方根误差",
+      "type": "指标"
+    },
+    {
+      "name": "低压涡轮机冷却液泄漏量",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压缩机出口燃料流量与静压比",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压缩机出口静态压力",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "低压压缩机出口温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "校正后的核心转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压缩机出口温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "涵道比",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "核心转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "校正后的风扇转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "排气",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "发动机健康管理",
+      "type": "应用领域"
+    },
+    {
+      "name": "视情维修",
+      "type": "任务"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "剩余寿命预测",
+      "type": "任务"
+    },
+    {
+      "name": "支持向量机",
+      "type": "算法"
+    },
+    {
+      "name": "决策树",
+      "type": "算法"
+    },
+    {
+      "name": "梯度提升回归",
+      "type": "算法"
+    },
+    {
+      "name": "Lasso算法",
+      "type": "算法"
+    },
+    {
+      "name": "多层感知机",
+      "type": "模型"
+    },
+    {
+      "name": "Python",
+      "type": "工具"
+    },
+    {
+      "name": "KernelSHAP",
+      "type": "方法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "用于",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "基于",
+      "tail": "置信规则库"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "基于",
+      "tail": "集成学习"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "基于",
+      "tail": "SHAP"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "提高",
+      "tail": "可解释性"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "属于",
+      "tail": "发动机健康管理"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "支持",
+      "tail": "视情维修"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "支持",
+      "tail": "故障诊断"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "支持",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "数据驱动模型",
+      "relation": "优于",
+      "tail": "物理模型"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "训练",
+      "tail": "C-MAPSS"
+    },
+    {
+      "head": "均方根误差",
+      "relation": "评估",
+      "tail": "EnsembleBRB-SHAP"
+    },
+    {
+      "head": "低压涡轮机冷却液泄漏量",
+      "relation": "影响",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "风扇转速",
+      "relation": "影响",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "高压压缩机出口燃料流量与静压比",
+      "relation": "影响",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "SHAP",
+      "relation": "用于",
+      "tail": "可解释性分析"
+    },
+    {
+      "head": "SHAP",
+      "relation": "实现",
+      "tail": "局部可解释性"
+    },
+    {
+      "head": "SHAP",
+      "relation": "实现",
+      "tail": "全局可解释性"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "优于",
+      "tail": "支持向量机"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "优于",
+      "tail": "决策树"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "优于",
+      "tail": "梯度提升回归"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "优于",
+      "tail": "Lasso算法"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "优于",
+      "tail": "多层感知机"
+    },
+    {
+      "head": "Python",
+      "relation": "用于",
+      "tail": "SHAP分析"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "用于",
+      "tail": "SHAP值计算"
+    }
+  ]
+}

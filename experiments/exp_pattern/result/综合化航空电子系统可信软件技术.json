@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "航空电子系统",
+    "subject_type": "系统",
+    "relation": "要求",
+    "object": "确定性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "航空电子系统",
+    "subject_type": "系统",
+    "relation": "要求",
+    "object": "可预测性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "航空电子系统",
+    "subject_type": "系统",
+    "relation": "要求",
+    "object": "可控性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "综合化航空电子系统软件",
+    "subject_type": "软件",
+    "relation": "具有",
+    "object": "安全性需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "综合化航空电子系统软件",
+    "subject_type": "软件",
+    "relation": "具有",
+    "object": "可靠性需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "综合化航空电子系统软件",
+    "subject_type": "软件",
+    "relation": "具有",
+    "object": "完整性需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "综合化航空电子系统软件",
+    "subject_type": "软件",
+    "relation": "具有",
+    "object": "实时性需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "可信计算",
+    "subject_type": "技术",
+    "relation": "引入",
+    "object": "综合化航空电子系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "综合化航空电子系统",
+    "subject_type": "系统",
+    "relation": "建立",
+    "object": "可信软件体系结构",
+    "object_type": "架构"
+  },
+  {
+    "subject": "可信软件体系结构",
+    "subject_type": "架构",
+    "relation": "支持",
+    "object": "软件可信运行环境构建方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "可信软件体系结构",
+    "subject_type": "架构",
+    "relation": "支持",
+    "object": "可靠性增强技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "可靠性增强技术",
+    "subject_type": "技术",
+    "relation": "保障",
+    "object": "综合化航空电子系统的可预测性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "综合化航空电子系统可信软件",
+    "subject_type": "软件",
+    "relation": "保障",
+    "object": "飞机任务的执行",
+    "object_type": "任务"
+  },
+  {
+    "subject": "综合化航空电子系统可信软件",
+    "subject_type": "软件",
+    "relation": "保障",
+    "object": "飞机安全",
+    "object_type": "属性"
+  },
+  {
+    "subject": "综合化航空电子系统可信软件",
+    "subject_type": "软件",
+    "relation": "应用于",
+    "object": "中国大飞机",
+    "object_type": "产品"
+  }
+]

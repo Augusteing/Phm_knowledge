@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "时序回归预测技术",
+    "subject_type": "技术",
+    "relation": "融合",
+    "object": "模糊信息粒化",
+    "object_type": "技术"
+  },
+  {
+    "subject": "时序回归预测技术",
+    "subject_type": "技术",
+    "relation": "融合",
+    "object": "支持向量机",
+    "object_type": "技术"
+  },
+  {
+    "subject": "时序回归预测技术",
+    "subject_type": "技术",
+    "relation": "预测",
+    "object": "起落架系统故障频率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "时序回归预测技术",
+    "subject_type": "技术",
+    "relation": "基于",
+    "object": "起落架故障数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "研究",
+    "subject_type": "研究活动",
+    "relation": "旨在实现",
+    "object": "预防维修",
+    "object_type": "维修策略"
+  },
+  {
+    "subject": "预防维修",
+    "subject_type": "维修策略",
+    "relation": "保证",
+    "object": "飞行安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "预测结果",
+    "subject_type": "结果",
+    "relation": "提供",
+    "object": "技术支持",
+    "object_type": "支持"
+  },
+  {
+    "subject": "技术支持",
+    "subject_type": "支持",
+    "relation": "用于",
+    "object": "机务维修",
+    "object_type": "维修活动"
+  },
+  {
+    "subject": "预测结果",
+    "subject_type": "结果",
+    "relation": "揭示",
+    "object": "起落架故障频率的变化趋势",
+    "object_type": "分析结果"
+  }
+]

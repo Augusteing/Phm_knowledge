@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "RFID技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "民用航空机场运输领域",
+    "object_type": "领域"
+  },
+  {
+    "subject": "RFID技术",
+    "subject_type": "技术",
+    "relation": "未推广应用",
+    "object": "民用航空制造领域",
+    "object_type": "领域"
+  },
+  {
+    "subject": "RFID技术",
+    "subject_type": "技术",
+    "relation": "未推广应用",
+    "object": "飞机运营维护领域",
+    "object_type": "领域"
+  },
+  {
+    "subject": "机载设备维护管理系统",
+    "subject_type": "系统",
+    "relation": "应用",
+    "object": "RFID技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "机载设备维护管理系统",
+    "subject_type": "系统",
+    "relation": "用于",
+    "object": "民用飞机机载设备全生命周期维护和管理",
+    "object_type": "任务"
+  },
+  {
+    "subject": "机载设备维护管理系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "机载设备全生命周期的高效维护和管理",
+    "object_type": "目标"
+  },
+  {
+    "subject": "例行维护任务",
+    "subject_type": "任务",
+    "relation": "验证",
+    "object": "机载设备维护管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "例行维护任务",
+    "subject_type": "任务",
+    "relation": "针对",
+    "object": "客舱应急设备",
+    "object_type": "设备"
+  }
+]

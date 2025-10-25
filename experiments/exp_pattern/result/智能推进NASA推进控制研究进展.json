@@ -1,0 +1,142 @@
+[
+  {
+    "subject": "NASA格伦研究中心",
+    "subject_type": "组织",
+    "relation": "研究",
+    "object": "智能推进",
+    "object_type": "理念"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "包含",
+    "object": "主动控制",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "包含",
+    "object": "基于模型的控制和健康管理",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "包含",
+    "object": "分布式控制",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "旨在提高",
+    "object": "推进控制系统的智能化程度",
+    "object_type": "目标"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "采用",
+    "object": "建模仿真和控制技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "对抗",
+    "object": "恶劣工况",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "对抗",
+    "object": "部件老化",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "保持",
+    "object": "发动机最优工作性能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "延长",
+    "object": "推进系统工作寿命",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "提高",
+    "object": "安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "提高",
+    "object": "可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "降低",
+    "object": "全寿命周期的使用维护成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "基于模型的控制和健康管理",
+    "subject_type": "技术",
+    "relation": "通过验证",
+    "object": "飞行试验",
+    "object_type": "验证方法"
+  },
+  {
+    "subject": "基于模型的控制和健康管理",
+    "subject_type": "技术",
+    "relation": "技术成熟度达到",
+    "object": "7级",
+    "object_type": "等级"
+  },
+  {
+    "subject": "主动控制",
+    "subject_type": "技术",
+    "relation": "处于",
+    "object": "概念设计和实验室研究阶段",
+    "object_type": "阶段"
+  },
+  {
+    "subject": "分布式控制",
+    "subject_type": "技术",
+    "relation": "处于",
+    "object": "概念设计和实验室研究阶段",
+    "object_type": "阶段"
+  },
+  {
+    "subject": "主动控制",
+    "subject_type": "技术",
+    "relation": "预计技术成熟度达到",
+    "object": "6级",
+    "object_type": "等级"
+  },
+  {
+    "subject": "分布式控制",
+    "subject_type": "技术",
+    "relation": "预计技术成熟度达到",
+    "object": "6级",
+    "object_type": "等级"
+  },
+  {
+    "subject": "智能推进",
+    "subject_type": "理念",
+    "relation": "成为",
+    "object": "下一代航空航天推进系统的核心支撑技术",
+    "object_type": "技术角色"
+  }
+]

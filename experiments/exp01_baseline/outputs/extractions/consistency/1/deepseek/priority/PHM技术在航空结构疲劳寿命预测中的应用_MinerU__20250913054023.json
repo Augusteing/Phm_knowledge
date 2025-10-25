@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "PHM技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "疲劳寿命预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "失效物理模型",
+      "type": "理论基础"
+    },
+    {
+      "name": "应力严重系数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "疲劳缺口系数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "局部应力应变法",
+      "type": "方法"
+    },
+    {
+      "name": "修正Neuber法",
+      "type": "方法"
+    },
+    {
+      "name": "Manson-Coffin公式",
+      "type": "模型"
+    },
+    {
+      "name": "Newton-Raphson迭代方法",
+      "type": "算法"
+    },
+    {
+      "name": "飞机结构连接件",
+      "type": "系统/部件"
+    },
+    {
+      "name": "紧固件孔",
+      "type": "系统/部件"
+    },
+    {
+      "name": "疲劳失效",
+      "type": "故障模式"
+    },
+    {
+      "name": "疲劳试验",
+      "type": "研究方法"
+    },
+    {
+      "name": "MTS Landmark试验机",
+      "type": "软件工具"
+    },
+    {
+      "name": "相对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "有限元法",
+      "type": "方法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM技术",
+      "relation": "应用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "基于",
+      "tail": "失效物理模型"
+    },
+    {
+      "head": "应力严重系数",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "疲劳缺口系数",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "改进了",
+      "tail": "修正Neuber法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "Manson-Coffin公式",
+      "relation": "基于",
+      "tail": "局部应力应变法"
+    },
+    {
+      "head": "Newton-Raphson迭代方法",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "疲劳失效",
+      "relation": "影响",
+      "tail": "飞机结构连接件"
+    },
+    {
+      "head": "疲劳试验",
+      "relation": "评价",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "相对误差",
+      "relation": "评估",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "有限元法",
+      "relation": "应用于",
+      "tail": "复杂机体结构"
+    }
+  ]
+}

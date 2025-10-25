@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "飞机结构健康监测技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "结构设计",
+    "object_type": "过程"
+  },
+  {
+    "subject": "飞机结构健康监测技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "飞行",
+    "object_type": "过程"
+  },
+  {
+    "subject": "飞机结构健康监测技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "维护过程",
+    "object_type": "过程"
+  },
+  {
+    "subject": "飞机结构健康监测技术",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "结构健康状况预判",
+    "object_type": "应用"
+  },
+  {
+    "subject": "飞机结构健康监测技术",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "辅助维修与维护决策",
+    "object_type": "应用"
+  },
+  {
+    "subject": "F-35",
+    "subject_type": "飞机型号",
+    "relation": "是",
+    "object": "结构健康监测工程案例",
+    "object_type": "案例"
+  },
+  {
+    "subject": "A400M",
+    "subject_type": "飞机型号",
+    "relation": "是",
+    "object": "结构健康监测工程案例",
+    "object_type": "案例"
+  },
+  {
+    "subject": "寿命预计",
+    "subject_type": "任务",
+    "relation": "包含",
+    "object": "基本流程",
+    "object_type": "流程"
+  },
+  {
+    "subject": "寿命预计流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "控制点选择",
+    "object_type": "环节"
+  },
+  {
+    "subject": "寿命预计流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "飞行参数筛选",
+    "object_type": "环节"
+  },
+  {
+    "subject": "寿命预计流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "载荷/应变方程构建",
+    "object_type": "环节"
+  },
+  {
+    "subject": "寿命预计流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "损伤计算及寿命评估",
+    "object_type": "环节"
+  },
+  {
+    "subject": "寿命预计流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "结果输出及方程验证",
+    "object_type": "环节"
+  },
+  {
+    "subject": "基于裂纹的监测方法",
+    "subject_type": "方法",
+    "relation": "存在",
+    "object": "应用限制因素",
+    "object_type": "问题"
+  },
+  {
+    "subject": "航空领域",
+    "subject_type": "领域",
+    "relation": "未来研究方向",
+    "object": "结构健康监测智能化",
+    "object_type": "研究方向"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "剪样训练算法",
+    "subject_type": "算法",
+    "relation": "适用于",
+    "object": "直接支持向量回归机(DSVMR)",
+    "object_type": "模型"
+  },
+  {
+    "subject": "剪样训练算法",
+    "subject_type": "算法",
+    "relation": "改善",
+    "object": "稀疏性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "剪样训练算法",
+    "subject_type": "算法",
+    "relation": "利用",
+    "object": "矩阵变换",
+    "object_type": "技术"
+  },
+  {
+    "subject": "剪样训练算法",
+    "subject_type": "算法",
+    "relation": "实现",
+    "object": "递推求解",
+    "object_type": "方法"
+  },
+  {
+    "subject": "剪样训练算法",
+    "subject_type": "算法",
+    "relation": "提高",
+    "object": "计算效率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "稀疏直接支持向量回归机方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "故障率预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "剪样训练算法",
+    "subject_type": "算法",
+    "relation": "计算效率高于",
+    "object": "Cholesky分解的剪样训练算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "剪样训练后的DSVMR",
+    "subject_type": "模型",
+    "relation": "预测精度高于",
+    "object": "BP神经网络预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "剪样训练后的DSVMR",
+    "subject_type": "模型",
+    "relation": "预测精度高于",
+    "object": "RBF神经网络预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "飞机故障率预测",
+    "subject_type": "应用",
+    "relation": "验证",
+    "object": "剪样训练后的DSVMR",
+    "object_type": "模型"
+  },
+  {
+    "subject": "混沌时间序列预测",
+    "subject_type": "实验",
+    "relation": "验证",
+    "object": "剪样训练算法",
+    "object_type": "算法"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "气路故障诊断方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "气路健康状态评估问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "气路故障诊断方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "增强型机载自适应模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "神经网络补偿算法",
+    "subject_type": "算法",
+    "relation": "修正",
+    "object": "机载模型的输出误差",
+    "object_type": "参数"
+  },
+  {
+    "subject": "神经网络补偿算法",
+    "subject_type": "算法",
+    "relation": "提高",
+    "object": "卡尔曼滤波器估计精度",
+    "object_type": "指标"
+  },
+  {
+    "subject": "增强型自适应模型",
+    "subject_type": "模型",
+    "relation": "评估",
+    "object": "健康参数状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "增强型自适应模型",
+    "subject_type": "模型",
+    "relation": "指导",
+    "object": "性能基线模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "性能基线模型",
+    "subject_type": "模型",
+    "relation": "跟踪",
+    "object": "发动机正常性能降级趋势",
+    "object_type": "趋势"
+  },
+  {
+    "subject": "发动机性能仿真模型",
+    "subject_type": "模型",
+    "relation": "模拟",
+    "object": "故障特征数据库",
+    "object_type": "数据库"
+  },
+  {
+    "subject": "RBF神经网络",
+    "subject_type": "技术",
+    "relation": "执行",
+    "object": "故障模式判定",
+    "object_type": "任务"
+  },
+  {
+    "subject": "RBF神经网络",
+    "subject_type": "技术",
+    "relation": "执行",
+    "object": "故障隔离",
+    "object_type": "任务"
+  },
+  {
+    "subject": "气路故障诊断平台",
+    "subject_type": "平台",
+    "relation": "用于",
+    "object": "仿真验证",
+    "object_type": "任务"
+  },
+  {
+    "subject": "气路故障诊断方法",
+    "subject_type": "方法",
+    "relation": "监视",
+    "object": "气路健康状况",
+    "object_type": "状态"
+  }
+]

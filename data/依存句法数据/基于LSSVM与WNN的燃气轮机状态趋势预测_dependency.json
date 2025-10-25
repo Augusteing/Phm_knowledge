@@ -1,0 +1,1220 @@
+{
+  "title": "基于LSSVM与WNN的燃气轮机状态趋势预测",
+  "summary": "为了对燃气轮机未来状态趋势进行预测,提出基于最小二乘支持向量机(LSSVM)与小波神经网络(WNN)组合的燃气轮机状态趋势预测方法,把最小二乘支持向量机的预测结果分为两部分,将实际参数数据与前一部分的预测结果计算残差,然后利用小波神经网络对残差进行预测,再将预测的残差与最小二乘支持向量机的预测结果的后一部分进行合成,将合成的结果作为最小二乘支持向量机-小波预测模型的预测结果。结合某型燃气轮机进行试验验证,验证结果表明,组合的最小二乘支持向量机与小波神经网络预测模型预测效果更好,预测结果相对误差为0.12%。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为了对燃气轮机未来状态趋势进行预测,提出基于最小二乘支持向量机(LSSVM)与小波神经网络(WNN)组合的燃气轮机状态趋势预测方法,把最小二乘支持向量机的预测结果分为两部分,将实际参数数据与前一部分的预测结果计算残差,然后利用小波神经网络对残差进行预测,再将预测的残差与最小二乘支持向量机的预测结果的后一部分进行合成,将合成的结果作为最小二乘支持向量机-小波预测模型的预测结果",
+      "tokens": [
+        "为了",
+        "对",
+        "燃气轮机",
+        "未来",
+        "状态",
+        "趋势",
+        "进行",
+        "预测",
+        ",",
+        "提出",
+        "基于",
+        "最",
+        "小",
+        "二",
+        "乘",
+        "支持",
+        "向量机",
+        "(",
+        "LSSVM",
+        ")",
+        "与",
+        "小波",
+        "神经",
+        "网络",
+        "(",
+        "WNN",
+        ")",
+        "组合",
+        "的",
+        "燃气轮机",
+        "状态",
+        "趋势",
+        "预测",
+        "方法",
+        ",",
+        "把",
+        "最",
+        "小",
+        "二",
+        "乘",
+        "支持",
+        "向量机",
+        "的",
+        "预测",
+        "结果",
+        "分为",
+        "两",
+        "部分",
+        ",",
+        "将",
+        "实际",
+        "参数",
+        "数据",
+        "与",
+        "前",
+        "一",
+        "部分",
+        "的",
+        "预测",
+        "结果",
+        "计算",
+        "残差",
+        ",",
+        "然后",
+        "利用",
+        "小波",
+        "神经",
+        "网络",
+        "对",
+        "残差",
+        "进行",
+        "预测",
+        ",",
+        "再",
+        "将",
+        "预测",
+        "的",
+        "残差",
+        "与",
+        "最",
+        "小",
+        "二",
+        "乘",
+        "支持",
+        "向量机",
+        "的",
+        "预测",
+        "结果",
+        "的",
+        "后",
+        "一",
+        "部分",
+        "进行",
+        "合成",
+        ",",
+        "将",
+        "合成",
+        "的",
+        "结果",
+        "作为",
+        "最",
+        "小",
+        "二",
+        "乘",
+        "支持",
+        "向量机",
+        "-",
+        "小波",
+        "预测",
+        "模型",
+        "的",
+        "预测",
+        "结果"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "燃气轮机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "未来",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 5,
+          "form": "状态",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "趋势",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "进行",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "基于",
+          "head": 34,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "最",
+          "head": 13,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "小",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "二",
+          "head": 15,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 15,
+          "form": "乘",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "支持",
+          "head": 24,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "向量机",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "(",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "LSSVM",
+          "head": 24,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 20,
+          "form": ")",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "与",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "小波",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "神经",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "网络",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "(",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "WNN",
+          "head": 24,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 27,
+          "form": ")",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "组合",
+          "head": 34,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 30,
+          "form": "燃气轮机",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "状态",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "趋势",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "预测",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "方法",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "把",
+          "head": 46,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 37,
+          "form": "最",
+          "head": 38,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 38,
+          "form": "小",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 39,
+          "form": "二",
+          "head": 40,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 40,
+          "form": "乘",
+          "head": 41,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "支持",
+          "head": 45,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "向量机",
+          "head": 41,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "的",
+          "head": 41,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 44,
+          "form": "预测",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "结果",
+          "head": 46,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "分为",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 47,
+          "form": "两",
+          "head": 48,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 48,
+          "form": "部分",
+          "head": 46,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": ",",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 50,
+          "form": "将",
+          "head": 61,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 51,
+          "form": "实际",
+          "head": 53,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 52,
+          "form": "参数",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "数据",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "与",
+          "head": 60,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 55,
+          "form": "前",
+          "head": 57,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 56,
+          "form": "一",
+          "head": 55,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 57,
+          "form": "部分",
+          "head": 60,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "的",
+          "head": 57,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 59,
+          "form": "预测",
+          "head": 60,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "结果",
+          "head": 61,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "计算",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "残差",
+          "head": 61,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": ",",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 64,
+          "form": "然后",
+          "head": 65,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 65,
+          "form": "利用",
+          "head": 46,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 66,
+          "form": "小波",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "神经",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "网络",
+          "head": 65,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "对",
+          "head": 71,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 70,
+          "form": "残差",
+          "head": 69,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "进行",
+          "head": 65,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 72,
+          "form": "预测",
+          "head": 71,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": ",",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 74,
+          "form": "再",
+          "head": 93,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 75,
+          "form": "将",
+          "head": 93,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 76,
+          "form": "预测",
+          "head": 78,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "的",
+          "head": 76,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 78,
+          "form": "残差",
+          "head": 93,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "与",
+          "head": 93,
+          "deprel": "prep",
+          "pos": "CC"
+        },
+        {
+          "id": 80,
+          "form": "最",
+          "head": 81,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 81,
+          "form": "小",
+          "head": 83,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 82,
+          "form": "二",
+          "head": 83,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 83,
+          "form": "乘",
+          "head": 84,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 84,
+          "form": "支持",
+          "head": 88,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 85,
+          "form": "向量机",
+          "head": 84,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": "的",
+          "head": 84,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 87,
+          "form": "预测",
+          "head": 88,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": "结果",
+          "head": 92,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 89,
+          "form": "的",
+          "head": 88,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 90,
+          "form": "后",
+          "head": 92,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 91,
+          "form": "一",
+          "head": 92,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 92,
+          "form": "部分",
+          "head": 79,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 93,
+          "form": "进行",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 94,
+          "form": "合成",
+          "head": 93,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 95,
+          "form": ",",
+          "head": 46,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 96,
+          "form": "将",
+          "head": 100,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 97,
+          "form": "合成",
+          "head": 99,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 98,
+          "form": "的",
+          "head": 97,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 99,
+          "form": "结果",
+          "head": 100,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 100,
+          "form": "作为",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 101,
+          "form": "最",
+          "head": 102,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 102,
+          "form": "小",
+          "head": 104,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 103,
+          "form": "二",
+          "head": 104,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 104,
+          "form": "乘",
+          "head": 105,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 105,
+          "form": "支持",
+          "head": 110,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 106,
+          "form": "向量机",
+          "head": 105,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 107,
+          "form": "-",
+          "head": 110,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 108,
+          "form": "小波",
+          "head": 110,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 109,
+          "form": "预测",
+          "head": 110,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "模型",
+          "head": 113,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 111,
+          "form": "的",
+          "head": 110,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 112,
+          "form": "预测",
+          "head": 113,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 113,
+          "form": "结果",
+          "head": 100,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合某型燃气轮机进行试验验证,验证结果表明,组合的最小二乘支持向量机与小波神经网络预测模型预测效果更好,预测结果相对误差为0.12%",
+      "tokens": [
+        "结合",
+        "某",
+        "型",
+        "燃气轮机",
+        "进行",
+        "试验",
+        "验证",
+        ",",
+        "验证",
+        "结果",
+        "表明",
+        ",",
+        "组合",
+        "的",
+        "最",
+        "小",
+        "二",
+        "乘",
+        "支持",
+        "向量机",
+        "与",
+        "小波",
+        "神经",
+        "网络",
+        "预测",
+        "模型",
+        "预测",
+        "效果",
+        "更",
+        "好",
+        ",",
+        "预测",
+        "结果",
+        "相对",
+        "误差",
+        "为",
+        "0.12%"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 11,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "型",
+          "head": 4,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 4,
+          "form": "燃气轮机",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "试验",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "验证",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "验证",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "结果",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "组合",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 15,
+          "form": "最",
+          "head": 16,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "小",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "二",
+          "head": 18,
+          "deprel": "nummod",
+          "pos": "OD"
+        },
+        {
+          "id": 18,
+          "form": "乘",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "支持",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "向量机",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "与",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "小波",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "神经",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "网络",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "预测",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "模型",
+          "head": 30,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "预测",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "效果",
+          "head": 30,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "更",
+          "head": 30,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 30,
+          "form": "好",
+          "head": 11,
+          "deprel": "ccomp",
+          "pos": "VA"
+        },
+        {
+          "id": 31,
+          "form": ",",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "预测",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "结果",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "相对",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 35,
+          "form": "误差",
+          "head": 36,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "为",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 37,
+          "form": "0.12%",
+          "head": 36,
+          "deprel": "attr",
+          "pos": "CD"
+        }
+      ]
+    }
+  ]
+}

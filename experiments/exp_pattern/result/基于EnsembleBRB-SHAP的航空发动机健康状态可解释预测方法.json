@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "航空发动机健康状态预测",
+    "subject_type": "技术任务",
+    "relation": "是...的环节",
+    "object": "发动机健康管理",
+    "object_type": "领域"
+  },
+  {
+    "subject": "航空发动机健康状态预测",
+    "subject_type": "技术任务",
+    "relation": "提升",
+    "object": "飞机可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机健康状态预测",
+    "subject_type": "技术任务",
+    "relation": "降低",
+    "object": "发动机维护成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "基于EnsembleBRB-SHAP的可解释预测方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "航空发动机健康状态预测",
+    "object_type": "技术任务"
+  },
+  {
+    "subject": "EnsembleBRB模型",
+    "subject_type": "模型",
+    "relation": "利用",
+    "object": "多源不确定数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "SHAP",
+    "subject_type": "解释方法",
+    "relation": "分析",
+    "object": "EnsembleBRB模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "SHAP",
+    "subject_type": "解释方法",
+    "relation": "定位",
+    "object": "影响发动机健康状态的关键因素",
+    "object_type": "因素"
+  },
+  {
+    "subject": "发动机故障实验监测数据",
+    "subject_type": "数据",
+    "relation": "验证",
+    "object": "基于EnsembleBRB-SHAP的可解释预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "商用模块化航空推进系统仿真软件",
+    "subject_type": "软件",
+    "relation": "提供",
+    "object": "发动机故障实验监测数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "低压涡轮机冷却液泄漏量",
+    "subject_type": "关键参数",
+    "relation": "决定",
+    "object": "发动机健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "风扇转速",
+    "subject_type": "关键参数",
+    "relation": "决定",
+    "object": "发动机健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "基于EnsembleBRB-SHAP的可解释预测方法",
+    "subject_type": "方法",
+    "relation": "支撑",
+    "object": "发动机健康管理",
+    "object_type": "决策工作"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "航空产品供应链",
+    "subject_type": "供应链",
+    "relation": "呈现",
+    "object": "发展趋势",
+    "object_type": "趋势"
+  },
+  {
+    "subject": "发展趋势",
+    "subject_type": "趋势",
+    "relation": "涉及",
+    "object": "原材料的生产",
+    "object_type": "领域"
+  },
+  {
+    "subject": "发展趋势",
+    "subject_type": "趋势",
+    "relation": "涉及",
+    "object": "信息技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "发展趋势",
+    "subject_type": "趋势",
+    "relation": "涉及",
+    "object": "管理创新",
+    "object_type": "方法"
+  },
+  {
+    "subject": "发展趋势",
+    "subject_type": "趋势",
+    "relation": "带来",
+    "object": "飞机设计理念的改变",
+    "object_type": "影响"
+  },
+  {
+    "subject": "发展趋势",
+    "subject_type": "趋势",
+    "relation": "带来",
+    "object": "全行业价值的变化",
+    "object_type": "影响"
+  },
+  {
+    "subject": "发展趋势",
+    "subject_type": "趋势",
+    "relation": "带来",
+    "object": "竞争优势的变化",
+    "object_type": "影响"
+  },
+  {
+    "subject": "发展趋势",
+    "subject_type": "趋势",
+    "relation": "决定",
+    "object": "企业的成败",
+    "object_type": "结果"
+  }
+]

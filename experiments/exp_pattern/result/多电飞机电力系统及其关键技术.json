@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "多电飞机",
+    "subject_type": "飞机",
+    "relation": "统一能源为",
+    "object": "电能",
+    "object_type": "能源"
+  },
+  {
+    "subject": "多电飞机",
+    "subject_type": "飞机",
+    "relation": "提高",
+    "object": "燃油经济性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多电飞机",
+    "subject_type": "飞机",
+    "relation": "提高",
+    "object": "可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多电飞机",
+    "subject_type": "飞机",
+    "relation": "提高",
+    "object": "维护性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "电力系统",
+    "subject_type": "系统",
+    "relation": "是核心",
+    "object": "机载二次能源系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "电力系统",
+    "subject_type": "系统",
+    "relation": "支撑",
+    "object": "多电飞机",
+    "object_type": "飞机"
+  },
+  {
+    "subject": "电力系统",
+    "subject_type": "系统",
+    "relation": "提升",
+    "object": "飞机综合性能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术",
+    "relation": "提升",
+    "object": "飞机综合性能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多电飞机",
+    "subject_type": "飞机",
+    "relation": "具有",
+    "object": "电力系统架构",
+    "object_type": "架构"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术",
+    "relation": "支撑",
+    "object": "电力系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "电力系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "高压",
+    "object_type": "发展趋势"
+  },
+  {
+    "subject": "电力系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "直流",
+    "object_type": "发展趋势"
+  },
+  {
+    "subject": "电力系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "智能化",
+    "object_type": "发展趋势"
+  }
+]

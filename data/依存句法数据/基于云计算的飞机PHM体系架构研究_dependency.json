@@ -1,0 +1,811 @@
+{
+  "title": "基于云计算的飞机PHM体系架构研究",
+  "summary": "针对目前国内飞机维修资源利用率较低的问题,提出一种基于云计算的故障预测与健康管理(PHM)体系架构。通过为云计算的虚拟层PHM资源建立基于粒子群算法的分配模型,使得在服务质量最优情况下,用户与资源的效用函数尽量大于需求与资源的效用函数。运用CloudSim平台进行仿真实验,结果表明,该体系架构可提高PHM系统的通用性和知识利用率,有效解决飞机维修保障中的资源优化问题。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对目前国内飞机维修资源利用率较低的问题,提出一种基于云计算的故障预测与健康管理(PHM)体系架构",
+      "tokens": [
+        "针对",
+        "目前",
+        "国内",
+        "飞机",
+        "维修",
+        "资源",
+        "利用率",
+        "较",
+        "低",
+        "的",
+        "问题",
+        ",",
+        "提出",
+        "一",
+        "种",
+        "基于",
+        "云计算",
+        "的",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "体系",
+        "架构"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "目前",
+          "head": 9,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "国内",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "维修",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "资源",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "利用率",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "较",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "低",
+          "head": 11,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "一",
+          "head": 15,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 15,
+          "form": "种",
+          "head": 28,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 16,
+          "form": "基于",
+          "head": 28,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "云计算",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 16,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "故障",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "预测",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "与",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "健康",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "管理",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "(",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "PHM",
+          "head": 23,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ")",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "体系",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "架构",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过为云计算的虚拟层PHM资源建立基于粒子群算法的分配模型,使得在服务质量最优情况下,用户与资源的效用函数尽量大于需求与资源的效用函数",
+      "tokens": [
+        "通过",
+        "为",
+        "云计算",
+        "的",
+        "虚拟层",
+        "PHM",
+        "资源",
+        "建立",
+        "基于",
+        "粒子群",
+        "算法",
+        "的",
+        "分配",
+        "模型",
+        ",",
+        "使得",
+        "在",
+        "服务",
+        "质量",
+        "最优",
+        "情况",
+        "下",
+        ",",
+        "用户",
+        "与",
+        "资源",
+        "的",
+        "效用",
+        "函数",
+        "尽量",
+        "大于",
+        "需求",
+        "与",
+        "资源",
+        "的",
+        "效用",
+        "函数"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "为",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "云计算",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "虚拟层",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "PHM",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "资源",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "建立",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "基于",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "粒子群",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "算法",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "分配",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "模型",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "使得",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "在",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "服务",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "质量",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "最优",
+          "head": 21,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "情况",
+          "head": 22,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "下",
+          "head": 17,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "用户",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "与",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "资源",
+          "head": 29,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 28,
+          "form": "效用",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "函数",
+          "head": 31,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "尽量",
+          "head": 31,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 31,
+          "form": "大于",
+          "head": 16,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "需求",
+          "head": 34,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "与",
+          "head": 34,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "资源",
+          "head": 37,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 36,
+          "form": "效用",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "函数",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "运用CloudSim平台进行仿真实验,结果表明,该体系架构可提高PHM系统的通用性和知识利用率,有效解决飞机维修保障中的资源优化问题",
+      "tokens": [
+        "运用",
+        "CloudSim",
+        "平台",
+        "进行",
+        "仿真",
+        "实验",
+        ",",
+        "结果",
+        "表明",
+        ",",
+        "该",
+        "体系",
+        "架构",
+        "可",
+        "提高",
+        "PHM",
+        "系统",
+        "的",
+        "通用性",
+        "和",
+        "知识",
+        "利用率",
+        ",",
+        "有效",
+        "解决",
+        "飞机",
+        "维修",
+        "保障",
+        "中",
+        "的",
+        "资源",
+        "优化",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "运用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "CloudSim",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "平台",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "仿真",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "实验",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "结果",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "表明",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "该",
+          "head": 13,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 12,
+          "form": "体系",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "架构",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "可",
+          "head": 15,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "提高",
+          "head": 9,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "PHM",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "系统",
+          "head": 22,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "通用性",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "和",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "知识",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "利用率",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "有效",
+          "head": 25,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 25,
+          "form": "解决",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "飞机",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "维修",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "保障",
+          "head": 29,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "中",
+          "head": 33,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 31,
+          "form": "资源",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "优化",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "问题",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

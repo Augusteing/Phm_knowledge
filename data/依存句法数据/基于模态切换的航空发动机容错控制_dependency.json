@@ -1,0 +1,1093 @@
+{
+  "title": "基于模态切换的航空发动机容错控制",
+  "summary": "综合了航空发动机控制和故障诊断方法,设计了基于模态切换的任务级和发动机级模式的容错控制系统.任务级模式在发动机部件故障时,通过切换控制策略和控制模式达到恢复或降低发动机性能的要求;发动机级模式在控制回路失效时,根据故障情况切换到容错控制回路,从而保证发动机继续正常工作.数字仿真结果表明:在稳态或加速过程中出现部件故障时,容错控制系统都能够100%恢复发动机的推力;在发动机中间、慢车和节流状态下,当压气机转速控制回路失效时,容错控制系统能够在3s内平稳切换到风扇转速控制回路.",
+  "analyzed_sentences": [
+    {
+      "sentence": "综合了航空发动机控制和故障诊断方法,设计了基于模态切换的任务级和发动机级模式的容错控制系统.任务级模式在发动机部件故障时,通过切换控制策略和控制模式达到恢复或降低发动机性能的要求;发动机级模式在控制回路失效时,根据故障情况切换到容错控制回路,从而保证发动机继续正常工作.数字仿真结果表明:在稳态或加速过程中出现部件故障时,容错控制系统都能够100%恢复发动机的推力;在发动机中间、慢车和节流状态下,当压气机转速控制回路失效时,容错控制系统能够在3s内平稳切换到风扇转速控制回路.",
+      "tokens": [
+        "综合",
+        "了",
+        "航空",
+        "发动机",
+        "控制",
+        "和",
+        "故障",
+        "诊断",
+        "方法",
+        ",",
+        "设计",
+        "了",
+        "基于",
+        "模态",
+        "切换",
+        "的",
+        "任务级",
+        "和",
+        "发动机",
+        "级",
+        "模式",
+        "的",
+        "容错",
+        "控制",
+        "系统",
+        ".",
+        "任务级",
+        "模式",
+        "在",
+        "发动机",
+        "部件",
+        "故障",
+        "时",
+        ",",
+        "通过",
+        "切换",
+        "控制",
+        "策略",
+        "和",
+        "控制",
+        "模式",
+        "达到",
+        "恢复",
+        "或",
+        "降低",
+        "发动机",
+        "性能",
+        "的",
+        "要求",
+        ";",
+        "发动机",
+        "级",
+        "模式",
+        "在",
+        "控制",
+        "回路",
+        "失效",
+        "时",
+        ",",
+        "根据",
+        "故障",
+        "情况",
+        "切换",
+        "到",
+        "容错",
+        "控制",
+        "回路",
+        ",",
+        "从而",
+        "保证",
+        "发动机",
+        "继续",
+        "正常",
+        "工作",
+        ".",
+        "数字",
+        "仿真",
+        "结果",
+        "表明",
+        ":",
+        "在",
+        "稳态",
+        "或",
+        "加速",
+        "过程",
+        "中",
+        "出现",
+        "部件",
+        "故障",
+        "时",
+        ",",
+        "容错",
+        "控制",
+        "系统",
+        "都",
+        "能够",
+        "100%",
+        "恢复",
+        "发动机",
+        "的",
+        "推力",
+        ";",
+        "在",
+        "发动机",
+        "中间",
+        "、",
+        "慢车",
+        "和",
+        "节流",
+        "状态",
+        "下",
+        ",",
+        "当",
+        "压气机",
+        "转速",
+        "控制",
+        "回路",
+        "失效",
+        "时",
+        ",",
+        "容错",
+        "控制",
+        "系统",
+        "能够",
+        "在",
+        "3s",
+        "内",
+        "平稳",
+        "切换",
+        "到",
+        "风扇",
+        "转速",
+        "控制",
+        "回路",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "综合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "控制",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "诊断",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "设计",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "基于",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "模态",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "切换",
+          "head": 25,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 17,
+          "form": "任务级",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "和",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "发动机",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "级",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "模式",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "容错",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "控制",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "系统",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ".",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "任务级",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "模式",
+          "head": 42,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "在",
+          "head": 42,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 30,
+          "form": "发动机",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "部件",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "故障",
+          "head": 33,
+          "deprel": "lccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "时",
+          "head": 29,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "通过",
+          "head": 42,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 36,
+          "form": "切换",
+          "head": 35,
+          "deprel": "pccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "控制",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "策略",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "和",
+          "head": 41,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "控制",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "模式",
+          "head": 35,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "达到",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "恢复",
+          "head": 49,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "或",
+          "head": 43,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 45,
+          "form": "降低",
+          "head": 43,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "发动机",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "性能",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 43,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 49,
+          "form": "要求",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": ";",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 51,
+          "form": "发动机",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "级",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "模式",
+          "head": 63,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "在",
+          "head": 63,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 55,
+          "form": "控制",
+          "head": 58,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 56,
+          "form": "回路",
+          "head": 57,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "失效",
+          "head": 55,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "时",
+          "head": 54,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 59,
+          "form": ",",
+          "head": 63,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 60,
+          "form": "根据",
+          "head": 63,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 61,
+          "form": "故障",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "情况",
+          "head": 60,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "切换",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "到",
+          "head": 63,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 65,
+          "form": "容错",
+          "head": 66,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 66,
+          "form": "控制",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 67,
+          "form": "回路",
+          "head": 63,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": ",",
+          "head": 63,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "从而",
+          "head": 70,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 70,
+          "form": "保证",
+          "head": 63,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 71,
+          "form": "发动机",
+          "head": 74,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "继续",
+          "head": 74,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 73,
+          "form": "正常",
+          "head": 74,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 74,
+          "form": "工作",
+          "head": 70,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 75,
+          "form": ".",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 76,
+          "form": "数字",
+          "head": 78,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "仿真",
+          "head": 78,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 78,
+          "form": "结果",
+          "head": 79,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "表明",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 80,
+          "form": ":",
+          "head": 79,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 81,
+          "form": "在",
+          "head": 98,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 82,
+          "form": "稳态",
+          "head": 84,
+          "deprel": "conj",
+          "pos": "JJ"
+        },
+        {
+          "id": 83,
+          "form": "或",
+          "head": 82,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 84,
+          "form": "加速",
+          "head": 85,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "过程",
+          "head": 86,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": "中",
+          "head": 81,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 87,
+          "form": "出现",
+          "head": 90,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 88,
+          "form": "部件",
+          "head": 89,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 89,
+          "form": "故障",
+          "head": 87,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 90,
+          "form": "时",
+          "head": 81,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 91,
+          "form": ",",
+          "head": 98,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 92,
+          "form": "容错",
+          "head": 94,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 93,
+          "form": "控制",
+          "head": 94,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "系统",
+          "head": 98,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 95,
+          "form": "都",
+          "head": 98,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 96,
+          "form": "能够",
+          "head": 98,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 97,
+          "form": "100%",
+          "head": 98,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 98,
+          "form": "恢复",
+          "head": 79,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 99,
+          "form": "发动机",
+          "head": 101,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 100,
+          "form": "的",
+          "head": 99,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 101,
+          "form": "推力",
+          "head": 98,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 102,
+          "form": ";",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 103,
+          "form": "在",
+          "head": 129,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 104,
+          "form": "发动机",
+          "head": 105,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 105,
+          "form": "中间",
+          "head": 110,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 106,
+          "form": "、",
+          "head": 110,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 107,
+          "form": "慢车",
+          "head": 109,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 108,
+          "form": "和",
+          "head": 109,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 109,
+          "form": "节流",
+          "head": 110,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "状态",
+          "head": 111,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 111,
+          "form": "下",
+          "head": 103,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 112,
+          "form": ",",
+          "head": 129,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 113,
+          "form": "当",
+          "head": 129,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 114,
+          "form": "压气机",
+          "head": 116,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 115,
+          "form": "转速",
+          "head": 116,
+          "deprel": "advmod",
+          "pos": "NN"
+        },
+        {
+          "id": 116,
+          "form": "控制",
+          "head": 119,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 117,
+          "form": "回路",
+          "head": 118,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 118,
+          "form": "失效",
+          "head": 116,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 119,
+          "form": "时",
+          "head": 113,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 120,
+          "form": ",",
+          "head": 129,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 121,
+          "form": "容错",
+          "head": 123,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 122,
+          "form": "控制",
+          "head": 123,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 123,
+          "form": "系统",
+          "head": 129,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 124,
+          "form": "能够",
+          "head": 129,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 125,
+          "form": "在",
+          "head": 129,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 126,
+          "form": "3s",
+          "head": 127,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 127,
+          "form": "内",
+          "head": 125,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 128,
+          "form": "平稳",
+          "head": 129,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 129,
+          "form": "切换",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 130,
+          "form": "到",
+          "head": 129,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 131,
+          "form": "风扇",
+          "head": 132,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 132,
+          "form": "转速",
+          "head": 133,
+          "deprel": "advmod",
+          "pos": "NN"
+        },
+        {
+          "id": 133,
+          "form": "控制",
+          "head": 129,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 134,
+          "form": "回路",
+          "head": 133,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 135,
+          "form": ".",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

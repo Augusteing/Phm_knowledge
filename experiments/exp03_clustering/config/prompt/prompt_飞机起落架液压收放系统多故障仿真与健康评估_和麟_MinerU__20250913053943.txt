@@ -1,0 +1,382 @@
+# 实体关系抽取Prompt
+
+## 任务描述
+你的角色是一位专业的学术文献实体关系抽取专家，专精于从航空航天领域科研文献中识别和抽取实体及其关系。你的任务是通读给定文本，抽取文本中出现的核心实体，及其对应的关系，并以JSON格式输出。
+
+## 实体定义
+文献中出现的核心概念：算法、方法、模型、系统、故障、指标等都可视为实体。实体可以包括：
+- **研究领域**
+定义 ：PHM相关的研究方向和应用领域 
+示例 ：故障预测与健康管理(PHM)、故障诊断、剩余使用寿命预测(RUL)、健康状态评估、预测性维护等
+- **研究方法**
+定义 ：PHM研究中采用的具体方法和技术路线 
+示例 ：寿命预测、趋势预测、健康预测、风险评估、状态监测、故障诊断、性能评估等
+- **理论基础**
+定义 ：支撑PHM技术的基础理论和数学原理 
+示例 ：信号处理理论、机器学习理论、可靠性理论、概率统计理论、控制理论等
+- **模型**
+定义 ：基于特定算法构建的具体结构或实例 示例 ：LSTM神经网络、Transformer模型、深度置信网络(DBN)、隐马尔可夫模型(HMM)、ARIMA模型等
+- **算法**
+定义 ：用于解决特定问题的计算方法和程序步骤 
+示例 ：遗传算法、粒子群优化、支持向量机(SVM)、随机森林、卡尔曼滤波等
+- **系统/部件**
+定义 ：航空航天设备的系统或组成部件 
+示例 ：航空发动机、齿轮箱、轴承、叶片、燃油系统、液压系统、航电系统等
+- **故障模式**
+定义 ：设备可能出现的故障类型和失效模式 
+示例 ：轴承磨损、疲劳裂纹、腐蚀、过热、振动异常、性能退化等
+- **数据集**
+定义 ：用于训练和验证模型的标准数据集 
+示例 ：C-MAPSS数据集、CWRU轴承数据集、IMS轴承数据集、PHM Challenge数据集等
+- **传感器/监测参数**
+定义 ：用于监测设备状态的传感器设备和监测参数 
+示例 ：振动传感器、温度传感器、压力传感器、转速、振动信号、温度、压力等
+- **特征/健康指标**
+定义 ：表征设备健康状态的特征参数和指标 
+示例 ：剩余使用寿命(RUL)、健康指标(HI)、退化指标、频域特征、时域特征、统计特征等
+- **性能指标**
+定义 ：评估模型或方法性能的量化指标 
+示例 ：准确率、精确率、召回率、F1分数、均方根误差(RMSE)、平均绝对误差(MAE)等
+- **软件工具**
+定义 ：用于PHM研究和应用的软件平台和工具 
+示例 ：MATLAB、Python、TensorFlow、PyTorch、Simulink、LabVIEW等
+- **应用场景**
+定义 ：PHM技术的具体应用环境和场景 
+示例 ：发动机健康监测、结构健康监测、预测性维护、故障诊断系统、机载健康管理等
+
+## 关系定义
+文献中的实体之间通常存在逻辑、演进、依赖、功能、组合、比较、创新、评价或因果等联系。关系类型包括但不限于：
+### 1. 技术演进类
+- 发展为 ：传统RNN发展为LSTM
+- 改进了 ：注意力机制改进了Transformer性能
+- 演化成 ：专家系统演化成机器学习方法
+- 升级为 ：基础模型升级为集成模型
+### 2. 依赖关系类
+- 基于 ：健康预测模型基于振动信号特征
+- 依据 ：故障诊断依据传感器数据；轴承剩余寿命预测模型参数依据多传感器振动和温度信号
+- 利用 ：深度学习利用大数据优势
+- 采用 ：系统采用多传感器融合技术
+- 建立在 ：深度卷积残差网络模型建立在卷积神经网络理论
+### 3. 功能关系类
+- 应用于 ：机器学习应用于故障预测
+- 用于 ：卡尔曼滤波用于状态估计
+- 解决 ：深度学习解决特征提取问题
+- 实现 ：神经网络实现非线性映射
+- 支持 ：传感器网络支持实时监测
+- 处理 ：主成分分析方法处理航空发动机多维传感器振动数据
+- 预测/诊断 ：LSTM模型预测飞机发动机轴承剩余寿命
+### 4. 因果关系类
+- 导致 ：轴承磨损导致振动异常；高温导致涡轮叶片疲劳加速
+- 引起 ：温度升高引起性能退化；润滑不足引起齿轮磨损
+- 造成 ：疲劳载荷造成裂纹扩展
+- 产生 ：故障产生异常信号；振动异常产生轴承早期故障信号
+- 影响 ：载荷波动影响剩余寿命预测精度
+### 5. 组合关系类
+- 包含 ：PHM系统包含数据采集模块
+- 包括 ：航空装备可用度影响因素包括装备系统的构成及其可靠性、维修性参数
+- 组成 ：多个传感器组成监测网络
+- 结合 ：物理模型结合数据驱动方法
+- 融合 ：多源信息融合提高精度；多传感器数据融合方法融合时域和频域振动特征
+- 由…组成 ：传感器系统由加速度传感器、温度传感器和压力传感器组成
+### 6. 比较关系类
+- 优于 ：深度学习优于传统方法
+- 超越 ：新算法超越现有基准
+- 区别于 ：监督学习区别于无监督学习
+- 对比 ：不同方法的性能对比；基于Copula相似性的航空发动机RUL预测方法对比传统方法
+### 7. 创新关系类
+- 提出了 ：本文提出了一种结合小波变换的轴承故障诊断方法
+- 开发了 ：团队开发了创新算法
+- 设计了 ：研究设计了新型传感器
+- 创建了 ：本文创建了标准数据集
+- 创新了 ：多尺度特征融合方法创新了不同时间分辨率振动信号的联合分析
+- 突破了 ：Deep RUL预测方法突破了小样本寿命预测的限制
+### 8. 结果评价类
+- 评价指标是 ：RUL预测模型评价指标是均方根误差和平均绝对百分比误差
+- 得出 ：RUL预测模型得出航空发动机剩余寿命的数值估计
+### 关系抽取指导原则
+1.全面性 ：不遗漏任何有意义的实体间联系
+2.创新性 ：特别关注学术文献中的创新关系和技术演进
+3.灵活性 ：关系类型不限于上述分类，可根据实际语义创建新关系
+4.动态性 ：关注时间维度上的变化和发展关系
+5.隐含性 ：挖掘文本中隐含但语义明确的关系
+关系只需反映实体间实际存在的语义联系，具体类型无需严格限定，允许根据上下文灵活判断。
+
+### 关系抽取指导原则
+1. **全面性**：不遗漏任何有意义的实体间联系
+2. **创新性**：特别关注学术文献中的创新关系和技术演进
+3. **灵活性**：关系类型不限于上述分类，可根据实际语义创建新关系
+4. **动态性**：关注时间维度上的变化和发展关系
+5. **隐含性**：挖掘文本中隐含但语义明确的关系
+
+## schema 定义
+{schema_placeholder}
+
+## 抽取指令
+### 步骤1：核心实体识别
+- 重点扫描 摘要、引言和结论 部分，识别论文的核心研究对象、主要方法和关键成果
+- 从关键段落中提取第一批核心实体（通常是最重要的技术、模型、系统等）
+### 步骤2：关系发现与扩展
+- 围绕已识别的核心实体，在原文中寻找描述它们关系的 动词和关键短语
+- 构建核心关系三元组：(头实体, 关系类型, 尾实体)
+- 将关系中新出现的重要实体加入实体列表，继续寻找它们的关系
+### 步骤3：质量检查与输出
+- 确保relations中的所有实体都在entities列表中
+- 检查实体命名的一致性（统一同义词）
+- 验证关系的逻辑合理性和准确性
+- 按JSON格式输出最终结果
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+
+## 输出格式
+请严格按照以下JSON格式输出结果：
+
+```json
+{
+  "entities": [
+    {
+      "name": "故障注入",
+      "type": "方法"
+    },
+    {
+      "name": "故障诊断",
+      "type": "技术"
+    },
+    {
+      "name": "故障预测",
+      "type": "技术"
+    },
+    {
+      "name": "故障预测方法",
+      "type": "方法"
+    },
+    {
+      "name": "飞机液压泵",
+      "type": "系统/部件"
+    },
+    {
+      "name": "液压系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "健康评估",
+      "type": "技术"
+    },
+    {
+      "name": "劣化度",
+      "type": "指标"
+    },
+    {
+      "name": "贝叶斯网络",
+      "type": "模型"
+    },
+    {
+      "name": "健康管理",
+      "type": ""
+    }
+  ],
+  "relations": [
+    {
+      "head": "健康管理",
+      "relation": "以...为主要手段",
+      "tail": "故障诊断"
+    },
+    {
+      "head": "健康管理",
+      "relation": "以...为主要手段",
+      "tail": "故障预测"
+    },
+    {
+      "head": "飞机液压泵",
+      "relation": "是...的关键部件",
+      "tail": "液压系统"
+    },
+    {
+      "head": "贝叶斯网络",
+      "relation": "是...的健康评估方法",
+      "tail": "健康评估"
+    }
+  ]
+}
+```
+
+## 注意事项
+###必须遵守的规则：
+1.严格按照JSON格式输出 ：确保entities和relations数组格式正确
+2.实体类型灵活性 ：不局限于给定的实体类型，可根据文本内容创建新类型
+3.关系类型创新性 ：优先使用已定义的关系类型，但允许根据语义创建新关系
+4.完整概念原则 ：选择最有意义的完整概念作为实体，避免过度分割
+5. **不受schema限制**：给定的schema和示例仅作参考，实体类型和关系类型均不仅限于此
+6. **实体一致性**：确保relations中引用的所有实体都在entities数组中明确定义
+7. **关系准确性**：关系表述应准确反映实体间的真实语义联系
+###特别关注：
+- 技术演进关系 ：重点识别"基于"、"改进"、"发展"、"演化"等创新关系
+- 比较关系 ：注意"优于"、"劣于"、"相似于"、"区别于"等对比关系
+- 应用关系 ：关注"应用于"、"解决"、"处理"等实际应用联系
+- 隐含关系 ：挖掘文本中未明确表述但语义清晰的关系
+
+质量保证：
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+- 保持实体边界的准确性，既不过度合并也不过度分割
+
+
+## 输入数据 
+现在，你将接收到用于处理的本次任务的全部输入数据。
+论文全文:
+```markdown```
+# 飞机起落架液压收放系统多故障仿真与健康评估
+
+和麟，梁丽媛，马存宝
+
+（1. 西北工业大学航空学院，陕西西安 710072；2. 西安飞豹科技发展公司仿真部，陕西阎良 710089)
+
+摘要：起落架不能正常收放严重威胁飞行安全，迫切需要掌握其健康状态以便提前预防故障发生。以典型支线客机的起落架收放系统为研究对象，探索了对不同故障模式下的健康程度进行评估的方法。利用AMESim软件建立了该系统的仿真模型，研究液压回路中元件参数性能变化对系统工作性能的影响。选取系统输出参数，提取故障特征，利用神经网络算法实现了系统的健康评估。结论表明该方法是可行的，为新一代飞机起落架液压收放系统的健康评估提供了思路。
+
+关键词：飞机液压系统；起落架收放；故障模式；AMESim仿真；健康评估；神经网络  中图分类号：TP3 文献标志码：A 文章编号：1000- 2758（2016）06- 0990- 06
+
+起落架液压收放系统是对安全要求最高的飞机系统之一，其工作是否正常直接影响飞机正常起降和乘客生命安全，近年来，飞机起落架不能正常收放的事故屡见报端。飞机系统健康管理是近年来的研究热点，通过对设备进行状态监控、故障诊断以及预测等工作，能够将传统的定期维修转变为视情维修，提前预防故障的发生。健康评估是健康管理系统中重要的组成部分。一直以来，飞机发动机等系统的健康管理受到更多重视，近年来人们也开始研究飞机液压、起落架系统甚至机载设备的健康管理。波音公司已经将起落架收放系统健康管理进行了应用，但其采用的方法没有文献可以参考。国内目前的研究工作主要针对起落架收放过程及故障的仿真，其主要目的是用于指导系统的设计工作，在健康管理方面开展的研究还很少。起落架液压收放系统元件性能参数的进化可能会引起系统工作性能恶化，严重时会造成收放工作不能完成，因此，有必要对其开展健康评估工作。
+
+起落架、液压等系统都是具有分布参数的复杂非线性系统，影响系统工作特性的因素较多，故障模式多样，仿真分析是比较理想的一种分析方法。AMESim是基于键合图的液压、机械系统建模、仿真及动力学分析软件，波音、空客等在系统设计研发中都不同程度地使用了该软件。本文利用该软
+
+件进行起落架液压收放系统建模仿真，分析了影响起落架收放的因素，并给出了不同部件在不同故障下对系统输出参数的影响，然后对该系统进行了健康评估。
+
+# 1 起落架液压收放系统仿真建模
+
+# 1.1 系统原理模型
+
+起落架收放系统的基本结构如图1所示
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/7d442a00-5e6b-48f6-bd9e-80167e6e0f7c/dda59e20ee25b121e798658ec667321d140a12ec574aaeb9db72dda04717cd8c.jpg)  
+图1 起落架液压收放系统基本原理
+
+液压源部分包括液压泵、油箱、油滤组件及蓄压
+
+器等。液压泵将电动机或发动机输出的机械能转变为液压能，为起落架收放系统提供一定的压力和流量，并维持系统出口压力稳定；油液流经液压油滤、单向阀、蓄压器及卸压安全阀流向起落架选择阀，通过选择阀的收起或放下通道流向起落架收放系统的收起或放下回路，驱动收放系统中各个锁作动筒及收放作动筒运动，完成起落架的收放动作。
+
+# 1.2 仿真模型
+
+仿真的主要步骤为：在草图模式下搭建系统的结构模型，在子模型模式下给每个元件分配合适的数学模型，在参数模式下为每个子模型设置参数，最后运行仿真。根据对起落架收放系统工作原理的分析，建模时需要重点考虑的是起落架收放系统的顺序动作实现、前起锁作动筒的顺序动作实现，以及作动筒速度的调节，以实现在规定时间内收放到位。所建立的模型如图2所示。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/7d442a00-5e6b-48f6-bd9e-80167e6e0f7c/b836f478398293ba53358c70dc394e7e27965dfbf31a75b876724e8fdf7d0346.jpg)  
+（1.油箱2.液压泵3.液压油滤4.单向阀5.电磁换向阀6.电磁阀和单向阀的组合7.单向节流阀8.前起收放作动筒9.前起锁作动筒10.主起收放作动筒11.主起下位锁作动筒12.主起上位锁作动筒）图2 起落架收放系统液压回路模型
+
+模型初步搭建后，给每个元件分配合适的子模型，并根据典型支线客机的系统参数对各元件的参数进行设置。例如：作动筒为双腔单杆液压缸模型，参数包括作动筒的活塞直径/行程、活塞杆直径、运动部件等效质量；电磁换向阀为3位四通电液比例阀，参数有自然频率、阻尼率、通道流量/压降，等等。
+
+模型参数设置好之后，结合某型飞机起落架收放系统的收放所需时间，设计起落架收起时间为8s，放下时间为  $10\mathrm{s}$  。该时间设置可以通过调节节流阀开口量的大小对起落架收放作动筒的运动速度进行调节来实现。仿真得到的起落架收放作动筒和锁作动筒的位移曲线如图3所示，从中可以看出起落架收起和放下符合设计要求。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/7d442a00-5e6b-48f6-bd9e-80167e6e0f7c/80462d6b7ab628a8e8165a1a5cdf204f349249aab04aadf4a03365f49eb8b086.jpg)  
+图3 前起落架收放及锁作动筒位移变化
+
+# 2 系统多故障模式仿真结果
+
+# 2.1 健康性能影响仿真结果与分析
+
+健康性能影响因素分析是实现健康状态监测和评估的基础。元件性能参数的退化可能会引起系统工作性能恶化，严重时会造成收放工作不能完成。下面，我们利用系统的仿真模型，研究元件性能参数变化对系统工作特性的影响，就可以通过对关键的状态参数进行监测来评估其健康情况。
+
+根据故障模式及影响分析（failure mode and effect analysis，FMEA）可知，该系统易发生电磁换向阀开口量不足、作动筒泄漏、液压泵泄漏等问题。系统液压回路主要动态参数中反映系统健康状态信息最多的是压力、流量和时间3个参数。作者仿真了不同故障模式下这几个参数的变化情况。限于篇幅，我们仅以作动筒发生不同程度内泄漏为例给出仿真结果。
+
+作动筒发生内泄漏时，一部分液压油会从作动筒的进油腔进入回油腔，使得液压泵出口压力减小。为了补充泄漏引起的流量损失，液压泵出口处的流
+
+量会增大。泄漏导致活塞杆运动速度减慢，使得活塞杆缩进到位所需的时间延长，即主起落架放下过程所需的时间增加。随着内泄漏程度的不断增大
+
+（泄漏系数从0.01变化到  $0.03\mathrm{L / min / bar}$  ），参数的减小或增大越明显。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/7d442a00-5e6b-48f6-bd9e-80167e6e0f7c/973d8c7128ec8bbd64f1b00ce3141b599f054e4ef22492e99d623b10d2bba311.jpg)  
+图4 作动筒不同程度泄漏时输出参数变化曲线
+
+通过全部仿真结果分析可得，当发生电磁换向阀开口量不足、作动筒泄漏、液压泵部件功能降级等问题时，压力、流量和起落架运动到位所需时间均会有明显的单调变化。
+
+# 2.2 特征参数提取
+
+从仿真结果可以看出，利用AMESim建模仿真得到的信号都是时域信号，这些信号能够直观反映系统的状态，因此我们将直接提取相应的统计特征作为后续诊断模型的输入。我们以液压泵动态工作过程和稳定状态时泵的出口压力平均值、压力的峭度值、起落架放下过程中泵出口流量的均值和起落架放下时间为健康特征，将这其作为输入量，并采用如下的归一化映射：
+
+$$
+y = \left(y_{\mathrm{max}} - y_{\mathrm{min}}\right)\times \frac{x - x_{\mathrm{min}}}{x_{\mathrm{max}} - x_{\mathrm{min}}}\times y_{\mathrm{min}} \tag{1}
+$$
+
+式中，  $x_{\mathrm{min}}$  和  $x_{\mathrm{max}}$  是原始数据的最小值和最大值，  $y_{\mathrm{min}}$  和  $y_{\mathrm{max}}$  是映射的范围参数，分别为- 1和1。
+
+我们将每种故障类别对应的健康程度分为健康、轻微故障、中等故障和严重故障四级。故障类型为选择阀开口不足故障、作动筒内漏故障和液压泵内漏。在此基础上进行健康评估。
+
+# 3 多故障健康评估
+
+一般的健康评估是指判断退化过程中的所处的健康降级程度，本文的健康评估还包括判断引起健康水平降级的故障模式。这实际上是一个分类问题，但需要同时考虑系统的故障模式以及故障程度。
+
+现有的健康评估方法主要有模型法、层次分析法、模糊评判法、贝叶斯网络法，这些方法存在建模过程复杂、主观影响大等问题。而神经网络具有非线性映射关系及较强的分类性能，在已有的历史对应关系的训练下，可记忆系统的分类特性，本文即采用该方法。
+
+# 3.1 算法模型及参数设置
+
+典型的向前型神经网络具有1个输入层、数个隐含层和1个输出层，层与层之间采用全连接的方式，同一层的神经元之间不存在相互连接。理论上已经证明，具有1个隐含层的3层网络可以逼近任意非线性函数，因此3层网络的应用最为普遍，如图5所示。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/7d442a00-5e6b-48f6-bd9e-80167e6e0f7c/b371236382584a3f2748c1118bbcbab31bfb8387e9b9064e408f6db722a42a75.jpg)  
+图5 神经网络结构图
+
+模型输入信号为  $\mathbf{x},\mathbf{x} = \left[\mathbf{x}_1,\mathbf{x}_2,\dots \mathbf{x}_m\right]^{\mathrm{T}}$  ；输出信号为  $\mathbf{y},\mathbf{y} = \left[\mathbf{y}_1,\mathbf{y}_2,\dots \mathbf{y}_m\right]^{\mathrm{T}}$  ；隐含层共有  $l$  个节点，其中第  $i$  个节点的信号为：
+
+$$
+I_{i}^{1} = \sum_{j = 1}^{m}w_{ij}x_{j} - b_{i}^{1} \tag{2}
+$$
+
+式中，  $w_{ij}$  为权值  $w^{1}$  中位于第  $i$  行第  $j$  列的元素，表示输入层第  $i$  个节点与隐含层第  $j$  个节点间的连接权值；  $b^{1}$  为阈值，  $b_{i}^{1}$  为其中第  $i$  个元素，表示第  $j$  个节点的阈值。隐含层第  $i$  个节点的输出为：
+
+$$
+o_{i} = f^{i}\left(I_{i}^{1}\right) \tag{3}
+$$
+
+式中，  $f^{i}$  为隐含层的激励函数。输出层的关系与隐含层相似，权值、激励函数和阈值分别为  $w^{2}$  和  $b^{2}$  。网路初始权值设定后，就可以得到网络输出，比较该输出与期望输出，将误差信号反向传播用于调整各层神经元的连接权值，使误差达到精度要求。权值的更新一般采用基于梯度下降的算法：
+
+$$
+w_{ij}(k + 1) = w_{ij}(k) - \eta \frac{\partial E}{\partial w_{ij}} (k) \tag{4}
+$$
+
+式中，  $\eta$  为学习速率或步长，  $E$  表示误差，通常用网络实际输出与期望输出之间误差平方和的平均值即均方误差来计算：
+
+$$
+E_{\mathrm{mse}} = \frac{1}{n}\sum_{i = 1}^{n}\left(e_{i}^{2}\right) = \frac{1}{n}\sum_{i = 1}^{n}\left(y_{i} - q_{i}\right)^{2} \tag{5}
+$$
+
+式中，  $y_{i}$  表示实际输出，  $q_{i}$  表示期望输出。
+
+隐含层节点数  $i = 2m + a,a$  为  $0\sim 8$  之间的调节常数，因此隐含层的数目可以有几种不同取值。网络的隐含层神经元激励函数采用tansig型，输出层的激励函数采用purelin型，学习训练采用Levenberg- Marquardt算法，期望误差值选为  $1\times 10^{- 5}$  学习速率设定为0.4，网络的最大选代次数为2000次。
+
+为了将故障模式和故障程度同时划分，将特征向量对应的故障模式和健康程度表示为二维矢量，则网络的输出层神经元个数为2。每种故障模式的每种健康程度分别有20组数据作为训练样本，共有200组数据构成网络的训练样本。采集系统处于3种故障模式时的状态数据各27组，和正常状态时的12组数据，共93组数据作为测试样本。
+
+# 3.2 健康评估结果
+
+在不同隐含层节点数下分别对对网络进行训练，然后将测试样本输入其中进行健康评估。图6为隐含层节点为17时网络的训练误差曲线和健康评估结果。
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/7d442a00-5e6b-48f6-bd9e-80167e6e0f7c/bc47f67ae8937264d24da110c7632ce691ccde4c64bcae566fba4f1236a4a230.jpg)  
+图6 健康评估结果
+
+经过选代后网络的最终训练误差为  $8.15\times 10^{- 6}$  满足误差要求，而且分类效果也比较好。我们分别计算不同隐含层节点数下的故障类别和故障程度的诊断正确率，结果如表1所示。
+
+可以看到，隐含层节点数目的取值对故障识别正确率有较大的影响，隐含层节点数为17时最佳，对故障类别的诊断正确率达到了最高，但故障程度评估正确率略低。以上结果说明该方法能够对健康进行比较好的分类，诊断出故障类别并评估出故障程度，即采用该方法对系统进行健康评估是可行的，而且故障特征选取也是合理的。由图4的参数变化曲线也可以看到，部件参数退化时起落架收放系统
+
+表1各隐含层节点数下的评估结果  
+
+<table><tr><td rowspan="2">隐含层
+节点数</td><td colspan="2">健康评估结果</td></tr><tr><td>故障类别诊断
+正确率/%</td><td>故障程度评估
+正确率/%</td></tr><tr><td>10</td><td>81.7</td><td>81.7</td></tr><tr><td>11</td><td>72.0</td><td>69.9</td></tr><tr><td>12</td><td>68.9</td><td>80.7</td></tr><tr><td>13</td><td>86.0</td><td>81.7</td></tr><tr><td>14</td><td>83.9</td><td>88.2</td></tr><tr><td>15</td><td>53.8</td><td>72.0</td></tr><tr><td>16</td><td>74.2</td><td>86.0</td></tr><tr><td>17</td><td>98.9</td><td>85.0</td></tr></table>
+
+输出参数变化值实际上是非常小的，这也给故障程度的判定带来一定的困难。
+
+# 4结论
+
+4 结论本文根据典型支线客机起落架收放系统的结构和参数，通过AMESim软件建立系统模型，仿真了电磁换向阀开口量不足、作动筒泄漏、液压泵泄漏等问
+
+题引起的输出参数变化，从中选取典型故障和参数进行了健康评估。结果证明，对起落架收放系统的故障特征选取合理，健康评估结果较理想。通过该方法可以及时掌握系统的健康状态，从而为视情维修提供依据，提前预防故障发生。本文对新研飞机起落架液压收放系统的健康评估提供了一种思路和方法。
+
+# 参考文献：
+
+参考文献：[1] Zhang Huiguo, Kang Rui, Recht Michael. A Hybrid Prognostics and Health Management Approach for Condition- Based Maintenance [J] //IEEE International Conference on Industrial Engineering and Engineering Management, 2009: 1165- 1169[2] Ahmadi Alireza, Fransson Torbjorn, Crona Anneli, et al. Integration of RCM and PHM for the Next Generation of Aircraft [J] //IEEE Aerospace Conference, 2009: 1- 9[3] 曹惠玲，黄乐腾，李志伟，庞思凯. 基于SOM神经网络的航空发动机滑油系统健康评估. 中国民航大学学报，2014，32(6):19- 22Cao Huiling, Huang Leteng, Li Zhiwei, Pang Sikai. Health Assessment Study of Aero- Engine Oil System Based on SOM Neural Network [J]. Journal of Civil Aviation University of China, 2014, 32(6):19- 22 (in Chinese)[4] 赵四军，王少萍，尚耀星. 飞机液压泵源预测与健康管理系统. 北京航空航天大学学报，2010，36(1):14- 17Zhao Sijun, Wang Shaoping, Shang Yaoxing. Prognostics and Health Management System of Hydraulic Power Supply [J]. Journal of Beijing University of Aeronautics and Astronautics, 2010, 36(1):14- 17 (in Chinese)[5] 张金春，张继军，曹彪. 基于HMM的机载设备状态健康评估方法研究. 计算机测量与控制，2015，23(2):491- 493Zhang Jinchun, Zhang Jijun, Cao Biao. Research on State Health Evaluation Method of Airborne Equipment Based on HMM [J]. Computer Measurement & Control. 2015, 23(2):491- 493 (in Chinese)[6] 崔建国，林泽力，陈希成，等. 飞机液压系统健康状态综合评估技术研究. 控制工程，2014，21(3):446- 449Cui Jianguo, Lin Zeli, Chen Xicheng, et al. Research on Health Assessment of the Aircraft Hydraulic System [J]. Control Engineering of China, 2014, 21(3):446- 449 (in Chinese)[7] Phillips Paul, Diston Dominic, Starr Andrew. Perspectives on the Commercial Development of Landing Gear Health Monitoring Systems [J]. Transportation Research Part C, 2011, 19:1339- 1352[8] Yang Yang. Aircraft Landing Gear Extension and Retraction Control System Diagnostics Prognostics and Health Management [J]. United Kingdom, Cranfield University, 2012[9] Gokdere L U, Chiu S L, Keller K J, et al. Lifetime Control of Electromechanical Actuators [J]. //IEEE Aerospace conference, United States, 2005:3523- 3531[10] Batzel T D, Swanson D C. Prognostic Health Management of Aircraft Power Generators [J]. IEEE Trans on Aerospace & Electronic Systems. 2009, 45(2):473- 483[11] 展毅，肖翔，李楠. 大型飞机起落架收放控制系统仿真. 北京航空航天大学学报，2013，39(5):595- 599Tu Yi, Xiao Xiang, Li Nan. Computer Analysis of Large- scale Aircraft Landing Gear Retraction and Extension Control System [J]. Journal of Beijing University of Aeronautics and Astronautics, 2013, 39(5):595- 599 (in Chinese)[12] 朱武峰，李旭东，丁文勇，林明. 飞机起落架液压收放系统仿真分析与维修应用. 液压与气动，2013(6):87- 90Zhu Wufeng, Li Xudong, Ding Wenyong, Lin Ming. Simulation and Maintenance of Aircraft Landing Gear Hydraulic System [J]. Chinese Hydraulics & Pneumatics, 2013(6):87- 90 (in Chinese)[13] 于方圆，高永，程钊. 起落架液压收放系统建模与故障仿真. 液压与气动，2012(4):45- 48Yu Fangyuan, Gao Yong, Cheng Zhao. Modeling and Fault Simulation of Landing Gear Retraction System [J]. Chinese Hydraulics & Pneumatics, 2013(4):45- 48 (in Chinese)
+
+[4]张强，于辉，童明波.某型飞机起落架收放过程仿真.流体传动与控制，2009，2:29- 31 Zhang Qiang, Yu Hui, Tong Mingbo. Simulation of Extending and Retracting Process for Aircraft Landing Gear . Fluid Power Transmission and Control,2009,2:29- 31 (in Chinese) [5]周小军，姜乐华，高经纬.基于AMESim的液压缸内泄漏仿真分析.机床与液压，2012，40(23)：147- 150 Zhou Xiaojun, Jiang Lehua, Gao Jingwei. Simulation Analysis for Inner Leakage of Hydraulic Cylinder Based on AMESim Machine Tool & Hydraulics,2012,40(23) :147- 150 (in Chinese) [6]夏鹤鸣，王鸿鑫.基于AMESim飞机液压能源系统用户可用压力仿真计算.机械设计与制造工程.2014，43(7)： 20- 23 Xia Heming, Wang Hongxin. The Simulation of Pressure Available to the User in Aircraft Hydraulic Energy System Based on AMESim . Machine Design and Manufacturing Engineering,2012,40(23) :147- 150 ( in Chinese) [7]梁丽媛.飞机起落架收放系统仿真与健康评估.西安：西北工业大学，2014 Liang Liai. Aircraft Landing Gear Retraction/Extension System Simulation and Health Assessment [D]. Xi'an, Northwestern Polytechnical University,2014 ( in Chinese) [8任占勇.航空电子产品预测与健康管理技术M.北京：国防工业出版社，2013 Ren Zhanyong. Prognostics and Health Management Technology for Avionics [M. Beijing, National Defence Industry Press, 2013 ( in Chinese) [9史峰，王辉，郁磊等.MATLAB智能算法30个案例分析M.北京：北京航空航天大学出版社，2011 Shi Feng, Wang Hui, Yu Lei, et al. 30 Cases Analysis of MATLAB Intelligence Algorithms [M. Beijing, Beihang University Press,2011 ( in Chinese)
+
+# Multiple Failure Simulation and Health Evaluation of Aircraft Landing Gear Hydraulic Retraction/Extension System
+
+He Lin, Liang Liai, Ma Cunbao 1. School of Aeronautics, Northwestern Polytechnical University, Xi'an 710072, China 2. Xi'an Feibao Technology Development Company, Yanliang 710089, China
+
+Abstract: Abnormal landing gear retraction/extension (R/E) will make the aircraft unable to land and endanger the flight safety. It is necessary to prevent the failure and avoid the accident by knowing its health condition. A multiple failure modes based health evaluation of aircraft landing gear hydraulic R/E system is developed. For typical regional aircraft, a simulation model of this system is built by AMESim software. The effects of degradation of different component parameters in the hydraulic loop are calculated and fault characteristics are extracted. Health evaluation is performed through neural network algorithm. Simulation and calculation results show that the fault characteristics are reasonable and this method is feasible, which provide a way for health evaluation of new generation aircraft landing gear hydraulic R/E system.
+
+Keywords: aircraft hydraulic system; landing gear retraction/extension, failure mode, AMESim, health evaluation; neural network

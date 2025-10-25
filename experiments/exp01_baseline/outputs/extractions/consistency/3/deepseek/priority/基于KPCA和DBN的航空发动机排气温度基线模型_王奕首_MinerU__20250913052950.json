@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "KPCA",
+      "type": "方法"
+    },
+    {
+      "name": "DBN",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "排气温度基线模型",
+      "type": "模型"
+    },
+    {
+      "name": "EGT",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "方法"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型"
+    },
+    {
+      "name": "高斯核函数",
+      "type": "方法"
+    },
+    {
+      "name": "RBM",
+      "type": "模型"
+    },
+    {
+      "name": "BP神经网络",
+      "type": "模型"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法"
+    },
+    {
+      "name": "MAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "健康管理",
+      "type": "应用场景"
+    },
+    {
+      "name": "气路监控",
+      "type": "应用场景"
+    },
+    {
+      "name": "非线性特征提取",
+      "type": "研究方法"
+    },
+    {
+      "name": "数据降维",
+      "type": "研究方法"
+    },
+    {
+      "name": "KPCA-DBN混合模型",
+      "type": "模型"
+    },
+    {
+      "name": "GA-BP网络",
+      "type": "模型"
+    },
+    {
+      "name": "传统神经网络",
+      "type": "模型"
+    }
+  ],
+  "relations": [
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "提出了",
+      "tail": "排气温度基线模型"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "基于",
+      "tail": "KPCA"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "基于",
+      "tail": "DBN"
+    },
+    {
+      "head": "KPCA",
+      "relation": "改进了",
+      "tail": "PCA"
+    },
+    {
+      "head": "KPCA",
+      "relation": "用于",
+      "tail": "非线性特征提取"
+    },
+    {
+      "head": "KPCA",
+      "relation": "采用",
+      "tail": "高斯核函数"
+    },
+    {
+      "head": "DBN",
+      "relation": "由…组成",
+      "tail": "RBM"
+    },
+    {
+      "head": "DBN",
+      "relation": "由…组成",
+      "tail": "BP神经网络"
+    },
+    {
+      "head": "DBN",
+      "relation": "改进了",
+      "tail": "传统神经网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "用于",
+      "tail": "健康管理"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "解决",
+      "tail": "高维数据非线性特征提取"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "GA-BP网络"
+    },
+    {
+      "head": "KPCA-DBN混合模型",
+      "relation": "优于",
+      "tail": "DBN"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "支持",
+      "tail": "排气温度基线模型"
+    },
+    {
+      "head": "CFM56-7B发动机",
+      "relation": "产生",
+      "tail": "QAR数据"
+    },
+    {
+      "head": "EGT",
+      "relation": "影响",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "MAE",
+      "relation": "评价指标是",
+      "tail": "KPCA-DBN混合模型"
+    },
+    {
+      "head": "遗传算法",
+      "relation": "优化了",
+      "tail": "BP神经网络"
+    },
+    {
+      "head": "数据降维",
+      "relation": "用于",
+      "tail": "简化网络结构"
+    },
+    {
+      "head": "数据降维",
+      "relation": "提高",
+      "tail": "模型精度"
+    }
+  ]
+}

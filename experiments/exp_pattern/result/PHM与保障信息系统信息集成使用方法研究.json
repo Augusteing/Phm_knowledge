@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "飞机保障",
+    "subject_type": "任务",
+    "relation": "需要转向",
+    "object": "基于状态维修",
+    "object_type": "维修模式"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "缩写",
+    "relation": "全称是",
+    "object": "Prognostics and Health Management",
+    "object_type": "术语"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "缩写",
+    "relation": "中文全称是",
+    "object": "预测与健康管理",
+    "object_type": "术语"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "PHM信息集成使用过程",
+    "object_type": "过程"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "研究",
+    "object": "PHM与保障信息系统的接口信息内容",
+    "object_type": "信息"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "研究",
+    "object": "信息传递方式",
+    "object_type": "方法"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "研究",
+    "object": "接口通信类型",
+    "object_type": "类型"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "研究",
+    "object": "信息集成使用的交互步骤",
+    "object_type": "步骤"
+  },
+  {
+    "subject": "研究结果",
+    "subject_type": "结果",
+    "relation": "提供",
+    "object": "信息集成使用的技术方法",
+    "object_type": "技术方法"
+  },
+  {
+    "subject": "信息集成使用的技术方法",
+    "subject_type": "技术方法",
+    "relation": "用于实现",
+    "object": "飞机主动式自主保障",
+    "object_type": "保障模式"
+  },
+  {
+    "subject": "飞机主动式自主保障",
+    "subject_type": "保障模式",
+    "relation": "由...使用",
+    "object": "PHM系统",
+    "object_type": "系统"
+  }
+]

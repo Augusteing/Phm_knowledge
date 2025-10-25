@@ -1,0 +1,142 @@
+[
+  {
+    "subject": "C919大型客机健康管理系统",
+    "subject_type": "系统",
+    "relation": "划分为",
+    "object": "实时监控",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "C919大型客机健康管理系统",
+    "subject_type": "系统",
+    "relation": "划分为",
+    "object": "健康状况趋势分析和预测",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "C919大型客机健康管理系统",
+    "subject_type": "系统",
+    "relation": "划分为",
+    "object": "故障诊断与维修决策",
+    "object_type": "功能模块"
+  },
+  {
+    "subject": "健康管理系统",
+    "subject_type": "系统",
+    "relation": "依赖",
+    "object": "地面实时监控技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "健康管理系统",
+    "subject_type": "系统",
+    "relation": "依赖",
+    "object": "趋势分析及预测方法",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "健康管理系统",
+    "subject_type": "系统",
+    "relation": "依赖",
+    "object": "剩余寿命预测方法",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "健康管理系统",
+    "subject_type": "系统",
+    "relation": "依赖",
+    "object": "故障诊断算法",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "健康管理系统",
+    "subject_type": "系统",
+    "relation": "依赖",
+    "object": "维修决策方法",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "健康管理系统",
+    "subject_type": "系统",
+    "relation": "依赖",
+    "object": "系统验证仿真技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "实时运行监控",
+    "subject_type": "活动",
+    "relation": "降低",
+    "object": "排故时间",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "实时运行监控",
+    "subject_type": "活动",
+    "relation": "提高",
+    "object": "航班正点率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "实时运行监控",
+    "subject_type": "活动",
+    "relation": "提高",
+    "object": "飞机利用率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "健康管理",
+    "subject_type": "活动",
+    "relation": "降低",
+    "object": "维修成本",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "健康管理",
+    "subject_type": "活动",
+    "relation": "提高",
+    "object": "飞机可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "健康管理",
+    "subject_type": "活动",
+    "relation": "提高",
+    "object": "飞机经济性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "健康管理",
+    "subject_type": "活动",
+    "relation": "实现",
+    "object": "预防性维护",
+    "object_type": "维修策略"
+  },
+  {
+    "subject": "健康管理",
+    "subject_type": "活动",
+    "relation": "实现",
+    "object": "视情维修",
+    "object_type": "维修策略"
+  },
+  {
+    "subject": "健康管理",
+    "subject_type": "活动",
+    "relation": "提供依据",
+    "object": "飞机设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "技术人员",
+    "subject_type": "角色",
+    "relation": "制定",
+    "object": "维修任务",
+    "object_type": "任务"
+  },
+  {
+    "subject": "技术人员",
+    "subject_type": "角色",
+    "relation": "控制",
+    "object": "维修间隔",
+    "object_type": "参数"
+  }
+]

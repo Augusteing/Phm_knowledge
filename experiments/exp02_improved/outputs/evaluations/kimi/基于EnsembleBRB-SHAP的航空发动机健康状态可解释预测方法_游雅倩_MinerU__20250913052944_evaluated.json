@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机健康状态预测",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "EnsembleBRB-SHAP模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "置信规则库（Belief Rule-Based, BRB）",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "沙普利加性解释（SHapley Additive exPlanations, SHAP）",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "商用模块化航空推进系统仿真软件（C-MAPSS）",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "低压涡轮机冷却液泄漏量",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "风扇转速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机健康管理（Prognostic and Health Management, PHM）",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "数据驱动模型（data-driven models, DDMs）",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "物理模型（physics-based models, PbMs）",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "集成学习算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "EnsembleBRB模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "MSE（均方误差）",
+      "type": "性能指标",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "基于",
+      "tail": "EnsembleBRB-SHAP模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EnsembleBRB-SHAP模型",
+      "relation": "结合",
+      "tail": "置信规则库（Belief Rule-Based, BRB）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EnsembleBRB-SHAP模型",
+      "relation": "结合",
+      "tail": "沙普利加性解释（SHapley Additive exPlanations, SHAP）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "应用于",
+      "tail": "发动机健康管理（Prognostic and Health Management, PHM）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机健康状态预测",
+      "relation": "利用",
+      "tail": "商用模块化航空推进系统仿真软件（C-MAPSS）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "低压涡轮机冷却液泄漏量",
+      "relation": "影响",
+      "tail": "航空发动机健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "风扇转速",
+      "relation": "影响",
+      "tail": "航空发动机健康状态预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "数据驱动模型（data-driven models, DDMs）",
+      "relation": "对比",
+      "tail": "物理模型（physics-based models, PbMs）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EnsembleBRB模型",
+      "relation": "优于",
+      "tail": "集成学习算法",
+      "evaluation": "错误"
+    },
+    {
+      "head": "EnsembleBRB模型",
+      "relation": "评估指标为",
+      "tail": "MSE（均方误差）",
+      "evaluation": "正确"
+    }
+  ]
+}

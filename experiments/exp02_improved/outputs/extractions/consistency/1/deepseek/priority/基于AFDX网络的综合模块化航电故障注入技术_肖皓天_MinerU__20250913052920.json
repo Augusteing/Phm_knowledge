@@ -1,0 +1,403 @@
+{
+  "entities": [
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX网络",
+      "type": "系统"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "方法"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "功能"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "方法"
+    },
+    {
+      "name": "故障注入装置",
+      "type": "系统"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "工具"
+    },
+    {
+      "name": "PC主机",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX端系统板卡",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX交换机",
+      "type": "系统"
+    },
+    {
+      "name": "嵌入式系统",
+      "type": "系统"
+    },
+    {
+      "name": "Visual C++",
+      "type": "工具"
+    },
+    {
+      "name": "MFC框架",
+      "type": "工具"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "工具"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "方法"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "方法"
+    },
+    {
+      "name": "SetTimer函数",
+      "type": "方法"
+    },
+    {
+      "name": "TimeSetEvent函数",
+      "type": "方法"
+    },
+    {
+      "name": "BAG",
+      "type": "参数"
+    },
+    {
+      "name": "数据更新间隔",
+      "type": "参数"
+    },
+    {
+      "name": "发送间隔",
+      "type": "参数"
+    },
+    {
+      "name": "定时器周期",
+      "type": "参数"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "工具"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "方法"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "方法"
+    },
+    {
+      "name": "缓冲区溢出触发",
+      "type": "方法"
+    },
+    {
+      "name": "数据结构溢出触发",
+      "type": "方法"
+    },
+    {
+      "name": "故障预测与健康管理",
+      "type": "技术"
+    },
+    {
+      "name": "航空电子系统",
+      "type": "系统"
+    },
+    {
+      "name": "空客A380",
+      "type": "系统"
+    },
+    {
+      "name": "波音B787",
+      "type": "系统"
+    },
+    {
+      "name": "分区驻留PHM进程",
+      "type": "功能"
+    },
+    {
+      "name": "模块驻留PHM分区",
+      "type": "功能"
+    },
+    {
+      "name": "黑盒测试",
+      "type": "方法"
+    },
+    {
+      "name": "白盒测试",
+      "type": "方法"
+    },
+    {
+      "name": "故障场景",
+      "type": "应用场景"
+    },
+    {
+      "name": "飞行数据",
+      "type": "数据"
+    },
+    {
+      "name": "故障日志记录",
+      "type": "数据"
+    },
+    {
+      "name": "数据帧",
+      "type": "数据"
+    },
+    {
+      "name": "均方误差",
+      "type": "指标"
+    },
+    {
+      "name": "定时精度",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理功能"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "基于",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "故障数据配置管理方法"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "定时发送策略"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "实现",
+      "tail": "故障注入装置"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "实现",
+      "tail": "故障注入软件"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "Visual C++"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "MFC框架"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "采用",
+      "tail": "SQLite数据库"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "采用",
+      "tail": "功能数据集合"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "接口控制文件"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "解决",
+      "tail": "数据更新间隔与定时器周期不匹配问题"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "采用",
+      "tail": "多媒体定时器"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "优于",
+      "tail": "SetTimer函数"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "基于",
+      "tail": "TimeSetEvent函数"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包括",
+      "tail": "PC主机"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包括",
+      "tail": "AFDX端系统板卡"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包括",
+      "tail": "AFDX交换机"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包括",
+      "tail": "嵌入式系统"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "应用于",
+      "tail": "空客A380"
+    },
+    {
+      "head": "AFDX网络",
+      "relation": "应用于",
+      "tail": "波音B787"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "包含",
+      "tail": "分区驻留PHM进程"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "包含",
+      "tail": "模块驻留PHM分区"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "区别于",
+      "tail": "黑盒测试"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "区别于",
+      "tail": "白盒测试"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "非法数据输入"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "特殊信令输入"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "缓冲区溢出触发"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "数据结构溢出触发"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "基于",
+      "tail": "功能数据集合"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "基于",
+      "tail": "接口控制文件"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "采用",
+      "tail": "SQLite数据库"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "BAG"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "数据更新间隔"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "发送间隔"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "定时器周期"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "提高",
+      "tail": "定时精度"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控消息帧"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "故障场景"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "基于",
+      "tail": "飞行数据"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "基于",
+      "tail": "故障日志记录"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "输出",
+      "tail": "数据帧"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "评估",
+      "tail": "均方误差"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "提高",
+      "tail": "定时精度"
+    }
+  ]
+}

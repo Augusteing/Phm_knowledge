@@ -1,0 +1,2080 @@
+{
+  "title": "航空燃气涡轮发动机气路故障诊断进展",
+  "summary": "航空发动机健康管理是提高当代先进航空发动机安全性、可靠性以及经济可承受性的关键技术，是实现发动机视情维修的重要方法之一。航空发动机气路故障诊断作为健康管理系统的重要支撑技术，在先进航空发动机发展过程中具有重要的研究价值与前景。基于航空发动机气路故障诊断50余年的发展成果，梳理了航空发动机气路故障诊断的总体实施流程，包括气路测量参数的选择及参数预处理方法、基线值的计算及基线模型的构建方法；介绍了基于模型和数据驱动的气路故障诊断方法的基本原理和典型成果并对不同方法的特点进行了评述；对气路故障诊断未来发展方向，包括性能预测、在线气路故障诊断、信息融合以及过渡态气路故障诊断的基本思想和研究现状进行了分析。国内外研究表明：航空发动机气路故障诊断已经形成了以基于模型和基于数据驱动为基础的诊断方法体系，得到了较全面且系统的发展。中国在已有研究成果的基础上，应进一步完善航空发动机全寿命周期数据的收集与整理，建立航空发动机健康管理系统的设计体系，增强产、学、研、用等多方协作，为先进航空发动机健康管理系统提供有力技术支撑。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机健康管理是提高当代先进航空发动机安全性、可靠性以及经济可承受性的关键技术",
+      "tokens": [
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "是",
+        "提高",
+        "当代",
+        "先进",
+        "航空",
+        "发动机",
+        "安全性",
+        "、",
+        "可靠性",
+        "以及",
+        "经济",
+        "可承受性",
+        "的",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "管理",
+          "head": 5,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 6,
+          "form": "提高",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "当代",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 8,
+          "form": "先进",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "航空",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "发动机",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "安全性",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "可靠性",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "以及",
+          "head": 16,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "经济",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "可承受性",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 18,
+          "form": "关键",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "技术",
+          "head": 5,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "是实现发动机视情维修的重要方法之一",
+      "tokens": [
+        "是",
+        "实现",
+        "发动机",
+        "视",
+        "情",
+        "维修",
+        "的",
+        "重要",
+        "方法",
+        "之一"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 2,
+          "form": "实现",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "视",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "情",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "维修",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "重要",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "方法",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "之一",
+          "head": 1,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "航空发动机气路故障诊断作为健康管理系统的重要支撑技术",
+      "tokens": [
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "作为",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "重要",
+        "支撑",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "气路",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "诊断",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "作为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "管理",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "重要",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "支撑",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "技术",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在先进航空发动机发展过程中具有重要的研究价值与前景",
+      "tokens": [
+        "在",
+        "先进",
+        "航空",
+        "发动机",
+        "发展",
+        "过程",
+        "中",
+        "具有",
+        "重要",
+        "的",
+        "研究",
+        "价值",
+        "与",
+        "前景"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "先进",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发展",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "过程",
+          "head": 7,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "中",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 8,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "重要",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "研究",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "价值",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "与",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "前景",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于航空发动机气路故障诊断50余年的发展成果，梳理了航空发动机气路故障诊断的总体实施流程，包括气路测量参数的选择及参数预处理方法、基线值的计算及基线模型的构建方法",
+      "tokens": [
+        "基于",
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "50余",
+        "年",
+        "的",
+        "发展",
+        "成果",
+        "，",
+        "梳理",
+        "了",
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "的",
+        "总体",
+        "实施",
+        "流程",
+        "，",
+        "包括",
+        "气路",
+        "测量",
+        "参数",
+        "的",
+        "选择",
+        "及",
+        "参数",
+        "预处理",
+        "方法",
+        "、",
+        "基线值",
+        "的",
+        "计算",
+        "及",
+        "基线",
+        "模型",
+        "的",
+        "构建",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "气路",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "故障",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "诊断",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "50余",
+          "head": 8,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 8,
+          "form": "年",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "M"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "发展",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "成果",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "，",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "梳理",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "了",
+          "head": 13,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 15,
+          "form": "航空",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "发动机",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "气路",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "故障",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "诊断",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "总体",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "实施",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "流程",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "，",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "包括",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "气路",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "测量",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "参数",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 28,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "选择",
+          "head": 44,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "及",
+          "head": 44,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "参数",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "预处理",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "方法",
+          "head": 44,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "、",
+          "head": 44,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "基线值",
+          "head": 38,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "的",
+          "head": 36,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 38,
+          "form": "计算",
+          "head": 44,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "及",
+          "head": 44,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 40,
+          "form": "基线",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "模型",
+          "head": 43,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "的",
+          "head": 41,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 43,
+          "form": "构建",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "方法",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "介绍了基于模型和数据驱动的气路故障诊断方法的基本原理和典型成果并对不同方法的特点进行了评述",
+      "tokens": [
+        "介绍",
+        "了",
+        "基于",
+        "模型",
+        "和",
+        "数据",
+        "驱动",
+        "的",
+        "气路",
+        "故障",
+        "诊断",
+        "方法",
+        "的",
+        "基本",
+        "原理",
+        "和",
+        "典型",
+        "成果",
+        "并",
+        "对",
+        "不同",
+        "方法",
+        "的",
+        "特点",
+        "进行",
+        "了",
+        "评述"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "基于",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "模型",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "数据",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "驱动",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "气路",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "诊断",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方法",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "基本",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "原理",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "典型",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "成果",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "对",
+          "head": 25,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "不同",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "方法",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 22,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "特点",
+          "head": 20,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "了",
+          "head": 25,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 27,
+          "form": "评述",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对气路故障诊断未来发展方向，包括性能预测、在线气路故障诊断、信息融合以及过渡态气路故障诊断的基本思想和研究现状进行了分析",
+      "tokens": [
+        "对",
+        "气路",
+        "故障",
+        "诊断",
+        "未来",
+        "发展",
+        "方向",
+        "，",
+        "包括",
+        "性能",
+        "预测",
+        "、",
+        "在线",
+        "气路",
+        "故障",
+        "诊断",
+        "、",
+        "信息",
+        "融合",
+        "以及",
+        "过渡态",
+        "气路",
+        "故障",
+        "诊断",
+        "的",
+        "基本",
+        "思想",
+        "和",
+        "研究",
+        "现状",
+        "进行",
+        "了",
+        "分析"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 31,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "气路",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "诊断",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "未来",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 6,
+          "form": "发展",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方向",
+          "head": 30,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "，",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "包括",
+          "head": 30,
+          "deprel": "rcmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "性能",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "在线",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "气路",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "诊断",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "、",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "信息",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "融合",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "以及",
+          "head": 30,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "过渡态",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "气路",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "故障",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "诊断",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "的",
+          "head": 24,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 26,
+          "form": "基本",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "思想",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "和",
+          "head": 30,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 29,
+          "form": "研究",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "现状",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "了",
+          "head": 31,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 33,
+          "form": "分析",
+          "head": 31,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "国内外研究表明：航空发动机气路故障诊断已经形成了以基于模型和基于数据驱动为基础的诊断方法体系",
+      "tokens": [
+        "国内外",
+        "研究",
+        "表明",
+        "：",
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "已经",
+        "形成",
+        "了",
+        "以",
+        "基于",
+        "模型",
+        "和",
+        "基于",
+        "数据",
+        "驱动",
+        "为",
+        "基础",
+        "的",
+        "诊断",
+        "方法",
+        "体系"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "国内外",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "研究",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "：",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "气路",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "诊断",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "已经",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 11,
+          "form": "形成",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "以",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "基于",
+          "head": 13,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "模型",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "基于",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "数据",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "驱动",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "为",
+          "head": 25,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "基础",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 23,
+          "form": "诊断",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "方法",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "体系",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "得到了较全面且系统的发展",
+      "tokens": [
+        "得到",
+        "了",
+        "较",
+        "全面",
+        "且",
+        "系统",
+        "的",
+        "发展"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "得到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "较",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "全面",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 5,
+          "form": "且",
+          "head": 4,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 4,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "中国在已有研究成果的基础上",
+      "tokens": [
+        "中国",
+        "在",
+        "已",
+        "有",
+        "研究",
+        "成果",
+        "的",
+        "基础",
+        "上"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "中国",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NR"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "已",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "有",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VE"
+        },
+        {
+          "id": 5,
+          "form": "研究",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "成果",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "基础",
+          "head": 9,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "上",
+          "head": 2,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "应进一步完善航空发动机全寿命周期数据的收集与整理",
+      "tokens": [
+        "应",
+        "进一步",
+        "完善",
+        "航空",
+        "发动机",
+        "全",
+        "寿命",
+        "周期",
+        "数据",
+        "的",
+        "收集",
+        "与",
+        "整理"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "应",
+          "head": 3,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "进一步",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "完善",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "全",
+          "head": 7,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 7,
+          "form": "寿命",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "周期",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "数据",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "收集",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "与",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "整理",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "建立航空发动机健康管理系统的设计体系",
+      "tokens": [
+        "建立",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "设计",
+        "体系"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "体系",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "增强产、学、研、用等多方协作",
+      "tokens": [
+        "增强",
+        "产",
+        "、",
+        "学",
+        "、",
+        "研",
+        "、",
+        "用",
+        "等",
+        "多",
+        "方",
+        "协作"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "增强",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "产",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "、",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "学",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "研",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "用",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "等",
+          "head": 8,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 10,
+          "form": "多",
+          "head": 11,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 11,
+          "form": "方",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "协作",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为先进航空发动机健康管理系统提供有力技术支撑",
+      "tokens": [
+        "为",
+        "先进",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "提供",
+        "有力",
+        "技术",
+        "支撑"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "先进",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "提供",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "有力",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "技术",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "支撑",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

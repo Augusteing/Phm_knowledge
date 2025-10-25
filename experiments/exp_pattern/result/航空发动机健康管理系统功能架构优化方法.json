@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "提升",
+    "object": "安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "提升",
+    "object": "可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "提升",
+    "object": "经济可承受性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "架构设计",
+    "subject_type": "设计/架构",
+    "relation": "是",
+    "object": "关键技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "系统架构",
+    "subject_type": "设计/架构",
+    "relation": "发挥",
+    "object": "系统功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "逻辑决断图",
+    "object_type": "方法"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "层次分析法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "针对",
+    "object": "部件和故障",
+    "object_type": "研究对象"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "分配",
+    "object": "状态监测功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "分配",
+    "object": "故障诊断功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "分配",
+    "object": "故障预测功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "分配",
+    "object": "寿命管理功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "分配",
+    "object": "趋势分析功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "通用健康管理系统架构",
+    "subject_type": "设计/架构",
+    "relation": "覆盖",
+    "object": "核心功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "通用健康管理系统架构",
+    "subject_type": "设计/架构",
+    "relation": "覆盖",
+    "object": "用户需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "功能分配方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "机载、地面系统功能的优化配置",
+    "object_type": "目标"
+  }
+]

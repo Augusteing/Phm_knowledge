@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "PHM",
+      "type": "技术"
+    },
+    {
+      "name": "失效物理模型",
+      "type": "模型"
+    },
+    {
+      "name": "应力严重系数",
+      "type": "特征"
+    },
+    {
+      "name": "疲劳缺口系数",
+      "type": "特征"
+    },
+    {
+      "name": "局部应力应变法",
+      "type": "方法"
+    },
+    {
+      "name": "修正Neuber法",
+      "type": "方法"
+    },
+    {
+      "name": "Manson-Coffin公式",
+      "type": "模型"
+    },
+    {
+      "name": "Newton-Raphson迭代方法",
+      "type": "算法"
+    },
+    {
+      "name": "飞机结构连接件",
+      "type": "系统"
+    },
+    {
+      "name": "紧固件孔",
+      "type": "系统"
+    },
+    {
+      "name": "疲劳失效",
+      "type": "故障模式"
+    },
+    {
+      "name": "疲劳寿命预测",
+      "type": "任务"
+    },
+    {
+      "name": "高周疲劳",
+      "type": "问题"
+    },
+    {
+      "name": "低周疲劳",
+      "type": "问题"
+    },
+    {
+      "name": "误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "航空结构",
+      "type": "应用领域"
+    },
+    {
+      "name": "MTS Landmark试验机",
+      "type": "工具"
+    },
+    {
+      "name": "2024铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "7050铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "中国航空综合技术研究所",
+      "type": "研究机构"
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM",
+      "relation": "应用于",
+      "tail": "航空结构"
+    },
+    {
+      "head": "PHM",
+      "relation": "用于",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "基于",
+      "tail": "失效物理模型"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "包括",
+      "tail": "应力严重系数"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "包括",
+      "tail": "疲劳缺口系数"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "采用",
+      "tail": "局部应力应变法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "基于",
+      "tail": "修正Neuber法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "用于",
+      "tail": "高周疲劳"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "用于",
+      "tail": "低周疲劳"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "实现",
+      "tail": "疲劳寿命预测"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "预测",
+      "tail": "疲劳失效"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "具有",
+      "tail": "误差"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "应用于",
+      "tail": "飞机结构连接件"
+    },
+    {
+      "head": "疲劳失效",
+      "relation": "发生在",
+      "tail": "紧固件孔"
+    },
+    {
+      "head": "MTS Landmark试验机",
+      "relation": "用于",
+      "tail": "疲劳试验"
+    },
+    {
+      "head": "中国航空综合技术研究所",
+      "relation": "研究方向为",
+      "tail": "PHM"
+    }
+  ]
+}

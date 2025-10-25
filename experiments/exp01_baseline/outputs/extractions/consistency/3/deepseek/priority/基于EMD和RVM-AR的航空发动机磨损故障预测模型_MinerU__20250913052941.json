@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "name": "EMD",
+      "type": "算法"
+    },
+    {
+      "name": "RVM",
+      "type": "模型"
+    },
+    {
+      "name": "AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "RVM-AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "磨损故障预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "IMF",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "RF",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "QPSO算法",
+      "type": "算法"
+    },
+    {
+      "name": "SVM",
+      "type": "模型"
+    },
+    {
+      "name": "Fe元素",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "Si元素",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "镜像延拓法",
+      "type": "方法"
+    },
+    {
+      "name": "交叉验证误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "方法"
+    },
+    {
+      "name": "嵌入维数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "核参数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "PHM",
+      "type": "研究方法"
+    },
+    {
+      "name": "非线性非平稳时间序列",
+      "type": "理论基础"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EMD",
+      "relation": "用于",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "基于",
+      "tail": "EMD"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "基于",
+      "tail": "RVM"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "基于",
+      "tail": "AR模型"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "应用于",
+      "tail": "磨损故障预测"
+    },
+    {
+      "head": "磨损故障预测",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "用于",
+      "tail": "磨损故障预测"
+    },
+    {
+      "head": "EMD",
+      "relation": "分解为",
+      "tail": "IMF"
+    },
+    {
+      "head": "EMD",
+      "relation": "分解为",
+      "tail": "RF"
+    },
+    {
+      "head": "IMF",
+      "relation": "用于",
+      "tail": "AR模型"
+    },
+    {
+      "head": "RF",
+      "relation": "用于",
+      "tail": "RVM"
+    },
+    {
+      "head": "QPSO算法",
+      "relation": "用于优化",
+      "tail": "RVM"
+    },
+    {
+      "head": "QPSO算法",
+      "relation": "优化",
+      "tail": "嵌入维数"
+    },
+    {
+      "head": "QPSO算法",
+      "relation": "优化",
+      "tail": "核参数"
+    },
+    {
+      "head": "RVM",
+      "relation": "优于",
+      "tail": "SVM"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "优于",
+      "tail": "AR模型"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "优于",
+      "tail": "SVM"
+    },
+    {
+      "head": "镜像延拓法",
+      "relation": "用于抑制",
+      "tail": "EMD端点效应"
+    },
+    {
+      "head": "交叉验证误差",
+      "relation": "用于评估",
+      "tail": "RVM"
+    },
+    {
+      "head": "Gaussian核函数",
+      "relation": "用于",
+      "tail": "RVM"
+    },
+    {
+      "head": "PHM",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "处理",
+      "tail": "非线性非平稳时间序列"
+    }
+  ]
+}

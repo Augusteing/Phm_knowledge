@@ -1,0 +1,226 @@
+{
+  "entities": [
+    {
+      "name": "ARIMA模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "回归分析法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "民用航空发动机",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "低压转子",
+      "type": "部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "振动故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "振动值",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "N1转速",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "指数模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "系数a",
+      "type": "参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "时间序列",
+      "type": "数据",
+      "evaluation": "正确"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障预测",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "振动-转速特性",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "专家建模器",
+      "type": "工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SPSS软件",
+      "type": "工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "R²",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "RMSE",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "MAE",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "MaxAE",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ADF检验",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "差分法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "白噪声",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空运输",
+      "type": "应用领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机维护方案",
+      "type": "应用场景",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "ARIMA模型",
+      "relation": "基于",
+      "tail": "回归分析法",
+      "evaluation": "错误"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "应用于",
+      "tail": "民用航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "预测",
+      "tail": "振动故障",
+      "evaluation": "正确"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "用于",
+      "tail": "拟合振动值和转速关系",
+      "evaluation": "正确"
+    },
+    {
+      "head": "指数模型",
+      "relation": "基于",
+      "tail": "回归分析法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "系数a",
+      "relation": "输入",
+      "tail": "ARIMA模型",
+      "evaluation": "错误"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "输出",
+      "tail": "故障预测结果",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "优于",
+      "tail": "三次指数平滑法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "专家建模器",
+      "relation": "采用",
+      "tail": "ARIMA模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "SPSS软件",
+      "relation": "包含",
+      "tail": "专家建模器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ADF检验",
+      "relation": "用于",
+      "tail": "平稳性检验",
+      "evaluation": "正确"
+    },
+    {
+      "head": "差分法",
+      "relation": "用于",
+      "tail": "数据预处理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "振动故障",
+      "relation": "影响",
+      "tail": "飞行安全",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障预测",
+      "relation": "支持",
+      "tail": "发动机维护方案",
+      "evaluation": "正确"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "提高",
+      "tail": "预测精度",
+      "evaluation": "正确"
+    }
+  ]
+}

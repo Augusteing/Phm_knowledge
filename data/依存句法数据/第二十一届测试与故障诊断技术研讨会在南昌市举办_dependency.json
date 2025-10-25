@@ -1,0 +1,597 @@
+{
+  "title": "第二十一届测试与故障诊断技术研讨会在南昌市举办",
+  "summary": "为了进一步推进测试、预测与健康管理技术在军工装备测试中的应用,由中国计算机自动测量与控制技术协会主办,北京航天测控技术有限公司、安捷伦科技公司和《计算机测量与控制》杂志社协办的\"第二十一届测试与故障诊断技术研讨会\"于5月16-19在南昌市举办,来自航天、航空、兵器、",
+  "analyzed_sentences": [
+    {
+      "sentence": "为了进一步推进测试、预测与健康管理技术在军工装备测试中的应用,由中国计算机自动测量与控制技术协会主办,北京航天测控技术有限公司、安捷伦科技公司和《计算机测量与控制》杂志社协办的\"第二十一届测试与故障诊断技术研讨会\"于5月16-19在南昌市举办,来自航天、航空、兵器、",
+      "tokens": [
+        "为了",
+        "进一步",
+        "推进",
+        "测试",
+        "、",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "技术",
+        "在",
+        "军工",
+        "装备",
+        "测试",
+        "中",
+        "的",
+        "应用",
+        ",",
+        "由",
+        "中国",
+        "计算机",
+        "自动",
+        "测量",
+        "与",
+        "控制",
+        "技术",
+        "协会",
+        "主办",
+        ",",
+        "北京",
+        "航天",
+        "测控",
+        "技术",
+        "有限",
+        "公司",
+        "、",
+        "安捷伦",
+        "科技",
+        "公司",
+        "和",
+        "《",
+        "计算机",
+        "测量",
+        "与",
+        "控制",
+        "》",
+        "杂志社",
+        "协办",
+        "的",
+        "\"",
+        "第二十一",
+        "届",
+        "测试",
+        "与",
+        "故障",
+        "诊断",
+        "技术",
+        "研讨会",
+        "\"",
+        "于",
+        "5月",
+        "16-19",
+        "在",
+        "南昌市",
+        "举办",
+        ",",
+        "来自",
+        "航天",
+        "、",
+        "航空",
+        "、",
+        "兵器",
+        "、"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 65,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "进一步",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "推进",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "测试",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "技术",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "在",
+          "head": 17,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "军工",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "装备",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "测试",
+          "head": 15,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "中",
+          "head": 11,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "应用",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 65,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "由",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 20,
+          "form": "中国",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 21,
+          "form": "计算机",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "自动",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 23,
+          "form": "测量",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "与",
+          "head": 25,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "控制",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "技术",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "协会",
+          "head": 19,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "主办",
+          "head": 58,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": ",",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "北京",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 31,
+          "form": "航天",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "测控",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "技术",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "有限",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "公司",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "、",
+          "head": 47,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 37,
+          "form": "安捷伦",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 38,
+          "form": "科技",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "公司",
+          "head": 47,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "和",
+          "head": 47,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 41,
+          "form": "《",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "计算机",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "测量",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "与",
+          "head": 45,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 45,
+          "form": "控制",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "》",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 47,
+          "form": "杂志社",
+          "head": 48,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "协办",
+          "head": 28,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 50,
+          "form": "\"",
+          "head": 58,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 51,
+          "form": "第二十一",
+          "head": 52,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 52,
+          "form": "届",
+          "head": 58,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 53,
+          "form": "测试",
+          "head": 56,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "与",
+          "head": 56,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 55,
+          "form": "故障",
+          "head": 56,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "诊断",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "技术",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "研讨会",
+          "head": 65,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "\"",
+          "head": 58,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 60,
+          "form": "于",
+          "head": 65,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 61,
+          "form": "5月",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 62,
+          "form": "16-19",
+          "head": 60,
+          "deprel": "pobj",
+          "pos": "NT"
+        },
+        {
+          "id": 63,
+          "form": "在",
+          "head": 65,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 64,
+          "form": "南昌市",
+          "head": 63,
+          "deprel": "pobj",
+          "pos": "NR"
+        },
+        {
+          "id": 65,
+          "form": "举办",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 66,
+          "form": ",",
+          "head": 65,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 67,
+          "form": "来自",
+          "head": 65,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 68,
+          "form": "航天",
+          "head": 72,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "、",
+          "head": 72,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 70,
+          "form": "航空",
+          "head": 72,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "、",
+          "head": 72,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 72,
+          "form": "兵器",
+          "head": 67,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "、",
+          "head": 65,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

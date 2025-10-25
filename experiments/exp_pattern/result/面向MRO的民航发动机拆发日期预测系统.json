@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "满足",
+    "object": "民航发动机维护、维修和大修业务需求",
+    "object_type": "业务需求"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "预测",
+    "object": "在翼民航发动机拆发日期",
+    "object_type": "数据"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "考虑",
+    "object": "性能",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "考虑",
+    "object": "故障",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "考虑",
+    "object": "时限",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "提出",
+    "object": "损伤基线",
+    "object_type": "概念"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "建立",
+    "object": "硬件损伤发展模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "硬件损伤发展模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "线性退化轨道",
+    "object_type": "方法"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "应用于",
+    "object": "中国国际航空股份有限公司",
+    "object_type": "组织"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "作为子系统集成于",
+    "object": "发动机健康管理和维修决策支持系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "获取",
+    "object": "支撑数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "民航发动机拆发日期预测系统",
+    "subject_type": "系统",
+    "relation": "提供",
+    "object": "预测结果",
+    "object_type": "数据"
+  },
+  {
+    "subject": "预测结果",
+    "subject_type": "数据",
+    "relation": "支撑",
+    "object": "维修计划制定模块",
+    "object_type": "系统模块"
+  },
+  {
+    "subject": "发动机健康管理流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "发动机状态监测",
+    "object_type": "环节"
+  },
+  {
+    "subject": "发动机健康管理流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "拆发日期预测",
+    "object_type": "环节"
+  },
+  {
+    "subject": "发动机健康管理流程",
+    "subject_type": "流程",
+    "relation": "包含",
+    "object": "维修决策",
+    "object_type": "环节"
+  }
+]

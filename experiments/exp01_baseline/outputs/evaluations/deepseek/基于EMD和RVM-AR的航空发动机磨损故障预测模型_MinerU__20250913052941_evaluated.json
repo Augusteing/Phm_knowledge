@@ -1,0 +1,241 @@
+{
+  "entities": [
+    {
+      "name": "EMD",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "RVM-AR",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "磨损故障预测",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "固有模态函数",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "残余函数",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AR模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "RVM模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "量子粒子群优化算法",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "交叉验证误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Fe元素",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Si元素",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SVM",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "镜像延拓法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非线性非平稳特性",
+      "type": "理论基础",
+      "evaluation": "错误"
+    },
+    {
+      "name": "故障预测与健康管理",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "油液光谱分析",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "稀疏Bayesian回归",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "算法",
+      "evaluation": "错误"
+    },
+    {
+      "name": "嵌入维数",
+      "type": "特征/健康指标",
+      "evaluation": "错误"
+    },
+    {
+      "name": "核参数",
+      "type": "特征/健康指标",
+      "evaluation": "错误"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EMD",
+      "relation": "用于",
+      "tail": "滑油光谱数据",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EMD",
+      "relation": "分解为",
+      "tail": "固有模态函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "EMD",
+      "relation": "分解为",
+      "tail": "残余函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM-AR",
+      "relation": "基于",
+      "tail": "EMD",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM-AR",
+      "relation": "基于",
+      "tail": "RVM模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM-AR",
+      "relation": "基于",
+      "tail": "AR模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM-AR",
+      "relation": "应用于",
+      "tail": "磨损故障预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "磨损故障预测",
+      "relation": "应用于",
+      "tail": "航空发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "反映",
+      "tail": "航空发动机状态",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM模型",
+      "relation": "基于",
+      "tail": "稀疏Bayesian回归",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM模型",
+      "relation": "优于",
+      "tail": "SVM",
+      "evaluation": "正确"
+    },
+    {
+      "head": "量子粒子群优化算法",
+      "relation": "用于",
+      "tail": "RVM模型参数优化",
+      "evaluation": "正确"
+    },
+    {
+      "head": "交叉验证误差",
+      "relation": "作为",
+      "tail": "适应度函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "镜像延拓法",
+      "relation": "抑制",
+      "tail": "EMD端点效应",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM-AR",
+      "relation": "改进了",
+      "tail": "AR模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "RVM-AR",
+      "relation": "改进了",
+      "tail": "SVM",
+      "evaluation": "错误"
+    },
+    {
+      "head": "RVM-AR",
+      "relation": "提高了",
+      "tail": "预测精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Fe元素",
+      "relation": "预测",
+      "tail": "RVM-AR",
+      "evaluation": "错误"
+    },
+    {
+      "head": "Si元素",
+      "relation": "预测",
+      "tail": "RVM-AR",
+      "evaluation": "错误"
+    },
+    {
+      "head": "平均相对预测误差",
+      "relation": "评估",
+      "tail": "RVM-AR",
+      "evaluation": "错误"
+    }
+  ]
+}

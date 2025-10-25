@@ -1,0 +1,1011 @@
+{
+  "title": "大型客机飞控作动系统配置方案设计",
+  "summary": "介绍了当前主流大型客机A320、B737和新型客机A380、B787的飞控作动系统配置及其特点,指出了当前大型客机飞控作动系统的发展趋势——高度集成化、功率电传化、信号光传化、液压高压化和智能化。针对我国大型客机发展目标,提出了一种适合我国国情的作动系统能源配置方案,为3套独立液压系统+1套电系统(3H+E)方案,及相应的作动系统配置方案。指出了发展飞控作动系统需要解决的体系架构、高可靠性作动器研制、故障预测与健康管理等关键技术问题。",
+  "analyzed_sentences": [
+    {
+      "sentence": "介绍了当前主流大型客机A320、B737和新型客机A380、B787的飞控作动系统配置及其特点,指出了当前大型客机飞控作动系统的发展趋势——高度集成化、功率电传化、信号光传化、液压高压化和智能化",
+      "tokens": [
+        "介绍",
+        "了",
+        "当前",
+        "主流",
+        "大型",
+        "客机",
+        "A320",
+        "、",
+        "B737",
+        "和",
+        "新型",
+        "客机",
+        "A380",
+        "、",
+        "B787",
+        "的",
+        "飞控",
+        "作动",
+        "系统",
+        "配置",
+        "及",
+        "其",
+        "特点",
+        ",",
+        "指出",
+        "了",
+        "当前",
+        "大型",
+        "客机",
+        "飞控",
+        "作动",
+        "系统",
+        "的",
+        "发展",
+        "趋势",
+        "——",
+        "高度",
+        "集成化",
+        "、",
+        "功率",
+        "电传化",
+        "、",
+        "信号",
+        "光传化",
+        "、",
+        "液压",
+        "高压化",
+        "和",
+        "智能化"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "当前",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 4,
+          "form": "主流",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "大型",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "客机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "A320",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "B737",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "新型",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "客机",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "A380",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "B787",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "NR"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "飞控",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "作动",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "配置",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "及",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "其",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 23,
+          "form": "特点",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "指出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "了",
+          "head": 25,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 27,
+          "form": "当前",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 28,
+          "form": "大型",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "客机",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "飞控",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "作动",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "系统",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 34,
+          "form": "发展",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "趋势",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "——",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 37,
+          "form": "高度",
+          "head": 38,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 38,
+          "form": "集成化",
+          "head": 35,
+          "deprel": "prnmod",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "、",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "功率",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "电传化",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "、",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "信号",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "光传化",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "、",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "液压",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "高压化",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "和",
+          "head": 38,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 49,
+          "form": "智能化",
+          "head": 38,
+          "deprel": "conj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对我国大型客机发展目标,提出了一种适合我国国情的作动系统能源配置方案,为3套独立液压系统+1套电系统(3H+E)方案,及相应的作动系统配置方案",
+      "tokens": [
+        "针对",
+        "我",
+        "国",
+        "大型",
+        "客机",
+        "发展",
+        "目标",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "适合",
+        "我",
+        "国",
+        "国情",
+        "的",
+        "作动",
+        "系统",
+        "能源",
+        "配置",
+        "方案",
+        ",",
+        "为",
+        "3",
+        "套",
+        "独立",
+        "液压",
+        "系统",
+        "+",
+        "1",
+        "套",
+        "电",
+        "系统",
+        "(",
+        "3H",
+        "+",
+        "E",
+        ")",
+        "方案",
+        ",",
+        "及",
+        "相应",
+        "的",
+        "作动",
+        "系统",
+        "配置",
+        "方案"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "我",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 3,
+          "form": "国",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "大型",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "客机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发展",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "目标",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "了",
+          "head": 9,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 11,
+          "form": "一",
+          "head": 12,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 12,
+          "form": "种",
+          "head": 22,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 13,
+          "form": "适合",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "我",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 15,
+          "form": "国",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "国情",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 18,
+          "form": "作动",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "能源",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "配置",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "方案",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "为",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 25,
+          "form": "3",
+          "head": 26,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 26,
+          "form": "套",
+          "head": 29,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 27,
+          "form": "独立",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "液压",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "系统",
+          "head": 48,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "+",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "1",
+          "head": 32,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 32,
+          "form": "套",
+          "head": 34,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 33,
+          "form": "电",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "系统",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "(",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "3H",
+          "head": 38,
+          "deprel": "nummod",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "+",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "E",
+          "head": 34,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": ")",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "方案",
+          "head": 48,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": ",",
+          "head": 48,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "及",
+          "head": 48,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 43,
+          "form": "相应",
+          "head": 48,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 43,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "作动",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "系统",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "配置",
+          "head": 48,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "方案",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "指出了发展飞控作动系统需要解决的体系架构、高可靠性作动器研制、故障预测与健康管理等关键技术问题",
+      "tokens": [
+        "指出",
+        "了",
+        "发展",
+        "飞控",
+        "作动",
+        "系统",
+        "需要",
+        "解决",
+        "的",
+        "体系",
+        "架构",
+        "、",
+        "高",
+        "可靠性",
+        "作动器",
+        "研制",
+        "、",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "等",
+        "关键",
+        "技术",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "指出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "发展",
+          "head": 26,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "飞控",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "作动",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "需要",
+          "head": 8,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "解决",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "体系",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "架构",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "高",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "可靠性",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "作动器",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "研制",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "、",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "故障",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "与",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 21,
+          "form": "健康",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "管理",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "等",
+          "head": 22,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 24,
+          "form": "关键",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "技术",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "问题",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

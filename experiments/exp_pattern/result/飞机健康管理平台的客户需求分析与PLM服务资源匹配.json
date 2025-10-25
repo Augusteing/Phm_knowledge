@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "模糊理论",
+    "subject_type": "理论",
+    "relation": "确立",
+    "object": "PHM平台功能",
+    "object_type": "功能"
+  },
+  {
+    "subject": "灰色关联法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "客户需求重要度排序",
+    "object_type": "过程"
+  },
+  {
+    "subject": "ARIMA模型",
+    "subject_type": "模型",
+    "relation": "求解",
+    "object": "客户需求的动态特征",
+    "object_type": "特征"
+  },
+  {
+    "subject": "质量屋",
+    "subject_type": "方法",
+    "relation": "衡量",
+    "object": "PLM服务资源与客户需求的匹配度",
+    "object_type": "度量"
+  },
+  {
+    "subject": "匹配度",
+    "subject_type": "度量",
+    "relation": "反映",
+    "object": "客户满意度",
+    "object_type": "度量"
+  },
+  {
+    "subject": "飞机故障诊断和健康管理",
+    "subject_type": "技术",
+    "relation": "简称",
+    "object": "PHM",
+    "object_type": "缩写"
+  },
+  {
+    "subject": "全生命周期管理",
+    "subject_type": "管理",
+    "relation": "简称",
+    "object": "PLM",
+    "object_type": "缩写"
+  },
+  {
+    "subject": "质量屋",
+    "subject_type": "方法",
+    "relation": "简称",
+    "object": "HOQ",
+    "object_type": "缩写"
+  },
+  {
+    "subject": "自回归求和移动平均模型",
+    "subject_type": "模型",
+    "relation": "简称",
+    "object": "ARIMA模型",
+    "object_type": "模型"
+  }
+]

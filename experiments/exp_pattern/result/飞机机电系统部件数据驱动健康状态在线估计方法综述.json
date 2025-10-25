@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "飞机机电系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "飞机机电系统部件",
+    "object_type": "部件"
+  },
+  {
+    "subject": "飞机机电系统部件",
+    "subject_type": "部件",
+    "relation": "具有",
+    "object": "健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "健康状态",
+    "subject_type": "状态",
+    "relation": "保障",
+    "object": "安全运行",
+    "object_type": "目标"
+  },
+  {
+    "subject": "健康状态",
+    "subject_type": "状态",
+    "relation": "保障",
+    "object": "飞机正常飞行",
+    "object_type": "目标"
+  },
+  {
+    "subject": "健康状态",
+    "subject_type": "状态",
+    "relation": "保障",
+    "object": "成员安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "飞机机电系统部件健康状态在线估计",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "健康状态在线估计",
+    "object_type": "功能"
+  },
+  {
+    "subject": "飞机机电系统部件健康状态在线估计",
+    "subject_type": "方法",
+    "relation": "支撑",
+    "object": "视情维修",
+    "object_type": "维修策略"
+  },
+  {
+    "subject": "飞机机电系统部件健康状态在线估计",
+    "subject_type": "方法",
+    "relation": "提供",
+    "object": "决策参考",
+    "object_type": "功能"
+  },
+  {
+    "subject": "决策参考",
+    "subject_type": "功能",
+    "relation": "用于",
+    "object": "飞行任务保障",
+    "object_type": "任务"
+  },
+  {
+    "subject": "飞机机电系统部件",
+    "subject_type": "部件",
+    "relation": "包含",
+    "object": "机电作动器",
+    "object_type": "部件"
+  },
+  {
+    "subject": "飞机机电系统部件",
+    "subject_type": "部件",
+    "relation": "包含",
+    "object": "辅助动力装置",
+    "object_type": "部件"
+  },
+  {
+    "subject": "健康状态估计方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "数据驱动健康状态在线估计方法",
+    "object_type": "方法"
+  }
+]

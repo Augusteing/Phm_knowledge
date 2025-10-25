@@ -1,0 +1,1437 @@
+{
+  "title": "大型客机航电系统综合集成关键技术综述",
+  "summary": "面对未来航空运输系统的需求，为了进一步提升大型客机安全性和空域运行效能，在系统综合控制、相关方信息共享、空地协同决策与管理、所需通导监视性能、基于航迹运行等方面对大型客机航电系统提出了新的需求，结合现代综合化航电系统的技术发展特点，总结了先进的航电系统架构、主要的功能特征、安全性设计流程等方面的内容。根据国产大型客机综合化航电系统研制和集成工作的工程实践，结合国内相关院所的研究成果，分析了航电系统综合集成、驾驶舱显示与控制、综合模块化航电、飞行管理、无线电导航、综合监视、机载数据链、大气惯导与机载信息等领域的技术现状、发展趋势和关键技术。并对下一代大型客机航电系统的应用需求、技术特征、研究方向等方面进行了展望。",
+  "analyzed_sentences": [
+    {
+      "sentence": "面对未来航空运输系统的需求",
+      "tokens": [
+        "面对",
+        "未来",
+        "航空",
+        "运输",
+        "系统",
+        "的",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "面对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "未来",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "运输",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "需求",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "为了进一步提升大型客机安全性和空域运行效能",
+      "tokens": [
+        "为了",
+        "进一步",
+        "提升",
+        "大型",
+        "客机",
+        "安全性",
+        "和",
+        "空域",
+        "运行",
+        "效能"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为了",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "进一步",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "提升",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "大型",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "客机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "安全性",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "空域",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "运行",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "效能",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在系统综合控制、相关方信息共享、空地协同决策与管理、所需通导监视性能、基于航迹运行等方面对大型客机航电系统提出了新的需求",
+      "tokens": [
+        "在",
+        "系统",
+        "综合",
+        "控制",
+        "、",
+        "相关方",
+        "信息",
+        "共",
+        "享",
+        "、",
+        "空地",
+        "协同",
+        "决策",
+        "与",
+        "管理",
+        "、",
+        "所",
+        "需",
+        "通导",
+        "监视",
+        "性能",
+        "、",
+        "基于",
+        "航迹",
+        "运行",
+        "等",
+        "方面",
+        "对",
+        "大型",
+        "客机",
+        "航电",
+        "系统",
+        "提出",
+        "了",
+        "新",
+        "的",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "系统",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "综合",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "控制",
+          "head": 27,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "相关方",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "信息",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "共",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "享",
+          "head": 27,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "空地",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "协同",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "决策",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "与",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "管理",
+          "head": 9,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "所",
+          "head": 18,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 18,
+          "form": "需",
+          "head": 27,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "通导",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "监视",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "性能",
+          "head": 23,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "基于",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 24,
+          "form": "航迹",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "运行",
+          "head": 23,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "等",
+          "head": 25,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 27,
+          "form": "方面",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "对",
+          "head": 33,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 29,
+          "form": "大型",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "客机",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "航电",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "系统",
+          "head": 28,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "了",
+          "head": 33,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 35,
+          "form": "新",
+          "head": 37,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 35,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 37,
+          "form": "需求",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合现代综合化航电系统的技术发展特点",
+      "tokens": [
+        "结合",
+        "现代",
+        "综合化",
+        "航电",
+        "系统",
+        "的",
+        "技术",
+        "发展",
+        "特点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "现代",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "综合化",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "航电",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "技术",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "发展",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "特点",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "总结了先进的航电系统架构、主要的功能特征、安全性设计流程等方面的内容",
+      "tokens": [
+        "总结",
+        "了",
+        "先进",
+        "的",
+        "航电",
+        "系统",
+        "架构",
+        "、",
+        "主要",
+        "的",
+        "功能",
+        "特征",
+        "、",
+        "安全性",
+        "设计",
+        "流程",
+        "等",
+        "方面",
+        "的",
+        "内容"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "总结",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "先进",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 5,
+          "form": "航电",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "架构",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "主要",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "功能",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "特征",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "安全性",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "设计",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "流程",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "等",
+          "head": 16,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 18,
+          "form": "方面",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "内容",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "根据国产大型客机综合化航电系统研制和集成工作的工程实践",
+      "tokens": [
+        "根据",
+        "国产",
+        "大型",
+        "客机",
+        "综合化",
+        "航电",
+        "系统",
+        "研制",
+        "和",
+        "集成",
+        "工作",
+        "的",
+        "工程",
+        "实践"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "根据",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "国产",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "大型",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "客机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "综合化",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "航电",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "研制",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "集成",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "工作",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "工程",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "实践",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合国内相关院所的研究成果",
+      "tokens": [
+        "结合",
+        "国内",
+        "相关",
+        "院所",
+        "的",
+        "研究",
+        "成果"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "国内",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "相关",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "院所",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "研究",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "成果",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "分析了航电系统综合集成、驾驶舱显示与控制、综合模块化航电、飞行管理、无线电导航、综合监视、机载数据链、大气惯导与机载信息等领域的技术现状、发展趋势和关键技术",
+      "tokens": [
+        "分析",
+        "了",
+        "航电",
+        "系统",
+        "综合",
+        "集成",
+        "、",
+        "驾驶舱",
+        "显示",
+        "与",
+        "控制",
+        "、",
+        "综合",
+        "模块化",
+        "航电",
+        "、",
+        "飞行",
+        "管理",
+        "、",
+        "无线电",
+        "导航",
+        "、",
+        "综合",
+        "监视",
+        "、",
+        "机载",
+        "数据链",
+        "、",
+        "大气",
+        "惯导",
+        "与",
+        "机载",
+        "信息",
+        "等",
+        "领域",
+        "的",
+        "技术",
+        "现状",
+        "、",
+        "发展",
+        "趋势",
+        "和",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "航电",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "综合",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "集成",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "驾驶舱",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "显示",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "控制",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "综合",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "模块化",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 15,
+          "form": "航电",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "飞行",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "管理",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "无线电",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "导航",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "综合",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "监视",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "机载",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "数据链",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "大气",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "惯导",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "与",
+          "head": 33,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "机载",
+          "head": 33,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "信息",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "等",
+          "head": 33,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 35,
+          "form": "领域",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 35,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 37,
+          "form": "技术",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "现状",
+          "head": 44,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "、",
+          "head": 44,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "发展",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "趋势",
+          "head": 44,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "和",
+          "head": 44,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 43,
+          "form": "关键",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "技术",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并对下一代大型客机航电系统的应用需求、技术特征、研究方向等方面进行了展望",
+      "tokens": [
+        "并",
+        "对",
+        "下",
+        "一",
+        "代",
+        "大型",
+        "客机",
+        "航电",
+        "系统",
+        "的",
+        "应用",
+        "需求",
+        "、",
+        "技术",
+        "特征",
+        "、",
+        "研究",
+        "方向",
+        "等",
+        "方面",
+        "进行",
+        "了",
+        "展望"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 21,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 21,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "下",
+          "head": 9,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "一",
+          "head": 5,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 5,
+          "form": "代",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "M"
+        },
+        {
+          "id": 6,
+          "form": "大型",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "客机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "航电",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "系统",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "应用",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "需求",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "、",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "技术",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "特征",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "研究",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "方向",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "等",
+          "head": 18,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 20,
+          "form": "方面",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "了",
+          "head": 21,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 23,
+          "form": "展望",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

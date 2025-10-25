@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "分为",
+    "object": "感知层",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "分为",
+    "object": "决策层",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "分为",
+    "object": "执行层",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "态势感知与评估",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "任务航迹规划",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "综合航行驾驶",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "自动攻击导引",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "健康管理与预测",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "综合飞行器管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "智能人机交互",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "空战模式",
+    "subject_type": "背景",
+    "relation": "促进",
+    "object": "综合飞行器管理技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "综合飞行器管理技术",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "关键技术",
+    "object_type": "技术类别"
+  }
+]

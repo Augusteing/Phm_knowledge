@@ -1,0 +1,981 @@
+{
+  "title": "基于综合PHM方法的导弹维修保障综述",
+  "summary": "故障预测与管理技术(Prognostics and Health Management,PHM)是现代武器装备实现新型自主式后勤保障的关键技术,能够实现故障检测、诊断、预测、状态评估以及综合决策的功能,能够降低维修、使用和保障费用,提高战备完好率、任务成功率以及安全性和可用性;对PHM方法技术发展、作用以及国内外发展现状进行了详细的介绍和总结,并针对导弹维修保障中PHM方法的应用进行了调研,提出导弹维修保障综合PHM的基本概念、体系构建方法以及存在的技术难点,最后进行了展望和总结。",
+  "analyzed_sentences": [
+    {
+      "sentence": "故障预测与管理技术(Prognostics and Health Management,PHM)是现代武器装备实现新型自主式后勤保障的关键技术,能够实现故障检测、诊断、预测、状态评估以及综合决策的功能,能够降低维修、使用和保障费用,提高战备完好率、任务成功率以及安全性和可用性;对PHM方法技术发展、作用以及国内外发展现状进行了详细的介绍和总结,并针对导弹维修保障中PHM方法的应用进行了调研,提出导弹维修保障综合PHM的基本概念、体系构建方法以及存在的技术难点,最后进行了展望和总结",
+      "tokens": [
+        "故障",
+        "预测",
+        "与",
+        "管理",
+        "技术",
+        "(",
+        "Prognostics",
+        "and",
+        "Health",
+        "Management",
+        ",",
+        "PHM",
+        ")",
+        "是",
+        "现代",
+        "武器",
+        "装备",
+        "实现",
+        "新型",
+        "自主式",
+        "后勤",
+        "保障",
+        "的",
+        "关键",
+        "技术",
+        ",",
+        "能够",
+        "实现",
+        "故障",
+        "检测",
+        "、",
+        "诊断",
+        "、",
+        "预测",
+        "、",
+        "状态",
+        "评估",
+        "以及",
+        "综合",
+        "决策",
+        "的",
+        "功能",
+        ",",
+        "能够",
+        "降低",
+        "维修",
+        "、",
+        "使用",
+        "和",
+        "保障",
+        "费用",
+        ",",
+        "提高",
+        "战备",
+        "完好率",
+        "、",
+        "任务",
+        "成功率",
+        "以及",
+        "安全性",
+        "和",
+        "可用性",
+        ";",
+        "对",
+        "PHM",
+        "方法",
+        "技术",
+        "发展",
+        "、",
+        "作用",
+        "以及",
+        "国内外",
+        "发展",
+        "现状",
+        "进行",
+        "了",
+        "详细",
+        "的",
+        "介绍",
+        "和",
+        "总结",
+        ",",
+        "并",
+        "针对",
+        "导弹",
+        "维修",
+        "保障",
+        "中",
+        "PHM",
+        "方法",
+        "的",
+        "应用",
+        "进行",
+        "了",
+        "调研",
+        ",",
+        "提出",
+        "导弹",
+        "维修",
+        "保障",
+        "综合",
+        "PHM",
+        "的",
+        "基本",
+        "概念",
+        "、",
+        "体系",
+        "构建",
+        "方法",
+        "以及",
+        "存在",
+        "的",
+        "技术",
+        "难点",
+        ",",
+        "最后",
+        "进行",
+        "了",
+        "展望",
+        "和",
+        "总结"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "预测",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "与",
+          "head": 4,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 4,
+          "form": "管理",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "技术",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "(",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "Prognostics",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "and",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "Health",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "Management",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "PHM",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ")",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 15,
+          "form": "现代",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "武器",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "装备",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "实现",
+          "head": 25,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "新型",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "自主式",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "后勤",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "保障",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 24,
+          "form": "关键",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "技术",
+          "head": 14,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "能够",
+          "head": 28,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "实现",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "故障",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "检测",
+          "head": 40,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "、",
+          "head": 40,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "诊断",
+          "head": 40,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "、",
+          "head": 40,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "预测",
+          "head": 40,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "、",
+          "head": 40,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "状态",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "评估",
+          "head": 40,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "以及",
+          "head": 40,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 39,
+          "form": "综合",
+          "head": 40,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 40,
+          "form": "决策",
+          "head": 42,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 40,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 42,
+          "form": "功能",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "能够",
+          "head": 45,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "降低",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "维修",
+          "head": 50,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "、",
+          "head": 50,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 48,
+          "form": "使用",
+          "head": 50,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "和",
+          "head": 50,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 50,
+          "form": "保障",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "费用",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": ",",
+          "head": 45,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 53,
+          "form": "提高",
+          "head": 45,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 54,
+          "form": "战备",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "完好率",
+          "head": 62,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "、",
+          "head": 62,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "任务",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "成功率",
+          "head": 62,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "以及",
+          "head": 62,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 60,
+          "form": "安全性",
+          "head": 62,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "和",
+          "head": 62,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 62,
+          "form": "可用性",
+          "head": 53,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": ";",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 64,
+          "form": "对",
+          "head": 75,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 65,
+          "form": "PHM",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "方法",
+          "head": 70,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "技术",
+          "head": 70,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "发展",
+          "head": 70,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "、",
+          "head": 70,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 70,
+          "form": "作用",
+          "head": 74,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "以及",
+          "head": 74,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 72,
+          "form": "国内外",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "发展",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "现状",
+          "head": 64,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "进行",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 76,
+          "form": "了",
+          "head": 75,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 77,
+          "form": "详细",
+          "head": 81,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 78,
+          "form": "的",
+          "head": 77,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 79,
+          "form": "介绍",
+          "head": 81,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "和",
+          "head": 81,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 81,
+          "form": "总结",
+          "head": 75,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 83,
+          "form": "并",
+          "head": 93,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 84,
+          "form": "针对",
+          "head": 93,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 85,
+          "form": "导弹",
+          "head": 87,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": "维修",
+          "head": 87,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 87,
+          "form": "保障",
+          "head": 88,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": "中",
+          "head": 92,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 89,
+          "form": "PHM",
+          "head": 90,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 90,
+          "form": "方法",
+          "head": 92,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 91,
+          "form": "的",
+          "head": 90,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 92,
+          "form": "应用",
+          "head": 84,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 93,
+          "form": "进行",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 94,
+          "form": "了",
+          "head": 93,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 95,
+          "form": "调研",
+          "head": 93,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 97,
+          "form": "提出",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 98,
+          "form": "导弹",
+          "head": 100,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 99,
+          "form": "维修",
+          "head": 100,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 100,
+          "form": "保障",
+          "head": 101,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 101,
+          "form": "综合",
+          "head": 114,
+          "deprel": "rcmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 102,
+          "form": "PHM",
+          "head": 101,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 103,
+          "form": "的",
+          "head": 102,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 104,
+          "form": "基本",
+          "head": 105,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 105,
+          "form": "概念",
+          "head": 114,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 106,
+          "form": "、",
+          "head": 114,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 107,
+          "form": "体系",
+          "head": 109,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 108,
+          "form": "构建",
+          "head": 109,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 109,
+          "form": "方法",
+          "head": 114,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "以及",
+          "head": 114,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 111,
+          "form": "存在",
+          "head": 114,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 112,
+          "form": "的",
+          "head": 111,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 113,
+          "form": "技术",
+          "head": 114,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 114,
+          "form": "难点",
+          "head": 14,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 115,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 116,
+          "form": "最后",
+          "head": 117,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 117,
+          "form": "进行",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 118,
+          "form": "了",
+          "head": 117,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 119,
+          "form": "展望",
+          "head": 121,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 120,
+          "form": "和",
+          "head": 121,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 121,
+          "form": "总结",
+          "head": 117,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "直升机健康管理系统",
+    "subject_type": "系统",
+    "relation": "监控",
+    "object": "直升机运行状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "直升机健康管理系统",
+    "subject_type": "系统",
+    "relation": "发现",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "直升机健康管理系统",
+    "subject_type": "系统",
+    "relation": "预测",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "直升机健康管理系统",
+    "subject_type": "系统",
+    "relation": "提供",
+    "object": "技术支撑",
+    "object_type": "功能"
+  },
+  {
+    "subject": "技术支撑",
+    "subject_type": "功能",
+    "relation": "服务于",
+    "object": "操作人员",
+    "object_type": "角色"
+  },
+  {
+    "subject": "技术支撑",
+    "subject_type": "功能",
+    "relation": "服务于",
+    "object": "维修人员",
+    "object_type": "角色"
+  },
+  {
+    "subject": "直升机健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "HUMS处理单元",
+    "object_type": "组件"
+  },
+  {
+    "subject": "直升机健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "地面站",
+    "object_type": "组件"
+  },
+  {
+    "subject": "直升机健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "无线数据传输通信系统",
+    "object_type": "组件"
+  },
+  {
+    "subject": "HUMS处理单元",
+    "subject_type": "组件",
+    "relation": "采用",
+    "object": "开放式体系架构",
+    "object_type": "架构"
+  },
+  {
+    "subject": "地面站",
+    "subject_type": "组件",
+    "relation": "采用",
+    "object": "分布式体系架构",
+    "object_type": "架构"
+  }
+]

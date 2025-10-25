@@ -1,0 +1,1253 @@
+{
+  "title": "基于蒙特卡罗模拟的航空发动机故障风险预测",
+  "summary": "针对航空发动机结构复杂、故障模式多样,传统故障风险预测方法难以实现的现状,基于蒙特卡罗模拟技术,给出了航空发动机故障风险预测方法,用于评估发动机各个部件在未来发生故障的可能性.针对航空发动机故障数据的特点,以威布尔分布建立故障概率模型,利用中位秩回归参数法,估计威布尔分布参数.利用乘同余组合发生器与反变换法相结合的方式产生满足威布尔分布的随机数.在单故障模式风险预测的基础上,给出了多种故障模式并存的航空发动机风险预测方法,并且给出了蒙特卡罗模拟步骤和算法,针对实例,对比发动机厂商提供的预测数据,验证了算法的有效性与蒙特卡罗模拟方法在航空发动机故障风险预测中的可用性.",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对航空发动机结构复杂、故障模式多样,传统故障风险预测方法难以实现的现状,基于蒙特卡罗模拟技术,给出了航空发动机故障风险预测方法,用于评估发动机各个部件在未来发生故障的可能性.针对航空发动机故障数据的特点,以威布尔分布建立故障概率模型,利用中位秩回归参数法,估计威布尔分布参数.利用乘同余组合发生器与反变换法相结合的方式产生满足威布尔分布的随机数.在单故障模式风险预测的基础上,给出了多种故障模式并存的航空发动机风险预测方法,并且给出了蒙特卡罗模拟步骤和算法,针对实例,对比发动机厂商提供的预测数据,验证了算法的有效性与蒙特卡罗模拟方法在航空发动机故障风险预测中的可用性.",
+      "tokens": [
+        "针对",
+        "航空",
+        "发动机",
+        "结构",
+        "复杂",
+        "、",
+        "故障",
+        "模式",
+        "多样",
+        ",",
+        "传统",
+        "故障",
+        "风险",
+        "预测",
+        "方法",
+        "难以",
+        "实现",
+        "的",
+        "现状",
+        ",",
+        "基于",
+        "蒙特卡罗",
+        "模拟",
+        "技术",
+        ",",
+        "给出",
+        "了",
+        "航空",
+        "发动机",
+        "故障",
+        "风险",
+        "预测",
+        "方法",
+        ",",
+        "用",
+        "于",
+        "评估",
+        "发动机",
+        "各",
+        "个",
+        "部件",
+        "在",
+        "未来",
+        "发生",
+        "故障",
+        "的",
+        "可能性",
+        ".",
+        "针对",
+        "航空",
+        "发动机",
+        "故障",
+        "数据",
+        "的",
+        "特点",
+        ",",
+        "以",
+        "威布尔",
+        "分布",
+        "建立",
+        "故障",
+        "概率",
+        "模型",
+        ",",
+        "利用",
+        "中位秩",
+        "回归",
+        "参数法",
+        ",",
+        "估计",
+        "威布尔",
+        "分布",
+        "参数",
+        ".",
+        "利用",
+        "乘",
+        "同余",
+        "组合",
+        "发生器",
+        "与",
+        "反变换法",
+        "相",
+        "结合",
+        "的",
+        "方式",
+        "产生",
+        "满足",
+        "威布尔",
+        "分布",
+        "的",
+        "随机数",
+        ".",
+        "在",
+        "单",
+        "故障",
+        "模式",
+        "风险",
+        "预测",
+        "的",
+        "基础",
+        "上",
+        ",",
+        "给出",
+        "了",
+        "多",
+        "种",
+        "故障",
+        "模式",
+        "并存",
+        "的",
+        "航空",
+        "发动机",
+        "风险",
+        "预测",
+        "方法",
+        ",",
+        "并且",
+        "给出",
+        "了",
+        "蒙特卡罗",
+        "模拟",
+        "步骤",
+        "和",
+        "算法",
+        ",",
+        "针对",
+        "实例",
+        ",",
+        "对比",
+        "发动机",
+        "厂商",
+        "提供",
+        "的",
+        "预测",
+        "数据",
+        ",",
+        "验证",
+        "了",
+        "算法",
+        "的",
+        "有效性",
+        "与",
+        "蒙特卡罗",
+        "模拟",
+        "方法",
+        "在",
+        "航空",
+        "发动机",
+        "故障",
+        "风险",
+        "预测",
+        "中",
+        "的",
+        "可用性",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "结构",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "复杂",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "模式",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "多样",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "传统",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "故障",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "风险",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "预测",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "方法",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "难以",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "实现",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "现状",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "基于",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 22,
+          "form": "蒙特卡罗",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 23,
+          "form": "模拟",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "技术",
+          "head": 21,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "了",
+          "head": 26,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 28,
+          "form": "航空",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "发动机",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "故障",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "风险",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "预测",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "方法",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "用",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "于",
+          "head": 35,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 37,
+          "form": "评估",
+          "head": 35,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "发动机",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "各",
+          "head": 41,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 40,
+          "form": "个",
+          "head": 39,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 41,
+          "form": "部件",
+          "head": 44,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "在",
+          "head": 44,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 43,
+          "form": "未来",
+          "head": 42,
+          "deprel": "pobj",
+          "pos": "NT"
+        },
+        {
+          "id": 44,
+          "form": "发生",
+          "head": 47,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "故障",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "的",
+          "head": 44,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 47,
+          "form": "可能性",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": ".",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 49,
+          "form": "针对",
+          "head": 60,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 50,
+          "form": "航空",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "发动机",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "故障",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "数据",
+          "head": 55,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "的",
+          "head": 53,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 55,
+          "form": "特点",
+          "head": 49,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": ",",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "以",
+          "head": 60,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 58,
+          "form": "威布尔",
+          "head": 59,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 59,
+          "form": "分布",
+          "head": 57,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "建立",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 61,
+          "form": "故障",
+          "head": 63,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "概率",
+          "head": 63,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "模型",
+          "head": 60,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": ",",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 65,
+          "form": "利用",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 66,
+          "form": "中位秩",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "回归",
+          "head": 68,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 68,
+          "form": "参数法",
+          "head": 65,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": ",",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 70,
+          "form": "估计",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 71,
+          "form": "威布尔",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 72,
+          "form": "分布",
+          "head": 73,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "参数",
+          "head": 70,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": ".",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 75,
+          "form": "利用",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 76,
+          "form": "乘",
+          "head": 85,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 77,
+          "form": "同余",
+          "head": 79,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 78,
+          "form": "组合",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "发生器",
+          "head": 81,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "与",
+          "head": 81,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 81,
+          "form": "反变换法",
+          "head": 83,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "相",
+          "head": 83,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 83,
+          "form": "结合",
+          "head": 85,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 84,
+          "form": "的",
+          "head": 83,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 85,
+          "form": "方式",
+          "head": 75,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": "产生",
+          "head": 75,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 87,
+          "form": "满足",
+          "head": 91,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 88,
+          "form": "威布尔",
+          "head": 89,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 89,
+          "form": "分布",
+          "head": 87,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 90,
+          "form": "的",
+          "head": 87,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 91,
+          "form": "随机数",
+          "head": 86,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 92,
+          "form": ".",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 93,
+          "form": "在",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 94,
+          "form": "单",
+          "head": 95,
+          "deprel": "nummod",
+          "pos": "JJ"
+        },
+        {
+          "id": 95,
+          "form": "故障",
+          "head": 96,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": "模式",
+          "head": 98,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "风险",
+          "head": 98,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": "预测",
+          "head": 100,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 99,
+          "form": "的",
+          "head": 98,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 100,
+          "form": "基础",
+          "head": 101,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 101,
+          "form": "上",
+          "head": 93,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 102,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 103,
+          "form": "给出",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 104,
+          "form": "了",
+          "head": 103,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 105,
+          "form": "多",
+          "head": 106,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 106,
+          "form": "种",
+          "head": 108,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 107,
+          "form": "故障",
+          "head": 108,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 108,
+          "form": "模式",
+          "head": 109,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 109,
+          "form": "并存",
+          "head": 115,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 110,
+          "form": "的",
+          "head": 109,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 111,
+          "form": "航空",
+          "head": 112,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 112,
+          "form": "发动机",
+          "head": 115,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 113,
+          "form": "风险",
+          "head": 115,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 114,
+          "form": "预测",
+          "head": 115,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 115,
+          "form": "方法",
+          "head": 103,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 116,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 117,
+          "form": "并且",
+          "head": 118,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 118,
+          "form": "给出",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 119,
+          "form": "了",
+          "head": 118,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 120,
+          "form": "蒙特卡罗",
+          "head": 124,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 121,
+          "form": "模拟",
+          "head": 124,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 122,
+          "form": "步骤",
+          "head": 124,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 123,
+          "form": "和",
+          "head": 124,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 124,
+          "form": "算法",
+          "head": 118,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 125,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 126,
+          "form": "针对",
+          "head": 129,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 127,
+          "form": "实例",
+          "head": 126,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 128,
+          "form": ",",
+          "head": 126,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 129,
+          "form": "对比",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 130,
+          "form": "发动机",
+          "head": 131,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 131,
+          "form": "厂商",
+          "head": 132,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 132,
+          "form": "提供",
+          "head": 135,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 133,
+          "form": "的",
+          "head": 132,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 134,
+          "form": "预测",
+          "head": 135,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 135,
+          "form": "数据",
+          "head": 129,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 136,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 137,
+          "form": "验证",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 138,
+          "form": "了",
+          "head": 137,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 139,
+          "form": "算法",
+          "head": 141,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 140,
+          "form": "的",
+          "head": 139,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 141,
+          "form": "有效性",
+          "head": 154,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 142,
+          "form": "与",
+          "head": 154,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 143,
+          "form": "蒙特卡罗",
+          "head": 145,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 144,
+          "form": "模拟",
+          "head": 145,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 145,
+          "form": "方法",
+          "head": 154,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 146,
+          "form": "在",
+          "head": 154,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 147,
+          "form": "航空",
+          "head": 148,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 148,
+          "form": "发动机",
+          "head": 151,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 149,
+          "form": "故障",
+          "head": 151,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 150,
+          "form": "风险",
+          "head": 151,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 151,
+          "form": "预测",
+          "head": 152,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 152,
+          "form": "中",
+          "head": 146,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 153,
+          "form": "的",
+          "head": 146,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 154,
+          "form": "可用性",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 155,
+          "form": ".",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "航空电子设备故障预测技术",
+    "subject_type": "技术",
+    "relation": "目的在于",
+    "object": "降低装备全寿命周期费用",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空电子设备故障预测技术",
+    "subject_type": "技术",
+    "relation": "目的在于",
+    "object": "提高经济可承受性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空电子设备故障预测技术",
+    "subject_type": "技术",
+    "relation": "目的在于",
+    "object": "预防灾难性事故",
+    "object_type": "目标"
+  },
+  {
+    "subject": "粗糙集理论",
+    "subject_type": "理论",
+    "relation": "用于改进",
+    "object": "神经元结构",
+    "object_type": "模型组件"
+  },
+  {
+    "subject": "粗糙神经网络",
+    "subject_type": "模型",
+    "relation": "使用",
+    "object": "粗糙变量",
+    "object_type": "输入"
+  },
+  {
+    "subject": "粗糙神经网络",
+    "subject_type": "模型",
+    "relation": "用于预测",
+    "object": "实际设备特征参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "粗糙神经网络",
+    "subject_type": "模型",
+    "relation": "能够预测",
+    "object": "故障发生的时间",
+    "object_type": "预测目标"
+  },
+  {
+    "subject": "粗糙神经网络",
+    "subject_type": "模型",
+    "relation": "性能优于",
+    "object": "BP神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "粗糙神经网络",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "航空电子设备的维护保障",
+    "object_type": "应用领域"
+  }
+]

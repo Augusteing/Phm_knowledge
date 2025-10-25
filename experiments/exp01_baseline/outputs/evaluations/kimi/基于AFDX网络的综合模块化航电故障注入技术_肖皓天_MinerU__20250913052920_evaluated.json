@@ -1,0 +1,255 @@
+{
+  "entities": [
+    {
+      "name": "AFDX网络",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "数据传输策略",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障注入装置",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "实验测试",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空电子全双工交换式以太网",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "PHM进程",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SetTimer函数",
+      "type": "系统/部件",
+      "evaluation": "错误"
+    },
+    {
+      "name": "TimeSetEvent函数",
+      "type": "系统/部件",
+      "evaluation": "错误"
+    },
+    {
+      "name": "AFDX端系统卡",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "BAG",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "VL",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "系统/部件",
+      "evaluation": "错误"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "ICD",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "数据单元",
+      "type": "数据集",
+      "evaluation": "错误"
+    },
+    {
+      "name": "二进制数据文件",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "软件工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "机载激光通信系统",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "综合模块化航空电子系统",
+      "relation": "基于",
+      "tail": "AFDX网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "故障数据配置管理方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "数据传输策略",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "导致",
+      "tail": "健康管理功能",
+      "evaluation": "错误"
+    },
+    {
+      "head": "实验测试",
+      "relation": "验证了",
+      "tail": "故障注入技术",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空电子全双工交换式以太网",
+      "relation": "配备有",
+      "tail": "健康管理和故障预测机制",
+      "evaluation": "正确"
+    },
+    {
+      "head": "非法数据输入",
+      "relation": "包含",
+      "tail": "AFDX网络",
+      "evaluation": "错误"
+    },
+    {
+      "head": "特殊信令输入",
+      "relation": "包含",
+      "tail": "AFDX网络",
+      "evaluation": "错误"
+    },
+    {
+      "head": "SQLite数据库",
+      "relation": "用于",
+      "tail": "管理接口控制文件的定义和数据帧的结构定义",
+      "evaluation": "正确"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "优于",
+      "tail": "SetTimer函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "基于",
+      "tail": "TimeSetEvent函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "AFDX端系统卡",
+      "relation": "实现",
+      "tail": "BAG",
+      "evaluation": "正确"
+    },
+    {
+      "head": "VL",
+      "relation": "配置为",
+      "tail": "采样或队列端口",
+      "evaluation": "正确"
+    },
+    {
+      "head": "功能数据集合",
+      "relation": "基于",
+      "tail": "AFDX网络协议",
+      "evaluation": "正确"
+    },
+    {
+      "head": "接口控制文件",
+      "relation": "定义",
+      "tail": "功能数据集合",
+      "evaluation": "正确"
+    },
+    {
+      "head": "二进制数据文件",
+      "relation": "存储",
+      "tail": "数据单元",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控错误帧信息",
+      "evaluation": "正确"
+    },
+    {
+      "head": "机载激光通信系统",
+      "relation": "基于",
+      "tail": "机载平台",
+      "evaluation": "正确"
+    }
+  ]
+}

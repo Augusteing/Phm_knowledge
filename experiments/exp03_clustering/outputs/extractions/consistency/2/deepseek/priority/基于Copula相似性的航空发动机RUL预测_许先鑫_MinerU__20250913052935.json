@@ -1,0 +1,293 @@
+{
+  "entities": [
+    {
+      "name": "基于Copula相似性的航空发动机RUL预测方法",
+      "type": "方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "剩余使用寿命",
+      "type": "任务"
+    },
+    {
+      "name": "Copula函数",
+      "type": "算法"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "退化模型",
+      "type": "模型"
+    },
+    {
+      "name": "传感器",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "Ps30",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "T50",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "BPR",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "Kendall秩相关系数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "传统方法",
+      "type": "方法"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "预测与健康管理",
+      "type": "应用领域"
+    },
+    {
+      "name": "非线性相关关系",
+      "type": "属性"
+    },
+    {
+      "name": "性能退化特征",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "许先鑫",
+      "type": "研究机构"
+    },
+    {
+      "name": "李娟",
+      "type": "研究机构"
+    },
+    {
+      "name": "孙秀慧",
+      "type": "研究机构"
+    },
+    {
+      "name": "戴洪德",
+      "type": "研究机构"
+    },
+    {
+      "name": "鲁东大学",
+      "type": "研究机构"
+    },
+    {
+      "name": "海军航空大学",
+      "type": "研究机构"
+    },
+    {
+      "name": "NASA",
+      "type": "研究机构"
+    },
+    {
+      "name": "Frank Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Clayton Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Gumbel Copula",
+      "type": "模型"
+    },
+    {
+      "name": "AIC",
+      "type": "性能指标"
+    },
+    {
+      "name": "线性退化模型",
+      "type": "模型"
+    },
+    {
+      "name": "操作设置变量",
+      "type": "参数"
+    },
+    {
+      "name": "训练集",
+      "type": "数据集"
+    },
+    {
+      "name": "验证集",
+      "type": "数据集"
+    },
+    {
+      "name": "标准差",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "许先鑫"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "李娟"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "孙秀慧"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提出",
+      "tail": "戴洪德"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "用于",
+      "tail": "剩余使用寿命"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "K-means聚类"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "退化模型"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "优于",
+      "tail": "传统方法"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "采用",
+      "tail": "Kendall秩相关系数"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "输入",
+      "tail": "传感器"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "输出",
+      "tail": "剩余使用寿命"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "训练",
+      "tail": "训练集"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "评估",
+      "tail": "验证集"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "预测",
+      "tail": "剩余使用寿命"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "用于",
+      "tail": "非线性相关关系"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "建模",
+      "tail": "性能退化特征"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "操作设置变量"
+    },
+    {
+      "head": "退化模型",
+      "relation": "建立",
+      "tail": "线性退化模型"
+    },
+    {
+      "head": "退化模型",
+      "relation": "选择",
+      "tail": "Ps30"
+    },
+    {
+      "head": "退化模型",
+      "relation": "选择",
+      "tail": "T50"
+    },
+    {
+      "head": "退化模型",
+      "relation": "选择",
+      "tail": "BPR"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "基于",
+      "tail": "C-MAPSS数据集"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "属于",
+      "tail": "预测与健康管理"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "包括",
+      "tail": "Frank Copula"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "包括",
+      "tail": "Clayton Copula"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "包括",
+      "tail": "Gumbel Copula"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "评估",
+      "tail": "AIC"
+    },
+    {
+      "head": "基于Copula相似性的航空发动机RUL预测方法",
+      "relation": "评估",
+      "tail": "标准差"
+    }
+  ]
+}

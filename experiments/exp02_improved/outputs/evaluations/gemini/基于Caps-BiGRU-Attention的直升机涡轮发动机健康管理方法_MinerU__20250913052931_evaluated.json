@@ -1,0 +1,414 @@
+{
+  "entities": [
+    {
+      "name": "Caps-BiGRU-Attention模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "直升机涡轮发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康管理",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障模式识别",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "BiGRU",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障诊断",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "准确率",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "特征分析",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "概率分布拟合",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "严重失效",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "轻微失效",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康状态",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发动机故障",
+      "type": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "name": "飞行安全",
+      "type": "应用场景",
+      "evaluation": "正确"
+    },
+    {
+      "name": "卷积神经网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SHAP模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "传感器/监测参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障模式",
+      "type": "特征/健康指标",
+      "evaluation": "错误"
+    },
+    {
+      "name": "CNN-BiGRU-Attention",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CNN-BiLstm",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CNN-BiGRU",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "RandomForest",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "K-S检验",
+      "type": "研究方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AIC值",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "混合高斯密度模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "衰减状态",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "本文",
+      "type": "研究",
+      "evaluation": "正确"
+    },
+    {
+      "name": "直升机涡轮发动机的健康状态",
+      "type": "特征/健康指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "捕捉空间关系",
+      "type": "功能",
+      "evaluation": "正确"
+    },
+    {
+      "name": "提取时间序列特征",
+      "type": "功能",
+      "evaluation": "正确"
+    },
+    {
+      "name": "对特征加权",
+      "type": "功能",
+      "evaluation": "正确"
+    },
+    {
+      "name": "忽视特征的姿态和变换",
+      "type": "缺陷",
+      "evaluation": "正确"
+    },
+    {
+      "name": "判断分布拟合优度",
+      "type": "功能",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "本文",
+      "relation": "提出了",
+      "tail": "Caps-BiGRU-Attention模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "用于",
+      "tail": "故障模式识别",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "用于",
+      "tail": "扭矩裕度预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "由...组成",
+      "tail": "胶囊网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "由...组成",
+      "tail": "BiGRU",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "由...组成",
+      "tail": "SE注意力机制",
+      "evaluation": "正确"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "实现",
+      "tail": "捕捉空间关系",
+      "evaluation": "正确"
+    },
+    {
+      "head": "BiGRU",
+      "relation": "实现",
+      "tail": "提取时间序列特征",
+      "evaluation": "正确"
+    },
+    {
+      "head": "SE注意力机制",
+      "relation": "实现",
+      "tail": "对特征加权",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "在...上验证",
+      "tail": "直升机涡轮发动机数据集",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "性能优于",
+      "tail": "CNN-BiGRU-Attention",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "性能优于",
+      "tail": "CNN-BiLstm",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "性能优于",
+      "tail": "RandomForest",
+      "evaluation": "正确"
+    },
+    {
+      "head": "准确率",
+      "relation": "评估",
+      "tail": "故障诊断",
+      "evaluation": "正确"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "评估",
+      "tail": "扭矩裕度预测",
+      "evaluation": "正确"
+    },
+    {
+      "head": "SHAP模型",
+      "relation": "用于",
+      "tail": "特征分析",
+      "evaluation": "正确"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "故障模式",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障模式",
+      "relation": "影响",
+      "tail": "扭矩裕度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "概率分布拟合",
+      "relation": "确定",
+      "tail": "贝塔分布",
+      "evaluation": "正确"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "是...的最佳分布",
+      "tail": "严重失效",
+      "evaluation": "正确"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "是...的最佳分布",
+      "tail": "轻微失效",
+      "evaluation": "正确"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "是...的最佳分布",
+      "tail": "健康状态",
+      "evaluation": "正确"
+    },
+    {
+      "head": "发动机故障",
+      "relation": "影响",
+      "tail": "飞行安全",
+      "evaluation": "正确"
+    },
+    {
+      "head": "卷积神经网络",
+      "relation": "存在缺陷",
+      "tail": "忽视特征的姿态和变换",
+      "evaluation": "正确"
+    },
+    {
+      "head": "K-S检验",
+      "relation": "用于",
+      "tail": "判断分布拟合优度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "AIC值",
+      "relation": "用于",
+      "tail": "判断分布拟合优度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "直升机涡轮发动机的健康状态",
+      "relation": "分为",
+      "tail": "严重失效",
+      "evaluation": "正确"
+    },
+    {
+      "head": "直升机涡轮发动机的健康状态",
+      "relation": "分为",
+      "tail": "轻微失效",
+      "evaluation": "正确"
+    },
+    {
+      "head": "直升机涡轮发动机的健康状态",
+      "relation": "分为",
+      "tail": "衰减状态",
+      "evaluation": "正确"
+    },
+    {
+      "head": "直升机涡轮发动机的健康状态",
+      "relation": "分为",
+      "tail": "健康状态",
+      "evaluation": "正确"
+    }
+  ]
+}

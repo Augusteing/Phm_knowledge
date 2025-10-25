@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "剩余寿命预测",
+    "subject_type": "任务",
+    "relation": "应用于",
+    "object": "随机退化设备",
+    "object_type": "研究对象"
+  },
+  {
+    "subject": "剩余寿命预测",
+    "subject_type": "任务",
+    "relation": "核心问题是",
+    "object": "不确定性量化",
+    "object_type": "核心问题"
+  },
+  {
+    "subject": "剩余寿命预测技术",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "机理模型与数据混合驱动的剩余寿命预测技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "剩余寿命预测技术",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "基于机器学习的剩余寿命预测技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "剩余寿命预测技术",
+    "subject_type": "技术领域",
+    "relation": "包含",
+    "object": "统计数据驱动的剩余寿命预测技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "当前研究",
+    "subject_type": "研究现状",
+    "relation": "存在",
+    "object": "局限性和共性难题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "数模联动解决思路",
+    "subject_type": "方法",
+    "relation": "用于解决",
+    "object": "随机退化设备剩余寿命预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "数模联动解决思路",
+    "subject_type": "方法",
+    "relation": "通过...验证",
+    "object": "航空发动机多源监测数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "大数据背景下的剩余寿命预测",
+    "subject_type": "研究领域",
+    "relation": "亟待解决",
+    "object": "深度学习与随机退化建模交互联动",
+    "object_type": "关键科学问题"
+  },
+  {
+    "subject": "大数据背景下的剩余寿命预测",
+    "subject_type": "研究领域",
+    "relation": "亟待解决",
+    "object": "监测大数据与剩余寿命及其预测不确定性映射机制",
+    "object_type": "关键科学问题"
+  },
+  {
+    "subject": "大数据背景下的剩余寿命预测",
+    "subject_type": "研究领域",
+    "relation": "亟待解决",
+    "object": "非理想大数据下的剩余寿命预测",
+    "object_type": "关键科学问题"
+  }
+]

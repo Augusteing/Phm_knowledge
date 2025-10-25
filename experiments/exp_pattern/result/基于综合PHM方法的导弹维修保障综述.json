@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "新型自主式后勤保障的关键技术",
+    "object_type": "技术定位"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "故障检测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "诊断",
+    "object_type": "功能"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "预测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "状态评估",
+    "object_type": "功能"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "综合决策",
+    "object_type": "功能"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "维修、使用和保障费用",
+    "object_type": "成本"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "战备完好率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "任务成功率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "故障预测与管理技术(PHM)",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "安全性和可用性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "导弹维修保障",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "导弹维修保障综合PHM",
+    "subject_type": "概念",
+    "relation": "包含",
+    "object": "基本概念",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "导弹维修保障综合PHM",
+    "subject_type": "概念",
+    "relation": "包含",
+    "object": "体系构建方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "导弹维修保障综合PHM",
+    "subject_type": "概念",
+    "relation": "存在",
+    "object": "技术难点",
+    "object_type": "问题"
+  }
+]

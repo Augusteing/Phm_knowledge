@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "直升机涡轮发动机健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "Caps-BiGRU-Attention模型",
+      "type": "模型"
+    },
+    {
+      "name": "故障模式识别",
+      "type": "任务"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "任务"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "模型"
+    },
+    {
+      "name": "BiGRU层",
+      "type": "模型"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "模型"
+    },
+    {
+      "name": "直升机涡轮发动机数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "特征分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "概率分布拟合",
+      "type": "研究方法"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "理论基础"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "健康管理",
+      "type": "应用领域"
+    },
+    {
+      "name": "深度学习",
+      "type": "理论基础"
+    },
+    {
+      "name": "传感器数据",
+      "type": "数据"
+    },
+    {
+      "name": "SHAP模型",
+      "type": "理论基础"
+    },
+    {
+      "name": "混合高斯密度模型",
+      "type": "理论基础"
+    }
+  ],
+  "relations": [
+    {
+      "head": "直升机涡轮发动机健康管理",
+      "relation": "包括",
+      "tail": "故障模式识别"
+    },
+    {
+      "head": "直升机涡轮发动机健康管理",
+      "relation": "包括",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "应用于",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "BiGRU层",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "SE注意力机制",
+      "relation": "组成",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "基于",
+      "tail": "深度学习"
+    },
+    {
+      "head": "特征分析",
+      "relation": "用于",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "概率分布拟合",
+      "relation": "用于",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "扭矩裕度",
+      "relation": "影响",
+      "tail": "直升机涡轮发动机健康管理"
+    },
+    {
+      "head": "传感器数据",
+      "relation": "输入",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "SHAP模型",
+      "relation": "用于",
+      "tail": "特征分析"
+    },
+    {
+      "head": "混合高斯密度模型",
+      "relation": "用于",
+      "tail": "概率分布拟合"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "确定为",
+      "tail": "扭矩裕度"
+    }
+  ]
+}

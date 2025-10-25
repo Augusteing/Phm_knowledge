@@ -1,0 +1,906 @@
+{
+  "title": "通航飞机起落架系统故障频率预测研究",
+  "summary": "文章研究起落架系统发生故障的频率,变事后维修为预防维修,尽可能保证飞行安全。因此提出一种采用模糊信息粒化和支持向量机相融合的时序回归预测技术来预测起落架系统故障发生频率。以某型通航飞机2012年1月至2016年12月的起落架故障数据为基础,根据该模型输入数据并进行故障频率预测。预测结果表明,采用该方法预测起落架故障频率合理有效,根据该预测结果可得到起落架故障频率的变化趋势和变化空间,并为机务维修提供技术支持。",
+  "analyzed_sentences": [
+    {
+      "sentence": "文章研究起落架系统发生故障的频率,变事后维修为预防维修,尽可能保证飞行安全",
+      "tokens": [
+        "文章",
+        "研究",
+        "起落架",
+        "系统",
+        "发生",
+        "故障",
+        "的",
+        "频率",
+        ",",
+        "变",
+        "事后",
+        "维修",
+        "为",
+        "预防",
+        "维修",
+        ",",
+        "尽可能",
+        "保证",
+        "飞行",
+        "安全"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "文章",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "研究",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "起落架",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "发生",
+          "head": 8,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "频率",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "变",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "事后",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "维修",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "为",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "预防",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "维修",
+          "head": 13,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "尽可能",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "保证",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "飞行",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "安全",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "因此提出一种采用模糊信息粒化和支持向量机相融合的时序回归预测技术来预测起落架系统故障发生频率",
+      "tokens": [
+        "因此",
+        "提出",
+        "一",
+        "种",
+        "采用",
+        "模糊",
+        "信息",
+        "粒化",
+        "和",
+        "支持",
+        "向量机",
+        "相",
+        "融合",
+        "的",
+        "时序",
+        "回归",
+        "预测",
+        "技术",
+        "来",
+        "预测",
+        "起落架",
+        "系统",
+        "故障",
+        "发生",
+        "频率"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "因此",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "一",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "种",
+          "head": 5,
+          "deprel": "dep",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "采用",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "模糊",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "信息",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "粒化",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "支持",
+          "head": 6,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "向量机",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "相",
+          "head": 13,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "融合",
+          "head": 10,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 15,
+          "form": "时序",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "回归",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "预测",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "技术",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "来",
+          "head": 20,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 20,
+          "form": "预测",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "起落架",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "系统",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "故障",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "发生",
+          "head": 25,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "频率",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "以某型通航飞机2012年1月至2016年12月的起落架故障数据为基础,根据该模型输入数据并进行故障频率预测",
+      "tokens": [
+        "以",
+        "某",
+        "型",
+        "通航",
+        "飞机",
+        "2012年",
+        "1月",
+        "至",
+        "2016年",
+        "12月",
+        "的",
+        "起落架",
+        "故障",
+        "数据",
+        "为",
+        "基础",
+        ",",
+        "根据",
+        "该",
+        "模型",
+        "输入",
+        "数据",
+        "并",
+        "进行",
+        "故障",
+        "频率",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "某",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "型",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "通航",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "飞机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "2012年",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 7,
+          "form": "1月",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NT"
+        },
+        {
+          "id": 8,
+          "form": "至",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "2016年",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NT"
+        },
+        {
+          "id": 10,
+          "form": "12月",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NT"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "起落架",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "数据",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "基础",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "根据",
+          "head": 21,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 19,
+          "form": "该",
+          "head": 20,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 20,
+          "form": "模型",
+          "head": 18,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "输入",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "数据",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "并",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "进行",
+          "head": 21,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "故障",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "频率",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "预测",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "预测结果表明,采用该方法预测起落架故障频率合理有效,根据该预测结果可得到起落架故障频率的变化趋势和变化空间,并为机务维修提供技术支持",
+      "tokens": [
+        "预测",
+        "结果",
+        "表明",
+        ",",
+        "采用",
+        "该",
+        "方法",
+        "预测",
+        "起落架",
+        "故障",
+        "频率",
+        "合理",
+        "有效",
+        ",",
+        "根据",
+        "该",
+        "预测",
+        "结果",
+        "可",
+        "得到",
+        "起落架",
+        "故障",
+        "频率",
+        "的",
+        "变化",
+        "趋势",
+        "和",
+        "变化",
+        "空间",
+        ",",
+        "并",
+        "为",
+        "机务",
+        "维修",
+        "提供",
+        "技术",
+        "支持"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "预测",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "结果",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "采用",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "该",
+          "head": 7,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "起落架",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "频率",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "合理",
+          "head": 3,
+          "deprel": "ccomp",
+          "pos": "VA"
+        },
+        {
+          "id": 13,
+          "form": "有效",
+          "head": 12,
+          "deprel": "comod",
+          "pos": "VA"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "根据",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "该",
+          "head": 18,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 17,
+          "form": "预测",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "结果",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "可",
+          "head": 20,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "得到",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "起落架",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "故障",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "频率",
+          "head": 29,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 25,
+          "form": "变化",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "趋势",
+          "head": 29,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "和",
+          "head": 29,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "变化",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "空间",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "并",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "为",
+          "head": 35,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 33,
+          "form": "机务",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "维修",
+          "head": 32,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "提供",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "技术",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "支持",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

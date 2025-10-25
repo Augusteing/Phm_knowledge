@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "故障预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "高于",
+    "object": "传统的故障诊断技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "故障预测与健康管理(PHM)技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "电子系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "电子系统故障预测",
+    "subject_type": "任务",
+    "relation": "包含方法",
+    "object": "特征参数法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "电子系统故障预测",
+    "subject_type": "任务",
+    "relation": "包含方法",
+    "object": "预警电路",
+    "object_type": "方法"
+  },
+  {
+    "subject": "电子系统故障预测",
+    "subject_type": "任务",
+    "relation": "包含方法",
+    "object": "累积损伤模型法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "电子系统故障预测",
+    "subject_type": "任务",
+    "relation": "包含方法",
+    "object": "综合法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "电子系统PHM技术",
+    "subject_type": "技术",
+    "relation": "面临挑战",
+    "object": "特征参数获取",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "电子系统PHM技术",
+    "subject_type": "技术",
+    "relation": "面临挑战",
+    "object": "物理损伤模型",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "电子系统PHM技术",
+    "subject_type": "技术",
+    "relation": "面临挑战",
+    "object": "电子元器件质量",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "电子系统PHM技术",
+    "subject_type": "技术",
+    "relation": "需要考虑",
+    "object": "可测性",
+    "object_type": "发展方向"
+  },
+  {
+    "subject": "电子系统PHM技术",
+    "subject_type": "技术",
+    "relation": "需要考虑",
+    "object": "PHM的标准化",
+    "object_type": "发展方向"
+  },
+  {
+    "subject": "电子系统PHM技术",
+    "subject_type": "技术",
+    "relation": "需要考虑",
+    "object": "评价指标",
+    "object_type": "发展方向"
+  }
+]

@@ -1,0 +1,453 @@
+{
+  "title": "航空电子系统健康管理专家系统的关键技术综述",
+  "summary": "简要介绍了飞机健康管理系统和航空电子系统健康管理专家系统软件平台的基本概念,重点归纳总结了航空电子系统健康管理专家系统软件平台设计中健康状态的管理模式、推理机的模型设计、不同的故障修复策略等关键技术。",
+  "analyzed_sentences": [
+    {
+      "sentence": "简要介绍了飞机健康管理系统和航空电子系统健康管理专家系统软件平台的基本概念,重点归纳总结了航空电子系统健康管理专家系统软件平台设计中健康状态的管理模式、推理机的模型设计、不同的故障修复策略等关键技术",
+      "tokens": [
+        "简要",
+        "介绍",
+        "了",
+        "飞机",
+        "健康",
+        "管理",
+        "系统",
+        "和",
+        "航空",
+        "电子",
+        "系统",
+        "健康",
+        "管理",
+        "专家",
+        "系统",
+        "软件",
+        "平台",
+        "的",
+        "基本",
+        "概念",
+        ",",
+        "重点",
+        "归纳",
+        "总结",
+        "了",
+        "航空",
+        "电子",
+        "系统",
+        "健康",
+        "管理",
+        "专家",
+        "系统",
+        "软件",
+        "平台",
+        "设计",
+        "中",
+        "健康",
+        "状态",
+        "的",
+        "管理",
+        "模式",
+        "、",
+        "推理机",
+        "的",
+        "模型",
+        "设计",
+        "、",
+        "不同",
+        "的",
+        "故障",
+        "修复",
+        "策略",
+        "等",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "简要",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "和",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "航空",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "电子",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "健康",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "管理",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "专家",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "系统",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "软件",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "平台",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 17,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "基本",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "概念",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "重点",
+          "head": 23,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "归纳",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "总结",
+          "head": 23,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "了",
+          "head": 23,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 26,
+          "form": "航空",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "电子",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "系统",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "健康",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "管理",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "专家",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "系统",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "软件",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "平台",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "设计",
+          "head": 36,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "中",
+          "head": 41,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 37,
+          "form": "健康",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "状态",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "的",
+          "head": 38,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 40,
+          "form": "管理",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "模式",
+          "head": 52,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "、",
+          "head": 52,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "推理机",
+          "head": 46,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 43,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "模型",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "设计",
+          "head": 52,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "、",
+          "head": 52,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 48,
+          "form": "不同",
+          "head": 52,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 49,
+          "form": "的",
+          "head": 48,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 50,
+          "form": "故障",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "修复",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "策略",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "等",
+          "head": 52,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 54,
+          "form": "关键",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "技术",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

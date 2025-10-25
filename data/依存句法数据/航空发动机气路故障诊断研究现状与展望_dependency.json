@@ -1,0 +1,1108 @@
+{
+  "title": "航空发动机气路故障诊断研究现状与展望",
+  "summary": "航空发动机气路故障诊断是通过对发动机系统、部件的气路参数进行分析,以识别气路部件性能退化或故障的主动过程,是提高飞行安全性和可靠性、降低发动机维修成本的重要途径,当前已成为飞行推进技术研究领域的热点。本文较为详尽地阐述了发动机气路故障诊断技术的发展历程;讨论了发动机气路故障诊断的主要方法,包括基于线性/非线性模型的诊断方法、基于数据驱动的诊断方法、基于信息融合的诊断方法等,评述了这些方法的优缺点;最后指出了气路故障诊断技术中的关键技术和难点,并对未来的发展趋势进行了展望。",
+  "analyzed_sentences": [
+    {
+      "sentence": "航空发动机气路故障诊断是通过对发动机系统、部件的气路参数进行分析,以识别气路部件性能退化或故障的主动过程,是提高飞行安全性和可靠性、降低发动机维修成本的重要途径,当前已成为飞行推进技术研究领域的热点",
+      "tokens": [
+        "航空",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "是",
+        "通过",
+        "对",
+        "发动机",
+        "系统",
+        "、",
+        "部件",
+        "的",
+        "气路",
+        "参数",
+        "进行",
+        "分析",
+        ",",
+        "以",
+        "识别",
+        "气路",
+        "部件",
+        "性能",
+        "退化",
+        "或",
+        "故障",
+        "的",
+        "主动",
+        "过程",
+        ",",
+        "是",
+        "提高",
+        "飞行",
+        "安全性",
+        "和",
+        "可靠性",
+        "、",
+        "降低",
+        "发动机",
+        "维修",
+        "成本",
+        "的",
+        "重要",
+        "途径",
+        ",",
+        "当前",
+        "已",
+        "成为",
+        "飞行",
+        "推进",
+        "技术",
+        "研究",
+        "领域",
+        "的",
+        "热点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "航空",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "气路",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "诊断",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 7,
+          "form": "通过",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "对",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "发动机",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "部件",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "气路",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "参数",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "进行",
+          "head": 7,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "分析",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "以",
+          "head": 20,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 20,
+          "form": "识别",
+          "head": 6,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "气路",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "部件",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "性能",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "退化",
+          "head": 29,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "或",
+          "head": 24,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 26,
+          "form": "故障",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "的",
+          "head": 24,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 28,
+          "form": "主动",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "过程",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "是",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 32,
+          "form": "提高",
+          "head": 44,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "飞行",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "安全性",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "和",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 36,
+          "form": "可靠性",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "、",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "降低",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "发动机",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "维修",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "成本",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "的",
+          "head": 32,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 43,
+          "form": "重要",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 44,
+          "form": "途径",
+          "head": 31,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "当前",
+          "head": 48,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 47,
+          "form": "已",
+          "head": 48,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 48,
+          "form": "成为",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "飞行",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "推进",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 51,
+          "form": "技术",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "研究",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "领域",
+          "head": 55,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "的",
+          "head": 53,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 55,
+          "form": "热点",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "本文较为详尽地阐述了发动机气路故障诊断技术的发展历程;讨论了发动机气路故障诊断的主要方法,包括基于线性/非线性模型的诊断方法、基于数据驱动的诊断方法、基于信息融合的诊断方法等,评述了这些方法的优缺点;最后指出了气路故障诊断技术中的关键技术和难点,并对未来的发展趋势进行了展望",
+      "tokens": [
+        "本",
+        "文",
+        "较为",
+        "详尽",
+        "地",
+        "阐述",
+        "了",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "技术",
+        "的",
+        "发展",
+        "历程",
+        ";",
+        "讨论",
+        "了",
+        "发动机",
+        "气路",
+        "故障",
+        "诊断",
+        "的",
+        "主要",
+        "方法",
+        ",",
+        "包括",
+        "基于",
+        "线性",
+        "/",
+        "非线性",
+        "模型",
+        "的",
+        "诊断",
+        "方法",
+        "、",
+        "基于",
+        "数据",
+        "驱动",
+        "的",
+        "诊断",
+        "方法",
+        "、",
+        "基于",
+        "信息",
+        "融合",
+        "的",
+        "诊断",
+        "方法",
+        "等",
+        ",",
+        "评述",
+        "了",
+        "这些",
+        "方法",
+        "的",
+        "优缺点",
+        ";",
+        "最后",
+        "指出",
+        "了",
+        "气路",
+        "故障",
+        "诊断",
+        "技术",
+        "中",
+        "的",
+        "关键",
+        "技术",
+        "和",
+        "难点",
+        ",",
+        "并",
+        "对",
+        "未来",
+        "的",
+        "发展",
+        "趋势",
+        "进行",
+        "了",
+        "展望"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "较为",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "详尽",
+          "head": 6,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 5,
+          "form": "地",
+          "head": 4,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 6,
+          "form": "阐述",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "了",
+          "head": 6,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 8,
+          "form": "发动机",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "气路",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "诊断",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "技术",
+          "head": 15,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "发展",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "历程",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ";",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "讨论",
+          "head": 6,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "发动机",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "气路",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "诊断",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 22,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "主要",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "方法",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "包括",
+          "head": 25,
+          "deprel": "prnmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "基于",
+          "head": 49,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 29,
+          "form": "线性",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "/",
+          "head": 29,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "非线性",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 32,
+          "form": "模型",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 28,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 34,
+          "form": "诊断",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "方法",
+          "head": 49,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "、",
+          "head": 49,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 37,
+          "form": "基于",
+          "head": 49,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 38,
+          "form": "数据",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "驱动",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "的",
+          "head": 37,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 41,
+          "form": "诊断",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "方法",
+          "head": 49,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "、",
+          "head": 49,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "基于",
+          "head": 49,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 45,
+          "form": "信息",
+          "head": 46,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "融合",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 47,
+          "form": "的",
+          "head": 44,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 48,
+          "form": "诊断",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "方法",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "等",
+          "head": 49,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "评述",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 53,
+          "form": "了",
+          "head": 52,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 54,
+          "form": "这些",
+          "head": 55,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 55,
+          "form": "方法",
+          "head": 57,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "的",
+          "head": 55,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 57,
+          "form": "优缺点",
+          "head": 52,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": ";",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 59,
+          "form": "最后",
+          "head": 60,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 60,
+          "form": "指出",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 61,
+          "form": "了",
+          "head": 60,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 62,
+          "form": "气路",
+          "head": 65,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "故障",
+          "head": 65,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "诊断",
+          "head": 65,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "技术",
+          "head": 66,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "中",
+          "head": 71,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 67,
+          "form": "的",
+          "head": 66,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 68,
+          "form": "关键",
+          "head": 71,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "技术",
+          "head": 71,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": "和",
+          "head": 71,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 71,
+          "form": "难点",
+          "head": 60,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": ",",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 73,
+          "form": "并",
+          "head": 60,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 74,
+          "form": "对",
+          "head": 79,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 75,
+          "form": "未来",
+          "head": 78,
+          "deprel": "assmod",
+          "pos": "NT"
+        },
+        {
+          "id": 76,
+          "form": "的",
+          "head": 75,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 77,
+          "form": "发展",
+          "head": 78,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "趋势",
+          "head": 74,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "进行",
+          "head": 60,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 80,
+          "form": "了",
+          "head": 79,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 81,
+          "form": "展望",
+          "head": 79,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

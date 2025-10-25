@@ -1,0 +1,805 @@
+{
+  "title": "航空发动机预测健康管理系统设计的关键技术",
+  "summary": "介绍了航空发动机预测健康管理(EPHM)系统的定义、设计目标及其功能;结合EJ200,F119等国外第4代战斗机发动机健康管理系统的技术特点,设计了航空发动机预测健康管理系统与飞机、发动机的交联方案;完成了航空发动机在线机载EPHM系统及离线EPHM系统的基本结构设计;提出了航空发动机机载预测健康管理系统应实现的技术指标;总结归纳了航空发动机预测健康管理系统设计的关键技术.",
+  "analyzed_sentences": [
+    {
+      "sentence": "介绍了航空发动机预测健康管理(EPHM)系统的定义、设计目标及其功能;结合EJ200,F119等国外第4代战斗机发动机健康管理系统的技术特点,设计了航空发动机预测健康管理系统与飞机、发动机的交联方案;完成了航空发动机在线机载EPHM系统及离线EPHM系统的基本结构设计;提出了航空发动机机载预测健康管理系统应实现的技术指标;总结归纳了航空发动机预测健康管理系统设计的关键技术.",
+      "tokens": [
+        "介绍",
+        "了",
+        "航空",
+        "发动机",
+        "预测",
+        "健康",
+        "管理",
+        "(",
+        "EPHM",
+        ")",
+        "系统",
+        "的",
+        "定义",
+        "、",
+        "设计",
+        "目标",
+        "及",
+        "其",
+        "功能",
+        ";",
+        "结合",
+        "EJ200",
+        ",",
+        "F119",
+        "等",
+        "国外",
+        "第4",
+        "代",
+        "战斗机",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "技术",
+        "特点",
+        ",",
+        "设计",
+        "了",
+        "航空",
+        "发动机",
+        "预测",
+        "健康",
+        "管理",
+        "系统",
+        "与",
+        "飞机",
+        "、",
+        "发动机",
+        "的",
+        "交联",
+        "方案",
+        ";",
+        "完成",
+        "了",
+        "航空",
+        "发动机",
+        "在线",
+        "机载",
+        "EPHM",
+        "系统",
+        "及",
+        "离线",
+        "EPHM",
+        "系统",
+        "的",
+        "基本",
+        "结构",
+        "设计",
+        ";",
+        "提出",
+        "了",
+        "航空",
+        "发动机",
+        "机载",
+        "预测",
+        "健康",
+        "管理",
+        "系统",
+        "应",
+        "实现",
+        "的",
+        "技术",
+        "指标",
+        ";",
+        "总结",
+        "归纳",
+        "了",
+        "航空",
+        "发动机",
+        "预测",
+        "健康",
+        "管理",
+        "系统",
+        "设计",
+        "的",
+        "关键",
+        "技术",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "发动机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "(",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "EPHM",
+          "head": 11,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ")",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "定义",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "设计",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "目标",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "及",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "其",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 19,
+          "form": "功能",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ";",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "结合",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "EJ200",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 23,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "F119",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 25,
+          "form": "等",
+          "head": 24,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 26,
+          "form": "国外",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "第4",
+          "head": 28,
+          "deprel": "ordmod",
+          "pos": "OD"
+        },
+        {
+          "id": 28,
+          "form": "代",
+          "head": 33,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 29,
+          "form": "战斗机",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "发动机",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "健康",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "管理",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "系统",
+          "head": 36,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "技术",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "特点",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "设计",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "了",
+          "head": 38,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 40,
+          "form": "航空",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "发动机",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "预测",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "健康",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "管理",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "系统",
+          "head": 52,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "与",
+          "head": 52,
+          "deprel": "assmod",
+          "pos": "CC"
+        },
+        {
+          "id": 47,
+          "form": "飞机",
+          "head": 49,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "、",
+          "head": 49,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 49,
+          "form": "发动机",
+          "head": 46,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "的",
+          "head": 46,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 51,
+          "form": "交联",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "方案",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": ";",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 54,
+          "form": "完成",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 55,
+          "form": "了",
+          "head": 54,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 56,
+          "form": "航空",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "发动机",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "在线",
+          "head": 61,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 59,
+          "form": "机载",
+          "head": 61,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "EPHM",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "系统",
+          "head": 65,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "及",
+          "head": 65,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 63,
+          "form": "离线",
+          "head": 65,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 64,
+          "form": "EPHM",
+          "head": 65,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "系统",
+          "head": 69,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "的",
+          "head": 65,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 67,
+          "form": "基本",
+          "head": 69,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 68,
+          "form": "结构",
+          "head": 69,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "设计",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": ";",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 71,
+          "form": "提出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 72,
+          "form": "了",
+          "head": 71,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 73,
+          "form": "航空",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "发动机",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "机载",
+          "head": 79,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 76,
+          "form": "预测",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "健康",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "管理",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "系统",
+          "head": 81,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "应",
+          "head": 81,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 81,
+          "form": "实现",
+          "head": 84,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 82,
+          "form": "的",
+          "head": 81,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 83,
+          "form": "技术",
+          "head": 84,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 84,
+          "form": "指标",
+          "head": 71,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": ";",
+          "head": 86,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 86,
+          "form": "总结",
+          "head": 71,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 87,
+          "form": "归纳",
+          "head": 86,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 88,
+          "form": "了",
+          "head": 71,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 89,
+          "form": "航空",
+          "head": 90,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 90,
+          "form": "发动机",
+          "head": 94,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 91,
+          "form": "预测",
+          "head": 94,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 92,
+          "form": "健康",
+          "head": 94,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 93,
+          "form": "管理",
+          "head": 94,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "系统",
+          "head": 95,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 95,
+          "form": "设计",
+          "head": 98,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 96,
+          "form": "的",
+          "head": 95,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 97,
+          "form": "关键",
+          "head": 98,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": "技术",
+          "head": 71,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 99,
+          "form": ".",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

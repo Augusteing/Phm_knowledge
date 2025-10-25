@@ -1,0 +1,187 @@
+{
+  "entities": [
+    {
+      "name": "AFDX网络",
+      "type": "系统/部件"
+    },
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法"
+    },
+    {
+      "name": "数据传输策略",
+      "type": "方法"
+    },
+    {
+      "name": "故障注入装置",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "实验测试",
+      "type": "研究方法"
+    },
+    {
+      "name": "航空电子全双工交换式以太网",
+      "type": "系统/部件"
+    },
+    {
+      "name": "PHM进程",
+      "type": "系统/部件"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "故障模式"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "故障模式"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "软件工具"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "数据集"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据集"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "系统/部件"
+    },
+    {
+      "name": "SetTimer函数",
+      "type": "系统/部件"
+    },
+    {
+      "name": "TimeSetEvent函数",
+      "type": "系统/部件"
+    },
+    {
+      "name": "AFDX端系统卡",
+      "type": "系统/部件"
+    },
+    {
+      "name": "BAG",
+      "type": "性能指标"
+    },
+    {
+      "name": "VL",
+      "type": "系统/部件"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "机载激光通信系统",
+      "type": "系统/部件"
+    }
+  ],
+  "relations": [
+    {
+      "head": "综合模块化航空电子系统",
+      "relation": "基于",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "故障数据配置管理方法"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包含",
+      "tail": "数据传输策略"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "导致",
+      "tail": "健康管理功能"
+    },
+    {
+      "head": "实验测试",
+      "relation": "验证了",
+      "tail": "故障注入技术"
+    },
+    {
+      "head": "航空电子全双工交换式以太网",
+      "relation": "配备有",
+      "tail": "健康管理和故障预测机制"
+    },
+    {
+      "head": "PHM进程",
+      "relation": "包含",
+      "tail": "分区驻留的PHM分区"
+    },
+    {
+      "head": "非法数据输入",
+      "relation": "区别于",
+      "tail": "特殊信令输入"
+    },
+    {
+      "head": "SQLite数据库",
+      "relation": "用于",
+      "tail": "管理接口控制文件的定义和数据帧的结构定义"
+    },
+    {
+      "head": "功能数据集合",
+      "relation": "基于",
+      "tail": "AFDX网络协议"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "优于",
+      "tail": "SetTimer函数"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "创建了",
+      "tail": "TimeSetEvent函数"
+    },
+    {
+      "head": "AFDX端系统卡",
+      "relation": "影响",
+      "tail": "BAG"
+    },
+    {
+      "head": "VL",
+      "relation": "配置为",
+      "tail": "采样或队列端口"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控错误帧信息"
+    },
+    {
+      "head": "机载激光通信系统",
+      "relation": "基于",
+      "tail": "机载平台"
+    }
+  ]
+}

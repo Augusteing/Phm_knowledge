@@ -1,0 +1,278 @@
+{
+  "entities": [
+    {
+      "name": "Caps-BiGRU-Attention模型",
+      "type": "模型"
+    },
+    {
+      "name": "胶囊网络",
+      "type": "模型"
+    },
+    {
+      "name": "BiGRU",
+      "type": "模型"
+    },
+    {
+      "name": "SE注意力机制",
+      "type": "模型"
+    },
+    {
+      "name": "直升机涡轮发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "故障诊断",
+      "type": "研究方法"
+    },
+    {
+      "name": "扭矩裕度预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "健康管理",
+      "type": "研究方法"
+    },
+    {
+      "name": "SHAP模型",
+      "type": "软件工具"
+    },
+    {
+      "name": "贝塔分布",
+      "type": "理论基础"
+    },
+    {
+      "name": "混合高斯密度模型",
+      "type": "模型"
+    },
+    {
+      "name": "外部空气温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均气体温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "可用功率",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "指示空速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "净功率",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "压缩机转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "测量扭矩",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "故障模式",
+      "type": "故障模式"
+    },
+    {
+      "name": "扭矩裕度",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "准确率",
+      "type": "性能指标"
+    },
+    {
+      "name": "均方误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "深度学习",
+      "type": "理论基础"
+    },
+    {
+      "name": "动态路由机制",
+      "type": "算法"
+    },
+    {
+      "name": "交叉熵损失函数",
+      "type": "算法"
+    },
+    {
+      "name": "均方根误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "AIC值",
+      "type": "性能指标"
+    },
+    {
+      "name": "p值",
+      "type": "性能指标"
+    },
+    {
+      "name": "严重失效",
+      "type": "故障模式"
+    },
+    {
+      "name": "轻微失效",
+      "type": "故障模式"
+    },
+    {
+      "name": "衰减状态",
+      "type": "故障模式"
+    },
+    {
+      "name": "健康状态",
+      "type": "特征/健康指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "提出了",
+      "tail": "直升机涡轮发动机健康管理方法"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "基于",
+      "tail": "胶囊网络"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "基于",
+      "tail": "BiGRU"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "基于",
+      "tail": "SE注意力机制"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "用于捕捉",
+      "tail": "输入数据的内在关系"
+    },
+    {
+      "head": "BiGRU",
+      "relation": "用于提取",
+      "tail": "时间序列特征"
+    },
+    {
+      "head": "SE注意力机制",
+      "relation": "用于加权",
+      "tail": "特征"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "应用于",
+      "tail": "故障诊断"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "应用于",
+      "tail": "扭矩裕度预测"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "用于",
+      "tail": "直升机涡轮发动机"
+    },
+    {
+      "head": "扭矩裕度预测",
+      "relation": "用于",
+      "tail": "直升机涡轮发动机"
+    },
+    {
+      "head": "SHAP模型",
+      "relation": "用于分析",
+      "tail": "特征影响"
+    },
+    {
+      "head": "外部空气温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "平均气体温度",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "测量扭矩",
+      "relation": "影响",
+      "tail": "故障模式"
+    },
+    {
+      "head": "故障模式",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "净功率",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "指示空速",
+      "relation": "影响",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "扭矩裕度",
+      "relation": "评估指标为",
+      "tail": "健康状态"
+    },
+    {
+      "head": "贝塔分布",
+      "relation": "拟合",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "混合高斯密度模型",
+      "relation": "拟合",
+      "tail": "扭矩裕度"
+    },
+    {
+      "head": "准确率",
+      "relation": "评估",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "均方误差",
+      "relation": "评估",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "评估",
+      "tail": "Caps-BiGRU-Attention模型"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "优于",
+      "tail": "CNN-BiGRU-Attention"
+    },
+    {
+      "head": "Caps-BiGRU-Attention模型",
+      "relation": "优于",
+      "tail": "Random Forest"
+    },
+    {
+      "head": "胶囊网络",
+      "relation": "改进了",
+      "tail": "传统卷积网络"
+    },
+    {
+      "head": "健康管理",
+      "relation": "支持",
+      "tail": "直升机涡轮发动机"
+    }
+  ]
+}

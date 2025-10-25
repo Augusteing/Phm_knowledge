@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "PHM技术",
+      "type": "技术",
+      "evaluation": "正确"
+    },
+    {
+      "name": "飞机机体结构疲劳失效",
+      "type": "问题",
+      "evaluation": "正确"
+    },
+    {
+      "name": "失效物理模型",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "应力严重系数",
+      "type": "特征",
+      "evaluation": "正确"
+    },
+    {
+      "name": "局部应力应变法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "疲劳缺口系数",
+      "type": "特征",
+      "evaluation": "正确"
+    },
+    {
+      "name": "修正Neuber法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "疲劳寿命预测",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "疲劳试验结果",
+      "type": "数据",
+      "evaluation": "正确"
+    },
+    {
+      "name": "理论预测结果",
+      "type": "数据",
+      "evaluation": "正确"
+    },
+    {
+      "name": "有限元法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "飞机机体结构PHM系统",
+      "type": "系统",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM技术",
+      "relation": "用于",
+      "tail": "飞机机体结构疲劳失效",
+      "evaluation": "正确"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "基于",
+      "tail": "失效物理模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "失效物理模型",
+      "relation": "包括",
+      "tail": "应力严重系数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "失效物理模型",
+      "relation": "包括",
+      "tail": "疲劳缺口系数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "基于",
+      "tail": "局部应力应变法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "改进了",
+      "tail": "修正Neuber法",
+      "evaluation": "错误"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "对比",
+      "tail": "疲劳试验结果",
+      "evaluation": "正确"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "对比",
+      "tail": "理论预测结果",
+      "evaluation": "错误"
+    },
+    {
+      "head": "复杂机体结构",
+      "relation": "可以使用",
+      "tail": "有限元法",
+      "evaluation": "错误"
+    },
+    {
+      "head": "飞机机体结构PHM系统",
+      "relation": "集成",
+      "tail": "疲劳寿命预测",
+      "evaluation": "正确"
+    }
+  ]
+}

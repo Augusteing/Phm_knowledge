@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "在线综合诊断结构",
+    "subject_type": "诊断结构",
+    "relation": "用于",
+    "object": "气路故障检测和隔离",
+    "object_type": "功能"
+  },
+  {
+    "subject": "在线综合诊断结构",
+    "subject_type": "诊断结构",
+    "relation": "用于",
+    "object": "健康监测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "在线综合诊断结构",
+    "subject_type": "诊断结构",
+    "relation": "用于",
+    "object": "参数估计",
+    "object_type": "功能"
+  },
+  {
+    "subject": "在线综合诊断结构",
+    "subject_type": "诊断结构",
+    "relation": "监测",
+    "object": "发动机性能退化",
+    "object_type": "状态"
+  },
+  {
+    "subject": "硬件实时仿真平台",
+    "subject_type": "仿真平台",
+    "relation": "基于",
+    "object": "xPC Target原理",
+    "object_type": "原理"
+  },
+  {
+    "subject": "硬件实时仿真平台",
+    "subject_type": "仿真平台",
+    "relation": "验证",
+    "object": "在线综合诊断结构",
+    "object_type": "诊断结构"
+  },
+  {
+    "subject": "在线综合诊断结构",
+    "subject_type": "诊断结构",
+    "relation": "包含",
+    "object": "机载自适应模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "机载自适应模型",
+    "subject_type": "模型",
+    "relation": "估计",
+    "object": "发动机健康参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "机载自适应模型",
+    "subject_type": "模型",
+    "relation": "估计",
+    "object": "可测参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "机载自适应模型",
+    "subject_type": "模型",
+    "relation": "估计",
+    "object": "不可测参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "气路故障诊断系统",
+    "subject_type": "诊断系统",
+    "relation": "采用",
+    "object": "实时数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "气路故障诊断系统",
+    "subject_type": "诊断系统",
+    "relation": "检测",
+    "object": "气路故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "气路故障诊断系统",
+    "subject_type": "诊断系统",
+    "relation": "隔离",
+    "object": "气路故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "气路故障诊断系统",
+    "subject_type": "诊断系统",
+    "relation": "检测",
+    "object": "间歇性故障",
+    "object_type": "故障"
+  }
+]

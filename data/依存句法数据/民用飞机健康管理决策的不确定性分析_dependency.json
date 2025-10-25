@@ -1,0 +1,707 @@
+{
+  "title": "民用飞机健康管理决策的不确定性分析",
+  "summary": "对飞机实施健康管理是保证飞行安全与经济的有效手段,针对飞机关键系统健康管理决策的不确定性问题展开研究,利用监测手段的原理分析了状态监测环节中引入的不确定性。分析了信号检测与处理、阈值确定过程中的不确定性因素,分析了基于模型的寿命预测和维修决策环节中的不确定性来源。最后针对各个环节给出了相应的降低不确定性的对策。",
+  "analyzed_sentences": [
+    {
+      "sentence": "对飞机实施健康管理是保证飞行安全与经济的有效手段,针对飞机关键系统健康管理决策的不确定性问题展开研究,利用监测手段的原理分析了状态监测环节中引入的不确定性",
+      "tokens": [
+        "对",
+        "飞机",
+        "实施",
+        "健康",
+        "管理",
+        "是",
+        "保证",
+        "飞行",
+        "安全",
+        "与",
+        "经济",
+        "的",
+        "有效",
+        "手段",
+        ",",
+        "针对",
+        "飞机",
+        "关键",
+        "系统",
+        "健康",
+        "管理",
+        "决策",
+        "的",
+        "不确定性",
+        "问题",
+        "展开",
+        "研究",
+        ",",
+        "利用",
+        "监测",
+        "手段",
+        "的",
+        "原理",
+        "分析",
+        "了",
+        "状态",
+        "监测",
+        "环节",
+        "中",
+        "引入",
+        "的",
+        "不确定性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 3,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "实施",
+          "head": 6,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "健康",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "管理",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 7,
+          "form": "保证",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "飞行",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "安全",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "经济",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "有效",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "手段",
+          "head": 6,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "针对",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 17,
+          "form": "飞机",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "关键",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "系统",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "健康",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "管理",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "决策",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 22,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "不确定性",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "问题",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "展开",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "研究",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "利用",
+          "head": 33,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "监测",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "手段",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 29,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 33,
+          "form": "原理",
+          "head": 34,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "分析",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "了",
+          "head": 34,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 36,
+          "form": "状态",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "监测",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "环节",
+          "head": 39,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "中",
+          "head": 40,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 40,
+          "form": "引入",
+          "head": 42,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "的",
+          "head": 40,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 42,
+          "form": "不确定性",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "分析了信号检测与处理、阈值确定过程中的不确定性因素,分析了基于模型的寿命预测和维修决策环节中的不确定性来源",
+      "tokens": [
+        "分析",
+        "了",
+        "信号",
+        "检测",
+        "与",
+        "处理",
+        "、",
+        "阈值",
+        "确定",
+        "过程",
+        "中",
+        "的",
+        "不确定性",
+        "因素",
+        ",",
+        "分析",
+        "了",
+        "基于",
+        "模型",
+        "的",
+        "寿命",
+        "预测",
+        "和",
+        "维修",
+        "决策",
+        "环节",
+        "中",
+        "的",
+        "不确定性",
+        "来源"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "信号",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "检测",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "与",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "处理",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "阈值",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "确定",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "过程",
+          "head": 11,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "中",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "不确定性",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "因素",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "分析",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "基于",
+          "head": 30,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 19,
+          "form": "模型",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 18,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "寿命",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "预测",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "和",
+          "head": 26,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "维修",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "决策",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "环节",
+          "head": 27,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "中",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "不确定性",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "来源",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后针对各个环节给出了相应的降低不确定性的对策",
+      "tokens": [
+        "最后",
+        "针对",
+        "各",
+        "个",
+        "环节",
+        "给出",
+        "了",
+        "相应",
+        "的",
+        "降低",
+        "不确定性",
+        "的",
+        "对策"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "针对",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "各",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 4,
+          "form": "个",
+          "head": 3,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "环节",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "给出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "了",
+          "head": 6,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 8,
+          "form": "相应",
+          "head": 13,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "降低",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "不确定性",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "对策",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

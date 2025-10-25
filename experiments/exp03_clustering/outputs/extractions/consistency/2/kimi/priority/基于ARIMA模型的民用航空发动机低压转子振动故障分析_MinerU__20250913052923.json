@@ -1,0 +1,194 @@
+{
+  "entities": [
+    {
+      "name": "民用航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "振动值",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "转速",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "ARIMA模型",
+      "type": "模型"
+    },
+    {
+      "name": "回归分析法",
+      "type": "研究方法"
+    },
+    {
+      "name": "指数拟合方程",
+      "type": "方法"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集"
+    },
+    {
+      "name": "低压转子转速N1",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "低压涡轮振动单位值TN1VIB",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "一元线性回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "二次多项式回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "三次多项式回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "可决系数R^2",
+      "type": "性能指标"
+    },
+    {
+      "name": "自回归模型",
+      "type": "模型"
+    },
+    {
+      "name": "移动平均模型",
+      "type": "模型"
+    },
+    {
+      "name": "自回归移动平均模型",
+      "type": "模型"
+    },
+    {
+      "name": "自回归积分移动平均模型",
+      "type": "模型"
+    },
+    {
+      "name": "三次指数平滑法",
+      "type": "方法"
+    },
+    {
+      "name": "均方根误差RMSE",
+      "type": "性能指标"
+    },
+    {
+      "name": "平均绝对误差MAE",
+      "type": "性能指标"
+    },
+    {
+      "name": "最大绝对误差MaxAE",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "民用航空发动机",
+      "relation": "应用于",
+      "tail": "ARIMA模型"
+    },
+    {
+      "head": "CFM56-7B发动机",
+      "relation": "属于",
+      "tail": "民用航空发动机"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "基于",
+      "tail": "回归分析法"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "用于",
+      "tail": "振动故障分析"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "包括",
+      "tail": "一元线性回归模型"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "包括",
+      "tail": "二次多项式回归模型"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "包括",
+      "tail": "三次多项式回归模型"
+    },
+    {
+      "head": "回归分析法",
+      "relation": "包括",
+      "tail": "指数拟合方程"
+    },
+    {
+      "head": "QAR数据",
+      "relation": "输入",
+      "tail": "ARIMA模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "输出",
+      "tail": "振动故障预测"
+    },
+    {
+      "head": "三次多项式回归模型",
+      "relation": "优于",
+      "tail": "一元线性回归模型"
+    },
+    {
+      "head": "指数拟合方程",
+      "relation": "优于",
+      "tail": "三次多项式回归模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "自回归模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "移动平均模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "自回归移动平均模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "包括",
+      "tail": "自回归积分移动平均模型"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "优于",
+      "tail": "三次指数平滑法"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "评价指标是",
+      "tail": "均方根误差RMSE"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "评价指标是",
+      "tail": "平均绝对误差MAE"
+    },
+    {
+      "head": "ARIMA模型",
+      "relation": "评价指标是",
+      "tail": "最大绝对误差MaxAE"
+    }
+  ]
+}

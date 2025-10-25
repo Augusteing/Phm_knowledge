@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "提升",
+    "object": "先进战机作战能力",
+    "object_type": "性能"
+  },
+  {
+    "subject": "先进战机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "高性能",
+    "object_type": "性能要求"
+  },
+  {
+    "subject": "先进战机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "高可靠性",
+    "object_type": "性能要求"
+  },
+  {
+    "subject": "先进战机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "长寿命",
+    "object_type": "性能要求"
+  },
+  {
+    "subject": "先进战机",
+    "subject_type": "装备",
+    "relation": "要求",
+    "object": "良好维护性",
+    "object_type": "性能要求"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "需要",
+    "object": "综合控温",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "需要",
+    "object": "转子结构系统稳健性",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "需要",
+    "object": "全权限数字控制",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "需要",
+    "object": "飞发综合热管理",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "需要",
+    "object": "健康管理",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "需要",
+    "object": "推力矢量",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "航空发动机",
+    "subject_type": "核心系统",
+    "relation": "需要",
+    "object": "高隐身",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术",
+    "relation": "支撑",
+    "object": "先进航空发动机发展",
+    "object_type": "目标"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "研究",
+    "object": "飞行人员亚健康状态",
+    "object_type": "健康状态"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "研究",
+    "object": "影响因素",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "实施",
+    "object": "健康管理策略",
+    "object_type": "干预措施"
+  },
+  {
+    "subject": "流行病学调查",
+    "subject_type": "研究方法",
+    "relation": "采用",
+    "object": "亚健康状态量表",
+    "object_type": "研究工具"
+  },
+  {
+    "subject": "离婚或丧偶",
+    "subject_type": "社会因素",
+    "relation": "影响",
+    "object": "社会亚健康",
+    "object_type": "健康状态"
+  },
+  {
+    "subject": "行政职务",
+    "subject_type": "职业因素",
+    "relation": "影响",
+    "object": "心理亚健康",
+    "object_type": "健康状态"
+  },
+  {
+    "subject": "抽烟",
+    "subject_type": "生活习惯",
+    "relation": "影响",
+    "object": "生理亚健康",
+    "object_type": "健康状态"
+  },
+  {
+    "subject": "饮酒",
+    "subject_type": "生活习惯",
+    "relation": "影响",
+    "object": "生理亚健康",
+    "object_type": "健康状态"
+  },
+  {
+    "subject": "体育锻炼",
+    "subject_type": "生活习惯",
+    "relation": "产生正性影响",
+    "object": "心理亚健康",
+    "object_type": "健康状态"
+  },
+  {
+    "subject": "健康干预措施",
+    "subject_type": "干预措施",
+    "relation": "针对",
+    "object": "重点人群",
+    "object_type": "研究对象"
+  },
+  {
+    "subject": "健康干预措施",
+    "subject_type": "干预措施",
+    "relation": "促进",
+    "object": "健康",
+    "object_type": "健康状态"
+  }
+]

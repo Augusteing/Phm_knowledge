@@ -1,0 +1,914 @@
+{
+  "title": "基于多层LSTM的复杂系统剩余寿命智能预测",
+  "summary": "剩余寿命作为预测性维修的重要支撑,智能预测能及时识别出复杂系统寿命变化规律,准确反映不同工况对剩余寿命的影响。针对复杂系统运行工况与高维度、多尺度时序数据,构建多层LSTM预测模型,防止了梯度消失,能够提取不同工况下时序数据的深层次关联性抽象特征。利用Dropout方法减少预测模型过拟合,针对预测模型的不确定性,设计误差得分函数以评估超前与滞后预测。以航空发动机为例,验证了所提出的智能预测模型的有效性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "剩余寿命作为预测性维修的重要支撑,智能预测能及时识别出复杂系统寿命变化规律,准确反映不同工况对剩余寿命的影响",
+      "tokens": [
+        "剩余",
+        "寿命",
+        "作为",
+        "预测性",
+        "维修",
+        "的",
+        "重要",
+        "支撑",
+        ",",
+        "智能",
+        "预测",
+        "能",
+        "及时",
+        "识别",
+        "出",
+        "复杂",
+        "系统",
+        "寿命",
+        "变化",
+        "规律",
+        ",",
+        "准确",
+        "反映",
+        "不同",
+        "工况",
+        "对",
+        "剩余",
+        "寿命",
+        "的",
+        "影响"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "剩余",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "寿命",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "作为",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "预测性",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "维修",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "重要",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "支撑",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "智能",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "能",
+          "head": 14,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "及时",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "识别",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "出",
+          "head": 14,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "复杂",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "系统",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "寿命",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "变化",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "规律",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "准确",
+          "head": 23,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "反映",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "不同",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "工况",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "对",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "剩余",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "寿命",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "影响",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对复杂系统运行工况与高维度、多尺度时序数据,构建多层LSTM预测模型,防止了梯度消失,能够提取不同工况下时序数据的深层次关联性抽象特征",
+      "tokens": [
+        "针对",
+        "复杂",
+        "系统",
+        "运行",
+        "工况",
+        "与",
+        "高",
+        "维度",
+        "、",
+        "多",
+        "尺度",
+        "时序",
+        "数据",
+        ",",
+        "构建",
+        "多",
+        "层",
+        "LSTM",
+        "预测",
+        "模型",
+        ",",
+        "防止",
+        "了",
+        "梯度",
+        "消失",
+        ",",
+        "能够",
+        "提取",
+        "不同",
+        "工况",
+        "下",
+        "时序",
+        "数据",
+        "的",
+        "深",
+        "层次",
+        "关联性",
+        "抽象",
+        "特征"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "复杂",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "运行",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "工况",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "与",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "高",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "维度",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "多",
+          "head": 11,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 11,
+          "form": "尺度",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "时序",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "数据",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "构建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "多",
+          "head": 17,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 17,
+          "form": "层",
+          "head": 20,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 18,
+          "form": "LSTM",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "模型",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "防止",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "了",
+          "head": 22,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 24,
+          "form": "梯度",
+          "head": 25,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "消失",
+          "head": 22,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "能够",
+          "head": 28,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "提取",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "不同",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "工况",
+          "head": 31,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "下",
+          "head": 33,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 32,
+          "form": "时序",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "数据",
+          "head": 39,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "深",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "层次",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "关联性",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "抽象",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "特征",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用Dropout方法减少预测模型过拟合,针对预测模型的不确定性,设计误差得分函数以评估超前与滞后预测",
+      "tokens": [
+        "利用",
+        "Dropout",
+        "方法",
+        "减少",
+        "预测",
+        "模型",
+        "过",
+        "拟合",
+        ",",
+        "针对",
+        "预测",
+        "模型",
+        "的",
+        "不确定性",
+        ",",
+        "设计",
+        "误差",
+        "得分",
+        "函数",
+        "以",
+        "评估",
+        "超前",
+        "与",
+        "滞后",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "Dropout",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "减少",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "模型",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "过",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "拟合",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "针对",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "模型",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "不确定性",
+          "head": 10,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "设计",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "误差",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "得分",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "函数",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "以",
+          "head": 21,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 21,
+          "form": "评估",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "超前",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "与",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "滞后",
+          "head": 22,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "预测",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "以航空发动机为例,验证了所提出的智能预测模型的有效性",
+      "tokens": [
+        "以",
+        "航空",
+        "发动机",
+        "为",
+        "例",
+        ",",
+        "验证",
+        "了",
+        "所",
+        "提出",
+        "的",
+        "智能",
+        "预测",
+        "模型",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "为",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "例",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 7,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "验证",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "了",
+          "head": 7,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 9,
+          "form": "所",
+          "head": 10,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 10,
+          "form": "提出",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "智能",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "预测",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "模型",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "有效性",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

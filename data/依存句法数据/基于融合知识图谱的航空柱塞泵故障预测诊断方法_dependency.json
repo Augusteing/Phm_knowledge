@@ -1,0 +1,1265 @@
+{
+  "title": "基于融合知识图谱的航空柱塞泵故障预测诊断方法",
+  "summary": "针对航空柱塞泵运行过程中存在故障频率高、故障种类多、故障溯源难度大、预测准确率低等问题，提出了知识图谱和人工蜂群算法相融合的航空柱塞泵故障预测诊断方法。自顶向下定义知识图谱架构、实体类型和实体间关系，自底向上构建图谱的知识网络，数据层进行实体命名识别、抽取、融合、整合和推理；建立了人工蜂群故障预测算法包含输入层、指派层、传播层、自注意力层、输出层，采用故障特征提取、变邻域双向门控故障预测、注意力机制，通过特征向量训练形成了航空柱塞泵故障预测模型；通过实际维修案例，构建了航空柱塞泵故障诊断的知识图谱，实验证明了上述方法的有效性、可行性，验证了算法高效的故障诊断能力。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对航空柱塞泵运行过程中存在故障频率高、故障种类多、故障溯源难度大、预测准确率低等问题",
+      "tokens": [
+        "针对",
+        "航空",
+        "柱塞泵",
+        "运行",
+        "过程",
+        "中",
+        "存在",
+        "故障",
+        "频率",
+        "高",
+        "、",
+        "故障",
+        "种类",
+        "多",
+        "、",
+        "故障",
+        "溯源",
+        "难度",
+        "大",
+        "、",
+        "预测",
+        "准确率",
+        "低",
+        "等",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 7,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "柱塞泵",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "运行",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "过程",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "中",
+          "head": 7,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "存在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "频率",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "高",
+          "head": 25,
+          "deprel": "vmod",
+          "pos": "VA"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "故障",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "种类",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "多",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 15,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "故障",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "溯源",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "难度",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "大",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 20,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "预测",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "准确率",
+          "head": 23,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "低",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 24,
+          "form": "等",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 25,
+          "form": "问题",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了知识图谱和人工蜂群算法相融合的航空柱塞泵故障预测诊断方法",
+      "tokens": [
+        "提出",
+        "了",
+        "知识",
+        "图谱",
+        "和",
+        "人工",
+        "蜂群",
+        "算法",
+        "相",
+        "融合",
+        "的",
+        "航空",
+        "柱塞泵",
+        "故障",
+        "预测",
+        "诊断",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "知识",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "图谱",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "人工",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "蜂群",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "算法",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "相",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "融合",
+          "head": 17,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 12,
+          "form": "航空",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "柱塞泵",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "预测",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "诊断",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "自顶向下定义知识图谱架构、实体类型和实体间关系，自底向上构建图谱的知识网络，数据层进行实体命名识别、抽取、融合、整合和推理",
+      "tokens": [
+        "自顶",
+        "向下",
+        "定义",
+        "知识",
+        "图谱",
+        "架构",
+        "、",
+        "实体",
+        "类型",
+        "和",
+        "实体",
+        "间",
+        "关系",
+        "，",
+        "自底",
+        "向上",
+        "构建",
+        "图谱",
+        "的",
+        "知识",
+        "网络",
+        "，",
+        "数据层",
+        "进行",
+        "实体",
+        "命名",
+        "识别",
+        "、",
+        "抽取",
+        "、",
+        "融合",
+        "、",
+        "整合",
+        "和",
+        "推理"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "自顶",
+          "head": 3,
+          "deprel": "prep",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "向下",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "定义",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "知识",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "图谱",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "架构",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "实体",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "类型",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "和",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "实体",
+          "head": 12,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "间",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "LC"
+        },
+        {
+          "id": 13,
+          "form": "关系",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "，",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "自底",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "向上",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "构建",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "图谱",
+          "head": 21,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 18,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "知识",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "网络",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "，",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "数据层",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "进行",
+          "head": 3,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "实体",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "命名",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "识别",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "抽取",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "融合",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "、",
+          "head": 35,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "整合",
+          "head": 35,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "和",
+          "head": 35,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 35,
+          "form": "推理",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "建立了人工蜂群故障预测算法包含输入层、指派层、传播层、自注意力层、输出层，采用故障特征提取、变邻域双向门控故障预测、注意力机制，通过特征向量训练形成了航空柱塞泵故障预测模型",
+      "tokens": [
+        "建立",
+        "了",
+        "人工",
+        "蜂群",
+        "故障",
+        "预测",
+        "算法",
+        "包含",
+        "输入层",
+        "、",
+        "指派层",
+        "、",
+        "传播层",
+        "、",
+        "自注意力层",
+        "、",
+        "输出层",
+        "，",
+        "采用",
+        "故障",
+        "特征",
+        "提取",
+        "、",
+        "变邻域",
+        "双向",
+        "门控",
+        "故障",
+        "预测",
+        "、",
+        "注意力",
+        "机制",
+        "，",
+        "通过",
+        "特征",
+        "向量",
+        "训练",
+        "形成",
+        "了",
+        "航空",
+        "柱塞泵",
+        "故障",
+        "预测",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "建立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "人工",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "蜂群",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "算法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "包含",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "输入层",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "指派层",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "传播层",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "自注意力层",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "输出层",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "，",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "采用",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "特征",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "提取",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "变邻域",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "双向",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "门控",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "故障",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "预测",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "注意力",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "机制",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "，",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "通过",
+          "head": 37,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 34,
+          "form": "特征",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "向量",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "训练",
+          "head": 33,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "形成",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "了",
+          "head": 37,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 39,
+          "form": "航空",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "柱塞泵",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "故障",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "预测",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "模型",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过实际维修案例，构建了航空柱塞泵故障诊断的知识图谱，实验证明了上述方法的有效性、可行性，验证了算法高效的故障诊断能力",
+      "tokens": [
+        "通过",
+        "实际",
+        "维修",
+        "案例",
+        "，",
+        "构建",
+        "了",
+        "航空",
+        "柱塞泵",
+        "故障",
+        "诊断",
+        "的",
+        "知识",
+        "图谱",
+        "，",
+        "实验",
+        "证明",
+        "了",
+        "上述",
+        "方法",
+        "的",
+        "有效性",
+        "、",
+        "可行性",
+        "，",
+        "验证",
+        "了",
+        "算法",
+        "高效",
+        "的",
+        "故障",
+        "诊断",
+        "能力"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "实际",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "维修",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "案例",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "，",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "构建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "了",
+          "head": 6,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 8,
+          "form": "航空",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "柱塞泵",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "诊断",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 13,
+          "form": "知识",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "图谱",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "，",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "实验",
+          "head": 17,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "证明",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "上述",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "方法",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 20,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 22,
+          "form": "有效性",
+          "head": 24,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "可行性",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "，",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "验证",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "了",
+          "head": 26,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 28,
+          "form": "算法",
+          "head": 29,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "高效",
+          "head": 33,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 31,
+          "form": "故障",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "诊断",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "能力",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

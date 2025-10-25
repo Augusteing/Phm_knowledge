@@ -1,0 +1,153 @@
+# 配置文件
+# 项目全局配置
+
+# API配置
+api:
+  # OpenAI兼容API配置
+  base_url: "https://api.siliconflow.cn/v1"
+  # API密钥（建议从环境变量读取）
+  api_key: ${HIAPI_API_KEY}
+  # 默认模型
+  default_model: "gemini-2.5-pro"
+  # 请求超时（秒）
+  timeout: 120
+  # 最大重试次数
+  max_retries: 3
+
+# 模型配置
+models:
+  gemini:
+    name: "gemini-2.5-pro"
+    provider: "gemini"
+    max_tokens: 8192
+  deepseek:
+    name: "deepseek-chat"
+    provider: "deepseek"
+    max_tokens: 4096
+  kimi:
+    name: "kimi-chat"
+    provider: "kimi"
+    max_tokens: 4096
+
+# 路径配置
+paths:
+  # 数据路径
+  data_root: "data"
+  raw_papers: "data/raw/papers"
+  processed_data: "data/processed"
+  results: "data/results"
+  
+  # 实验路径
+  experiments: "experiments"
+  
+  # 配置路径
+  config: "config"
+  prompts: "config/prompts"
+  
+  # 输出路径
+  logs: "logs"
+  cache: "cache"
+
+# 抽取配置
+extraction:
+  # 输入格式
+  input_format: "markdown"
+  # 批处理大小
+  batch_size: 10
+  # 是否使用缓存
+  use_cache: true
+  # 最大文件数（0表示无限制）
+  max_files: 0
+  # 是否覆盖已存在结果
+  overwrite: false
+  
+  # 实体类型
+  entity_types:
+    - "技术"
+    - "系统"
+    - "设备"
+    - "算法"
+    - "指标"
+    - "概念"
+    - "组织"
+    - "人员"
+  
+  # 关系类型
+  relation_types:
+    - "应用于"
+    - "包含"
+    - "影响"
+    - "研究"
+    - "提出"
+    - "改进"
+
+# 评估配置
+evaluation:
+  # 评估指标
+  metrics:
+    - "density"      # 密度
+    - "consistency"  # 一致性
+    - "accuracy"     # 准确率
+    - "scoring"      # 模型打分
+  
+  # 一致性评估配置
+  consistency:
+    # 需要的最少运行次数
+    min_runs: 3
+    # 是否输出交集详情
+    output_details: true
+  
+  # 打分配置
+  scoring:
+    # 评分模型
+    model: "gemini-2.5-pro"
+    # 评分标准
+    criteria:
+      - "实体识别准确性"
+      - "关系抽取合理性"
+      - "知识完整性"
+      - "格式规范性"
+
+# 聚类配置
+clustering:
+  # 聚类算法
+  algorithm: "kmeans"
+  # 聚类数量（0表示自动确定）
+  n_clusters: 0
+  # 最小聚类大小
+  min_cluster_size: 5
+  # 相似度阈值
+  similarity_threshold: 0.7
+
+# 日志配置
+logging:
+  # 日志级别: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: "INFO"
+  # 日志格式
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  # 日志文件
+  file: "logs/kg_construction.log"
+  # 控制台输出
+  console: true
+
+# 元数据配置
+metadata:
+  # 是否自动填充元数据
+  auto_fill: true
+  # 元数据字段
+  fields:
+    - "title"
+    - "authors"
+    - "institutions"
+    - "year"
+    - "keywords"
+    - "abstract"
+
+# 性能配置
+performance:
+  # 并发数
+  max_workers: 4
+  # 内存限制（MB）
+  memory_limit: 4096
+  # 是否启用GPU（如果可用）
+  use_gpu: false

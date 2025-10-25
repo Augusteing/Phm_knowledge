@@ -1,0 +1,1405 @@
+{
+  "title": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+  "summary": "针对滑油光谱数据的非线性非平稳特性及现有预测方法的不足,提出了一种基于经验模态分解(EMD)和相关向量机-自回归模型(RVM)的预测方法;首先,利用EMD算法将序列分解为若干固有模态函数(IMF)和残余函数(RF),分离原始数据中的趋势项和随机项;然后,建立各IMF分量的AR模型和RF分量的RVM模型,以留一交叉验证误差作为适应度函数,采用量子粒子群优化算法进化搜索RVM的最优核参数和嵌入维数;最后,将各AR模型和RVM模型的预测值叠加作为最终预测值;实验结果表明:相比AR和SVM方法,该方法具有较高的预测精度,Fe元素的平均相对预测误差分别提高了15%和6%,Si元素的平均相对预测误差分别提高了49%和23%。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对滑油光谱数据的非线性非平稳特性及现有预测方法的不足,提出了一种基于经验模态分解(EMD)和相关向量机-自回归模型(RVM)的预测方法;首先,利用EMD算法将序列分解为若干固有模态函数(IMF)和残余函数(RF),分离原始数据中的趋势项和随机项;然后,建立各IMF分量的AR模型和RF分量的RVM模型,以留一交叉验证误差作为适应度函数,采用量子粒子群优化算法进化搜索RVM的最优核参数和嵌入维数;最后,将各AR模型和RVM模型的预测值叠加作为最终预测值;实验结果表明:相比AR和SVM方法,该方法具有较高的预测精度,Fe元素的平均相对预测误差分别提高了15%和6%,Si元素的平均相对预测误差分别提高了49%和23%",
+      "tokens": [
+        "针对",
+        "滑油",
+        "光谱",
+        "数据",
+        "的",
+        "非线性",
+        "非平稳",
+        "特性",
+        "及",
+        "现有",
+        "预测",
+        "方法",
+        "的",
+        "不足",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "基于",
+        "经验",
+        "模态",
+        "分解",
+        "(",
+        "EMD",
+        ")",
+        "和",
+        "相关",
+        "向量机",
+        "-",
+        "自回归",
+        "模型",
+        "(",
+        "RVM",
+        ")",
+        "的",
+        "预测",
+        "方法",
+        ";",
+        "首先",
+        ",",
+        "利用",
+        "EMD",
+        "算法",
+        "将",
+        "序列",
+        "分解",
+        "为",
+        "若干",
+        "固有",
+        "模态",
+        "函数",
+        "(",
+        "IMF",
+        ")",
+        "和",
+        "残余",
+        "函数",
+        "(",
+        "RF",
+        ")",
+        ",",
+        "分离",
+        "原始",
+        "数据",
+        "中",
+        "的",
+        "趋势项",
+        "和",
+        "随机",
+        "项",
+        ";",
+        "然后",
+        ",",
+        "建立",
+        "各",
+        "IMF",
+        "分量",
+        "的",
+        "AR",
+        "模型",
+        "和",
+        "RF",
+        "分量",
+        "的",
+        "RVM",
+        "模型",
+        ",",
+        "以",
+        "留",
+        "一",
+        "交叉",
+        "验证",
+        "误差",
+        "作为",
+        "适应度",
+        "函数",
+        ",",
+        "采用",
+        "量子",
+        "粒子群",
+        "优化",
+        "算法",
+        "进化",
+        "搜索",
+        "RVM",
+        "的",
+        "最优核",
+        "参数",
+        "和",
+        "嵌入",
+        "维数",
+        ";",
+        "最后",
+        ",",
+        "将",
+        "各",
+        "AR",
+        "模型",
+        "和",
+        "RVM",
+        "模型",
+        "的",
+        "预测值",
+        "叠加",
+        "作为",
+        "最终",
+        "预测值",
+        ";",
+        "实验",
+        "结果",
+        "表明",
+        ":",
+        "相比",
+        "AR",
+        "和",
+        "SVM",
+        "方法",
+        ",",
+        "该",
+        "方法",
+        "具有",
+        "较",
+        "高",
+        "的",
+        "预测",
+        "精度",
+        ",",
+        "Fe",
+        "元素",
+        "的",
+        "平均",
+        "相对",
+        "预测",
+        "误差",
+        "分别",
+        "提高",
+        "了",
+        "15%",
+        "和",
+        "6%",
+        ",",
+        "Si元素",
+        "的",
+        "平均",
+        "相对",
+        "预测",
+        "误差",
+        "分别",
+        "提高",
+        "了",
+        "49%",
+        "和",
+        "23%"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "滑油",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "光谱",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "非线性",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "非平稳",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "特性",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "及",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "现有",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "方法",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "不足",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "一",
+          "head": 19,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 19,
+          "form": "种",
+          "head": 38,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 20,
+          "form": "基于",
+          "head": 38,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "经验",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "模态",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "分解",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "(",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "EMD",
+          "head": 23,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 26,
+          "form": ")",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "和",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 28,
+          "form": "相关",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 29,
+          "form": "向量机",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "-",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "自回归",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "模型",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "(",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 34,
+          "form": "RVM",
+          "head": 32,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ")",
+          "head": 34,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 37,
+          "form": "预测",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "方法",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": ";",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "首先",
+          "head": 42,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 41,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "利用",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "EMD",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 44,
+          "form": "算法",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "将",
+          "head": 47,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 46,
+          "form": "序列",
+          "head": 47,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "分解",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 48,
+          "form": "为",
+          "head": 47,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "若干",
+          "head": 52,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 50,
+          "form": "固有",
+          "head": 52,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 51,
+          "form": "模态",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "函数",
+          "head": 71,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "(",
+          "head": 54,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 54,
+          "form": "IMF",
+          "head": 58,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 55,
+          "form": ")",
+          "head": 54,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 56,
+          "form": "和",
+          "head": 58,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 57,
+          "form": "残余",
+          "head": 58,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 58,
+          "form": "函数",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "(",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 60,
+          "form": "RF",
+          "head": 58,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 61,
+          "form": ")",
+          "head": 60,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 62,
+          "form": ",",
+          "head": 58,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 63,
+          "form": "分离",
+          "head": 58,
+          "deprel": "prnmod",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "原始",
+          "head": 65,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 65,
+          "form": "数据",
+          "head": 66,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "中",
+          "head": 71,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 67,
+          "form": "的",
+          "head": 66,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 68,
+          "form": "趋势项",
+          "head": 71,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 69,
+          "form": "和",
+          "head": 71,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 70,
+          "form": "随机",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 71,
+          "form": "项",
+          "head": 47,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": ";",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 73,
+          "form": "然后",
+          "head": 75,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 74,
+          "form": ",",
+          "head": 75,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 75,
+          "form": "建立",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 76,
+          "form": "各",
+          "head": 78,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 77,
+          "form": "IMF",
+          "head": 78,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 78,
+          "form": "分量",
+          "head": 87,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "的",
+          "head": 78,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 80,
+          "form": "AR",
+          "head": 81,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 81,
+          "form": "模型",
+          "head": 87,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "和",
+          "head": 87,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 83,
+          "form": "RF",
+          "head": 84,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 84,
+          "form": "分量",
+          "head": 87,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "的",
+          "head": 84,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 86,
+          "form": "RVM",
+          "head": 87,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 87,
+          "form": "模型",
+          "head": 90,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": ",",
+          "head": 90,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 89,
+          "form": "以",
+          "head": 90,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 90,
+          "form": "留",
+          "head": 75,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 91,
+          "form": "一",
+          "head": 94,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 92,
+          "form": "交叉",
+          "head": 93,
+          "deprel": "advmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 93,
+          "form": "验证",
+          "head": 94,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "误差",
+          "head": 90,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 95,
+          "form": "作为",
+          "head": 90,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 96,
+          "form": "适应度",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "函数",
+          "head": 95,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": ",",
+          "head": 75,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 99,
+          "form": "采用",
+          "head": 75,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 100,
+          "form": "量子",
+          "head": 101,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 101,
+          "form": "粒子群",
+          "head": 103,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 102,
+          "form": "优化",
+          "head": 103,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 103,
+          "form": "算法",
+          "head": 99,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 104,
+          "form": "进化",
+          "head": 99,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 105,
+          "form": "搜索",
+          "head": 104,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 106,
+          "form": "RVM",
+          "head": 112,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 107,
+          "form": "的",
+          "head": 106,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 108,
+          "form": "最优核",
+          "head": 109,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 109,
+          "form": "参数",
+          "head": 112,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "和",
+          "head": 112,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 111,
+          "form": "嵌入",
+          "head": 112,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 112,
+          "form": "维数",
+          "head": 105,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 113,
+          "form": ";",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 114,
+          "form": "最后",
+          "head": 125,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 115,
+          "form": ",",
+          "head": 125,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 116,
+          "form": "将",
+          "head": 125,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 117,
+          "form": "各",
+          "head": 119,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 118,
+          "form": "AR",
+          "head": 119,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 119,
+          "form": "模型",
+          "head": 122,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 120,
+          "form": "和",
+          "head": 122,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 121,
+          "form": "RVM",
+          "head": 122,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 122,
+          "form": "模型",
+          "head": 124,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 123,
+          "form": "的",
+          "head": 122,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 124,
+          "form": "预测值",
+          "head": 125,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 125,
+          "form": "叠加",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 126,
+          "form": "作为",
+          "head": 125,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 127,
+          "form": "最终",
+          "head": 128,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 128,
+          "form": "预测值",
+          "head": 126,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 129,
+          "form": ";",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 130,
+          "form": "实验",
+          "head": 131,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 131,
+          "form": "结果",
+          "head": 132,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 132,
+          "form": "表明",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 133,
+          "form": ":",
+          "head": 132,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 134,
+          "form": "相比",
+          "head": 142,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 135,
+          "form": "AR",
+          "head": 137,
+          "deprel": "conj",
+          "pos": "NR"
+        },
+        {
+          "id": 136,
+          "form": "和",
+          "head": 137,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 137,
+          "form": "SVM",
+          "head": 138,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 138,
+          "form": "方法",
+          "head": 134,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 139,
+          "form": ",",
+          "head": 142,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 140,
+          "form": "该",
+          "head": 141,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 141,
+          "form": "方法",
+          "head": 142,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 142,
+          "form": "具有",
+          "head": 132,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 143,
+          "form": "较",
+          "head": 144,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 144,
+          "form": "高",
+          "head": 147,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 145,
+          "form": "的",
+          "head": 144,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 146,
+          "form": "预测",
+          "head": 147,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 147,
+          "form": "精度",
+          "head": 142,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 148,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 149,
+          "form": "Fe",
+          "head": 150,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 150,
+          "form": "元素",
+          "head": 155,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 151,
+          "form": "的",
+          "head": 150,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 152,
+          "form": "平均",
+          "head": 155,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 153,
+          "form": "相对",
+          "head": 155,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 154,
+          "form": "预测",
+          "head": 155,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 155,
+          "form": "误差",
+          "head": 157,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 156,
+          "form": "分别",
+          "head": 157,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 157,
+          "form": "提高",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 158,
+          "form": "了",
+          "head": 157,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 159,
+          "form": "15%",
+          "head": 161,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 160,
+          "form": "和",
+          "head": 161,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 161,
+          "form": "6%",
+          "head": 157,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 162,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 163,
+          "form": "Si元素",
+          "head": 168,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 164,
+          "form": "的",
+          "head": 163,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 165,
+          "form": "平均",
+          "head": 168,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 166,
+          "form": "相对",
+          "head": 168,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 167,
+          "form": "预测",
+          "head": 168,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 168,
+          "form": "误差",
+          "head": 170,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 169,
+          "form": "分别",
+          "head": 170,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 170,
+          "form": "提高",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 171,
+          "form": "了",
+          "head": 170,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 172,
+          "form": "49%",
+          "head": 174,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 173,
+          "form": "和",
+          "head": 174,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 174,
+          "form": "23%",
+          "head": 170,
+          "deprel": "dep",
+          "pos": "CD"
+        }
+      ]
+    }
+  ]
+}

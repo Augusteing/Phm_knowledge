@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "航空发动机健康管理",
+    "subject_type": "任务",
+    "relation": "存在",
+    "object": "效率低、费用高、资源相对缺乏等问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "面向服务的架构(SOA)",
+    "subject_type": "技术",
+    "relation": "引入到",
+    "object": "航空发动机健康管理",
+    "object_type": "领域"
+  },
+  {
+    "subject": "基于SOA的航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "基于",
+    "object": "面向服务的架构(SOA)",
+    "object_type": "技术"
+  },
+  {
+    "subject": "基于SOA的航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "资源共享",
+    "object_type": "目标"
+  },
+  {
+    "subject": "基于SOA的航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "降低",
+    "object": "系统间的耦合性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "基于SOA的航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "增加",
+    "object": "系统的扩展性和伸缩性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "基于SOA的航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "缩短",
+    "object": "开发时间",
+    "object_type": "指标"
+  },
+  {
+    "subject": "基于SOA的航空发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "实现",
+    "object": "航空发动机全生命周期的健康管理",
+    "object_type": "目标"
+  },
+  {
+    "subject": "系统集成方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "面向服务的架构(SOA)",
+    "object_type": "技术"
+  },
+  {
+    "subject": "系统集成方法",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "基于SOA的航空发动机健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "面向服务的架构(SOA)",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "重要价值",
+    "object_type": "价值"
+  }
+]

@@ -1,0 +1,795 @@
+{
+  "title": "基于MAS的飞机健康管理专家系统设计",
+  "summary": "针对地面机务维护的需要,设计实现了基于MAS(Multi-Agent System,MAS)的飞机健康管理专家系统。系统分析了飞机健康管理专家系统的方案,采用3层Browser/Server体系结构,将基于案例推理和基于规则的不确定性推理的预测方法引入飞机健康管理专家系统,详细介绍了系统功能及关键技术的实现。地面机务维护部门使用结果表明飞机健康专家系统达到了减少地面维护时间和增加飞机使用寿命的目的。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对地面机务维护的需要,设计实现了基于MAS(Multi-Agent System,MAS)的飞机健康管理专家系统",
+      "tokens": [
+        "针对",
+        "地面",
+        "机务",
+        "维护",
+        "的",
+        "需要",
+        ",",
+        "设计",
+        "实现",
+        "了",
+        "基于",
+        "MAS",
+        "(",
+        "Multi-Agent",
+        "System",
+        ",",
+        "MAS",
+        ")",
+        "的",
+        "飞机",
+        "健康",
+        "管理",
+        "专家",
+        "系统"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "地面",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "机务",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "维护",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "需要",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "设计",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "实现",
+          "head": 8,
+          "deprel": "comod",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 11,
+          "form": "基于",
+          "head": 24,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "MAS",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "(",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "Multi-Agent",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "System",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "MAS",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ")",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "飞机",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "健康",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "管理",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "专家",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "系统",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "系统分析了飞机健康管理专家系统的方案,采用3层Browser/Server体系结构,将基于案例推理和基于规则的不确定性推理的预测方法引入飞机健康管理专家系统,详细介绍了系统功能及关键技术的实现",
+      "tokens": [
+        "系统",
+        "分析",
+        "了",
+        "飞机",
+        "健康",
+        "管理",
+        "专家",
+        "系统",
+        "的",
+        "方案",
+        ",",
+        "采用",
+        "3",
+        "层",
+        "Browser/Server",
+        "体系",
+        "结构",
+        ",",
+        "将",
+        "基于",
+        "案例",
+        "推理",
+        "和",
+        "基于",
+        "规则",
+        "的",
+        "不确定性",
+        "推理",
+        "的",
+        "预测",
+        "方法",
+        "引入",
+        "飞机",
+        "健康",
+        "管理",
+        "专家",
+        "系统",
+        ",",
+        "详细",
+        "介绍",
+        "了",
+        "系统",
+        "功能",
+        "及",
+        "关键",
+        "技术",
+        "的",
+        "实现"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "系统",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "专家",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "方案",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "采用",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "3",
+          "head": 14,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "层",
+          "head": 17,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 15,
+          "form": "Browser/Server",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "体系",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "结构",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 19,
+          "form": "将",
+          "head": 32,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 20,
+          "form": "基于",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "案例",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "推理",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "和",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "基于",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "规则",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 24,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 27,
+          "form": "不确定性",
+          "head": 28,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 28,
+          "form": "推理",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "预测",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "方法",
+          "head": 32,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "引入",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "飞机",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "健康",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "管理",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "专家",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "系统",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "详细",
+          "head": 40,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 40,
+          "form": "介绍",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "了",
+          "head": 40,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 42,
+          "form": "系统",
+          "head": 46,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "功能",
+          "head": 46,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "及",
+          "head": 46,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 45,
+          "form": "关键",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "技术",
+          "head": 48,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "的",
+          "head": 46,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 48,
+          "form": "实现",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "地面机务维护部门使用结果表明飞机健康专家系统达到了减少地面维护时间和增加飞机使用寿命的目的",
+      "tokens": [
+        "地面",
+        "机务",
+        "维护",
+        "部门",
+        "使用",
+        "结果",
+        "表明",
+        "飞机",
+        "健康",
+        "专家",
+        "系统",
+        "达到",
+        "了",
+        "减少",
+        "地面",
+        "维护",
+        "时间",
+        "和",
+        "增加",
+        "飞机",
+        "使用",
+        "寿命",
+        "的",
+        "目的"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "地面",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "机务",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "维护",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "部门",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "使用",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "结果",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "飞机",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "健康",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "专家",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "达到",
+          "head": 7,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "了",
+          "head": 12,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "减少",
+          "head": 24,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "地面",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "维护",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "时间",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "和",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "增加",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "飞机",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "使用",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "寿命",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 24,
+          "form": "目的",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

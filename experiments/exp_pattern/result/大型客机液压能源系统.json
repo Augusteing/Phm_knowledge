@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "商用客机液压系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "高压化",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "商用客机液压系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "分布式",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "商用客机液压系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "故障诊断及健康管理",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "商用客机液压系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "自增压油箱",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "商用客机液压系统",
+    "subject_type": "系统",
+    "relation": "发展趋势为",
+    "object": "智能泵源系统",
+    "object_type": "技术趋势"
+  },
+  {
+    "subject": "A320",
+    "subject_type": "飞机型号",
+    "relation": "属于",
+    "object": "主流客机",
+    "object_type": "飞机类别"
+  },
+  {
+    "subject": "B737",
+    "subject_type": "飞机型号",
+    "relation": "属于",
+    "object": "主流客机",
+    "object_type": "飞机类别"
+  },
+  {
+    "subject": "飞机液压能源系统",
+    "subject_type": "系统",
+    "relation": "需解决",
+    "object": "高可靠性液压系统设计",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "飞机液压能源系统",
+    "subject_type": "系统",
+    "relation": "需解决",
+    "object": "压力脉动抑制",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "飞机液压能源系统",
+    "subject_type": "系统",
+    "relation": "需解决",
+    "object": "油温控制",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "飞机液压能源系统",
+    "subject_type": "系统",
+    "relation": "需解决",
+    "object": "油液污染度控制",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "空客公司",
+    "subject_type": "公司",
+    "relation": "研发",
+    "object": "A320",
+    "object_type": "飞机型号"
+  },
+  {
+    "subject": "波音公司",
+    "subject_type": "公司",
+    "relation": "研发",
+    "object": "B737",
+    "object_type": "飞机型号"
+  }
+]

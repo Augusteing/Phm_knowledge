@@ -1,0 +1,988 @@
+{
+  "title": "飞机健康管理平台的客户需求分析与PLM服务资源匹配",
+  "summary": "根据对航空系统各个相关利益方的需求分析,基于模糊理论确立飞机故障诊断和健康管理(Prognostic and Health Management,PHM)平台的各个模块需实现的功能,利用灰色关联法对客户需求进行重要度排序,并基于自回归求和移动平均(ARIMA)模型求解客户需求的动态特征,对客户需求作出全面的分析和预期。最终在质量屋(House of Quality,HOQ)衡量全生命周期管理(Product Lifecycle Management,PLM)的服务资源与客户需求的匹配度,进而定量反映客户对航空系统各种服务资源的满意度。",
+  "analyzed_sentences": [
+    {
+      "sentence": "根据对航空系统各个相关利益方的需求分析,基于模糊理论确立飞机故障诊断和健康管理(Prognostic and Health Management,PHM)平台的各个模块需实现的功能,利用灰色关联法对客户需求进行重要度排序,并基于自回归求和移动平均(ARIMA)模型求解客户需求的动态特征,对客户需求作出全面的分析和预期",
+      "tokens": [
+        "根据",
+        "对",
+        "航空",
+        "系统",
+        "各",
+        "个",
+        "相关",
+        "利益",
+        "方",
+        "的",
+        "需求",
+        "分析",
+        ",",
+        "基于",
+        "模糊",
+        "理论",
+        "确立",
+        "飞机",
+        "故障",
+        "诊断",
+        "和",
+        "健康",
+        "管理",
+        "(",
+        "Prognostic",
+        "and",
+        "Health",
+        "Management",
+        ",",
+        "PHM",
+        ")",
+        "平台",
+        "的",
+        "各",
+        "个",
+        "模块",
+        "需",
+        "实现",
+        "的",
+        "功能",
+        ",",
+        "利用",
+        "灰色",
+        "关联法",
+        "对",
+        "客户",
+        "需求",
+        "进行",
+        "重要度",
+        "排序",
+        ",",
+        "并",
+        "基于",
+        "自回归求",
+        "和",
+        "移动",
+        "平均",
+        "(",
+        "ARIMA",
+        ")",
+        "模型",
+        "求解",
+        "客户",
+        "需求",
+        "的",
+        "动态",
+        "特征",
+        ",",
+        "对",
+        "客户",
+        "需求",
+        "作出",
+        "全面",
+        "的",
+        "分析",
+        "和",
+        "预期"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "根据",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "各",
+          "head": 8,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 6,
+          "form": "个",
+          "head": 5,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 7,
+          "form": "相关",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "利益",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "方",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "需求",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "分析",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "基于",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "模糊",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "理论",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "确立",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "飞机",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "故障",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "诊断",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "和",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 22,
+          "form": "健康",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "管理",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "(",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "Prognostic",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "and",
+          "head": 30,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "Health",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "Management",
+          "head": 30,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": ",",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "PHM",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": ")",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "平台",
+          "head": 40,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 34,
+          "form": "各",
+          "head": 36,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 35,
+          "form": "个",
+          "head": 34,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 36,
+          "form": "模块",
+          "head": 38,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "需",
+          "head": 38,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "实现",
+          "head": 40,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "的",
+          "head": 38,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 40,
+          "form": "功能",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "利用",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "灰色",
+          "head": 44,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 44,
+          "form": "关联法",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "对",
+          "head": 48,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 46,
+          "form": "客户",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "需求",
+          "head": 45,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "进行",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "重要度",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "排序",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "并",
+          "head": 62,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 53,
+          "form": "基于",
+          "head": 62,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 54,
+          "form": "自回归求",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "和",
+          "head": 57,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 56,
+          "form": "移动",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "平均",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "(",
+          "head": 59,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 59,
+          "form": "ARIMA",
+          "head": 57,
+          "deprel": "prnmod",
+          "pos": "NR"
+        },
+        {
+          "id": 60,
+          "form": ")",
+          "head": 59,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 61,
+          "form": "模型",
+          "head": 53,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "求解",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 63,
+          "form": "客户",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "需求",
+          "head": 67,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "的",
+          "head": 64,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 66,
+          "form": "动态",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "特征",
+          "head": 72,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": ",",
+          "head": 72,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "对",
+          "head": 72,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 70,
+          "form": "客户",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "需求",
+          "head": 69,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "作出",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 73,
+          "form": "全面",
+          "head": 77,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 74,
+          "form": "的",
+          "head": 73,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 75,
+          "form": "分析",
+          "head": 77,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 76,
+          "form": "和",
+          "head": 77,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 77,
+          "form": "预期",
+          "head": 72,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最终在质量屋(House of Quality,HOQ)衡量全生命周期管理(Product Lifecycle Management,PLM)的服务资源与客户需求的匹配度,进而定量反映客户对航空系统各种服务资源的满意度",
+      "tokens": [
+        "最终",
+        "在",
+        "质量屋",
+        "(",
+        "House",
+        "of",
+        "Quality",
+        ",",
+        "HOQ",
+        ")",
+        "衡量",
+        "全",
+        "生命",
+        "周期",
+        "管理",
+        "(",
+        "Product",
+        "Lifecycle",
+        "Management",
+        ",",
+        "PLM",
+        ")",
+        "的",
+        "服务",
+        "资源",
+        "与",
+        "客户",
+        "需求",
+        "的",
+        "匹配度",
+        ",",
+        "进而",
+        "定量",
+        "反映",
+        "客户",
+        "对",
+        "航空",
+        "系统",
+        "各",
+        "种",
+        "服务",
+        "资源",
+        "的",
+        "满意度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最终",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "质量屋",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "(",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "House",
+          "head": 3,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "of",
+          "head": 3,
+          "deprel": "prnmod",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "Quality",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "HOQ",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ")",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "衡量",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "全",
+          "head": 13,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 13,
+          "form": "生命",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "周期",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "管理",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "(",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "Product",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "Lifecycle",
+          "head": 21,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "Management",
+          "head": 21,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "PLM",
+          "head": 15,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ")",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "服务",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "资源",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "与",
+          "head": 30,
+          "deprel": "assmod",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "客户",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "需求",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 26,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 30,
+          "form": "匹配度",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "进而",
+          "head": 34,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 33,
+          "form": "定量",
+          "head": 34,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 34,
+          "form": "反映",
+          "head": 11,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "客户",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "对",
+          "head": 44,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 37,
+          "form": "航空",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "系统",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "各",
+          "head": 42,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 40,
+          "form": "种",
+          "head": 39,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 41,
+          "form": "服务",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "资源",
+          "head": 36,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "的",
+          "head": 36,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 44,
+          "form": "满意度",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

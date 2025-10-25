@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "GM(1,1)法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "指数平滑法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "拟合均方误差",
+    "object_type": "指标"
+  },
+  {
+    "subject": "拟合均方误差",
+    "subject_type": "指标",
+    "relation": "确定",
+    "object": "加权系数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "预测系统的综合性能",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "弥补",
+    "object": "单一方法的不足",
+    "object_type": "问题"
+  },
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "航空设备",
+    "object_type": "研究对象"
+  },
+  {
+    "subject": "飞行器健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "故障预测",
+    "object_type": "功能"
+  }
+]

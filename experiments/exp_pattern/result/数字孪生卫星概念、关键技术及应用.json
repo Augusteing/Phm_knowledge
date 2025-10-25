@@ -1,0 +1,121 @@
+[
+  {
+    "subject": "数字孪生技术",
+    "subject_type": "技术",
+    "relation": "结合",
+    "object": "卫星工程",
+    "object_type": "领域"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "促进",
+    "object": "卫星产业转型升级",
+    "object_type": "目标"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "提升",
+    "object": "大型卫星工程管理水平",
+    "object_type": "能力"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "组成",
+    "object": "数字孪生卫星试验验证系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "组成",
+    "object": "数字孪生卫星总装车间",
+    "object_type": "设施"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "组成",
+    "object": "数字孪生卫星产品",
+    "object_type": "产品"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "组成",
+    "object": "数字孪生卫星网络",
+    "object_type": "网络"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "具有",
+    "object": "核心要素",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "数字孪生卫星核心要素",
+    "subject_type": "组成部分",
+    "relation": "包含",
+    "object": "模型线程",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "数字孪生卫星核心要素",
+    "subject_type": "组成部分",
+    "relation": "包含",
+    "object": "数据线程",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "数字孪生卫星核心要素",
+    "subject_type": "组成部分",
+    "relation": "包含",
+    "object": "服务线程",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "具有",
+    "object": "关键技术体系",
+    "object_type": "技术体系"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "应用于",
+    "object": "卫星总体设计",
+    "object_type": "生命周期阶段"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "应用于",
+    "object": "详细设计",
+    "object_type": "生命周期阶段"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "应用于",
+    "object": "生产制造",
+    "object_type": "生命周期阶段"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "应用于",
+    "object": "在轨服务与健康管理",
+    "object_type": "生命周期阶段"
+  },
+  {
+    "subject": "数字孪生卫星",
+    "subject_type": "概念",
+    "relation": "应用于",
+    "object": "网络运维管理",
+    "object_type": "生命周期阶段"
+  }
+]

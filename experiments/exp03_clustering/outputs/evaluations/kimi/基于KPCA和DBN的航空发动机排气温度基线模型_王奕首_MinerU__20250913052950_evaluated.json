@@ -1,0 +1,160 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机健康管理",
+      "type": "研究领域",
+      "evaluation": "正确"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "航空发动机排气温度基线模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "快速存取数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件",
+      "evaluation": "正确"
+    },
+    {
+      "name": "高斯函数",
+      "type": "理论基础",
+      "evaluation": "正确"
+    },
+    {
+      "name": "QAR数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "KPCA-DBN模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "GA-BP网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "DBN网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "BP神经网络",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "遗传算法",
+      "type": "算法",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "航空发动机健康管理",
+      "relation": "应用于",
+      "tail": "核主成分分析",
+      "evaluation": "错误"
+    },
+    {
+      "head": "航空发动机健康管理",
+      "relation": "应用于",
+      "tail": "深度置信网络",
+      "evaluation": "错误"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "结合",
+      "tail": "深度置信网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "核主成分分析",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "深度置信网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "用于",
+      "tail": "快速存取数据",
+      "evaluation": "错误"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "用于",
+      "tail": "快速存取数据",
+      "evaluation": "错误"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "验证依据",
+      "tail": "QAR数据",
+      "evaluation": "正确"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "评价指标是",
+      "tail": "KPCA-DBN模型",
+      "evaluation": "错误"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "与传统方法比较",
+      "tail": "GA-BP网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "KPCA-DBN模型",
+      "relation": "与传统方法比较",
+      "tail": "DBN网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "GA-BP网络",
+      "relation": "基于",
+      "tail": "BP神经网络",
+      "evaluation": "正确"
+    },
+    {
+      "head": "GA-BP网络",
+      "relation": "采用",
+      "tail": "遗传算法",
+      "evaluation": "正确"
+    }
+  ]
+}

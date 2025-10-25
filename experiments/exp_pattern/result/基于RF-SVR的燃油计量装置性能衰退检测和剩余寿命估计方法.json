@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "基于RF-SVR的估计方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "航空发动机燃油系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "基于RF-SVR的估计方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "性能衰退检测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "基于RF-SVR的估计方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "剩余使用寿命估计",
+    "object_type": "任务"
+  },
+  {
+    "subject": "燃油计量装置",
+    "subject_type": "组件",
+    "relation": "属于",
+    "object": "航空发动机燃油系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "性能衰退检测",
+    "subject_type": "任务",
+    "relation": "基于",
+    "object": "马氏距离",
+    "object_type": "技术"
+  },
+  {
+    "subject": "剩余使用寿命(RUL)估计方法",
+    "subject_type": "方法",
+    "relation": "采用",
+    "object": "随机森林-支持向量回归(RFSVR)",
+    "object_type": "模型"
+  },
+  {
+    "subject": "SVR模型",
+    "subject_type": "模型",
+    "relation": "通过...优化",
+    "object": "RF特征选择",
+    "object_type": "技术"
+  },
+  {
+    "subject": "健康指标(HIs)选取方案",
+    "subject_type": "方案",
+    "relation": "基于",
+    "object": "电流-速度数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "基于RF-SVR的估计方法",
+    "subject_type": "方法",
+    "relation": "通过...验证",
+    "object": "涡扇发动机机械液压模型仿真数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "基于RF-SVR的估计方法",
+    "subject_type": "方法",
+    "relation": "提供参考",
+    "object": "预测性维护",
+    "object_type": "应用"
+  },
+  {
+    "subject": "性能衰退检测",
+    "subject_type": "任务",
+    "relation": "评价指标",
+    "object": "虚警率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "性能衰退检测",
+    "subject_type": "任务",
+    "relation": "评价指标",
+    "object": "漏报率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "RUL估计",
+    "subject_type": "任务",
+    "relation": "评价指标",
+    "object": "估计误差",
+    "object_type": "性能指标"
+  }
+]

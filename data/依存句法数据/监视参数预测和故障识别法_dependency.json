@@ -1,0 +1,424 @@
+{
+  "title": "监视参数预测和故障识别法",
+  "summary": "将时间序列分析方法应用于航空发动机状态监视与故障诊断中，采用自回归模型，对监视参数进行趋势预测。进一步将时序分析与模式识别技术相结合，通过构造判别函数和用参数相关分析法，识别发动机典型故障。",
+  "analyzed_sentences": [
+    {
+      "sentence": "将时间序列分析方法应用于航空发动机状态监视与故障诊断中",
+      "tokens": [
+        "将",
+        "时间",
+        "序列",
+        "分析",
+        "方法",
+        "应用",
+        "于",
+        "航空",
+        "发动机",
+        "状态",
+        "监视",
+        "与",
+        "故障",
+        "诊断",
+        "中"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "将",
+          "head": 6,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 2,
+          "form": "时间",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "序列",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "分析",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "方法",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "应用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "于",
+          "head": 6,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "航空",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "发动机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "状态",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "监视",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "与",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "诊断",
+          "head": 15,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "中",
+          "head": 7,
+          "deprel": "plmod",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "采用自回归模型",
+      "tokens": [
+        "采用",
+        "自回归",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "自回归",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对监视参数进行趋势预测",
+      "tokens": [
+        "对",
+        "监视",
+        "参数",
+        "进行",
+        "趋势",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "监视",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "参数",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "趋势",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "进一步将时序分析与模式识别技术相结合",
+      "tokens": [
+        "进一步",
+        "将",
+        "时序",
+        "分析",
+        "与",
+        "模式",
+        "识别",
+        "技术",
+        "相",
+        "结合"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "进一步",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "将",
+          "head": 10,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 3,
+          "form": "时序",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "分析",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "模式",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "识别",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "技术",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "相",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "通过构造判别函数和用参数相关分析法",
+      "tokens": [
+        "通过",
+        "构造",
+        "判别",
+        "函数",
+        "和",
+        "用",
+        "参数",
+        "相关",
+        "分析法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "构造",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "判别",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "函数",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 2,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "用",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "参数",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "相关",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "分析法",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "识别发动机典型故障",
+      "tokens": [
+        "识别",
+        "发动机",
+        "典型",
+        "故障"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "识别",
+          "head": 4,
+          "deprel": "vmod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "典型",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "故障",
+          "head": 0,
+          "deprel": "root",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

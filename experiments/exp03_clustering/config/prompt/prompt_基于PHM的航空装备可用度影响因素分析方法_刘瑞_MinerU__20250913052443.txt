@@ -1,0 +1,725 @@
+# 实体关系抽取Prompt
+
+## 任务描述
+你的角色是一位专业的学术文献实体关系抽取专家，专精于从航空航天领域科研文献中识别和抽取实体及其关系。你的任务是通读给定文本，抽取文本中出现的核心实体，及其对应的关系，并以JSON格式输出。
+
+## 实体定义
+文献中出现的核心概念：算法、方法、模型、系统、故障、指标等都可视为实体。实体可以包括：
+- **研究领域**
+定义 ：PHM相关的研究方向和应用领域 
+示例 ：故障预测与健康管理(PHM)、故障诊断、剩余使用寿命预测(RUL)、健康状态评估、预测性维护等
+- **研究方法**
+定义 ：PHM研究中采用的具体方法和技术路线 
+示例 ：寿命预测、趋势预测、健康预测、风险评估、状态监测、故障诊断、性能评估等
+- **理论基础**
+定义 ：支撑PHM技术的基础理论和数学原理 
+示例 ：信号处理理论、机器学习理论、可靠性理论、概率统计理论、控制理论等
+- **模型**
+定义 ：基于特定算法构建的具体结构或实例 示例 ：LSTM神经网络、Transformer模型、深度置信网络(DBN)、隐马尔可夫模型(HMM)、ARIMA模型等
+- **算法**
+定义 ：用于解决特定问题的计算方法和程序步骤 
+示例 ：遗传算法、粒子群优化、支持向量机(SVM)、随机森林、卡尔曼滤波等
+- **系统/部件**
+定义 ：航空航天设备的系统或组成部件 
+示例 ：航空发动机、齿轮箱、轴承、叶片、燃油系统、液压系统、航电系统等
+- **故障模式**
+定义 ：设备可能出现的故障类型和失效模式 
+示例 ：轴承磨损、疲劳裂纹、腐蚀、过热、振动异常、性能退化等
+- **数据集**
+定义 ：用于训练和验证模型的标准数据集 
+示例 ：C-MAPSS数据集、CWRU轴承数据集、IMS轴承数据集、PHM Challenge数据集等
+- **传感器/监测参数**
+定义 ：用于监测设备状态的传感器设备和监测参数 
+示例 ：振动传感器、温度传感器、压力传感器、转速、振动信号、温度、压力等
+- **特征/健康指标**
+定义 ：表征设备健康状态的特征参数和指标 
+示例 ：剩余使用寿命(RUL)、健康指标(HI)、退化指标、频域特征、时域特征、统计特征等
+- **性能指标**
+定义 ：评估模型或方法性能的量化指标 
+示例 ：准确率、精确率、召回率、F1分数、均方根误差(RMSE)、平均绝对误差(MAE)等
+- **软件工具**
+定义 ：用于PHM研究和应用的软件平台和工具 
+示例 ：MATLAB、Python、TensorFlow、PyTorch、Simulink、LabVIEW等
+- **应用场景**
+定义 ：PHM技术的具体应用环境和场景 
+示例 ：发动机健康监测、结构健康监测、预测性维护、故障诊断系统、机载健康管理等
+
+## 关系定义
+文献中的实体之间通常存在逻辑、演进、依赖、功能、组合、比较、创新、评价或因果等联系。关系类型包括但不限于：
+### 1. 技术演进类
+- 发展为 ：传统RNN发展为LSTM
+- 改进了 ：注意力机制改进了Transformer性能
+- 演化成 ：专家系统演化成机器学习方法
+- 升级为 ：基础模型升级为集成模型
+### 2. 依赖关系类
+- 基于 ：健康预测模型基于振动信号特征
+- 依据 ：故障诊断依据传感器数据；轴承剩余寿命预测模型参数依据多传感器振动和温度信号
+- 利用 ：深度学习利用大数据优势
+- 采用 ：系统采用多传感器融合技术
+- 建立在 ：深度卷积残差网络模型建立在卷积神经网络理论
+### 3. 功能关系类
+- 应用于 ：机器学习应用于故障预测
+- 用于 ：卡尔曼滤波用于状态估计
+- 解决 ：深度学习解决特征提取问题
+- 实现 ：神经网络实现非线性映射
+- 支持 ：传感器网络支持实时监测
+- 处理 ：主成分分析方法处理航空发动机多维传感器振动数据
+- 预测/诊断 ：LSTM模型预测飞机发动机轴承剩余寿命
+### 4. 因果关系类
+- 导致 ：轴承磨损导致振动异常；高温导致涡轮叶片疲劳加速
+- 引起 ：温度升高引起性能退化；润滑不足引起齿轮磨损
+- 造成 ：疲劳载荷造成裂纹扩展
+- 产生 ：故障产生异常信号；振动异常产生轴承早期故障信号
+- 影响 ：载荷波动影响剩余寿命预测精度
+### 5. 组合关系类
+- 包含 ：PHM系统包含数据采集模块
+- 包括 ：航空装备可用度影响因素包括装备系统的构成及其可靠性、维修性参数
+- 组成 ：多个传感器组成监测网络
+- 结合 ：物理模型结合数据驱动方法
+- 融合 ：多源信息融合提高精度；多传感器数据融合方法融合时域和频域振动特征
+- 由…组成 ：传感器系统由加速度传感器、温度传感器和压力传感器组成
+### 6. 比较关系类
+- 优于 ：深度学习优于传统方法
+- 超越 ：新算法超越现有基准
+- 区别于 ：监督学习区别于无监督学习
+- 对比 ：不同方法的性能对比；基于Copula相似性的航空发动机RUL预测方法对比传统方法
+### 7. 创新关系类
+- 提出了 ：本文提出了一种结合小波变换的轴承故障诊断方法
+- 开发了 ：团队开发了创新算法
+- 设计了 ：研究设计了新型传感器
+- 创建了 ：本文创建了标准数据集
+- 创新了 ：多尺度特征融合方法创新了不同时间分辨率振动信号的联合分析
+- 突破了 ：Deep RUL预测方法突破了小样本寿命预测的限制
+### 8. 结果评价类
+- 评价指标是 ：RUL预测模型评价指标是均方根误差和平均绝对百分比误差
+- 得出 ：RUL预测模型得出航空发动机剩余寿命的数值估计
+### 关系抽取指导原则
+1.全面性 ：不遗漏任何有意义的实体间联系
+2.创新性 ：特别关注学术文献中的创新关系和技术演进
+3.灵活性 ：关系类型不限于上述分类，可根据实际语义创建新关系
+4.动态性 ：关注时间维度上的变化和发展关系
+5.隐含性 ：挖掘文本中隐含但语义明确的关系
+关系只需反映实体间实际存在的语义联系，具体类型无需严格限定，允许根据上下文灵活判断。
+
+### 关系抽取指导原则
+1. **全面性**：不遗漏任何有意义的实体间联系
+2. **创新性**：特别关注学术文献中的创新关系和技术演进
+3. **灵活性**：关系类型不限于上述分类，可根据实际语义创建新关系
+4. **动态性**：关注时间维度上的变化和发展关系
+5. **隐含性**：挖掘文本中隐含但语义明确的关系
+
+## schema 定义
+{schema_placeholder}
+
+## 抽取指令
+### 步骤1：核心实体识别
+- 重点扫描 摘要、引言和结论 部分，识别论文的核心研究对象、主要方法和关键成果
+- 从关键段落中提取第一批核心实体（通常是最重要的技术、模型、系统等）
+### 步骤2：关系发现与扩展
+- 围绕已识别的核心实体，在原文中寻找描述它们关系的 动词和关键短语
+- 构建核心关系三元组：(头实体, 关系类型, 尾实体)
+- 将关系中新出现的重要实体加入实体列表，继续寻找它们的关系
+### 步骤3：质量检查与输出
+- 确保relations中的所有实体都在entities列表中
+- 检查实体命名的一致性（统一同义词）
+- 验证关系的逻辑合理性和准确性
+- 按JSON格式输出最终结果
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+
+## 输出格式
+请严格按照以下JSON格式输出结果：
+
+```json
+{
+  "entities": [
+    {
+      "name": "空军工程大学",
+      "type": "机构"
+    },
+    {
+      "name": "浙江大学",
+      "type": "机构"
+    },
+    {
+      "name": "哈尔滨工业大学",
+      "type": "机构"
+    },
+    {
+      "name": "北京航空航天大学",
+      "type": "机构"
+    },
+    {
+      "name": "南京航空航天大学",
+      "type": "机构"
+    },
+    {
+      "name": "中国电子学会电子测量与仪器分会",
+      "type": "机构"
+    },
+    {
+      "name": "景博教授",
+      "type": "人物"
+    },
+    {
+      "name": "空军工程大学航空航天工程学院",
+      "type": "机构"
+    },
+    {
+      "name": "李学仁院长",
+      "type": "人物"
+    },
+    {
+      "name": "黄志尧教授",
+      "type": "人物"
+    },
+    {
+      "name": "彭宇教授",
+      "type": "人物"
+    },
+    {
+      "name": "于劲松教授",
+      "type": "人物"
+    },
+    {
+      "name": "王莉教授",
+      "type": "人物"
+    },
+    {
+      "name": "中国科学院自动化所",
+      "type": "机构"
+    },
+    {
+      "name": "王健教授",
+      "type": "人物"
+    },
+    {
+      "name": "何宇廷教授",
+      "type": "人物"
+    },
+    {
+      "name": "中国飞行试验研究院",
+      "type": "机构"
+    },
+    {
+      "name": "张联禾主任",
+      "type": "人物"
+    },
+    {
+      "name": "中国航空无线电电子研究所",
+      "type": "机构"
+    },
+    {
+      "name": "池程芝主任",
+      "type": "人物"
+    },
+    {
+      "name": "中航工业南京机电液压工程研究中心",
+      "type": "机构"
+    },
+    {
+      "name": "徐红专部长",
+      "type": "人物"
+    },
+    {
+      "name": "交流报告",
+      "type": "活动"
+    },
+    {
+      "name": "PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "军用飞机PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "工程应用",
+      "type": "概念"
+    },
+    {
+      "name": "无人系统PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "PHM",
+      "type": "技术"
+    },
+    {
+      "name": "综合航电PHM系统",
+      "type": "系统"
+    },
+    {
+      "name": "专家系统",
+      "type": "方法"
+    },
+    {
+      "name": "4层集成的PHM系统层次化体系结构",
+      "type": "体系架构"
+    },
+    {
+      "name": "基于可用度模型的PHM方法",
+      "type": "方法"
+    },
+    {
+      "name": "广义随机Petri网",
+      "type": "模型"
+    },
+    {
+      "name": "连续马尔可夫链",
+      "type": "模型"
+    },
+    {
+      "name": "传感器优化配置模型",
+      "type": "模型"
+    },
+    {
+      "name": "扩展微粒子群优化算法",
+      "type": "算法"
+    },
+    {
+      "name": "故障预测",
+      "type": "功能"
+    },
+    {
+      "name": "健康评估技术",
+      "type": "技术"
+    },
+    {
+      "name": "装备故障预测与健康管理(PHM)",
+      "type": "技术"
+    },
+    {
+      "name": "五层结构的健康评估总体技术框架",
+      "type": "模型/框架"
+    },
+    {
+      "name": "导弹武器装备",
+      "type": "应用案例"
+    },
+    {
+      "name": "航天器",
+      "type": "应用案例"
+    },
+    {
+      "name": "文献[18]",
+      "type": ""
+    },
+    {
+      "name": "文献[9]",
+      "type": ""
+    },
+    {
+      "name": "文献[20]",
+      "type": ""
+    }
+  ],
+  "relations": [
+    {
+      "head": "景博教授",
+      "relation": "任职于",
+      "tail": "空军工程大学"
+    },
+    {
+      "head": "李学仁院长",
+      "relation": "任职于",
+      "tail": "空军工程大学航空航天工程学院"
+    },
+    {
+      "head": "黄志尧教授",
+      "relation": "任职于",
+      "tail": "浙江大学"
+    },
+    {
+      "head": "彭宇教授",
+      "relation": "任职于",
+      "tail": "哈尔滨工业大学"
+    },
+    {
+      "head": "于劲松教授",
+      "relation": "任职于",
+      "tail": "北京航空航天大学"
+    },
+    {
+      "head": "王莉教授",
+      "relation": "任职于",
+      "tail": "南京航空航天大学"
+    },
+    {
+      "head": "王健教授",
+      "relation": "任职于",
+      "tail": "中国科学院自动化所"
+    },
+    {
+      "head": "何宇廷教授",
+      "relation": "任职于",
+      "tail": "空军工程大学"
+    },
+    {
+      "head": "张联禾主任",
+      "relation": "任职于",
+      "tail": "中国飞行试验研究院"
+    },
+    {
+      "head": "池程芝主任",
+      "relation": "任职于",
+      "tail": "中国航空无线电电子研究所"
+    },
+    {
+      "head": "徐红专部长",
+      "relation": "任职于",
+      "tail": "中航工业南京机电液压工程研究中心"
+    },
+    {
+      "head": "交流报告",
+      "relation": "围绕",
+      "tail": "PHM技术"
+    },
+    {
+      "head": "交流报告",
+      "relation": "围绕",
+      "tail": "军用飞机PHM技术"
+    },
+    {
+      "head": "交流报告",
+      "relation": "围绕",
+      "tail": "工程应用"
+    },
+    {
+      "head": "交流报告",
+      "relation": "涵盖",
+      "tail": "无人系统PHM技术"
+    },
+    {
+      "head": "文献[18]",
+      "relation": "提出了",
+      "tail": "4层集成的PHM系统层次化体系结构"
+    },
+    {
+      "head": "文献[9]",
+      "relation": "提出了",
+      "tail": "基于可用度模型的PHM方法"
+    },
+    {
+      "head": "基于可用度模型的PHM方法",
+      "relation": "建立了",
+      "tail": "广义随机Petri网"
+    },
+    {
+      "head": "基于可用度模型的PHM方法",
+      "relation": "建立了",
+      "tail": "连续马尔可夫链"
+    },
+    {
+      "head": "文献[20]",
+      "relation": "建立了",
+      "tail": "传感器优化配置模型"
+    },
+    {
+      "head": "传感器优化配置模型",
+      "relation": "采用...求解",
+      "tail": "扩展微粒子群优化算法"
+    },
+    {
+      "head": "综合航电PHM系统",
+      "relation": "包括",
+      "tail": "故障预测"
+    },
+    {
+      "head": "健康评估技术",
+      "relation": "是...的核心技术之一",
+      "tail": "装备故障预测与健康管理(PHM)"
+    },
+    {
+      "head": "健康评估技术",
+      "relation": "提出了",
+      "tail": "五层结构的健康评估总体技术框架"
+    },
+    {
+      "head": "导弹武器装备",
+      "relation": "是...典型应用案例",
+      "tail": "健康评估技术"
+    },
+    {
+      "head": "航天器",
+      "relation": "是...典型应用案例",
+      "tail": "健康评估技术"
+    }
+  ]
+}
+```
+
+## 注意事项
+###必须遵守的规则：
+1.严格按照JSON格式输出 ：确保entities和relations数组格式正确
+2.实体类型灵活性 ：不局限于给定的实体类型，可根据文本内容创建新类型
+3.关系类型创新性 ：优先使用已定义的关系类型，但允许根据语义创建新关系
+4.完整概念原则 ：选择最有意义的完整概念作为实体，避免过度分割
+5. **不受schema限制**：给定的schema和示例仅作参考，实体类型和关系类型均不仅限于此
+6. **实体一致性**：确保relations中引用的所有实体都在entities数组中明确定义
+7. **关系准确性**：关系表述应准确反映实体间的真实语义联系
+###特别关注：
+- 技术演进关系 ：重点识别"基于"、"改进"、"发展"、"演化"等创新关系
+- 比较关系 ：注意"优于"、"劣于"、"相似于"、"区别于"等对比关系
+- 应用关系 ：关注"应用于"、"解决"、"处理"等实际应用联系
+- 隐含关系 ：挖掘文本中未明确表述但语义清晰的关系
+
+质量保证：
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+- 保持实体边界的准确性，既不过度合并也不过度分割
+
+
+## 输入数据 
+现在，你将接收到用于处理的本次任务的全部输入数据。
+论文全文:
+```markdown```
+# 基于PHM的航空装备可用度影响因素分析方法
+
+刘瑞 马麟 康锐 邹莹芝
+
+（北京航空航天大学可靠性与系统工程学院，北京100191） （北京强度环境研究所，北京100076）
+
+摘要：对已有的航空装备可用度分析方法进行了综述，将航空装备可用度影响因素分为三类.通过PHM（PrognosticsandHealthManagement）技术对航空装备保障过程的影响分析，梳理了基于PHM的航空装备可用度影响因素，并将这些因素按照其来源分为使用影响因素和设计影响因素两大类.给出了4个合理的仿真假设条件以简化仿真过程，并进一步将设计影响因素分为5种，并结合一个实例给出了基于PHM的航空装备可用度影响因素仿真过程中的输入.提出给定装备系统及其保障系统参数条件下的稳态可用度为仿真的输出，并给出与仿真输入相符的解析计算公式.详细描述了仿真程序的构成及其流程图.最后，以图形的方式给出了仿真结果，给出了案例的单因素分析及多因素耦合分析的过程及结论，验证了所提出的分析方法的可行性.
+
+关键词：可用度分析；预测与健康管理；仿真方法；航空装备；影响因素分析中图分类号：TB114.3文献标识码：A 文章编号：1001- 5965（2011)10- 1238- 07
+
+# Analysis method for influential factors of aviation equipment availability based prognostics and health management
+
+Liu Rui Ma Lin Kang Rui (School of Reliability and Systems Engineering, Beijing University of Aeronautics and Astronautics, Beijing 100191, China)
+
+Zou Yingzhi
+
+( Beijing Institute of Strength and Environment, Beijing 100076, China)
+
+Abstract: The aviation equipment availability analysis method was reviewed and the influential factors of aviation equipment availability were classified as three categories. The newly increased influential factors of aviation equipment availability were analyzed through analyzing in the influence of prognostics and health management (PHM) technology to the availability. These factors were specified in term of the sources as two categories: the operate factors and the design factors. Four reasonable assumptions to simplify the simulation process. were provided. Furthermore, the design factors were divided into five categories. Combined with an example, the definitions of the simulation inputs of aviation equipment availability were given with the values of them. And the output of the simulation process is the steady- state availability under given conditions. Simultaneously, the analytical algorithm of it is pressed. Then the compositions simulation program and its flow chart were detailed described. The simulation results of the example were given by graph. At the same time the processes and conclusions of univariate analysis and multi- coupling analysis were given to verify the feasibility of the analysis mentioned.
+
+Key words: availability analysis; prognostics and health management(PHM); simulation method; aviation equipment; influential factors analysis
+
+装备的可用性是装备可靠性、测试性、维修性和保障性等设计特性的综合表征，也是装备使用部门所关心的重要的装备使用参数.装备可用性所描述的是装备在规定的时间内、规定的条件下以及具有规定的资源时能够开始执行任务的能力- 1. 可用性常用可用度来度量，可用度是武器装备作战效能评价的重要指标，已被广泛运用于各种装备中B- 1.
+
+目前在装备研制阶段，主要利用概率模型对可用度进行建模和分析，即从系统结构、部件的寿命分布、修理时间分布等有关信息出发，来推断出与系统寿命相关的可靠性指标，并根据想定的装备使用条件，来推断装备在给定的使用环境中的可用度指标[1- 13]
+
+装备的可用度不仅与装备本身有关，还与装备的使用环境、使用方法（任务）、装备保障系统运转情况等有关.所以在装备研制阶段仅靠概率模型无法很好地综合考虑装备使用过程中各种因素对装备可用度带来的影响.国内外对装备使用过程中可用度仿真进行了大量的研究.文献[4]给出了军用飞机使用可用度仿真的概率模型，文献[5]对装备使用过程维修时间的约束做了分析并给出了在维修时间约束条件下装备群可用度仿真的方法，文献[6]对不满足Markov过程的高可靠系统稳态使用可用度的快速仿真方法进行了研究并给出了仿真算法，文献[7]利用有色随机Petri网络的方法对某型航天设备使用可用度进行了仿真方法研究，文献[8]通过离散事件仿真算法对装备的使用可用度进行仿真研究并给出了以此提高产品可靠性和维修性的方法
+
+但是，大多数文献仅仅将装备可用度影响因素作为仿真的给定输入条件，并没有对装备可用度影响因素进行深入的分析.特别是在故障预测与健康管理（PHM,Prognostics and Health Management）技术广泛应用于现有装备中后，对装备可用性的影响因素构成将可能会发生显著的变化.而这些影响因素对装备使用过程中的可用度的影响程度是不同的.在装备的研制过程中，如何能确定影响因素对装备使用可用度的影响的程度，对权衡优化装备及其保障系统的设计过程中寻求最优解有重要意义
+
+# 1 航空装备可用度影响因素分析
+
+航空装备的可用度受多个因素的影响，主要包括3大类[19]：
+
+1）装备系统的构成及其可靠性、维修性参
+
+数，包括装备系统的构成方式、组成装备系统的各单元的可靠性参数、装备各组成部分的维修性等；
+
+2）保障系统的属性，包括装备各组成部分的实际修理时间、保障延误时间、保障资源的满足率等；
+
+3）装备系统所执行的任务信息，包括任务的持续时间、装备系统的任务强度、单次任务的执行时间等
+
+工程应用及分析表明[9- 23]，采用PHM技术之后，可以减少装备停机时间，提高装备的使用可用度，从而提高了装备的战备完好率.国内外对PHM技术在航空装备中的应用开展了广泛的研究.文献[3]通过对PHM技术的分析，给出了利用高可靠的PHM系统进行喷气式发动机中各功能组件剩余寿命预测的方法，并提出利用喷气式引擎中组件的剩余寿命预测结果可以用来进行维修工作的规划.文献[4]认为，通过利用产品故障模式、影响与危害性分析（FMECA，Failure Modes，Effect and Criticality Analysis）的数据，提高产品剩余寿命预测的准确度，从而可以降低产品在任务过程中发生故障的可能性并减少产品寿命周期费用.文献[5]将PHM作为确定通用电气航空装备维修时机权衡的输入，以此安排对产品的维修，并建立了PHM条件下的基于状态维修（CBM,Condition Based Maintenance）权衡的框架结构.
+
+1）采用PHM技术后，会在一定程度上改变现有航空装备的保障流程及保障工作的内容，所以也会对航空装备可用度影响因素的构成造成一定的影响
+
+采用PHM技术后，由于是基于航空装备当前的状态来进行维修策略的决策，装备维修的触发方式、维修过程、维修时间构成均会发生变化.一方面，当装备需要维修时才会进行维修工作，所以大量的预防性维修工作将会被取消，减少了装备的停机时间.另一方面，机载PHM系统将潜在的故障隔离至分系统或外场可更换单元（LRU,Line Replacement Unit），减少了修复性维修中的故障隔离时间
+
+2）在理想状态下，采用PHM技术将会避免产品在任务过程中发生随机故障，并可以在故障发生之前通知保障组织进行保障资源的准备，这样就能极大地缩短保障延误时间，减少装备维修停机时间，提高装备的可用度
+
+3）在实际情况下，PHM进行预测的准确度无法达到  $100\%$  ，有可能存在误报、漏报的情况
+
+如果产生漏报，将导致装备在使用过程中发生随机故障.如果误报，则会导致装备不必要的停机检查，增加装备的维修时间从而降低装备的可用度.
+
+# 2 构建影响因素仿真模型
+
+建立影响因素仿真的目的在于：通过在给定的任务和使用环境下对基本作战单元在任务持续期间的仿真，来获取各种影响因素输入条件下航空装备的稳态可用度，并利用可用度的仿真结果进行影响因素的分析，从而得到各影响因素对航空装备可用度影响程度大小的排序，进而支持装备研制过程中装备及其保障系统的设计权衡分析.
+
+# 2.1 仿真的假设
+
+为了便于简化具有PHM功能的维修保障系统过程的仿真，需要做如下的假设：
+
+1）保障组织  $24\mathrm{h}$  处于可工作状态，且保障资源充足.当保障资源（包括备件）准备好时，即刻开展对装备故障的维修
+
+2）保障组织的管理和运作中的复杂情况都被忽略，即保障资源的准备时间、后勤延误时间均为给定的一组常数
+
+3）装备各个功能组件相互独立，即不会发生关联故障，但各个功能组件可能同时发生故障
+
+4）为了方便比较因素影响程度的大小，PHM系统故障预测准确率为给定一组常数.发现潜在故障的时间作为独立因素处理，也为给定的一组常数
+
+# 2.2 仿真模型的输入
+
+仿真模型的输入由航空装备可用度影响因素决定.在装备的研制阶段，可用度影响因素可以分为使用影响因素因素和设计影响因素两类
+
+1）使用影响因素.使用影响因素主要指在航空装备使用过程中产生影响的因素，这类因素在航空装备设计阶段是作为设计的输入而在设计阶段不可控，所以在本文所描述的仿真方法中，此类作为仿真的固定输入，而不对其进行分析
+
+假设某基本作战单元拥有某型飞机24架，每架飞机拥有LRU10个.任务持续100天，在任务持续时间内每架飞机一直处于执行任务的状态，当且仅当飞机需要进行维修工作时（包括对潜在故障的维修或对随机故障的紧急维修）予停止任务进入维修状态.一旦飞机完成维修立即进入执行任务状态
+
+2）设计影响因素.设计影响因素是指那些在航空装备及其保障系统设计阶段可以被控制或设
+
+计的因素.基于PHM的航空装备可用度的可控影响因素主要包括：
+
+$①$  模块的可靠性（modulereliability）.各个功能模块的可靠性用MTBF（MeanTimeBetweenFailures）来度量，则第  $k$  架飞机中第  $i$  个LRU的可靠性可表达为  $T_{\mathrm{MTBF}}^{(k)}$  .在仿真过程中，不同飞机中的相同功能模块的可靠性服从同一指数分布
+
+$(2)$  故障诊断时机（detectionleadtime）.故障诊断时机是指当模块潜在故障被机载PHM系统检测出来时，模块的剩余寿命，可以表达为  $T_{\mathrm{BF}}$  在实际使用过程中，这个因素与PHM系统预测准确率是一对矛盾的因素
+
+$(3)$  PHM系统预测准确率（prognosticaccuracy）.当功能模块存在潜在的故障时，机载PHM系统能进行准确的故障检测、隔离及定位的概率，可表达为  $r_{\mathrm{PA}}$
+
+$(4)$  故障修复时间（maintenancetime）.故障修复时间主要指对故障LRU进行拆卸、更换操作的时间，而不包括故障隔离、资源等待的时间.假设仿真过程中所有模块的修复时间相同，则故障模块的修复时间可以表达为  $t_\mathrm{m}$
+
+$(5)$  保障资源准备时间（resourcespreparationtime）.当发生随机故障时需要修复性维修时，需要考虑保障资源的准备.保障资源准备时间可以表达为  $t_\mathrm{rp}$
+
+这些影响因素在案例中的具体取值见表1
+
+表1 仿真的输入  
+
+<table><tr><td>因素名称</td><td>取值</td></tr><tr><td>模块可靠性
+T(k)
+MTBF/h</td><td>100,200,300,400,500,600,700,800,900</td></tr><tr><td>故障诊断时机
+TBF/h</td><td>10,20,20,40,50,60,70,80,90,100</td></tr><tr><td>预测准确率
+rPA</td><td>0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95,1.0</td></tr><tr><td>故障修复时间
+tm/h</td><td>2,2,5,3,3,5,4,4,5,5,5,5,6,6,5,7</td></tr><tr><td>资源准备时间
+tRp/h</td><td>0,0,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5</td></tr></table>
+
+注：有下划线的数据为仿真基准数据组
+
+# 2.3 仿真模型的输出
+
+在理想的情况下，装备的不能工作时间仅与装备自身的状态有关，绝大多数的预防性维修工作均可以取消.同时由于能够对装备状态做出准确的监测和预计，并在装备需要维护前进行保障资源的调配，则装备保障中的后勤延误时间的理论值可以近似为零.所以在传统定义中的固有可用度、可达可用度和使用可用度可以统一.仿真模
+
+型的输出是装备在给定的任务条件下，给定装备系统和装备保障系统的参数下的稳态可用度  $A$
+
+稳态可用度  $A$  与装备在任务持续时间中的工作时间和不能工作时间有关，可表达为
+
+$$
+A = \frac{T_{\mathrm{U}}}{T_{\mathrm{U}} + T_{\mathrm{D}}} \tag{1}
+$$
+
+式中，  $A$  为装备的稳态可用度；  $T_{\mathrm{U}}$  为装备在任务中的使用时间；  $T_{\mathrm{D}}$  是装备在任务持续过程中停机时间其中  $T_{\mathrm{D}}$  可以按式（2）得出：
+
+$$
+T_{\mathrm{D}} = \left(\frac{T_{\mathrm{MD}}\times 24\times N_{\mathrm{OU}}\times n}{\Delta}\right)\times \lambda (t)\times \tag{2}
+$$
+
+式中，  $T_{\mathrm{MD}}$  为给定任务持续时间，天；  $N_{\mathrm{OU}}$  为基本作战单元中装备的数量；  $n$  为装备中LRU的个数； $\lambda (t)$  为LRU的故障率.在仿真中当PHM预测出某LRU将发生与  $T_{\mathrm{BF}}$  之后发生故障，则假设期间LRU不会发生随机故障，直至LRU得到更换并修复或到达  $T_{\mathrm{BF}}$  时刻.所以式（2）中，  $\Delta$  为修正因子
+
+# 2.4 仿真模型的构成及仿真流程
+
+仿真程序一共有4个模块构成，分别完成如下功能：
+
+1）参数输入模块.完成从数据文件中读入仿真参数，并将数据存入内存
+
+2）过程数据存储模块.完成仿真时中间数据的存放，便于后续计算.需要存储的数据有：装备的状态（包括：正常、停机维修中及等待）、装备中LRU的状态（包括：工作、非工作、发现潜在故障及维修）、当前仿真停机总时长等
+
+3）数据处理模块.完成对仿真中产生的大量中间数据进行处理，并计算得出每个仿真采样点的可用度
+
+4）结果输出模块.完成仿真结果的输出
+
+仿真流程如图1所示
+
+$①$  读入仿真参数，包括表1中的数据及给定的任务数据
+
+$(2)$  确定仿真采样周期.任务持续100天，采样间隔时间为  $1\mathrm{h}$
+
+$(3)$  判断当前装备状态.  $t_{\mathrm{m}}^{(i,j)}$  表示第  $i$  架飞机中第  $j$  个LRU的维修时间，当  $t_{\mathrm{rm}}^{(i,j)} = 0$  时表明该LRU未处于维修状态，当  $t_{\mathrm{rm}}^{(i,j)} > 0$  时说明该LRU处于维修状态且其值代表维修工作剩余时间.所以当
+
+$$
+\sum_{j = 1}^{100}t_{\mathrm{rm}}^{(i,j)} > 0 \tag{3}
+$$
+
+时，说明第  $i$  架飞机处于停机维修状态
+
+$(\widehat{\Delta})$  判断当前LRU状态.若当前采样飞机处
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/3c66f8ca-f631-4fad-9cac-f724d3b452ae/ea4e81c1375c9a630113e7db11641167fc61beff40b8aed8ada462e252c23e58.jpg)  
+图1仿真流程
+
+于工作状态，则开始判断当前LRU的工作状态 $L_{\mathrm{s}}(i,j)$  表示第  $i$  架飞机中第  $j$  个LRU的状态 $L_{\mathrm{s}}(i,j) = 0$  表示该LRU工作正常且未发现潜在故障；  $L_{\mathrm{s}}(i,j) > 0$  表示该LRU已发现潜在故障且其值表示故障预计的发生剩余时间
+
+$(5)$  本次采样后，当前LRU维修剩余时间减1.
+
+$(6)$  判断当前LRU是否需要进行维修.  $L_{\mathrm{s}}(i,$ $j) = 1$  表明当前LRU潜在故障即将发生，将进行更换维修.  $L_{\mathrm{s}}(i,j) > 1$  则说明当前LRU不需要维修
+
+$(\widehat{\tau})$  当  $L_{\mathrm{s}}(i,j) > 1$  ,LRU潜在预计发生时间减1.
+
+$(\widehat{\mathbf{a}})$  当  $L_{\mathrm{s}}(i,j) = 1$  ，装备停止任务并进入维修状态  $\{t_{\mathrm{rm}}^{(i,j)} = T_{\mathrm{M}}\}$  ，当前LRU状态恢复至正常状态 $\{L_{\mathrm{s}}(i,j) = 0\}$  ，并记录本次维修时长(  $T_{\mathrm{D}} = T_{\mathrm{D}}+$ $T_{\mathrm{M}})$  .由于该LRU潜在故障已被PHM系统预测出，所以不需要记录保障资源准备时间
+
+$(9)$  判断当前采样LRU是否存在潜在故障如果  $x > \lambda^{(i,j)}$  ，则说明当前LRU未检测出潜在故
+
+障.反之，则说明当前LRU存在潜在故障或在此时发生随机故障，需要做进一步的仿真判断
+
+$10$  判断PHM系统是否预测出此次潜在故障.当  $y\leq r_{\mathrm{PA}}$  表示PHM准确预测出当前LRU将发生潜在故障且  $L_{\mathrm{S}}(i,j) = T_{\mathrm{PF}}$  表示当前LRU将在  $T_{\mathrm{BF}}$  发生潜在故障
+
+$11$  当  $y > r_{\mathrm{PA}}$  时，表示当前LRU发生故障且PHM系统未能提前预测本次故障.当前LRU所属飞机将停止执行任务，并进入维修状态.此次故障停机时间累计为  $T_{\mathrm{D}} = T_{\mathrm{D}} + T_{\mathrm{RM}} + T_{\mathrm{RN}},T_{\mathrm{RN}}$  为保障资源准备时间
+
+# 3 仿真结果及分析
+
+# 3.1 单变量仿真结果
+
+在仿真过程中，在给定的参数基线下改变单个因素的取值来得到单一因素对装备可用度的影响变化曲线.通过对比给定任务模型情况下，航空装备可用度对每个独立因素变化的敏感程度，从而可以确定影响航空装备可用度的主要因素.仿真重复100次，取平均值，仿真结果如图2所示
+
+从图2中可以看出5个变量对给定任务情况下，基本作战单元可用度的增益或减益影响.其中，当且仅当装备的可靠性提高时，虽然增长比较平缓，但A仍有可能趋近于1. 所以装备的可靠性MTBF是影响基本作战单元可用度的主要因素之一.PHM系统预测的准确度和预测提前时间为一对矛盾的因素，所以本文选取PHM系统预测准确度  $r_{\mathrm{PA}}$  作为进一步对比的主要因素之一
+
+同时可以看出装备故障后修复性维修时间  $t_\mathrm{m}$  对基本作战单元可用度有很强的减益作用，但是在装备可靠性给定的情况下，提高装备维修性并减小  $t_\mathrm{m}$  对基本作战单元可用度提升的作用是有限的.而在给定的情况下，相对于其他4个参数，缩短保障系统中保障资源准备时间并不能有效地提升基本作战单元使用可用度
+
+# 3.2 多变量耦合影响仿真结果
+
+通过单变量敏感度仿真分析，确定了在文章给定条件的情况下，装备可靠性指标MTBF，PHM系统预测准确度  $r_{\mathrm{PA}}$  和装备修复性维修时间  $t_\mathrm{m}$  为影响基本作战的单元可用度的主要因素.通过多变量耦合影响仿真，两两对比上面提出的主要因素，可以确定影响因素之间的关系，进一步确定各主要影响因素的敏感度程度的大小
+
+1）MTBF与  $r_{\mathrm{PA}}$  对比.MTBF与  $r_{\mathrm{PA}}$  耦合仿真结果如图3所示.由图3可见，在本文给定的情况下，装备可靠性较低时，单纯地提高PHM系统预
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/3c66f8ca-f631-4fad-9cac-f724d3b452ae/af465e7a75670bc898d956ead68d9b6302c48380c9769285b9fcb95c9e5b5377.jpg)  
+图2 单因素仿真结果
+
+测准确度无法将使用可用度提高到可接受的水平.但是当装备的可靠性水平较低时，提高PHM系统预测准确度可以快速提高装备在给定任务情况下的可用度.而增加装备的可靠性可以快速提升给定任务条件下装备的可用度，并且这一增益过程将在MTBF增长为  $400\mathrm{h}$  时呈现边际效应
+
+2）MTBF与  $t_\mathrm{m}$  对比.MTBF与  $t_\mathrm{m}$  耦合仿真结果如图4所示
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/3c66f8ca-f631-4fad-9cac-f724d3b452ae/bc9155f49540677663baf8136ccba757df1333bd01236a37ac861c189c9146ae.jpg)  
+图3 MTBF与  $r_{\mathrm{PA}}$  双因素仿真结果
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-13/3c66f8ca-f631-4fad-9cac-f724d3b452ae/95f4fd3d41b454a18efc9fcb6539a3f5aa7d87d3426fd1be29e43fe716b1e9cf.jpg)  
+图4 MTBF与  $t_{\mathrm{m}}$  双因素仿真结果
+
+从图4中可以看出，当装备可靠性水平较低时，提高装备维修性或缩短保障系统中保障时间，
+
+也可以使装备的可用度处于较高的水平.但装备自身的可靠性还是影响装备使用可用度的重要因素，特别是当装备维修性难以提高或现有保障系统效率较低时，可以通过提高装备自身的可靠性水平来确保装备的可用度水平
+
+# 4结论
+
+本文提出的基于PHM的航空装备可用度影响因素仿真分析方法可以支持装备研制过程中装备及其保障系统的设计权衡分析
+
+1）总结并分析了影响装备可用度的影响因素，结合PHM技术给出了基于PHM的航空装备可用度影响因素分类
+
+2）给出了在现有技术条件下，PHM技术中存在不确定性因素对装备可用度的影响
+
+3）给出了航空装备可用度影响因素仿真分析方法，确定的仿真假设、输入、输出及仿真流程
+
+4）通过实例验证，证实了本文提出的方法的可行性
+
+致谢感谢黄兆东博士生在论文仿真程序设计过程中提出的建议，有效地提高了仿真的效率
+
+# 参考文献（References）
+
+杨为民.可靠性维侧性保障性总论M.北京：国防工业出版社，1995:20- 22
+
+Yang Weimin. Reliability, maintainability and supporability [M]. Beijing: National Defense Industry Press, 1995: 20 - 22 (in Chinese)
+
+Benjamin S Blanchard, Wolter K Fabrycky. System engineering and analysis [M]. Beijing: Tsinghua University Press, 2002: 359 - 360
+
+Alexander H Levis, Paul K Houpt, Stamatios K Andreadakis. Effectiveness analysis of automotive systems [D] //1985 American Control Conference. Boston: American Automatic Control Council, 1985: 1432 - 1437
+
+高尚，娄寿春.武器系统效能评定方法综述.系统工程理论与实践，1998（7）：109- 114
+
+Gao Shang, Lou Shouchun. Progress in assessing the effectiveness of weapon system [D]. Systems Engineering- Theory & Practice, 1998(7): 109 - 144 (in Chinese)
+
+谈斌，周海云，张己化.基于HLA的装备作战效能评估仿真框架研究.计算机仿真，2008，25（5）：11- 14
+
+Tan Bin, Zhou Haiyun, Zhang Jihua. A weapon equipment simulation framework for efficiency evaluation based on HLA [D]. Computer Simulation, 2008, 25(5): 11 - 14 (in Chinese)
+
+王正元，刘靖旭，谭跃进，等.基于作战仿真的装甲车辆作战效能评估方法.国防科学技术大学学报，2004，26（2）：106 - 109
+
+Wang Zhengyuan, Liu Jingku, Tan Yuejin, et al. Combat effec
+
+tiveness evaluation of the armored vehicle based on combat simulation [J. Journal of National University of Defense Technology, 2004,26(2):106- 109 (in Chinese)Fashandi A. System availability and operation support modeling [C] //The 28th International Electronics Manufacturing Technology Symposium. California: IEEE Press,2003:347- 350F.汪民乐,高晓光,蔡付东.作战飞机效能分析研究综述 [J. 飞行力学,2001,19(4):1- 5Wang Minle, Gao Xiaoguang, Cai Fulong. Overview of research on military aircraft combat effectiveness analysis [J. Flight Dynamics,2001,19(4):1- 5 (in Chinese)F.贾跃,宋保维,梁庆卫.鱼雷武器系统效能评估模型及其仿真 [J.兵工学报,2006,27(3):475- 479Jia Yue, Song Baowei, Liangqingwei. Mathematical model and simulation of torpedo weapon system effectiveness evaluation [J. Acta Armamentarii,2006,27(3):475- 479 (in Chinese)F.于小红,蔡远文,杨仁保.运载火箭发射过程效能评估方法 [J. 导弹与航天运载技术,2005(1):19- 22Yu Xiaohong, Cai Yuanwen, Yang Renbao. Research on effectiveness evaluation for launch process [J. Missiles and Space Vehicles,2005(3):19- 22 (in Chinese)F. Kirmani E, Hood C S. A new approach to analysis of interval availability [J. //The 3rd International Conference on Availability, Reliability and Security. California: IEEE Computer Society,2008:479- 483F.王立超.系统可用度匹配分析与设计 [J. 南京:南京理工大学自动化学院,2008Wang Lichao. The analysis and design of the matchinglization for system availability [J. Nanjing: School of Automatic, Nanjing University of Science & Technology,2008 (in Chinese)F. Zheng Z H, Cui L R, Hawkes A G. A study on a single- unit Marko repairable system with repair time omission [J. IEEE Transaction on Reliability,2006,55(5):182- 188F.赵冰化,王勇.军用飞机可用度概率模型及仿真 [J. 火力与指挥控制,2007,32(6):80- 83Zhao Binghua, Wang Yong. A research on conceptual model and simulation for the military aircraft availability [J. Fire Control and Command Control,2007,32(6):80- 83 (in Chinese)F.高文,祝明发,徐志伟.基于维修时间约束的机群系统可用度的仿真算法 [J. 计算机学报,2001,24(8):876- 880Gao Wen, Zhu Mingfa, Xu Zhiwei. A simulation algorithm of cluster system s availability within repair time constrains [J. Chinese Journal of Computers,2001,24(8):876- 880 (in Chinese)
+
+[6] Nicola V F, Shahabuddin P, Heidelberger P, et al, Fast simulation of steady- state availability in non- Markovian highly dependable systems [J. //The 23rd International Symposium on Fault- Tolerant Computing. France: IEEE Computer Society, 1993:38- 47[7] Nebel S, Bertsche B. Modeling and simulation methodology of the operational availability and logistics using extended colored stochastic petri netc an astronautics case study [J. //2008 Reliability and Maintainability Symposium. Nevada: IEEE Press, 2008:434- 439[8] Bazargan M, McGrath R N. Discrete event simulation to improve aircraft availability and maintainability [J. //2003 Reliability and Maintainability Symposium. Florida: IEEE, 2003:63- 67[9] 冯旭中, 张振友.基于任务的复杂武器系统可用性仿真研究 [J.兵工自动化,2009,28(2):71- 73Feng Xuzhong, Zhang Zhenyou. Availability simulation on complex weapon systems based on mission [J. Ordnance Industry Automation,2009,28(2):71- 73 (in Chinese)[10] 曾声奎, Michael G. Pecht, 吴际, 故障预测与健康管理技术的现状与发展 [J. 航空学报,2005,26(5):626- 632Zen Shengkui, Michael G. Pecht, Wu Ji. Status and perspectives of prognostics and health management technologies [J. Acta Aeronautica et Astronautica Sinica, 2005,26(5):626- 632 (in Chinese)[11] John W Sheppard, Mark A Kaufman, Timothy J Wilmering. IEEE standards for prognostics and health management [J. IEEE Aerospace and Electronic Systems Magazine, 2009, 24(9):34- 41[12] Fatih Camci. System maintenance scheduling with prognostics information using genetic algorithm [J. IEEE Transactions on Reliability,2009,58(3):539- 552[13] Eva L Suarez, Michael J Duffy, Robert N Gamache, et al. Jet engine life prediction system integrated with prognostics and health management [J. //2004 IEEE Aerospace Conference Proceedings. Montana: AIAA, 2004:3596- 3602[14] Todd D Batzel, David C Swanson. Prognostics and health management of aircraft power generators [J. IEEE Transactions on Aerospace and Electronic System,2009,24(2):473- 483[15] Jon Dunsdon, Mark Huntington. The application of open system architecture for condition based maintenance to complete IVHM [J. //2008 IEEE Aerospace Conference. Montana: AIAA, 2008:1- 9
+
+(编 辑:娄 嘉)

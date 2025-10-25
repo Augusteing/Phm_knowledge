@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "分析",
+    "object": "实时数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "察觉",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "分类",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "预报",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "飞机维护技术文档",
+    "object_type": "文档"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "结合",
+    "object": "历史维护经验",
+    "object_type": "知识"
+  },
+  {
+    "subject": "飞机远程实时监控方案",
+    "subject_type": "方案",
+    "relation": "包含",
+    "object": "飞机健康管理系统",
+    "object_type": "系统"
+  }
+]

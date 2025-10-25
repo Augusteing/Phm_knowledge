@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "故障数据预测",
+    "subject_type": "任务",
+    "relation": "指导",
+    "object": "可靠性计划",
+    "object_type": "活动"
+  },
+  {
+    "subject": "故障数据预测",
+    "subject_type": "任务",
+    "relation": "指导",
+    "object": "可靠性维护活动",
+    "object_type": "活动"
+  },
+  {
+    "subject": "故障时间序列预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "LSTM循环神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "故障时间序列预测方法",
+    "subject_type": "方法",
+    "relation": "包括",
+    "object": "网络结构设计",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "故障时间序列预测方法",
+    "subject_type": "方法",
+    "relation": "包括",
+    "object": "网络训练",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "故障时间序列预测方法",
+    "subject_type": "方法",
+    "relation": "包括",
+    "object": "预测过程实现算法",
+    "object_type": "组成部分"
+  },
+  {
+    "subject": "LSTM预测模型参数优选算法",
+    "subject_type": "算法",
+    "relation": "基于",
+    "object": "多层网格搜索",
+    "object_type": "技术"
+  },
+  {
+    "subject": "LSTM预测模型参数优选算法",
+    "subject_type": "算法",
+    "relation": "优化目标",
+    "object": "预测误差",
+    "object_type": "指标"
+  },
+  {
+    "subject": "LSTM预测模型",
+    "subject_type": "模型",
+    "relation": "对比",
+    "object": "典型时间序列预测模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "LSTM预测模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "故障时间序列分析",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "LSTM预测模型参数优选算法",
+    "subject_type": "算法",
+    "relation": "验证",
+    "object": "高准确性",
+    "object_type": "性能"
+  }
+]

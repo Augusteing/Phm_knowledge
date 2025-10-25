@@ -1,0 +1,684 @@
+{
+  "entity_types": {
+    "技术": {
+      "description": "各种技术方法和技术手段",
+      "examples": ["故障诊断技术", "PHM技术", "智能技术"]
+    },
+    "方法": {
+      "description": "具体的方法论和算法",
+      "examples": ["基于CNN和LSTM的剩余寿命预估方法", "灰色故障识别方法"]
+    },
+    "模型": {
+      "description": "数学模型、机器学习模型等",
+      "examples": ["LSTM循环神经网络", "ARIMA模型", "失效物理模型"]
+    },
+    "系统": {
+      "description": "各种系统和装备",
+      "examples": ["航空发动机", "飞机电源系统", "PHM系统"]
+    },
+    "问题": {
+      "description": "需要解决的技术问题和挑战",
+      "examples": ["航空发动机剩余寿命预估问题", "过拟合问题"]
+    },
+    "性能指标": {
+      "description": "评估性能的各种指标",
+      "examples": ["可靠性", "预测精度", "任务成功率"]
+    },
+    "应用领域": {
+      "description": "技术应用的具体领域",
+      "examples": ["航空", "军事领域", "民用领域"]
+    },
+    "任务": {
+      "description": "具体的技术任务和目标",
+      "examples": ["故障预测", "健康评估", "剩余寿命预测"]
+    },
+    "成本": {
+      "description": "各种成本和费用",
+      "examples": ["维修成本", "使用和保障费用"]
+    },
+    "技术趋势": {
+      "description": "技术发展的趋势和方向",
+      "examples": ["液压高压化", "分布式", "故障诊断及健康管理"]
+    },
+    "技术领域": {
+      "description": "技术所属的大类领域",
+      "examples": ["强度设计技术", "综合监视"]
+    },
+    "关键技术": {
+      "description": "核心的关键技术",
+      "examples": ["故障预测", "健康评估", "系统维护"]
+    },
+    "装备类别": {
+      "description": "装备的分类",
+      "examples": ["关键技术装备"]
+    },
+    "装备": {
+      "description": "具体的装备和设备",
+      "examples": ["汽车", "工程机械", "国防武器装备"]
+    },
+    "属性": {
+      "description": "系统或技术的特征属性",
+      "examples": ["研究方向", "故障特点", "设计架构"]
+    },
+    "流程": {
+      "description": "工作流程和过程",
+      "examples": ["寿命预计流程"]
+    },
+    "环节": {
+      "description": "流程中的具体环节",
+      "examples": ["控制点选择", "飞行参数筛选"]
+    },
+    "缺陷": {
+      "description": "系统存在的缺陷和不足",
+      "examples": ["备件管理混乱", "信息系统自动化程度有限"]
+    },
+    "保障系统": {
+      "description": "保障相关的系统",
+      "examples": ["F-35自主式保障系统"]
+    },
+    "研究机构": {
+      "description": "科研院所和实验室",
+      "examples": ["可靠性工程四川省重点实验室"]
+    },
+    "研究方向": {
+      "description": "科研的具体方向",
+      "examples": ["复杂装备维修性分析及维护决策"]
+    },
+    "功能": {
+      "description": "系统或技术实现的功能",
+      "examples": ["状态评估", "诊断", "预测"]
+    },
+    "行业": {
+      "description": "应用的行业领域",
+      "examples": ["汽车制造", "军事", "能源"]
+    },
+    "技术体系": {
+      "description": "技术的体系架构",
+      "examples": ["故障预测与健康管理技术体系架构"]
+    },
+    "数据": {
+      "description": "各种数据类型和数据源",
+      "examples": ["振动数据", "温度数据", "历史故障数据", "传感器数据"]
+    },
+    "算法": {
+      "description": "具体的算法和计算方法",
+      "examples": ["支持向量机", "随机森林", "深度学习算法", "遗传算法"]
+    },
+    "特征": {
+      "description": "数据特征和特征参数",
+      "examples": ["时域特征", "频域特征", "时频域特征", "统计特征"]
+    },
+    "参数": {
+      "description": "系统参数和配置参数",
+      "examples": ["学习率", "隐藏层节点数", "训练轮数", "正则化参数"]
+    },
+    "指标": {
+      "description": "评估和测量指标",
+      "examples": ["准确率", "召回率", "F1分数", "均方根误差"]
+    },
+    "工具": {
+      "description": "软件工具和平台",
+      "examples": ["MATLAB", "Python", "TensorFlow", "Simulink"]
+    },
+    "标准": {
+      "description": "技术标准和规范",
+      "examples": ["IEEE标准", "ISO标准", "军用标准", "行业标准"]
+    }
+  },
+  "relation_types": {
+    "解决": {
+      "description": "用于解决指定的问题或难题",
+      "direction": "directed",
+      "semantic_group": "问题解决"
+    },
+    "应用于": {
+      "description": "在具体的应用场景或对象上使用",
+      "direction": "directed",
+      "semantic_group": "应用关系"
+    },
+    "提高": {
+      "description": "对性能指标或能力的提升",
+      "direction": "directed",
+      "semantic_group": "性能改进"
+    },
+    "基于": {
+      "description": "在某种理论/方法/数据的基础上开展",
+      "direction": "directed",
+      "semantic_group": "依赖关系"
+    },
+    "包括": {
+      "description": "描述层次包含关系",
+      "direction": "directed",
+      "semantic_group": "层次关系"
+    },
+    "包含": {
+      "description": "技术/方法的层次包含关系",
+      "direction": "directed",
+      "semantic_group": "层次关系"
+    },
+    "降低": {
+      "description": "降低风险或某类不良指标",
+      "direction": "directed",
+      "semantic_group": "性能改进"
+    },
+    "发展趋势为": {
+      "description": "描述系统与技术趋势之间的发展趋势关系",
+      "direction": "directed",
+      "semantic_group": "发展关系"
+    },
+    "建立": {
+      "description": "描述方法与模型之间的建立关系",
+      "direction": "directed",
+      "semantic_group": "构建关系"
+    },
+    "用于": {
+      "description": "描述用途和目标关系",
+      "direction": "directed",
+      "semantic_group": "应用关系"
+    },
+    "具有": {
+      "description": "描述拥有某种属性或特征",
+      "direction": "directed",
+      "semantic_group": "属性关系"
+    },
+    "优于": {
+      "description": "描述性能或效果的比较优势",
+      "direction": "directed",
+      "semantic_group": "比较关系"
+    },
+    "存在问题": {
+      "description": "描述存在的问题和不足",
+      "direction": "directed",
+      "semantic_group": "问题关系"
+    },
+    "存在缺陷": {
+      "description": "描述系统存在的缺陷",
+      "direction": "directed",
+      "semantic_group": "问题关系"
+    },
+    "研究方向为": {
+      "description": "描述研究机构的研究方向",
+      "direction": "directed",
+      "semantic_group": "研究关系"
+    },
+    "实现": {
+      "description": "达成某项结果或目标",
+      "direction": "directed",
+      "semantic_group": "实现关系"
+    },
+    "采用": {
+      "description": "使用某种方法、技术或算法",
+      "direction": "directed",
+      "semantic_group": "使用关系"
+    },
+    "输入": {
+      "description": "作为输入数据或参数",
+      "direction": "directed",
+      "semantic_group": "数据关系"
+    },
+    "输出": {
+      "description": "产生输出结果或数据",
+      "direction": "directed",
+      "semantic_group": "数据关系"
+    },
+    "训练": {
+      "description": "使用数据训练模型或算法",
+      "direction": "directed",
+      "semantic_group": "学习关系"
+    },
+    "预测": {
+      "description": "对未来状态或结果进行预测",
+      "direction": "directed",
+      "semantic_group": "预测关系"
+    },
+    "检测": {
+      "description": "检测故障或异常状态",
+      "direction": "directed",
+      "semantic_group": "检测关系"
+    },
+    "评估": {
+      "description": "对性能或状态进行评估",
+      "direction": "directed",
+      "semantic_group": "评估关系"
+    },
+    "影响": {
+      "description": "对某个因素产生影响",
+      "direction": "directed",
+      "semantic_group": "影响关系"
+    },
+    "属于": {
+      "description": "归属于某个类别或领域",
+      "direction": "directed",
+      "semantic_group": "归属关系"
+    }
+  },
+  "high_confidence_patterns": [
+    {
+      "id": "模式1",
+      "semantic_template": "研究方法 → 解决 → 研究问题",
+      "head_type": "研究方法",
+      "relation": "解决",
+      "tail_type": "研究问题",
+      "confidence_score": 0.95,
+      "examples": [
+        {
+          "head": "基于CNN和LSTM的剩余寿命预估方法",
+          "tail": "航空发动机剩余寿命预估问题"
+        },
+        {
+          "head": "MFOP参数分解方法",
+          "tail": "MFOP指标无法分解和落实的问题"
+        },
+        {
+          "head": "基于Copula相似性的RUL预测方法",
+          "tail": "性能退化特征众多问题"
+        }
+      ],
+      "description": "用于解决指定的问题或难题"
+    },
+    {
+      "id": "模式2",
+      "semantic_template": "技术 → 应用于 → 应用领域",
+      "head_type": "技术",
+      "relation": "应用于",
+      "tail_type": "应用领域",
+      "confidence_score": 0.92,
+      "examples": [
+        {
+          "head": "故障诊断技术",
+          "tail": "船舶"
+        },
+        {
+          "head": "综合诊断、预测与健康管理(PHM)技术",
+          "tail": "军事领域"
+        },
+        {
+          "head": "综合诊断、预测与健康管理(PHM)技术",
+          "tail": "民用领域"
+        }
+      ],
+      "description": "在具体的应用场景或对象上使用"
+    },
+    {
+      "id": "模式3",
+      "semantic_template": "技术 → 提高 → 性能指标",
+      "head_type": "技术",
+      "relation": "提高",
+      "tail_type": "性能指标",
+      "confidence_score": 0.90,
+      "examples": [
+        {
+          "head": "综合运载器健康管理(IVHM)技术",
+          "tail": "可靠性"
+        },
+        {
+          "head": "故障预测与管理技术(PHM)",
+          "tail": "任务成功率"
+        },
+        {
+          "head": "综合运载器健康管理(IVHM)技术",
+          "tail": "可维护性"
+        }
+      ],
+      "description": "对性能指标或能力的提升"
+    },
+    {
+      "id": "模式4",
+      "semantic_template": "研究方法 → 基于 → 模型",
+      "head_type": "研究方法",
+      "relation": "基于",
+      "tail_type": "模型",
+      "confidence_score": 0.88,
+      "examples": [
+        {
+          "head": "疲劳寿命预测方法",
+          "tail": "失效物理模型"
+        },
+        {
+          "head": "故障分析方法",
+          "tail": "ARIMA模型"
+        },
+        {
+          "head": "故障时间序列预测方法",
+          "tail": "LSTM循环神经网络"
+        }
+      ],
+      "description": "在某种理论/方法/数据的基础上开展"
+    },
+    {
+      "id": "模式5",
+      "semantic_template": "模型 → 应用于 → 应用领域",
+      "head_type": "模型",
+      "relation": "应用于",
+      "tail_type": "应用领域",
+      "confidence_score": 0.85,
+      "examples": [
+        {
+          "head": "数字孪生五维模型",
+          "tail": "医疗"
+        },
+        {
+          "head": "LSTM预测模型",
+          "tail": "故障时间序列分析"
+        },
+        {
+          "head": "粗糙神经网络",
+          "tail": "航空电子设备的维护保障"
+        }
+      ],
+      "description": "在具体的应用场景或对象上使用"
+    },
+    {
+      "id": "模式6",
+      "semantic_template": "研究方法 → 提高 → 性能指标",
+      "head_type": "研究方法",
+      "relation": "提高",
+      "tail_type": "性能指标",
+      "confidence_score": 0.87,
+      "examples": [
+        {
+          "head": "基于EMD和RVM-AR的预测方法",
+          "tail": "Si元素的预测精度"
+        },
+        {
+          "head": "基于静电互相关灵敏度加权的气路碎片监测方法",
+          "tail": "PHM系统的稳定性"
+        },
+        {
+          "head": "基于KPCA和DBN的建模方法",
+          "tail": "模型精度"
+        }
+      ],
+      "description": "对性能指标或能力的提升"
+    },
+    {
+      "id": "模式7",
+      "semantic_template": "技术领域 → 包括 → 技术",
+      "head_type": "技术领域",
+      "relation": "包括",
+      "tail_type": "技术",
+      "confidence_score": 0.83,
+      "examples": [
+        {
+          "head": "强度设计技术",
+          "tail": "结构故障预测与健康管理系统设计"
+        },
+        {
+          "head": "强度设计技术",
+          "tail": "全机内力分析技术"
+        },
+        {
+          "head": "强度设计技术",
+          "tail": "复合材料整体化结构分析技术"
+        }
+      ],
+      "description": "描述技术领域与技术之间的包括关系"
+    },
+    {
+      "id": "模式8",
+      "semantic_template": "技术 → 降低 → 成本",
+      "head_type": "技术",
+      "relation": "降低",
+      "tail_type": "成本",
+      "confidence_score": 0.80,
+      "examples": [
+        {
+          "head": "综合运载器健康管理(IVHM)技术",
+          "tail": "成本"
+        },
+        {
+          "head": "PHM技术",
+          "tail": "使用和保障费用"
+        },
+        {
+          "head": "气路故障诊断技术",
+          "tail": "视情维修成本"
+        }
+      ],
+      "description": "降低风险或某类不良指标"
+    },
+    {
+      "id": "模式9",
+      "semantic_template": "算法 → 训练 → 模型",
+      "head_type": "算法",
+      "relation": "训练",
+      "tail_type": "模型",
+      "confidence_score": 0.85,
+      "examples": [
+        {
+          "head": "深度学习算法",
+          "tail": "故障诊断模型"
+        },
+        {
+          "head": "支持向量机",
+          "tail": "剩余寿命预测模型"
+        },
+        {
+          "head": "随机森林",
+          "tail": "健康状态评估模型"
+        }
+      ],
+      "description": "使用算法训练特定的模型"
+    },
+    {
+      "id": "模式10",
+      "semantic_template": "数据 → 输入 → 模型",
+      "head_type": "数据",
+      "relation": "输入",
+      "tail_type": "模型",
+      "confidence_score": 0.82,
+      "examples": [
+        {
+          "head": "振动数据",
+          "tail": "故障诊断模型"
+        },
+        {
+          "head": "温度数据",
+          "tail": "剩余寿命预测模型"
+        },
+        {
+          "head": "传感器数据",
+          "tail": "健康监测模型"
+        }
+      ],
+      "description": "数据作为模型的输入"
+    },
+    {
+      "id": "模式11",
+      "semantic_template": "模型 → 预测 → 任务",
+      "head_type": "模型",
+      "relation": "预测",
+      "tail_type": "任务",
+      "confidence_score": 0.88,
+      "examples": [
+        {
+          "head": "LSTM神经网络模型",
+          "tail": "剩余寿命预测"
+        },
+        {
+          "head": "CNN卷积神经网络",
+          "tail": "故障诊断"
+        },
+        {
+          "head": "SVM支持向量机模型",
+          "tail": "健康状态评估"
+        }
+      ],
+      "description": "模型用于预测特定任务"
+    },
+    {
+      "id": "模式12",
+      "semantic_template": "方法 → 采用 → 算法",
+      "head_type": "方法",
+      "relation": "采用",
+      "tail_type": "算法",
+      "confidence_score": 0.86,
+      "examples": [
+        {
+          "head": "故障诊断方法",
+          "tail": "深度学习算法"
+        },
+        {
+          "head": "剩余寿命预测方法",
+          "tail": "循环神经网络算法"
+        },
+        {
+          "head": "健康评估方法",
+          "tail": "支持向量机算法"
+        }
+      ],
+      "description": "方法采用特定的算法实现"
+    }
+  ],
+  "additional_patterns": [
+    {
+      "id": "模式13",
+      "semantic_template": "特征 → 输入 → 算法",
+      "head_type": "特征",
+      "relation": "输入",
+      "tail_type": "算法",
+      "examples": [
+        {
+          "head": "时域特征",
+          "tail": "支持向量机"
+        },
+        {
+          "head": "频域特征",
+          "tail": "神经网络算法"
+        }
+      ]
+    },
+    {
+      "id": "模式14",
+      "semantic_template": "工具 → 实现 → 方法",
+      "head_type": "工具",
+      "relation": "实现",
+      "tail_type": "方法",
+      "examples": [
+        {
+          "head": "MATLAB",
+          "tail": "信号处理方法"
+        },
+        {
+          "head": "Python",
+          "tail": "机器学习方法"
+        }
+      ]
+    },
+    {
+      "id": "模式15",
+      "semantic_template": "参数 → 影响 → 性能指标",
+      "head_type": "参数",
+      "relation": "影响",
+      "tail_type": "性能指标",
+      "examples": [
+        {
+          "head": "学习率",
+          "tail": "模型精度"
+        },
+        {
+          "head": "隐藏层节点数",
+          "tail": "预测准确率"
+        }
+      ]
+    },
+    {
+      "id": "模式16",
+      "semantic_template": "系统 → 采用 → 标准",
+      "head_type": "系统",
+      "relation": "采用",
+      "tail_type": "标准",
+      "examples": [
+        {
+          "head": "PHM系统",
+          "tail": "IEEE标准"
+        },
+        {
+          "head": "故障诊断系统",
+          "tail": "ISO标准"
+        }
+      ]
+    }
+  ],
+  "negative_examples": [
+    {
+      "head": "航空发动机",
+      "relation": "解决",
+      "tail": "LSTM神经网络",
+      "reason": "实体类型不匹配：系统不能解决模型"
+    },
+    {
+      "head": "预测精度",
+      "relation": "应用于",
+      "tail": "故障诊断技术",
+      "reason": "关系方向错误：应该是技术应用于领域，而非指标应用于技术"
+    },
+    {
+      "head": "可靠性",
+      "relation": "基于",
+      "tail": "维修成本",
+      "reason": "语义不合理：性能指标不能基于成本"
+    },
+    {
+      "head": "数据",
+      "relation": "训练",
+      "tail": "算法",
+      "reason": "关系方向错误：应该是算法训练模型，而非数据训练算法"
+    },
+    {
+      "head": "温度",
+      "relation": "包括",
+      "tail": "传感器",
+      "reason": "层次关系错误：传感器检测温度，而非温度包括传感器"
+    },
+    {
+      "head": "故障诊断",
+      "relation": "输入",
+      "tail": "振动数据",
+      "reason": "关系方向错误：应该是数据输入到诊断系统，而非诊断输入数据"
+    },
+    {
+      "head": "学习率",
+      "relation": "应用于",
+      "tail": "航空领域",
+      "reason": "语义不合理：参数不能应用于应用领域"
+    },
+    {
+      "head": "MATLAB",
+      "relation": "基于",
+      "tail": "Python",
+      "reason": "工具间不存在基于关系：两者都是独立的编程工具"
+    }
+  ],
+  "extraction_guidelines": {
+    "requirements": [
+      "确保实体类型与预定义的32种类型一致",
+      "验证关系方向的合理性，遵循有向关系定义",
+      "检查三元组的语义连贯性和逻辑合理性",
+      "确保抽取内容与PHM领域相关",
+      "实体命名应具体明确，避免过于泛化",
+      "关系抽取应基于明确的语义依据"
+    ],
+    "quality_control": [
+      "优先使用高置信度模式(模式1-12)进行抽取",
+      "参考8个负样本避免常见的类型匹配和方向错误",
+      "保持实体-关系-实体的语义一致性",
+      "对于新发现的模式，参考additional_patterns进行验证",
+      "确保抽取的三元组符合PHM领域的专业知识",
+      "避免抽取过于简单或显而易见的关系"
+    ],
+    "priority_patterns": [
+      "方法解决问题类模式(置信度0.95)",
+      "技术应用于领域类模式(置信度0.92)",
+      "技术提高性能类模式(置信度0.90)",
+      "模型预测任务类模式(置信度0.88)"
+    ],
+    "domain_focus": [
+      "故障诊断与预测",
+      "剩余寿命预估",
+      "健康状态监测",
+      "维护决策支持",
+      "性能退化分析"
+    ]
+  }
+}

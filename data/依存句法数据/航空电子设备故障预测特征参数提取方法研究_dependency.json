@@ -1,0 +1,1707 @@
+{
+  "title": "航空电子设备故障预测特征参数提取方法研究",
+  "summary": "故障特征提取是航空电子设备故障预测的关键技术,对于少量测试点的电子设备可以采用小波变换、傅里叶变换、经验模态分解等方法提取故障特征,但是由于航空电子设备属于大规模集成电路,测试点比较多,采用上述方法提取的故障特征可能相互混叠并且数量比较大会严重影响故障预测精度及速度,因此如何从众多故障信息中提取故障特征是一个难题。文章提出基于极大似然和降噪自编码神经网络方法从大量故障信息中提取故障特征。首先,使用极大似然法分析由多个测试点提取的故障信息和历史退化过程的故障信息组成的高维数据集,估计需要提取故障特征的维数;然后使用降噪自编码神经网络方法将高维故障信息映射到指定维数的数据空间,从中提取关键的故障特征,去除冗余信息;最后,以航空电子系统电源模块为例,采用新方法提取故障特征,分别通过将故障特征可视化和使用故障特征进行健康评估来验证其有效性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "故障特征提取是航空电子设备故障预测的关键技术,对于少量测试点的电子设备可以采用小波变换、傅里叶变换、经验模态分解等方法提取故障特征,但是由于航空电子设备属于大规模集成电路,测试点比较多,采用上述方法提取的故障特征可能相互混叠并且数量比较大会严重影响故障预测精度及速度,因此如何从众多故障信息中提取故障特征是一个难题",
+      "tokens": [
+        "故障",
+        "特征",
+        "提取",
+        "是",
+        "航空",
+        "电子",
+        "设备",
+        "故障",
+        "预测",
+        "的",
+        "关键",
+        "技术",
+        ",",
+        "对于",
+        "少量",
+        "测试点",
+        "的",
+        "电子",
+        "设备",
+        "可以",
+        "采用",
+        "小",
+        "波",
+        "变换",
+        "、",
+        "傅里叶",
+        "变换",
+        "、",
+        "经验",
+        "模态",
+        "分解",
+        "等",
+        "方法",
+        "提取",
+        "故障",
+        "特征",
+        ",",
+        "但是",
+        "由于",
+        "航空",
+        "电子",
+        "设备",
+        "属于",
+        "大",
+        "规模",
+        "集成",
+        "电路",
+        ",",
+        "测试点",
+        "比较",
+        "多",
+        ",",
+        "采用",
+        "上述",
+        "方法",
+        "提取",
+        "的",
+        "故障",
+        "特征",
+        "可能",
+        "相互",
+        "混叠",
+        "并且",
+        "数量",
+        "比较",
+        "大",
+        "会",
+        "严重",
+        "影响",
+        "故障",
+        "预测",
+        "精度",
+        "及",
+        "速度",
+        ",",
+        "因此",
+        "如何",
+        "从",
+        "众多",
+        "故障",
+        "信息",
+        "中",
+        "提取",
+        "故障",
+        "特征",
+        "是",
+        "一",
+        "个",
+        "难题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "故障",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "特征",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "提取",
+          "head": 4,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "电子",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "设备",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "故障",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "关键",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "技术",
+          "head": 4,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "对于",
+          "head": 21,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "少量",
+          "head": 16,
+          "deprel": "nummod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "测试点",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 18,
+          "form": "电子",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "设备",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "可以",
+          "head": 21,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "采用",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "小",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 23,
+          "form": "波",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "变换",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "傅里叶",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 27,
+          "form": "变换",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "经验",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "模态",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "分解",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "等",
+          "head": 31,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 33,
+          "form": "方法",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "提取",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": "故障",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "特征",
+          "head": 34,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "但是",
+          "head": 62,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 39,
+          "form": "由于",
+          "head": 62,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 40,
+          "form": "航空",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "电子",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "设备",
+          "head": 43,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "属于",
+          "head": 39,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "大",
+          "head": 45,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 45,
+          "form": "规模",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "集成",
+          "head": 47,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 47,
+          "form": "电路",
+          "head": 43,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": ",",
+          "head": 43,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 49,
+          "form": "测试点",
+          "head": 51,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "比较",
+          "head": 51,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 51,
+          "form": "多",
+          "head": 62,
+          "deprel": "dep",
+          "pos": "VA"
+        },
+        {
+          "id": 52,
+          "form": ",",
+          "head": 62,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 53,
+          "form": "采用",
+          "head": 59,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 54,
+          "form": "上述",
+          "head": 55,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 55,
+          "form": "方法",
+          "head": 53,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "提取",
+          "head": 53,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 57,
+          "form": "的",
+          "head": 53,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 58,
+          "form": "故障",
+          "head": 59,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "特征",
+          "head": 62,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "可能",
+          "head": 62,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 61,
+          "form": "相互",
+          "head": 62,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 62,
+          "form": "混叠",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 63,
+          "form": "并且",
+          "head": 62,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 64,
+          "form": "数量",
+          "head": 66,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "比较",
+          "head": 66,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 66,
+          "form": "大",
+          "head": 62,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 67,
+          "form": "会",
+          "head": 69,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 68,
+          "form": "严重",
+          "head": 69,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 69,
+          "form": "影响",
+          "head": 62,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 70,
+          "form": "故障",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "预测",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "精度",
+          "head": 74,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "及",
+          "head": 74,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 74,
+          "form": "速度",
+          "head": 69,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": ",",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 76,
+          "form": "因此",
+          "head": 86,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 77,
+          "form": "如何",
+          "head": 83,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 78,
+          "form": "从",
+          "head": 83,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 79,
+          "form": "众多",
+          "head": 81,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 80,
+          "form": "故障",
+          "head": 81,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 81,
+          "form": "信息",
+          "head": 82,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "中",
+          "head": 78,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 83,
+          "form": "提取",
+          "head": 86,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 84,
+          "form": "故障",
+          "head": 85,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "特征",
+          "head": 83,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 86,
+          "form": "是",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 87,
+          "form": "一",
+          "head": 88,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 88,
+          "form": "个",
+          "head": 89,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 89,
+          "form": "难题",
+          "head": 86,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "文章提出基于极大似然和降噪自编码神经网络方法从大量故障信息中提取故障特征",
+      "tokens": [
+        "文章",
+        "提出",
+        "基于",
+        "极",
+        "大",
+        "似然",
+        "和",
+        "降噪",
+        "自",
+        "编码",
+        "神经",
+        "网络",
+        "方法",
+        "从",
+        "大量",
+        "故障",
+        "信息",
+        "中",
+        "提取",
+        "故障",
+        "特征"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "文章",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "基于",
+          "head": 13,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "极",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "大",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "似然",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "降噪",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "自",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "编码",
+          "head": 13,
+          "deprel": "vmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "神经",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "网络",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "方法",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "从",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "大量",
+          "head": 17,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 16,
+          "form": "故障",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "信息",
+          "head": 18,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "中",
+          "head": 14,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 19,
+          "form": "提取",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "特征",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "首先,使用极大似然法分析由多个测试点提取的故障信息和历史退化过程的故障信息组成的高维数据集,估计需要提取故障特征的维数;然后使用降噪自编码神经网络方法将高维故障信息映射到指定维数的数据空间,从中提取关键的故障特征,去除冗余信息;最后,以航空电子系统电源模块为例,采用新方法提取故障特征,分别通过将故障特征可视化和使用故障特征进行健康评估来验证其有效性",
+      "tokens": [
+        "首先",
+        ",",
+        "使用",
+        "极",
+        "大",
+        "似然法",
+        "分析",
+        "由",
+        "多",
+        "个",
+        "测试点",
+        "提取",
+        "的",
+        "故障",
+        "信息",
+        "和",
+        "历史",
+        "退化",
+        "过程",
+        "的",
+        "故障",
+        "信息",
+        "组成",
+        "的",
+        "高维",
+        "数据集",
+        ",",
+        "估计",
+        "需要",
+        "提取",
+        "故障",
+        "特征",
+        "的",
+        "维数",
+        ";",
+        "然后",
+        "使用",
+        "降噪",
+        "自",
+        "编码",
+        "神经",
+        "网络",
+        "方法",
+        "将",
+        "高维",
+        "故障",
+        "信息",
+        "映射",
+        "到",
+        "指定",
+        "维数",
+        "的",
+        "数据",
+        "空间",
+        ",",
+        "从中",
+        "提取",
+        "关键",
+        "的",
+        "故障",
+        "特征",
+        ",",
+        "去除",
+        "冗余",
+        "信息",
+        ";",
+        "最后",
+        ",",
+        "以",
+        "航空",
+        "电子",
+        "系统",
+        "电源",
+        "模块",
+        "为例",
+        ",",
+        "采用",
+        "新",
+        "方法",
+        "提取",
+        "故障",
+        "特征",
+        ",",
+        "分别",
+        "通过",
+        "将",
+        "故障",
+        "特征",
+        "可视化",
+        "和",
+        "使用",
+        "故障",
+        "特征",
+        "进行",
+        "健康",
+        "评估",
+        "来",
+        "验证",
+        "其",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "首先",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 3,
+          "form": "使用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "极",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "大",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "似然法",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "分析",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "由",
+          "head": 23,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "多",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 10,
+          "form": "个",
+          "head": 11,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 11,
+          "form": "测试点",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "提取",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "故障",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "信息",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "和",
+          "head": 22,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "历史",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "退化",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "过程",
+          "head": 22,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 21,
+          "form": "故障",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "信息",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "组成",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 23,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 25,
+          "form": "高维",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "数据集",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "估计",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "需要",
+          "head": 30,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "提取",
+          "head": 28,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "故障",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "特征",
+          "head": 34,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 34,
+          "form": "维数",
+          "head": 30,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": ";",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "然后",
+          "head": 37,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 37,
+          "form": "使用",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "降噪",
+          "head": 40,
+          "deprel": "advmod",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "自",
+          "head": 40,
+          "deprel": "advmod",
+          "pos": "P"
+        },
+        {
+          "id": 40,
+          "form": "编码",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "神经",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "网络",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "方法",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "将",
+          "head": 48,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 45,
+          "form": "高维",
+          "head": 47,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "故障",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "信息",
+          "head": 48,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "映射",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "到",
+          "head": 48,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 50,
+          "form": "指定",
+          "head": 51,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 51,
+          "form": "维数",
+          "head": 54,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "的",
+          "head": 51,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 53,
+          "form": "数据",
+          "head": 54,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "空间",
+          "head": 48,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": ",",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 56,
+          "form": "从中",
+          "head": 57,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 57,
+          "form": "提取",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "关键",
+          "head": 61,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 59,
+          "form": "的",
+          "head": 58,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 60,
+          "form": "故障",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "特征",
+          "head": 57,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": ",",
+          "head": 57,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 63,
+          "form": "去除",
+          "head": 57,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "冗余",
+          "head": 65,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 65,
+          "form": "信息",
+          "head": 63,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": ";",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 67,
+          "form": "最后",
+          "head": 77,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 68,
+          "form": ",",
+          "head": 77,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "以",
+          "head": 75,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 70,
+          "form": "航空",
+          "head": 72,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "电子",
+          "head": 72,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "系统",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 73,
+          "form": "电源",
+          "head": 74,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "模块",
+          "head": 69,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "为例",
+          "head": 77,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 76,
+          "form": ",",
+          "head": 77,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 77,
+          "form": "采用",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 78,
+          "form": "新",
+          "head": 79,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 79,
+          "form": "方法",
+          "head": 77,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "提取",
+          "head": 77,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 81,
+          "form": "故障",
+          "head": 82,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "特征",
+          "head": 80,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": ",",
+          "head": 77,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 84,
+          "form": "分别",
+          "head": 77,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 85,
+          "form": "通过",
+          "head": 77,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 86,
+          "form": "将",
+          "head": 89,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 87,
+          "form": "故障",
+          "head": 88,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": "特征",
+          "head": 89,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 89,
+          "form": "可视化",
+          "head": 85,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 90,
+          "form": "和",
+          "head": 89,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 91,
+          "form": "使用",
+          "head": 89,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 92,
+          "form": "故障",
+          "head": 93,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 93,
+          "form": "特征",
+          "head": 91,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "进行",
+          "head": 77,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 95,
+          "form": "健康",
+          "head": 96,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": "评估",
+          "head": 94,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "来",
+          "head": 98,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 98,
+          "form": "验证",
+          "head": 77,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 99,
+          "form": "其",
+          "head": 100,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 100,
+          "form": "有效性",
+          "head": 98,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

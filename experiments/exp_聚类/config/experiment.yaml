@@ -1,0 +1,17 @@
+# exp04_final 实验配置
+
+experiment:
+  name: "EXP-4"
+  description: "从旧项目迁移的实验"
+  date: "2025-09-15"
+  
+# 数据路径（相对于实验目录）
+data:
+  input: "data/"
+  output: "results/"
+  
+# 迁移说明
+migration:
+  from: "EXP-4/"
+  date: "2025-10-17"
+  note: "通过自动化脚本迁移"

@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空发动机PHM",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "健康管理",
+    "object_type": "任务"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "神经网络",
+    "object_type": "方法"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "时间序列分析",
+    "object_type": "方法"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "模糊逻辑",
+    "object_type": "方法"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "遗传算法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "证据理论",
+    "object_type": "方法"
+  },
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "包含",
+    "object": "支持向量机",
+    "object_type": "方法"
+  }
+]

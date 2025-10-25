@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "name": "AFDX网络",
+      "type": "系统/部件"
+    },
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "功能"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "PHM进程",
+      "type": "系统/部件"
+    },
+    {
+      "name": "PC机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "Visual C++ MFC框架",
+      "type": "软件工具"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "软件工具"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "数据"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "技术"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "方法"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "软件工具"
+    },
+    {
+      "name": "仿真器",
+      "type": "系统/部件"
+    },
+    {
+      "name": "数据单元",
+      "type": "数据"
+    },
+    {
+      "name": "二进制文件",
+      "type": "数据"
+    },
+    {
+      "name": "VLID",
+      "type": "参数"
+    },
+    {
+      "name": "RSN",
+      "type": "参数"
+    },
+    {
+      "name": "时间差",
+      "type": "参数"
+    },
+    {
+      "name": "误码率",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "综合模块化航空电子系统",
+      "relation": "基于",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理功能"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "非法数据输入"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "特殊信令输入"
+    },
+    {
+      "head": "PC机",
+      "relation": "采用",
+      "tail": "Visual C++ MFC框架"
+    },
+    {
+      "head": "接口控制文件",
+      "relation": "用于",
+      "tail": "定义数据结构"
+    },
+    {
+      "head": "SQLite数据库",
+      "relation": "用于",
+      "tail": "管理接口控制文件"
+    },
+    {
+      "head": "功能数据集合",
+      "relation": "基于",
+      "tail": "AFDX网络协议"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "用于",
+      "tail": "定时发送策略"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "解决",
+      "tail": "数据更新率与AFDX端系统定时器周期不匹配问题"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控错误帧信息"
+    },
+    {
+      "head": "仿真器",
+      "relation": "生成",
+      "tail": "二进制文件"
+    },
+    {
+      "head": "数据单元",
+      "relation": "存储于",
+      "tail": "SQLite数据库"
+    },
+    {
+      "head": "VLID",
+      "relation": "属于",
+      "tail": "参数"
+    },
+    {
+      "head": "RSN",
+      "relation": "属于",
+      "tail": "参数"
+    },
+    {
+      "head": "时间差",
+      "relation": "属于",
+      "tail": "参数"
+    },
+    {
+      "head": "误码率",
+      "relation": "评估",
+      "tail": "通信系统性能"
+    }
+  ]
+}

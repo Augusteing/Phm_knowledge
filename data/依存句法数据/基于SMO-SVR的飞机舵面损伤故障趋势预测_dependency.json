@@ -1,0 +1,1325 @@
+{
+  "title": "基于SMO-SVR的飞机舵面损伤故障趋势预测",
+  "summary": "飞机舵面出现损伤时,为了更准确的预测状态参量变化情况,提出了一种改进的序贯最小优化支持向量回归(SMO-SVR,Sequential Minimal Optimization Support VectorRegression)预测方法.采用改进C-C平均方法对多元时间序列进行相空间重构,以确定最优嵌入维数m和延迟时间τd.根据所求m和τd建立加权SVR预测模型,并调整了SMO算法的停机准则.利用区间自适应粒子群算法(IAPSO,Interval Adaptive Particle Swarm Optimization)优化SVR参数,以提高参数优化速度.为了验证改进算法的有效性,针对飞机方向舵损伤故障趋势进行了预测和分析,并与径向基函数神经网络(RBFNN,Radial Basis Function Neural Net-work)方法进行了对比,仿真结果表明SMO-SVR预测模型具有很好的预测能力.",
+  "analyzed_sentences": [
+    {
+      "sentence": "飞机舵面出现损伤时,为了更准确的预测状态参量变化情况,提出了一种改进的序贯最小优化支持向量回归(SMO-SVR,Sequential Minimal Optimization Support VectorRegression)预测方法.采用改进C-C平均方法对多元时间序列进行相空间重构,以确定最优嵌入维数m和延迟时间τd.根据所求m和τd建立加权SVR预测模型,并调整了SMO算法的停机准则.利用区间自适应粒子群算法(IAPSO,Interval Adaptive Particle Swarm Optimization)优化SVR参数,以提高参数优化速度.为了验证改进算法的有效性,针对飞机方向舵损伤故障趋势进行了预测和分析,并与径向基函数神经网络(RBFNN,Radial Basis Function Neural Net-work)方法进行了对比,仿真结果表明SMO-SVR预测模型具有很好的预测能力.",
+      "tokens": [
+        "飞机",
+        "舵面",
+        "出现",
+        "损伤",
+        "时",
+        ",",
+        "为了",
+        "更",
+        "准确",
+        "的",
+        "预测",
+        "状态",
+        "参量",
+        "变化",
+        "情况",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "改进",
+        "的",
+        "序贯",
+        "最",
+        "小",
+        "优化",
+        "支持",
+        "向量",
+        "回归",
+        "(",
+        "SMO-SVR",
+        ",",
+        "Sequential",
+        "Minimal",
+        "Optimization",
+        "Support",
+        "VectorRegression",
+        ")",
+        "预测",
+        "方法",
+        ".",
+        "采用",
+        "改进",
+        "C-",
+        "C",
+        "平均",
+        "方法",
+        "对",
+        "多元",
+        "时间",
+        "序列",
+        "进行",
+        "相空间",
+        "重构",
+        ",",
+        "以",
+        "确定",
+        "最",
+        "优",
+        "嵌入",
+        "维数",
+        "m",
+        "和",
+        "延迟",
+        "时间",
+        "τd",
+        ".",
+        "根据",
+        "所",
+        "求",
+        "m",
+        "和",
+        "τd",
+        "建立",
+        "加权",
+        "SVR",
+        "预测",
+        "模型",
+        ",",
+        "并",
+        "调整",
+        "了",
+        "SMO",
+        "算法",
+        "的",
+        "停机",
+        "准则",
+        ".",
+        "利用",
+        "区间",
+        "自适应",
+        "粒子群",
+        "算法",
+        "(",
+        "IAPSO",
+        ",",
+        "Interval",
+        "Adaptive",
+        "Particle",
+        "Swarm",
+        "Optimization",
+        ")",
+        "优化",
+        "SVR",
+        "参数",
+        ",",
+        "以",
+        "提高",
+        "参数",
+        "优化",
+        "速度",
+        ".",
+        "为了",
+        "验证",
+        "改进",
+        "算法",
+        "的",
+        "有效性",
+        ",",
+        "针对",
+        "飞机",
+        "方向",
+        "舵",
+        "损伤",
+        "故障",
+        "趋势",
+        "进行",
+        "了",
+        "预测",
+        "和",
+        "分析",
+        ",",
+        "并",
+        "与",
+        "径向基函数",
+        "神经",
+        "网络",
+        "(",
+        "RBFNN",
+        ",",
+        "Radial",
+        "Basis",
+        "Function",
+        "Neural",
+        "Net-work",
+        ")",
+        "方法",
+        "进行",
+        "了",
+        "对比",
+        ",",
+        "仿真",
+        "结果",
+        "表明",
+        "SMO-SVR",
+        "预测",
+        "模型",
+        "具有",
+        "很",
+        "好",
+        "的",
+        "预测",
+        "能力",
+        "."
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "舵面",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "出现",
+          "head": 5,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "损伤",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "时",
+          "head": 17,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "为了",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "更",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "准确",
+          "head": 11,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "dvpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 7,
+          "deprel": "pccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "状态",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "参量",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "变化",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "情况",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "了",
+          "head": 17,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 19,
+          "form": "一",
+          "head": 20,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 20,
+          "form": "种",
+          "head": 40,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 21,
+          "form": "改进",
+          "head": 40,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "序贯",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "最",
+          "head": 25,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 25,
+          "form": "小",
+          "head": 26,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "优化",
+          "head": 27,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "支持",
+          "head": 40,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "向量",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "回归",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "(",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "SMO-SVR",
+          "head": 37,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "Sequential",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "Minimal",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 35,
+          "form": "Optimization",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "Support",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "VectorRegression",
+          "head": 29,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": ")",
+          "head": 37,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "预测",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "方法",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": ".",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "采用",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 43,
+          "form": "改进",
+          "head": 47,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "C-",
+          "head": 45,
+          "deprel": "nummod",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "C",
+          "head": 47,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "平均",
+          "head": 47,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "方法",
+          "head": 42,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "对",
+          "head": 52,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 49,
+          "form": "多元",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 50,
+          "form": "时间",
+          "head": 51,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "序列",
+          "head": 48,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "进行",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 53,
+          "form": "相空间",
+          "head": 54,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 54,
+          "form": "重构",
+          "head": 52,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 56,
+          "form": "以",
+          "head": 57,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 57,
+          "form": "确定",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "最",
+          "head": 60,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 59,
+          "form": "优",
+          "head": 58,
+          "deprel": "dep",
+          "pos": "JJ"
+        },
+        {
+          "id": 60,
+          "form": "嵌入",
+          "head": 57,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 61,
+          "form": "维数",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "m",
+          "head": 60,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "和",
+          "head": 60,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 64,
+          "form": "延迟",
+          "head": 60,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 65,
+          "form": "时间",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "τd",
+          "head": 64,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": ".",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 68,
+          "form": "根据",
+          "head": 74,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 69,
+          "form": "所",
+          "head": 70,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 70,
+          "form": "求",
+          "head": 68,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 71,
+          "form": "m",
+          "head": 73,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "和",
+          "head": 73,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 73,
+          "form": "τd",
+          "head": 68,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 74,
+          "form": "建立",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 75,
+          "form": "加权",
+          "head": 78,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 76,
+          "form": "SVR",
+          "head": 78,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 77,
+          "form": "预测",
+          "head": 78,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "模型",
+          "head": 74,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": ",",
+          "head": 42,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 80,
+          "form": "并",
+          "head": 81,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 81,
+          "form": "调整",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 82,
+          "form": "了",
+          "head": 81,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 83,
+          "form": "SMO",
+          "head": 84,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 84,
+          "form": "算法",
+          "head": 87,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "的",
+          "head": 84,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 86,
+          "form": "停机",
+          "head": 87,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 87,
+          "form": "准则",
+          "head": 81,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": ".",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 89,
+          "form": "利用",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 90,
+          "form": "区间",
+          "head": 93,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 91,
+          "form": "自适应",
+          "head": 93,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 92,
+          "form": "粒子群",
+          "head": 93,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 93,
+          "form": "算法",
+          "head": 89,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 94,
+          "form": "(",
+          "head": 95,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 95,
+          "form": "IAPSO",
+          "head": 101,
+          "deprel": "conj",
+          "pos": "JJ"
+        },
+        {
+          "id": 96,
+          "form": ",",
+          "head": 101,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 97,
+          "form": "Interval",
+          "head": 98,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": "Adaptive",
+          "head": 101,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 99,
+          "form": "Particle",
+          "head": 101,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 100,
+          "form": "Swarm",
+          "head": 101,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 101,
+          "form": "Optimization",
+          "head": 93,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 102,
+          "form": ")",
+          "head": 101,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 103,
+          "form": "优化",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 104,
+          "form": "SVR",
+          "head": 105,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 105,
+          "form": "参数",
+          "head": 103,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 106,
+          "form": ",",
+          "head": 103,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 107,
+          "form": "以",
+          "head": 108,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 108,
+          "form": "提高",
+          "head": 103,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 109,
+          "form": "参数",
+          "head": 111,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 110,
+          "form": "优化",
+          "head": 111,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 111,
+          "form": "速度",
+          "head": 108,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 112,
+          "form": ".",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 113,
+          "form": "为了",
+          "head": 127,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 114,
+          "form": "验证",
+          "head": 113,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 115,
+          "form": "改进",
+          "head": 116,
+          "deprel": "amod",
+          "pos": "VV"
+        },
+        {
+          "id": 116,
+          "form": "算法",
+          "head": 118,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 117,
+          "form": "的",
+          "head": 116,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 118,
+          "form": "有效性",
+          "head": 114,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 119,
+          "form": ",",
+          "head": 127,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 120,
+          "form": "针对",
+          "head": 127,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 121,
+          "form": "飞机",
+          "head": 123,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 122,
+          "form": "方向",
+          "head": 123,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 123,
+          "form": "舵",
+          "head": 126,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 124,
+          "form": "损伤",
+          "head": 126,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 125,
+          "form": "故障",
+          "head": 126,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 126,
+          "form": "趋势",
+          "head": 120,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 127,
+          "form": "进行",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 128,
+          "form": "了",
+          "head": 127,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 129,
+          "form": "预测",
+          "head": 131,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 130,
+          "form": "和",
+          "head": 131,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 131,
+          "form": "分析",
+          "head": 127,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 132,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 133,
+          "form": "并",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 134,
+          "form": "与",
+          "head": 148,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 135,
+          "form": "径向基函数",
+          "head": 137,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 136,
+          "form": "神经",
+          "head": 137,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 137,
+          "form": "网络",
+          "head": 147,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 138,
+          "form": "(",
+          "head": 139,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 139,
+          "form": "RBFNN",
+          "head": 142,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 140,
+          "form": ",",
+          "head": 142,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 141,
+          "form": "Radial",
+          "head": 142,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 142,
+          "form": "Basis",
+          "head": 143,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 143,
+          "form": "Function",
+          "head": 144,
+          "deprel": "nn",
+          "pos": "PU"
+        },
+        {
+          "id": 144,
+          "form": "Neural",
+          "head": 145,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 145,
+          "form": "Net-work",
+          "head": 147,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 146,
+          "form": ")",
+          "head": 145,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 147,
+          "form": "方法",
+          "head": 134,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 148,
+          "form": "进行",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 149,
+          "form": "了",
+          "head": 148,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 150,
+          "form": "对比",
+          "head": 148,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 151,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 152,
+          "form": "仿真",
+          "head": 153,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 153,
+          "form": "结果",
+          "head": 154,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 154,
+          "form": "表明",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 155,
+          "form": "SMO-SVR",
+          "head": 157,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 156,
+          "form": "预测",
+          "head": 157,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 157,
+          "form": "模型",
+          "head": 158,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 158,
+          "form": "具有",
+          "head": 154,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 159,
+          "form": "很",
+          "head": 160,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 160,
+          "form": "好",
+          "head": 163,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 161,
+          "form": "的",
+          "head": 160,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 162,
+          "form": "预测",
+          "head": 163,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 163,
+          "form": "能力",
+          "head": 158,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 164,
+          "form": ".",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        }
+      ]
+    }
+  ]
+}

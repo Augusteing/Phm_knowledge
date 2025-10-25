@@ -1,0 +1,1290 @@
+{
+  "title": "飞机操纵面故障的多参数预测模型",
+  "summary": "飞机突发性操纵面故障的准确预测对保障飞机安全可靠工作具有重要意义。对目前的飞机操纵面故障预测的主要方法均存在只考虑一个特征参数或单独考虑几个特征参数的不足,缺乏对各特征参数的统一考虑。基于操纵面故障往往表现为一种故障表征出多种特征信号,同一特征信号还可能反映了不同的故障的事实。借鉴灰色预测建模和信息融合的思想,提出了基于多故障特征参数的预测模型,使得多个相关特征参数时间序列不仅可以为各自的预测提供相关信息,也可为其他序列预测提供必要的信息,增加了预测的准确性;将模型应用于某飞机操纵面的故障预测中,经实例计算验证了模型的有效性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "飞机突发性操纵面故障的准确预测对保障飞机安全可靠工作具有重要意义",
+      "tokens": [
+        "飞机",
+        "突发性",
+        "操纵面",
+        "故障",
+        "的",
+        "准确",
+        "预测",
+        "对",
+        "保障",
+        "飞机",
+        "安全",
+        "可靠",
+        "工作",
+        "具有",
+        "重要",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "飞机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "突发性",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "操纵面",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "故障",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "准确",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "预测",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "对",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "保障",
+          "head": 8,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "飞机",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "安全",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "可靠",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "工作",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "重要",
+          "head": 16,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 16,
+          "form": "意义",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对目前的飞机操纵面故障预测的主要方法均存在只考虑一个特征参数或单独考虑几个特征参数的不足,缺乏对各特征参数的统一考虑",
+      "tokens": [
+        "对",
+        "目前",
+        "的",
+        "飞机",
+        "操纵面",
+        "故障",
+        "预测",
+        "的",
+        "主要",
+        "方法",
+        "均",
+        "存在",
+        "只",
+        "考虑",
+        "一",
+        "个",
+        "特征",
+        "参数",
+        "或",
+        "单独",
+        "考虑",
+        "几",
+        "个",
+        "特征",
+        "参数",
+        "的",
+        "不足",
+        ",",
+        "缺乏",
+        "对",
+        "各",
+        "特征",
+        "参数",
+        "的",
+        "统一",
+        "考虑"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "目前",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "操纵面",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "预测",
+          "head": 10,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "主要",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 10,
+          "form": "方法",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "均",
+          "head": 12,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 12,
+          "form": "存在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "只",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "考虑",
+          "head": 12,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "一",
+          "head": 16,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 16,
+          "form": "个",
+          "head": 18,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 17,
+          "form": "特征",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "参数",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "或",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "单独",
+          "head": 21,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 21,
+          "form": "考虑",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "几",
+          "head": 23,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 23,
+          "form": "个",
+          "head": 25,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 24,
+          "form": "特征",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "参数",
+          "head": 27,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 25,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 27,
+          "form": "不足",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "缺乏",
+          "head": 14,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 30,
+          "form": "对",
+          "head": 36,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 31,
+          "form": "各",
+          "head": 33,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 32,
+          "form": "特征",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 33,
+          "form": "参数",
+          "head": 30,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 30,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "统一",
+          "head": 36,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "考虑",
+          "head": 29,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于操纵面故障往往表现为一种故障表征出多种特征信号,同一特征信号还可能反映了不同的故障的事实",
+      "tokens": [
+        "基于",
+        "操纵面",
+        "故障",
+        "往往",
+        "表现",
+        "为",
+        "一",
+        "种",
+        "故障",
+        "表征",
+        "出",
+        "多",
+        "种",
+        "特征",
+        "信号",
+        ",",
+        "同",
+        "一",
+        "特征",
+        "信号",
+        "还",
+        "可能",
+        "反映",
+        "了",
+        "不同",
+        "的",
+        "故障",
+        "的",
+        "事实"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 5,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "操纵面",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "往往",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "表现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "为",
+          "head": 5,
+          "deprel": "rcomp",
+          "pos": "VC"
+        },
+        {
+          "id": 7,
+          "form": "一",
+          "head": 8,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 8,
+          "form": "种",
+          "head": 9,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 9,
+          "form": "故障",
+          "head": 10,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "表征",
+          "head": 5,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "出",
+          "head": 10,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "多",
+          "head": 13,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 13,
+          "form": "种",
+          "head": 15,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 14,
+          "form": "特征",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "信号",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "同",
+          "head": 20,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 18,
+          "form": "一",
+          "head": 17,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 19,
+          "form": "特征",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "信号",
+          "head": 23,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "还",
+          "head": 23,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 22,
+          "form": "可能",
+          "head": 23,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "反映",
+          "head": 5,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "了",
+          "head": 23,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 25,
+          "form": "不同",
+          "head": 29,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 25,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 27,
+          "form": "故障",
+          "head": 29,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 29,
+          "form": "事实",
+          "head": 23,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "借鉴灰色预测建模和信息融合的思想,提出了基于多故障特征参数的预测模型,使得多个相关特征参数时间序列不仅可以为各自的预测提供相关信息,也可为其他序列预测提供必要的信息,增加了预测的准确性;将模型应用于某飞机操纵面的故障预测中,经实例计算验证了模型的有效性",
+      "tokens": [
+        "借鉴",
+        "灰色",
+        "预测",
+        "建模",
+        "和",
+        "信息",
+        "融合",
+        "的",
+        "思想",
+        ",",
+        "提出",
+        "了",
+        "基于",
+        "多",
+        "故障",
+        "特征",
+        "参数",
+        "的",
+        "预测",
+        "模型",
+        ",",
+        "使得",
+        "多",
+        "个",
+        "相关",
+        "特征",
+        "参数",
+        "时间",
+        "序列",
+        "不仅",
+        "可以",
+        "为",
+        "各自",
+        "的",
+        "预测",
+        "提供",
+        "相关",
+        "信息",
+        ",",
+        "也",
+        "可",
+        "为",
+        "其他",
+        "序列",
+        "预测",
+        "提供",
+        "必要",
+        "的",
+        "信息",
+        ",",
+        "增加",
+        "了",
+        "预测",
+        "的",
+        "准确性",
+        ";",
+        "将",
+        "模型",
+        "应用",
+        "于",
+        "某",
+        "飞机",
+        "操纵面",
+        "的",
+        "故障",
+        "预测",
+        "中",
+        ",",
+        "经",
+        "实例",
+        "计算",
+        "验证",
+        "了",
+        "模型",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "借鉴",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "灰色",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "预测",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "建模",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "和",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "信息",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "融合",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "思想",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "提出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "了",
+          "head": 11,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 13,
+          "form": "基于",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "多",
+          "head": 15,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 15,
+          "form": "故障",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "特征",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "参数",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 19,
+          "form": "预测",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "模型",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "使得",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "多",
+          "head": 24,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 24,
+          "form": "个",
+          "head": 29,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 25,
+          "form": "相关",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 26,
+          "form": "特征",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "参数",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "时间",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "序列",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "不仅",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 31,
+          "form": "可以",
+          "head": 36,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "为",
+          "head": 36,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 33,
+          "form": "各自",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "PN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "预测",
+          "head": 32,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "提供",
+          "head": 22,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "相关",
+          "head": 38,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 38,
+          "form": "信息",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "也",
+          "head": 36,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 41,
+          "form": "可",
+          "head": 46,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 42,
+          "form": "为",
+          "head": 46,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 43,
+          "form": "其他",
+          "head": 45,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 44,
+          "form": "序列",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "预测",
+          "head": 42,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "提供",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 47,
+          "form": "必要",
+          "head": 49,
+          "deprel": "rcmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 48,
+          "form": "的",
+          "head": 47,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 49,
+          "form": "信息",
+          "head": 46,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": ",",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 51,
+          "form": "增加",
+          "head": 36,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 52,
+          "form": "了",
+          "head": 51,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 53,
+          "form": "预测",
+          "head": 55,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "的",
+          "head": 53,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 55,
+          "form": "准确性",
+          "head": 51,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": ";",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "将",
+          "head": 59,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 58,
+          "form": "模型",
+          "head": 59,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "应用",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 60,
+          "form": "于",
+          "head": 59,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 61,
+          "form": "某",
+          "head": 62,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 62,
+          "form": "飞机",
+          "head": 63,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "操纵面",
+          "head": 66,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "的",
+          "head": 63,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 65,
+          "form": "故障",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "预测",
+          "head": 67,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "中",
+          "head": 60,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 68,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "经",
+          "head": 72,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 70,
+          "form": "实例",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "计算",
+          "head": 69,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "验证",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 73,
+          "form": "了",
+          "head": 72,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 74,
+          "form": "模型",
+          "head": 76,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "的",
+          "head": 74,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 76,
+          "form": "有效性",
+          "head": 72,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

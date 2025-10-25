@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "飞机电源系统",
+    "subject_type": "系统",
+    "relation": "提供",
+    "object": "电能",
+    "object_type": "能源"
+  },
+  {
+    "subject": "飞机电源系统",
+    "subject_type": "系统",
+    "relation": "供给",
+    "object": "用电设备",
+    "object_type": "设备"
+  },
+  {
+    "subject": "现代航空工业",
+    "subject_type": "行业",
+    "relation": "推进",
+    "object": "多电/全电飞机技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "电驱动装置",
+    "subject_type": "组件",
+    "relation": "影响",
+    "object": "飞机电源系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "电力电子器件",
+    "subject_type": "组件",
+    "relation": "影响",
+    "object": "飞机电源系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "故障诊断技术",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "飞机电源系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "飞机电源系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "故障模式",
+    "object_type": "属性"
+  },
+  {
+    "subject": "飞机电源系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "故障特点",
+    "object_type": "属性"
+  },
+  {
+    "subject": "飞机电源系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "失效原因",
+    "object_type": "属性"
+  },
+  {
+    "subject": "飞机电源健康管理系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "设计架构",
+    "object_type": "属性"
+  },
+  {
+    "subject": "故障诊断方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "基于模型的方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障诊断方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "基于数据的方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "飞机电源系统故障诊断技术",
+    "subject_type": "技术",
+    "relation": "面临",
+    "object": "挑战",
+    "object_type": "问题"
+  },
+  {
+    "subject": "飞机电源系统故障诊断技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "发展趋势",
+    "object_type": "概念"
+  }
+]

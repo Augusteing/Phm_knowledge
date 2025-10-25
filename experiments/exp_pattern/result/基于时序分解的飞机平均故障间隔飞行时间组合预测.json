@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "基于时序分解的组合预测方法",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "飞机平均故障间隔飞行时间",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于时序分解的组合预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "时间序列分解",
+    "object_type": "技术"
+  },
+  {
+    "subject": "STL方法",
+    "subject_type": "算法",
+    "relation": "分解",
+    "object": "MFHBF指标",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "STL方法",
+    "subject_type": "算法",
+    "relation": "分解出",
+    "object": "长期趋势项",
+    "object_type": "数据成分"
+  },
+  {
+    "subject": "STL方法",
+    "subject_type": "算法",
+    "relation": "分解出",
+    "object": "季节变动项",
+    "object_type": "数据成分"
+  },
+  {
+    "subject": "灰色模型",
+    "subject_type": "预测模型",
+    "relation": "预测",
+    "object": "长期趋势项",
+    "object_type": "数据成分"
+  },
+  {
+    "subject": "BP神经网络和支持向量机回归组合模型",
+    "subject_type": "预测模型",
+    "relation": "预测",
+    "object": "季节变动项",
+    "object_type": "数据成分"
+  },
+  {
+    "subject": "加法模型",
+    "subject_type": "组合模型",
+    "relation": "合并",
+    "object": "趋势和季节的预测值",
+    "object_type": "预测结果"
+  },
+  {
+    "subject": "基于时序分解的组合预测方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "性能"
+  },
+  {
+    "subject": "基于时序分解的组合预测方法",
+    "subject_type": "方法",
+    "relation": "减小",
+    "object": "平均绝对误差",
+    "object_type": "评估指标"
+  },
+  {
+    "subject": "基于时序分解的组合预测方法",
+    "subject_type": "方法",
+    "relation": "提供",
+    "object": "可信的指标预测结果",
+    "object_type": "结果"
+  },
+  {
+    "subject": "指标预测结果",
+    "subject_type": "结果",
+    "relation": "用于",
+    "object": "保障人员",
+    "object_type": "用户"
+  }
+]

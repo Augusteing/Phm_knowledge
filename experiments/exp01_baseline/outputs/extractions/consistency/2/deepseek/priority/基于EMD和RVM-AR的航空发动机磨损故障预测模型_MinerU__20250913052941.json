@@ -1,0 +1,195 @@
+{
+  "entities": [
+    {
+      "name": "EMD",
+      "type": "算法"
+    },
+    {
+      "name": "RVM",
+      "type": "模型"
+    },
+    {
+      "name": "AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "RVM-AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "磨损故障预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "量子粒子群优化算法",
+      "type": "算法"
+    },
+    {
+      "name": "SVM",
+      "type": "模型"
+    },
+    {
+      "name": "固有模态函数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "残余函数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "镜像延拓法",
+      "type": "方法"
+    },
+    {
+      "name": "交叉验证误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "Fe元素",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "Si元素",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "故障预测与健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "非线性非平稳时间序列",
+      "type": "理论基础"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "方法"
+    },
+    {
+      "name": "嵌入维数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "核参数",
+      "type": "特征/健康指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "RVM-AR模型",
+      "relation": "基于",
+      "tail": "EMD"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "基于",
+      "tail": "RVM"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "基于",
+      "tail": "AR模型"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "应用于",
+      "tail": "磨损故障预测"
+    },
+    {
+      "head": "磨损故障预测",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "磨损故障预测",
+      "relation": "利用",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "RVM",
+      "relation": "改进了",
+      "tail": "SVM"
+    },
+    {
+      "head": "EMD",
+      "relation": "分解为",
+      "tail": "固有模态函数"
+    },
+    {
+      "head": "EMD",
+      "relation": "分解为",
+      "tail": "残余函数"
+    },
+    {
+      "head": "镜像延拓法",
+      "relation": "抑制",
+      "tail": "EMD端点效应"
+    },
+    {
+      "head": "量子粒子群优化算法",
+      "relation": "优化",
+      "tail": "RVM模型参数"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "优于",
+      "tail": "AR模型"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "优于",
+      "tail": "SVM"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "评价指标是",
+      "tail": "平均相对预测误差"
+    },
+    {
+      "head": "Fe元素",
+      "relation": "用于",
+      "tail": "磨损故障预测"
+    },
+    {
+      "head": "Si元素",
+      "relation": "用于",
+      "tail": "磨损故障预测"
+    },
+    {
+      "head": "故障预测与健康管理",
+      "relation": "支持",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "RVM",
+      "relation": "基于",
+      "tail": "非线性非平稳时间序列"
+    },
+    {
+      "head": "RVM",
+      "relation": "采用",
+      "tail": "Gaussian核函数"
+    },
+    {
+      "head": "量子粒子群优化算法",
+      "relation": "优化",
+      "tail": "嵌入维数"
+    },
+    {
+      "head": "量子粒子群优化算法",
+      "relation": "优化",
+      "tail": "核参数"
+    }
+  ]
+}

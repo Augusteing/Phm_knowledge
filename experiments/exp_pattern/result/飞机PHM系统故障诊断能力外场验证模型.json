@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "PHM诊断能力外场评估和验证方法",
+    "subject_type": "方法",
+    "relation": "针对",
+    "object": "预测与健康管理系统(PHM)",
+    "object_type": "系统"
+  },
+  {
+    "subject": "预测与健康管理系统(PHM)",
+    "subject_type": "系统",
+    "relation": "缺乏",
+    "object": "外场验证和评价技术手段",
+    "object_type": "技术手段"
+  },
+  {
+    "subject": "PHM诊断能力外场评估和验证方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "先验信息",
+    "object_type": "信息"
+  },
+  {
+    "subject": "PHM诊断能力外场评估和验证方法",
+    "subject_type": "方法",
+    "relation": "利用",
+    "object": "诊断信息",
+    "object_type": "信息"
+  },
+  {
+    "subject": "诊断信息",
+    "subject_type": "信息",
+    "relation": "来自",
+    "object": "LRU(外场可更换单元)",
+    "object_type": "组件"
+  },
+  {
+    "subject": "PHM诊断能力外场评估和验证方法",
+    "subject_type": "方法",
+    "relation": "确定",
+    "object": "诊断能力指标先验估计值",
+    "object_type": "参数"
+  },
+  {
+    "subject": "PHM诊断能力外场评估和验证方法",
+    "subject_type": "方法",
+    "relation": "利用",
+    "object": "外场数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "外场数据",
+    "subject_type": "数据",
+    "relation": "修正",
+    "object": "先验分布",
+    "object_type": "概率分布"
+  },
+  {
+    "subject": "先验分布",
+    "subject_type": "概率分布",
+    "relation": "形成",
+    "object": "后验分布",
+    "object_type": "概率分布"
+  },
+  {
+    "subject": "后验分布",
+    "subject_type": "概率分布",
+    "relation": "用于得到",
+    "object": "PHM诊断能力参数后验估计值",
+    "object_type": "参数"
+  },
+  {
+    "subject": "故障检测率",
+    "subject_type": "指标",
+    "relation": "是",
+    "object": "典型测试性参数",
+    "object_type": "参数类型"
+  },
+  {
+    "subject": "故障隔离率",
+    "subject_type": "指标",
+    "relation": "是",
+    "object": "典型测试性参数",
+    "object_type": "参数类型"
+  },
+  {
+    "subject": "PHM诊断能力外场评估和验证方法",
+    "subject_type": "方法",
+    "relation": "满足",
+    "object": "小样本条件下外场评估的工程实际需要",
+    "object_type": "需求"
+  }
+]

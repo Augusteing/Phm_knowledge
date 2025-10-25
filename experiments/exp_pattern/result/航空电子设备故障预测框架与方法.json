@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "故障预测框架",
+    "subject_type": "框架",
+    "relation": "覆盖",
+    "object": "电子设备全寿命周期",
+    "object_type": "阶段"
+  },
+  {
+    "subject": "环境应力",
+    "subject_type": "因素",
+    "relation": "造成",
+    "object": "累积损伤",
+    "object_type": "问题"
+  },
+  {
+    "subject": "辅助软件eXpress",
+    "subject_type": "软件",
+    "relation": "用于",
+    "object": "可预测性设计",
+    "object_type": "设计"
+  },
+  {
+    "subject": "改进神经网络",
+    "subject_type": "模型",
+    "relation": "进行",
+    "object": "趋势预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "趋势预测",
+    "subject_type": "任务",
+    "relation": "针对",
+    "object": "特征参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "多指标评价准则",
+    "subject_type": "准则",
+    "relation": "基于",
+    "object": "信息熵理论",
+    "object_type": "理论"
+  },
+  {
+    "subject": "多指标评价准则",
+    "subject_type": "准则",
+    "relation": "融合",
+    "object": "单项预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "故障组合预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "组合预测方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "单项预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "预测框架",
+    "subject_type": "框架",
+    "relation": "验证于",
+    "object": "某型电子设备",
+    "object_type": "设备"
+  }
+]

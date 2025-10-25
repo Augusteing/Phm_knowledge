@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "防热系统健康管理",
+    "subject_type": "技术",
+    "relation": "是",
+    "object": "关键技术",
+    "object_type": "技术类别"
+  },
+  {
+    "subject": "航天飞机防热系统健康管理方法",
+    "subject_type": "方法",
+    "relation": "通过监测",
+    "object": "关键性能指标",
+    "object_type": "指标"
+  },
+  {
+    "subject": "航天飞机防热系统健康管理方法",
+    "subject_type": "方法",
+    "relation": "分析评估",
+    "object": "系统状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "防热系统健康监控",
+    "subject_type": "技术",
+    "relation": "考虑",
+    "object": "意外损伤",
+    "object_type": "故障"
+  },
+  {
+    "subject": "ANSYS软件",
+    "subject_type": "软件",
+    "relation": "用于模拟",
+    "object": "温度分布",
+    "object_type": "物理量"
+  },
+  {
+    "subject": "防热瓦",
+    "subject_type": "组件",
+    "relation": "遭受",
+    "object": "损伤",
+    "object_type": "故障"
+  },
+  {
+    "subject": "温度分布",
+    "subject_type": "物理量",
+    "relation": "发生在",
+    "object": "再入过程",
+    "object_type": "过程"
+  },
+  {
+    "subject": "比较分析",
+    "subject_type": "研究方法",
+    "relation": "论证",
+    "object": "方法可行性",
+    "object_type": "属性"
+  }
+]

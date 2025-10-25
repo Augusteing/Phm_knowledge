@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "疲劳失效",
+    "subject_type": "问题",
+    "relation": "影响",
+    "object": "飞机金属结构",
+    "object_type": "结构"
+  },
+  {
+    "subject": "疲劳失效",
+    "subject_type": "问题",
+    "relation": "影响",
+    "object": "安全性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "疲劳失效",
+    "subject_type": "问题",
+    "relation": "影响",
+    "object": "使用寿命",
+    "object_type": "属性"
+  },
+  {
+    "subject": "飞机金属结构疲劳分析方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "唯象疲劳分析方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "飞机金属结构疲劳分析方法",
+    "subject_type": "方法",
+    "relation": "包含",
+    "object": "以断裂力学为基础的分析方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "唯象疲劳分析方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "材料疲劳性能",
+    "object_type": "属性"
+  },
+  {
+    "subject": "唯象疲劳分析方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "结构疲劳品质",
+    "object_type": "属性"
+  },
+  {
+    "subject": "以断裂力学为基础的分析方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "断裂力学",
+    "object_type": "理论"
+  },
+  {
+    "subject": "学术研究",
+    "subject_type": "活动",
+    "relation": "影响",
+    "object": "飞机结构抗疲劳保安全策略",
+    "object_type": "策略"
+  },
+  {
+    "subject": "分析方法",
+    "subject_type": "方法",
+    "relation": "影响",
+    "object": "飞机结构抗疲劳保安全策略",
+    "object_type": "策略"
+  },
+  {
+    "subject": "先进材料",
+    "subject_type": "材料",
+    "relation": "提出",
+    "object": "新挑战",
+    "object_type": "问题"
+  },
+  {
+    "subject": "新型结构",
+    "subject_type": "结构",
+    "relation": "提出",
+    "object": "新挑战",
+    "object_type": "问题"
+  },
+  {
+    "subject": "未来飞机结构",
+    "subject_type": "结构",
+    "relation": "需要",
+    "object": "疲劳与损伤容限评价",
+    "object_type": "任务"
+  }
+]

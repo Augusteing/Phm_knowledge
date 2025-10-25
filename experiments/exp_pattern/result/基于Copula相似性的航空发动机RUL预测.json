@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "基于Copula相似性的RUL预测方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "航空发动机剩余寿命预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "基于Copula相似性的RUL预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "性能退化特征众多问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于Copula相似性的RUL预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "特征相互影响问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "K-means聚类",
+    "subject_type": "算法",
+    "relation": "用于分类",
+    "object": "航空发动机工作状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "Copula函数",
+    "subject_type": "理论",
+    "relation": "用于建模",
+    "object": "传感器相关性",
+    "object_type": "关系"
+  },
+  {
+    "subject": "基于Copula相似性的RUL预测方法",
+    "subject_type": "方法",
+    "relation": "构建",
+    "object": "Copula结构",
+    "object_type": "模型"
+  },
+  {
+    "subject": "Copula相似性",
+    "subject_type": "度量",
+    "relation": "实现",
+    "object": "剩余寿命预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "基于Copula相似性的RUL预测方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "指标"
+  },
+  {
+    "subject": "基于Copula相似性的RUL预测方法",
+    "subject_type": "方法",
+    "relation": "减少",
+    "object": "预测误差",
+    "object_type": "指标"
+  },
+  {
+    "subject": "基于Copula相似性的RUL预测方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "传统方法",
+    "object_type": "方法"
+  }
+]

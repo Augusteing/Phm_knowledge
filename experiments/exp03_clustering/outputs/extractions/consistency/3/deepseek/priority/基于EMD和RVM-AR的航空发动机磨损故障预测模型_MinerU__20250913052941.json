@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "故障预测与健康管理（PHM）技术",
+      "type": "技术"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "数据"
+    },
+    {
+      "name": "经验模态分解（EMD）",
+      "type": "方法"
+    },
+    {
+      "name": "相关向量机（RVM）",
+      "type": "模型"
+    },
+    {
+      "name": "自回归模型（AR）",
+      "type": "模型"
+    },
+    {
+      "name": "量子粒子群优化（QPSO）算法",
+      "type": "算法"
+    },
+    {
+      "name": "支持向量机（SVM）",
+      "type": "模型"
+    },
+    {
+      "name": "固有模态函数（IMF）",
+      "type": "特征"
+    },
+    {
+      "name": "残余函数（RF）",
+      "type": "特征"
+    },
+    {
+      "name": "镜像延拓法",
+      "type": "方法"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "算法"
+    },
+    {
+      "name": "嵌入维数",
+      "type": "参数"
+    },
+    {
+      "name": "核参数",
+      "type": "参数"
+    },
+    {
+      "name": "留一交叉验证误差",
+      "type": "指标"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "指标"
+    },
+    {
+      "name": "Fe元素",
+      "type": "特征"
+    },
+    {
+      "name": "Si元素",
+      "type": "特征"
+    },
+    {
+      "name": "Huang等人",
+      "type": "研究机构"
+    },
+    {
+      "name": "Tipping",
+      "type": "研究机构"
+    }
+  ],
+  "relations": [
+    {
+      "head": "故障预测与健康管理（PHM）技术",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "经验模态分解（EMD）",
+      "relation": "用于",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "相关向量机（RVM）",
+      "relation": "基于",
+      "tail": "稀疏Bayesian回归原理"
+    },
+    {
+      "head": "量子粒子群优化（QPSO）算法",
+      "relation": "用于",
+      "tail": "RVM模型参数优化"
+    },
+    {
+      "head": "基于EMD和RVM-AR的预测方法",
+      "relation": "优于",
+      "tail": "AR模型"
+    },
+    {
+      "head": "基于EMD和RVM-AR的预测方法",
+      "relation": "优于",
+      "tail": "SVM模型"
+    },
+    {
+      "head": "镜像延拓法",
+      "relation": "用于",
+      "tail": "抑制EMD端点效应"
+    },
+    {
+      "head": "RVM",
+      "relation": "优于",
+      "tail": "SVM"
+    },
+    {
+      "head": "EMD算法",
+      "relation": "分解为",
+      "tail": "固有模态函数（IMF）和残余函数（RF）"
+    },
+    {
+      "head": "AR模型",
+      "relation": "建立于",
+      "tail": "IMF分量"
+    },
+    {
+      "head": "RVM模型",
+      "relation": "建立于",
+      "tail": "RF分量"
+    },
+    {
+      "head": "基于EMD和RVM-AR的预测方法",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "Huang等人",
+      "relation": "提出了",
+      "tail": "经验模态分解（EMD）"
+    },
+    {
+      "head": "Tipping",
+      "relation": "提出了",
+      "tail": "相关向量机（RVM）"
+    }
+  ]
+}

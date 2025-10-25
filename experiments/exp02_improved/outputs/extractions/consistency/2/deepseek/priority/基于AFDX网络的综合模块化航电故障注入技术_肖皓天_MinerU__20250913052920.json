@@ -1,0 +1,422 @@
+{
+  "entities": [
+    {
+      "name": "AFDX网络",
+      "type": "系统"
+    },
+    {
+      "name": "综合模块化航空电子系统",
+      "type": "系统"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "方法"
+    },
+    {
+      "name": "健康管理功能",
+      "type": "功能"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "方法"
+    },
+    {
+      "name": "故障注入装置",
+      "type": "系统"
+    },
+    {
+      "name": "故障注入软件",
+      "type": "工具"
+    },
+    {
+      "name": "PC主机",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX端系统板卡",
+      "type": "系统"
+    },
+    {
+      "name": "AFDX交换机",
+      "type": "系统"
+    },
+    {
+      "name": "嵌入式系统",
+      "type": "系统"
+    },
+    {
+      "name": "Visual C++",
+      "type": "工具"
+    },
+    {
+      "name": "MFC框架",
+      "type": "工具"
+    },
+    {
+      "name": "SQLite数据库",
+      "type": "工具"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "方法"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "方法"
+    },
+    {
+      "name": "SetTimer函数",
+      "type": "方法"
+    },
+    {
+      "name": "TimeSetEvent函数",
+      "type": "方法"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "工具"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "方法"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "方法"
+    },
+    {
+      "name": "数据更新间隔",
+      "type": "参数"
+    },
+    {
+      "name": "发送间隔",
+      "type": "参数"
+    },
+    {
+      "name": "BAG",
+      "type": "参数"
+    },
+    {
+      "name": "定时器周期",
+      "type": "参数"
+    },
+    {
+      "name": "均方误差",
+      "type": "指标"
+    },
+    {
+      "name": "航空电子系统",
+      "type": "系统"
+    },
+    {
+      "name": "PHM机制",
+      "type": "方法"
+    },
+    {
+      "name": "故障预测",
+      "type": "任务"
+    },
+    {
+      "name": "故障诊断",
+      "type": "任务"
+    },
+    {
+      "name": "剩余寿命预测",
+      "type": "任务"
+    },
+    {
+      "name": "健康状态评估",
+      "type": "任务"
+    },
+    {
+      "name": "预测性维护",
+      "type": "任务"
+    },
+    {
+      "name": "振动信号",
+      "type": "数据"
+    },
+    {
+      "name": "温度数据",
+      "type": "数据"
+    },
+    {
+      "name": "压力数据",
+      "type": "数据"
+    },
+    {
+      "name": "轴承磨损",
+      "type": "故障模式"
+    },
+    {
+      "name": "疲劳裂纹",
+      "type": "故障模式"
+    },
+    {
+      "name": "腐蚀",
+      "type": "故障模式"
+    },
+    {
+      "name": "过热",
+      "type": "故障模式"
+    },
+    {
+      "name": "振动异常",
+      "type": "故障模式"
+    },
+    {
+      "name": "性能退化",
+      "type": "故障模式"
+    },
+    {
+      "name": "准确率",
+      "type": "指标"
+    },
+    {
+      "name": "精确率",
+      "type": "指标"
+    },
+    {
+      "name": "召回率",
+      "type": "指标"
+    },
+    {
+      "name": "F1分数",
+      "type": "指标"
+    },
+    {
+      "name": "均方根误差",
+      "type": "指标"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "指标"
+    },
+    {
+      "name": "MATLAB",
+      "type": "工具"
+    },
+    {
+      "name": "Python",
+      "type": "工具"
+    },
+    {
+      "name": "TensorFlow",
+      "type": "工具"
+    },
+    {
+      "name": "PyTorch",
+      "type": "工具"
+    },
+    {
+      "name": "Simulink",
+      "type": "工具"
+    },
+    {
+      "name": "LabVIEW",
+      "type": "工具"
+    },
+    {
+      "name": "发动机健康监测",
+      "type": "应用场景"
+    },
+    {
+      "name": "结构健康监测",
+      "type": "应用场景"
+    },
+    {
+      "name": "机载健康管理",
+      "type": "应用场景"
+    }
+  ],
+  "relations": [
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子系统"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "基于",
+      "tail": "AFDX网络"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理功能验证"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "故障数据配置管理方法"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "定时发送策略"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "实现",
+      "tail": "故障注入装置"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "实现",
+      "tail": "故障注入软件"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "Visual C++"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "基于",
+      "tail": "MFC框架"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "采用",
+      "tail": "SQLite数据库"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "用于",
+      "tail": "故障数据配置"
+    },
+    {
+      "head": "故障注入软件",
+      "relation": "用于",
+      "tail": "故障注入操作"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "解决",
+      "tail": "数据更新间隔与定时器周期不匹配问题"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "多媒体定时器"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "优于",
+      "tail": "SetTimer函数"
+    },
+    {
+      "head": "多媒体定时器",
+      "relation": "采用",
+      "tail": "TimeSetEvent函数"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包含",
+      "tail": "PC主机"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包含",
+      "tail": "AFDX端系统板卡"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包含",
+      "tail": "AFDX交换机"
+    },
+    {
+      "head": "故障注入装置",
+      "relation": "包含",
+      "tail": "嵌入式系统"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "基于",
+      "tail": "功能数据集合"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "基于",
+      "tail": "接口控制文件"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "非法数据输入"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "特殊信令输入"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "提高",
+      "tail": "数据发送精度"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "评估",
+      "tail": "均方误差"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "消息监控"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "包括",
+      "tail": "故障预测"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "包括",
+      "tail": "故障诊断"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "包括",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "包括",
+      "tail": "健康状态评估"
+    },
+    {
+      "head": "健康管理功能",
+      "relation": "包括",
+      "tail": "预测性维护"
+    },
+    {
+      "head": "综合模块化航空电子系统",
+      "relation": "具有",
+      "tail": "PHM机制"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "发动机健康监测"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "结构健康监测"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "机载健康管理"
+    }
+  ]
+}

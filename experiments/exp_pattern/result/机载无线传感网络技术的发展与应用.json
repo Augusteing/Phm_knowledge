@@ -1,0 +1,30 @@
+[
+  {
+    "subject": "机载无线传感网络技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "体系架构",
+    "object_type": "体系架构"
+  },
+  {
+    "subject": "机载无线传感网络技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "发展情况",
+    "object_type": "发展情况"
+  },
+  {
+    "subject": "机载无线传感网络技术",
+    "subject_type": "技术",
+    "relation": "响应",
+    "object": "实际需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "发展建议",
+    "subject_type": "建议",
+    "relation": "指导",
+    "object": "机载无线传感网络技术",
+    "object_type": "技术"
+  }
+]

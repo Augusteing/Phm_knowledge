@@ -1,0 +1,1204 @@
+{
+  "title": "基于LASSO变量选择的航空发动机相似性剩余寿命预测",
+  "summary": "由于航空发动机监测变量众多，传统方法直接选取性能退化趋势明显的变量进行寿命预测，所以提出一种基于LASSO(least absolute shrinkage and selection operator)的变量选取方法，结合相似性寿命预测方法有效提高了预测精度。基于K-means聚类区分不同工况，对航空发动机多个监测变量根据聚类结果进行变量转换。基于LASSO方法选取最优传感器变量。基于相似性方法进行航空发动机剩余寿命预测。将基于LASSO的变量选取方法与传统的根据退化趋势大小进行选择的方法进行剩余使用寿命预测的结果进行了对比研究。结果表明：基于LASSO选取变量的相似性寿命预测误差的标准差在3种运行周期下分别减少了约1.84、3.46、4.23。",
+  "analyzed_sentences": [
+    {
+      "sentence": "由于航空发动机监测变量众多",
+      "tokens": [
+        "由于",
+        "航空",
+        "发动机",
+        "监测",
+        "变量",
+        "众多"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "由于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "监测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "变量",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "众多",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VA"
+        }
+      ]
+    },
+    {
+      "sentence": "传统方法直接选取性能退化趋势明显的变量进行寿命预测",
+      "tokens": [
+        "传统",
+        "方法",
+        "直接",
+        "选取",
+        "性能",
+        "退化",
+        "趋势",
+        "明显",
+        "的",
+        "变量",
+        "进行",
+        "寿命",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "传统",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "方法",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "直接",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "选取",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "性能",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "退化",
+          "head": 7,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "趋势",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "明显",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 10,
+          "form": "变量",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "进行",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "寿命",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "预测",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "所以提出一种基于LASSO(least absolute shrinkage and selection operator)的变量选取方法",
+      "tokens": [
+        "所以",
+        "提出",
+        "一",
+        "种",
+        "基于",
+        "LASSO",
+        "(",
+        "least",
+        "absolute",
+        "shrinkage",
+        "and",
+        "selection",
+        "operator",
+        ")",
+        "的",
+        "变量",
+        "选取",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "所以",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "一",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "种",
+          "head": 18,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 5,
+          "form": "基于",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "LASSO",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "(",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "least",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "absolute",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "shrinkage",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "and",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "selection",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "operator",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": ")",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 5,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 16,
+          "form": "变量",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "选取",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "方法",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结合相似性寿命预测方法有效提高了预测精度",
+      "tokens": [
+        "结合",
+        "相似性",
+        "寿命",
+        "预测",
+        "方法",
+        "有效",
+        "提高",
+        "了",
+        "预测",
+        "精度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "相似性",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "寿命",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "有效",
+          "head": 7,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 7,
+          "form": "提高",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "了",
+          "head": 7,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "精度",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于K-means聚类区分不同工况",
+      "tokens": [
+        "基于",
+        "K-means",
+        "聚类",
+        "区分",
+        "不同",
+        "工况"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "K-means",
+          "head": 1,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "聚类",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "区分",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "不同",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "工况",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "对航空发动机多个监测变量根据聚类结果进行变量转换",
+      "tokens": [
+        "对",
+        "航空",
+        "发动机",
+        "多",
+        "个",
+        "监测",
+        "变量",
+        "根据",
+        "聚类",
+        "结果",
+        "进行",
+        "变量",
+        "转换"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "航空",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发动机",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "多",
+          "head": 5,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 5,
+          "form": "个",
+          "head": 7,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 6,
+          "form": "监测",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "变量",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "根据",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "聚类",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "结果",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "变量",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "转换",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于LASSO方法选取最优传感器变量",
+      "tokens": [
+        "基于",
+        "LASSO",
+        "方法",
+        "选取",
+        "最优",
+        "传感器",
+        "变量"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "LASSO",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "方法",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "选取",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "最优",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "传感器",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "变量",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于相似性方法进行航空发动机剩余寿命预测",
+      "tokens": [
+        "基于",
+        "相似性",
+        "方法",
+        "进行",
+        "航空",
+        "发动机",
+        "剩余",
+        "寿命",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 4,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "相似性",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "方法",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "发动机",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "剩余",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "寿命",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "将基于LASSO的变量选取方法与传统的根据退化趋势大小进行选择的方法进行剩余使用寿命预测的结果进行了对比研究",
+      "tokens": [
+        "将",
+        "基于",
+        "LASSO",
+        "的",
+        "变量",
+        "选取",
+        "方法",
+        "与",
+        "传统",
+        "的",
+        "根据",
+        "退化",
+        "趋势",
+        "大小",
+        "进行",
+        "选择",
+        "的",
+        "方法",
+        "进行",
+        "剩余",
+        "使用",
+        "寿命",
+        "预测",
+        "的",
+        "结果",
+        "进行",
+        "了",
+        "对比",
+        "研究"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "将",
+          "head": 26,
+          "deprel": "ba",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "基于",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "LASSO",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NR"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "变量",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "选取",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方法",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "与",
+          "head": 19,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "传统",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "根据",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "退化",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "趋势",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "大小",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "进行",
+          "head": 18,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "选择",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 15,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 18,
+          "form": "方法",
+          "head": 8,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "进行",
+          "head": 25,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "剩余",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "使用",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "寿命",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "预测",
+          "head": 19,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "的",
+          "head": 19,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 25,
+          "form": "结果",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "了",
+          "head": 26,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 28,
+          "form": "对比",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "研究",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明：基于LASSO选取变量的相似性寿命预测误差的标准差在3种运行周期下分别减少了约1.84、3.46、4.23",
+      "tokens": [
+        "结果",
+        "表明",
+        "：",
+        "基于",
+        "LASSO",
+        "选取",
+        "变量",
+        "的",
+        "相似性",
+        "寿命",
+        "预测",
+        "误差",
+        "的",
+        "标准",
+        "差",
+        "在",
+        "3",
+        "种",
+        "运行",
+        "周期",
+        "下",
+        "分别",
+        "减少",
+        "了",
+        "约",
+        "1.84",
+        "、",
+        "3.46",
+        "、",
+        "4.23"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "：",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "基于",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "LASSO",
+          "head": 4,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "选取",
+          "head": 4,
+          "deprel": "pccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "变量",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "相似性",
+          "head": 12,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "寿命",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "误差",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 14,
+          "form": "标准",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "差",
+          "head": 23,
+          "deprel": "nsubj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "在",
+          "head": 23,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 17,
+          "form": "3",
+          "head": 18,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 18,
+          "form": "种",
+          "head": 20,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 19,
+          "form": "运行",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "周期",
+          "head": 21,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "下",
+          "head": 16,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 22,
+          "form": "分别",
+          "head": 23,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "减少",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "了",
+          "head": 23,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 25,
+          "form": "约",
+          "head": 30,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "1.84",
+          "head": 30,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 27,
+          "form": "、",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "3.46",
+          "head": 30,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "4.23",
+          "head": 23,
+          "deprel": "dep",
+          "pos": "CD"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "信息系统自动化程度有限",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "所需数据不完整或错误",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "可部署性较弱",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "信息交流不顺畅",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "备件短缺和不匹配",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "备件运输困难",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "紧缺备件分配优先级难以确定",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统",
+    "subject_type": "保障系统",
+    "relation": "存在缺陷",
+    "object": "备件管理混乱",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "F-35自主式保障系统缺陷",
+    "subject_type": "问题",
+    "relation": "原因为",
+    "object": "装备成熟度与保障性之间的矛盾",
+    "object_type": "原因"
+  },
+  {
+    "subject": "F-35自主式保障系统缺陷",
+    "subject_type": "问题",
+    "relation": "原因为",
+    "object": "保障管理的组织架构有待完善",
+    "object_type": "原因"
+  },
+  {
+    "subject": "F-35自主式保障系统缺陷",
+    "subject_type": "问题",
+    "relation": "原因为",
+    "object": "全球供应链建设方面的困难估计不足",
+    "object_type": "原因"
+  },
+  {
+    "subject": "F-35自主式保障系统缺陷",
+    "subject_type": "问题",
+    "relation": "原因为",
+    "object": "保障管理方面的政策法规不完备",
+    "object_type": "原因"
+  },
+  {
+    "subject": "美国政府问责局(GAO)",
+    "subject_type": "组织机构",
+    "relation": "发布",
+    "object": "F-35飞机保障的系列调查报告",
+    "object_type": "报告"
+  }
+]

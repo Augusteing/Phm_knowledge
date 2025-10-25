@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "经验模态分解（EMD）",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "固有模态函数（IMF）",
+      "type": "特征",
+      "evaluation": "正确"
+    },
+    {
+      "name": "残余函数（RF）",
+      "type": "特征",
+      "evaluation": "正确"
+    },
+    {
+      "name": "自回归模型（AR）",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "相关向量机（RVM）",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "量子粒子群优化算法（QPSO）",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "数据集",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Fe元素",
+      "type": "特征",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Si元素",
+      "type": "特征",
+      "evaluation": "正确"
+    },
+    {
+      "name": "支持向量机（SVM）",
+      "type": "模型",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "算法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "留一交叉验证",
+      "type": "评估方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "最终预测误差（FPE）",
+      "type": "性能指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "性能指标",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "基于",
+      "tail": "经验模态分解（EMD）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "基于",
+      "tail": "相关向量机（RVM）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "经验模态分解（EMD）",
+      "relation": "分解为",
+      "tail": "固有模态函数（IMF）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "经验模态分解（EMD）",
+      "relation": "分解为",
+      "tail": "残余函数（RF）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "包括",
+      "tail": "自回归模型（AR）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "自回归模型（AR）",
+      "relation": "应用于",
+      "tail": "固有模态函数（IMF）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "相关向量机（RVM）",
+      "relation": "应用于",
+      "tail": "残余函数（RF）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "相关向量机（RVM）",
+      "relation": "优化算法",
+      "tail": "量子粒子群优化算法（QPSO）",
+      "evaluation": "错误"
+    },
+    {
+      "head": "量子粒子群优化算法（QPSO）",
+      "relation": "优化",
+      "tail": "相关向量机（RVM）",
+      "evaluation": "正确"
+    },
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "处理",
+      "tail": "滑油光谱数据",
+      "evaluation": "正确"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "包含",
+      "tail": "Fe元素",
+      "evaluation": "正确"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "包含",
+      "tail": "Si元素",
+      "evaluation": "正确"
+    },
+    {
+      "head": "支持向量机（SVM）",
+      "relation": "对比",
+      "tail": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "evaluation": "正确"
+    },
+    {
+      "head": "支持向量机（SVM）",
+      "relation": "使用",
+      "tail": "Gaussian核函数",
+      "evaluation": "正确"
+    },
+    {
+      "head": "相关向量机（RVM）",
+      "relation": "评估方法",
+      "tail": "留一交叉验证",
+      "evaluation": "错误"
+    },
+    {
+      "head": "自回归模型（AR）",
+      "relation": "评估方法",
+      "tail": "最终预测误差（FPE）",
+      "evaluation": "错误"
+    },
+    {
+      "head": "基于EMD和RVM-AR的航空发动机磨损故障预测模型",
+      "relation": "评价指标",
+      "tail": "平均相对预测误差",
+      "evaluation": "错误"
+    }
+  ]
+}

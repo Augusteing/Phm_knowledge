@@ -1,0 +1,37 @@
+[
+  {
+    "subject": "预测与健康管理(PHM)系统",
+    "subject_type": "系统",
+    "relation": "是...的必备功能",
+    "object": "先进发动机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "预测与健康管理(PHM)系统",
+    "subject_type": "系统",
+    "relation": "发展自",
+    "object": "航空发动机故障检测与诊断",
+    "object_type": "技术"
+  },
+  {
+    "subject": "EPHM系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "EPHM的需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "EPHM系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "指标体系",
+    "object_type": "体系"
+  },
+  {
+    "subject": "航空发动机健康管理系统发展现状及其指标体系研究",
+    "subject_type": "研究",
+    "relation": "展望",
+    "object": "我国航空发动机健康管理",
+    "object_type": "研究领域"
+  }
+]

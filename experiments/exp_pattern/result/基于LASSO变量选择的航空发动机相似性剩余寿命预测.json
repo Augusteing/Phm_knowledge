@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "LASSO变量选取方法",
+    "subject_type": "方法",
+    "relation": "结合",
+    "object": "相似性寿命预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "LASSO变量选取方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "K-means聚类",
+    "subject_type": "算法",
+    "relation": "用于区分",
+    "object": "工况",
+    "object_type": "状态"
+  },
+  {
+    "subject": "LASSO方法",
+    "subject_type": "方法",
+    "relation": "选取",
+    "object": "最优传感器变量",
+    "object_type": "数据"
+  },
+  {
+    "subject": "相似性方法",
+    "subject_type": "方法",
+    "relation": "进行",
+    "object": "航空发动机剩余寿命预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "传统方法",
+    "subject_type": "方法",
+    "relation": "选取",
+    "object": "性能退化趋势明显的变量",
+    "object_type": "数据"
+  },
+  {
+    "subject": "LASSO变量选取方法",
+    "subject_type": "方法",
+    "relation": "减少",
+    "object": "相似性寿命预测误差的标准差",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "本文研究",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "LASSO变量选取方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "本文研究",
+    "subject_type": "研究",
+    "relation": "对比",
+    "object": "LASSO变量选取方法",
+    "object_type": "方法"
+  }
+]

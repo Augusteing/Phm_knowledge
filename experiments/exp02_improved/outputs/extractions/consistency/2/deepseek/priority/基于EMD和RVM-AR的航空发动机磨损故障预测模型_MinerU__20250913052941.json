@@ -1,0 +1,210 @@
+{
+  "entities": [
+    {
+      "name": "EMD",
+      "type": "方法"
+    },
+    {
+      "name": "RVM",
+      "type": "方法"
+    },
+    {
+      "name": "AR",
+      "type": "方法"
+    },
+    {
+      "name": "QPSO",
+      "type": "算法"
+    },
+    {
+      "name": "SVM",
+      "type": "方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "数据"
+    },
+    {
+      "name": "故障预测",
+      "type": "任务"
+    },
+    {
+      "name": "非线性非平稳特性",
+      "type": "问题"
+    },
+    {
+      "name": "IMF",
+      "type": "特征"
+    },
+    {
+      "name": "RF",
+      "type": "特征"
+    },
+    {
+      "name": "镜像延拓法",
+      "type": "方法"
+    },
+    {
+      "name": "端点效应",
+      "type": "问题"
+    },
+    {
+      "name": "Gaussian核函数",
+      "type": "算法"
+    },
+    {
+      "name": "嵌入维数",
+      "type": "参数"
+    },
+    {
+      "name": "核参数",
+      "type": "参数"
+    },
+    {
+      "name": "交叉验证误差",
+      "type": "指标"
+    },
+    {
+      "name": "平均相对预测误差",
+      "type": "指标"
+    },
+    {
+      "name": "Fe元素",
+      "type": "特征"
+    },
+    {
+      "name": "Si元素",
+      "type": "特征"
+    },
+    {
+      "name": "PHM",
+      "type": "技术"
+    },
+    {
+      "name": "油液光谱分析",
+      "type": "方法"
+    },
+    {
+      "name": "Bayesian方法",
+      "type": "方法"
+    },
+    {
+      "name": "稀疏概率模型",
+      "type": "模型"
+    },
+    {
+      "name": "时间序列预测",
+      "type": "任务"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EMD",
+      "relation": "用于",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "RVM",
+      "relation": "基于",
+      "tail": "Bayesian方法"
+    },
+    {
+      "head": "RVM",
+      "relation": "优于",
+      "tail": "SVM"
+    },
+    {
+      "head": "QPSO",
+      "relation": "用于",
+      "tail": "RVM"
+    },
+    {
+      "head": "EMD+RVM-AR",
+      "relation": "解决",
+      "tail": "非线性非平稳特性"
+    },
+    {
+      "head": "EMD+RVM-AR",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "EMD+RVM-AR",
+      "relation": "用于",
+      "tail": "故障预测"
+    },
+    {
+      "head": "EMD+RVM-AR",
+      "relation": "提高",
+      "tail": "预测精度"
+    },
+    {
+      "head": "镜像延拓法",
+      "relation": "解决",
+      "tail": "端点效应"
+    },
+    {
+      "head": "IMF",
+      "relation": "包含",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "RF",
+      "relation": "包含",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "RVM",
+      "relation": "采用",
+      "tail": "Gaussian核函数"
+    },
+    {
+      "head": "QPSO",
+      "relation": "优化",
+      "tail": "嵌入维数"
+    },
+    {
+      "head": "QPSO",
+      "relation": "优化",
+      "tail": "核参数"
+    },
+    {
+      "head": "交叉验证误差",
+      "relation": "用于",
+      "tail": "RVM"
+    },
+    {
+      "head": "平均相对预测误差",
+      "relation": "评估",
+      "tail": "EMD+RVM-AR"
+    },
+    {
+      "head": "EMD+RVM-AR",
+      "relation": "预测",
+      "tail": "Fe元素"
+    },
+    {
+      "head": "EMD+RVM-AR",
+      "relation": "预测",
+      "tail": "Si元素"
+    },
+    {
+      "head": "PHM",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "油液光谱分析",
+      "relation": "用于",
+      "tail": "故障预测"
+    }
+  ]
+}

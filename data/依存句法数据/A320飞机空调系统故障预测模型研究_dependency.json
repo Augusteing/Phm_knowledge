@@ -1,0 +1,1058 @@
+{
+  "title": "A320飞机空调系统故障预测模型研究",
+  "summary": "故障预测对飞机空调系统的维护具有重要意义。基于灰色预测建模理论,传统GM(1,预测模型只适用于对较强指数规律序列进行预测,不适合预测波动序列。而A320飞机空调系统的参数具有波动性的特点,因此,对传统的GM(1,预测模型进行了改进:对原始波动序列采用3点均值法进行预处理,并修正了背景值,建立了少数据样本情况下的预测模型,提高了预测精度。最后以A320空调系统的水分离器出口温度为例进行了预测分析,结果证明该模型满足预测精度要求,该模型是有效的。",
+  "analyzed_sentences": [
+    {
+      "sentence": "故障预测对飞机空调系统的维护具有重要意义",
+      "tokens": [
+        "故障",
+        "预测",
+        "对",
+        "飞机",
+        "空调",
+        "系统",
+        "的",
+        "维护",
+        "具有",
+        "重要",
+        "意义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "故障",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "预测",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "对",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "空调",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "系统",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 8,
+          "form": "维护",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "重要",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "意义",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于灰色预测建模理论,传统GM(1,预测模型只适用于对较强指数规律序列进行预测,不适合预测波动序列",
+      "tokens": [
+        "基于",
+        "灰色",
+        "预测",
+        "建模",
+        "理论",
+        ",",
+        "传统",
+        "GM",
+        "(",
+        "1",
+        ",",
+        "预测",
+        "模型",
+        "只",
+        "适用于",
+        "对",
+        "较",
+        "强",
+        "指数",
+        "规律",
+        "序列",
+        "进行",
+        "预测",
+        ",",
+        "不",
+        "适合",
+        "预测",
+        "波动",
+        "序列"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "灰色",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "预测",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "建模",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "理论",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "传统",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "GM",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "(",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "1",
+          "head": 13,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 11,
+          "form": ",",
+          "head": 13,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "预测",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "模型",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "只",
+          "head": 15,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 15,
+          "form": "适用于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "对",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 17,
+          "form": "较",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "强",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "指数",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "规律",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "序列",
+          "head": 16,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "进行",
+          "head": 15,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "预测",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "不",
+          "head": 26,
+          "deprel": "neg",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "适合",
+          "head": 15,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "预测",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "波动",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "序列",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "而A320飞机空调系统的参数具有波动性的特点,因此,对传统的GM(1,预测模型进行了改进:对原始波动序列采用3点均值法进行预处理,并修正了背景值,建立了少数据样本情况下的预测模型,提高了预测精度",
+      "tokens": [
+        "而",
+        "A320",
+        "飞机",
+        "空调",
+        "系统",
+        "的",
+        "参数",
+        "具有",
+        "波动性",
+        "的",
+        "特点",
+        ",",
+        "因此",
+        ",",
+        "对",
+        "传统",
+        "的",
+        "GM",
+        "(",
+        "1",
+        ",",
+        "预测",
+        "模型",
+        "进行",
+        "了",
+        "改进",
+        ":",
+        "对",
+        "原始",
+        "波动",
+        "序列",
+        "采用",
+        "3",
+        "点",
+        "均值法",
+        "进行",
+        "预处理",
+        ",",
+        "并",
+        "修正",
+        "了",
+        "背景值",
+        ",",
+        "建立",
+        "了",
+        "少",
+        "数据",
+        "样本",
+        "情况",
+        "下",
+        "的",
+        "预测",
+        "模型",
+        ",",
+        "提高",
+        "了",
+        "预测",
+        "精度"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "而",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "A320",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "飞机",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "空调",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "参数",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "波动性",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "特点",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "因此",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "对",
+          "head": 24,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "传统",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "GM",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "NR"
+        },
+        {
+          "id": 19,
+          "form": "(",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "1",
+          "head": 23,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 21,
+          "form": ",",
+          "head": 23,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 22,
+          "form": "预测",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "模型",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "进行",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "了",
+          "head": 24,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 26,
+          "form": "改进",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ":",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "对",
+          "head": 32,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 29,
+          "form": "原始",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "波动",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "序列",
+          "head": 28,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "采用",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 33,
+          "form": "3",
+          "head": 34,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 34,
+          "form": "点",
+          "head": 35,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 35,
+          "form": "均值法",
+          "head": 32,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "进行",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "预处理",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": ",",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 39,
+          "form": "并",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "AD"
+        },
+        {
+          "id": 40,
+          "form": "修正",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "了",
+          "head": 40,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 42,
+          "form": "背景值",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "建立",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "了",
+          "head": 44,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 46,
+          "form": "少",
+          "head": 47,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 47,
+          "form": "数据",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "样本",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "情况",
+          "head": 50,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "下",
+          "head": 53,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 51,
+          "form": "的",
+          "head": 50,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 52,
+          "form": "预测",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "模型",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": ",",
+          "head": 32,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 55,
+          "form": "提高",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 56,
+          "form": "了",
+          "head": 55,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 57,
+          "form": "预测",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "精度",
+          "head": 55,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后以A320空调系统的水分离器出口温度为例进行了预测分析,结果证明该模型满足预测精度要求,该模型是有效的",
+      "tokens": [
+        "最后",
+        "以",
+        "A320",
+        "空调",
+        "系统",
+        "的",
+        "水分离器",
+        "出口",
+        "温度",
+        "为",
+        "例",
+        "进行",
+        "了",
+        "预测",
+        "分析",
+        ",",
+        "结果",
+        "证明",
+        "该",
+        "模型",
+        "满足",
+        "预测",
+        "精度",
+        "要求",
+        ",",
+        "该",
+        "模型",
+        "是",
+        "有效",
+        "的"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "以",
+          "head": 10,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "A320",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "空调",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "系统",
+          "head": 9,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "水分离器",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "出口",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "温度",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "为",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 11,
+          "form": "例",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "进行",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "了",
+          "head": 12,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 14,
+          "form": "预测",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "分析",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "结果",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "证明",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "该",
+          "head": 20,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 20,
+          "form": "模型",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "满足",
+          "head": 18,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "预测",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "精度",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "要求",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "该",
+          "head": 27,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 27,
+          "form": "模型",
+          "head": 28,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "是",
+          "head": 10,
+          "deprel": "dep",
+          "pos": "VC"
+        },
+        {
+          "id": 29,
+          "form": "有效",
+          "head": 28,
+          "deprel": "attr",
+          "pos": "VA"
+        },
+        {
+          "id": 30,
+          "form": "的",
+          "head": 29,
+          "deprel": "cpm",
+          "pos": "DEC"
+        }
+      ]
+    }
+  ]
+}

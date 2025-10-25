@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "第四代战斗机",
+    "subject_type": "飞机",
+    "relation": "对...有要求",
+    "object": "发动机",
+    "object_type": "动力系统"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "采用",
+    "object": "高性能循环参数",
+    "object_type": "技术参数"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "采用",
+    "object": "高推重比技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "采用",
+    "object": "推力矢量技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "采用",
+    "object": "隐身技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "采用",
+    "object": "全权限数字式控制系统",
+    "object_type": "控制系统"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "采用",
+    "object": "健康管理系统",
+    "object_type": "管理系统"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "采用",
+    "object": "热管理技术",
+    "object_type": "关键技术"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "具有",
+    "object": "高可靠性和维修性",
+    "object_type": "设计目标"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "依赖",
+    "object": "先进成熟的基础技术",
+    "object_type": "支撑技术"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "依赖",
+    "object": "科学的管理",
+    "object_type": "支撑条件"
+  },
+  {
+    "subject": "第四代发动机",
+    "subject_type": "动力系统",
+    "relation": "注重",
+    "object": "综合权衡设计",
+    "object_type": "设计方法"
+  }
+]

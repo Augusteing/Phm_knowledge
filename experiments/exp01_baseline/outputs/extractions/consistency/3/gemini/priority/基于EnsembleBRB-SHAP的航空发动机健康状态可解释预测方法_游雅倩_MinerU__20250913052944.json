@@ -1,0 +1,308 @@
+{
+  "entities": [
+    {
+      "name": "EnsembleBRB-SHAP可解释预测方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "发动机健康状态预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "可解释性",
+      "type": "研究目标"
+    },
+    {
+      "name": "集成置信规则库 (EnsembleBRB)",
+      "type": "模型"
+    },
+    {
+      "name": "沙普利加性解释 (SHAP)",
+      "type": "理论基础"
+    },
+    {
+      "name": "置信规则库 (BRB)",
+      "type": "模型"
+    },
+    {
+      "name": "子置信规则库模型",
+      "type": "模型"
+    },
+    {
+      "name": "数据驱动法",
+      "type": "研究方法"
+    },
+    {
+      "name": "集成学习策略",
+      "type": "理论基础"
+    },
+    {
+      "name": "Bagging框架",
+      "type": "理论基础"
+    },
+    {
+      "name": "商用模块化航空推进系统仿真软件 (C-MAPSS)",
+      "type": "软件工具"
+    },
+    {
+      "name": "涡轮发动机退化数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "均方误差 (MSE)",
+      "type": "性能指标"
+    },
+    {
+      "name": "低压涡轮机冷却液泄漏量 (LPT_CB)",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇转速 (PFS)",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "发动机健康状态",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "基于物理模型的预测方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "基于数据驱动模型的预测方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "模型可解释性弱",
+      "type": "研究问题"
+    },
+    {
+      "name": "合作博弈论",
+      "type": "理论基础"
+    },
+    {
+      "name": "局部可解释性分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "全局可解释性分析",
+      "type": "研究方法"
+    },
+    {
+      "name": "KernelSHAP",
+      "type": "算法"
+    },
+    {
+      "name": "支持向量机",
+      "type": "模型"
+    },
+    {
+      "name": "决策树",
+      "type": "模型"
+    },
+    {
+      "name": "梯度提升回归",
+      "type": "模型"
+    },
+    {
+      "name": "Lasso算法",
+      "type": "算法"
+    },
+    {
+      "name": "多层感知机",
+      "type": "模型"
+    },
+    {
+      "name": "力导向图",
+      "type": "可视化方法"
+    },
+    {
+      "name": "瀑布图",
+      "type": "可视化方法"
+    },
+    {
+      "name": "蜂群概括图",
+      "type": "可视化方法"
+    },
+    {
+      "name": "依赖图",
+      "type": "可视化方法"
+    },
+    {
+      "name": "热力图",
+      "type": "可视化方法"
+    },
+    {
+      "name": "高压压缩机出口燃料流量与静压比 (R_FL_P)",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "校正后的风扇转速 (CFS)",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "核心转速 (ECS)",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "校正后的核心转速 (CCS)",
+      "type": "传感器/监测参数"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EnsembleBRB-SHAP可解释预测方法",
+      "relation": "提出了",
+      "tail": "本文"
+    },
+    {
+      "head": "EnsembleBRB-SHAP可解释预测方法",
+      "relation": "应用于",
+      "tail": "发动机健康状态预测"
+    },
+    {
+      "head": "EnsembleBRB-SHAP可解释预测方法",
+      "relation": "融合",
+      "tail": "集成置信规则库 (EnsembleBRB)"
+    },
+    {
+      "head": "EnsembleBRB-SHAP可解释预测方法",
+      "relation": "融合",
+      "tail": "沙普利加性解释 (SHAP)"
+    },
+    {
+      "head": "EnsembleBRB-SHAP可解释预测方法",
+      "relation": "解决",
+      "tail": "模型可解释性弱"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "基于",
+      "tail": "置信规则库 (BRB)"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "引入",
+      "tail": "集成学习策略"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "采用",
+      "tail": "Bagging框架"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "由...组成",
+      "tail": "子置信规则库模型"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "用于预测",
+      "tail": "发动机健康状态"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "优于",
+      "tail": "支持向量机"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "优于",
+      "tail": "决策树"
+    },
+    {
+      "head": "集成置信规则库 (EnsembleBRB)",
+      "relation": "优于",
+      "tail": "梯度提升回归"
+    },
+    {
+      "head": "沙普利加性解释 (SHAP)",
+      "relation": "基于",
+      "tail": "合作博弈论"
+    },
+    {
+      "head": "沙普利加性解释 (SHAP)",
+      "relation": "用于解释",
+      "tail": "集成置信规则库 (EnsembleBRB)"
+    },
+    {
+      "head": "沙普利加性解释 (SHAP)",
+      "relation": "实现",
+      "tail": "局部可解释性分析"
+    },
+    {
+      "head": "沙普利加性解释 (SHAP)",
+      "relation": "实现",
+      "tail": "全局可解释性分析"
+    },
+    {
+      "head": "KernelSHAP",
+      "relation": "用于解释",
+      "tail": "集成置信规则库 (EnsembleBRB)"
+    },
+    {
+      "head": "商用模块化航空推进系统仿真软件 (C-MAPSS)",
+      "relation": "生成",
+      "tail": "涡轮发动机退化数据集"
+    },
+    {
+      "head": "涡轮发动机退化数据集",
+      "relation": "用于验证",
+      "tail": "EnsembleBRB-SHAP可解释预测方法"
+    },
+    {
+      "head": "均方误差 (MSE)",
+      "relation": "是...的评价指标",
+      "tail": "集成置信规则库 (EnsembleBRB)"
+    },
+    {
+      "head": "低压涡轮机冷却液泄漏量 (LPT_CB)",
+      "relation": "是...的关键参数",
+      "tail": "发动机健康状态"
+    },
+    {
+      "head": "风扇转速 (PFS)",
+      "relation": "是...的关键参数",
+      "tail": "发动机健康状态"
+    },
+    {
+      "head": "高压压缩机出口燃料流量与静压比 (R_FL_P)",
+      "relation": "是...的关键参数",
+      "tail": "发动机健康状态"
+    },
+    {
+      "head": "基于数据驱动模型的预测方法",
+      "relation": "是...的主流方法",
+      "tail": "发动机健康状态预测"
+    },
+    {
+      "head": "局部可解释性分析",
+      "relation": "采用",
+      "tail": "力导向图"
+    },
+    {
+      "head": "局部可解释性分析",
+      "relation": "采用",
+      "tail": "瀑布图"
+    },
+    {
+      "head": "全局可解释性分析",
+      "relation": "采用",
+      "tail": "蜂群概括图"
+    },
+    {
+      "head": "风扇转速 (PFS)",
+      "relation": "存在数据冗余",
+      "tail": "校正后的风扇转速 (CFS)"
+    },
+    {
+      "head": "核心转速 (ECS)",
+      "relation": "存在数据冗余",
+      "tail": "校正后的核心转速 (CCS)"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "航空发动机排气温度基线模型",
+      "type": "模型"
+    },
+    {
+      "name": "核主成分分析",
+      "type": "算法"
+    },
+    {
+      "name": "深度置信网络",
+      "type": "算法"
+    },
+    {
+      "name": "CFM56-7B发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "快速存取数据",
+      "type": "数据集"
+    },
+    {
+      "name": "高斯函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "航空发动机健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "排气温度",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "Kernel Principal Component Analysis",
+      "type": "算法"
+    },
+    {
+      "name": "Deep Belief Network",
+      "type": "算法"
+    },
+    {
+      "name": "Quick Access Recorder",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "平均绝对误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "遗传算法优化的反向传播神经网络",
+      "type": "算法"
+    }
+  ],
+  "relations": [
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "核主成分分析"
+    },
+    {
+      "head": "航空发动机排气温度基线模型",
+      "relation": "基于",
+      "tail": "深度置信网络"
+    },
+    {
+      "head": "核主成分分析",
+      "relation": "采用",
+      "tail": "高斯函数"
+    },
+    {
+      "head": "深度置信网络",
+      "relation": "应用于",
+      "tail": "航空发动机排气温度基线模型"
+    },
+    {
+      "head": "快速存取数据",
+      "relation": "用于",
+      "tail": "航空发动机排气温度基线模型"
+    },
+    {
+      "head": "航空发动机健康管理",
+      "relation": "包括",
+      "tail": "排气温度"
+    },
+    {
+      "head": "Kernel Principal Component Analysis",
+      "relation": "改进了",
+      "tail": "主成分分析法"
+    },
+    {
+      "head": "Deep Belief Network",
+      "relation": "改进了",
+      "tail": "传统神经网络"
+    },
+    {
+      "head": "Quick Access Recorder",
+      "relation": "产生",
+      "tail": "快速存取数据"
+    },
+    {
+      "head": "平均绝对误差",
+      "relation": "评估",
+      "tail": "航空发动机排气温度基线模型"
+    },
+    {
+      "head": "遗传算法优化的反向传播神经网络",
+      "relation": "对比",
+      "tail": "深度置信网络"
+    }
+  ]
+}

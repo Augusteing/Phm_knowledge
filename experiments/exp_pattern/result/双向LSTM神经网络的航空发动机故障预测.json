@@ -1,0 +1,114 @@
+[
+  {
+    "subject": "航空发动机故障预测",
+    "subject_type": "任务",
+    "relation": "提供依据",
+    "object": "维修决策",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空发动机故障预测",
+    "subject_type": "任务",
+    "relation": "提高",
+    "object": "装备完好率",
+    "object_type": "指标"
+  },
+  {
+    "subject": "航空发动机故障预测",
+    "subject_type": "任务",
+    "relation": "避免",
+    "object": "灾难性故障",
+    "object_type": "风险"
+  },
+  {
+    "subject": "航空发动机故障预测",
+    "subject_type": "任务",
+    "relation": "最小化",
+    "object": "经济损失",
+    "object_type": "风险"
+  },
+  {
+    "subject": "双向长短期记忆(LSTM)神经网络",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "航空发动机故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "故障预测模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "双向长短期记忆(LSTM)神经网络",
+    "object_type": "方法"
+  },
+  {
+    "subject": "故障预测模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "数据预处理",
+    "object_type": "步骤"
+  },
+  {
+    "subject": "故障预测模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "网络模型设计",
+    "object_type": "步骤"
+  },
+  {
+    "subject": "故障预测模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "训练与测试",
+    "object_type": "步骤"
+  },
+  {
+    "subject": "双向LSTM故障预测模型",
+    "subject_type": "模型",
+    "relation": "使用",
+    "object": "C-MAPSS数据集",
+    "object_type": "数据集"
+  },
+  {
+    "subject": "C-MAPSS数据集",
+    "subject_type": "数据集",
+    "relation": "用于验证",
+    "object": "双向LSTM故障预测模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "双向LSTM故障预测模型",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "RNN",
+    "object_type": "模型"
+  },
+  {
+    "subject": "双向LSTM故障预测模型",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "GRU",
+    "object_type": "模型"
+  },
+  {
+    "subject": "双向LSTM故障预测模型",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "LSTM时间序列模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "双向LSTM故障预测模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "指标"
+  },
+  {
+    "subject": "双向LSTM故障预测模型",
+    "subject_type": "模型",
+    "relation": "降低",
+    "object": "非对称评分",
+    "object_type": "指标"
+  }
+]

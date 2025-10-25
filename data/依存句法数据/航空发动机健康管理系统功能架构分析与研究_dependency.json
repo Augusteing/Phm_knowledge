@@ -1,0 +1,1753 @@
+{
+  "title": "航空发动机健康管理系统功能架构分析与研究",
+  "summary": "针对复杂系统需求边界模糊与架构动态优化难题，融合MagicGrid方法论，提出了\"场景-需求-功能-逻辑-物理\"五层协同建模框架。基于系统建模语言在MagicDraw平台在航空发动机健康管理系统中开展了基于模型的系统工程实践：通过内部块图建立利益相关方交互关系拓扑，实现场景驱动的系统边界定义；利用需求图构建可追溯性矩阵，完成场景验证与需求完整性分析；基于用例图-活动图动态组合建模功能行为，经模块化分解形成技术独立的逻辑架构；通过块定义图与内部块图构建物理模型，借助接口标准化实现逻辑组件与物理实体的解耦设计。案例验证表明，该方法在降低功能重叠率、提升预测效率、敏捷评估状态影响并降低虚警率上具有显著成效。研究成果不仅构建了航空发动机健康管理系统的全生命周期建模范式，实现了场景-需求-功能-物理全链条追溯，拓展了图学方法在MBSE领域的工程应用场景，其多视图协同建模机制对复杂装备系统设计具有普适参考价值。",
+  "analyzed_sentences": [
+    {
+      "sentence": "针对复杂系统需求边界模糊与架构动态优化难题",
+      "tokens": [
+        "针对",
+        "复杂",
+        "系统",
+        "需求",
+        "边界",
+        "模糊",
+        "与",
+        "架构",
+        "动态",
+        "优化",
+        "难题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "复杂",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "需求",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "边界",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "模糊",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 10,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "架构",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "动态",
+          "head": 10,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "优化",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "难题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "融合MagicGrid方法论",
+      "tokens": [
+        "融合",
+        "MagicGrid",
+        "方法论"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "融合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "MagicGrid",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "方法论",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出了\"场景-需求-功能-逻辑-物理\"五层协同建模框架",
+      "tokens": [
+        "提出",
+        "了",
+        "\"",
+        "场景",
+        "-",
+        "需求",
+        "-",
+        "功能",
+        "-",
+        "逻辑",
+        "-",
+        "物理",
+        "\"",
+        "五",
+        "层",
+        "协同",
+        "建模",
+        "框架"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "\"",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "场景",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "-",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "需求",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "-",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "功能",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "-",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "逻辑",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "-",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "物理",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "\"",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "五",
+          "head": 15,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 15,
+          "form": "层",
+          "head": 18,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 16,
+          "form": "协同",
+          "head": 17,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "建模",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "框架",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于系统建模语言在MagicDraw平台在航空发动机健康管理系统中开展了基于模型的系统工程实践：通过内部块图建立利益相关方交互关系拓扑，实现场景驱动的系统边界定义",
+      "tokens": [
+        "基于",
+        "系统",
+        "建模",
+        "语言",
+        "在",
+        "MagicDraw",
+        "平台",
+        "在",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "中",
+        "开展",
+        "了",
+        "基于",
+        "模型",
+        "的",
+        "系统",
+        "工程",
+        "实践",
+        "：",
+        "通过",
+        "内部",
+        "块图",
+        "建立",
+        "利益",
+        "相关",
+        "方",
+        "交互",
+        "关系",
+        "拓扑",
+        "，",
+        "实现",
+        "场景",
+        "驱动",
+        "的",
+        "系统",
+        "边界",
+        "定义"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "系统",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "建模",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "语言",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "在",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "MagicDraw",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 7,
+          "form": "平台",
+          "head": 15,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "在",
+          "head": 15,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 9,
+          "form": "航空",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "发动机",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "健康",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "管理",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "系统",
+          "head": 14,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "中",
+          "head": 8,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": "开展",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "了",
+          "head": 15,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 17,
+          "form": "基于",
+          "head": 22,
+          "deprel": "rcmod",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "模型",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "的",
+          "head": 17,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 20,
+          "form": "系统",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "工程",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "实践",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "：",
+          "head": 15,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "通过",
+          "head": 27,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 25,
+          "form": "内部",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "块图",
+          "head": 24,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "建立",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "利益",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "相关",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "方",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "交互",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "关系",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "拓扑",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "，",
+          "head": 27,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "实现",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "场景",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "驱动",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 37,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 39,
+          "form": "系统",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "边界",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "定义",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "利用需求图构建可追溯性矩阵，完成场景验证与需求完整性分析",
+      "tokens": [
+        "利用",
+        "需求图",
+        "构建",
+        "可追溯性",
+        "矩阵",
+        "，",
+        "完成",
+        "场景",
+        "验证",
+        "与",
+        "需求",
+        "完整性",
+        "分析"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "需求图",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "构建",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "可追溯性",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "矩阵",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "，",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "完成",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "场景",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "验证",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "与",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "需求",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "完整性",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "分析",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于用例图-活动图动态组合建模功能行为，经模块化分解形成技术独立的逻辑架构",
+      "tokens": [
+        "基于",
+        "用例图",
+        "-",
+        "活动图",
+        "动态",
+        "组合",
+        "建模",
+        "功能",
+        "行为",
+        "，",
+        "经",
+        "模块化",
+        "分解",
+        "形成",
+        "技术",
+        "独立",
+        "的",
+        "逻辑",
+        "架构"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "用例图",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "-",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "活动图",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "动态",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "组合",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "建模",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "功能",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "行为",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "，",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "经",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "模块化",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "分解",
+          "head": 11,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "形成",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "技术",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "独立",
+          "head": 19,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 18,
+          "form": "逻辑",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "架构",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过块定义图与内部块图构建物理模型，借助接口标准化实现逻辑组件与物理实体的解耦设计",
+      "tokens": [
+        "通过",
+        "块",
+        "定义图",
+        "与",
+        "内部",
+        "块",
+        "图",
+        "构建",
+        "物理",
+        "模型",
+        "，",
+        "借助",
+        "接口",
+        "标准化",
+        "实现",
+        "逻辑",
+        "组件",
+        "与",
+        "物理",
+        "实体",
+        "的",
+        "解耦",
+        "设计"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 8,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "块",
+          "head": 3,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "定义图",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "内部",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "块",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "图",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "构建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "物理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "模型",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "，",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "借助",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "接口",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "标准化",
+          "head": 12,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "实现",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "逻辑",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "组件",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "与",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "物理",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "实体",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 20,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 22,
+          "form": "解耦",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "设计",
+          "head": 15,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "案例验证表明",
+      "tokens": [
+        "案例",
+        "验证",
+        "表明"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "案例",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "验证",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "该方法在降低功能重叠率、提升预测效率、敏捷评估状态影响并降低虚警率上具有显著成效",
+      "tokens": [
+        "该",
+        "方法",
+        "在",
+        "降低",
+        "功能",
+        "重叠率",
+        "、",
+        "提升",
+        "预测",
+        "效率",
+        "、",
+        "敏捷",
+        "评估",
+        "状态",
+        "影响",
+        "并",
+        "降低",
+        "虚警率",
+        "上",
+        "具有",
+        "显著",
+        "成效"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "该",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "方法",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "在",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "降低",
+          "head": 19,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "功能",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "重叠率",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "提升",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "效率",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 4,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "敏捷",
+          "head": 13,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 13,
+          "form": "评估",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "状态",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "影响",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "VV"
+        },
+        {
+          "id": 16,
+          "form": "并",
+          "head": 4,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 17,
+          "form": "降低",
+          "head": 4,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "虚警率",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "上",
+          "head": 3,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 20,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "显著",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "成效",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "研究成果不仅构建了航空发动机健康管理系统的全生命周期建模范式",
+      "tokens": [
+        "研究",
+        "成果",
+        "不仅",
+        "构建",
+        "了",
+        "航空",
+        "发动机",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "全",
+        "生命",
+        "周期",
+        "建模",
+        "范式"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "研究",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "成果",
+          "head": 4,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "不仅",
+          "head": 4,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 4,
+          "form": "构建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "了",
+          "head": 4,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 6,
+          "form": "航空",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发动机",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 16,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "全",
+          "head": 13,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 13,
+          "form": "生命",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "周期",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "建模",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "范式",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "实现了场景-需求-功能-物理全链条追溯",
+      "tokens": [
+        "实现",
+        "了",
+        "场景",
+        "-",
+        "需求",
+        "-",
+        "功能",
+        "-",
+        "物理",
+        "全",
+        "链条",
+        "追溯"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "实现",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "场景",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "-",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 5,
+          "form": "需求",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "-",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "功能",
+          "head": 12,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "-",
+          "head": 12,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "物理",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "全",
+          "head": 11,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 11,
+          "form": "链条",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "追溯",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "拓展了图学方法在MBSE领域的工程应用场景",
+      "tokens": [
+        "拓展",
+        "了",
+        "图学",
+        "方法",
+        "在",
+        "MBSE",
+        "领域",
+        "的",
+        "工程",
+        "应用",
+        "场景"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "拓展",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "图学",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "方法",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "在",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "MBSE",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 7,
+          "form": "领域",
+          "head": 5,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "工程",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "应用",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "场景",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "其多视图协同建模机制对复杂装备系统设计具有普适参考价值",
+      "tokens": [
+        "其",
+        "多",
+        "视图",
+        "协同",
+        "建模",
+        "机制",
+        "对",
+        "复杂",
+        "装备",
+        "系统",
+        "设计",
+        "具有",
+        "普适",
+        "参考",
+        "价值"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "其",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 2,
+          "form": "多",
+          "head": 6,
+          "deprel": "nummod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "视图",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "协同",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 5,
+          "form": "建模",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "机制",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "对",
+          "head": 12,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "复杂",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "装备",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "系统",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "设计",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "具有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "普适",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "参考",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "价值",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

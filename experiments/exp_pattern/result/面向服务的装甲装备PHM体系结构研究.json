@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "面向服务的装甲装备PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "适应",
+    "object": "装甲装备维修保障方式改革",
+    "object_type": "需求"
+  },
+  {
+    "subject": "典型PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "具有",
+    "object": "共性特征",
+    "object_type": "特征"
+  },
+  {
+    "subject": "面向服务的装甲装备PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "结合",
+    "object": "面向服务架构的原理",
+    "object_type": "技术原理"
+  },
+  {
+    "subject": "面向服务的装甲装备PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "结合",
+    "object": "装甲装备综合电子信息系统的特点",
+    "object_type": "特征"
+  },
+  {
+    "subject": "面向服务的装甲装备PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "具有",
+    "object": "分布式特点",
+    "object_type": "特征"
+  },
+  {
+    "subject": "面向服务的装甲装备PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "具有",
+    "object": "层次化特点",
+    "object_type": "特征"
+  },
+  {
+    "subject": "面向服务的装甲装备PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "具有",
+    "object": "开放性特点",
+    "object_type": "特征"
+  },
+  {
+    "subject": "面向服务的装甲装备PHM体系结构",
+    "subject_type": "体系结构",
+    "relation": "满足",
+    "object": "装甲装备PHM系统分布式应用环境要求",
+    "object_type": "需求"
+  }
+]

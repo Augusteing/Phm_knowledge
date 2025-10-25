@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "故障预测与健康管理",
+    "subject_type": "技术",
+    "relation": "关联",
+    "object": "视情维修",
+    "object_type": "维修策略"
+  },
+  {
+    "subject": "故障预测与健康管理",
+    "subject_type": "技术",
+    "relation": "关联",
+    "object": "自主后勤",
+    "object_type": "后勤策略"
+  },
+  {
+    "subject": "视情维修",
+    "subject_type": "维修策略",
+    "relation": "关联",
+    "object": "自主后勤",
+    "object_type": "后勤策略"
+  },
+  {
+    "subject": "故障预测与健康管理",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "PHM应用模式",
+    "object_type": "应用模式"
+  },
+  {
+    "subject": "故障预测与健康管理",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "PHM发展趋势",
+    "object_type": "发展趋势"
+  },
+  {
+    "subject": "飞机故障预测与健康管理(PHM)系统框架",
+    "subject_type": "系统框架",
+    "relation": "用于实现",
+    "object": "故障预测与健康管理",
+    "object_type": "技术"
+  },
+  {
+    "subject": "物联网技术",
+    "subject_type": "技术",
+    "relation": "用于构建",
+    "object": "自主保障系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "自主保障系统",
+    "subject_type": "系统",
+    "relation": "提升",
+    "object": "飞机自主保障能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "故障预测与健康管理",
+    "subject_type": "技术",
+    "relation": "关联",
+    "object": "持续采办与全寿命支持(CALS)",
+    "object_type": "管理策略"
+  },
+  {
+    "subject": "故障预测与健康管理",
+    "subject_type": "技术",
+    "relation": "提供支持",
+    "object": "装备采购",
+    "object_type": "活动"
+  },
+  {
+    "subject": "故障预测与健康管理",
+    "subject_type": "技术",
+    "relation": "提供支持",
+    "object": "全寿命支持",
+    "object_type": "活动"
+  }
+]

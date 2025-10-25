@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "基于实时报文数据的APU故障预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "QAR数据实时性欠缺问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于实时报文数据的APU故障预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "QAR数据精度不足问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于实时报文数据的APU故障预测方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "实时报文数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "基于实时报文数据的APU故障预测方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "多参数故障预测模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "多参数故障预测模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "支持向量机",
+    "object_type": "算法"
+  },
+  {
+    "subject": "相关性分析",
+    "subject_type": "方法",
+    "relation": "用于选取",
+    "object": "表征APU运行性能的参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "相关性分析",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "特征选择算法解释性差的问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "数据集标注",
+    "subject_type": "步骤",
+    "relation": "依据",
+    "object": "参数阈值",
+    "object_type": "依据"
+  },
+  {
+    "subject": "数据集标注",
+    "subject_type": "步骤",
+    "relation": "依据",
+    "object": "维修记录",
+    "object_type": "数据"
+  },
+  {
+    "subject": "多参数故障预测模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "预测正确率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "多参数故障预测模型",
+    "subject_type": "模型",
+    "relation": "为...提供参考",
+    "object": "APU视情维修策略",
+    "object_type": "策略"
+  }
+]

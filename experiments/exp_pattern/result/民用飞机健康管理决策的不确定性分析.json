@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "飞机健康管理",
+    "subject_type": "管理方法",
+    "relation": "保证",
+    "object": "飞行安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "飞机健康管理",
+    "subject_type": "管理方法",
+    "relation": "保证",
+    "object": "经济",
+    "object_type": "目标"
+  },
+  {
+    "subject": "健康管理决策",
+    "subject_type": "决策",
+    "relation": "存在",
+    "object": "不确定性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "状态监测",
+    "subject_type": "过程",
+    "relation": "引入",
+    "object": "不确定性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "信号检测与处理",
+    "subject_type": "过程",
+    "relation": "引入",
+    "object": "不确定性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "阈值确定",
+    "subject_type": "过程",
+    "relation": "引入",
+    "object": "不确定性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于模型的寿命预测",
+    "subject_type": "技术",
+    "relation": "引入",
+    "object": "不确定性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "维修决策",
+    "subject_type": "决策",
+    "relation": "引入",
+    "object": "不确定性",
+    "object_type": "问题"
+  },
+  {
+    "subject": "对策",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "降低不确定性",
+    "object_type": "目标"
+  }
+]

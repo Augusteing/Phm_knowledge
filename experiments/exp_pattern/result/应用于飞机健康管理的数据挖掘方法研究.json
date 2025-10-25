@@ -1,0 +1,44 @@
+[
+  {
+    "subject": "数据挖掘技术",
+    "subject_type": "技术",
+    "relation": "分析",
+    "object": "数据资源",
+    "object_type": "数据"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "察觉",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "分类",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "预报",
+    "object": "故障",
+    "object_type": "事件"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "优化",
+    "object": "飞机关键部件寿命",
+    "object_type": "属性"
+  },
+  {
+    "subject": "飞机健康管理系统",
+    "subject_type": "系统",
+    "relation": "减少",
+    "object": "飞机运行和维护的费用",
+    "object_type": "成本"
+  }
+]

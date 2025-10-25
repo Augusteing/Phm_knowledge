@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "AHM技术",
+    "subject_type": "技术",
+    "relation": "改善",
+    "object": "维修",
+    "object_type": "任务"
+  },
+  {
+    "subject": "AHM技术",
+    "subject_type": "技术",
+    "relation": "改善",
+    "object": "备件",
+    "object_type": "资源"
+  },
+  {
+    "subject": "AHM技术",
+    "subject_type": "技术",
+    "relation": "改善",
+    "object": "人员配置",
+    "object_type": "资源"
+  },
+  {
+    "subject": "飞机设计理念",
+    "subject_type": "理念",
+    "relation": "转向",
+    "object": "完全自动化",
+    "object_type": "趋势"
+  },
+  {
+    "subject": "AHM技术",
+    "subject_type": "技术",
+    "relation": "监测",
+    "object": "关键部位",
+    "object_type": "部件"
+  },
+  {
+    "subject": "AHM技术",
+    "subject_type": "技术",
+    "relation": "处理",
+    "object": "异常",
+    "object_type": "故障"
+  },
+  {
+    "subject": "AHM技术",
+    "subject_type": "技术",
+    "relation": "处理",
+    "object": "失效",
+    "object_type": "故障"
+  },
+  {
+    "subject": "AHM技术",
+    "subject_type": "技术",
+    "relation": "确保",
+    "object": "飞机的安全运行",
+    "object_type": "目标"
+  }
+]

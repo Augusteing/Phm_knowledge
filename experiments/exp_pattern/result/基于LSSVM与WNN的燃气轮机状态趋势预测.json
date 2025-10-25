@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "LSSVM与WNN组合预测方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "燃气轮机状态趋势预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "LSSVM与WNN组合预测方法",
+    "subject_type": "方法",
+    "relation": "组合",
+    "object": "最小二乘支持向量机",
+    "object_type": "算法"
+  },
+  {
+    "subject": "LSSVM与WNN组合预测方法",
+    "subject_type": "方法",
+    "relation": "组合",
+    "object": "小波神经网络",
+    "object_type": "算法"
+  },
+  {
+    "subject": "小波神经网络",
+    "subject_type": "算法",
+    "relation": "预测",
+    "object": "残差",
+    "object_type": "数据"
+  },
+  {
+    "subject": "残差",
+    "subject_type": "数据",
+    "relation": "计算自",
+    "object": "实际参数数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "残差",
+    "subject_type": "数据",
+    "relation": "计算自",
+    "object": "LSSVM预测结果",
+    "object_type": "数据"
+  },
+  {
+    "subject": "LSSVM与WNN组合预测方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "某型燃气轮机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "LSSVM与WNN组合预测方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "0.12%相对误差",
+    "object_type": "性能指标"
+  }
+]

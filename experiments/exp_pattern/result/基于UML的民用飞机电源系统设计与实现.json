@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "面向对象设计方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "统一建模语言(UML)",
+    "object_type": "方法"
+  },
+  {
+    "subject": "分层插件设计方法",
+    "subject_type": "方法",
+    "relation": "缩短",
+    "object": "软件开发周期",
+    "object_type": "指标"
+  },
+  {
+    "subject": "分层插件设计方法",
+    "subject_type": "方法",
+    "relation": "降低",
+    "object": "成本",
+    "object_type": "指标"
+  },
+  {
+    "subject": "UML设计",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "用例图",
+    "object_type": "模型"
+  },
+  {
+    "subject": "UML设计",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "静态结构模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "UML设计",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "动态行为模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "系统设计",
+    "subject_type": "设计",
+    "relation": "实现",
+    "object": "实时健康监控",
+    "object_type": "功能"
+  },
+  {
+    "subject": "系统设计",
+    "subject_type": "设计",
+    "relation": "实现",
+    "object": "配电管理",
+    "object_type": "功能"
+  },
+  {
+    "subject": "系统设计",
+    "subject_type": "设计",
+    "relation": "实现",
+    "object": "自身健康管理",
+    "object_type": "功能"
+  },
+  {
+    "subject": "嵌入式软件",
+    "subject_type": "软件",
+    "relation": "具有",
+    "object": "可移植性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "嵌入式软件",
+    "subject_type": "软件",
+    "relation": "具有",
+    "object": "可扩展性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "软硬件独立设计",
+    "subject_type": "方法",
+    "relation": "缩短",
+    "object": "系统开发周期",
+    "object_type": "指标"
+  }
+]

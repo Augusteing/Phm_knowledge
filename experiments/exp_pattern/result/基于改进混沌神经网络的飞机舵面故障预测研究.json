@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "混沌神经网络模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "混沌序列的相空间重构理论",
+    "object_type": "理论"
+  },
+  {
+    "subject": "混沌神经网络模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "BP神经网络预测理论",
+    "object_type": "理论"
+  },
+  {
+    "subject": "混沌神经网络模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "时间序列预测",
+    "object_type": "方法"
+  },
+  {
+    "subject": "基本BP神经网络",
+    "subject_type": "模型",
+    "relation": "采用",
+    "object": "梯度学习算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "梯度学习算法",
+    "subject_type": "算法",
+    "relation": "存在问题",
+    "object": "收敛速度较慢",
+    "object_type": "问题"
+  },
+  {
+    "subject": "改进的Levenberg-Marquart优化学习算法",
+    "subject_type": "算法",
+    "relation": "用于训练",
+    "object": "混沌神经网络模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "混沌神经网络模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "混沌神经网络模型",
+    "subject_type": "模型",
+    "relation": "改善",
+    "object": "网络收敛速度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "混沌神经网络模型",
+    "subject_type": "模型",
+    "relation": "避免",
+    "object": "神经网络局部极小问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "混沌神经网络模型",
+    "subject_type": "模型",
+    "relation": "预测",
+    "object": "飞机舵面卡死故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "仿真实验",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "混沌神经网络模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "仿真实验",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "飞机舵面卡死故障数据",
+    "object_type": "数据"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "故障状态类型的判别",
+    "subject_type": "任务",
+    "relation": "是核心环节",
+    "object": "航空装备故障预测系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "故障状态类型的判别",
+    "subject_type": "任务",
+    "relation": "影响",
+    "object": "故障预测的准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于马氏距离的故障预测方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "航空装备的故障状态类型判别问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于马氏距离的故障预测方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "状态数据库矩阵",
+    "object_type": "模型组件"
+  },
+  {
+    "subject": "基于马氏距离的故障预测方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "状态判别模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "基于马氏距离的故障预测方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "某型飞机火控系统",
+    "object_type": "应用对象"
+  },
+  {
+    "subject": "基于马氏距离的故障预测方法",
+    "subject_type": "方法",
+    "relation": "达到",
+    "object": "98.48%的在线平均故障预测准确度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "基于马氏距离的故障预测方法",
+    "subject_type": "方法",
+    "relation": "达到",
+    "object": "97.77%的离线平均故障预测准确度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "马氏距离",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "应用和推广价值",
+    "object_type": "价值"
+  },
+  {
+    "subject": "马氏距离",
+    "subject_type": "技术",
+    "relation": "用于",
+    "object": "航空装备的故障预测",
+    "object_type": "应用"
+  }
+]

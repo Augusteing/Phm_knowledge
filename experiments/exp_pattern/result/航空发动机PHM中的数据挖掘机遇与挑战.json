@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "确保",
+    "object": "飞行安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "二级视情维修",
+    "object_type": "维护策略"
+  },
+  {
+    "subject": "预测与健康管理(PHM)",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "先进航空发动机",
+    "object_type": "装备"
+  },
+  {
+    "subject": "数据挖掘",
+    "subject_type": "技术",
+    "relation": "是核心技术",
+    "object": "预测与健康管理(PHM)",
+    "object_type": "技术"
+  },
+  {
+    "subject": "数据挖掘",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "发动机健康状态评估",
+    "object_type": "任务"
+  },
+  {
+    "subject": "数据挖掘",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "诊断",
+    "object_type": "任务"
+  },
+  {
+    "subject": "数据挖掘",
+    "subject_type": "技术",
+    "relation": "实现",
+    "object": "剩余寿命预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "响应",
+    "object": "军事需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "航空发动机PHM技术",
+    "subject_type": "技术",
+    "relation": "面临",
+    "object": "关键数据挖掘问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "数据挖掘问题",
+    "subject_type": "问题",
+    "relation": "具有",
+    "object": "技术挑战",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "计算机学科",
+    "subject_type": "学科",
+    "relation": "推动",
+    "object": "发动机PHM技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空宇航学科",
+    "subject_type": "学科",
+    "relation": "推动",
+    "object": "发动机PHM技术",
+    "object_type": "技术"
+  }
+]

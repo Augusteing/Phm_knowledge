@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "传统模型匹配检测方法",
+    "subject_type": "传统方法",
+    "relation": "适用于",
+    "object": "线性气动模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "传统模型匹配检测方法",
+    "subject_type": "传统方法",
+    "relation": "受影响于",
+    "object": "操纵和机动状态",
+    "object_type": "影响因素"
+  },
+  {
+    "subject": "传统方法",
+    "subject_type": "传统方法",
+    "relation": "忽略",
+    "object": "实时飞行状态和参数变化",
+    "object_type": "参数"
+  },
+  {
+    "subject": "新算法",
+    "subject_type": "新方法",
+    "relation": "实现",
+    "object": "在线故障模式预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "新算法",
+    "subject_type": "新方法",
+    "relation": "引入",
+    "object": "实时飞行状态及参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "新算法",
+    "subject_type": "新方法",
+    "relation": "考虑",
+    "object": "实时飞行状态、舵面偏转、质量、惯量等参数变化",
+    "object_type": "参数"
+  },
+  {
+    "subject": "比较实时估算值与实测值",
+    "subject_type": "操作",
+    "relation": "获得",
+    "object": "残差",
+    "object_type": "指标"
+  },
+  {
+    "subject": "故障模式空间最优方向匹配法",
+    "subject_type": "新方法",
+    "relation": "用于",
+    "object": "故障隔离",
+    "object_type": "任务"
+  },
+  {
+    "subject": "故障模式空间最优方向匹配法",
+    "subject_type": "新方法",
+    "relation": "减小",
+    "object": "残差决策的计算量",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "新算法",
+    "subject_type": "新方法",
+    "relation": "适用于",
+    "object": "多种故障气动模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "新算法",
+    "subject_type": "新方法",
+    "relation": "不受影响",
+    "object": "机动状态、舵面操纵",
+    "object_type": "影响因素"
+  }
+]

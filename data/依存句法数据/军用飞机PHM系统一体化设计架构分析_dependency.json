@@ -1,0 +1,1120 @@
+{
+  "title": "军用飞机PHM系统一体化设计架构分析",
+  "summary": "军用飞机故障预测与健康管理（PHM）系统设计与工程应用存在设计标准缺失、复杂度高、准确率低等问题。通过对PHM系统数据、结构、功能维度的设计需求分析，提出三维多相迭代设计准则；基于三维多相设计准则对PHM系统设计流程进行梳理；提出基于软硬件协同加速的健康管理实时化、基于知识图谱的知识逻辑可视化、基于MBSE的PHM系统模型化的三化一体设计架构，并通过多领域模型联合仿真进行验证。结果表明：该设计架构实现了5.63倍的加速计算效果与82.7%的计算功耗缩减，提升了PHM系统知识与设计需求管理的可追溯性。",
+  "analyzed_sentences": [
+    {
+      "sentence": "军用飞机故障预测与健康管理（PHM）系统设计与工程应用存在设计标准缺失、复杂度高、准确率低等问题",
+      "tokens": [
+        "军用",
+        "飞机",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "（",
+        "PHM",
+        "）",
+        "系统",
+        "设计",
+        "与",
+        "工程",
+        "应用",
+        "存在",
+        "设计",
+        "标准",
+        "缺失",
+        "、",
+        "复杂度",
+        "高",
+        "、",
+        "准确率",
+        "低",
+        "等",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "军用",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "飞机",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "故障",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "预测",
+          "head": 7,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 6,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "（",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "PHM",
+          "head": 7,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "）",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "设计",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "与",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "工程",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "应用",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "存在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "设计",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "标准",
+          "head": 19,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "缺失",
+          "head": 27,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 20,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "复杂度",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "高",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 23,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 24,
+          "form": "准确率",
+          "head": 25,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "低",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "VA"
+        },
+        {
+          "id": 26,
+          "form": "等",
+          "head": 19,
+          "deprel": "dep",
+          "pos": "ETC"
+        },
+        {
+          "id": 27,
+          "form": "问题",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "通过对PHM系统数据、结构、功能维度的设计需求分析，提出三维多相迭代设计准则",
+      "tokens": [
+        "通过",
+        "对",
+        "PHM",
+        "系统",
+        "数据",
+        "、",
+        "结构",
+        "、",
+        "功能",
+        "维度",
+        "的",
+        "设计",
+        "需求",
+        "分析",
+        "，",
+        "提出",
+        "三",
+        "维",
+        "多",
+        "相",
+        "迭代",
+        "设计",
+        "准则"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "对",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "PHM",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "数据",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "结构",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "功能",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "维度",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "设计",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "需求",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "分析",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "，",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "三",
+          "head": 18,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 18,
+          "form": "维",
+          "head": 23,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 19,
+          "form": "多",
+          "head": 20,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 20,
+          "form": "相",
+          "head": 21,
+          "deprel": "dep",
+          "pos": "JJ"
+        },
+        {
+          "id": 21,
+          "form": "迭代",
+          "head": 23,
+          "deprel": "rcmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "设计",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "准则",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于三维多相设计准则对PHM系统设计流程进行梳理",
+      "tokens": [
+        "基于",
+        "三维",
+        "多相",
+        "设计",
+        "准则",
+        "对",
+        "PHM",
+        "系统",
+        "设计",
+        "流程",
+        "进行",
+        "梳理"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "三维",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "多相",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "设计",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "准则",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "PHM",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "设计",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "流程",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "梳理",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出基于软硬件协同加速的健康管理实时化、基于知识图谱的知识逻辑可视化、基于MBSE的PHM系统模型化的三化一体设计架构，并通过多领域模型联合仿真进行验证",
+      "tokens": [
+        "提出",
+        "基于",
+        "软",
+        "硬件",
+        "协同",
+        "加速",
+        "的",
+        "健康",
+        "管理",
+        "实时化",
+        "、",
+        "基于",
+        "知识",
+        "图谱",
+        "的",
+        "知识",
+        "逻辑",
+        "可视化",
+        "、",
+        "基于",
+        "MBSE",
+        "的",
+        "PHM",
+        "系统",
+        "模型化",
+        "的",
+        "三",
+        "化",
+        "一体",
+        "设计",
+        "架构",
+        "，",
+        "并",
+        "通过",
+        "多",
+        "领域",
+        "模型",
+        "联合",
+        "仿真",
+        "进行",
+        "验证"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "基于",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "软",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "硬件",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "协同",
+          "head": 6,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 6,
+          "form": "加速",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "健康",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "实时化",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "基于",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "知识",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "图谱",
+          "head": 12,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 16,
+          "form": "知识",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "逻辑",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "可视化",
+          "head": 31,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "、",
+          "head": 31,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "基于",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "MBSE",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "PHM",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "系统",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "模型化",
+          "head": 31,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "的",
+          "head": 25,
+          "deprel": "assm",
+          "pos": "DEC"
+        },
+        {
+          "id": 27,
+          "form": "三",
+          "head": 28,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 28,
+          "form": "化",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "一体",
+          "head": 28,
+          "deprel": "nummod",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "设计",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "架构",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "，",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "并",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 34,
+          "form": "通过",
+          "head": 40,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 35,
+          "form": "多",
+          "head": 36,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 36,
+          "form": "领域",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "模型",
+          "head": 34,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "联合",
+          "head": 39,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 39,
+          "form": "仿真",
+          "head": 34,
+          "deprel": "pccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 41,
+          "form": "验证",
+          "head": 40,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明：该设计架构实现了5.63倍的加速计算效果与82.7%的计算功耗缩减",
+      "tokens": [
+        "结果",
+        "表明",
+        "：",
+        "该",
+        "设计",
+        "架构",
+        "实现",
+        "了",
+        "5.63",
+        "倍",
+        "的",
+        "加速",
+        "计算",
+        "效果",
+        "与",
+        "82.7%",
+        "的",
+        "计算",
+        "功耗",
+        "缩减"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "：",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "该",
+          "head": 6,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 5,
+          "form": "设计",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "架构",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "实现",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "了",
+          "head": 7,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 9,
+          "form": "5.63",
+          "head": 10,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 10,
+          "form": "倍",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "M"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "加速",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "计算",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "效果",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "与",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "82.7%",
+          "head": 20,
+          "deprel": "assmod",
+          "pos": "CD"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "计算",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "功耗",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "缩减",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "VV"
+        }
+      ]
+    },
+    {
+      "sentence": "提升了PHM系统知识与设计需求管理的可追溯性",
+      "tokens": [
+        "提升",
+        "了",
+        "PHM",
+        "系统",
+        "知识",
+        "与",
+        "设计",
+        "需求",
+        "管理",
+        "的",
+        "可追溯性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提升",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "PHM",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "系统",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "知识",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "与",
+          "head": 9,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 7,
+          "form": "设计",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "需求",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "管理",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "的",
+          "head": 9,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 11,
+          "form": "可追溯性",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

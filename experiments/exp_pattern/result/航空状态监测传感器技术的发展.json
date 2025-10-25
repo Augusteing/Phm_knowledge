@@ -1,0 +1,44 @@
+[
+  {
+    "subject": "航空状态监测传感器",
+    "subject_type": "设备",
+    "relation": "支撑",
+    "object": "飞机健康管理",
+    "object_type": "系统"
+  },
+  {
+    "subject": "新型航空状态监测传感器",
+    "subject_type": "设备",
+    "relation": "基于",
+    "object": "MEMS",
+    "object_type": "技术"
+  },
+  {
+    "subject": "新型航空状态监测传感器",
+    "subject_type": "设备",
+    "relation": "基于",
+    "object": "光纤",
+    "object_type": "技术"
+  },
+  {
+    "subject": "新型航空状态监测传感器",
+    "subject_type": "设备",
+    "relation": "基于",
+    "object": "无线传感网络",
+    "object_type": "技术"
+  },
+  {
+    "subject": "新型航空状态监测传感器",
+    "subject_type": "设备",
+    "relation": "基于",
+    "object": "静电感应原理",
+    "object_type": "原理"
+  },
+  {
+    "subject": "新型航空状态监测传感器",
+    "subject_type": "设备",
+    "relation": "属于",
+    "object": "航空状态监测传感器",
+    "object_type": "设备"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "航空发动机故障预测技术",
+    "subject_type": "技术",
+    "relation": "满足",
+    "object": "故障预测与健康管理系统需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "航空发动机故障预测技术",
+    "subject_type": "技术",
+    "relation": "针对",
+    "object": "气路故障预测问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "本研究",
+    "subject_type": "研究",
+    "relation": "研究对象为",
+    "object": "涡轮风扇发动机",
+    "object_type": "设备"
+  },
+  {
+    "subject": "性能健康参数",
+    "subject_type": "参数",
+    "relation": "扩展至",
+    "object": "状态方程",
+    "object_type": "方程"
+  },
+  {
+    "subject": "卡尔曼滤波器",
+    "subject_type": "算法",
+    "relation": "估计",
+    "object": "状态变量",
+    "object_type": "变量"
+  },
+  {
+    "subject": "卡尔曼滤波器",
+    "subject_type": "算法",
+    "relation": "估计",
+    "object": "健康参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "健康参数",
+    "subject_type": "参数",
+    "relation": "用于预测",
+    "object": "气路故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "扩展卡尔曼滤波器",
+    "subject_type": "算法",
+    "relation": "估计",
+    "object": "健康参数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "状态估计器",
+    "subject_type": "估计器",
+    "relation": "估计",
+    "object": "性能退化系数",
+    "object_type": "参数"
+  },
+  {
+    "subject": "状态估计器",
+    "subject_type": "估计器",
+    "relation": "预测",
+    "object": "故障发生的时间",
+    "object_type": "时间"
+  },
+  {
+    "subject": "航空发动机故障预测技术",
+    "subject_type": "技术",
+    "relation": "提供理论依据",
+    "object": "航空装备的保障",
+    "object_type": "应用"
+  },
+  {
+    "subject": "仿真",
+    "subject_type": "活动",
+    "relation": "基于",
+    "object": "涡扇发动机数学模型",
+    "object_type": "模型"
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "Copula相似性",
+      "type": "研究方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "剩余寿命预测",
+      "type": "研究方法"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "线性退化模型",
+      "type": "模型"
+    },
+    {
+      "name": "Copula函数",
+      "type": "模型"
+    },
+    {
+      "name": "传感器",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "Kendall秩相关系数",
+      "type": "性能指标"
+    },
+    {
+      "name": "Akaike信息准则",
+      "type": "性能指标"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "预测与健康管理",
+      "type": "研究领域"
+    },
+    {
+      "name": "传统方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "Frank Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Clayton Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Gumbel Copula",
+      "type": "模型"
+    },
+    {
+      "name": "Joe Copula",
+      "type": "模型"
+    },
+    {
+      "name": "标准差",
+      "type": "性能指标"
+    },
+    {
+      "name": "Ps30",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "T50",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "BPR",
+      "type": "传感器/监测参数"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Copula相似性",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "Copula相似性",
+      "relation": "改进了",
+      "tail": "传统方法"
+    },
+    {
+      "head": "Copula相似性",
+      "relation": "基于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "Copula相似性",
+      "relation": "用于",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "线性退化模型",
+      "relation": "用于",
+      "tail": "传感器"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "用于",
+      "tail": "传感器"
+    },
+    {
+      "head": "Kendall秩相关系数",
+      "relation": "用于",
+      "tail": "Copula相似性"
+    },
+    {
+      "head": "Akaike信息准则",
+      "relation": "用于",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "C-MAPSS数据集",
+      "relation": "支持",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "剩余寿命预测",
+      "relation": "应用于",
+      "tail": "预测与健康管理"
+    },
+    {
+      "head": "Frank Copula",
+      "relation": "类型为",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "Clayton Copula",
+      "relation": "类型为",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "Gumbel Copula",
+      "relation": "类型为",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "Joe Copula",
+      "relation": "类型为",
+      "tail": "Copula函数"
+    },
+    {
+      "head": "标准差",
+      "relation": "用于",
+      "tail": "剩余寿命预测"
+    },
+    {
+      "head": "Ps30",
+      "relation": "类型为",
+      "tail": "传感器"
+    },
+    {
+      "head": "T50",
+      "relation": "类型为",
+      "tail": "传感器"
+    },
+    {
+      "head": "BPR",
+      "relation": "类型为",
+      "tail": "传感器"
+    }
+  ]
+}

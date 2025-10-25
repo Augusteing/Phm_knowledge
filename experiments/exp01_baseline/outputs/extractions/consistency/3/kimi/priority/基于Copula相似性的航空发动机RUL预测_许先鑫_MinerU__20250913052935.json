@@ -1,0 +1,118 @@
+{
+  "entities": [
+    {
+      "name": "Copula相似性",
+      "type": "研究方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "RUL预测方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "K-means聚类",
+      "type": "算法"
+    },
+    {
+      "name": "Copula函数",
+      "type": "理论基础"
+    },
+    {
+      "name": "传感器",
+      "type": "系统/部件"
+    },
+    {
+      "name": "性能退化特征",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "非线性相关性",
+      "type": "理论基础"
+    },
+    {
+      "name": "C-MAPSS数据集",
+      "type": "数据集"
+    },
+    {
+      "name": "预测误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "PHM",
+      "type": "研究领域"
+    },
+    {
+      "name": "NASA",
+      "type": "组织机构"
+    }
+  ],
+  "relations": [
+    {
+      "head": "Copula相似性",
+      "relation": "应用于",
+      "tail": "航空发动机RUL预测"
+    },
+    {
+      "head": "RUL预测方法",
+      "relation": "基于",
+      "tail": "Copula相似性"
+    },
+    {
+      "head": "K-means聚类",
+      "relation": "用于",
+      "tail": "航空发动机工作状态分类"
+    },
+    {
+      "head": "Copula函数",
+      "relation": "用于",
+      "tail": "建立传感器间的相关性"
+    },
+    {
+      "head": "传感器",
+      "relation": "包含",
+      "tail": "性能退化特征"
+    },
+    {
+      "head": "性能退化特征",
+      "relation": "导致",
+      "tail": "航空发动机故障"
+    },
+    {
+      "head": "非线性相关性",
+      "relation": "描述",
+      "tail": "性能退化特征间的相关性"
+    },
+    {
+      "head": "C-MAPSS数据集",
+      "relation": "支持",
+      "tail": "RUL预测方法"
+    },
+    {
+      "head": "预测误差",
+      "relation": "评估指标为",
+      "tail": "RUL预测方法"
+    },
+    {
+      "head": "预测精度",
+      "relation": "评估指标为",
+      "tail": "RUL预测方法"
+    },
+    {
+      "head": "PHM",
+      "relation": "应用于",
+      "tail": "航空发动机健康管理"
+    },
+    {
+      "head": "NASA",
+      "relation": "提供",
+      "tail": "C-MAPSS数据集"
+    }
+  ]
+}

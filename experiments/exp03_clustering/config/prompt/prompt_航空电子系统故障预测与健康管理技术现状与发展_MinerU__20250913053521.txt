@@ -1,0 +1,440 @@
+# 实体关系抽取Prompt
+
+## 任务描述
+你的角色是一位专业的学术文献实体关系抽取专家，专精于从航空航天领域科研文献中识别和抽取实体及其关系。你的任务是通读给定文本，抽取文本中出现的核心实体，及其对应的关系，并以JSON格式输出。
+
+## 实体定义
+文献中出现的核心概念：算法、方法、模型、系统、故障、指标等都可视为实体。实体可以包括：
+- **研究领域**
+定义 ：PHM相关的研究方向和应用领域 
+示例 ：故障预测与健康管理(PHM)、故障诊断、剩余使用寿命预测(RUL)、健康状态评估、预测性维护等
+- **研究方法**
+定义 ：PHM研究中采用的具体方法和技术路线 
+示例 ：寿命预测、趋势预测、健康预测、风险评估、状态监测、故障诊断、性能评估等
+- **理论基础**
+定义 ：支撑PHM技术的基础理论和数学原理 
+示例 ：信号处理理论、机器学习理论、可靠性理论、概率统计理论、控制理论等
+- **模型**
+定义 ：基于特定算法构建的具体结构或实例 示例 ：LSTM神经网络、Transformer模型、深度置信网络(DBN)、隐马尔可夫模型(HMM)、ARIMA模型等
+- **算法**
+定义 ：用于解决特定问题的计算方法和程序步骤 
+示例 ：遗传算法、粒子群优化、支持向量机(SVM)、随机森林、卡尔曼滤波等
+- **系统/部件**
+定义 ：航空航天设备的系统或组成部件 
+示例 ：航空发动机、齿轮箱、轴承、叶片、燃油系统、液压系统、航电系统等
+- **故障模式**
+定义 ：设备可能出现的故障类型和失效模式 
+示例 ：轴承磨损、疲劳裂纹、腐蚀、过热、振动异常、性能退化等
+- **数据集**
+定义 ：用于训练和验证模型的标准数据集 
+示例 ：C-MAPSS数据集、CWRU轴承数据集、IMS轴承数据集、PHM Challenge数据集等
+- **传感器/监测参数**
+定义 ：用于监测设备状态的传感器设备和监测参数 
+示例 ：振动传感器、温度传感器、压力传感器、转速、振动信号、温度、压力等
+- **特征/健康指标**
+定义 ：表征设备健康状态的特征参数和指标 
+示例 ：剩余使用寿命(RUL)、健康指标(HI)、退化指标、频域特征、时域特征、统计特征等
+- **性能指标**
+定义 ：评估模型或方法性能的量化指标 
+示例 ：准确率、精确率、召回率、F1分数、均方根误差(RMSE)、平均绝对误差(MAE)等
+- **软件工具**
+定义 ：用于PHM研究和应用的软件平台和工具 
+示例 ：MATLAB、Python、TensorFlow、PyTorch、Simulink、LabVIEW等
+- **应用场景**
+定义 ：PHM技术的具体应用环境和场景 
+示例 ：发动机健康监测、结构健康监测、预测性维护、故障诊断系统、机载健康管理等
+
+## 关系定义
+文献中的实体之间通常存在逻辑、演进、依赖、功能、组合、比较、创新、评价或因果等联系。关系类型包括但不限于：
+### 1. 技术演进类
+- 发展为 ：传统RNN发展为LSTM
+- 改进了 ：注意力机制改进了Transformer性能
+- 演化成 ：专家系统演化成机器学习方法
+- 升级为 ：基础模型升级为集成模型
+### 2. 依赖关系类
+- 基于 ：健康预测模型基于振动信号特征
+- 依据 ：故障诊断依据传感器数据；轴承剩余寿命预测模型参数依据多传感器振动和温度信号
+- 利用 ：深度学习利用大数据优势
+- 采用 ：系统采用多传感器融合技术
+- 建立在 ：深度卷积残差网络模型建立在卷积神经网络理论
+### 3. 功能关系类
+- 应用于 ：机器学习应用于故障预测
+- 用于 ：卡尔曼滤波用于状态估计
+- 解决 ：深度学习解决特征提取问题
+- 实现 ：神经网络实现非线性映射
+- 支持 ：传感器网络支持实时监测
+- 处理 ：主成分分析方法处理航空发动机多维传感器振动数据
+- 预测/诊断 ：LSTM模型预测飞机发动机轴承剩余寿命
+### 4. 因果关系类
+- 导致 ：轴承磨损导致振动异常；高温导致涡轮叶片疲劳加速
+- 引起 ：温度升高引起性能退化；润滑不足引起齿轮磨损
+- 造成 ：疲劳载荷造成裂纹扩展
+- 产生 ：故障产生异常信号；振动异常产生轴承早期故障信号
+- 影响 ：载荷波动影响剩余寿命预测精度
+### 5. 组合关系类
+- 包含 ：PHM系统包含数据采集模块
+- 包括 ：航空装备可用度影响因素包括装备系统的构成及其可靠性、维修性参数
+- 组成 ：多个传感器组成监测网络
+- 结合 ：物理模型结合数据驱动方法
+- 融合 ：多源信息融合提高精度；多传感器数据融合方法融合时域和频域振动特征
+- 由…组成 ：传感器系统由加速度传感器、温度传感器和压力传感器组成
+### 6. 比较关系类
+- 优于 ：深度学习优于传统方法
+- 超越 ：新算法超越现有基准
+- 区别于 ：监督学习区别于无监督学习
+- 对比 ：不同方法的性能对比；基于Copula相似性的航空发动机RUL预测方法对比传统方法
+### 7. 创新关系类
+- 提出了 ：本文提出了一种结合小波变换的轴承故障诊断方法
+- 开发了 ：团队开发了创新算法
+- 设计了 ：研究设计了新型传感器
+- 创建了 ：本文创建了标准数据集
+- 创新了 ：多尺度特征融合方法创新了不同时间分辨率振动信号的联合分析
+- 突破了 ：Deep RUL预测方法突破了小样本寿命预测的限制
+### 8. 结果评价类
+- 评价指标是 ：RUL预测模型评价指标是均方根误差和平均绝对百分比误差
+- 得出 ：RUL预测模型得出航空发动机剩余寿命的数值估计
+### 关系抽取指导原则
+1.全面性 ：不遗漏任何有意义的实体间联系
+2.创新性 ：特别关注学术文献中的创新关系和技术演进
+3.灵活性 ：关系类型不限于上述分类，可根据实际语义创建新关系
+4.动态性 ：关注时间维度上的变化和发展关系
+5.隐含性 ：挖掘文本中隐含但语义明确的关系
+关系只需反映实体间实际存在的语义联系，具体类型无需严格限定，允许根据上下文灵活判断。
+
+### 关系抽取指导原则
+1. **全面性**：不遗漏任何有意义的实体间联系
+2. **创新性**：特别关注学术文献中的创新关系和技术演进
+3. **灵活性**：关系类型不限于上述分类，可根据实际语义创建新关系
+4. **动态性**：关注时间维度上的变化和发展关系
+5. **隐含性**：挖掘文本中隐含但语义明确的关系
+
+## schema 定义
+{schema_placeholder}
+
+## 抽取指令
+### 步骤1：核心实体识别
+- 重点扫描 摘要、引言和结论 部分，识别论文的核心研究对象、主要方法和关键成果
+- 从关键段落中提取第一批核心实体（通常是最重要的技术、模型、系统等）
+### 步骤2：关系发现与扩展
+- 围绕已识别的核心实体，在原文中寻找描述它们关系的 动词和关键短语
+- 构建核心关系三元组：(头实体, 关系类型, 尾实体)
+- 将关系中新出现的重要实体加入实体列表，继续寻找它们的关系
+### 步骤3：质量检查与输出
+- 确保relations中的所有实体都在entities列表中
+- 检查实体命名的一致性（统一同义词）
+- 验证关系的逻辑合理性和准确性
+- 按JSON格式输出最终结果
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+
+## 输出格式
+请严格按照以下JSON格式输出结果：
+
+```json
+{
+  "entities": [
+    {
+      "name": "PHM",
+      "type": "技术"
+    },
+    {
+      "name": "综合化系统检测、故障诊断、故障预测及健康管理技术",
+      "type": "技术"
+    },
+    {
+      "name": "系统可用性",
+      "type": "性能指标"
+    },
+    {
+      "name": "维修效率",
+      "type": "性能指标"
+    },
+    {
+      "name": "寿命周期成本",
+      "type": "成本"
+    },
+    {
+      "name": "未来飞机航空电子系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "航空电子故障预测及健康管理（APHM）系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "层次化体系结构",
+      "type": "架构"
+    },
+    {
+      "name": "故障预测",
+      "type": "技术"
+    },
+    {
+      "name": "健康评估",
+      "type": "技术"
+    },
+    {
+      "name": "系统维护",
+      "type": "技术"
+    },
+    {
+      "name": "系统健康诊断解决方案",
+      "type": "研究方法"
+    },
+    {
+      "name": "航空电子系统",
+      "type": "系统/部件"
+    },
+    {
+      "name": "综合航空电子系统",
+      "type": "系统"
+    },
+    {
+      "name": "故障预测技术",
+      "type": "技术"
+    },
+    {
+      "name": "PHM体系结构",
+      "type": "系统"
+    },
+    {
+      "name": "航空电子综合化",
+      "type": "概念"
+    },
+    {
+      "name": "预测与健康管理（PHM)",
+      "type": "技术"
+    },
+    {
+      "name": "故障诊断技术",
+      "type": "技术"
+    },
+    {
+      "name": "外部测试",
+      "type": "技术"
+    },
+    {
+      "name": "BIT",
+      "type": "技术"
+    },
+    {
+      "name": "预测与健康管理(PHM)系统",
+      "type": "系统"
+    },
+    {
+      "name": "综合化、模块化航空电子（MA)系统",
+      "type": "系统"
+    },
+    {
+      "name": "预测",
+      "type": "技术"
+    },
+    {
+      "name": "提高系统可用性",
+      "type": ""
+    },
+    {
+      "name": "降低寿命周期成本",
+      "type": ""
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM",
+      "relation": "是",
+      "tail": "综合化系统检测、故障诊断、故障预测及健康管理技术"
+    },
+    {
+      "head": "PHM",
+      "relation": "是重要手段",
+      "tail": "提高系统可用性"
+    },
+    {
+      "head": "PHM",
+      "relation": "是重要手段",
+      "tail": "降低寿命周期成本"
+    },
+    {
+      "head": "PHM",
+      "relation": "成为关键技术",
+      "tail": "未来飞机航空电子系统"
+    },
+    {
+      "head": "故障预测技术",
+      "relation": "是组成部分",
+      "tail": "PHM体系结构"
+    },
+    {
+      "head": "故障诊断技术",
+      "relation": "演进为",
+      "tail": "外部测试"
+    },
+    {
+      "head": "外部测试",
+      "relation": "演进为",
+      "tail": "BIT"
+    },
+    {
+      "head": "BIT",
+      "relation": "演进为",
+      "tail": "预测与健康管理(PHM)系统"
+    },
+    {
+      "head": "预测与健康管理（PHM)",
+      "relation": "包含关键技术",
+      "tail": "预测"
+    }
+  ]
+}
+```
+
+## 注意事项
+###必须遵守的规则：
+1.严格按照JSON格式输出 ：确保entities和relations数组格式正确
+2.实体类型灵活性 ：不局限于给定的实体类型，可根据文本内容创建新类型
+3.关系类型创新性 ：优先使用已定义的关系类型，但允许根据语义创建新关系
+4.完整概念原则 ：选择最有意义的完整概念作为实体，避免过度分割
+5. **不受schema限制**：给定的schema和示例仅作参考，实体类型和关系类型均不仅限于此
+6. **实体一致性**：确保relations中引用的所有实体都在entities数组中明确定义
+7. **关系准确性**：关系表述应准确反映实体间的真实语义联系
+###特别关注：
+- 技术演进关系 ：重点识别"基于"、"改进"、"发展"、"演化"等创新关系
+- 比较关系 ：注意"优于"、"劣于"、"相似于"、"区别于"等对比关系
+- 应用关系 ：关注"应用于"、"解决"、"处理"等实际应用联系
+- 隐含关系 ：挖掘文本中未明确表述但语义清晰的关系
+
+质量保证：
+- 确保抽取的关系符合航空航天领域的专业知识和常识
+- 避免重复或冗余的实体和关系
+- 保持实体边界的准确性，既不过度合并也不过度分割
+
+
+## 输入数据 
+现在，你将接收到用于处理的本次任务的全部输入数据。
+论文全文:
+```markdown```
+# 航空电子系统故障预测与健康管理技术现状与发展
+
+景博，黄以锋，张建业2（1. 空军工程大学工程学院，陕西西安710038:2. 空军工程大学科研部，陕西西安710051)
+
+摘要：故障预测与健康管理(PHM)技术是比传统的故障诊断技术更高级的故障诊断、预测和健康管理技术，将PHM技术应用于电子系统已成为该技术的重要发展趋势之一。根据当前的研究进展，总结了电子系统故障预测的4种实现方法：特征参数法、预警电路、累积损伤模型法和综合法，分析了电子系统PHM技术涉及的关键技术，探讨了电子系统PHM技术发展在特征参数获取、物理损伤模型和电子元器件质量方面将遇到的问题和挑战。最后，从可测性、PHM的标准化和评价指标等方面对电子系统PHM技术的进一步发展提出了几点意见。
+
+关键词：航空电子系统；故障诊断；故障预测与健康管理；可测试性设计DOI:10.3969/j.issn.1009- 3516.2010.06.001
+
+中图分类号：V24；TP206.3文献标识码：A文章编号：1009—3516（2010)06—0001—06
+
+在信息技术的推动下，武器装备正在发生着深刻的变化。首先，传统的非电系统不断被电子系统所取代。在20世纪50年代，飞机上的航空电子设备在飞机的总成本中占有的比例不到  $10\%$  ，但到90年代，F一22飞机的航空电子成本已占到飞机总成本的  $30\%$  以上。其次，在未来战争中，通信、导航、雷达、火力控制、电子对抗等电子系统对整套武器装备作战性能的影响越来越大。另外，随着电子系统不断渗透到武器系统的核心任务系统，信息化、智能化程度越高的武器装备需要电子系统辅助完成的任务将会越多，因电子系统故障引起的损失也将大大增加。武器装备的这些变化必然将会影响保障体系的变化。随着电子系统规模的增大，其维护保障问题已日益凸显。例如在  $\mathrm{F}^{- 15}$  飞机中，航空电子系统的故障数占到全机故障数的  $40\%$  以上，维修工时占到全机维修工时的1/3左右。
+
+故障预测与健康管理（PHM)技术主要用来监控、预测系统完成其功能的状态，包括确定部件的残余寿命、预测故障的发生等，并根据这些信息做出决策。工程应用和技术分析表明，PHM技术可以降低维护费用，提高战备完好率和任务成功率。目前，PHM技术已广泛应用于发动机、旋转机械、机体结构等机理结构系统中。而电子系统的PHM技术起步较晚，近几年发展迅速，已成为国内外的研究热点。由于电子系统的PHM技术的研究具有通用性，其成果同样可用于航空电子系统，现有的研究也没有针对特定的电子系统。因此，本文将讨论电子系统的PHM技术现状和发展，为下一代航空电子系统的发展提供参考。
+
+# 1电子系统PHM技术实现方法研究现状
+
+在PHM技术中，故障预测是核心任务和内容。根据当前的研究进展，电子系统故障预测主要实现方法可分为以下4种7- 9。
+
+# 1.1监测特征参数
+
+通过监测特征参数来预测故障是指依据电子系统的功能性和结构性特点，对能反映系统性能的特征参
+
+数进行监测，在获得大量数据的基础上，提取有用信息，并利用各种预测算法对故障进行预测。由于电子系统功能结构、失效机理等各不相同，所以特征参数的选取和数据处理方法也多种多样。许丽佳等用纹波电压作为监测雷达发射机高压电源健康状态的特征参数，用阴极电流作为监测雷达发射机多注速调管健康状态的特征参数，并结合灰色理论预测法对故障进行预测。Impact公司以无线传感器节点和GPS接收机为例，将无线接收系统作为一个整体，通过在加速损耗试验中记录一些系统相关参数，然后对这些参数进行分析、融合、特征提取，得到一种新的和损耗程度相关联的特征参数，最后利用新的特征参数对系统健康状况进行评估。
+
+# 1.2 利用预警电路
+
+图1展示了利用预警电路预测故障的基本原理。预警电路的故障高发期比正常电路要早一段时间，这段时间用于系统接收警告信号，并及时做出反应，以避免造成重大损失。预警电路可分为2种。一种预警电路的可靠性在开始时和正常电路没有区别，只是在设计时增大了使用负担，这样其将在正常电路之前发生故障。例如通过减少预警电路的线路直径来增加其电流密度，这样其产生的热量比正常电路大，热应力增加，从而先于正常电路失效；另一种预警电路与正常电路的工作环境一样，但初始寿命要短于正常电路，也将先于正常电路发生故障。导致芯片的寿命缩短的原因有静电损伤（ESD）、
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/d82ddac1-9f39-4c8c-be78-6a2098df9a0a/3d210e8eea424224466e82d8372f6627d8a51af23c70f55d09f62cf72330bb5f.jpg)  
+图1预警电路预测故障原理 Fig.1 Advancewamingoffailure using canary structures
+
+辐射损伤、电迁移、热载流子等。美国Ridgetop集团针对特定失效机理设计了故障预测单元。故障预测单元和正常电路在同一芯片里，工作在相同的环境下，由于故障预测单元的寿命要短于正常芯片，因而可以在正常电路还有一定的剩余寿命时失效，达到故障预测的目的。
+
+# 1.3 建立累积损伤模型
+
+累积损伤模型是在物理失效模型基础上建立的关于各种载荷与可造成损伤程度对关系的模型。该模型建立后，可通过对系统寿命周期内所承受的全部载荷进行分析来对系统的累积损伤程度和剩余寿命进行评估。电子系统寿命周期中的载荷包括机械、化工、物理等多个方面，具体载荷及其详细载荷条件参见文献[8]。美国马里兰大学提出的“寿命消耗监测法（LCM）”就属于这种方法[13- 19]。它运用基于物理的损伤模型处理监测到的外部温度、湿度、压力等载荷信息，计算累积损伤，评估电子系统的线路寿命，见图2。LCM方法已被应用于JSF飞机电源开关模块和DC/DC转换器的寿命预测，取得了良好的效果[16- 17]。国内的研究机构也使用了类似方法。如李刚等提出利用电子产品全寿命故障规律进行故障预测的方法，通过加速试验，获取电子产品在加速应力下的全寿命故障规律，然后推导出正常应力下的全寿命故障规律并用
+
+![](https://cdn-mineru.openxlab.org.cn/result/2025-09-11/d82ddac1-9f39-4c8c-be78-6a2098df9a0a/745d62579707142813b969ee55fbca7c227ee1bfda2a6a6ca61ae8afc130e027.jpg)  
+图2寿命消耗监测法（LCM）流程图 Fig.2 The flow chart of life consumption monitoring methodology
+
+于故障预测。吕克洪等对焊点所承受的各种环境应力和工作应力的时间历程(时间应力)进行测量，并根据物理模型及相关理论对数据进行分析，同时考虑时间应力测量、焊点模型、焊点累积损伤计算等过程中存在的不确定性因素，研究了基于时间应力及隐马尔可夫模型（HMM)的焊点故障预测技术[19]。
+
+# 1.4 融合多种方法
+
+近几年，为了提高预测的精度，人们开始融合上述方法中的某两种来预测故障。如孙博等采用了性能参数监测法与故障物理模型法相结合的形式，将健康状态监测和故障预测的一般性方法、技术和理论应用到具
+
+(C)1994-2022 China Academic Journal Electronic Publishing House. All rights reserved. http://www.cnki.net
+
+体的电子产品[2]。Impact公司将传感器参数与基于物理的损伤模型相结合，以对电子系统的寿命损耗进行监测[2]。
+
+# 2 电子系统PHM的支撑技术
+
+电子系统PHM系统的建立过程中，需要以下几种关键技术的支撑：
+
+# 2.1 数据采集与传感器技术
+
+2.1 数据采集与传感器技术要对一个复杂系统对象进行PHM，首先要确定可以直接表征其健康状态的参数指标，或可间接推理判断系统健康状态所需要的参数信息。这些信息是PHM系统的数据基础，获取这些信息的技术主要包括选择监测的参数，传感器的类型、安放的位置、精度和带宽等。由于电子系统故障原因的多样性，在PHM系统中往往需要对多种参数进行监测，如振动、冲击、温度、湿度等环境参数和电压、功率、热散失等工作应力参数。如果每种参数都用一种传感器，那么传感器的数量将非常庞大。这在工程实践中是不现实的。因此，PHM技术对传感器体积的小型化和功能的多样化提出了更高的要求。另外，还有一些参数如静电损伤，时间相关介质击穿等并不常见，需要进一步开发对这些参数敏感的新型传感器。
+
+# 2.2 故障诊断技术
+
+2.2 故障诊断技术故障诊断是指利用传感器来探测系统状态特征参数，并结合其他数据信息（如历史维修数据、加速寿命实验数据)对系统当前的健康状态进行评估，达到诊断和监控的目的。故障诊断技术可分成基于解析模型的方法、基于信号处理的方法和基于知识的方法3种。基于解析模型的方法是在知道诊断对象数学模型的基础上，按一定的数学方法对被测信息进行处理诊断。基于信号处理的方法通常是利用信号模型，直接分析可测信号，提取诸如方差、幅值、频率等特征值，从而检测出故障。基于知识的故障诊断方法是在知识的层次上，以知识处理技术为基础，实现辩证逻辑与数理逻辑的集成，符号处理与数值处理的统一，推理过程与算法过程的统一，通过在概念和处理方法上的知识化实现系统的故障诊断。
+
+# 2.3 故障预测技术
+
+2.3 故障预测技术故障预测技术首先提供相关历史经验数据及其变化趋势，然后根据目前设备的状态参数、使用情况、环境和工作条件，通过某种预测模型的计算，推断出设备若干时间后的状态参数，最后根据预测的参数状态进行诊断，推断系统当前的健康状态。在预测过程中，故障预测算法是由系统的历史数据推算其将来状态过程中重要的一环。现有的预测算法可分为参数模型法和非参数模型法。参数模型法通过研究历史数据的变化规律，建立数据模型，以此来推算系统未来的状态。常用的参数模型法包括时间序列预测法、滤波器预测法、灰色理论预测法等。非参数模型法不需要精确的数据模型，主要包括神经网络、粗糙集理论、组合预测等。
+
+# 2.4 数据融合技术
+
+2.4 数据融合技术融合是对多源信息进行综合处理，从而得到更为准确、可靠的结论。从健康管理的角度看，PHM系统进行信息融合的目的是为了提高检测精度和鲁棒性，提高异常检测、故障诊断和预测技术的整体效能。PHM中常用的融合算法有D一S证据理论融合、贝叶斯推理、模糊逻辑推理、神经网络融合等，其最终目标是将测量系统和融合算法与相应的健康管理体系结构进行组合优化，提高检测预测的置信水平。融合在PHM系统中的应用主要有3方面： $①$  数据融合：用于融合来自传感器阵列的数据，确认传感器信号的合理性并抽取特征； $②$  特征融合：对数据融合得到的特征进行智能综合，以获得最可信的诊断信息； $③$  信息融合：综合经验信息（如以往的失效率或物理模型）和信号信息，提高预测精度。
+
+# 2.5 人工智能技术
+
+2.5 人工智能技术在对武器装备进行诊断的过程中，传感器本身可能发生故障，从而提供错误或是不准确的数据。同时，在武器装备的使用过程中，一些真实故障是间歇性的，它们只出现在特定的环境条件下，而在其他条件下自动恢复正常。这2类问题会导致故障不能复现（CND)和重测合格（RTOK)等情况的出现。人工智能推理机（如专家系统、神经网络、模糊逻辑或遗传算法）是解决这类问题的常用方法。人工智能推理机在报告一个故障前，通常通过一种回归分析来考虑所有相关的传感器数据，记录检测出故障时的环境条件并报告给推理机。这些智能推理机经过事先训练，可以非常精确地模仿和识别机器的状态属性及其故障模式，从而达到提高诊断精度的目的。
+
+# 2.6 BIT和BIST技术
+
+机内测试（Built- inTestBIT)是一种能显著提高系统测试性和诊断能力的重要技术，即不用外部测试
+
+设备就能完成对系统、分系统或设备的功能检查、故障诊断与隔离以及性能测试。随着芯片技术的发展，人们又提出了内建自测试（Built- in Self- Test BIST）。BIST技术是一种由硬件本身执行完成的可测性设计技术，它在设计中就考虑在被测电路中集成一些额外的自测试电路。测试时从芯片外部施加必要的控制信号，启动自测试电路，通过软硬件协调，在内部检测出被测件的缺陷或故障。BIST是BIT概念的延伸，它将系统的自测试能力推向芯片级别，有利于提高故障定位精度，缩小故障隔离范围，同时可为PHM系统提供更多更精确的参数。
+
+# 2.7 健康管理技术
+
+健康管理是指与健康状态相关的管理活动[2]，可分为4类： $①$  诊断：检测系统部件的工作状态和性能下降程度； $②$  缓解：减轻部分功能失效对整个系统的影响，尽量保证任务的有效性； $③$  修复：更换或修复失效的部件； $④$  检验：确定修复后系统的状态，评估失效部件对系统的影响。健康管理是测试技术、人工智能和信息技术的综合应用，具有智能和自主的特点。
+
+# 3 面临的问题与挑战
+
+目前，电子系统的PHM技术已是研究的热点，但还远未成熟。由于电子系统自身的特殊性，其PHM技术的发展将面临多方面的问题与挑战。
+
+# 3.1 特征参数不易获取
+
+用特征参数来预测故障的方法简单、直观，并已在机械系统中得到广泛应用。但电子系统中可用于预测的特征参数不易得到，实际应用非常有限。在机械系统的PHM系统中，通常是找到故障先兆，比如因为磨损而导致的振动信号的改变等，然后通过一些推理算法，对当前的状态进行估计。而电子系统中还未能找到一种容易得到的参数评估其损耗程度。数字电路输出的信号只能为离散的几个固定值。当发生故障时，信号是突变的，间隔时间很短，不能利用这些信号对故障进行预测。一些学者直接把这类故障称为突发性故障，认为难以预测，因此转而研究渐进性故障的预测。但在现代的电子系统中，数字电路的应用是最广泛的，突发性故障的比例远大于渐进性故障。Impact公司通过监测多种参数并从中提取可用于预测的综合参数[10- 11]，但过程比较复杂，也不具有通用性。
+
+# 3.2 物理损伤模型复杂
+
+电子系统失效是多种负荷综合作用的结果。在研究过程中可先分别建立单一负荷条件下的物理失效模型，找到单一负荷强度与损伤之间的关系，然后研究各种负荷之间是否相关。如果不相关，则仍然可用其各自的物理失效模型，得到对应的损伤程度后直接叠加成共同的损伤程度；如果相关，则需继续研究其相关程度，负荷叠加可能会使损伤加重，也可能使损伤减轻。可见，物理失效模型的建立是非常复杂的，如果没有可用的失效模型，那么监测参数的选择只能基于以往的经验数据或者通过加速试验得到的经验模型，其精确性难以保证。
+
+# 3.3 电子元器件质量参差不齐
+
+经过几十年的发展，电子元器件的质量已经有了很大的提高。但由于电子元器件的质量不易评估，很难保证电子系统中所有电子元器件的使用寿命都是一样的。同一厂家生产的同一型号芯片的使用寿命难以保证全部相同。不同厂家因技术水平不同，即使生产同一型号芯片，其使用寿命也会有很大区别。电子元器件的质量影响着电子系统的质量，因此，在电子系统PHM系统中应考虑电子元器件质量的差异，以提高故障预测的精度。
+
+# 4 结束语
+
+PHM系统是可测性技术发展的最高阶段，PHM系统的建立也离不开可测性技术的支持。可测性是测试信息获取难易程度的表征。目前，可测性设计技术主要用于使难测或不可测故障转变为易测或可测的故障，只考虑了在系统出现故障时如何方便地找到故障，而未考虑对故障进行预测。现有可测性指标也不包含故障预测能力的评判指标。如何将可测性设计技术与PHM系统相结合，使PHM系统更方便地获取故障和预测信息，成为当前可测性设计技术发展中必须要思考的问题。
+
+目前，PHM还处于起步阶段，关于PHM技术的标准还很少。由于PHM技术与测试、故障诊断等技术具
+
+有的内在联系，在发展过程中可参考一些存在于测试、诊断和维护技术领域的标准，但从长期发展来看，应尽快开展PHM的标准化研究工作。
+
+为了保证设计的PHM系统能够达到预期的目的，必须对PHM系统进行验证和评估。目前，常用的验证方法有实际运行验证、加速试验验证、分析验证和仿真验证等，这些方法可以互为补充、相互验证。但是，针对PHM系统的评估方法、评价指标还很少，以后应加强这方面的研究。
+
+# 参考文献：
+
+[1] 霍曼，邓中卫．国外军用飞机航空电子系统发展趋势[  $\mathbb{J}$  .航空电子技术，2004,35(4):5- 10. HUOManDENGZhongweiDeveopmentTrendofForeignMilitaryAvionics[  $\mathbb{J}$  Avionics Technology 2004,35(4):5- 10. ( in Chinese) [2] 曾天翔．电子设备测试性及诊断技术[ M]·北京：航空工业出版社，1996. ZENG Tianxiang Test and Diagnostis Technology of E lectronic Equipment[ M]· Beijing Aviation Industry Press 1996. ( in Chinese) [3] 张宝珍，曾天翔．先进的故障预测与状态管理技术[  $\mathbb{J}$  .测控技术，2003,22(11):4- 6. ZHANG Baozhen ZENG Tianxiang Advanced Prognostics and Health Managemen Technology[  $\mathbb{J}$  . Measurement & Control Technology 2003,22(11):4- 6. ( in Chinese) [4] 曾声奎，PechtM，吴际.故障预测与健康管理（PHM)技术的现状与发展[  $\mathbb{J}$  .航空学报，2005,26(5):626- 632. ZENG Shengkui Pecht M, WU Ji Status and Perspectives of Prognostics and Health ManagemenT technologies[  $\mathbb{J}$  . Acta Aeronautica & Astronautica Sinica 2005,26(5):626- 632in Chinese) [5] Leader S Friend R. A Probabilistic Diagnostic and Prognostic System for Engine Health and Usage Managemen[ C] //Aero- space Conference Proceedings of IEEE[ S.]:IEEE Press 2000:185- 196. [6] Heng A. Zhang S Tan A et al Rotating Machinery Prognostics State of the Ar Challenges and Opportunities[  $\mathbb{J}$  . Mechanical Systems and Signal Processing 2008,23(3):724- 739. [7] 于晓伟，张宝珍．国外电子产品故障预测技术的发展[  $\mathbb{J}$  .测控技术，2008,27(S1):209- 211. YU Xiaowei ZHANG Baozhen Deveopment of Prognostics and Health Managemen for E lectronic Systems[  $\mathbb{J}$  . Measurement & Control Technology 2008,27(S):209- 211. ( in Chinese) [8] Vichare N, PechtM. Prognostics and Health Managemen of E lectronics[  $\mathbb{J}$  .IEEE Trans on Components and Packaging Technologies 2006,29(1):222- 229. [9] Xu L J WangH J Long B Study on State Prediction Method for E lectronic System[ C] //IEEE Pacific- AsiaW orkshop Inter national Conference on Compu tational Intelligence and Industrial Application[ S.]:IEEE Press 2008,665- 670. [10] Nanduri S Aineda P Kalgren P et al Circuit as A Sensor A Practical Approach Toward Embedded E lectronic Prognostics [C] //Autotestcon IEEE Conferences[ S.]:IEEE Press 2007,632- 638. [11] Douglas B Patrick K. CarlB et al E lectronic Prognostics A Case Study Using Global Positioning System (GPS) [  $\mathbb{J}$  . M i- croelectronics Reliability 2007,47:1874- 1881. [12] Ridgetop Semiconductor- Hot Carrier( HC) Prognostic Cell M] .USA: Ridgetop Semiconductor- Sentinel Silicon( TM) Librar y 2004. [13] Ramakrishnan A. PechtM. A Life Consumption Monitoring Methodology for E lectronic Systems[  $\mathbb{J}$  .IEEE Trans on Components and Packaging Technologies 2003,26(3):625- 634. [14] Mishra S PechtM. Smith T et al Remaining Life Prediction of E lectronic Products Using Life Consumption Monitoring Approach[ C] //In Proc EurM Ieconecton Packag Inteconnection Symp.Poland[ s.n- 1:2002:138- 142. [15] Rouet V, M inault F. DiancourtG et al Concept of Smart Integrated Life Consumption Monitoring System for E lectronics[  $\mathbb{J}$  . Micronelectronics Reliability 2007,47(12):1921- 1927. [16] Goodman D. Vermeire B Spuhler P et al Practical Application of PHM /Prognostics to COTS Power Converter[ C] //IEEE Aerospace Conference[ S.]:IEEE Press 2005,3573- 3578. [17] Saha B GoebelK. Poll S et al Prognostics Methods for Battery Health Monitoring Using A Bayesian Framework[  $\mathbb{J}$  .IEEE Trans on Instrumentation and Measurement 2009,58(2):291- 296. [18] 李刚，蔡金燕，梁四洋．获取全寿命故障规律进行电子产品故障预测的方法[  $\mathbb{J}$  .电子测量与仪器学报，2008,22(1): 34- 37. LI Gang CAI Jinyan LIANG Siyang E lectronic Product Fault Prediction Method Based on All Lifetime Fault Rule[  $\mathbb{J}$  . Journal of E lectronic Measurement and Instnment 2008,22(1):34- 37. ( in Chinese) [19] 吕克洪，邱静，刘冠军．基于时间应力及隐马尔可夫模型的焊点故障预测技术[  $\mathbb{J}$  .机械工程学报，2008,44(4):222- 227. (C)1994- 2022 China Academic Journal Electronic Publishing House. All rights reserved. http://www.cnki.net
+
+LÜ Kehong QIU Jing LIU Guanjun Fault Prognosis Technology for Sokler Joints Based on Time Stress and Hidden Markov Model [J]. Chinese Journal of Mechanical Engineering 2008, 44(4): 222- 227. (in Chinese) [20] 孙博, 赵宇, 黄伟, 等. 电子产品健康监测和故障预测方法的案例研究 [J]. 系统工程与电子技术, 2009, 29(6): 1012- 1016. SUN Bo ZHAO Yu HUANG Wei et al Case Study of Prognostic and Health Management Methodology for Electronics [J]. Systems Engineering and Electronics 2009, 29(6): 1012- 1016. (in Chinese) [21] Kalgren P, Baybutt M, Dabney T, et al Application of Prognostic Health Management in Digital Electronic System [C] // IEEE Aerospace Conference [S- l]: IEEE Press 2007: 1- 9. [22] 高占宝, 梁旭, 李行善. 复杂系统综合健康管理 [J]. 测控技术, 2005, 24(8): 1- 5. GAO Zhanbao LIANG Xu LI Xingshan Complex System Integrated Health Management [J]. Measurement & Control Technology 2005, 24(8): 1- 5. (in Chinese)
+
+(编辑:徐敏)
+
+# Status and Perspectives of Prognostics and Health Management Technology of Avionics System
+
+JING Bo, HUANG Yi- feng, ZHANG Jian- ye [1. Engineering Institute Air Force Engineering University Xi'an 710038, China 2. Research Department Air Force Engineering University Xi'an 710051, China)
+
+Abstract Prognostics and health management technology more advanced than the traditional fault diagnosis technology is about fault diagnosis prognostic and health management It is of great significance in cutting down failure rate and maintenance cost More and more attention is paid to the reliability of electronic system, especially avionics system. Applying PHM technology to electronic system has been one of the most important trends of PHM technology Based on the analysis of current research the four implementation methods of prognostics and health management technology of electronics are summarized They are monitoring precursors using canary structures monitoring environmental and usage loads and integration Then the key technologies related to PHM technology of electronics are presented and the future problems and challenges for PHM technology of electronics in the field of precursors capture physical degradation model and quality of electronic component are discussed Finally several suggestions about design for testability standard and estimation of PHM technology are given for future development of PHM technology of electronics
+
+Key words avionics system: fault diagnostics prognostics and health management design for testability

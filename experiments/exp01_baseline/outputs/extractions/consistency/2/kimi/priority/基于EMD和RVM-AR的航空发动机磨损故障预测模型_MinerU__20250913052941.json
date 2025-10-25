@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "EMD算法",
+      "type": "算法"
+    },
+    {
+      "name": "RVM-AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "航空发动机磨损故障预测",
+      "type": "研究领域"
+    },
+    {
+      "name": "滑油光谱数据",
+      "type": "数据集"
+    },
+    {
+      "name": "固有模态函数（IMF）",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "残余函数（RF）",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "量子粒子群优化算法",
+      "type": "算法"
+    },
+    {
+      "name": "AR模型",
+      "type": "模型"
+    },
+    {
+      "name": "SVM模型",
+      "type": "模型"
+    },
+    {
+      "name": "Fe元素和Si元素含量",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "滑油金属含量",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "预测精度",
+      "type": "性能指标"
+    },
+    {
+      "name": "非线性非平稳特性",
+      "type": "理论基础"
+    },
+    {
+      "name": "油液光谱分析技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "经验模态分解中多种边界处理方法",
+      "type": "研究方法"
+    },
+    {
+      "name": "留一交叉验证误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "最终预测误差（FPE）",
+      "type": "性能指标"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EMD算法",
+      "relation": "应用于",
+      "tail": "航空发动机磨损故障预测"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "基于",
+      "tail": "EMD算法"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "结合了",
+      "tail": "RVM模型"
+    },
+    {
+      "head": "RVM-AR模型",
+      "relation": "结合了",
+      "tail": "AR模型"
+    },
+    {
+      "head": "滑油光谱数据",
+      "relation": "导致",
+      "tail": "非线性非平稳特性"
+    },
+    {
+      "head": "固有模态函数（IMF）",
+      "relation": "包含",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "残余函数（RF）",
+      "relation": "包含",
+      "tail": "滑油光谱数据"
+    },
+    {
+      "head": "量子粒子群优化算法",
+      "relation": "用于",
+      "tail": "RVM模型参数优化"
+    },
+    {
+      "head": "AR模型",
+      "relation": "改进了",
+      "tail": "SVM模型"
+    },
+    {
+      "head": "Fe元素和Si元素含量",
+      "relation": "影响",
+      "tail": "滑油金属含量"
+    },
+    {
+      "head": "预测精度",
+      "relation": "评价指标是",
+      "tail": "RVM-AR模型"
+    },
+    {
+      "head": "油液光谱分析技术",
+      "relation": "应用于",
+      "tail": "航空发动机磨损故障预测"
+    },
+    {
+      "head": "经验模态分解中多种边界处理方法",
+      "relation": "改进了",
+      "tail": "EMD算法"
+    },
+    {
+      "head": "留一交叉验证误差",
+      "relation": "评估",
+      "tail": "RVM模型"
+    },
+    {
+      "head": "最终预测误差（FPE）",
+      "relation": "评估",
+      "tail": "AR模型"
+    }
+  ]
+}

@@ -1,0 +1,1425 @@
+{
+  "title": "基于GA-AANN神经网络的SDQ算法的航空发动机传感器数据预处理",
+  "summary": "为实现对输入健康管理系统的航空发动机传感器数据进行数据鉴定、故障诊断以及去除噪声信号干扰,提出了一种航空发动机传感器数据预处理方法。针对双通道传感器航空涡扇发动机,搭建了以合理性检验模块和解析冗余检验模块为主要内容的SDQ算法模型,利用遗传算法优化的AANN神经网络实现传感器的解析冗余检验。采用蒙特卡罗仿真方法,将改进的SDQ算法与一种基于最小二乘法的SDQ算法进行对比仿真验证。结果表明,本文提出的SDQ算法在发动机稳态条件下对阶跃故障和漂移故障隔离的平均正确率分别提高了1.7%和19.1%,在发动机动态条件下对阶跃故障和漂移故障隔离的平均正确率分别提高了12.5%和33.8%。且在多传感器故障诊断和除噪方面性能优异,处理后的传感器信号平均信噪比提高了8.27dB。",
+  "analyzed_sentences": [
+    {
+      "sentence": "为实现对输入健康管理系统的航空发动机传感器数据进行数据鉴定、故障诊断以及去除噪声信号干扰,提出了一种航空发动机传感器数据预处理方法",
+      "tokens": [
+        "为",
+        "实现",
+        "对",
+        "输入",
+        "健康",
+        "管理",
+        "系统",
+        "的",
+        "航空",
+        "发动机",
+        "传感器",
+        "数据",
+        "进行",
+        "数据",
+        "鉴定",
+        "、",
+        "故障",
+        "诊断",
+        "以及",
+        "去除",
+        "噪声",
+        "信号",
+        "干扰",
+        ",",
+        "提出",
+        "了",
+        "一",
+        "种",
+        "航空",
+        "发动机",
+        "传感器",
+        "数据",
+        "预处理",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "为",
+          "head": 25,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "实现",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "对",
+          "head": 13,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "输入",
+          "head": 12,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "健康",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "管理",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "系统",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 4,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "航空",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "发动机",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "传感器",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "数据",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "进行",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "数据",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "鉴定",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "、",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "诊断",
+          "head": 13,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "以及",
+          "head": 13,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "去除",
+          "head": 13,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "噪声",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "信号",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "干扰",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "了",
+          "head": 25,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 27,
+          "form": "一",
+          "head": 28,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 28,
+          "form": "种",
+          "head": 34,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 29,
+          "form": "航空",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "发动机",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "传感器",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "数据",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "预处理",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "方法",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对双通道传感器航空涡扇发动机,搭建了以合理性检验模块和解析冗余检验模块为主要内容的SDQ算法模型,利用遗传算法优化的AANN神经网络实现传感器的解析冗余检验",
+      "tokens": [
+        "针对",
+        "双",
+        "通道",
+        "传感器",
+        "航空",
+        "涡扇",
+        "发动机",
+        ",",
+        "搭建",
+        "了",
+        "以",
+        "合理性",
+        "检验",
+        "模块",
+        "和",
+        "解析",
+        "冗余",
+        "检验",
+        "模块",
+        "为",
+        "主要",
+        "内容",
+        "的",
+        "SDQ",
+        "算法",
+        "模型",
+        ",",
+        "利用",
+        "遗传",
+        "算法",
+        "优化",
+        "的",
+        "AANN",
+        "神经",
+        "网络",
+        "实现",
+        "传感器",
+        "的",
+        "解析",
+        "冗余",
+        "检验"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "双",
+          "head": 3,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 3,
+          "form": "通道",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "传感器",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "航空",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "涡扇",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "发动机",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "搭建",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "了",
+          "head": 9,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 11,
+          "form": "以",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "合理性",
+          "head": 14,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "检验",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "模块",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "和",
+          "head": 19,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "解析",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "冗余",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "检验",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "模块",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "为",
+          "head": 26,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "主要",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "内容",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 24,
+          "form": "SDQ",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 25,
+          "form": "算法",
+          "head": 26,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "模型",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 9,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "利用",
+          "head": 9,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "遗传",
+          "head": 30,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "算法",
+          "head": 31,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "优化",
+          "head": 35,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 32,
+          "form": "的",
+          "head": 31,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 33,
+          "form": "AANN",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 34,
+          "form": "神经",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "网络",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "实现",
+          "head": 28,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "传感器",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "的",
+          "head": 37,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 39,
+          "form": "解析",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "冗余",
+          "head": 41,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "检验",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "采用蒙特卡罗仿真方法,将改进的SDQ算法与一种基于最小二乘法的SDQ算法进行对比仿真验证",
+      "tokens": [
+        "采用",
+        "蒙特卡罗",
+        "仿真",
+        "方法",
+        ",",
+        "将",
+        "改进",
+        "的",
+        "SDQ",
+        "算法",
+        "与",
+        "一",
+        "种",
+        "基于",
+        "最",
+        "小",
+        "二乘法",
+        "的",
+        "SDQ",
+        "算法",
+        "进行",
+        "对比",
+        "仿真",
+        "验证"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "蒙特卡罗",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "仿真",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "方法",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "将",
+          "head": 21,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 7,
+          "form": "改进",
+          "head": 10,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "SDQ",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 10,
+          "form": "算法",
+          "head": 21,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "与",
+          "head": 21,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "一",
+          "head": 13,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 13,
+          "form": "种",
+          "head": 20,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 14,
+          "form": "基于",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "最",
+          "head": 16,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "小",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "二乘法",
+          "head": 14,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "的",
+          "head": 14,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 19,
+          "form": "SDQ",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 20,
+          "form": "算法",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "对比",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "仿真",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "验证",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "结果表明,本文提出的SDQ算法在发动机稳态条件下对阶跃故障和漂移故障隔离的平均正确率分别提高了1.7%和19.1%,在发动机动态条件下对阶跃故障和漂移故障隔离的平均正确率分别提高了12.5%和33.8%",
+      "tokens": [
+        "结果",
+        "表明",
+        ",",
+        "本",
+        "文",
+        "提出",
+        "的",
+        "SDQ",
+        "算法",
+        "在",
+        "发动机",
+        "稳态",
+        "条件",
+        "下",
+        "对",
+        "阶跃",
+        "故障",
+        "和",
+        "漂移",
+        "故障",
+        "隔离",
+        "的",
+        "平均",
+        "正确率",
+        "分别",
+        "提高",
+        "了",
+        "1.7%",
+        "和",
+        "19.1%",
+        ",",
+        "在",
+        "发动机",
+        "动态",
+        "条件",
+        "下",
+        "对",
+        "阶跃",
+        "故障",
+        "和",
+        "漂移",
+        "故障",
+        "隔离",
+        "的",
+        "平均",
+        "正确率",
+        "分别",
+        "提高",
+        "了",
+        "12.5%",
+        "和",
+        "33.8%"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "结果",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "表明",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "本",
+          "head": 5,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 5,
+          "form": "文",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "提出",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "的",
+          "head": 6,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 8,
+          "form": "SDQ",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 9,
+          "form": "算法",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "在",
+          "head": 26,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 11,
+          "form": "发动机",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "稳态",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "条件",
+          "head": 14,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "下",
+          "head": 10,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": "对",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 16,
+          "form": "阶跃",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "故障",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "和",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 19,
+          "form": "漂移",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "故障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "隔离",
+          "head": 15,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "平均",
+          "head": 24,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "正确率",
+          "head": 26,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "分别",
+          "head": 26,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "提高",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "了",
+          "head": 26,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 28,
+          "form": "1.7%",
+          "head": 30,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 29,
+          "form": "和",
+          "head": 30,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 30,
+          "form": "19.1%",
+          "head": 26,
+          "deprel": "dep",
+          "pos": "CD"
+        },
+        {
+          "id": 31,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "在",
+          "head": 48,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 33,
+          "form": "发动机",
+          "head": 35,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "动态",
+          "head": 35,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "条件",
+          "head": 36,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "下",
+          "head": 32,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 37,
+          "form": "对",
+          "head": 46,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 38,
+          "form": "阶跃",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "故障",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "和",
+          "head": 42,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 41,
+          "form": "漂移",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "故障",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "隔离",
+          "head": 37,
+          "deprel": "pobj",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 37,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "平均",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 46,
+          "form": "正确率",
+          "head": 48,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "分别",
+          "head": 48,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 48,
+          "form": "提高",
+          "head": 26,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 49,
+          "form": "了",
+          "head": 48,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 50,
+          "form": "12.5%",
+          "head": 52,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 51,
+          "form": "和",
+          "head": 52,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 52,
+          "form": "33.8%",
+          "head": 48,
+          "deprel": "dep",
+          "pos": "CD"
+        }
+      ]
+    },
+    {
+      "sentence": "且在多传感器故障诊断和除噪方面性能优异,处理后的传感器信号平均信噪比提高了8.27dB",
+      "tokens": [
+        "且",
+        "在",
+        "多",
+        "传感器",
+        "故障",
+        "诊断",
+        "和",
+        "除噪",
+        "方面",
+        "性能",
+        "优异",
+        ",",
+        "处理",
+        "后",
+        "的",
+        "传感器",
+        "信号",
+        "平均",
+        "信噪比",
+        "提高",
+        "了",
+        "8.27dB"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "且",
+          "head": 11,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "多",
+          "head": 4,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 4,
+          "form": "传感器",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "故障",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "诊断",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "和",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "除噪",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "方面",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "性能",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "优异",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 11,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "处理",
+          "head": 14,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 14,
+          "form": "后",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 15,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 16,
+          "form": "传感器",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "信号",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "平均",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "信噪比",
+          "head": 20,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "提高",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "8.27dB",
+          "head": 20,
+          "deprel": "dep",
+          "pos": "CD"
+        }
+      ]
+    }
+  ]
+}

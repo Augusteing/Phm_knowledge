@@ -1,0 +1,429 @@
+{
+  "title": "应用于飞机健康管理的数据挖掘方法研究",
+  "summary": "旨在通过数据挖掘技术分析与飞机运行和维护相关的数据资源,研究一套能及时察觉、分类并预报故障的飞机健康管理系统,使其能够在优化飞机关键部件寿命的同时减少飞机运行和维护的费用。",
+  "analyzed_sentences": [
+    {
+      "sentence": "旨在通过数据挖掘技术分析与飞机运行和维护相关的数据资源,研究一套能及时察觉、分类并预报故障的飞机健康管理系统,使其能够在优化飞机关键部件寿命的同时减少飞机运行和维护的费用",
+      "tokens": [
+        "旨",
+        "在",
+        "通过",
+        "数据",
+        "挖掘",
+        "技术",
+        "分析",
+        "与",
+        "飞机",
+        "运行",
+        "和",
+        "维护",
+        "相关",
+        "的",
+        "数据",
+        "资源",
+        ",",
+        "研究",
+        "一",
+        "套",
+        "能",
+        "及时",
+        "察觉",
+        "、",
+        "分类",
+        "并",
+        "预报",
+        "故障",
+        "的",
+        "飞机",
+        "健康",
+        "管理",
+        "系统",
+        ",",
+        "使",
+        "其",
+        "能够",
+        "在",
+        "优化",
+        "飞机",
+        "关键",
+        "部件",
+        "寿命",
+        "的",
+        "同时",
+        "减少",
+        "飞机",
+        "运行",
+        "和",
+        "维护",
+        "的",
+        "费用"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "旨",
+          "head": 2,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "通过",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "数据",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "挖掘",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "技术",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "分析",
+          "head": 3,
+          "deprel": "pccomp",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "与",
+          "head": 7,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 9,
+          "form": "飞机",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "运行",
+          "head": 12,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "和",
+          "head": 12,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 12,
+          "form": "维护",
+          "head": 7,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "相关",
+          "head": 16,
+          "deprel": "rcmod",
+          "pos": "JJ"
+        },
+        {
+          "id": 14,
+          "form": "的",
+          "head": 13,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 15,
+          "form": "数据",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "资源",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "研究",
+          "head": 2,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "一",
+          "head": 20,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 20,
+          "form": "套",
+          "head": 33,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 21,
+          "form": "能",
+          "head": 23,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "及时",
+          "head": 23,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 23,
+          "form": "察觉",
+          "head": 33,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 24,
+          "form": "、",
+          "head": 23,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "分类",
+          "head": 23,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "并",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "预报",
+          "head": 23,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "故障",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 23,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 30,
+          "form": "飞机",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "健康",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "管理",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "系统",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "使",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "其",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "PN"
+        },
+        {
+          "id": 37,
+          "form": "能够",
+          "head": 46,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "在",
+          "head": 46,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 39,
+          "form": "优化",
+          "head": 45,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "飞机",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "关键",
+          "head": 42,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 42,
+          "form": "部件",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "寿命",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 39,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 45,
+          "form": "同时",
+          "head": 38,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "减少",
+          "head": 35,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 47,
+          "form": "飞机",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "运行",
+          "head": 50,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "和",
+          "head": 50,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 50,
+          "form": "维护",
+          "head": 52,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "的",
+          "head": 50,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 52,
+          "form": "费用",
+          "head": 46,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

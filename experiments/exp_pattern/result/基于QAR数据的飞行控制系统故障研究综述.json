@@ -1,0 +1,170 @@
+[
+  {
+    "subject": "飞行控制系统故障分析",
+    "subject_type": "任务",
+    "relation": "基于",
+    "object": "QAR数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "QAR数据分析",
+    "subject_type": "任务",
+    "relation": "需要",
+    "object": "数据预处理",
+    "object_type": "处理步骤"
+  },
+  {
+    "subject": "QAR数据分析",
+    "subject_type": "任务",
+    "relation": "需要",
+    "object": "特征提取",
+    "object_type": "处理步骤"
+  },
+  {
+    "subject": "故障研究",
+    "subject_type": "研究领域",
+    "relation": "分为",
+    "object": "故障监测",
+    "object_type": "研究阶段"
+  },
+  {
+    "subject": "故障研究",
+    "subject_type": "研究领域",
+    "relation": "分为",
+    "object": "故障识别",
+    "object_type": "研究阶段"
+  },
+  {
+    "subject": "故障研究",
+    "subject_type": "研究领域",
+    "relation": "分为",
+    "object": "故障诊断",
+    "object_type": "研究阶段"
+  },
+  {
+    "subject": "故障研究",
+    "subject_type": "研究领域",
+    "relation": "分为",
+    "object": "故障预测",
+    "object_type": "研究阶段"
+  },
+  {
+    "subject": "飞行控制系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "方向舵液压泄漏",
+    "object_type": "故障类型"
+  },
+  {
+    "subject": "飞行控制系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "升降舵指示不一致",
+    "object_type": "故障类型"
+  },
+  {
+    "subject": "飞行控制系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "襟翼动作耗时",
+    "object_type": "故障类型"
+  },
+  {
+    "subject": "故障建模",
+    "subject_type": "任务",
+    "relation": "使用",
+    "object": "QAR数据项",
+    "object_type": "数据"
+  },
+  {
+    "subject": "QAR数据项",
+    "subject_type": "数据",
+    "relation": "包括",
+    "object": "飞机主舵面位置",
+    "object_type": "参数"
+  },
+  {
+    "subject": "QAR数据项",
+    "subject_type": "数据",
+    "relation": "包括",
+    "object": "飞行姿态",
+    "object_type": "参数"
+  },
+  {
+    "subject": "QAR数据项",
+    "subject_type": "数据",
+    "relation": "包括",
+    "object": "飞机性能",
+    "object_type": "参数"
+  },
+  {
+    "subject": "QAR数据项",
+    "subject_type": "数据",
+    "relation": "包括",
+    "object": "左右襟翼角度",
+    "object_type": "参数"
+  },
+  {
+    "subject": "QAR数据项",
+    "subject_type": "数据",
+    "relation": "包括",
+    "object": "襟翼位置",
+    "object_type": "参数"
+  },
+  {
+    "subject": "故障分析",
+    "subject_type": "任务",
+    "relation": "使用",
+    "object": "物理模型",
+    "object_type": "计算方法"
+  },
+  {
+    "subject": "故障分析",
+    "subject_type": "任务",
+    "relation": "使用",
+    "object": "多变量统计",
+    "object_type": "计算方法"
+  },
+  {
+    "subject": "故障分析",
+    "subject_type": "任务",
+    "relation": "使用",
+    "object": "逻辑推理",
+    "object_type": "计算方法"
+  },
+  {
+    "subject": "故障分析",
+    "subject_type": "任务",
+    "relation": "使用",
+    "object": "机器学习",
+    "object_type": "计算方法"
+  },
+  {
+    "subject": "飞行控制系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "方向舵",
+    "object_type": "子系统"
+  },
+  {
+    "subject": "飞行控制系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "升降舵",
+    "object_type": "子系统"
+  },
+  {
+    "subject": "飞行控制系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "襟翼",
+    "object_type": "子系统"
+  },
+  {
+    "subject": "故障研究",
+    "subject_type": "研究领域",
+    "relation": "旨在实现",
+    "object": "故障实时预测技术",
+    "object_type": "技术"
+  }
+]

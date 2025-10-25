@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "发展演变历程",
+    "object_type": "属性"
+  },
+  {
+    "subject": "故障诊断",
+    "subject_type": "技术",
+    "relation": "发展为",
+    "object": "PHM技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "应用现状",
+    "object_type": "属性"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "国外军事领域",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "民用领域",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "学术研究领域",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "未来发展方向",
+    "object_type": "属性"
+  }
+]

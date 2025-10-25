@@ -1,0 +1,1586 @@
+{
+  "title": "数字孪生五维模型及十大领域应用",
+  "summary": "数字孪生(Digital Twin)作为践行智能制造、工业4.0、工业互联网、智慧城市等先进理念的使能技术与手段,近期备受学术界和企业界关注,尤其是数字孪生的落地应用更是关注热点。模型是数字孪生的基础与核心,而传统数字孪生三维模型已无法满足现阶段技术发展与应用需求。在此背景下,为推动数字孪生技术在相关领域和行业的进一步应用,在数字孪生车间研究过程中,提出了数字孪生五维模型的概念,以适应新需求。基于前期相关研究,在进一步阐述数字孪生五维模型后,结合相关合作企业实际应用需求,重点探讨了数字孪生五维模型在卫星/空间通信网络、船舶、车辆、发电厂、飞机、复杂机电装备、立体仓库、医疗、制造车间、智慧城市10个领域的应用思路与方案,以期为相关领域践行数字孪生理念与技术提供参考。",
+  "analyzed_sentences": [
+    {
+      "sentence": "数字孪生(Digital Twin)作为践行智能制造、工业4.0、工业互联网、智慧城市等先进理念的使能技术与手段,近期备受学术界和企业界关注,尤其是数字孪生的落地应用更是关注热点",
+      "tokens": [
+        "数字",
+        "孪生",
+        "(",
+        "Digital",
+        "Twin",
+        ")",
+        "作为",
+        "践行",
+        "智能",
+        "制造",
+        "、",
+        "工业",
+        "4.0",
+        "、",
+        "工业",
+        "互联网",
+        "、",
+        "智慧",
+        "城市",
+        "等",
+        "先进",
+        "理念",
+        "的",
+        "使能",
+        "技术",
+        "与",
+        "手段",
+        ",",
+        "近期",
+        "备受",
+        "学术界",
+        "和",
+        "企业界",
+        "关注",
+        ",",
+        "尤其是",
+        "数字",
+        "孪生",
+        "的",
+        "落地",
+        "应用",
+        "更",
+        "是",
+        "关注",
+        "热点"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "数字",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "孪生",
+          "head": 30,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "(",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "Digital",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "Twin",
+          "head": 2,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ")",
+          "head": 5,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "作为",
+          "head": 30,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "践行",
+          "head": 27,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "智能",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "制造",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 12,
+          "form": "工业",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "4.0",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "CD"
+        },
+        {
+          "id": 14,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 15,
+          "form": "工业",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "互联网",
+          "head": 19,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "、",
+          "head": 19,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 18,
+          "form": "智慧",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "城市",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "等",
+          "head": 19,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 21,
+          "form": "先进",
+          "head": 22,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "理念",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 8,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 24,
+          "form": "使能",
+          "head": 27,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "技术",
+          "head": 27,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "与",
+          "head": 27,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 27,
+          "form": "手段",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": ",",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 29,
+          "form": "近期",
+          "head": 30,
+          "deprel": "tmod",
+          "pos": "NT"
+        },
+        {
+          "id": 30,
+          "form": "备受",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": "学术界",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "和",
+          "head": 33,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 33,
+          "form": "企业界",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "关注",
+          "head": 30,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 35,
+          "form": ",",
+          "head": 30,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "尤其是",
+          "head": 43,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 37,
+          "form": "数字",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "孪生",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "的",
+          "head": 38,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 40,
+          "form": "落地",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "应用",
+          "head": 43,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "更",
+          "head": 43,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 43,
+          "form": "是",
+          "head": 30,
+          "deprel": "conj",
+          "pos": "VC"
+        },
+        {
+          "id": 44,
+          "form": "关注",
+          "head": 45,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "热点",
+          "head": 43,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "模型是数字孪生的基础与核心,而传统数字孪生三维模型已无法满足现阶段技术发展与应用需求",
+      "tokens": [
+        "模型",
+        "是",
+        "数字",
+        "孪生",
+        "的",
+        "基础",
+        "与",
+        "核心",
+        ",",
+        "而",
+        "传统",
+        "数字",
+        "孪生",
+        "三维",
+        "模型",
+        "已",
+        "无法",
+        "满足",
+        "现",
+        "阶段",
+        "技术",
+        "发展",
+        "与",
+        "应用",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "模型",
+          "head": 2,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 3,
+          "form": "数字",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "孪生",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "基础",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "与",
+          "head": 8,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 8,
+          "form": "核心",
+          "head": 2,
+          "deprel": "attr",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "而",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 11,
+          "form": "传统",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 12,
+          "form": "数字",
+          "head": 13,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "孪生",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "三维",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "模型",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "已",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 17,
+          "form": "无法",
+          "head": 18,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 18,
+          "form": "满足",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "现",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "阶段",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "技术",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "发展",
+          "head": 25,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "与",
+          "head": 25,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 24,
+          "form": "应用",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "需求",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "在此背景下,为推动数字孪生技术在相关领域和行业的进一步应用,在数字孪生车间研究过程中,提出了数字孪生五维模型的概念,以适应新需求",
+      "tokens": [
+        "在",
+        "此",
+        "背景",
+        "下",
+        ",",
+        "为",
+        "推动",
+        "数字",
+        "孪生",
+        "技术",
+        "在",
+        "相关",
+        "领域",
+        "和",
+        "行业",
+        "的",
+        "进一步",
+        "应用",
+        ",",
+        "在",
+        "数字",
+        "孪生",
+        "车间",
+        "研究",
+        "过程",
+        "中",
+        ",",
+        "提出",
+        "了",
+        "数字",
+        "孪生",
+        "五",
+        "维",
+        "模型",
+        "的",
+        "概念",
+        ",",
+        "以",
+        "适应",
+        "新",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "在",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "此",
+          "head": 3,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "背景",
+          "head": 4,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "下",
+          "head": 1,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 5,
+          "form": ",",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "为",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "推动",
+          "head": 6,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "数字",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "孪生",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "技术",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "在",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "相关",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "领域",
+          "head": 15,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "和",
+          "head": 15,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 15,
+          "form": "行业",
+          "head": 11,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "进一步",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "应用",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "在",
+          "head": 28,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "数字",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "孪生",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "车间",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "研究",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "过程",
+          "head": 26,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "中",
+          "head": 20,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "了",
+          "head": 28,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 30,
+          "form": "数字",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "孪生",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "五",
+          "head": 33,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 33,
+          "form": "维",
+          "head": 34,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "模型",
+          "head": 36,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 36,
+          "form": "概念",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": ",",
+          "head": 28,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 38,
+          "form": "以",
+          "head": 39,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 39,
+          "form": "适应",
+          "head": 28,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 40,
+          "form": "新",
+          "head": 41,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "需求",
+          "head": 39,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "基于前期相关研究,在进一步阐述数字孪生五维模型后,结合相关合作企业实际应用需求,重点探讨了数字孪生五维模型在卫星/空间通信网络、船舶、车辆、发电厂、飞机、复杂机电装备、立体仓库、医疗、制造车间、智慧城市10个领域的应用思路与方案,以期为相关领域践行数字孪生理念与技术提供参考",
+      "tokens": [
+        "基于",
+        "前",
+        "期",
+        "相关",
+        "研究",
+        ",",
+        "在",
+        "进一步",
+        "阐述",
+        "数字",
+        "孪生",
+        "五",
+        "维",
+        "模型",
+        "后",
+        ",",
+        "结合",
+        "相关",
+        "合作",
+        "企业",
+        "实际",
+        "应用",
+        "需求",
+        ",",
+        "重点",
+        "探讨",
+        "了",
+        "数字",
+        "孪生",
+        "五",
+        "维",
+        "模型",
+        "在",
+        "卫星",
+        "/",
+        "空间",
+        "通信",
+        "网络",
+        "、",
+        "船舶",
+        "、",
+        "车辆",
+        "、",
+        "发电厂",
+        "、",
+        "飞机",
+        "、",
+        "复杂",
+        "机电",
+        "装备",
+        "、",
+        "立体",
+        "仓库",
+        "、",
+        "医疗",
+        "、",
+        "制造",
+        "车间",
+        "、",
+        "智慧",
+        "城市",
+        "10",
+        "个",
+        "领域",
+        "的",
+        "应用",
+        "思路",
+        "与",
+        "方案",
+        ",",
+        "以",
+        "期",
+        "为",
+        "相关",
+        "领域",
+        "践行",
+        "数字",
+        "孪生",
+        "理念",
+        "与",
+        "技术",
+        "提供",
+        "参考"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "基于",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "前",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "DT"
+        },
+        {
+          "id": 3,
+          "form": "期",
+          "head": 2,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 4,
+          "form": "相关",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "研究",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 7,
+          "form": "在",
+          "head": 17,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "进一步",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "阐述",
+          "head": 15,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "数字",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "孪生",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "五",
+          "head": 13,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 13,
+          "form": "维",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "模型",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "后",
+          "head": 7,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 16,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 17,
+          "form": "结合",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "相关",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "合作",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "企业",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "实际",
+          "head": 23,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 22,
+          "form": "应用",
+          "head": 23,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "需求",
+          "head": 17,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 17,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "重点",
+          "head": 26,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "探讨",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 27,
+          "form": "了",
+          "head": 26,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 28,
+          "form": "数字",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "孪生",
+          "head": 32,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "五",
+          "head": 31,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 31,
+          "form": "维",
+          "head": 32,
+          "deprel": "clf",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "模型",
+          "head": 69,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "在",
+          "head": 69,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 34,
+          "form": "卫星",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "/",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "空间",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "通信",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "网络",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 40,
+          "form": "船舶",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 42,
+          "form": "车辆",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "发电厂",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 46,
+          "form": "飞机",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 48,
+          "form": "复杂",
+          "head": 50,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 49,
+          "form": "机电",
+          "head": 50,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "装备",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 52,
+          "form": "立体",
+          "head": 53,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 53,
+          "form": "仓库",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 54,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 55,
+          "form": "医疗",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "制造",
+          "head": 61,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "车间",
+          "head": 61,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "、",
+          "head": 61,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 60,
+          "form": "智慧",
+          "head": 61,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 61,
+          "form": "城市",
+          "head": 64,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "10",
+          "head": 63,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 63,
+          "form": "个",
+          "head": 64,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 64,
+          "form": "领域",
+          "head": 33,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 66,
+          "form": "应用",
+          "head": 69,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 67,
+          "form": "思路",
+          "head": 69,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "与",
+          "head": 69,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 69,
+          "form": "方案",
+          "head": 26,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": ",",
+          "head": 26,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 71,
+          "form": "以",
+          "head": 72,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 72,
+          "form": "期",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 73,
+          "form": "为",
+          "head": 82,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 74,
+          "form": "相关",
+          "head": 75,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 75,
+          "form": "领域",
+          "head": 76,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 76,
+          "form": "践行",
+          "head": 73,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 77,
+          "form": "数字",
+          "head": 78,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 78,
+          "form": "孪生",
+          "head": 81,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 79,
+          "form": "理念",
+          "head": 81,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "与",
+          "head": 81,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 81,
+          "form": "技术",
+          "head": 76,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "提供",
+          "head": 72,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 83,
+          "form": "参考",
+          "head": 82,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "故障模式识别",
+    "object_type": "任务"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "扭矩裕度预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "直升机涡轮发动机",
+    "subject_type": "研究对象",
+    "relation": "存在问题",
+    "object": "故障难以识别",
+    "object_type": "问题"
+  },
+  {
+    "subject": "直升机涡轮发动机",
+    "subject_type": "研究对象",
+    "relation": "存在问题",
+    "object": "健康状况难以量化",
+    "object_type": "问题"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "胶囊层",
+    "object_type": "模型组件"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "BiGRU层",
+    "object_type": "模型组件"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "SE注意力机制",
+    "object_type": "模型组件"
+  },
+  {
+    "subject": "胶囊层",
+    "subject_type": "模型组件",
+    "relation": "用于捕捉",
+    "object": "输入数据的内在关系",
+    "object_type": "功能"
+  },
+  {
+    "subject": "BiGRU层",
+    "subject_type": "模型组件",
+    "relation": "用于提取",
+    "object": "时间序列特征",
+    "object_type": "特征"
+  },
+  {
+    "subject": "SE注意力机制",
+    "subject_type": "模型组件",
+    "relation": "用于加权",
+    "object": "特征",
+    "object_type": "特征"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "验证于",
+    "object": "直升机涡轮发动机数据集",
+    "object_type": "数据集"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "故障诊断准确率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention模型",
+    "subject_type": "模型",
+    "relation": "降低",
+    "object": "扭矩裕度预测的平均绝对误差",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "贝塔分布",
+    "subject_type": "概率分布",
+    "relation": "是...的最佳分布",
+    "object": "发动机健康状态",
+    "object_type": "状态"
+  },
+  {
+    "subject": "Caps-BiGRU-Attention方法",
+    "subject_type": "方法",
+    "relation": "提供参考",
+    "object": "直升机涡轮发动机的健康管理",
+    "object_type": "应用领域"
+  }
+]

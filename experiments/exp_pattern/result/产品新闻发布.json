@@ -1,0 +1,37 @@
+[
+  {
+    "subject": "航天科工集团一院测控公司",
+    "subject_type": "公司",
+    "relation": "参与",
+    "object": "大飞机健康管理项目",
+    "object_type": "项目"
+  },
+  {
+    "subject": "航天科工集团一院测控公司",
+    "subject_type": "公司",
+    "relation": "组成",
+    "object": "联合攻关团队",
+    "object_type": "团队"
+  },
+  {
+    "subject": "中国商飞上海飞机客户服务有限公司",
+    "subject_type": "公司",
+    "relation": "组成",
+    "object": "联合攻关团队",
+    "object_type": "团队"
+  },
+  {
+    "subject": "联合攻关团队",
+    "subject_type": "团队",
+    "relation": "确定",
+    "object": "总体方案",
+    "object_type": "方案"
+  },
+  {
+    "subject": "总体方案",
+    "subject_type": "方案",
+    "relation": "属于",
+    "object": "大飞机实时监测与健康管理项目",
+    "object_type": "项目"
+  }
+]

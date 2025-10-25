@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "航空装备故障风险分析与趋势预测方法",
+    "subject_type": "研究课题",
+    "relation": "提出",
+    "object": "基于可拓学的飞行试验故障后果定量分析方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空装备故障风险分析与趋势预测方法",
+    "subject_type": "研究课题",
+    "relation": "提出",
+    "object": "飞行试验故障可能性评定方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空装备故障风险分析与趋势预测方法",
+    "subject_type": "研究课题",
+    "relation": "提出",
+    "object": "基于灰色波形的故障风险综合预警信号预测方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "飞行试验故障可能性评定方法",
+    "subject_type": "方法",
+    "relation": "应用",
+    "object": "蒙特卡洛抽样",
+    "object_type": "技术"
+  },
+  {
+    "subject": "飞行试验故障可能性评定方法",
+    "subject_type": "方法",
+    "relation": "应用",
+    "object": "层次分析法",
+    "object_type": "技术"
+  },
+  {
+    "subject": "基于灰色波形的故障风险综合预警信号预测方法",
+    "subject_type": "方法",
+    "relation": "预测",
+    "object": "航空装备故障风险趋势",
+    "object_type": "分析目标"
+  },
+  {
+    "subject": "基于灰色波形的故障风险综合预警信号预测方法",
+    "subject_type": "方法",
+    "relation": "适合于",
+    "object": "短期预测",
+    "object_type": "应用场景"
+  },
+  {
+    "subject": "风险综合预警指数曲线",
+    "subject_type": "指标",
+    "relation": "实现",
+    "object": "实时监控",
+    "object_type": "功能"
+  },
+  {
+    "subject": "风险综合预警指数曲线",
+    "subject_type": "指标",
+    "relation": "实现",
+    "object": "短期趋势预测",
+    "object_type": "功能"
+  },
+  {
+    "subject": "本文方法",
+    "subject_type": "方法",
+    "relation": "提供思路",
+    "object": "飞行试验故障风险监测与预警",
+    "object_type": "应用领域"
+  }
+]

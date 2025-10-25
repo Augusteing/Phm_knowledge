@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "起落架收放系统",
+    "subject_type": "系统",
+    "relation": "影响",
+    "object": "飞行安全",
+    "object_type": "属性"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "方法",
+    "relation": "研究对象为",
+    "object": "起落架收放系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "AMESim软件",
+    "subject_type": "软件",
+    "relation": "用于建立",
+    "object": "仿真模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "仿真模型",
+    "subject_type": "模型",
+    "relation": "模拟",
+    "object": "起落架收放系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "元件参数性能",
+    "subject_type": "属性",
+    "relation": "影响",
+    "object": "系统工作性能",
+    "object_type": "属性"
+  },
+  {
+    "subject": "神经网络算法",
+    "subject_type": "算法",
+    "relation": "用于实现",
+    "object": "健康评估",
+    "object_type": "任务"
+  },
+  {
+    "subject": "健康评估",
+    "subject_type": "任务",
+    "relation": "需要",
+    "object": "故障特征",
+    "object_type": "数据"
+  },
+  {
+    "subject": "故障特征",
+    "subject_type": "数据",
+    "relation": "提取自",
+    "object": "系统输出参数",
+    "object_type": "数据"
+  },
+  {
+    "subject": "健康评估方法",
+    "subject_type": "方法",
+    "relation": "提供思路给",
+    "object": "新一代飞机起落架液压收放系统",
+    "object_type": "系统"
+  }
+]

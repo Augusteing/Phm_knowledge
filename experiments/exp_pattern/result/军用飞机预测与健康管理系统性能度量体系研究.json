@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "基于",
+    "object": "健康退化曲线",
+    "object_type": "概念"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "源于",
+    "object": "能力需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "评价",
+    "object": "PHM系统的诊断和预测能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "包括",
+    "object": "诊断性能度量",
+    "object_type": "度量方法"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "包括",
+    "object": "预测性能度量",
+    "object_type": "度量方法"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "包括",
+    "object": "综合度量",
+    "object_type": "度量方法"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "为...奠定基础",
+    "object": "PHM系统算法设计",
+    "object_type": "任务"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "为...奠定基础",
+    "object": "系统能力验证",
+    "object_type": "任务"
+  },
+  {
+    "subject": "PHM系统性能度量方法体系",
+    "subject_type": "方法体系",
+    "relation": "具有",
+    "object": "工程应用价值",
+    "object_type": "价值"
+  }
+]

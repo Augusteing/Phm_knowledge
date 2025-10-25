@@ -1,0 +1,278 @@
+{
+  "entities": [
+    {
+      "name": "EnsembleBRB-SHAP",
+      "type": "方法"
+    },
+    {
+      "name": "航空发动机",
+      "type": "系统"
+    },
+    {
+      "name": "健康状态预测",
+      "type": "任务"
+    },
+    {
+      "name": "置信规则库",
+      "type": "模型"
+    },
+    {
+      "name": "集成置信规则库",
+      "type": "模型"
+    },
+    {
+      "name": "SHAP",
+      "type": "方法"
+    },
+    {
+      "name": "数据驱动法",
+      "type": "方法"
+    },
+    {
+      "name": "集成学习算法",
+      "type": "算法"
+    },
+    {
+      "name": "Bagging框架",
+      "type": "方法"
+    },
+    {
+      "name": "C-MAPSS",
+      "type": "数据集"
+    },
+    {
+      "name": "低压涡轮机冷却液泄漏量",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "风扇转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压缩机出口燃料流量与静压比",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压缩机出口压力",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "核心转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "校正后的风扇转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "校正后的核心转速",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "排气焰",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压缩机出口静态压力",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "低压压缩机出口温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "高压压缩机出口温度",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "涵道比",
+      "type": "传感器/监测参数"
+    },
+    {
+      "name": "均方误差",
+      "type": "性能指标"
+    },
+    {
+      "name": "可解释性",
+      "type": "属性"
+    },
+    {
+      "name": "发动机健康管理",
+      "type": "应用领域"
+    },
+    {
+      "name": "视情维修",
+      "type": "任务"
+    },
+    {
+      "name": "Python",
+      "type": "软件工具"
+    },
+    {
+      "name": "KernelSHAP",
+      "type": "方法"
+    },
+    {
+      "name": "支持向量机",
+      "type": "模型"
+    },
+    {
+      "name": "决策树",
+      "type": "模型"
+    },
+    {
+      "name": "梯度提升回归",
+      "type": "模型"
+    },
+    {
+      "name": "Lasso算法",
+      "type": "算法"
+    },
+    {
+      "name": "多层感知机",
+      "type": "模型"
+    }
+  ],
+  "relations": [
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "应用于",
+      "tail": "航空发动机"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "用于",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "基于",
+      "tail": "置信规则库"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "采用",
+      "tail": "集成学习算法"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "采用",
+      "tail": "Bagging框架"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "训练",
+      "tail": "C-MAPSS"
+    },
+    {
+      "head": "SHAP",
+      "relation": "用于",
+      "tail": "可解释性"
+    },
+    {
+      "head": "SHAP",
+      "relation": "分析",
+      "tail": "集成置信规则库"
+    },
+    {
+      "head": "低压涡轮机冷却液泄漏量",
+      "relation": "影响",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "风扇转速",
+      "relation": "影响",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "高压压缩机出口燃料流量与静压比",
+      "relation": "影响",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "优于",
+      "tail": "支持向量机"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "优于",
+      "tail": "决策树"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "优于",
+      "tail": "梯度提升回归"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "优于",
+      "tail": "Lasso算法"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "优于",
+      "tail": "多层感知机"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "支持",
+      "tail": "发动机健康管理"
+    },
+    {
+      "head": "健康状态预测",
+      "relation": "支持",
+      "tail": "视情维修"
+    },
+    {
+      "head": "SHAP",
+      "relation": "实现",
+      "tail": "局部可解释性"
+    },
+    {
+      "head": "SHAP",
+      "relation": "实现",
+      "tail": "全局可解释性"
+    },
+    {
+      "head": "Python",
+      "relation": "用于",
+      "tail": "KernelSHAP"
+    },
+    {
+      "head": "数据驱动法",
+      "relation": "用于",
+      "tail": "健康状态预测"
+    },
+    {
+      "head": "EnsembleBRB-SHAP",
+      "relation": "提高",
+      "tail": "可解释性"
+    },
+    {
+      "head": "集成置信规则库",
+      "relation": "降低",
+      "tail": "建模成本"
+    },
+    {
+      "head": "风扇转速",
+      "relation": "具有",
+      "tail": "冗余"
+    },
+    {
+      "head": "校正后的风扇转速",
+      "relation": "具有",
+      "tail": "冗余"
+    },
+    {
+      "head": "核心转速",
+      "relation": "具有",
+      "tail": "冗余"
+    },
+    {
+      "head": "校正后的核心转速",
+      "relation": "具有",
+      "tail": "冗余"
+    }
+  ]
+}

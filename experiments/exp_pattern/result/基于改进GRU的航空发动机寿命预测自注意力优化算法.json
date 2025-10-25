@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "航空发动机性能参数",
+    "subject_type": "数据特征",
+    "relation": "表征",
+    "object": "寿命退行",
+    "object_type": "技术问题"
+  },
+  {
+    "subject": "常规模型",
+    "subject_type": "模型",
+    "relation": "导致",
+    "object": "梯度消失",
+    "object_type": "技术问题"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "分析",
+    "object": "数据源域行梯度",
+    "object_type": "数据特征"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "分析",
+    "object": "列间相关性",
+    "object_type": "数据特征"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "优化",
+    "object": "特征权重",
+    "object_type": "模型参数"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "加速",
+    "object": "模型收敛",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "在...上验证",
+    "object": "发动机寿命预测数据集（C-MAPSS）",
+    "object_type": "数据集"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "降低",
+    "object": "寿命方均根误差（RMSE）",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "降低",
+    "object": "超前预测分值（score）",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "改善",
+    "object": "寿命预测效果",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "改进GRU的自注意力优化算法",
+    "subject_type": "算法",
+    "relation": "提供",
+    "object": "有效解决方案",
+    "object_type": "解决方案"
+  },
+  {
+    "subject": "有效解决方案",
+    "subject_type": "解决方案",
+    "relation": "用于",
+    "object": "发动机寿命预测",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "有效解决方案",
+    "subject_type": "解决方案",
+    "relation": "用于",
+    "object": "超前维护",
+    "object_type": "应用领域"
+  }
+]

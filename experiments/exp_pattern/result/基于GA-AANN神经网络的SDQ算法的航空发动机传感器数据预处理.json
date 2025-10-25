@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "航空发动机传感器数据预处理方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "数据鉴定",
+    "object_type": "功能"
+  },
+  {
+    "subject": "航空发动机传感器数据预处理方法",
+    "subject_type": "方法",
+    "relation": "实现",
+    "object": "故障诊断",
+    "object_type": "功能"
+  },
+  {
+    "subject": "航空发动机传感器数据预处理方法",
+    "subject_type": "方法",
+    "relation": "去除",
+    "object": "噪声信号干扰",
+    "object_type": "问题"
+  },
+  {
+    "subject": "SDQ算法模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "合理性检验模块",
+    "object_type": "模块"
+  },
+  {
+    "subject": "SDQ算法模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "解析冗余检验模块",
+    "object_type": "模块"
+  },
+  {
+    "subject": "遗传算法",
+    "subject_type": "算法",
+    "relation": "优化",
+    "object": "AANN神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "GA-AANN神经网络",
+    "subject_type": "模型",
+    "relation": "实现",
+    "object": "解析冗余检验",
+    "object_type": "功能"
+  },
+  {
+    "subject": "蒙特卡罗仿真方法",
+    "subject_type": "方法",
+    "relation": "用于",
+    "object": "对比仿真验证",
+    "object_type": "任务"
+  },
+  {
+    "subject": "SDQ算法",
+    "subject_type": "算法",
+    "relation": "对比",
+    "object": "基于最小二乘法的SDQ算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "SDQ算法",
+    "subject_type": "算法",
+    "relation": "隔离",
+    "object": "阶跃故障",
+    "object_type": "故障类型"
+  },
+  {
+    "subject": "SDQ算法",
+    "subject_type": "算法",
+    "relation": "隔离",
+    "object": "漂移故障",
+    "object_type": "故障类型"
+  },
+  {
+    "subject": "SDQ算法",
+    "subject_type": "算法",
+    "relation": "提高",
+    "object": "故障隔离平均正确率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "SDQ算法",
+    "subject_type": "算法",
+    "relation": "提高",
+    "object": "传感器信号平均信噪比",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机传感器数据",
+    "subject_type": "数据",
+    "relation": "输入",
+    "object": "健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "SDQ算法",
+    "subject_type": "算法",
+    "relation": "针对",
+    "object": "双通道传感器航空涡扇发动机",
+    "object_type": "研究对象"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "subject": "健康监测与预测系统",
+    "subject_type": "系统",
+    "relation": "是",
+    "object": "先进维护管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "健康监测与预测系统",
+    "subject_type": "系统",
+    "relation": "是",
+    "object": "全面的故障检测、预测与状态管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "新一代飞机",
+    "subject_type": "设备",
+    "relation": "采用",
+    "object": "健康监测与预测系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "健康监测与预测系统",
+    "subject_type": "系统",
+    "relation": "涉及",
+    "object": "关键技术",
+    "object_type": "技术领域"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "先进传感器技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "故障诊断与健康评估技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "故障预测技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "数据融合技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "关键技术",
+    "subject_type": "技术领域",
+    "relation": "包括",
+    "object": "系统验证与评价技术",
+    "object_type": "技术"
+  }
+]

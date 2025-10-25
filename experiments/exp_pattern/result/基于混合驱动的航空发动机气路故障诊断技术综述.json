@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "航空发动机健康管理技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "发动机安全",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "航空发动机健康管理技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "维修成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "气路故障诊断方法",
+    "subject_type": "方法",
+    "relation": "可分类为",
+    "object": "模型驱动方法",
+    "object_type": "方法分类"
+  },
+  {
+    "subject": "气路故障诊断方法",
+    "subject_type": "方法",
+    "relation": "可分类为",
+    "object": "数据驱动方法",
+    "object_type": "方法分类"
+  },
+  {
+    "subject": "气路故障诊断方法",
+    "subject_type": "方法",
+    "relation": "可分类为",
+    "object": "混合驱动方法",
+    "object_type": "方法分类"
+  },
+  {
+    "subject": "混合驱动方法",
+    "subject_type": "方法分类",
+    "relation": "包含",
+    "object": "数模混合驱动故障诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "关联",
+    "object": "航空发动机建模方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "关联",
+    "object": "航空发动机传感器故障诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "航空发动机气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "关联",
+    "object": "航空发动机气路性能预测技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航空发动机气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "具有",
+    "object": "发展趋势",
+    "object_type": "概念"
+  },
+  {
+    "subject": "航空发动机气路故障诊断技术",
+    "subject_type": "技术",
+    "relation": "面临",
+    "object": "挑战",
+    "object_type": "问题"
+  }
+]

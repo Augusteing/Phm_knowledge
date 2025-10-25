@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "综合运载器健康管理(IVHM)技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "安全性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "综合运载器健康管理(IVHM)技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "可靠性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "综合运载器健康管理(IVHM)技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "可维护性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "综合运载器健康管理(IVHM)技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "IVHM系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "高互操作性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "IVHM系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "复杂数据交换特点",
+    "object_type": "特性"
+  },
+  {
+    "subject": "自动测试标记语言(ATML)",
+    "subject_type": "标准/语言",
+    "relation": "用于描述",
+    "object": "航空机载设备",
+    "object_type": "设备"
+  },
+  {
+    "subject": "自动测试标记语言(ATML)",
+    "subject_type": "标准/语言",
+    "relation": "实现",
+    "object": "系统的高度集成",
+    "object_type": "目标"
+  },
+  {
+    "subject": "自动测试标记语言(ATML)",
+    "subject_type": "标准/语言",
+    "relation": "实现",
+    "object": "可扩展性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "自动测试标记语言(ATML)",
+    "subject_type": "标准/语言",
+    "relation": "应用于",
+    "object": "综合运载器健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "航空电源故障诊断与预测系统",
+    "subject_type": "应用实例",
+    "relation": "是...的实例",
+    "object": "综合运载器健康管理系统",
+    "object_type": "系统"
+  }
+]

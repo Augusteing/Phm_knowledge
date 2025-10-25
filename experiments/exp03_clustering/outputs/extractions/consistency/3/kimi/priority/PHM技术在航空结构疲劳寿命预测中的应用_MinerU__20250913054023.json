@@ -1,0 +1,140 @@
+{
+  "entities": [
+    {
+      "name": "PHM技术",
+      "type": "技术"
+    },
+    {
+      "name": "飞机机体结构疲劳失效",
+      "type": "问题"
+    },
+    {
+      "name": "自助式保障",
+      "type": "功能"
+    },
+    {
+      "name": "使用和保障费用",
+      "type": "成本"
+    },
+    {
+      "name": "失效物理模型",
+      "type": "理论基础"
+    },
+    {
+      "name": "应力严重系数",
+      "type": "特征"
+    },
+    {
+      "name": "局部应力应变法",
+      "type": "方法"
+    },
+    {
+      "name": "疲劳寿命预测",
+      "type": "任务"
+    },
+    {
+      "name": "修正Neuber法",
+      "type": "方法"
+    },
+    {
+      "name": "应变-寿命曲线",
+      "type": "数据"
+    },
+    {
+      "name": "Manson-Coffin公式",
+      "type": "理论基础"
+    },
+    {
+      "name": "疲劳缺口系数",
+      "type": "特征"
+    },
+    {
+      "name": "2024铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "7050铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "MTS Landmark试验机",
+      "type": "工具"
+    },
+    {
+      "name": "中国航空综合技术研究所",
+      "type": "机构"
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM技术",
+      "relation": "用于",
+      "tail": "飞机机体结构疲劳失效"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "实现",
+      "tail": "自助式保障"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "降低",
+      "tail": "使用和保障费用"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "基于",
+      "tail": "失效物理模型"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "基于",
+      "tail": "应力严重系数"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "基于",
+      "tail": "局部应力应变法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "改进了",
+      "tail": "修正Neuber法"
+    },
+    {
+      "head": "修正Neuber法",
+      "relation": "应用于",
+      "tail": "应变-寿命曲线"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "基于",
+      "tail": "Manson-Coffin公式"
+    },
+    {
+      "head": "疲劳寿命预测",
+      "relation": "涉及",
+      "tail": "疲劳缺口系数"
+    },
+    {
+      "head": "中心圆孔板件",
+      "relation": "材料为",
+      "tail": "2024铝合金"
+    },
+    {
+      "head": "连接件",
+      "relation": "材料为",
+      "tail": "7050铝合金"
+    },
+    {
+      "head": "疲劳寿命试验",
+      "relation": "使用工具",
+      "tail": "MTS Landmark试验机"
+    },
+    {
+      "head": "宋博",
+      "relation": "隶属于",
+      "tail": "中国航空综合技术研究所"
+    }
+  ]
+}

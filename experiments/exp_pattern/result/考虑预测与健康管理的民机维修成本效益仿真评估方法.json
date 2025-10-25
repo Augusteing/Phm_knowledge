@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "航空维修",
+    "subject_type": "维修活动",
+    "relation": "保障",
+    "object": "安全飞行",
+    "object_type": "目标"
+  },
+  {
+    "subject": "航空维修",
+    "subject_type": "维修活动",
+    "relation": "控制",
+    "object": "运营成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "PHM",
+    "subject_type": "技术",
+    "relation": "应用于",
+    "object": "航空维修",
+    "object_type": "维修活动"
+  },
+  {
+    "subject": "民机维修成本效益仿真评估方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "计划维修优化模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "民机维修成本效益仿真评估方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "非计划维修可控模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "民机维修成本效益仿真评估方法",
+    "subject_type": "方法",
+    "relation": "建立",
+    "object": "PHM错误影响分析模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "民机维修成本效益仿真评估方法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "计算机仿真技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "民机维修成本效益仿真评估方法",
+    "subject_type": "方法",
+    "relation": "评估",
+    "object": "基于PHM的维修模式",
+    "object_type": "维修模式"
+  },
+  {
+    "subject": "民机维修成本效益仿真评估方法",
+    "subject_type": "方法",
+    "relation": "选取",
+    "object": "空调系统",
+    "object_type": "飞机系统"
+  },
+  {
+    "subject": "基于PHM的维修模式",
+    "subject_type": "维修模式",
+    "relation": "减少",
+    "object": "维修工时",
+    "object_type": "指标"
+  },
+  {
+    "subject": "基于PHM的维修模式",
+    "subject_type": "维修模式",
+    "relation": "节约",
+    "object": "维修成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "基于PHM的维修模式",
+    "subject_type": "维修模式",
+    "relation": "避免",
+    "object": "非计划维修事件",
+    "object_type": "事件"
+  },
+  {
+    "subject": "基于PHM的维修模式",
+    "subject_type": "维修模式",
+    "relation": "优于",
+    "object": "传统的预防性维修",
+    "object_type": "维修模式"
+  }
+]

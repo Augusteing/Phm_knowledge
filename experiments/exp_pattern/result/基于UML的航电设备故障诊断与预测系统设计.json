@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "航电设备故障诊断与预测系统设计",
+    "subject_type": "活动",
+    "relation": "采用",
+    "object": "UML",
+    "object_type": "建模语言"
+  },
+  {
+    "subject": "UML",
+    "subject_type": "建模语言",
+    "relation": "基于",
+    "object": "面向对象技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "航电设备故障诊断与预测系统",
+    "subject_type": "系统",
+    "relation": "建立",
+    "object": "UML模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "航电设备故障诊断与预测系统",
+    "subject_type": "系统",
+    "relation": "开发",
+    "object": "系统软件",
+    "object_type": "软件"
+  },
+  {
+    "subject": "状态趋势预测",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "系统有效性",
+    "object_type": "属性"
+  },
+  {
+    "subject": "状态趋势预测",
+    "subject_type": "方法",
+    "relation": "分析",
+    "object": "+5V输出电压数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "航电设备电源",
+    "subject_type": "硬件",
+    "relation": "产生",
+    "object": "+5V输出电压数据",
+    "object_type": "数据"
+  }
+]

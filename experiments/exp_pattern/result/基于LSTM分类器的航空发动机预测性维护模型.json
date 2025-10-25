@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "PHM",
+    "subject_type": "领域",
+    "relation": "包含",
+    "object": "预测性维护",
+    "object_type": "任务"
+  },
+  {
+    "subject": "预测性维护",
+    "subject_type": "任务",
+    "relation": "利用",
+    "object": "传感器数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "基于LSTM分类器的预测性维护模型",
+    "subject_type": "模型",
+    "relation": "解决",
+    "object": "剩余寿命预测准确性低问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "LSTM分类器",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "门控单元",
+    "object_type": "组件"
+  },
+  {
+    "subject": "LSTM分类器",
+    "subject_type": "模型",
+    "relation": "筛选",
+    "object": "长时间序列信息",
+    "object_type": "数据"
+  },
+  {
+    "subject": "LSTM分类器",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "时间序列预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "滑动时间窗口",
+    "subject_type": "方法",
+    "relation": "制备",
+    "object": "训练样本",
+    "object_type": "数据"
+  },
+  {
+    "subject": "LSTM分类器",
+    "subject_type": "模型",
+    "relation": "预测",
+    "object": "失效概率",
+    "object_type": "指标"
+  },
+  {
+    "subject": "调整窗口大小",
+    "subject_type": "方法",
+    "relation": "优化",
+    "object": "二分类模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "C-MAPSS数据集",
+    "subject_type": "数据集",
+    "relation": "验证",
+    "object": "基于LSTM分类器的预测性维护模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "基于LSTM分类器的预测性维护模型",
+    "subject_type": "模型",
+    "relation": "优于",
+    "object": "已有分类方法",
+    "object_type": "方法"
+  }
+]

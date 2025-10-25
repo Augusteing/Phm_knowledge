@@ -1,0 +1,44 @@
+[
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "系统可用性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "提高",
+    "object": "维修效率",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "PHM技术",
+    "subject_type": "技术",
+    "relation": "降低",
+    "object": "寿命周期成本",
+    "object_type": "成本"
+  },
+  {
+    "subject": "航空电子系统",
+    "subject_type": "系统",
+    "relation": "应用",
+    "object": "PHM技术",
+    "object_type": "技术"
+  },
+  {
+    "subject": "综合航空电子PHM系统",
+    "subject_type": "系统",
+    "relation": "采用",
+    "object": "OSA-CBM开放式体系架构",
+    "object_type": "体系架构"
+  },
+  {
+    "subject": "综合航空电子PHM系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "关键技术",
+    "object_type": "技术集合"
+  }
+]

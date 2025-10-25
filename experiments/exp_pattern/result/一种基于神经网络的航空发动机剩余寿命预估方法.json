@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "解决",
+    "object": "航空发动机剩余寿命预估问题",
+    "object_type": "问题"
+  },
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "卷积神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "使用",
+    "object": "长短期记忆神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "卷积神经网络",
+    "subject_type": "模型",
+    "relation": "提取",
+    "object": "特征",
+    "object_type": "数据"
+  },
+  {
+    "subject": "特征",
+    "subject_type": "数据",
+    "relation": "来源于",
+    "object": "传感器数据",
+    "object_type": "数据"
+  },
+  {
+    "subject": "长短期记忆神经网络",
+    "subject_type": "模型",
+    "relation": "进行",
+    "object": "时间序列预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "全连接层",
+    "subject_type": "模型组件",
+    "relation": "输出",
+    "object": "航空发动机剩余寿命",
+    "object_type": "预测目标"
+  },
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "验证于",
+    "object": "C-MAPSS数据集",
+    "object_type": "数据集"
+  },
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "发出",
+    "object": "故障预警信号",
+    "object_type": "信号"
+  },
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "提高",
+    "object": "飞行的安全性",
+    "object_type": "目标"
+  },
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "服务于",
+    "object": "航空发动机健康管理系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "基于CNN和LSTM的剩余寿命预估方法",
+    "subject_type": "方法",
+    "relation": "优于",
+    "object": "此前提出的方法",
+    "object_type": "方法"
+  }
+]

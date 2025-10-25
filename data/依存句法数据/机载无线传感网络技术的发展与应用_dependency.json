@@ -1,0 +1,660 @@
+{
+  "title": "机载无线传感网络技术的发展与应用",
+  "summary": "机载无线传感网络技术是一个非常有前途的发展方向。分析了机载无线传感网络技术的国内外发展情况及对该系统的实际需求,给出了适合我国机载传感网络应用的体系架构,提出了对我国发展机载无线传感网络技术的几点建议,这对于我国发展机载无线传感网络技术具有重要的指导意义和参考价值。",
+  "analyzed_sentences": [
+    {
+      "sentence": "机载无线传感网络技术是一个非常有前途的发展方向",
+      "tokens": [
+        "机载",
+        "无线",
+        "传感",
+        "网络",
+        "技术",
+        "是",
+        "一",
+        "个",
+        "非常",
+        "有",
+        "前途",
+        "的",
+        "发展",
+        "方向"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "机载",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "无线",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "传感",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "网络",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "技术",
+          "head": 6,
+          "deprel": "top",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 7,
+          "form": "一",
+          "head": 8,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 8,
+          "form": "个",
+          "head": 14,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 9,
+          "form": "非常",
+          "head": 10,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 10,
+          "form": "有",
+          "head": 14,
+          "deprel": "rcmod",
+          "pos": "VE"
+        },
+        {
+          "id": 11,
+          "form": "前途",
+          "head": 10,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "的",
+          "head": 10,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 13,
+          "form": "发展",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "方向",
+          "head": 6,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "分析了机载无线传感网络技术的国内外发展情况及对该系统的实际需求,给出了适合我国机载传感网络应用的体系架构,提出了对我国发展机载无线传感网络技术的几点建议,这对于我国发展机载无线传感网络技术具有重要的指导意义和参考价值",
+      "tokens": [
+        "分析",
+        "了",
+        "机载",
+        "无线",
+        "传感",
+        "网络",
+        "技术",
+        "的",
+        "国内外",
+        "发展",
+        "情况",
+        "及",
+        "对",
+        "该",
+        "系统",
+        "的",
+        "实际",
+        "需求",
+        ",",
+        "给出",
+        "了",
+        "适合",
+        "我",
+        "国",
+        "机载",
+        "传感",
+        "网络",
+        "应用",
+        "的",
+        "体系",
+        "架构",
+        ",",
+        "提出",
+        "了",
+        "对",
+        "我",
+        "国",
+        "发展",
+        "机载",
+        "无线",
+        "传感",
+        "网络",
+        "技术",
+        "的",
+        "几",
+        "点",
+        "建议",
+        ",",
+        "这",
+        "对于",
+        "我",
+        "国",
+        "发展",
+        "机载",
+        "无线",
+        "传感",
+        "网络",
+        "技术",
+        "具有",
+        "重要",
+        "的",
+        "指导",
+        "意义",
+        "和",
+        "参考",
+        "价值"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "分析",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "了",
+          "head": 1,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 3,
+          "form": "机载",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "无线",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "传感",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "网络",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "技术",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 9,
+          "form": "国内外",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "发展",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "情况",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "及",
+          "head": 1,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "对",
+          "head": 20,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 14,
+          "form": "该",
+          "head": 15,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 15,
+          "form": "系统",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 15,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "实际",
+          "head": 18,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 18,
+          "form": "需求",
+          "head": 13,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "给出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 21,
+          "form": "了",
+          "head": 20,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 22,
+          "form": "适合",
+          "head": 31,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 23,
+          "form": "我",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 24,
+          "form": "国",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "机载",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "传感",
+          "head": 27,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": "网络",
+          "head": 28,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "应用",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "的",
+          "head": 22,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 30,
+          "form": "体系",
+          "head": 31,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "架构",
+          "head": 20,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 33,
+          "form": "提出",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "了",
+          "head": 33,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 35,
+          "form": "对",
+          "head": 47,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 36,
+          "form": "我",
+          "head": 37,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 37,
+          "form": "国",
+          "head": 38,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "发展",
+          "head": 35,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "机载",
+          "head": 42,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "无线",
+          "head": 42,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 41,
+          "form": "传感",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "网络",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "技术",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 35,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "几",
+          "head": 46,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 46,
+          "form": "点",
+          "head": 47,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 47,
+          "form": "建议",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": ",",
+          "head": 1,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 49,
+          "form": "这",
+          "head": 59,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 50,
+          "form": "对于",
+          "head": 59,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 51,
+          "form": "我",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "PN"
+        },
+        {
+          "id": 52,
+          "form": "国",
+          "head": 53,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "发展",
+          "head": 50,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 54,
+          "form": "机载",
+          "head": 57,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "无线",
+          "head": 57,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 56,
+          "form": "传感",
+          "head": 57,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "网络",
+          "head": 58,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 58,
+          "form": "技术",
+          "head": 53,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 59,
+          "form": "具有",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 60,
+          "form": "重要",
+          "head": 66,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 61,
+          "form": "的",
+          "head": 60,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 62,
+          "form": "指导",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "意义",
+          "head": 66,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 64,
+          "form": "和",
+          "head": 66,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 65,
+          "form": "参考",
+          "head": 66,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "价值",
+          "head": 59,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

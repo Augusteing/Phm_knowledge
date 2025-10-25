@@ -1,0 +1,1139 @@
+{
+  "title": "航空大数据技术的发展与应用",
+  "summary": "大数据技术在以互联网、电商、金融为代表的第三产业得到了极大的发展和扩充,然而在航空工业领域,大数据技术的价值一直没有得到充分利用与挖掘。事实上,大数据技术在飞行器设计、系统级故障预测以及航空装备维修与保障领域有重大应用价值,值得进行深入研究与探索。首先介绍了大数据的内涵,按大数据流转的生命周期分析了相关技术在航空领域的应用,重点阐述了航空大数据分析技术在系统级故障预测领域的应用,并结合美国大数据分析技术在航空领域的应用现状,指出了航空大数据技术的发展趋势。",
+  "analyzed_sentences": [
+    {
+      "sentence": "大数据技术在以互联网、电商、金融为代表的第三产业得到了极大的发展和扩充,然而在航空工业领域,大数据技术的价值一直没有得到充分利用与挖掘",
+      "tokens": [
+        "大",
+        "数据",
+        "技术",
+        "在",
+        "以",
+        "互联网",
+        "、",
+        "电商",
+        "、",
+        "金融",
+        "为",
+        "代表",
+        "的",
+        "第三",
+        "产业",
+        "得到",
+        "了",
+        "极",
+        "大",
+        "的",
+        "发展",
+        "和",
+        "扩充",
+        ",",
+        "然而",
+        "在",
+        "航空",
+        "工业",
+        "领域",
+        ",",
+        "大",
+        "数据",
+        "技术",
+        "的",
+        "价值",
+        "一直",
+        "没有",
+        "得到",
+        "充分",
+        "利用",
+        "与",
+        "挖掘"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "大",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "数据",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "技术",
+          "head": 16,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "在",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 5,
+          "form": "以",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 6,
+          "form": "互联网",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "电商",
+          "head": 10,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "、",
+          "head": 10,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 10,
+          "form": "金融",
+          "head": 5,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "为",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "代表",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 11,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "第三",
+          "head": 15,
+          "deprel": "nummod",
+          "pos": "OD"
+        },
+        {
+          "id": 15,
+          "form": "产业",
+          "head": 4,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "得到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "极",
+          "head": 19,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 19,
+          "form": "大",
+          "head": 23,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 20,
+          "form": "的",
+          "head": 19,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 21,
+          "form": "发展",
+          "head": 23,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "和",
+          "head": 23,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 23,
+          "form": "扩充",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 16,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "然而",
+          "head": 38,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 26,
+          "form": "在",
+          "head": 38,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "航空",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "工业",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "领域",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": ",",
+          "head": 38,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "大",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 32,
+          "form": "数据",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "技术",
+          "head": 35,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "的",
+          "head": 33,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 35,
+          "form": "价值",
+          "head": 38,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 36,
+          "form": "一直",
+          "head": 38,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 37,
+          "form": "没有",
+          "head": 38,
+          "deprel": "neg",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "得到",
+          "head": 16,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "充分",
+          "head": 42,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 40,
+          "form": "利用",
+          "head": 42,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "与",
+          "head": 42,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 42,
+          "form": "挖掘",
+          "head": 38,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "事实上,大数据技术在飞行器设计、系统级故障预测以及航空装备维修与保障领域有重大应用价值,值得进行深入研究与探索",
+      "tokens": [
+        "事实",
+        "上",
+        ",",
+        "大",
+        "数据",
+        "技术",
+        "在",
+        "飞行器",
+        "设计",
+        "、",
+        "系统",
+        "级",
+        "故障",
+        "预测",
+        "以及",
+        "航空",
+        "装备",
+        "维修",
+        "与",
+        "保障",
+        "领域",
+        "有",
+        "重大",
+        "应用",
+        "价值",
+        ",",
+        "值得",
+        "进行",
+        "深入",
+        "研究",
+        "与",
+        "探索"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "事实",
+          "head": 2,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "上",
+          "head": 22,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 3,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 4,
+          "form": "大",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "数据",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "技术",
+          "head": 22,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "在",
+          "head": 22,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 8,
+          "form": "飞行器",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "设计",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "、",
+          "head": 20,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 11,
+          "form": "系统",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "级",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "故障",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "预测",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "以及",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 16,
+          "form": "航空",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "装备",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "维修",
+          "head": 20,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "与",
+          "head": 20,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 20,
+          "form": "保障",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "领域",
+          "head": 7,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VE"
+        },
+        {
+          "id": 23,
+          "form": "重大",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 24,
+          "form": "应用",
+          "head": 25,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": "价值",
+          "head": 22,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": ",",
+          "head": 22,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 27,
+          "form": "值得",
+          "head": 22,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "进行",
+          "head": 27,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "深入",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 30,
+          "form": "研究",
+          "head": 32,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "与",
+          "head": 32,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "探索",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "首先介绍了大数据的内涵,按大数据流转的生命周期分析了相关技术在航空领域的应用,重点阐述了航空大数据分析技术在系统级故障预测领域的应用,并结合美国大数据分析技术在航空领域的应用现状,指出了航空大数据技术的发展趋势",
+      "tokens": [
+        "首先",
+        "介绍",
+        "了",
+        "大",
+        "数据",
+        "的",
+        "内涵",
+        ",",
+        "按",
+        "大",
+        "数据",
+        "流转",
+        "的",
+        "生命",
+        "周期",
+        "分析",
+        "了",
+        "相关",
+        "技术",
+        "在",
+        "航空",
+        "领域",
+        "的",
+        "应用",
+        ",",
+        "重点",
+        "阐述",
+        "了",
+        "航空",
+        "大",
+        "数据",
+        "分析",
+        "技术",
+        "在",
+        "系统",
+        "级",
+        "故障",
+        "预测",
+        "领域",
+        "的",
+        "应用",
+        ",",
+        "并",
+        "结合",
+        "美国",
+        "大",
+        "数据",
+        "分析",
+        "技术",
+        "在",
+        "航空",
+        "领域",
+        "的",
+        "应用",
+        "现状",
+        ",",
+        "指出",
+        "了",
+        "航空",
+        "大",
+        "数据",
+        "技术",
+        "的",
+        "发展",
+        "趋势"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "首先",
+          "head": 2,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "了",
+          "head": 2,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 4,
+          "form": "大",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 5,
+          "form": "数据",
+          "head": 7,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "内涵",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "按",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "大",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "数据",
+          "head": 12,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "流转",
+          "head": 15,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 13,
+          "form": "的",
+          "head": 12,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 14,
+          "form": "生命",
+          "head": 15,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "周期",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "分析",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "相关",
+          "head": 19,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "技术",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "在",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 21,
+          "form": "航空",
+          "head": 22,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "领域",
+          "head": 20,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 20,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "应用",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "重点",
+          "head": 27,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 27,
+          "form": "阐述",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "了",
+          "head": 27,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 29,
+          "form": "航空",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "大",
+          "head": 31,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 31,
+          "form": "数据",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "分析",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "技术",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "在",
+          "head": 41,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 35,
+          "form": "系统",
+          "head": 36,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 36,
+          "form": "级",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "JJ"
+        },
+        {
+          "id": 37,
+          "form": "故障",
+          "head": 38,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "预测",
+          "head": 39,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "领域",
+          "head": 34,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "的",
+          "head": 34,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 41,
+          "form": "应用",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "并",
+          "head": 2,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 44,
+          "form": "结合",
+          "head": 2,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 45,
+          "form": "美国",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 46,
+          "form": "大",
+          "head": 47,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 47,
+          "form": "数据",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "分析",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "技术",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "在",
+          "head": 55,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 51,
+          "form": "航空",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "领域",
+          "head": 50,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "的",
+          "head": 50,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 54,
+          "form": "应用",
+          "head": 55,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 55,
+          "form": "现状",
+          "head": 44,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 56,
+          "form": ",",
+          "head": 2,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 57,
+          "form": "指出",
+          "head": 2,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 58,
+          "form": "了",
+          "head": 57,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 59,
+          "form": "航空",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "大",
+          "head": 61,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 61,
+          "form": "数据",
+          "head": 62,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "技术",
+          "head": 65,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "的",
+          "head": 62,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 64,
+          "form": "发展",
+          "head": 65,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "趋势",
+          "head": 57,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

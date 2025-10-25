@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "PHM技术",
+      "type": "研究方法"
+    },
+    {
+      "name": "飞机机体结构疲劳失效",
+      "type": "故障模式"
+    },
+    {
+      "name": "失效物理模型",
+      "type": "理论基础"
+    },
+    {
+      "name": "应力严重系数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "局部应力应变法",
+      "type": "研究方法"
+    },
+    {
+      "name": "疲劳缺口系数",
+      "type": "特征/健康指标"
+    },
+    {
+      "name": "修正Neuber法",
+      "type": "研究方法"
+    },
+    {
+      "name": "Manson-Coffin公式",
+      "type": "理论基础"
+    },
+    {
+      "name": "2024铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "7050铝合金",
+      "type": "材料"
+    },
+    {
+      "name": "MTS Landmark试验机",
+      "type": "系统/部件"
+    },
+    {
+      "name": "疲劳试验",
+      "type": "研究方法"
+    },
+    {
+      "name": "飞机结构件",
+      "type": "系统/部件"
+    }
+  ],
+  "relations": [
+    {
+      "head": "PHM技术",
+      "relation": "应用于",
+      "tail": "飞机机体结构疲劳失效"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "基于",
+      "tail": "失效物理模型"
+    },
+    {
+      "head": "失效物理模型",
+      "relation": "包括",
+      "tail": "应力严重系数"
+    },
+    {
+      "head": "失效物理模型",
+      "relation": "包括",
+      "tail": "疲劳缺口系数"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "改进了",
+      "tail": "修正Neuber法"
+    },
+    {
+      "head": "局部应力应变法",
+      "relation": "基于",
+      "tail": "Manson-Coffin公式"
+    },
+    {
+      "head": "飞机结构件",
+      "relation": "使用材料",
+      "tail": "2024铝合金"
+    },
+    {
+      "head": "飞机结构件",
+      "relation": "使用材料",
+      "tail": "7050铝合金"
+    },
+    {
+      "head": "疲劳试验",
+      "relation": "使用设备",
+      "tail": "MTS Landmark试验机"
+    },
+    {
+      "head": "PHM技术",
+      "relation": "预测",
+      "tail": "飞机结构件"
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "title": "商用大飞机健康管理应用研究",
+  "summary": "AHM技术优势及技术革新已经得到了长足发展,但要清楚地认识到,AHM技术的发展主要集中在改善维修、备件及人员配置等方面。但目前的飞机设计理念已经转向了完全自动化,AHM技术也开始在保证关键部位安全等方面得到了发展,实现了对关键部位的异常、失效进行实时监测与处理,确保飞机的安全运行。",
+  "analyzed_sentences": [
+    {
+      "sentence": "AHM技术优势及技术革新已经得到了长足发展,但要清楚地认识到,AHM技术的发展主要集中在改善维修、备件及人员配置等方面",
+      "tokens": [
+        "AHM",
+        "技术",
+        "优势",
+        "及",
+        "技术",
+        "革新",
+        "已经",
+        "得到",
+        "了",
+        "长足",
+        "发展",
+        ",",
+        "但",
+        "要",
+        "清楚",
+        "地",
+        "认识",
+        "到",
+        ",",
+        "AHM",
+        "技术",
+        "的",
+        "发展",
+        "主要",
+        "集中",
+        "在",
+        "改善",
+        "维修",
+        "、",
+        "备件",
+        "及",
+        "人员",
+        "配置",
+        "等",
+        "方面"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "AHM",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 2,
+          "form": "技术",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "优势",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "及",
+          "head": 6,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 5,
+          "form": "技术",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "革新",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "已经",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "得到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "长足",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "发展",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "但",
+          "head": 25,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "要",
+          "head": 25,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "清楚",
+          "head": 25,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 16,
+          "form": "地",
+          "head": 15,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 17,
+          "form": "认识",
+          "head": 25,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 18,
+          "form": "到",
+          "head": 17,
+          "deprel": "rcomp",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": ",",
+          "head": 25,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 20,
+          "form": "AHM",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 21,
+          "form": "技术",
+          "head": 23,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "发展",
+          "head": 25,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "主要",
+          "head": 25,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 25,
+          "form": "集中",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "在",
+          "head": 25,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 27,
+          "form": "改善",
+          "head": 35,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "维修",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 30,
+          "form": "备件",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "及",
+          "head": 33,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 32,
+          "form": "人员",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "配置",
+          "head": 27,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": "等",
+          "head": 33,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 35,
+          "form": "方面",
+          "head": 26,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "但目前的飞机设计理念已经转向了完全自动化,AHM技术也开始在保证关键部位安全等方面得到了发展,实现了对关键部位的异常、失效进行实时监测与处理,确保飞机的安全运行",
+      "tokens": [
+        "但",
+        "目前",
+        "的",
+        "飞机",
+        "设计",
+        "理念",
+        "已经",
+        "转向",
+        "了",
+        "完全",
+        "自动化",
+        ",",
+        "AHM",
+        "技术",
+        "也",
+        "开始",
+        "在",
+        "保证",
+        "关键",
+        "部位",
+        "安全",
+        "等",
+        "方面",
+        "得到",
+        "了",
+        "发展",
+        ",",
+        "实现",
+        "了",
+        "对",
+        "关键",
+        "部位",
+        "的",
+        "异常",
+        "、",
+        "失效",
+        "进行",
+        "实时",
+        "监测",
+        "与",
+        "处理",
+        ",",
+        "确保",
+        "飞机",
+        "的",
+        "安全",
+        "运行"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "但",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "目前",
+          "head": 6,
+          "deprel": "assmod",
+          "pos": "NT"
+        },
+        {
+          "id": 3,
+          "form": "的",
+          "head": 2,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 4,
+          "form": "飞机",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "设计",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "理念",
+          "head": 8,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "已经",
+          "head": 8,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 8,
+          "form": "转向",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 9,
+          "form": "了",
+          "head": 8,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 10,
+          "form": "完全",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 11,
+          "form": "自动化",
+          "head": 8,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 8,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "AHM",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "技术",
+          "head": 24,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "也",
+          "head": 24,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 16,
+          "form": "开始",
+          "head": 24,
+          "deprel": "mmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "在",
+          "head": 24,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 18,
+          "form": "保证",
+          "head": 23,
+          "deprel": "vmod",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "关键",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 20,
+          "form": "部位",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "安全",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "等",
+          "head": 21,
+          "deprel": "etc",
+          "pos": "ETC"
+        },
+        {
+          "id": 23,
+          "form": "方面",
+          "head": 17,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "得到",
+          "head": 8,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 25,
+          "form": "了",
+          "head": 24,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 26,
+          "form": "发展",
+          "head": 24,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 27,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 28,
+          "form": "实现",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "了",
+          "head": 28,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 30,
+          "form": "对",
+          "head": 37,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 31,
+          "form": "关键",
+          "head": 32,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 32,
+          "form": "部位",
+          "head": 36,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "的",
+          "head": 32,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 34,
+          "form": "异常",
+          "head": 36,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 35,
+          "form": "、",
+          "head": 36,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 36,
+          "form": "失效",
+          "head": 30,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 37,
+          "form": "进行",
+          "head": 28,
+          "deprel": "ccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 38,
+          "form": "实时",
+          "head": 41,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 39,
+          "form": "监测",
+          "head": 41,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "与",
+          "head": 41,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 41,
+          "form": "处理",
+          "head": 37,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": ",",
+          "head": 24,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "确保",
+          "head": 24,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 44,
+          "form": "飞机",
+          "head": 47,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "的",
+          "head": 44,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 46,
+          "form": "安全",
+          "head": 47,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 47,
+          "form": "运行",
+          "head": 43,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

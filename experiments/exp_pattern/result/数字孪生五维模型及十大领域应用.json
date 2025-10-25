@@ -1,0 +1,128 @@
+[
+  {
+    "subject": "数字孪生",
+    "subject_type": "技术",
+    "relation": "践行",
+    "object": "智能制造",
+    "object_type": "理念"
+  },
+  {
+    "subject": "数字孪生",
+    "subject_type": "技术",
+    "relation": "践行",
+    "object": "工业4.0",
+    "object_type": "理念"
+  },
+  {
+    "subject": "数字孪生",
+    "subject_type": "技术",
+    "relation": "践行",
+    "object": "工业互联网",
+    "object_type": "理念"
+  },
+  {
+    "subject": "数字孪生",
+    "subject_type": "技术",
+    "relation": "践行",
+    "object": "智慧城市",
+    "object_type": "理念"
+  },
+  {
+    "subject": "模型",
+    "subject_type": "核心要素",
+    "relation": "是核心",
+    "object": "数字孪生",
+    "object_type": "技术"
+  },
+  {
+    "subject": "传统数字孪生三维模型",
+    "subject_type": "模型",
+    "relation": "无法满足",
+    "object": "技术发展与应用需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "数字孪生车间研究",
+    "subject_type": "研究",
+    "relation": "提出",
+    "object": "数字孪生五维模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "适应",
+    "object": "新需求",
+    "object_type": "需求"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "卫星/空间通信网络",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "船舶",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "车辆",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "发电厂",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "飞机",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "复杂机电装备",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "立体仓库",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "医疗",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "制造车间",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "数字孪生五维模型",
+    "subject_type": "模型",
+    "relation": "应用于",
+    "object": "智慧城市",
+    "object_type": "应用领域"
+  }
+]

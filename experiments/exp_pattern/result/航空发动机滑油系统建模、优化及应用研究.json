@@ -1,0 +1,100 @@
+[
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "支撑",
+    "object": "滑油系统健康管理",
+    "object_type": "应用领域"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "滑油系统元件物理特性",
+    "object_type": "理论基础"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "通风子系统模型",
+    "object_type": "子系统模型"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "供油子系统模型",
+    "object_type": "子系统模型"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "热力子系统模型",
+    "object_type": "子系统模型"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "包含",
+    "object": "回油子系统模型",
+    "object_type": "子系统模型"
+  },
+  {
+    "subject": "粒子群算法",
+    "subject_type": "优化算法",
+    "relation": "用于优化",
+    "object": "滑油系统仿真模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "遗传算法",
+    "subject_type": "优化算法",
+    "relation": "用于优化",
+    "object": "滑油系统仿真模型",
+    "object_type": "模型"
+  },
+  {
+    "subject": "粒子群算法",
+    "subject_type": "优化算法",
+    "relation": "具有",
+    "object": "较好的收敛性与优化效果",
+    "object_type": "性能"
+  },
+  {
+    "subject": "模型优化",
+    "subject_type": "过程",
+    "relation": "降低",
+    "object": "工作参数平均误差",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "滑油监测",
+    "object_type": "健康管理任务"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "诊断",
+    "object_type": "健康管理任务"
+  },
+  {
+    "subject": "滑油系统仿真模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "预测",
+    "object_type": "健康管理任务"
+  },
+  {
+    "subject": "试验方法",
+    "subject_type": "传统方法",
+    "relation": "具有",
+    "object": "成本高、周期长缺点",
+    "object_type": "缺点"
+  }
+]

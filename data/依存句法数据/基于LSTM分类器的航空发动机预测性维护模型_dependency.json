@@ -1,0 +1,1325 @@
+{
+  "title": "基于LSTM分类器的航空发动机预测性维护模型",
+  "summary": "利用传感器数据进行预测性维护是航空发动机故障预测与健康管理(prognostic and health management, PHM)的关键问题。针对发动机剩余寿命预测准确性低的问题，提出基于长短期记忆网络(long short-term memory network, LSTM)分类器的预测性维护模型。LSTM分类器通过门控单元对长时间序列信息进行充分筛选，并将有效信息用于时间序列预测。首先，采用滑动时间窗口制备训练样本。其次，将预处理后的样本输入LSTM,预测设备在特定时间窗口内的失效概率。然后，通过调整窗口大小，得到最优性能的二分类模型，以更好地适应预测维护需求。最后，利用美国航空航天局C-MAPSS数据集验证了该模型的有效性，相比于已有分类方法，其在剩余使用寿命分类方面更加准确。",
+  "analyzed_sentences": [
+    {
+      "sentence": "利用传感器数据进行预测性维护是航空发动机故障预测与健康管理(prognostic and health management, PHM)的关键问题",
+      "tokens": [
+        "利用",
+        "传感器",
+        "数据",
+        "进行",
+        "预测性",
+        "维护",
+        "是",
+        "航空",
+        "发动机",
+        "故障",
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "prognostic",
+        "and",
+        "health",
+        "management",
+        ",",
+        "PHM",
+        ")",
+        "的",
+        "关键",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 7,
+          "deprel": "top",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "传感器",
+          "head": 3,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "数据",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "进行",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 5,
+          "form": "预测性",
+          "head": 6,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "维护",
+          "head": 4,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 8,
+          "form": "航空",
+          "head": 9,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "发动机",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "故障",
+          "head": 11,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "预测",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "与",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "健康",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "管理",
+          "head": 25,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "(",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "prognostic",
+          "head": 21,
+          "deprel": "conj",
+          "pos": "JJ"
+        },
+        {
+          "id": 17,
+          "form": "and",
+          "head": 21,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 18,
+          "form": "health",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "management",
+          "head": 21,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "PHM",
+          "head": 14,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": ")",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 23,
+          "form": "的",
+          "head": 14,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 24,
+          "form": "关键",
+          "head": 25,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 25,
+          "form": "问题",
+          "head": 7,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "针对发动机剩余寿命预测准确性低的问题",
+      "tokens": [
+        "针对",
+        "发动机",
+        "剩余",
+        "寿命",
+        "预测",
+        "准确性",
+        "低",
+        "的",
+        "问题"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "针对",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "发动机",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "剩余",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "寿命",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "预测",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "准确性",
+          "head": 7,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "低",
+          "head": 9,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 8,
+          "form": "的",
+          "head": 7,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 9,
+          "form": "问题",
+          "head": 1,
+          "deprel": "pobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "提出基于长短期记忆网络(long short-term memory network, LSTM)分类器的预测性维护模型",
+      "tokens": [
+        "提出",
+        "基于",
+        "长",
+        "短期",
+        "记忆",
+        "网络",
+        "(",
+        "long",
+        "short-",
+        "term",
+        "memory",
+        "network",
+        ",",
+        "LSTM",
+        ")",
+        "分类器",
+        "的",
+        "预测性",
+        "维护",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "基于",
+          "head": 20,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "长",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "短期",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "记忆",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "网络",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "(",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "long",
+          "head": 9,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 9,
+          "form": "short-",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "term",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "memory",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "network",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 14,
+          "form": "LSTM",
+          "head": 6,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ")",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "分类器",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 2,
+          "deprel": "cpm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "预测性",
+          "head": 20,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "维护",
+          "head": 20,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "LSTM分类器通过门控单元对长时间序列信息进行充分筛选",
+      "tokens": [
+        "LSTM",
+        "分类器",
+        "通过",
+        "门控",
+        "单元",
+        "对",
+        "长",
+        "时间",
+        "序列",
+        "信息",
+        "进行",
+        "充分",
+        "筛选"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "LSTM",
+          "head": 2,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "分类器",
+          "head": 11,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "通过",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 4,
+          "form": "门控",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "单元",
+          "head": 3,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "对",
+          "head": 11,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 7,
+          "form": "长",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "时间",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "序列",
+          "head": 10,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 10,
+          "form": "信息",
+          "head": 6,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "进行",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 12,
+          "form": "充分",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "筛选",
+          "head": 11,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "并将有效信息用于时间序列预测",
+      "tokens": [
+        "并",
+        "将",
+        "有效",
+        "信息",
+        "用于",
+        "时间",
+        "序列",
+        "预测"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "并",
+          "head": 5,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 2,
+          "form": "将",
+          "head": 5,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 3,
+          "form": "有效",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "信息",
+          "head": 5,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "用于",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "时间",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "序列",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "预测",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "首先",
+      "tokens": [
+        "首先"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "首先",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "采用滑动时间窗口制备训练样本",
+      "tokens": [
+        "采用",
+        "滑动",
+        "时间",
+        "窗口",
+        "制备",
+        "训练",
+        "样本"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "采用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "滑动",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "时间",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "窗口",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "制备",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "训练",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "样本",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "其次",
+      "tokens": [
+        "其次"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "其次",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "将预处理后的样本输入LSTM,预测设备在特定时间窗口内的失效概率",
+      "tokens": [
+        "将",
+        "预处理",
+        "后",
+        "的",
+        "样本",
+        "输入",
+        "LSTM",
+        ",",
+        "预测",
+        "设备",
+        "在",
+        "特定",
+        "时间",
+        "窗口",
+        "内",
+        "的",
+        "失效",
+        "概率"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "将",
+          "head": 6,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 2,
+          "form": "预处理",
+          "head": 3,
+          "deprel": "lccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "后",
+          "head": 5,
+          "deprel": "assmod",
+          "pos": "LC"
+        },
+        {
+          "id": 4,
+          "form": "的",
+          "head": 3,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 5,
+          "form": "样本",
+          "head": 6,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "输入",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 7,
+          "form": "LSTM",
+          "head": 6,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": ",",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 9,
+          "form": "预测",
+          "head": 6,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 10,
+          "form": "设备",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "在",
+          "head": 18,
+          "deprel": "assmod",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "特定",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "时间",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "窗口",
+          "head": 15,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "内",
+          "head": 11,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 16,
+          "form": "的",
+          "head": 11,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 17,
+          "form": "失效",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "概率",
+          "head": 9,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "然后",
+      "tokens": [
+        "然后"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "然后",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "通过调整窗口大小",
+      "tokens": [
+        "通过",
+        "调整",
+        "窗口",
+        "大小"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "通过",
+          "head": 0,
+          "deprel": "root",
+          "pos": "P"
+        },
+        {
+          "id": 2,
+          "form": "调整",
+          "head": 1,
+          "deprel": "pccomp",
+          "pos": "VV"
+        },
+        {
+          "id": 3,
+          "form": "窗口",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "大小",
+          "head": 2,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "得到最优性能的二分类模型",
+      "tokens": [
+        "得到",
+        "最",
+        "优",
+        "性能",
+        "的",
+        "二",
+        "分类",
+        "模型"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "得到",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "最",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "优",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "性能",
+          "head": 8,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "的",
+          "head": 4,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 6,
+          "form": "二",
+          "head": 7,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 7,
+          "form": "分类",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "模型",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "以更好地适应预测维护需求",
+      "tokens": [
+        "以",
+        "更",
+        "好",
+        "地",
+        "适应",
+        "预测",
+        "维护",
+        "需求"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "以",
+          "head": 5,
+          "deprel": "prtmod",
+          "pos": "MSP"
+        },
+        {
+          "id": 2,
+          "form": "更",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "好",
+          "head": 5,
+          "deprel": "dvpmod",
+          "pos": "VA"
+        },
+        {
+          "id": 4,
+          "form": "地",
+          "head": 3,
+          "deprel": "dvpm",
+          "pos": "DEV"
+        },
+        {
+          "id": 5,
+          "form": "适应",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "预测",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "维护",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "需求",
+          "head": 5,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "最后",
+      "tokens": [
+        "最后"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "最后",
+          "head": 0,
+          "deprel": "root",
+          "pos": "AD"
+        }
+      ]
+    },
+    {
+      "sentence": "利用美国航空航天局C-MAPSS数据集验证了该模型的有效性",
+      "tokens": [
+        "利用",
+        "美国",
+        "航空",
+        "航天局",
+        "C-MAPSS",
+        "数据集",
+        "验证",
+        "了",
+        "该",
+        "模型",
+        "的",
+        "有效性"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "利用",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "美国",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NR"
+        },
+        {
+          "id": 3,
+          "form": "航空",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "航天局",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "C-MAPSS",
+          "head": 6,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "数据集",
+          "head": 1,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "验证",
+          "head": 1,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 8,
+          "form": "了",
+          "head": 7,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 9,
+          "form": "该",
+          "head": 10,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 10,
+          "form": "模型",
+          "head": 12,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "的",
+          "head": 10,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 12,
+          "form": "有效性",
+          "head": 7,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "相比于已有分类方法",
+      "tokens": [
+        "相比于",
+        "已",
+        "有",
+        "分类",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "相比于",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "VV"
+        },
+        {
+          "id": 2,
+          "form": "已",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "有",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VE"
+        },
+        {
+          "id": 4,
+          "form": "分类",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "方法",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "其在剩余使用寿命分类方面更加准确",
+      "tokens": [
+        "其",
+        "在",
+        "剩余",
+        "使用",
+        "寿命",
+        "分类",
+        "方面",
+        "更加",
+        "准确"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "其",
+          "head": 9,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 2,
+          "form": "在",
+          "head": 9,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 3,
+          "form": "剩余",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "使用",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "寿命",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "分类",
+          "head": 7,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "方面",
+          "head": 2,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "更加",
+          "head": 9,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 9,
+          "form": "准确",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VA"
+        }
+      ]
+    }
+  ]
+}

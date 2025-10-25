@@ -1,0 +1,1204 @@
+{
+  "title": "综合飞行器管理系统(IVMS)研究综述",
+  "summary": "现代高新技术条件下空战模式对战机作战性能和机载系统综合化设计提出了更高的要求,促使综合飞行器管理技术出现,并使其成为先进战机作战任务管理和飞行器管理的关键技术。文章系统性介绍了综合飞行器管理系统的技术背景及发展状况,给出了综合飞行器管理系统的结构框架,将其分为感知层、决策层和执行层,并分析了各层级的功能作用,分别介绍了系统构架和软件系统结构;阐述了系统的基本功能及关键技术包括态势感知与评估、任务航迹规划、综合航行驾驶、自动攻击导引、健康管理与预测以及智能人机交互六方面,探讨了综合飞行器管理系统未来的主要发展方向。",
+  "analyzed_sentences": [
+    {
+      "sentence": "现代高新技术条件下空战模式对战机作战性能和机载系统综合化设计提出了更高的要求,促使综合飞行器管理技术出现,并使其成为先进战机作战任务管理和飞行器管理的关键技术",
+      "tokens": [
+        "现代",
+        "高",
+        "新",
+        "技术",
+        "条件",
+        "下",
+        "空战",
+        "模式",
+        "对",
+        "战机",
+        "作战",
+        "性能",
+        "和",
+        "机载",
+        "系统",
+        "综合化",
+        "设计",
+        "提出",
+        "了",
+        "更",
+        "高",
+        "的",
+        "要求",
+        ",",
+        "促使",
+        "综合",
+        "飞行器",
+        "管理",
+        "技术",
+        "出现",
+        ",",
+        "并",
+        "使",
+        "其",
+        "成为",
+        "先进",
+        "战机",
+        "作战",
+        "任务",
+        "管理",
+        "和",
+        "飞行器",
+        "管理",
+        "的",
+        "关键",
+        "技术"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "现代",
+          "head": 5,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "高",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 3,
+          "form": "新",
+          "head": 4,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 4,
+          "form": "技术",
+          "head": 5,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "条件",
+          "head": 6,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "下",
+          "head": 18,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 7,
+          "form": "空战",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "模式",
+          "head": 18,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "对",
+          "head": 18,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 10,
+          "form": "战机",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "作战",
+          "head": 12,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "性能",
+          "head": 17,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 13,
+          "form": "和",
+          "head": 17,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "机载",
+          "head": 15,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "系统",
+          "head": 17,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "综合化",
+          "head": 17,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "设计",
+          "head": 9,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "提出",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 19,
+          "form": "了",
+          "head": 18,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 20,
+          "form": "更",
+          "head": 21,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 21,
+          "form": "高",
+          "head": 23,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 23,
+          "form": "要求",
+          "head": 18,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 25,
+          "form": "促使",
+          "head": 18,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 26,
+          "form": "综合",
+          "head": 29,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 27,
+          "form": "飞行器",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 28,
+          "form": "管理",
+          "head": 29,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 29,
+          "form": "技术",
+          "head": 25,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "出现",
+          "head": 25,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 31,
+          "form": ",",
+          "head": 18,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 32,
+          "form": "并",
+          "head": 18,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 33,
+          "form": "使",
+          "head": 18,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 34,
+          "form": "其",
+          "head": 33,
+          "deprel": "dobj",
+          "pos": "PN"
+        },
+        {
+          "id": 35,
+          "form": "成为",
+          "head": 33,
+          "deprel": "dep",
+          "pos": "VV"
+        },
+        {
+          "id": 36,
+          "form": "先进",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 37,
+          "form": "战机",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 38,
+          "form": "作战",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 39,
+          "form": "任务",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "管理",
+          "head": 43,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "和",
+          "head": 43,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 42,
+          "form": "飞行器",
+          "head": 43,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": "管理",
+          "head": 46,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "的",
+          "head": 43,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 45,
+          "form": "关键",
+          "head": 46,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 46,
+          "form": "技术",
+          "head": 35,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "文章系统性介绍了综合飞行器管理系统的技术背景及发展状况,给出了综合飞行器管理系统的结构框架,将其分为感知层、决策层和执行层,并分析了各层级的功能作用,分别介绍了系统构架和软件系统结构;阐述了系统的基本功能及关键技术包括态势感知与评估、任务航迹规划、综合航行驾驶、自动攻击导引、健康管理与预测以及智能人机交互六方面,探讨了综合飞行器管理系统未来的主要发展方向",
+      "tokens": [
+        "文章",
+        "系统性",
+        "介绍",
+        "了",
+        "综合",
+        "飞行器",
+        "管理",
+        "系统",
+        "的",
+        "技术",
+        "背景",
+        "及",
+        "发展",
+        "状况",
+        ",",
+        "给出",
+        "了",
+        "综合",
+        "飞行器",
+        "管理",
+        "系统",
+        "的",
+        "结构",
+        "框架",
+        ",",
+        "将",
+        "其",
+        "分为",
+        "感知层",
+        "、",
+        "决策层",
+        "和",
+        "执行层",
+        ",",
+        "并",
+        "分析",
+        "了",
+        "各",
+        "层级",
+        "的",
+        "功能",
+        "作用",
+        ",",
+        "分别",
+        "介绍",
+        "了",
+        "系统",
+        "构架",
+        "和",
+        "软件",
+        "系统",
+        "结构",
+        ";",
+        "阐述",
+        "了",
+        "系统",
+        "的",
+        "基本",
+        "功能",
+        "及",
+        "关键",
+        "技术",
+        "包括",
+        "态势",
+        "感知",
+        "与",
+        "评估",
+        "、",
+        "任务",
+        "航迹",
+        "规划",
+        "、",
+        "综合",
+        "航行",
+        "驾驶",
+        "、",
+        "自动",
+        "攻击",
+        "导引",
+        "、",
+        "健康",
+        "管理",
+        "与",
+        "预测",
+        "以及",
+        "智能",
+        "人机",
+        "交互",
+        "六",
+        "方面",
+        ",",
+        "探讨",
+        "了",
+        "综合",
+        "飞行器",
+        "管理",
+        "系统",
+        "未来",
+        "的",
+        "主要",
+        "发展",
+        "方向"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "文章",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "系统性",
+          "head": 3,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 3,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "综合",
+          "head": 8,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 6,
+          "form": "飞行器",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": "管理",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 14,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "技术",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "背景",
+          "head": 14,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": "及",
+          "head": 14,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 13,
+          "form": "发展",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "状况",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 16,
+          "form": "给出",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "了",
+          "head": 16,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 18,
+          "form": "综合",
+          "head": 21,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 19,
+          "form": "飞行器",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": "管理",
+          "head": 21,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 21,
+          "form": "系统",
+          "head": 24,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 22,
+          "form": "的",
+          "head": 21,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 23,
+          "form": "结构",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "框架",
+          "head": 16,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 25,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 26,
+          "form": "将",
+          "head": 28,
+          "deprel": "ba",
+          "pos": "BA"
+        },
+        {
+          "id": 27,
+          "form": "其",
+          "head": 28,
+          "deprel": "nsubj",
+          "pos": "PN"
+        },
+        {
+          "id": 28,
+          "form": "分为",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 29,
+          "form": "感知层",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "、",
+          "head": 33,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 31,
+          "form": "决策层",
+          "head": 33,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "和",
+          "head": 33,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 33,
+          "form": "执行层",
+          "head": 28,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "并",
+          "head": 36,
+          "deprel": "advmod",
+          "pos": "CC"
+        },
+        {
+          "id": 36,
+          "form": "分析",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "了",
+          "head": 36,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 38,
+          "form": "各",
+          "head": 39,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 39,
+          "form": "层级",
+          "head": 42,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "的",
+          "head": 39,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 41,
+          "form": "功能",
+          "head": 42,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "作用",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 43,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 44,
+          "form": "分别",
+          "head": 45,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 45,
+          "form": "介绍",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 46,
+          "form": "了",
+          "head": 45,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 47,
+          "form": "系统",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 48,
+          "form": "构架",
+          "head": 52,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "和",
+          "head": 52,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 50,
+          "form": "软件",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 51,
+          "form": "系统",
+          "head": 52,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "结构",
+          "head": 45,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": ";",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 54,
+          "form": "阐述",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 55,
+          "form": "了",
+          "head": 54,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 56,
+          "form": "系统",
+          "head": 62,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 57,
+          "form": "的",
+          "head": 56,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 58,
+          "form": "基本",
+          "head": 59,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 59,
+          "form": "功能",
+          "head": 62,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 60,
+          "form": "及",
+          "head": 62,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 61,
+          "form": "关键",
+          "head": 62,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 62,
+          "form": "技术",
+          "head": 54,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 63,
+          "form": "包括",
+          "head": 62,
+          "deprel": "prnmod",
+          "pos": "VV"
+        },
+        {
+          "id": 64,
+          "form": "态势",
+          "head": 67,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 65,
+          "form": "感知",
+          "head": 67,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 66,
+          "form": "与",
+          "head": 67,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 67,
+          "form": "评估",
+          "head": 88,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 68,
+          "form": "、",
+          "head": 88,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 69,
+          "form": "任务",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 70,
+          "form": "航迹",
+          "head": 71,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 71,
+          "form": "规划",
+          "head": 88,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 72,
+          "form": "、",
+          "head": 88,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 73,
+          "form": "综合",
+          "head": 75,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 74,
+          "form": "航行",
+          "head": 75,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 75,
+          "form": "驾驶",
+          "head": 88,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 76,
+          "form": "、",
+          "head": 88,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 77,
+          "form": "自动",
+          "head": 79,
+          "deprel": "amod",
+          "pos": "AD"
+        },
+        {
+          "id": 78,
+          "form": "攻击",
+          "head": 79,
+          "deprel": "nn",
+          "pos": "VV"
+        },
+        {
+          "id": 79,
+          "form": "导引",
+          "head": 88,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 80,
+          "form": "、",
+          "head": 88,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 81,
+          "form": "健康",
+          "head": 82,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 82,
+          "form": "管理",
+          "head": 88,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 83,
+          "form": "与",
+          "head": 88,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 84,
+          "form": "预测",
+          "head": 88,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 85,
+          "form": "以及",
+          "head": 88,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 86,
+          "form": "智能",
+          "head": 87,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 87,
+          "form": "人机",
+          "head": 88,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 88,
+          "form": "交互",
+          "head": 90,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 89,
+          "form": "六",
+          "head": 90,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 90,
+          "form": "方面",
+          "head": 63,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 91,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 92,
+          "form": "探讨",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 93,
+          "form": "了",
+          "head": 92,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 94,
+          "form": "综合",
+          "head": 95,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 95,
+          "form": "飞行器",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 96,
+          "form": "管理",
+          "head": 97,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 97,
+          "form": "系统",
+          "head": 102,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 98,
+          "form": "未来",
+          "head": 102,
+          "deprel": "assmod",
+          "pos": "NT"
+        },
+        {
+          "id": 99,
+          "form": "的",
+          "head": 98,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 100,
+          "form": "主要",
+          "head": 102,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 101,
+          "form": "发展",
+          "head": 102,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 102,
+          "form": "方向",
+          "head": 92,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

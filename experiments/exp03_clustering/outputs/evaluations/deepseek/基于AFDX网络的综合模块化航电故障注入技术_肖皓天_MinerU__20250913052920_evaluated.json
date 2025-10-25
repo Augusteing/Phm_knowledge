@@ -1,0 +1,276 @@
+{
+  "entities": [
+    {
+      "name": "综合模块化航空电子",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AFDX",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障注入技术",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "健康管理",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障预测",
+      "type": "任务",
+      "evaluation": "正确"
+    },
+    {
+      "name": "PHM",
+      "type": "技术",
+      "evaluation": "正确"
+    },
+    {
+      "name": "非法数据输入",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "特殊信令输入",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "故障数据配置管理方法",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "定时发送策略",
+      "type": "方法",
+      "evaluation": "正确"
+    },
+    {
+      "name": "多媒体定时器",
+      "type": "工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AFDX端系统板卡",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "SQLite",
+      "type": "工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "功能数据集合",
+      "type": "方法",
+      "evaluation": "错误"
+    },
+    {
+      "name": "接口控制文件",
+      "type": "数据",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Copilot软件",
+      "type": "工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "空客A380",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "波音B787",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "PC机",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "Visual C++",
+      "type": "工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "MFC框架",
+      "type": "工具",
+      "evaluation": "正确"
+    },
+    {
+      "name": "AFDX交换机",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "嵌入式系统",
+      "type": "系统",
+      "evaluation": "正确"
+    },
+    {
+      "name": "带宽分配间隔",
+      "type": "参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "数据更新间隔",
+      "type": "参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "发送间隔",
+      "type": "参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "定时器周期",
+      "type": "参数",
+      "evaluation": "正确"
+    },
+    {
+      "name": "时间误差",
+      "type": "指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "均方误差",
+      "type": "指标",
+      "evaluation": "正确"
+    },
+    {
+      "name": "北京航空航天大学",
+      "type": "研究机构",
+      "evaluation": "正确"
+    }
+  ],
+  "relations": [
+    {
+      "head": "故障注入技术",
+      "relation": "应用于",
+      "tail": "综合模块化航空电子",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "基于",
+      "tail": "AFDX",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "用于",
+      "tail": "健康管理",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "非法数据输入",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "包括",
+      "tail": "特殊信令输入",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "采用",
+      "tail": "故障数据配置管理方法",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "采用",
+      "tail": "定时发送策略",
+      "evaluation": "正确"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "多媒体定时器",
+      "evaluation": "正确"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "基于",
+      "tail": "AFDX端系统板卡",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "基于",
+      "tail": "SQLite",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障数据配置管理方法",
+      "relation": "基于",
+      "tail": "功能数据集合",
+      "evaluation": "正确"
+    },
+    {
+      "head": "功能数据集合",
+      "relation": "基于",
+      "tail": "接口控制文件",
+      "evaluation": "正确"
+    },
+    {
+      "head": "Copilot软件",
+      "relation": "用于",
+      "tail": "监控",
+      "evaluation": "正确"
+    },
+    {
+      "head": "AFDX",
+      "relation": "应用于",
+      "tail": "空客A380",
+      "evaluation": "正确"
+    },
+    {
+      "head": "AFDX",
+      "relation": "应用于",
+      "tail": "波音B787",
+      "evaluation": "正确"
+    },
+    {
+      "head": "故障注入技术",
+      "relation": "实现",
+      "tail": "故障预测",
+      "evaluation": "错误"
+    },
+    {
+      "head": "定时发送策略",
+      "relation": "提高",
+      "tail": "定时精度",
+      "evaluation": "正确"
+    },
+    {
+      "head": "北京航空航天大学",
+      "relation": "研究方向为",
+      "tail": "故障注入技术",
+      "evaluation": "错误"
+    },
+    {
+      "head": "健康管理",
+      "relation": "包含",
+      "tail": "PHM",
+      "evaluation": "错误"
+    },
+    {
+      "head": "PHM",
+      "relation": "包含",
+      "tail": "故障预测",
+      "evaluation": "正确"
+    }
+  ]
+}

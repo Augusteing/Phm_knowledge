@@ -1,0 +1,86 @@
+[
+  {
+    "subject": "飞机引气系统",
+    "subject_type": "系统",
+    "relation": "影响",
+    "object": "飞机安全",
+    "object_type": "目标"
+  },
+  {
+    "subject": "飞机引气系统",
+    "subject_type": "系统",
+    "relation": "具有",
+    "object": "关键参数变化",
+    "object_type": "现象"
+  },
+  {
+    "subject": "关键参数变化",
+    "subject_type": "现象",
+    "relation": "表现为",
+    "object": "非线性特性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "非线性特性",
+    "subject_type": "特性",
+    "relation": "提高",
+    "object": "故障预测难度",
+    "object_type": "问题"
+  },
+  {
+    "subject": "遗传算法-小波神经网络模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "飞机引气系统故障预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "遗传算法-小波神经网络模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "遗传算法",
+    "object_type": "算法"
+  },
+  {
+    "subject": "遗传算法-小波神经网络模型",
+    "subject_type": "模型",
+    "relation": "结合",
+    "object": "小波神经网络",
+    "object_type": "模型"
+  },
+  {
+    "subject": "遗传算法",
+    "subject_type": "算法",
+    "relation": "具有",
+    "object": "全局优化搜索能力",
+    "object_type": "能力"
+  },
+  {
+    "subject": "小波神经网络",
+    "subject_type": "模型",
+    "relation": "具有",
+    "object": "良好局部特性",
+    "object_type": "特性"
+  },
+  {
+    "subject": "遗传算法-小波神经网络模型",
+    "subject_type": "模型",
+    "relation": "避免",
+    "object": "BP神经网络缺陷",
+    "object_type": "缺陷"
+  },
+  {
+    "subject": "MATLAB仿真",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "故障预测模型的准确性",
+    "object_type": "性能指标"
+  },
+  {
+    "subject": "遗传算法-小波神经网络模型",
+    "subject_type": "模型",
+    "relation": "提高",
+    "object": "预测精度",
+    "object_type": "性能指标"
+  }
+]

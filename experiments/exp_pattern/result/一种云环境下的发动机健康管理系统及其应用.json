@@ -1,0 +1,51 @@
+[
+  {
+    "subject": "云环境下的发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "服务于",
+    "object": "航空公司",
+    "object_type": "组织"
+  },
+  {
+    "subject": "云环境下的发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "包含",
+    "object": "发动机健康管理云端数据中心",
+    "object_type": "组件"
+  },
+  {
+    "subject": "云环境下的发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "验证",
+    "object": "发动机故障诊断方法",
+    "object_type": "方法"
+  },
+  {
+    "subject": "云环境下的发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "支持",
+    "object": "协同故障诊断",
+    "object_type": "任务"
+  },
+  {
+    "subject": "灰色故障识别方法",
+    "subject_type": "方法",
+    "relation": "基于",
+    "object": "灰色关联分析",
+    "object_type": "技术"
+  },
+  {
+    "subject": "灰色故障识别方法",
+    "subject_type": "方法",
+    "relation": "应用于",
+    "object": "JT9D-7R4发动机",
+    "object_type": "设备型号"
+  },
+  {
+    "subject": "云环境下的发动机健康管理系统",
+    "subject_type": "系统",
+    "relation": "执行",
+    "object": "航空发动机故障诊断",
+    "object_type": "任务"
+  }
+]

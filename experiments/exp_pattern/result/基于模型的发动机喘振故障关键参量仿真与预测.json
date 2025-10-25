@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "深喘",
+    "subject_type": "故障",
+    "relation": "破坏",
+    "object": "发动机运行稳定",
+    "object_type": "状态"
+  },
+  {
+    "subject": "深喘",
+    "subject_type": "故障",
+    "relation": "破坏",
+    "object": "飞机安全",
+    "object_type": "状态"
+  },
+  {
+    "subject": "关键参量",
+    "subject_type": "参数",
+    "relation": "表征",
+    "object": "喘振故障",
+    "object_type": "故障"
+  },
+  {
+    "subject": "发动机整体仿真模型",
+    "subject_type": "模型",
+    "relation": "基于",
+    "object": "气动热力机理",
+    "object_type": "机理"
+  },
+  {
+    "subject": "发动机整体仿真模型",
+    "subject_type": "模型",
+    "relation": "模拟",
+    "object": "关键参量变化情况",
+    "object_type": "现象"
+  },
+  {
+    "subject": "长短记忆神经网络模型",
+    "subject_type": "模型",
+    "relation": "进行",
+    "object": "数据变化趋势预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "LSTM模型",
+    "subject_type": "模型",
+    "relation": "用于",
+    "object": "喘振故障关键参量预测",
+    "object_type": "任务"
+  },
+  {
+    "subject": "与其他网络算法的比较",
+    "subject_type": "方法",
+    "relation": "验证",
+    "object": "LSTM模型有效性",
+    "object_type": "属性"
+  }
+]

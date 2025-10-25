@@ -1,0 +1,795 @@
+{
+  "title": "机载导弹发射装置PHM系统总体设计",
+  "summary": "预测与健康管理(PHM)是近年来在军用装备研制中提出的一种新的保障技术手段。机载导弹发射装置作为机载武器系统的配套产品,已纳入飞机PHM系统设计中。本文介绍了PHM的基本概念和关键技术,并根据发射装置的功能特点,提出了在线和离线相结合的发射装置PHM框架结构,最后探讨了实施PHM部位原则、监测参数的选取以及故障预测和维护管理方法。",
+  "analyzed_sentences": [
+    {
+      "sentence": "预测与健康管理(PHM)是近年来在军用装备研制中提出的一种新的保障技术手段",
+      "tokens": [
+        "预测",
+        "与",
+        "健康",
+        "管理",
+        "(",
+        "PHM",
+        ")",
+        "是",
+        "近年",
+        "来",
+        "在",
+        "军用",
+        "装备",
+        "研制",
+        "中",
+        "提出",
+        "的",
+        "一",
+        "种",
+        "新",
+        "的",
+        "保障",
+        "技术",
+        "手段"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "预测",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 2,
+          "form": "与",
+          "head": 3,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 3,
+          "form": "健康",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "管理",
+          "head": 8,
+          "deprel": "dep",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "(",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 6,
+          "form": "PHM",
+          "head": 4,
+          "deprel": "prnmod",
+          "pos": "NN"
+        },
+        {
+          "id": 7,
+          "form": ")",
+          "head": 6,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 8,
+          "form": "是",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VC"
+        },
+        {
+          "id": 9,
+          "form": "近年",
+          "head": 10,
+          "deprel": "lobj",
+          "pos": "NT"
+        },
+        {
+          "id": 10,
+          "form": "来",
+          "head": 16,
+          "deprel": "loc",
+          "pos": "LC"
+        },
+        {
+          "id": 11,
+          "form": "在",
+          "head": 16,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 12,
+          "form": "军用",
+          "head": 13,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 13,
+          "form": "装备",
+          "head": 14,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 14,
+          "form": "研制",
+          "head": 15,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 15,
+          "form": "中",
+          "head": 11,
+          "deprel": "plmod",
+          "pos": "LC"
+        },
+        {
+          "id": 16,
+          "form": "提出",
+          "head": 24,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 18,
+          "form": "一",
+          "head": 19,
+          "deprel": "nummod",
+          "pos": "CD"
+        },
+        {
+          "id": 19,
+          "form": "种",
+          "head": 24,
+          "deprel": "clf",
+          "pos": "M"
+        },
+        {
+          "id": 20,
+          "form": "新",
+          "head": 24,
+          "deprel": "rcmod",
+          "pos": "VA"
+        },
+        {
+          "id": 21,
+          "form": "的",
+          "head": 20,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 22,
+          "form": "保障",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 23,
+          "form": "技术",
+          "head": 24,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "手段",
+          "head": 8,
+          "deprel": "attr",
+          "pos": "NN"
+        }
+      ]
+    },
+    {
+      "sentence": "机载导弹发射装置作为机载武器系统的配套产品,已纳入飞机PHM系统设计中",
+      "tokens": [
+        "机载",
+        "导弹",
+        "发射",
+        "装置",
+        "作为",
+        "机载",
+        "武器",
+        "系统",
+        "的",
+        "配套",
+        "产品",
+        ",",
+        "已",
+        "纳入",
+        "飞机",
+        "PHM",
+        "系统",
+        "设计",
+        "中"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "机载",
+          "head": 2,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 2,
+          "form": "导弹",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "发射",
+          "head": 4,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 4,
+          "form": "装置",
+          "head": 14,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 5,
+          "form": "作为",
+          "head": 14,
+          "deprel": "prep",
+          "pos": "VV"
+        },
+        {
+          "id": 6,
+          "form": "机载",
+          "head": 7,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 7,
+          "form": "武器",
+          "head": 8,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 8,
+          "form": "系统",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "的",
+          "head": 8,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 10,
+          "form": "配套",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "产品",
+          "head": 5,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 14,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "已",
+          "head": 14,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 14,
+          "form": "纳入",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 15,
+          "form": "飞机",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "PHM",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "系统",
+          "head": 18,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 18,
+          "form": "设计",
+          "head": 19,
+          "deprel": "lobj",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "中",
+          "head": 14,
+          "deprel": "loc",
+          "pos": "LC"
+        }
+      ]
+    },
+    {
+      "sentence": "本文介绍了PHM的基本概念和关键技术,并根据发射装置的功能特点,提出了在线和离线相结合的发射装置PHM框架结构,最后探讨了实施PHM部位原则、监测参数的选取以及故障预测和维护管理方法",
+      "tokens": [
+        "本",
+        "文",
+        "介绍",
+        "了",
+        "PHM",
+        "的",
+        "基本",
+        "概念",
+        "和",
+        "关键",
+        "技术",
+        ",",
+        "并",
+        "根据",
+        "发射",
+        "装置",
+        "的",
+        "功能",
+        "特点",
+        ",",
+        "提出",
+        "了",
+        "在线",
+        "和",
+        "离线",
+        "相",
+        "结合",
+        "的",
+        "发射",
+        "装置",
+        "PHM",
+        "框架",
+        "结构",
+        ",",
+        "最后",
+        "探讨",
+        "了",
+        "实施",
+        "PHM",
+        "部位",
+        "原则",
+        "、",
+        "监测",
+        "参数",
+        "的",
+        "选取",
+        "以及",
+        "故障",
+        "预测",
+        "和",
+        "维护",
+        "管理",
+        "方法"
+      ],
+      "parsed": [
+        {
+          "id": 1,
+          "form": "本",
+          "head": 2,
+          "deprel": "det",
+          "pos": "DT"
+        },
+        {
+          "id": 2,
+          "form": "文",
+          "head": 3,
+          "deprel": "nsubj",
+          "pos": "NN"
+        },
+        {
+          "id": 3,
+          "form": "介绍",
+          "head": 0,
+          "deprel": "root",
+          "pos": "VV"
+        },
+        {
+          "id": 4,
+          "form": "了",
+          "head": 3,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 5,
+          "form": "PHM",
+          "head": 11,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 6,
+          "form": "的",
+          "head": 5,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 7,
+          "form": "基本",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "JJ"
+        },
+        {
+          "id": 8,
+          "form": "概念",
+          "head": 11,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 9,
+          "form": "和",
+          "head": 11,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 10,
+          "form": "关键",
+          "head": 11,
+          "deprel": "amod",
+          "pos": "NN"
+        },
+        {
+          "id": 11,
+          "form": "技术",
+          "head": 3,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 12,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 13,
+          "form": "并",
+          "head": 3,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 14,
+          "form": "根据",
+          "head": 21,
+          "deprel": "prep",
+          "pos": "P"
+        },
+        {
+          "id": 15,
+          "form": "发射",
+          "head": 16,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 16,
+          "form": "装置",
+          "head": 19,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 17,
+          "form": "的",
+          "head": 16,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 18,
+          "form": "功能",
+          "head": 19,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 19,
+          "form": "特点",
+          "head": 14,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 20,
+          "form": ",",
+          "head": 21,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 21,
+          "form": "提出",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 22,
+          "form": "了",
+          "head": 21,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 23,
+          "form": "在线",
+          "head": 27,
+          "deprel": "prep",
+          "pos": "NN"
+        },
+        {
+          "id": 24,
+          "form": "和",
+          "head": 25,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 25,
+          "form": "离线",
+          "head": 23,
+          "deprel": "pobj",
+          "pos": "NN"
+        },
+        {
+          "id": 26,
+          "form": "相",
+          "head": 27,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 27,
+          "form": "结合",
+          "head": 33,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 28,
+          "form": "的",
+          "head": 27,
+          "deprel": "cpm",
+          "pos": "DEC"
+        },
+        {
+          "id": 29,
+          "form": "发射",
+          "head": 30,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 30,
+          "form": "装置",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 31,
+          "form": "PHM",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 32,
+          "form": "框架",
+          "head": 33,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 33,
+          "form": "结构",
+          "head": 21,
+          "deprel": "dobj",
+          "pos": "NN"
+        },
+        {
+          "id": 34,
+          "form": ",",
+          "head": 3,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 35,
+          "form": "最后",
+          "head": 36,
+          "deprel": "advmod",
+          "pos": "AD"
+        },
+        {
+          "id": 36,
+          "form": "探讨",
+          "head": 3,
+          "deprel": "conj",
+          "pos": "VV"
+        },
+        {
+          "id": 37,
+          "form": "了",
+          "head": 36,
+          "deprel": "asp",
+          "pos": "AS"
+        },
+        {
+          "id": 38,
+          "form": "实施",
+          "head": 53,
+          "deprel": "rcmod",
+          "pos": "VV"
+        },
+        {
+          "id": 39,
+          "form": "PHM",
+          "head": 40,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 40,
+          "form": "部位",
+          "head": 41,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 41,
+          "form": "原则",
+          "head": 53,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 42,
+          "form": "、",
+          "head": 53,
+          "deprel": "punct",
+          "pos": "PU"
+        },
+        {
+          "id": 43,
+          "form": "监测",
+          "head": 44,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 44,
+          "form": "参数",
+          "head": 46,
+          "deprel": "assmod",
+          "pos": "NN"
+        },
+        {
+          "id": 45,
+          "form": "的",
+          "head": 44,
+          "deprel": "assm",
+          "pos": "DEG"
+        },
+        {
+          "id": 46,
+          "form": "选取",
+          "head": 53,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 47,
+          "form": "以及",
+          "head": 53,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 48,
+          "form": "故障",
+          "head": 49,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 49,
+          "form": "预测",
+          "head": 53,
+          "deprel": "conj",
+          "pos": "NN"
+        },
+        {
+          "id": 50,
+          "form": "和",
+          "head": 53,
+          "deprel": "cc",
+          "pos": "CC"
+        },
+        {
+          "id": 51,
+          "form": "维护",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 52,
+          "form": "管理",
+          "head": 53,
+          "deprel": "nn",
+          "pos": "NN"
+        },
+        {
+          "id": 53,
+          "form": "方法",
+          "head": 36,
+          "deprel": "dobj",
+          "pos": "NN"
+        }
+      ]
+    }
+  ]
+}

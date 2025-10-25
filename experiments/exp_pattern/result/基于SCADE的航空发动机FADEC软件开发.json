@@ -1,0 +1,93 @@
+[
+  {
+    "subject": "机载软件开发",
+    "subject_type": "领域",
+    "relation": "面临",
+    "object": "复杂性",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "机载软件开发",
+    "subject_type": "领域",
+    "relation": "面临",
+    "object": "安全性",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "机载软件开发",
+    "subject_type": "领域",
+    "relation": "面临",
+    "object": "成本",
+    "object_type": "挑战"
+  },
+  {
+    "subject": "SCADE",
+    "subject_type": "开发工具",
+    "relation": "应用于",
+    "object": "FADEC软件开发",
+    "object_type": "开发任务"
+  },
+  {
+    "subject": "基于模型开发",
+    "subject_type": "开发方法",
+    "relation": "应用于",
+    "object": "FADEC软件开发",
+    "object_type": "开发任务"
+  },
+  {
+    "subject": "FADEC软件开发",
+    "subject_type": "开发任务",
+    "relation": "针对",
+    "object": "航空发动机数控系统",
+    "object_type": "系统"
+  },
+  {
+    "subject": "SCADE基于模型开发解决方案",
+    "subject_type": "解决方案",
+    "relation": "用于",
+    "object": "应用软件开发",
+    "object_type": "开发任务"
+  },
+  {
+    "subject": "模型测试",
+    "subject_type": "验证方法",
+    "relation": "验证",
+    "object": "开发结果",
+    "object_type": "产出物"
+  },
+  {
+    "subject": "模型覆盖率分析",
+    "subject_type": "验证方法",
+    "relation": "验证",
+    "object": "开发结果",
+    "object_type": "产出物"
+  },
+  {
+    "subject": "软件硬件集成测试",
+    "subject_type": "验证方法",
+    "relation": "验证",
+    "object": "开发结果",
+    "object_type": "产出物"
+  },
+  {
+    "subject": "基于模型开发流程",
+    "subject_type": "流程",
+    "relation": "联合",
+    "object": "SCADE",
+    "object_type": "开发工具"
+  },
+  {
+    "subject": "基于模型开发流程",
+    "subject_type": "流程",
+    "relation": "联合",
+    "object": "Simulink",
+    "object_type": "开发工具"
+  },
+  {
+    "subject": "SCADE",
+    "subject_type": "开发工具",
+    "relation": "用于",
+    "object": "机载软件开发",
+    "object_type": "领域"
+  }
+]
